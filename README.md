@@ -35,62 +35,38 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
-		<td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td>
-		<td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td>
-		<td><a href="https://feathericons.com/">Feather</a></td>
-		<td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td>
-		<td>Simply beautiful open source icons</td>
-		<td>The web's most popular icon set and toolkit</td>
+		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td>
-		<td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td>
-		<td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td>
-		<td><a href="https://icomoon.io/">IcoMoon</a></td>
-		<td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td>
-		<td>The premium icon font for your next project</td>
-		<td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
+		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td>
-		<td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td>
-		<td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
 	</tr>
 	<tr>
-		<td>A free alternative to Font Awesome</td>
-		<td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-		undefined
+		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
-		undefined
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
 	</tr>
 </table>
 </details>
@@ -101,62 +77,38 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
-		<td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td>
-		<td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td>
-		<td><a href="https://feathericons.com/">Feather</a></td>
-		<td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td>
-		<td>Simply beautiful open source icons</td>
-		<td>The web's most popular icon set and toolkit</td>
+		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td>
-		<td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td>
-		<td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td>
-		<td><a href="https://icomoon.io/">IcoMoon</a></td>
-		<td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td>
-		<td>The premium icon font for your next project</td>
-		<td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
+		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
 	</tr><tr>
 		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td>
-		undefined
-		undefined
 	</tr>
 	<tr>
 		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td>
-		undefined
-		undefined
 	</tr>
 	<tr>
 		<td>A free alternative to Font Awesome</td>
-		undefined
-		undefined
 	</tr>
 	<tr>
 		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		undefined
-		undefined
 	</tr>
 </table>
 </details>
@@ -167,43 +119,27 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
-		<td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td>
-		<td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td>
-		<td><a href="https://feathericons.com/">Feather</a></td>
-		<td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td>
-		<td>Simply beautiful open source icons</td>
-		<td>The web's most popular icon set and toolkit</td>
+		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td>
-		<td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td>
-		<td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td>
-		<td><a href="https://icomoon.io/">IcoMoon</a></td>
-		<td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td>
-		<td>The premium icon font for your next project</td>
-		<td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
+		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
 	</tr>
 </table>
 </details>
@@ -214,62 +150,38 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
-		<td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td>
-		<td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td>
-		<td><a href="https://feathericons.com/">Feather</a></td>
-		<td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td>
-		<td>Simply beautiful open source icons</td>
-		<td>The web's most popular icon set and toolkit</td>
+		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td>
-		<td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td>
-		<td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td>
-		<td><a href="https://icomoon.io/">IcoMoon</a></td>
-		<td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td>
-		<td>The premium icon font for your next project</td>
-		<td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
+		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td>
-		<td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td>
-		<td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
 	</tr>
 	<tr>
-		<td>A free alternative to Font Awesome</td>
-		<td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-		undefined
+		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
-		undefined
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
 	</tr>
 </table>
 </details>
@@ -280,62 +192,38 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
-		<td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td>
-		<td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td>
-		<td><a href="https://feathericons.com/">Feather</a></td>
-		<td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td>
-		<td>Simply beautiful open source icons</td>
-		<td>The web's most popular icon set and toolkit</td>
+		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td>
-		<td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td>
-		<td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td>
-		<td><a href="https://icomoon.io/">IcoMoon</a></td>
-		<td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td>
-		<td>The premium icon font for your next project</td>
-		<td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
+		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td>
-		<td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td>
-		<td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
 	</tr>
 	<tr>
-		<td>A free alternative to Font Awesome</td>
-		<td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-		undefined
+		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
-		undefined
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
 	</tr>
 </table>
 </details>
@@ -346,62 +234,38 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
-		<td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td>
-		<td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td>
-		<td><a href="https://feathericons.com/">Feather</a></td>
-		<td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td>
-		<td>Simply beautiful open source icons</td>
-		<td>The web's most popular icon set and toolkit</td>
+		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td>
-		<td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td>
-		<td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td>
-		<td><a href="https://icomoon.io/">IcoMoon</a></td>
-		<td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td>
-		<td>The premium icon font for your next project</td>
-		<td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td>
-		<td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
+		<td><a href="https://opensource.org/license/mit/">licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td>
-		<td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td>
-		<td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-		undefined
+		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
 	</tr>
 	<tr>
-		<td>A free alternative to Font Awesome</td>
-		<td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-		undefined
+		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td>
-		<td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
-		undefined
+		<td><a href="https://creativecommons.org/licenses/by/4.0/">licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">licence: SIL OFL 1.1</a></td>
 	</tr>
 </table>
 </details>
