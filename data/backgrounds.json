@@ -1,0 +1,66 @@
+[
+	{
+		"title": "css.gg",
+		"link": "https://css.gg/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "A pure CSS library of 1000+ icons",
+		"licence": "CC BY 4.0",
+		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+	},
+	{
+		"title": "Feather",
+		"link": "https://feathericons.com/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "Simply beautiful open source icons",
+		"licence": "MIT",
+		"licencelink": "https://opensource.org/license/mit/"
+	},
+	{
+		"title": "Font Awesome",
+		"link": "https://fontawesome.com/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "The web's most popular icon set and toolkit",
+		"licence": "CC BY 4.0",
+		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+	},
+	{
+		"title": "Heroicons",
+		"link": "https://heroicons.com/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "A set of free MIT-licensed high-quality SVG icons for UI development",
+		"licence": "MIT",
+		"licencelink": "https://opensource.org/license/mit/"
+	},
+	{
+		"title": "IcoMoon",
+		"link": "https://icomoon.io/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "The premium icon font for your next project",
+		"licence": "CC BY 4.0",
+		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+	},
+	{
+		"title": "Ionicons",
+		"link": "https://ionicons.com/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "Premium designed icons for use in web, iOS, Android, and desktop apps",
+		"licence": "MIT",
+		"licencelink": "https://opensource.org/license/mit/"
+	},
+	{
+		"title": "Line Awesome",
+		"link": "https://icons8.com/line-awesome",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "A free alternative to Font Awesome",
+		"licence": "CC BY 4.0",
+		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+	},
+	{
+		"title": "Material Design Icons",
+		"link": "https://materialdesignicons.com/",
+		"img": "https://css.gg/fav/og2.png",
+		"description": "Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project",
+		"licence": "SIL OFL 1.1",
+		"licencelink": "https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+	}
+]
