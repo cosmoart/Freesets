@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 
-<img src="images/header.png" alt="header" />
+![header](./images/header.png)
 
 <br />
 
@@ -20,20 +20,22 @@ This repository contains a collection of free, high-quality multimedia resources
 
 
 <!-- TABLE OF CONTENTS -->
-<h2>Table of contents</h2>
+## Table of contents
 
-- [Icons](#icons)
-- [Ilustrations](#ilustrations)
-- [Photos](#photos)
-- [Videos](#videos)
-- [Backgrounds/Patterns](#backgroundspatterns)
-- [Loaders](#loaders)
+- [Icons](#-icons)
+- [Ilustrations](#-ilustrations)
+- [Photos](#-photos)
+- [Videos](#-videos)
+- [Backgrounds/Patterns](#-backgroundspatterns)
+- [Loaders](#-loaders)
+
+
 <details>
 
-<summary><h2>Icons</h2></summary>
+<summary><h2>🏠 Icons</h2></summary>
 
 <table>
-	<tr>
+<tr>
 		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td><td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td>
 	</tr>
 	<tr>
@@ -59,19 +61,20 @@ This repository contains a collection of free, high-quality multimedia resources
 </table>
 </details>
 
+
 <details>
 
-<summary><h2>Ilustrations</h2></summary>
+<summary><h2>🖍️ Ilustrations</h2></summary>
 
 <table>
-	<tr>
+<tr>
 		<td><a href="https://flexiple.com/illustrations/"><img src="https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png" alt="Flexiple ilustrations"></a></td><td><a href="https://storyset.com"><img src="./images/ilustrations/storyset.webp" alt="Storyset"></a></td><td><a href="https://iradesign.io"><img src="./images/ilustrations/iradesign.webp" alt="Iradesign"></a></td>
 	</tr>
 	<tr>
 		<td><a href="https://flexiple.com/illustrations/">Flexiple ilustrations</a></td><td><a href="https://storyset.com">Storyset</a></td><td><a href="https://iradesign.io">Iradesign</a></td>
 	</tr>
 	<tr>
-		<td>A new free, open-source and high-quality illustration each day - no attribution needed! Commercial, academic, or your pet project, doesn't matter. Use Scale to beautify your project.</td><td>Awesome free customizable illustrations for your next project</td><td>Build your own amazing illustrations with MIT licensed illustrations</td>
+		<td>A new free, open-source and high-quality illustration each day - no attribution needed!</td><td>Awesome free customizable illustrations for your next project</td><td>Build your own amazing illustrations with MIT licensed illustrations</td>
 	</tr>
 	<tr>
 		<td><a href="https://flexiple.com/illustrations/">Licence: "Put simply, use it in any project. No attribution needed."</a> </td><td><a href="https://storyset.com/faqs">Licence: "you must always include the attribution to Storyset every time you use our free illustrations."</a></td><td><a href="https://iradesign.io">Licence: MIT</a></td>
@@ -90,148 +93,109 @@ This repository contains a collection of free, high-quality multimedia resources
 </table>
 </details>
 
+
 <details>
 
-<summary><h2>Photos</h2></summary>
+<summary><h2>📷 Photos</h2></summary>
 
 <table>
-	<tr>
-		<td><a href="https://www.pexels.com"><img src="./images/photos/pexels.webp" alt="Pexels"></a></td><td><a href="https://picography.co"><img src="./images/photos/picography.webp" alt="Picography"></a></td>
+<tr>
+		<td><a href="https://pixabay.com/photos/"><img src="./images/photos/pixabay.webp" alt="PixaBay"></a></td><td><a href="https://www.pexels.com"><img src="./images/photos/pexels.webp" alt="Pexels"></a></td><td><a href="https://picography.co"><img src="./images/photos/picography.webp" alt="Picography"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://www.pexels.com">Pexels</a></td><td><a href="https://picography.co">Picography</a></td>
+		<td><a href="https://pixabay.com/photos/">PixaBay</a></td><td><a href="https://www.pexels.com">Pexels</a></td><td><a href="https://picography.co">Picography</a></td>
 	</tr>
 	<tr>
-		<td>"Free stock photos & videos you can use everywhere. Browse millions of high-quality royalty free stock images & copyright free pictures. No attribution required.</td><td>Picography offers gorgeous high-resolution free photos. Our free stock photos can be used for any project. No attribution needed. Download your favorites.</td>
+		<td>Find high quality royalty free photos for your next project. ✓ Free for commercial use ✓ No attribution required ✓ Photos handpicked by staff.</td><td>Free stock photos & videos you can use everywhere. Browse millions of high-quality royalty free stock images & copyright free pictures. No attribution required.</td><td>Picography offers gorgeous high-resolution free photos. Our free stock photos can be used for any project. No attribution needed. Download your favorites.</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.pexels.com/license/">Licence: All photos and videos on Pexels can be downloaded and used for free."</a> </td><td><a href="https://picography.co/terms/">Licence: CC0 1.0</a></td>
+		<td><a href="https://pixabay.com/es/service/license/">Licence: Pixabay License (Free for commercial and noncommercial use. Attribution is not required.)</a> </td><td><a href="https://www.pexels.com/license/">Licence: "All photos and videos on Pexels can be downloaded and used for free."</a></td><td><a href="https://picography.co/terms/">Licence: CC0 1.0</a></td>
 	</tr>
 </table>
 </details>
 
+
 <details>
 
-<summary><h2>Videos</h2></summary>
+<summary><h2>📺 Videos</h2></summary>
 
 <table>
-	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+<tr>
+		<td><a href="https://www.pexels.com/videos/"><img src="./images/videos/pexels.webp" alt="Pexels"></a></td><td><a href="https://coverr.co"><img src="./images/videos/coverr.webp" alt="Coverr"></a></td><td><a href="https://www.videezy.com"><img src="./images/videos/videezy.webp" alt="Videezy"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://www.pexels.com/videos/">Pexels</a></td><td><a href="https://coverr.co">Coverr</a></td><td><a href="https://www.videezy.com">Videezy</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
+		<td>Pexels Videos makes it easy to find free stock footage for your website, promo video or anything else.</td><td>Download royalty free (for personal and commercial use), unique and beautiful video footage for your website or any project. No attribution required.</td><td>Download millions of free and premium stock footage and motion graphics instantly.</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">Licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a></td>
+		<td><a href="https://www.pexels.com/license/">Licence: "All photos and videos on Pexels can be downloaded and used for free."</a> </td><td><a href="https://coverr.co/license">Licence: "All Videos published on Coverr.co can be used free for commercial and non-commercial purposes. You do not need to ask permission from or provide credit to the videographer or Coverr.co, although it is appreciated when possible."</a></td><td><a href="https://www.videezy.com/terms">Licence: Standard, Pro, Creative Commons and Editorial Use Only</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://mixkit.co/free-stock-video/"><img src="./images/videos/mixkit.webp" alt="Mixkit"></a></td><td><a href="https://www.videvo.net"><img src="./images/videos/videvo.webp" alt="Videvo"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://mixkit.co/free-stock-video/">Mixkit</a></td><td><a href="https://www.videvo.net">Videvo</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>Browse our library of extraordinary free stock footage and motion clips for every occasion. All HD Video Clips are completely free to download and use anywhere.</td><td>Download Free Stock Footage and HD Video clips; Videvo offers a large selection of HD video clips, motion graphics and free stock footage.</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">Licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">Licence: MIT</a></td>
-	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-	</tr>
-	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-	</tr>
-	<tr>
-		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-	</tr>
-	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">Licence: SIL OFL 1.1</a></td>
+		<td><a href="https://mixkit.co/license/">Licence: "Items under the Mixkit Stock Video Free License can be used in your commercial and non-commercial projects, for free."</a> </td><td><a href="https://help.videvo.net/category/6-licensing">Licence: Videvo Attribution License or Creative Commons 3.0 ("You may use these video clips free of charge, in both personal and commercial productions. Video clips that carry the Creative Commons 3.0 license must be attributed to the original author.")</a></td>
 	</tr>
 </table>
 </details>
 
+
 <details>
 
-<summary><h2>Backgrounds/Patterns</h2></summary>
+<summary><h2>🏙️ Backgrounds/Patterns</h2></summary>
 
 <table>
-	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="/images/icons/feather.webp" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+<tr>
+		<td><a href="https://www.magicpattern.design/tools/css-backgrounds"><img src="https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg" alt="CSS Background Patterns"></a></td><td><a href="https://patternpad.com"><img src="https://patternpad.com/images/patternpad-banner.png" alt="PatternPad"></a></td><td><a href="https://pattern.monster"><img src="https://giguom.com/pattern.monster/images//TwitterBG2.png" alt="Pattern Monster"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://www.magicpattern.design/tools/css-backgrounds">CSS Background Patterns</a></td><td><a href="https://patternpad.com">PatternPad</a></td><td><a href="https://pattern.monster">Pattern Monster</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
+		<td>Beautiful pure CSS background patterns that you can actually use in your projects!</td><td>PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.</td><td>A simple online pattern generator to create repeatable SVG patterns. Perfect for website backgrounds, apparel, branding, packaging design and more.</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">Licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a></td>
+		<td><a href="https://www.magicpattern.design/terms">Licence: "Free"</a> </td><td><a href="https://patternpad.com">Licence: Free with attribution</a></td><td><a href="https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
+		<td><a href="https://bansal.io/pattern-css"><img src="https://bansal.io/assets/images/pattern-css-preview.jpg" alt="pattern.css"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
+		<td><a href="https://bansal.io/pattern-css">pattern.css</a></td>
 	</tr>
 	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
+		<td>CSS only library to fill your empty background with beautiful patterns.</td>
 	</tr>
 	<tr>
-		<td><a href="https://opensource.org/license/mit/">Licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">Licence: MIT</a></td>
-	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-	</tr>
-	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-	</tr>
-	<tr>
-		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-	</tr>
-	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">Licence: SIL OFL 1.1</a></td>
+		<td><a href="https://github.com/bansal/pattern.css">Licence: MIT</a> </td>
 	</tr>
 </table>
 </details>
 
+
 <details>
 
-<summary><h2>Loaders</h2></summary>
+<summary><h2>⌛ Loaders</h2></summary>
 
 <table>
-	<tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="https://css.gg/fav/og2.png" alt="Feather"></a></td><td><a href="https://fontawesome.com/"><img src="https://css.gg/fav/og2.png" alt="Font Awesome"></a></td>
+<tr>
+		<td><a href="https://cssloaders.github.io"><img src="https://cssloaders.github.io/images/Loader-screen.png" alt="CSS loaders and spinners"></a></td><td><a href="https://uiball.com/loaders/"><img src="./images/loaders/uiball-loaders.webp" alt="Loaders"></a></td><td><a href="https://samherbert.net/svg-loaders/"><img src="./images/loaders/svg-loaders.webp" alt="SVG Loaders"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather</a></td><td><a href="https://fontawesome.com/">Font Awesome</a></td>
+		<td><a href="https://cssloaders.github.io">CSS loaders and spinners</a></td><td><a href="https://uiball.com/loaders/">Loaders</a></td><td><a href="https://samherbert.net/svg-loaders/">SVG Loaders</a></td>
 	</tr>
 	<tr>
-		<td>A pure CSS library of 1000+ icons</td><td>Simply beautiful open source icons</td><td>The web's most popular icon set and toolkit</td>
+		<td>CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.</td><td>Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG. Available for copypasta or as a tree-shakeable React component library.</td><td>Loading icons and small animations built with pure SVG.</td>
 	</tr>
 	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a> </td><td><a href="https://opensource.org/license/mit/">Licence: MIT</a></td><td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a></td>
-	</tr><tr>
-		<td><a href="https://heroicons.com/"><img src="https://css.gg/fav/og2.png" alt="Heroicons"></a></td><td><a href="https://icomoon.io/"><img src="https://css.gg/fav/og2.png" alt="IcoMoon"></a></td><td><a href="https://ionicons.com/"><img src="https://css.gg/fav/og2.png" alt="Ionicons"></a></td>
-	</tr>
-	<tr>
-		<td><a href="https://heroicons.com/">Heroicons</a></td><td><a href="https://icomoon.io/">IcoMoon</a></td><td><a href="https://ionicons.com/">Ionicons</a></td>
-	</tr>
-	<tr>
-		<td>A set of free MIT-licensed high-quality SVG icons for UI development</td><td>The premium icon font for your next project</td><td>Premium designed icons for use in web, iOS, Android, and desktop apps</td>
-	</tr>
-	<tr>
-		<td><a href="https://opensource.org/license/mit/">Licence: MIT</a> </td><td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a></td><td><a href="https://opensource.org/license/mit/">Licence: MIT</a></td>
-	</tr><tr>
-		<td><a href="https://icons8.com/line-awesome"><img src="https://css.gg/fav/og2.png" alt="Line Awesome"></a></td><td><a href="https://materialdesignicons.com/"><img src="https://css.gg/fav/og2.png" alt="Material Design Icons"></a></td>
-	</tr>
-	<tr>
-		<td><a href="https://icons8.com/line-awesome">Line Awesome</a></td><td><a href="https://materialdesignicons.com/">Material Design Icons</a></td>
-	</tr>
-	<tr>
-		<td>A free alternative to Font Awesome</td><td>Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project</td>
-	</tr>
-	<tr>
-		<td><a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC BY 4.0</a> </td><td><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">Licence: SIL OFL 1.1</a></td>
+		<td><a href="https://github.com/vineethtrv/css-loader/blob/master/LICENSE">Licence: MIT</a> </td><td><a href="https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE">Licence: MIT</a></td><td><a href="https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md">Licence: undefined</a></td>
 	</tr>
 </table>
 </details>
+

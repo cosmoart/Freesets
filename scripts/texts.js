@@ -3,7 +3,7 @@ topTextMD = `<div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
 
-<img src="images/header.png" alt="header" />
+![header](./images/header.png)
 
 <br />
 
@@ -20,14 +20,16 @@ This repository contains a collection of free, high-quality multimedia resources
 
 
 <!-- TABLE OF CONTENTS -->
-<h2>Table of contents</h2>
+## Table of contents
 
-- [Icons](#icons)
-- [Ilustrations](#ilustrations)
-- [Photos](#photos)
-- [Videos](#videos)
-- [Backgrounds/Patterns](#backgroundspatterns)
-- [Loaders](#loaders)`
+- [Icons](#-icons)
+- [Ilustrations](#-ilustrations)
+- [Photos](#-photos)
+- [Videos](#-videos)
+- [Backgrounds/Patterns](#-backgroundspatterns)
+- [Loaders](#-loaders)
+
+`
 
 function tableTemplateMD (props) {
 	const [first = {}, second = {}, third = {}] = props;

@@ -1,66 +1,34 @@
 [
 	{
-		"title": "css.gg",
-		"link": "https://css.gg/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "A pure CSS library of 1000+ icons",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+		"title": "CSS Background Patterns",
+		"link": "https://www.magicpattern.design/tools/css-backgrounds",
+		"img": "https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg",
+		"description": "Beautiful pure CSS background patterns that you can actually use in your projects!",
+		"licence": "\"Free\"",
+		"licencelink": "https://www.magicpattern.design/terms"
 	},
 	{
-		"title": "Feather",
-		"link": "https://feathericons.com/",
-		"img": "/images/icons/feather.webp",
-		"description": "Simply beautiful open source icons",
+		"title": "PatternPad",
+		"link": "https://patternpad.com",
+		"img": "https://patternpad.com/images/patternpad-banner.png",
+		"description": "PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.",
+		"licence": "Free with attribution",
+		"licencelink": "https://patternpad.com"
+	},
+	{
+		"title": "Pattern Monster",
+		"link": "https://pattern.monster",
+		"img": "https://giguom.com/pattern.monster/images//TwitterBG2.png",
+		"description": "A simple online pattern generator to create repeatable SVG patterns. Perfect for website backgrounds, apparel, branding, packaging design and more.",
 		"licence": "MIT",
-		"licencelink": "https://opensource.org/license/mit/"
+		"licencelink": "https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md"
 	},
 	{
-		"title": "Font Awesome",
-		"link": "https://fontawesome.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "The web's most popular icon set and toolkit",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
-	},
-	{
-		"title": "Heroicons",
-		"link": "https://heroicons.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "A set of free MIT-licensed high-quality SVG icons for UI development",
+		"title": "pattern.css",
+		"link": "https://bansal.io/pattern-css",
+		"img": "https://bansal.io/assets/images/pattern-css-preview.jpg",
+		"description": "CSS only library to fill your empty background with beautiful patterns.",
 		"licence": "MIT",
-		"licencelink": "https://opensource.org/license/mit/"
-	},
-	{
-		"title": "IcoMoon",
-		"link": "https://icomoon.io/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "The premium icon font for your next project",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
-	},
-	{
-		"title": "Ionicons",
-		"link": "https://ionicons.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "Premium designed icons for use in web, iOS, Android, and desktop apps",
-		"licence": "MIT",
-		"licencelink": "https://opensource.org/license/mit/"
-	},
-	{
-		"title": "Line Awesome",
-		"link": "https://icons8.com/line-awesome",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "A free alternative to Font Awesome",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
-	},
-	{
-		"title": "Material Design Icons",
-		"link": "https://materialdesignicons.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project",
-		"licence": "SIL OFL 1.1",
-		"licencelink": "https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+		"licencelink": "https://github.com/bansal/pattern.css"
 	}
 ]

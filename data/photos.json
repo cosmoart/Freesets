@@ -1,10 +1,18 @@
 [
 	{
+		"title": "PixaBay",
+		"link": "https://pixabay.com/photos/",
+		"img": "./images/photos/pixabay.webp",
+		"description": "Find high quality royalty free photos for your next project. ✓ Free for commercial use ✓ No attribution required ✓ Photos handpicked by staff.",
+		"licence": "Pixabay License (Free for commercial and noncommercial use. Attribution is not required.)",
+		"licencelink": "https://pixabay.com/es/service/license/"
+	},
+	{
 		"title": "Pexels",
 		"link": "https://www.pexels.com",
 		"img": "./images/photos/pexels.webp",
-		"description": "\"Free stock photos & videos you can use everywhere. Browse millions of high-quality royalty free stock images & copyright free pictures. No attribution required.",
-		"licence": "All photos and videos on Pexels can be downloaded and used for free.\"",
+		"description": "Free stock photos & videos you can use everywhere. Browse millions of high-quality royalty free stock images & copyright free pictures. No attribution required.",
+		"licence": "\"All photos and videos on Pexels can be downloaded and used for free.\"",
 		"licencelink": "https://www.pexels.com/license/"
 	},
 	{
