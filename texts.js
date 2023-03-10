@@ -3,7 +3,7 @@ topTextMD = `<div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
 
-<img src="./images/header.png" alt="Instagram" />
+<img src="images/header.png" alt="header" />
 
 <br />
 
