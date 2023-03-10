@@ -19,7 +19,6 @@ This repository contains a collection of free, high-quality multimedia resources
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <h2>Table of contents</h2>
 
@@ -43,7 +42,7 @@ function tableTemplateMD (props) {
 		<td>${first.description}</td>${second.description ? `<td>${second.description}</td>` : ''}${third.description ? `<td>${third.description}</td>` : ''}
 	</tr>
 	<tr>
-		<td><a href="${first.licencelink}">licence: ${first.licence}</a> </td>${second.licencelink ? `<td><a href="${second.licencelink}">licence: ${second.licence}</a></td>` : ''}${third.licencelink ? `<td><a href="${third.licencelink}">licence: ${third.licence}</a></td>` : ''}
+		<td><a href="${first.licencelink}">Licence: ${first.licence}</a> </td>${second.licencelink ? `<td><a href="${second.licencelink}">Licence: ${second.licence}</a></td>` : ''}${third.licencelink ? `<td><a href="${third.licencelink}">Licence: ${third.licence}</a></td>` : ''}
 	</tr>`
 }
 

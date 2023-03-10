@@ -1,58 +1,50 @@
 [
 	{
-		"title": "css.gg",
-		"link": "https://css.gg/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "A pure CSS library of 1000+ icons",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+		"title": "Flexiple ilustrations",
+		"link": "https://flexiple.com/illustrations/",
+		"img": "https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png",
+		"description": "A new free, open-source and high-quality illustration each day - no attribution needed! Commercial, academic, or your pet project, doesn't matter. Use Scale to beautify your project.",
+		"licence": "\"Put simply, use it in any project. No attribution needed.\"",
+		"licencelink": "https://flexiple.com/illustrations/"
 	},
 	{
-		"title": "Feather",
-		"link": "https://feathericons.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "Simply beautiful open source icons",
+		"title": "Storyset",
+		"link": "https://storyset.com",
+		"img": "./images/ilustrations/storyset.webp",
+		"description": "Awesome free customizable illustrations for your next project",
+		"licence": "\"you must always include the attribution to Storyset every time you use our free illustrations.\"",
+		"licencelink": "https://storyset.com/faqs"
+	},
+	{
+		"title": "Iradesign",
+		"link": "https://iradesign.io",
+		"img": "./images/ilustrations/iradesign.webp",
+		"description": "Build your own amazing illustrations with MIT licensed illustrations",
 		"licence": "MIT",
-		"licencelink": "https://opensource.org/license/mit/"
+		"licencelink": "https://iradesign.io"
 	},
 	{
-		"title": "Font Awesome",
-		"link": "https://fontawesome.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "The web's most popular icon set and toolkit",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+		"title": "Open Doodles",
+		"link": "https://www.opendoodles.com",
+		"img": "https://assets.website-files.com/5d5d5904f8a21bfe5ff69367/5da4cb5454976755fcac7930_seo-doodles.jpg",
+		"description": "A library of sketchy illustrations of people free for personal and commercial use.",
+		"licence": "CC0 1.0",
+		"licencelink": "https://www.opendoodles.com"
 	},
 	{
-		"title": "Heroicons",
-		"link": "https://heroicons.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "A set of free MIT-licensed high-quality SVG icons for UI development",
-		"licence": "MIT",
-		"licencelink": "https://opensource.org/license/mit/"
+		"title": "Big Heads",
+		"link": "https://bigheads.io",
+		"img": "https://bigheads.io/card.png",
+		"description": "Randomly Generated Characters for Your Apps & Games.",
+		"licence": "\"Free for personal and commercial use.\"",
+		"licencelink": "https://bigheads.io"
 	},
 	{
-		"title": "IcoMoon",
-		"link": "https://icomoon.io/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "The premium icon font for your next project",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
-	},
-	{
-		"title": "Ionicons",
-		"link": "https://ionicons.com/",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "Premium designed icons for use in web, iOS, Android, and desktop apps",
-		"licence": "MIT",
-		"licencelink": "https://opensource.org/license/mit/"
-	},
-	{
-		"title": "Line Awesome",
-		"link": "https://icons8.com/line-awesome",
-		"img": "https://css.gg/fav/og2.png",
-		"description": "A free alternative to Font Awesome",
-		"licence": "CC BY 4.0",
-		"licencelink": "https://creativecommons.org/licenses/by/4.0/"
+		"title": "Many Pixels",
+		"link": "https://www.manypixels.co/gallery",
+		"img": "https://www.manypixels.co/Illustrations%20Gallery%20Thumbnails.png",
+		"description": "Download our 2,500+ editable and royalty-free SVG and PNG illustrations to power up your designs.",
+		"licence": "\"You can use the illustrations in any project, commercial or personal without attribution or any costs.\"",
+		"licencelink": "https://www.manypixels.co/gallery"
 	}
 ]
