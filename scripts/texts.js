@@ -3,19 +3,22 @@ topTextMD = `<div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
 
-![header](./images/header.png)
+![header](./images/header.webp)
 
-<br />
+# Free multimedia resources
 
-# Web media resources
+</div>
 
-This repository contains a collection of free, high-quality multimedia resources that you can use in your web projects. Here you will find icons, images, videos, illustrations, sounds and more. All resources are licensed under the Creative Commons or public domain, which means you can use them without asking permission or giving credit to the authors (although it is appreciated). I hope you enjoy these resources and share them with others.
+This repository contains a collection of free, high-quality multimedia resources that you can use in your projects. Here you will find icons, photos, videos, illustrations, patterns and more. All resources have at least one free plan and they are ordered by quality.
 
+I hope you enjoy these resources and if you have any suggestions, please post them in the [discussion section](https://github.com/cosmoart/free-multimedia-resources/discussions) or if you find any errors, please report them in the [issues section](https://github.com/cosmoart/free-multimedia-resources/issues).
+
+<div align="center">
   <a href="https://github.com/cosmoart/free-multimedia-resources">Contribute</a>
   ·
-  <a href="https://github.com/cosmoart/free-multimedia-resources/issues">Report Bug</a>
+  <a href="https://github.com/cosmoart/free-multimedia-resources/issues">Report error</a>
   ·
-  <a href="https://github.com/cosmoart/free-multimedia-resources/discussions">Request Feature</a>
+  <a href="https://github.com/cosmoart/free-multimedia-resources/discussions">Suggest resource</a>
 </div>
 
 
@@ -23,10 +26,10 @@ This repository contains a collection of free, high-quality multimedia resources
 ## Table of contents
 
 - [Icons](#-icons)
-- [Ilustrations](#-ilustrations)
+- [Ilustrations](#%EF%B8%8F-ilustrations)
 - [Photos](#-photos)
 - [Videos](#-videos)
-- [Backgrounds/Patterns](#-backgroundspatterns)
+- [Backgrounds/Patterns](#%EF%B8%8F-backgroundspatterns)
 - [Loaders](#-loaders)
 
 `

@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Google icons",
+		"link": "https://fonts.google.com/icons",
+		"img": "./images/icons/google.webp",
+		"description": "Material Symbols are our newest icons consolidating over 2,500 glyphs in a single font file with a wide range of design variants. ",
+		"licence": "Apache License Version 2.0",
+		"licencelink": "https://www.apache.org/licenses/LICENSE-2.0.html"
+	},
+	{
 		"title": "css.gg",
 		"link": "https://css.gg/",
 		"img": "https://css.gg/fav/og2.png",

@@ -30,5 +30,13 @@
 		"description": "CSS only library to fill your empty background with beautiful patterns.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/bansal/pattern.css"
+	},
+	{
+		"title": "Haikei",
+		"link": "https://haikei.app/generators/",
+		"img": "https://haikei.app/haikei-cover.png",
+		"description": "Our SVG generators let you discover, customize, randomize, and export generative SVG design assets to use in your favorite design tools.",
+		"licence": "Free",
+		"licencelink": "https://haikei.app/pricing/"
 	}
 ]

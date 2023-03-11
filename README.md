@@ -3,19 +3,22 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 
-![header](./images/header.png)
+![header](./images/header.webp)
 
-<br />
+# Free multimedia resources
 
-# Web media resources
+</div>
 
-This repository contains a collection of free, high-quality multimedia resources that you can use in your web projects. Here you will find icons, images, videos, illustrations, sounds and more. All resources are licensed under the Creative Commons or public domain, which means you can use them without asking permission or giving credit to the authors (although it is appreciated). I hope you enjoy these resources and share them with others.
+This repository contains a collection of free, high-quality multimedia resources that you can use in your projects. Here you will find icons, photos, videos, illustrations, patterns and more. All resources have at least one free plan and they are ordered by quality.
 
+I hope you enjoy these resources and if you have any suggestions, please post them in the [discussion section](https://github.com/cosmoart/free-multimedia-resources/discussions) or if you find any errors, please report them in the [issues section](https://github.com/cosmoart/free-multimedia-resources/issues).
+
+<div align="center">
   <a href="https://github.com/cosmoart/free-multimedia-resources">Contribute</a>
   ·
-  <a href="https://github.com/cosmoart/free-multimedia-resources/issues">Report Bug</a>
+  <a href="https://github.com/cosmoart/free-multimedia-resources/issues">Report error</a>
   ·
-  <a href="https://github.com/cosmoart/free-multimedia-resources/discussions">Request Feature</a>
+  <a href="https://github.com/cosmoart/free-multimedia-resources/discussions">Suggest resource</a>
 </div>
 
 
@@ -23,10 +26,10 @@ This repository contains a collection of free, high-quality multimedia resources
 ## Table of contents
 
 - [Icons](#-icons)
-- [Ilustrations](#-ilustrations)
+- [Ilustrations](#%EF%B8%8F-ilustrations)
 - [Photos](#-photos)
 - [Videos](#-videos)
-- [Backgrounds/Patterns](#-backgroundspatterns)
+- [Backgrounds/Patterns](#%EF%B8%8F-backgroundspatterns)
 - [Loaders](#-loaders)
 
 
@@ -36,27 +39,38 @@ This repository contains a collection of free, high-quality multimedia resources
 
 <table>
 <tr>
-		<td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td><td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td>
+		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td><td><a href="https://www.svgrepo.com">SVGrepo</a></td>
+		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td>
 	</tr>
 	<tr>
-		<td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td><td>500.000+ Open-licensed SVG Vector and Icons</td>
+		<td>Material Symbols are our newest icons consolidating over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
 	</tr>
 	<tr>
-		<td><a href="https://css.gg/doc/licence">Licence: MIT</a> </td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td><td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a></td>
+		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td><td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td><td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
+		<td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td><td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://iconmonstr.com">Iconmonstr</a></td><td><a href="https://keyicons.com">Keyicons</a></td><td><a href="http://zwicon.com">Zwicon</a></td>
+		<td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td><td><a href="https://keyicons.com">Keyicons</a></td>
 	</tr>
 	<tr>
-		<td>Free simple icons for your next project</td><td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td><td>The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.</td>
+		<td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td><td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td>
 	</tr>
 	<tr>
-		<td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a> </td><td><a href="https://keyicons.com">Licence: CC BY 4.0</a></td><td><a href="http://zwicon.com/how-to-use.html">Licence: CC BY-ND 4.0</a></td>
+		<td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a> </td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td><td><a href="https://keyicons.com">Licence: CC BY 4.0</a></td>
+	</tr><tr>
+		<td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
+	</tr>
+	<tr>
+		<td><a href="http://zwicon.com">Zwicon</a></td>
+	</tr>
+	<tr>
+		<td>The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.</td>
+	</tr>
+	<tr>
+		<td><a href="http://zwicon.com/how-to-use.html">Licence: CC BY-ND 4.0</a> </td>
 	</tr>
 </table>
 </details>
@@ -164,16 +178,16 @@ This repository contains a collection of free, high-quality multimedia resources
 	<tr>
 		<td><a href="https://www.magicpattern.design/terms">Licence: "Free"</a> </td><td><a href="https://patternpad.com">Licence: Free with attribution</a></td><td><a href="https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://bansal.io/pattern-css"><img src="https://bansal.io/assets/images/pattern-css-preview.jpg" alt="pattern.css"></a></td>
+		<td><a href="https://bansal.io/pattern-css"><img src="https://bansal.io/assets/images/pattern-css-preview.jpg" alt="pattern.css"></a></td><td><a href="https://haikei.app/generators/"><img src="https://haikei.app/haikei-cover.png" alt="Haikei"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://bansal.io/pattern-css">pattern.css</a></td>
+		<td><a href="https://bansal.io/pattern-css">pattern.css</a></td><td><a href="https://haikei.app/generators/">Haikei</a></td>
 	</tr>
 	<tr>
-		<td>CSS only library to fill your empty background with beautiful patterns.</td>
+		<td>CSS only library to fill your empty background with beautiful patterns.</td><td>Our SVG generators let you discover, customize, randomize, and export generative SVG design assets to use in your favorite design tools.</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/bansal/pattern.css">Licence: MIT</a> </td>
+		<td><a href="https://github.com/bansal/pattern.css">Licence: MIT</a> </td><td><a href="https://haikei.app/pricing/">Licence: Free</a></td>
 	</tr>
 </table>
 </details>
