@@ -22,5 +22,29 @@
 		"description": "Picography offers gorgeous high-resolution free photos. Our free stock photos can be used for any project. No attribution needed. Download your favorites.",
 		"licence": "CC0 1.0",
 		"licencelink": "https://picography.co/terms/"
+	},
+	{
+		"title": "Unsplash",
+		"link": "https://unsplash.com",
+		"img": "./images/photos/unsplash.webp",
+		"description": "The internet’s source of freely-usable images. Powered by creators everywhere.",
+		"licence": "Free for Commercial and non-commercial purposes. No attribution required.",
+		"licencelink": "https://unsplash.com/license"
+	},
+	{
+		"title": "StockSnap",
+		"link": "https://stocksnap.io",
+		"img": "https://stocksnap.io/img/stocksnap_og.png",
+		"description": "The best source for free, CC0, do-what-you-want-with stock photos. No attribution required.",
+		"licence": "CC0 1.0",
+		"licencelink": "https://stocksnap.io/license"
+	},
+	{
+		"title": "Nappy",
+		"link": "https://nappy.co",
+		"img": "https://nappy.co/public/img/meta_header.jpg",
+		"description": "Beautiful photos of Black and Brown people, for free. For commercial and personal use.",
+		"licence": "CC0 1.0",
+		"licencelink": "https://nappy.co/license"
 	}
 ]

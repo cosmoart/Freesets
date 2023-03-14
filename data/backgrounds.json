@@ -8,14 +8,6 @@
 		"licencelink": "https://www.magicpattern.design/terms"
 	},
 	{
-		"title": "PatternPad",
-		"link": "https://patternpad.com",
-		"img": "https://patternpad.com/images/patternpad-banner.png",
-		"description": "PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.",
-		"licence": "Free with attribution",
-		"licencelink": "https://patternpad.com"
-	},
-	{
 		"title": "Pattern Monster",
 		"link": "https://pattern.monster",
 		"img": "https://giguom.com/pattern.monster/images//TwitterBG2.png",
@@ -38,5 +30,21 @@
 		"description": "Our SVG generators let you discover, customize, randomize, and export generative SVG design assets to use in your favorite design tools.",
 		"licence": "Free",
 		"licencelink": "https://haikei.app/pricing/"
+	},
+	{
+		"title": "Hero Patterns",
+		"link": "https://www.heropatterns.com",
+		"img": "./images/backgrounds/heropatterns.webp",
+		"description": "A collection of repeatable SVG background patterns for you to use on your web projects.",
+		"licence": "CC BY 4.0",
+		"licencelink": "https://heropatterns.com"
+	},
+	{
+		"title": "PatternPad",
+		"link": "https://patternpad.com",
+		"img": "https://patternpad.com/images/patternpad-banner.png",
+		"description": "PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.",
+		"licence": "Free with attribution",
+		"licencelink": "https://patternpad.com"
 	}
 ]

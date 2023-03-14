@@ -45,7 +45,7 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td>
 	</tr>
 	<tr>
-		<td>Material Symbols are our newest icons consolidating over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
+		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
 	</tr>
 	<tr>
 		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td>
@@ -124,6 +124,17 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 	</tr>
 	<tr>
 		<td><a href="https://pixabay.com/es/service/license/">Licence: Pixabay License (Free for commercial and noncommercial use. Attribution is not required.)</a> </td><td><a href="https://www.pexels.com/license/">Licence: "All photos and videos on Pexels can be downloaded and used for free."</a></td><td><a href="https://picography.co/terms/">Licence: CC0 1.0</a></td>
+	</tr><tr>
+		<td><a href="https://unsplash.com"><img src="./images/photos/unsplash.webp" alt="Unsplash"></a></td><td><a href="https://stocksnap.io"><img src="https://stocksnap.io/img/stocksnap_og.png" alt="StockSnap"></a></td><td><a href="https://nappy.co"><img src="https://nappy.co/public/img/meta_header.jpg" alt="Nappy"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://unsplash.com">Unsplash</a></td><td><a href="https://stocksnap.io">StockSnap</a></td><td><a href="https://nappy.co">Nappy</a></td>
+	</tr>
+	<tr>
+		<td>The internet’s source of freely-usable images. Powered by creators everywhere.</td><td>The best source for free, CC0, do-what-you-want-with stock photos. No attribution required.</td><td>Beautiful photos of Black and Brown people, for free. For commercial and personal use.</td>
+	</tr>
+	<tr>
+		<td><a href="https://unsplash.com/license">Licence: Free for Commercial and non-commercial purposes. No attribution required.</a> </td><td><a href="https://stocksnap.io/license">Licence: CC0 1.0</a></td><td><a href="https://nappy.co/license">Licence: CC0 1.0</a></td>
 	</tr>
 </table>
 </details>
@@ -167,27 +178,27 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://www.magicpattern.design/tools/css-backgrounds"><img src="https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg" alt="CSS Background Patterns"></a></td><td><a href="https://patternpad.com"><img src="https://patternpad.com/images/patternpad-banner.png" alt="PatternPad"></a></td><td><a href="https://pattern.monster"><img src="https://giguom.com/pattern.monster/images//TwitterBG2.png" alt="Pattern Monster"></a></td>
+		<td><a href="https://www.magicpattern.design/tools/css-backgrounds"><img src="https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg" alt="CSS Background Patterns"></a></td><td><a href="https://pattern.monster"><img src="https://giguom.com/pattern.monster/images//TwitterBG2.png" alt="Pattern Monster"></a></td><td><a href="https://bansal.io/pattern-css"><img src="https://bansal.io/assets/images/pattern-css-preview.jpg" alt="pattern.css"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://www.magicpattern.design/tools/css-backgrounds">CSS Background Patterns</a></td><td><a href="https://patternpad.com">PatternPad</a></td><td><a href="https://pattern.monster">Pattern Monster</a></td>
+		<td><a href="https://www.magicpattern.design/tools/css-backgrounds">CSS Background Patterns</a></td><td><a href="https://pattern.monster">Pattern Monster</a></td><td><a href="https://bansal.io/pattern-css">pattern.css</a></td>
 	</tr>
 	<tr>
-		<td>Beautiful pure CSS background patterns that you can actually use in your projects!</td><td>PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.</td><td>A simple online pattern generator to create repeatable SVG patterns. Perfect for website backgrounds, apparel, branding, packaging design and more.</td>
+		<td>Beautiful pure CSS background patterns that you can actually use in your projects!</td><td>A simple online pattern generator to create repeatable SVG patterns. Perfect for website backgrounds, apparel, branding, packaging design and more.</td><td>CSS only library to fill your empty background with beautiful patterns.</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.magicpattern.design/terms">Licence: "Free"</a> </td><td><a href="https://patternpad.com">Licence: Free with attribution</a></td><td><a href="https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md">Licence: MIT</a></td>
+		<td><a href="https://www.magicpattern.design/terms">Licence: "Free"</a> </td><td><a href="https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md">Licence: MIT</a></td><td><a href="https://github.com/bansal/pattern.css">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://bansal.io/pattern-css"><img src="https://bansal.io/assets/images/pattern-css-preview.jpg" alt="pattern.css"></a></td><td><a href="https://haikei.app/generators/"><img src="https://haikei.app/haikei-cover.png" alt="Haikei"></a></td>
+		<td><a href="https://haikei.app/generators/"><img src="https://haikei.app/haikei-cover.png" alt="Haikei"></a></td><td><a href="https://www.heropatterns.com"><img src="./images/backgrounds/heropatterns.webp" alt="Hero Patterns"></a></td><td><a href="https://patternpad.com"><img src="https://patternpad.com/images/patternpad-banner.png" alt="PatternPad"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://bansal.io/pattern-css">pattern.css</a></td><td><a href="https://haikei.app/generators/">Haikei</a></td>
+		<td><a href="https://haikei.app/generators/">Haikei</a></td><td><a href="https://www.heropatterns.com">Hero Patterns</a></td><td><a href="https://patternpad.com">PatternPad</a></td>
 	</tr>
 	<tr>
-		<td>CSS only library to fill your empty background with beautiful patterns.</td><td>Our SVG generators let you discover, customize, randomize, and export generative SVG design assets to use in your favorite design tools.</td>
+		<td>Our SVG generators let you discover, customize, randomize, and export generative SVG design assets to use in your favorite design tools.</td><td>A collection of repeatable SVG background patterns for you to use on your web projects.</td><td>PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/bansal/pattern.css">Licence: MIT</a> </td><td><a href="https://haikei.app/pricing/">Licence: Free</a></td>
+		<td><a href="https://haikei.app/pricing/">Licence: Free</a> </td><td><a href="https://heropatterns.com">Licence: CC BY 4.0</a></td><td><a href="https://patternpad.com">Licence: Free with attribution</a></td>
 	</tr>
 </table>
 </details>
@@ -199,16 +210,27 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://cssloaders.github.io"><img src="https://cssloaders.github.io/images/Loader-screen.png" alt="CSS loaders and spinners"></a></td><td><a href="https://uiball.com/loaders/"><img src="./images/loaders/uiball-loaders.webp" alt="Loaders"></a></td><td><a href="https://samherbert.net/svg-loaders/"><img src="./images/loaders/svg-loaders.webp" alt="SVG Loaders"></a></td>
+		<td><a href="https://uiball.com/loaders/"><img src="./images/loaders/uiball-loaders.webp" alt="Loaders"></a></td><td><a href="https://loaders.holasvg.com"><img src="https://loaders.holasvg.com/holasvg-loaders.gif" alt="Hola svg"></a></td><td><a href="https://samherbert.net/svg-loaders/"><img src="./images/loaders/svg-loaders.webp" alt="SVG Loaders"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://cssloaders.github.io">CSS loaders and spinners</a></td><td><a href="https://uiball.com/loaders/">Loaders</a></td><td><a href="https://samherbert.net/svg-loaders/">SVG Loaders</a></td>
+		<td><a href="https://uiball.com/loaders/">Loaders</a></td><td><a href="https://loaders.holasvg.com">Hola svg</a></td><td><a href="https://samherbert.net/svg-loaders/">SVG Loaders</a></td>
 	</tr>
 	<tr>
-		<td>CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.</td><td>Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG. Available for copypasta or as a tree-shakeable React component library.</td><td>Loading icons and small animations built with pure SVG.</td>
+		<td>Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG. Available for copypasta or as a tree-shakeable React component library.</td><td>Free SVG Loader Generator</td><td>Loading icons and small animations built with pure SVG.</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/vineethtrv/css-loader/blob/master/LICENSE">Licence: MIT</a> </td><td><a href="https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE">Licence: MIT</a></td><td><a href="https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md">Licence: undefined</a></td>
+		<td><a href="https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE">Licence: MIT</a> </td><td><a href="https://loaders.holasvg.com">Licence: MIT</a></td><td><a href="https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md">Licence: MIT</a></td>
+	</tr><tr>
+		<td><a href="https://cssloaders.github.io"><img src="https://cssloaders.github.io/images/Loader-screen.png" alt="CSS loaders and spinners"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://cssloaders.github.io">CSS loaders and spinners</a></td>
+	</tr>
+	<tr>
+		<td>CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.</td>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/vineethtrv/css-loader/blob/master/LICENSE">Licence: MIT</a> </td>
 	</tr>
 </table>
 </details>

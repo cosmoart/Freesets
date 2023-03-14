@@ -1,13 +1,5 @@
 [
 	{
-		"title": "CSS loaders and spinners",
-		"link": "https://cssloaders.github.io",
-		"img": "https://cssloaders.github.io/images/Loader-screen.png",
-		"description": "CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.",
-		"licence": "MIT",
-		"licencelink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE"
-	},
-	{
 		"title": "Loaders",
 		"link": "https://uiball.com/loaders/",
 		"img": "./images/loaders/uiball-loaders.webp",
@@ -16,10 +8,27 @@
 		"licencelink": "https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE"
 	},
 	{
+		"title": "Hola svg",
+		"link": "https://loaders.holasvg.com",
+		"img": "https://loaders.holasvg.com/holasvg-loaders.gif",
+		"description": "Free SVG Loader Generator",
+		"licence": "MIT",
+		"licencelink": "https://loaders.holasvg.com"
+	},
+	{
 		"title": "SVG Loaders",
 		"link": "https://samherbert.net/svg-loaders/",
 		"img": "./images/loaders/svg-loaders.webp",
 		"description": "Loading icons and small animations built with pure SVG.",
+		"licence": "MIT",
 		"licencelink": "https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md"
+	},
+	{
+		"title": "CSS loaders and spinners",
+		"link": "https://cssloaders.github.io",
+		"img": "https://cssloaders.github.io/images/Loader-screen.png",
+		"description": "CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.",
+		"licence": "MIT",
+		"licencelink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE"
 	}
 ]
