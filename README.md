@@ -39,38 +39,38 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td>
+		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://tabler-icons.io"><img src="https://tabler-icons.io/img/tabler-icons/og.png" alt="Tabler icons"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td>
+		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://tabler-icons.io">Tabler icons</a></td><td><a href="https://css.gg/">css.gg</a></td>
 	</tr>
 	<tr>
-		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
+		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.</td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td>
+		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://github.com/tabler/tabler-icons/blob/master/LICENSE">Licence: MIT</a></td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td><td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td>
+		<td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td><td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td><td><a href="https://keyicons.com">Keyicons</a></td>
+		<td><a href="https://feathericons.com/">Feather icons</a></td><td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td>
 	</tr>
 	<tr>
-		<td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td><td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td>
+		<td>Simply beautiful open source icons</td><td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a> </td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td><td><a href="https://keyicons.com">Licence: CC BY 4.0</a></td>
+		<td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a> </td><td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a></td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td>
 	</tr><tr>
-		<td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
+		<td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td><td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
 	</tr>
 	<tr>
-		<td><a href="http://zwicon.com">Zwicon</a></td>
+		<td><a href="https://keyicons.com">Keyicons</a></td><td><a href="http://zwicon.com">Zwicon</a></td>
 	</tr>
 	<tr>
-		<td>The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.</td>
+		<td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td><td>The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.</td>
 	</tr>
 	<tr>
-		<td><a href="http://zwicon.com/how-to-use.html">Licence: CC BY-ND 4.0</a> </td>
+		<td><a href="https://keyicons.com">Licence: CC BY 4.0</a> </td><td><a href="http://zwicon.com/how-to-use.html">Licence: CC BY-ND 4.0</a></td>
 	</tr>
 </table>
 </details>
@@ -82,27 +82,60 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://flexiple.com/illustrations/"><img src="https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png" alt="Flexiple ilustrations"></a></td><td><a href="https://storyset.com"><img src="./images/ilustrations/storyset.webp" alt="Storyset"></a></td><td><a href="https://iradesign.io"><img src="./images/ilustrations/iradesign.webp" alt="Iradesign"></a></td>
+		<td><a href="https://www.reshot.com/free-vector-illustrations/"><img src="https://www.reshot.com/static/illustrations/og/reshot-free-illustrations.png" alt="Reshot"></a></td><td><a href="https://undraw.co/illustrations"><img src="./images/ilustrations/undraw.webp" alt="unDraw"></a></td><td><a href="https://designs.ai/graphicmaker"><img src="./images/ilustrations/designsai.webp" alt="Designs AI"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://flexiple.com/illustrations/">Flexiple ilustrations</a></td><td><a href="https://storyset.com">Storyset</a></td><td><a href="https://iradesign.io">Iradesign</a></td>
+		<td><a href="https://www.reshot.com/free-vector-illustrations/">Reshot</a></td><td><a href="https://undraw.co/illustrations">unDraw</a></td><td><a href="https://designs.ai/graphicmaker">Designs AI</a></td>
 	</tr>
 	<tr>
-		<td>A new free, open-source and high-quality illustration each day - no attribution needed!</td><td>Awesome free customizable illustrations for your next project</td><td>Build your own amazing illustrations with MIT licensed illustrations</td>
+		<td>Download free vector illustrations for commercial use with no attribution so you can design freely.</td><td>The design project with open-source illustrations for any idea you can imagine and create.</td><td>Get beautiful and customizable SVG, PNG and Vector illustrations that match you brand identity.</td>
 	</tr>
 	<tr>
-		<td><a href="https://flexiple.com/illustrations/">Licence: "Put simply, use it in any project. No attribution needed."</a> </td><td><a href="https://storyset.com/faqs">Licence: "you must always include the attribution to Storyset every time you use our free illustrations."</a></td><td><a href="https://iradesign.io">Licence: MIT</a></td>
+		<td><a href="https://www.reshot.com/license/">Licence: Reshot Free License</a> </td><td><a href="https://undraw.co/license">Licence: "You can use the illustrations in any project, commercial or personal without attribution or any costs"</a></td><td><a href="https://designs.ai/dos-and-donts">Licence: "Free for Personal and Commercial usage with attribution."</a></td>
 	</tr><tr>
-		<td><a href="https://www.opendoodles.com"><img src="https://assets.website-files.com/5d5d5904f8a21bfe5ff69367/5da4cb5454976755fcac7930_seo-doodles.jpg" alt="Open Doodles"></a></td><td><a href="https://bigheads.io"><img src="https://bigheads.io/card.png" alt="Big Heads"></a></td><td><a href="https://www.manypixels.co/gallery"><img src="https://www.manypixels.co/Illustrations%20Gallery%20Thumbnails.png" alt="Many Pixels"></a></td>
+		<td><a href="https://iradesign.io"><img src="./images/ilustrations/iradesign.webp" alt="Iradesign"></a></td><td><a href="https://www.opendoodles.com"><img src="https://assets.website-files.com/5d5d5904f8a21bfe5ff69367/5da4cb5454976755fcac7930_seo-doodles.jpg" alt="Open Doodles"></a></td><td><a href="https://bigheads.io"><img src="https://bigheads.io/card.png" alt="Big Heads"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://www.opendoodles.com">Open Doodles</a></td><td><a href="https://bigheads.io">Big Heads</a></td><td><a href="https://www.manypixels.co/gallery">Many Pixels</a></td>
+		<td><a href="https://iradesign.io">Iradesign</a></td><td><a href="https://www.opendoodles.com">Open Doodles</a></td><td><a href="https://bigheads.io">Big Heads</a></td>
 	</tr>
 	<tr>
-		<td>A library of sketchy illustrations of people free for personal and commercial use.</td><td>Randomly Generated Characters for Your Apps & Games.</td><td>Download our 2,500+ editable and royalty-free SVG and PNG illustrations to power up your designs.</td>
+		<td>Build your own amazing illustrations with MIT licensed illustrations</td><td>A library of sketchy illustrations of people free for personal and commercial use.</td><td>Randomly Generated Characters for Your Apps & Games.</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.opendoodles.com">Licence: CC0 1.0</a> </td><td><a href="https://bigheads.io">Licence: "Free for personal and commercial use."</a></td><td><a href="https://www.manypixels.co/gallery">Licence: "You can use the illustrations in any project, commercial or personal without attribution or any costs."</a></td>
+		<td><a href="https://iradesign.io">Licence: MIT</a> </td><td><a href="https://www.opendoodles.com">Licence: CC0 1.0</a></td><td><a href="https://bigheads.io">Licence: "Free for personal and commercial use."</a></td>
+	</tr><tr>
+		<td><a href="https://www.manypixels.co/gallery"><img src="https://www.manypixels.co/Illustrations%20Gallery%20Thumbnails.png" alt="Many Pixels"></a></td><td><a href="https://www.humaaans.com/"><img src="https://assets.website-files.com/5bff8886c3964a992e90d465/5c050a75fc73fba30bf816f1_seo-rectangle.jpg" alt="Humaaans"></a></td><td><a href="https://fresh-folk.com"><img src="https://fresh-folk.com/assets/images/card.jpg" alt="Fresh Folk"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.manypixels.co/gallery">Many Pixels</a></td><td><a href="https://www.humaaans.com/">Humaaans</a></td><td><a href="https://fresh-folk.com">Fresh Folk</a></td>
+	</tr>
+	<tr>
+		<td>Download our 2,500+ editable and royalty-free SVG and PNG illustrations to power up your designs.</td><td>Mix-&-match illustrations of people with a design library for InVIsion Studio and Sketch.</td><td>An illustration library of people and objects.</td>
+	</tr>
+	<tr>
+		<td><a href="https://www.manypixels.co/gallery">Licence: "You can use the illustrations in any project, commercial or personal without attribution or any costs."</a> </td><td><a href="https://www.humaaans.com/">Licence: CC0</a></td><td><a href="https://fresh-folk.com">Licence: CC BY-NC-ND 4.0</a></td>
+	</tr><tr>
+		<td><a href="https://flexiple.com/illustrations/"><img src="https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png" alt="Flexiple ilustrations"></a></td><td><a href="https://storyset.com"><img src="./images/ilustrations/storyset.webp" alt="Storyset"></a></td><td><a href="https://themeisle.com/illustrations/"><img src="./images/ilustrations/themeisle.webp" alt="Theme Isle"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://flexiple.com/illustrations/">Flexiple ilustrations</a></td><td><a href="https://storyset.com">Storyset</a></td><td><a href="https://themeisle.com/illustrations/">Theme Isle</a></td>
+	</tr>
+	<tr>
+		<td>A new free, open-source and high-quality illustration each day - no attribution needed!</td><td>Awesome free customizable illustrations for your next project</td><td>Find & Download the most popular Illustrations ✓ Free for commercial use ✓ High Quality Images ✓ Made for Creative Projects.</td>
+	</tr>
+	<tr>
+		<td><a href="https://flexiple.com/illustrations/">Licence: "Put simply, use it in any project. No attribution needed."</a> </td><td><a href="https://storyset.com/faqs">Licence: Free for Personal and Commercial usage with attribution.</a></td><td><a href="https://themeisle.com/illustrations/">Licence: "All images and vectors published on Themeisle can be used for free. You can use them for noncommercial and commercial purposes."</a></td>
+	</tr><tr>
+		<td><a href="https://www.drawkit.com/?pricing-type=Free"><img src="./images/ilustrations/drawkit.webp" alt="DrawKit"></a></td><td><a href="https://delesign.com/free-designs/graphics/illustration"><img src="./images/ilustrations/delesign.webp" alt="Delesign"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.drawkit.com/?pricing-type=Free">DrawKit</a></td><td><a href="https://delesign.com/free-designs/graphics/illustration">Delesign</a></td>
+	</tr>
+	<tr>
+		<td>REQUIRE LOGIN TO USE. Browse all our creative contents. 2D illustrations, icons, 3D, animations, mockups and many more.</td><td>REQUIRE LOGIN TO USE. Use our royalty-free Illustrations for your website, social media, blog, email newsletters, and anything else.</td>
+	</tr>
+	<tr>
+		<td><a href="https://www.drawkit.com/license">Licence: DrawKit License (Free for Personal and Commercial. No attribution required.)</a> </td><td><a href="https://delesign.com/free-designs/free-license/">Licence: Delesign License (Free for Personal and Commercial. No attribution required.)</a></td>
 	</tr>
 </table>
 </details>

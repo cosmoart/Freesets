@@ -8,6 +8,14 @@
 		"licencelink": "https://www.apache.org/licenses/LICENSE-2.0.html"
 	},
 	{
+		"title": "Tabler icons",
+		"link": "https://tabler-icons.io",
+		"img": "https://tabler-icons.io/img/tabler-icons/og.png",
+		"description": "Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.",
+		"licence": "MIT",
+		"licencelink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+	},
+	{
 		"title": "css.gg",
 		"link": "https://css.gg/",
 		"img": "https://css.gg/fav/og2.png",
