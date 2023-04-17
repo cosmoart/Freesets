@@ -39,38 +39,49 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://tabler-icons.io"><img src="https://tabler-icons.io/img/tabler-icons/og.png" alt="Tabler icons"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td>
+		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://tabler-icons.io"><img src="https://tabler-icons.io/img/tabler-icons/og.png" alt="Tabler icons"></a></td><td><a href="https://heroicons.com/"><img src="./images/icons/heroicons.webp" alt="Hero icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://tabler-icons.io">Tabler icons</a></td><td><a href="https://css.gg/">css.gg</a></td>
+		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://tabler-icons.io">Tabler icons</a></td><td><a href="https://heroicons.com/">Hero icons</a></td>
 	</tr>
 	<tr>
-		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.</td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td>
+		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.</td><td>Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://github.com/tabler/tabler-icons/blob/master/LICENSE">Licence: MIT</a></td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td>
+		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://github.com/tabler/tabler-icons/blob/master/LICENSE">Licence: MIT</a></td><td><a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td><td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td>
+		<td><a href="https://remixicon.com/"><img src="./images/icons/remixicon.webp" alt="Remix icons"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://feathericons.com/">Feather icons</a></td><td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td>
+		<td><a href="https://remixicon.com/">Remix icons</a></td><td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td>
 	</tr>
 	<tr>
-		<td>Simply beautiful open source icons</td><td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td>
+		<td>Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.</td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a> </td><td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a></td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td>
+		<td><a href="https://github.com/Remix-Design/RemixIcon/blob/master/License">Licence: Apache License Version 2.0</a> </td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td><td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
+		<td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td><td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://keyicons.com">Keyicons</a></td><td><a href="http://zwicon.com">Zwicon</a></td>
+		<td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td><td><a href="https://keyicons.com">Keyicons</a></td>
 	</tr>
 	<tr>
-		<td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td><td>The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.</td>
+		<td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td><td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td>
 	</tr>
 	<tr>
-		<td><a href="https://keyicons.com">Licence: CC BY 4.0</a> </td><td><a href="http://zwicon.com/how-to-use.html">Licence: CC BY-ND 4.0</a></td>
+		<td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a> </td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td><td><a href="https://keyicons.com">Licence: CC BY 4.0</a></td>
+	</tr><tr>
+		<td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
+	</tr>
+	<tr>
+		<td><a href="http://zwicon.com">Zwicon</a></td>
+	</tr>
+	<tr>
+		<td>The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.</td>
+	</tr>
+	<tr>
+		<td><a href="http://zwicon.com/how-to-use.html">Licence: CC BY-ND 4.0</a> </td>
 	</tr>
 </table>
 </details>
@@ -243,27 +254,27 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://uiball.com/loaders/"><img src="./images/loaders/uiball-loaders.webp" alt="Loaders"></a></td><td><a href="https://loaders.holasvg.com"><img src="https://loaders.holasvg.com/holasvg-loaders.gif" alt="Hola svg"></a></td><td><a href="https://samherbert.net/svg-loaders/"><img src="./images/loaders/svg-loaders.webp" alt="SVG Loaders"></a></td>
+		<td><a href="https://10015.io/tools/css-loader-generator"><img src="./images/loaders/css_tools.webp" alt="10015 Tools - CSS Loader Generator"></a></td><td><a href="https://uiball.com/loaders/"><img src="./images/loaders/uiball-loaders.webp" alt="Loaders"></a></td><td><a href="https://loaders.holasvg.com"><img src="https://loaders.holasvg.com/holasvg-loaders.gif" alt="Hola svg"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://uiball.com/loaders/">Loaders</a></td><td><a href="https://loaders.holasvg.com">Hola svg</a></td><td><a href="https://samherbert.net/svg-loaders/">SVG Loaders</a></td>
+		<td><a href="https://10015.io/tools/css-loader-generator">10015 Tools - CSS Loader Generator</a></td><td><a href="https://uiball.com/loaders/">Loaders</a></td><td><a href="https://loaders.holasvg.com">Hola svg</a></td>
 	</tr>
 	<tr>
-		<td>Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG. Available for copypasta or as a tree-shakeable React component library.</td><td>Free SVG Loader Generator</td><td>Loading icons and small animations built with pure SVG.</td>
+		<td>Online CSS Loader Generator is a free tool for generating CSS loaders</td><td>Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG. Available for copypasta or as a tree-shakeable React component library.</td><td>Free SVG Loader Generator</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE">Licence: MIT</a> </td><td><a href="https://loaders.holasvg.com">Licence: MIT</a></td><td><a href="https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md">Licence: MIT</a></td>
+		<td><a href="https://10015.io/tools/css-loader-generator">Licence: Free</a> </td><td><a href="https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE">Licence: MIT</a></td><td><a href="https://loaders.holasvg.com">Licence: MIT</a></td>
 	</tr><tr>
-		<td><a href="https://cssloaders.github.io"><img src="https://cssloaders.github.io/images/Loader-screen.png" alt="CSS loaders and spinners"></a></td>
+		<td><a href="https://samherbert.net/svg-loaders/"><img src="./images/loaders/svg-loaders.webp" alt="SVG Loaders"></a></td><td><a href="https://cssloaders.github.io"><img src="https://cssloaders.github.io/images/Loader-screen.png" alt="CSS loaders and spinners"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://cssloaders.github.io">CSS loaders and spinners</a></td>
+		<td><a href="https://samherbert.net/svg-loaders/">SVG Loaders</a></td><td><a href="https://cssloaders.github.io">CSS loaders and spinners</a></td>
 	</tr>
 	<tr>
-		<td>CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.</td>
+		<td>Loading icons and small animations built with pure SVG.</td><td>CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/vineethtrv/css-loader/blob/master/LICENSE">Licence: MIT</a> </td>
+		<td><a href="https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md">Licence: MIT</a> </td><td><a href="https://github.com/vineethtrv/css-loader/blob/master/LICENSE">Licence: MIT</a></td>
 	</tr>
 </table>
 </details>

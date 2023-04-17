@@ -16,6 +16,22 @@
 		"licencelink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
 	},
 	{
+		"title": "Hero icons",
+		"link": "https://heroicons.com/",
+		"img": "./images/icons/heroicons.webp",
+		"description": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
+		"licence": "MIT",
+		"licencelink": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+	},
+	{
+		"title": "Remix icons",
+		"link": "https://remixicon.com/",
+		"img": "./images/icons/remixicon.webp",
+		"description": "Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.",
+		"licence": "Apache License Version 2.0",
+		"licencelink": "https://github.com/Remix-Design/RemixIcon/blob/master/License"
+	},
+	{
 		"title": "css.gg",
 		"link": "https://css.gg/",
 		"img": "https://css.gg/fav/og2.png",
