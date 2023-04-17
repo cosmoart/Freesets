@@ -16,6 +16,14 @@
 		"licencelink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
 	},
 	{
+		"title": "Iconify",
+		"link": "https://iconify.design/",
+		"img": "./images/icons/iconify.webp",
+		"description": "All popular icon sets, one framework. Over 150,000 open source vector icons.",
+		"licence": "MIT. This license does not apply to all icons, Icon sets use various open source licenses, see each icon set for details.",
+		"licencelink": "https://iconify.design/license/"
+	},
+	{
 		"title": "Hero icons",
 		"link": "https://heroicons.com/",
 		"img": "./images/icons/heroicons.webp",
@@ -30,6 +38,22 @@
 		"description": "Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.",
 		"licence": "Apache License Version 2.0",
 		"licencelink": "https://github.com/Remix-Design/RemixIcon/blob/master/License"
+	},
+	{
+		"title": "Simple icons",
+		"link": "https://simpleicons.org/images/og.png",
+		"img": "https://simpleicons.org/images/og.png",
+		"description": "2449 Free SVG icons for popular brands",
+		"licence": "Creative Commons Zero v1.0 Universal",
+		"licencelink": "https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md"
+	},
+	{
+		"title": "svgl",
+		"link": "https://svgl.vercel.app",
+		"img": "https://svgl.vercel.app/images/screenshot.png",
+		"description": "A beautiful library with SVG logos.",
+		"licence": "MIT",
+		"licencelink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
 	},
 	{
 		"title": "css.gg",
@@ -48,6 +72,14 @@
 		"licencelink": "https://github.com/feathericons/feather/blob/master/LICENSE"
 	},
 	{
+		"title": "Ikonate",
+		"link": "https://ikonate.com/cover.png",
+		"img": "https://ikonate.com/cover.png",
+		"description": "Customise, adjust and download free vector icons.",
+		"licence": "MIT",
+		"licencelink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
+	},
+	{
 		"title": "SVGrepo",
 		"link": "https://www.svgrepo.com",
 		"img": "https://www.svgrepo.com/social.png",
@@ -64,12 +96,52 @@
 		"licencelink": "https://iconmonstr.com/license/"
 	},
 	{
+		"title": "Iconoir",
+		"link": "https://iconoir.com/",
+		"img": "./images/icons/iconoir.webp",
+		"description": "Iconoir is the biggest open source icon library that provides a massive selection of high-quality icons.",
+		"licence": "MIT",
+		"licencelink": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE"
+	},
+	{
+		"title": "MingCute",
+		"link": "https://www.mingcute.com",
+		"img": "./images/icons/mingcute.webp",
+		"description": "MingCute Icon is a set of simple and exquisite open-source icon library.",
+		"licence": "Apache License Version 2.0",
+		"licencelink": "https://github.com/Richard9394/MingCute/blob/main/LICENSE"
+	},
+	{
+		"title": "Boxicons",
+		"link": "https://boxicons.co",
+		"img": "./images/icons/boxicons.webp",
+		"description": "Boxicons is a free collection of carefully crafted open source icons.",
+		"licence": "MIT",
+		"licencelink": "https://boxicons.com/usage#license"
+	},
+	{
+		"title": "Fontawesome",
+		"link": "https://fontawesome.com/search?m=free&o=r",
+		"img": "https://img.fortawesome.com/1ce05b4b/open-graph-search-free.png",
+		"description": "Search all of Font Awesome's free and Open Source icons.",
+		"licence": "The free versions (all versions up to 4 and the free version for 5) are available under the SIL Open Font License 1.1, Creative Commons Attribution 4.0 and MIT License",
+		"licencelink": "https://fontawesome.com/license/free"
+	},
+	{
 		"title": "Keyicons",
 		"link": "https://keyicons.com",
 		"img": "./images/icons/keyicons.webp",
 		"description": "The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.",
 		"licence": "CC BY 4.0",
 		"licencelink": "https://keyicons.com"
+	},
+	{
+		"title": "Health icons",
+		"link": "https://healthicons.org",
+		"img": "https://healthicons.org/og_image.png",
+		"description": "Free, open source health icons. Use in your next commercial or personal project. No need to give credit.",
+		"licence": "CC0 License",
+		"licencelink": "https://healthicons.org/about"
 	},
 	{
 		"title": "Zwicon",

@@ -39,38 +39,71 @@ I hope you enjoy these resources and if you have any suggestions, please post th
 
 <table>
 <tr>
-		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://tabler-icons.io"><img src="https://tabler-icons.io/img/tabler-icons/og.png" alt="Tabler icons"></a></td><td><a href="https://heroicons.com/"><img src="./images/icons/heroicons.webp" alt="Hero icons"></a></td>
+		<td><a href="https://fonts.google.com/icons"><img src="./images/icons/google.webp" alt="Google icons"></a></td><td><a href="https://tabler-icons.io"><img src="https://tabler-icons.io/img/tabler-icons/og.png" alt="Tabler icons"></a></td><td><a href="https://iconify.design/"><img src="./images/icons/iconify.webp" alt="Iconify"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://tabler-icons.io">Tabler icons</a></td><td><a href="https://heroicons.com/">Hero icons</a></td>
+		<td><a href="https://fonts.google.com/icons">Google icons</a></td><td><a href="https://tabler-icons.io">Tabler icons</a></td><td><a href="https://iconify.design/">Iconify</a></td>
 	</tr>
 	<tr>
-		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.</td><td>Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.</td>
+		<td>Over 2,500 glyphs in a single font file with a wide range of design variants. </td><td>Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.</td><td>All popular icon sets, one framework. Over 150,000 open source vector icons.</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://github.com/tabler/tabler-icons/blob/master/LICENSE">Licence: MIT</a></td><td><a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE">Licence: MIT</a></td>
+		<td><a href="https://www.apache.org/licenses/LICENSE-2.0.html">Licence: Apache License Version 2.0</a> </td><td><a href="https://github.com/tabler/tabler-icons/blob/master/LICENSE">Licence: MIT</a></td><td><a href="https://iconify.design/license/">Licence: MIT. This license does not apply to all icons, Icon sets use various open source licenses, see each icon set for details.</a></td>
 	</tr><tr>
-		<td><a href="https://remixicon.com/"><img src="./images/icons/remixicon.webp" alt="Remix icons"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td>
+		<td><a href="https://heroicons.com/"><img src="./images/icons/heroicons.webp" alt="Hero icons"></a></td><td><a href="https://remixicon.com/"><img src="./images/icons/remixicon.webp" alt="Remix icons"></a></td><td><a href="https://simpleicons.org/images/og.png"><img src="https://simpleicons.org/images/og.png" alt="Simple icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://remixicon.com/">Remix icons</a></td><td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td>
+		<td><a href="https://heroicons.com/">Hero icons</a></td><td><a href="https://remixicon.com/">Remix icons</a></td><td><a href="https://simpleicons.org/images/og.png">Simple icons</a></td>
 	</tr>
 	<tr>
-		<td>Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.</td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
+		<td>Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.</td><td>Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.</td><td>2449 Free SVG icons for popular brands</td>
 	</tr>
 	<tr>
-		<td><a href="https://github.com/Remix-Design/RemixIcon/blob/master/License">Licence: Apache License Version 2.0</a> </td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td>
+		<td><a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE">Licence: MIT</a> </td><td><a href="https://github.com/Remix-Design/RemixIcon/blob/master/License">Licence: Apache License Version 2.0</a></td><td><a href="https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md">Licence: Creative Commons Zero v1.0 Universal</a></td>
 	</tr><tr>
-		<td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td><td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td>
+		<td><a href="https://svgl.vercel.app"><img src="https://svgl.vercel.app/images/screenshot.png" alt="svgl"></a></td><td><a href="https://css.gg/"><img src="https://css.gg/fav/og2.png" alt="css.gg"></a></td><td><a href="https://feathericons.com/"><img src="./images/icons/feather.webp" alt="Feather icons"></a></td>
 	</tr>
 	<tr>
-		<td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td><td><a href="https://keyicons.com">Keyicons</a></td>
+		<td><a href="https://svgl.vercel.app">svgl</a></td><td><a href="https://css.gg/">css.gg</a></td><td><a href="https://feathericons.com/">Feather icons</a></td>
 	</tr>
 	<tr>
-		<td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td><td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td>
+		<td>A beautiful library with SVG logos.</td><td>Open-source CSS, SVG and Figma UI Icons, Available in SVG Sprite, styled-components, NPM & API</td><td>Simply beautiful open source icons</td>
 	</tr>
 	<tr>
-		<td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a> </td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td><td><a href="https://keyicons.com">Licence: CC BY 4.0</a></td>
+		<td><a href="https://github.com/pheralb/svgl/blob/main/LICENSE">Licence: MIT</a> </td><td><a href="https://css.gg/doc/licence">Licence: MIT</a></td><td><a href="https://github.com/feathericons/feather/blob/master/LICENSE">Licence: MIT</a></td>
+	</tr><tr>
+		<td><a href="https://ikonate.com/cover.png"><img src="https://ikonate.com/cover.png" alt="Ikonate"></a></td><td><a href="https://www.svgrepo.com"><img src="https://www.svgrepo.com/social.png" alt="SVGrepo"></a></td><td><a href="https://iconmonstr.com"><img src="./images/icons/iconmonstr.webp" alt="Iconmonstr"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://ikonate.com/cover.png">Ikonate</a></td><td><a href="https://www.svgrepo.com">SVGrepo</a></td><td><a href="https://iconmonstr.com">Iconmonstr</a></td>
+	</tr>
+	<tr>
+		<td>Customise, adjust and download free vector icons.</td><td>500.000+ Open-licensed SVG Vector and Icons</td><td>Free simple icons for your next project</td>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE">Licence: MIT</a> </td><td><a href="https://www.svgrepo.com/page/licensing">Licence: Multiple licenses (SVG Repo License, CC0, MIT...)</a></td><td><a href="https://iconmonstr.com/license/">Licence: "Licensee may use the Work in non-commercial and commercial projects, services or products without attribution."</a></td>
+	</tr><tr>
+		<td><a href="https://iconoir.com/"><img src="./images/icons/iconoir.webp" alt="Iconoir"></a></td><td><a href="https://www.mingcute.com"><img src="./images/icons/mingcute.webp" alt="MingCute"></a></td><td><a href="https://boxicons.co"><img src="./images/icons/boxicons.webp" alt="Boxicons"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://iconoir.com/">Iconoir</a></td><td><a href="https://www.mingcute.com">MingCute</a></td><td><a href="https://boxicons.co">Boxicons</a></td>
+	</tr>
+	<tr>
+		<td>Iconoir is the biggest open source icon library that provides a massive selection of high-quality icons.</td><td>MingCute Icon is a set of simple and exquisite open-source icon library.</td><td>Boxicons is a free collection of carefully crafted open source icons.</td>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/iconoir-icons/iconoir/blob/main/LICENSE">Licence: MIT</a> </td><td><a href="https://github.com/Richard9394/MingCute/blob/main/LICENSE">Licence: Apache License Version 2.0</a></td><td><a href="https://boxicons.com/usage#license">Licence: MIT</a></td>
+	</tr><tr>
+		<td><a href="https://fontawesome.com/search?m=free&o=r"><img src="https://img.fortawesome.com/1ce05b4b/open-graph-search-free.png" alt="Fontawesome"></a></td><td><a href="https://keyicons.com"><img src="./images/icons/keyicons.webp" alt="Keyicons"></a></td><td><a href="https://healthicons.org"><img src="https://healthicons.org/og_image.png" alt="Health icons"></a></td>
+	</tr>
+	<tr>
+		<td><a href="https://fontawesome.com/search?m=free&o=r">Fontawesome</a></td><td><a href="https://keyicons.com">Keyicons</a></td><td><a href="https://healthicons.org">Health icons</a></td>
+	</tr>
+	<tr>
+		<td>Search all of Font Awesome's free and Open Source icons.</td><td>The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.</td><td>Free, open source health icons. Use in your next commercial or personal project. No need to give credit.</td>
+	</tr>
+	<tr>
+		<td><a href="https://fontawesome.com/license/free">Licence: The free versions (all versions up to 4 and the free version for 5) are available under the SIL Open Font License 1.1, Creative Commons Attribution 4.0 and MIT License</a> </td><td><a href="https://keyicons.com">Licence: CC BY 4.0</a></td><td><a href="https://healthicons.org/about">Licence: CC0 License</a></td>
 	</tr><tr>
 		<td><a href="http://zwicon.com"><img src="./images/icons/zwicon.webp" alt="Zwicon"></a></td>
 	</tr>
