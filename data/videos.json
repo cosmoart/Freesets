@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Pixabay",
+		"link": "https://pixabay.com/videos/",
+		"img": "./images/videos/pixabay.webp",
+		"description": "Find the perfect royalty-free stock video footage for your next project. ✓ Royalty-free ✓ HD & 4K video available ✓ No attribution required.",
+		"licence": "Pixabay License (Free for commercial and noncommercial use. Attribution is not required.)",
+		"licencelink": "https://pixabay.com/service/license/"
+	},
+	{
 		"title": "Pexels",
 		"link": "https://www.pexels.com/videos/",
 		"img": "./images/videos/pexels.webp",

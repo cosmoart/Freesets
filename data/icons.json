@@ -4,7 +4,7 @@
 		"link": "https://iconify.design/",
 		"img": "./images/icons/iconify.webp",
 		"description": "All popular icon sets, one framework. Over 150,000 open source vector icons.",
-		"licence": "MIT. This license does not apply to all icons, Icon sets use various open source licenses, see each icon set for details.",
+		"licence": "Icon sets use various open source licenses, see each icon set for details.",
 		"licencelink": "https://iconify.design/license/"
 	},
 	{
@@ -54,6 +54,14 @@
 		"description": "Free simple icons for your next project",
 		"licence": "\"Licensee may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
 		"licencelink": "https://iconmonstr.com/license/"
+	},
+	{
+		"title": "Streamline Icons",
+		"link": "https://www.streamlinehq.com",
+		"img": "./images/icons/streamline.webp",
+		"description": "99,109 Streamline icons in line, regular, bold, colors, freehand, cyber, and more styles. Download the largest icons sets of the world in one place.",
+		"licence": "Mainly CC by 4.0 (Free for commercial and personal use WITH ATTRIBUTION)",
+		"licencelink": "https://www.streamlinehq.com/license-free"
 	},
 	{
 		"title": "Keyicons",

@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Pixabay",
+		"link": "https://pixabay.com/illustrations/",
+		"img": "./images/ilustrations/pixabay.webp",
+		"description": "Find your perfect royalty-free illustration for your next project. Illustrations at Pixabay are: ✓ Royalty-free ✓ No attribution required.",
+		"licence": "Pixabay License (Free for commercial and noncommercial use. Attribution is not required.)",
+		"licencelink": "https://pixabay.com/service/license/"
+	},
+	{
 		"title": "Reshot",
 		"link": "https://www.reshot.com/free-vector-illustrations/",
 		"img": "https://www.reshot.com/static/illustrations/og/reshot-free-illustrations.png",
@@ -72,6 +80,14 @@
 		"licencelink": "https://fresh-folk.com"
 	},
 	{
+		"title": "Iconfinder",
+		"link": "https://www.iconfinder.com/search?q=&price=free",
+		"img": "https://www.iconfinder.com/static/img/meta-generic.png?d34117af5a",
+		"description": "Download 200,610 free icons. Available in PNG and SVG formats. Ready to be used in web design, mobile apps and presentations.",
+		"licence": "It depends on the icon (MIT, CCO...)",
+		"licencelink": "https://www.iconfinder.com/search?q=&price=free"
+	},
+	{
 		"title": "Flexiple ilustrations",
 		"link": "https://flexiple.com/illustrations/",
 		"img": "https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png",
@@ -110,5 +126,13 @@
 		"description": "REQUIRE LOGIN TO USE. Use our royalty-free Illustrations for your website, social media, blog, email newsletters, and anything else.",
 		"licence": "Delesign License (Free for Personal and Commercial. No attribution required.)",
 		"licencelink": "https://delesign.com/free-designs/free-license/"
+	},
+	{
+		"title": "Streamline Illustrations",
+		"link": "https://www.streamlinehq.com/illustrations",
+		"img": "./images/ilustrations/streamline.webp",
+		"description": "Personalize the largest, most consistent illustration sets in the world in seconds. Available in Flat, Handrawn, Comic, and more styles.",
+		"licence": "Mainly CC by 4.0 (Free for commercial and personal use WITH ATTRIBUTION)",
+		"licencelink": "https://www.streamlinehq.com/license-free"
 	}
 ]
