@@ -17,16 +17,10 @@ function convertJsonToText (json, title) {
 		}
 	});
 
-	// 	return `
-	// <details>
+	if (title === '🏠 Icons') {
+		return '\n<details>\n\n<summary><h2>' + title + '</h2></summary>\n\n> Note: Icons that are in the Iconify pack (such as Hero icons, Feather icons or Fontawesome) are not listed, except for Google icons and Tabler icons.\n\n<table>\n' + text + '\n</table>\n</details>\n\n';
+	}
 
-	// <summary><h2>${title}</h2></summary>
-
-	// <table>
-	// 	${text}
-	// </table>
-	// </details>
-	// `;
 	return '\n<details>\n\n<summary><h2>' + title + '</h2></summary>\n\n<table>\n' + text + '\n</table>\n</details>\n\n';
 }
 
