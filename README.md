@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 
-![header](./images/header.png)
+![header](./readme/header.webp)
 
 
 # Web media resources
