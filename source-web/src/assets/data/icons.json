@@ -4,7 +4,7 @@
 		"link": "https://iconify.design/",
 		"img": "./images/icons/iconify.webp",
 		"description": "All popular icon sets, one framework. Over 150,000 open source vector icons.",
-		"licence": "Icon sets use various open source licenses, see each icon set for details.",
+		"licence": "Multiple",
 		"licencelink": "https://iconify.design/license/"
 	},
 	{
@@ -12,7 +12,7 @@
 		"link": "https://fonts.google.com/icons",
 		"img": "./images/icons/google.webp",
 		"description": "Over 2,500 glyphs in a single font file with a wide range of design variants. ",
-		"licence": "Apache License Version 2.0",
+		"licence": "Apache License V2.0",
 		"licencelink": "https://www.apache.org/licenses/LICENSE-2.0.html"
 	},
 	{
@@ -44,7 +44,7 @@
 		"link": "https://www.svgrepo.com",
 		"img": "https://www.svgrepo.com/social.png",
 		"description": "500.000+ Open-licensed SVG Vector and Icons",
-		"licence": "Multiple licenses (SVG Repo License, CC0, MIT...)",
+		"licence": "Multiple",
 		"licencelink": "https://www.svgrepo.com/page/licensing"
 	},
 	{
@@ -52,7 +52,8 @@
 		"link": "https://iconmonstr.com",
 		"img": "./images/icons/iconmonstr.webp",
 		"description": "Free simple icons for your next project",
-		"licence": "\"Licensee may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
+		"licence": "Free",
+		"licenceDescription": "\"Licensee may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
 		"licencelink": "https://iconmonstr.com/license/"
 	},
 	{
@@ -60,7 +61,7 @@
 		"link": "https://www.streamlinehq.com",
 		"img": "./images/icons/streamline.webp",
 		"description": "99,109 Streamline icons in line, regular, bold, colors, freehand, cyber, and more styles. Download the largest icons sets of the world in one place.",
-		"licence": "Mainly CC by 4.0 (Free for commercial and personal use WITH ATTRIBUTION)",
+		"licence": "CC by 4.0",
 		"licencelink": "https://www.streamlinehq.com/license-free"
 	},
 	{
