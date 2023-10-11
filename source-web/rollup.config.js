@@ -1,7 +1,3 @@
 export default {
-	build: {
-		rollupOptions: {
-			external: ['@formkit/auto-animate']
-		}
-	}
+	external: ['@formkit/auto-animate']
 }
