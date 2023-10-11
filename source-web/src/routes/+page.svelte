@@ -1,77 +1,84 @@
 <script>
-	import iconsJson from '../assets/data/icons.json';
-	import ilustrationsJson from '../assets/data/ilustrations.json';
-	import loadersJson from '../assets/data/loaders.json';
-	import photosJson from '../assets/data/photos.json';
-	import backgroundsJson from '../assets/data/backgrounds.json';
-	import videosJson from '../assets/data/videos.json';
-	import colorsJson from '../assets/data/colors.json';
-	import fontsJson from '../assets/data/fonts.json';
+	import iconsJson from '@/assets/data/icons.json';
+	import ilustrationsJson from '@/assets/data/ilustrations.json';
+	import loadersJson from '@/assets/data/loaders.json';
+	import photosJson from '@/assets/data/photos.json';
+	import backgroundsJson from '@/assets/data/backgrounds.json';
+	import videosJson from '@/assets/data/videos.json';
+	import colorsJson from '@/assets/data/colors.json';
+	import fontsJson from '@/assets/data/fonts.json';
+	import chartsJson from '@/assets/data/charts.json';
+	import blogsJson from '@/assets/data/blogs.json';
+
 	import Cards from './Cards.svelte';
 	import BackTop from './BackTop.svelte';
-
-	import { page } from '$app/stores';
 	import NavBar from './NavBar.svelte';
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 
 	const categories = [
 		{
 			name: 'Icons',
 			items: iconsJson,
-			icon: 'icons',
-			color: 'bg-blue-600'
+			color: '#2563eb'
 		},
 		{
 			name: 'Ilustrations',
 			items: ilustrationsJson,
-			icon: 'ilustrations',
-			color: 'bg-green-600'
+			color: '#22c55e'
 		},
 		{
 			name: 'Loaders',
 			items: loadersJson,
-			icon: 'loaders',
-			color: 'bg-red-600'
+			color: '#f97316'
 		},
 		{
 			name: 'Photos',
 			items: photosJson,
-			icon: 'photos',
-			color: 'bg-yellow-500'
+			color: '#f43f5e'
 		},
 		{
 			name: 'Backgrounds',
 			items: backgroundsJson,
-			icon: 'backgrounds',
-			color: 'bg-purple-600'
+			color: '#4338ca'
 		},
 		{
 			name: 'Videos',
 			items: videosJson,
-			icon: 'videos',
-			color: 'bg-pink-600'
+			color: '#e11d48'
 		},
 		{
 			name: 'Colors',
 			items: colorsJson,
-			icon: 'colors',
-			color: 'bg-indigo-600'
+			color: '#ea580c'
 		},
 		{
 			name: 'Fonts',
 			items: fontsJson,
-			icon: 'fonts',
-			color: 'bg-gray-600'
+			color: '#f59e0b'
+		},
+		{
+			name: 'Charts',
+			items: chartsJson,
+			color: '#10b981'
+		},
+		{
+			name: 'Blogs',
+			items: blogsJson,
+			color: '#3b82f6'
 		}
 	];
 
-	let categoryQ = $page.url.searchParams.get('category') ?? 'all';
+	let categoryQ = 'all';
 
-	const setCategory = (cat) => {
-		categoryQ = cat.toLowerCase();
-		const params = new URLSearchParams(window.location.search);
-		params.set('category', categoryQ);
-		window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
-	};
+	onMount(() => (categoryQ = $page.url.searchParams.get('category') ?? 'all'));
+
+	// Every time that categoryQ changues: set the url query param
+	$: {
+		$page.url.searchParams.set('category', categoryQ);
+	}
+
+	$: console.log(categoryQ);
 
 	$: categoriesFiltered = categories.filter((cat) => {
 		if (categoryQ === 'all') return true;
@@ -86,8 +93,7 @@
 
 <section>
 	<h1 class="text-xl hidden">Freesets</h1>
-
-	<NavBar {categories} {categoryQ} {setCategory} />
+	<NavBar {categories} {categoryQ} />
 	<Cards {categoriesFiltered} />
 	<BackTop />
 </section>

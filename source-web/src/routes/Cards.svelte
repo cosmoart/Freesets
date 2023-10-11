@@ -9,9 +9,9 @@
 			<img
 				src={'/categories-icons/' + category.name.toLowerCase() + '.svg'}
 				alt=""
-				class="invert w-8"
+				class="invert w-7"
 			/>
-			<h2 class="text-2xl my-5">
+			<h2 class="text-xl my-5">
 				{category.name}
 				<span class="text-base">({category.items.length})</span>
 			</h2>
