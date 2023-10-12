@@ -74,9 +74,9 @@
 	onMount(() => (categoryQ = $page.url.searchParams.get('category') ?? 'all'));
 
 	// Every time that categoryQ changues: set the url query param
-	$: {
-		$page.url.searchParams.set('category', categoryQ);
-	}
+	// $: {
+	// 	$page.url.searchParams.set('category', categoryQ);
+	// }
 
 	$: console.log(categoryQ);
 

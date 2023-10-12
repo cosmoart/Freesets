@@ -10,12 +10,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@': 'src'
-		},
-		build: {
-			rollupOptions: {
-				external: ["@formkit/auto-animate"],
-			},
-		},
+		}
 	},
 	preprocess: vitePreprocess()
 };
