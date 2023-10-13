@@ -1,40 +1,67 @@
 <script>
-	export let categoriesFiltered;
 	import autoAnimate from '@formkit/auto-animate';
+	import infoIcon from '@/assets/icons/info.svg';
+	export let categoriesFiltered;
 </script>
 
 <main use:autoAnimate class="mb-10">
 	{#each categoriesFiltered as category}
-		<div class="flex gap-2 border-t-2 mt-8 border-zinc-600">
-			<img
-				src={'/categories-icons/' + category.name.toLowerCase() + '.svg'}
-				alt=""
-				class="invert w-7"
-			/>
-			<h2 class="text-xl my-5">
-				{category.name}
-				<span class="text-base">({category.items.length})</span>
-			</h2>
-		</div>
-		<div class="mx-auto grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5" use:autoAnimate>
-			{#each category.items as asset}
-				<article
-					class="rounded-lg ring-2 ring-zinc-700 hover:ring-blue-600 bg-zinc-700 bg-opacity-30 backdrop:blur-md text-white overflow-hidden hover:scale-[1.02] transition-transform"
+		<article class="relative">
+			<div
+				class="flex justify-center border-t-2 mt-8 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
+			>
+				<div
+					class="flex gap-2 px-10 py-1.5"
+					style={`background-color: ${category.color}; clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);`}
 				>
-					<a href={asset.link} target="_blank" rel="noopener noreferrer">
-						<img src={asset.img} alt="" class="aspect-video object-cover" />
-					</a>
-					<div class="p-5 flex justify-between items-center">
-						<h3 class="text-xl">{asset.title}</h3>
-						<a
-							class="bg-blue-600 px-4 py-1 rounded-md text-sm"
-							target="_blank"
-							rel="noopener noreferrer"
-							href={asset.licencelink}>{asset.licence}</a
-						>
-					</div>
-				</article>
-			{/each}
-		</div>
+					<img
+						src={'/categories-icons/' + category.name.toLowerCase() + '.svg'}
+						alt=""
+						class="invert w-7"
+					/>
+					<h2 class="text-xl">
+						{category.name}
+						<span class="text-base">({category.items.length})</span>
+					</h2>
+				</div>
+			</div>
+			<div
+				class="mx-auto grid -mt-3 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5"
+				use:autoAnimate
+			>
+				{#each category.items as asset}
+					<article
+						class="rounded-lg ring-2 ring-zinc-700 hover:ring-blue-600 bg-zinc-700 bg-opacity-30 backdrop:blur-md text-white overflow-hidden hover:scale-[1.02] transition-transform"
+					>
+						<a href={asset.link} target="_blank" rel="noopener noreferrer">
+							<img src={asset.img} alt="" class="aspect-video object-cover" />
+						</a>
+						<div class="p-5 flex justify-between items-center">
+							<h3 class="text-xl">{asset.title}</h3>
+							<div class="group relative">
+								<a
+									class="bg-blue-600 px-4 py-1 rounded-md text-sm tracking-wide"
+									target="_blank"
+									rel="noopener noreferrer"
+									href={asset.licencelink}
+								>
+									{#if asset.licenceDescription}
+										<img src={infoIcon} alt="" class="w-4 inline-block mr-1 mb-0.5 invert" />
+									{/if}
+									{asset.licence}
+								</a>
+								{#if asset.licenceDescription}
+									<p
+										class="text-sm p-2 w-72 rounded-md absolute bottom-10 right-0 opacity-0 bg-zinc-900 transition-all text-white group-hover:bottom-6 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none"
+									>
+										{asset.licenceDescription}
+									</p>
+								{/if}
+							</div>
+						</div>
+					</article>
+				{/each}
+			</div>
+		</article>
 	{/each}
 </main>

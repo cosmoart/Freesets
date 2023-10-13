@@ -1,6 +1,12 @@
 <script>
 	export let categoryQ;
 	export let categories;
+
+	// $: {
+	// 	const params = new URLSearchParams(window.location.search);
+	// 	params.set('category', categoryQ);
+	// 	window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
+	// }
 </script>
 
 <nav>
@@ -29,7 +35,7 @@
 						type="radio"
 						class="hidden peer"
 						name="category"
-						value={category.name}
+						value={category.name.toLowerCase()}
 						bind:group={categoryQ}
 					/>
 					<span

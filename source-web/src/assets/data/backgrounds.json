@@ -34,7 +34,7 @@
 	{
 		"title": "Hero Patterns",
 		"link": "https://www.heropatterns.com",
-		"img": "./images/backgrounds/heropatterns.webp",
+		"img": "/images/backgrounds/heropatterns.webp",
 		"description": "A collection of repeatable SVG background patterns for you to use on your web projects.",
 		"licence": "CC BY 4.0",
 		"licencelink": "https://heropatterns.com"
