@@ -3,7 +3,6 @@
 		"title": "10015 Tools",
 		"link": "https://10015.io/tools/css-loader-generator",
 		"img": "./images/loaders/css_tools.webp",
-		"description": "Online CSS Loader Generator is a free tool for generating CSS loaders",
 		"licence": "Free",
 		"licencelink": "https://10015.io/tools/css-loader-generator"
 	},
@@ -11,7 +10,6 @@
 		"title": "Loaders",
 		"link": "https://uiball.com/loaders/",
 		"img": "./images/loaders/uiball-loaders.webp",
-		"description": "Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG. Available for copypasta or as a tree-shakeable React component library.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE"
 	},
@@ -19,7 +17,6 @@
 		"title": "Hola svg",
 		"link": "https://loaders.holasvg.com",
 		"img": "https://loaders.holasvg.com/holasvg-loaders.gif",
-		"description": "Free SVG Loader Generator",
 		"licence": "MIT",
 		"licencelink": "https://loaders.holasvg.com"
 	},
@@ -27,7 +24,6 @@
 		"title": "SVG Loaders",
 		"link": "https://samherbert.net/svg-loaders/",
 		"img": "./images/loaders/svg-loaders.webp",
-		"description": "Loading icons and small animations built with pure SVG.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md"
 	},
@@ -35,7 +31,6 @@
 		"title": "CSS loaders and spinners",
 		"link": "https://cssloaders.github.io",
 		"img": "https://cssloaders.github.io/images/Loader-screen.png",
-		"description": "CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE"
 	}

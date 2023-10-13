@@ -3,7 +3,6 @@
 		"title": "Pixabay",
 		"link": "https://pixabay.com/videos/",
 		"img": "./images/videos/pixabay.webp",
-		"description": "Find the perfect royalty-free stock video footage for your next project. ✓ Royalty-free ✓ HD & 4K video available ✓ No attribution required.",
 		"licence": "Pixabay License",
 		"licenceDescription": "Free for commercial and noncommercial use. Attribution is not required.",
 		"licencelink": "https://pixabay.com/service/license/"
@@ -12,7 +11,6 @@
 		"title": "Pexels",
 		"link": "https://www.pexels.com/videos/",
 		"img": "./images/videos/pexels.webp",
-		"description": "Pexels Videos makes it easy to find free stock footage for your website, promo video or anything else.",
 		"licence": "Free",
 		"licenceDescription": "\"All photos and videos on Pexels can be downloaded and used for free.\"",
 		"licencelink": "https://www.pexels.com/license/"
@@ -21,7 +19,6 @@
 		"title": "Coverr",
 		"link": "https://coverr.co",
 		"img": "./images/videos/coverr.webp",
-		"description": "Download royalty free (for personal and commercial use), unique and beautiful video footage for your website or any project. No attribution required.",
 		"licence": "Free",
 		"licenceDescription": "\"All Videos published on Coverr.co can be used free for commercial and non-commercial purposes. You do not need to ask permission from or provide credit to the videographer or Coverr.co, although it is appreciated when possible.\"",
 		"licencelink": "https://coverr.co/license"
@@ -30,7 +27,6 @@
 		"title": "Videezy",
 		"link": "https://www.videezy.com",
 		"img": "./images/videos/videezy.webp",
-		"description": "Download millions of free and premium stock footage and motion graphics instantly.",
 		"licence": "Multiple",
 		"licenceDescription": "Standard, Pro, Creative Commons and Editorial Use Only",
 		"licencelink": "https://www.videezy.com/terms"
@@ -39,7 +35,6 @@
 		"title": "Mixkit",
 		"link": "https://mixkit.co/free-stock-video/",
 		"img": "./images/videos/mixkit.webp",
-		"description": "Browse our library of extraordinary free stock footage and motion clips for every occasion. All HD Video Clips are completely free to download and use anywhere.",
 		"licence": "Free",
 		"licenceDescription": "\"Items under the Mixkit Stock Video Free License can be used in your commercial and non-commercial projects, for free.\"",
 		"licencelink": "https://mixkit.co/license/"
@@ -48,7 +43,6 @@
 		"title": "Videvo",
 		"link": "https://www.videvo.net",
 		"img": "./images/videos/videvo.webp",
-		"description": "Download Free Stock Footage and HD Video clips; Videvo offers a large selection of HD video clips, motion graphics and free stock footage.",
 		"licence": "Videvo Attribution License or CC BY 3.0",
 		"licenceDescription": "\"You may use these video clips free of charge, in both personal and commercial productions. Video clips that carry the Creative Commons 3.0 license must be attributed to the original author.\"",
 		"licencelink": "https://help.videvo.net/category/6-licensing"

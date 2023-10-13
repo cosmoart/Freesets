@@ -3,7 +3,6 @@
 		"title": "Iconify",
 		"link": "https://icon-sets.iconify.design",
 		"img": "./images/icons/iconify.webp",
-		"description": "All popular icon sets, one framework. Over 150,000 open source vector icons.",
 		"licence": "Multiple",
 		"licencelink": "https://iconify.design/license/"
 	},
@@ -11,15 +10,13 @@
 		"title": "Google icons",
 		"link": "https://fonts.google.com/icons",
 		"img": "./images/icons/google.webp",
-		"description": "Over 2,500 glyphs in a single font file with a wide range of design variants. ",
 		"licence": "Apache License V2.0",
-		"licencelink": "https://www.apache.org/licenses/LICENSE-2.0.html"
+		"licencelink": "https://developers.google.com/fonts/docs/material_icons#licensing"
 	},
 	{
 		"title": "Tabler icons",
 		"link": "https://tabler-icons.io",
 		"img": "https://tabler-icons.io/img/tabler-icons/og.png",
-		"description": "Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
 	},
@@ -27,7 +24,6 @@
 		"title": "svgl",
 		"link": "https://svgl.vercel.app",
 		"img": "https://svgl.vercel.app/images/screenshot.png",
-		"description": "A beautiful library with SVG logos.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
 	},
@@ -35,7 +31,6 @@
 		"title": "Ikonate",
 		"link": "https://ikonate.com",
 		"img": "https://ikonate.com/cover.png",
-		"description": "Customise, adjust and download free vector icons.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
 	},
@@ -43,7 +38,6 @@
 		"title": "SVGrepo",
 		"link": "https://www.svgrepo.com",
 		"img": "https://www.svgrepo.com/social.png",
-		"description": "500.000+ Open-licensed SVG Vector and Icons",
 		"licence": "Multiple",
 		"licencelink": "https://www.svgrepo.com/page/licensing"
 	},
@@ -51,16 +45,14 @@
 		"title": "Iconmonstr",
 		"link": "https://iconmonstr.com",
 		"img": "./images/icons/iconmonstr.webp",
-		"description": "Free simple icons for your next project",
 		"licence": "Free",
-		"licenceDescription": "\"Licensee may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
+		"licenceDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
 		"licencelink": "https://iconmonstr.com/license/"
 	},
 	{
 		"title": "Streamline Icons",
 		"link": "https://www.streamlinehq.com",
 		"img": "./images/icons/streamline.webp",
-		"description": "99,109 Streamline icons in line, regular, bold, colors, freehand, cyber, and more styles. Download the largest icons sets of the world in one place.",
 		"licence": "CC by 4.0",
 		"licencelink": "https://www.streamlinehq.com/license-free"
 	},
@@ -68,7 +60,6 @@
 		"title": "Keyicons",
 		"link": "https://keyicons.com",
 		"img": "./images/icons/keyicons.webp",
-		"description": "The clean icon set you were looking for, ready to use in web, mobile development and wherever you want.",
 		"licence": "CC BY 4.0",
 		"licencelink": "https://keyicons.com"
 	},
@@ -76,7 +67,6 @@
 		"title": "Zwicon",
 		"link": "http://zwicon.com",
 		"img": "./images/icons/zwicon.webp",
-		"description": "The zwicon icon library was made to support our work @zwoelf. Now it is available for free for download.",
 		"licence": "CC BY-ND 4.0",
 		"licencelink": "http://zwicon.com/how-to-use.html"
 	}

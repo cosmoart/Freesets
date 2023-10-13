@@ -13,7 +13,7 @@
 <button
 	on:click={() => scroll(0, 0)}
 	id="topArrow"
-	class="bg-zinc-800 p-2 rounded-full fixed bottom-6 right-6 transition-all opacity-0 translate-y-12 hover:opacity-80 hover:scale-105 active:scale-95 shadow-md"
+	class="bg-zinc-800 p-2 rounded-full fixed bottom-6 left-6 transition-all opacity-0 translate-y-12 hover:opacity-80 hover:scale-105 active:scale-95 shadow-md"
 	title="Back to top"
 >
 	<svg

@@ -3,7 +3,6 @@
 		"title": "CSS Background Patterns",
 		"link": "https://www.magicpattern.design/tools/css-backgrounds",
 		"img": "https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg",
-		"description": "Beautiful pure CSS background patterns that you can actually use in your projects!",
 		"licence": "Free",
 		"licencelink": "https://www.magicpattern.design/terms"
 	},
@@ -11,7 +10,6 @@
 		"title": "Pattern Monster",
 		"link": "https://pattern.monster",
 		"img": "https://giguom.com/pattern.monster/images//TwitterBG2.png",
-		"description": "A simple online pattern generator to create repeatable SVG patterns. Perfect for website backgrounds, apparel, branding, packaging design and more.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md"
 	},
@@ -19,7 +17,6 @@
 		"title": "pattern.css",
 		"link": "https://bansal.io/pattern-css",
 		"img": "https://bansal.io/assets/images/pattern-css-preview.jpg",
-		"description": "CSS only library to fill your empty background with beautiful patterns.",
 		"licence": "MIT",
 		"licencelink": "https://github.com/bansal/pattern.css"
 	},
@@ -27,7 +24,6 @@
 		"title": "Haikei",
 		"link": "https://haikei.app/generators/",
 		"img": "https://haikei.app/haikei-cover.png",
-		"description": "Our SVG generators let you discover, customize, randomize, and export generative SVG design assets to use in your favorite design tools.",
 		"licence": "Free",
 		"licencelink": "https://haikei.app/pricing/"
 	},
@@ -35,7 +31,6 @@
 		"title": "Hero Patterns",
 		"link": "https://www.heropatterns.com",
 		"img": "/images/backgrounds/heropatterns.webp",
-		"description": "A collection of repeatable SVG background patterns for you to use on your web projects.",
 		"licence": "CC BY 4.0",
 		"licencelink": "https://heropatterns.com"
 	},
@@ -43,7 +38,6 @@
 		"title": "PatternPad",
 		"link": "https://patternpad.com",
 		"img": "https://patternpad.com/images/patternpad-banner.png",
-		"description": "PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.",
 		"licence": "Free with attribution",
 		"licencelink": "https://patternpad.com"
 	}

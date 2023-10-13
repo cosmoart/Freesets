@@ -5,6 +5,7 @@
 	import NavBar from './NavBar.svelte';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import RepoLink from './RepoLink.svelte';
 
 	let categoryQ = 'all';
 
@@ -26,4 +27,5 @@
 	<NavBar {categories} bind:categoryQ />
 	<Cards {categoriesFiltered} />
 	<BackTop />
+	<RepoLink />
 </section>
