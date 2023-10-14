@@ -1,4 +1,5 @@
 import ilustrationsJson from '@/assets/data/ilustrations.json';
+import uiUxCollectionsJson from '@/assets/data/ui-ux-collections.json';
 import backgroundsJson from '@/assets/data/backgrounds.json';
 import iconsJson from '@/assets/data/icons.json';
 import loadersJson from '@/assets/data/loaders.json';
@@ -59,5 +60,10 @@ export default [
 		name: 'Blogs',
 		items: blogsJson,
 		color: '#3b82f6'
+	},
+	{
+		name: "UI/UX collections",
+		items: uiUxCollectionsJson,
+		color: '#6366f1',
 	}
 ];

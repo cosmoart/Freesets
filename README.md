@@ -16,3 +16,10 @@ This repository contains a collection of free, high-quality multimedia resources
   ·
   <a href="https://github.com/cosmoart/free-multimedia-resources/discussions">Request Feature</a>
 </div>
+
+
+## 🤗 Contributors
+
+<a href="https://github.com/cosmoart/free-resources/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=cosmoart/free-resources" />
+</a>

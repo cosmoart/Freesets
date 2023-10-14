@@ -4,5 +4,10 @@
 		"link": "https://tintmint.net",
 		"img": "/images/colors/ai-colors.webp",
 		"tags": ["AI"]
+	},
+	{
+		"title": "Huetools",
+		"link": "https://hue.tools/",
+		"img": "/images/colors/huetools.webp"
 	}
 ]

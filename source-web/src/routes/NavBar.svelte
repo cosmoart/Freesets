@@ -10,7 +10,7 @@
 </script>
 
 <nav>
-	<ul class="flex gap-3 flex-wrap">
+	<ul class="flex gap-2 flex-wrap">
 		<li class="flex-grow">
 			<label>
 				<input
@@ -23,7 +23,7 @@
 				<span
 					class="flex items-center w-full justify-center gap-2 bg-blue-500 rounded-md px-4 py-1.5 flex-grow outline-2 outline-blue-500 outline-offset-2 peer-[:checked]:scale-[1.03] peer-[:checked]:outline cursor-pointer hover:scale-[1.03] transition-transform"
 				>
-					<img src="/categories-icons/all.svg" alt="" class="invert w-7" />
+					<img src="/categories-icons/all.svg" alt="" class="invert w-6" />
 					All
 				</span>
 			</label>
@@ -43,9 +43,11 @@
 						style={`--item-color: ${category.color}`}
 					>
 						<img
-							src={'/categories-icons/' + category.name.toLowerCase() + '.svg'}
+							src={'/categories-icons/' +
+								category.name.toLowerCase().replaceAll(/\/|\s/g, '-') +
+								'.svg'}
 							alt=""
-							class="invert w-7"
+							class="invert w-6"
 						/>
 						{category.name}
 					</span>

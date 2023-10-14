@@ -8,18 +8,20 @@
 	{#each categoriesFiltered as category}
 		<article class="relative">
 			<div
-				class="flex justify-center border-t-2 mt-8 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
+				class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
 			>
 				<div
 					class="flex gap-2 px-10 py-1.5"
 					style={`background-color: ${category.color}; clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);`}
 				>
 					<img
-						src={'/categories-icons/' + category.name.toLowerCase() + '.svg'}
+						src={'/categories-icons/' +
+							category.name.toLowerCase().replaceAll(/\/|\s/g, '-') +
+							'.svg'}
 						alt=""
-						class="invert w-7"
+						class="invert w-6"
 					/>
-					<h2 class="text-xl">
+					<h2 class="text-lg">
 						{category.name}
 						<span class="text-base">({category.items.length})</span>
 					</h2>
@@ -36,7 +38,7 @@
 						<a href={asset.link} target="_blank" rel="noopener noreferrer">
 							<img src={asset.img} alt="" class="aspect-video object-cover" />
 						</a>
-						<div class="p-5 flex justify-between items-center">
+						<div class="p-5 flex flex-wrap justify-between items-center">
 							<h3 class="text-xl">{asset.title}</h3>
 							{#if asset.licence}
 								<div class="group relative">
@@ -44,7 +46,7 @@
 										class="bg-blue-600 px-4 py-1 rounded-md text-sm tracking-wide"
 										target="_blank"
 										rel="noopener noreferrer"
-										href={asset.licencelink}
+										href={asset.licenceLink}
 									>
 										{#if asset.licenceDescription}
 											<img src={infoIcon} alt="" class="w-4 inline-block mr-1 mb-0.5 invert" />
@@ -60,16 +62,16 @@
 									{/if}
 								</div>
 							{/if}
+							{#if asset.tags}
+								<ul class="flex gap-2">
+									{#each asset.tags as tag}
+										<li class="bg-blue-600 px-4 py-1 rounded-md text-sm tracking-wide">
+											{tag}
+										</li>
+									{/each}
+								</ul>
+							{/if}
 						</div>
-						{#if asset.tags}
-							<ul class="flex gap-2 px-5 pb-4">
-								{#each asset.tags as tag}
-									<li class="bg-blue-600 px-4 py-1 rounded-md text-sm tracking-wide">
-										{tag}
-									</li>
-								{/each}
-							</ul>
-						{/if}
 					</article>
 				{/each}
 			</div>

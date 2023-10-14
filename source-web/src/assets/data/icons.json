@@ -4,42 +4,57 @@
 		"link": "https://icon-sets.iconify.design",
 		"img": "./images/icons/iconify.webp",
 		"licence": "Multiple",
-		"licencelink": "https://iconify.design/license/"
+		"licenceLink": "https://iconify.design/license/"
 	},
 	{
 		"title": "Google icons",
 		"link": "https://fonts.google.com/icons",
 		"img": "./images/icons/google.webp",
 		"licence": "Apache License V2.0",
-		"licencelink": "https://developers.google.com/fonts/docs/material_icons#licensing"
+		"licenceLink": "https://developers.google.com/fonts/docs/material_icons#licensing"
 	},
 	{
 		"title": "Tabler icons",
 		"link": "https://tabler-icons.io",
 		"img": "https://tabler-icons.io/img/tabler-icons/og.png",
 		"licence": "MIT",
-		"licencelink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+		"licenceLink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+	},
+	{
+		"title": "Animatedicons",
+		"link": "https://animatedicons.co/icons",
+		"img": "/images/icons/animatedicons.webp",
+		"licence": "Free",
+		"licenceLink": "https://animatedicons.co/license",
+		"licenceDescription": "\"You're free to use AnimatedIcons in any project, be it for commercial or personal use, without the need for attribution or any costs\""
 	},
 	{
 		"title": "svgl",
 		"link": "https://svgl.vercel.app",
 		"img": "https://svgl.vercel.app/images/screenshot.png",
 		"licence": "MIT",
-		"licencelink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
+		"licenceLink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
 	},
 	{
 		"title": "Ikonate",
 		"link": "https://ikonate.com",
 		"img": "https://ikonate.com/cover.png",
 		"licence": "MIT",
-		"licencelink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
+		"licenceLink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
 	},
 	{
 		"title": "SVGrepo",
 		"link": "https://www.svgrepo.com",
 		"img": "https://www.svgrepo.com/social.png",
 		"licence": "Multiple",
-		"licencelink": "https://www.svgrepo.com/page/licensing"
+		"licenceLink": "https://www.svgrepo.com/page/licensing"
+	},
+	{
+		"title": "Phosphor",
+		"link": "https://phosphoricons.com",
+		"img": "./images/icons/phosphor.webp",
+		"licence": "MIT",
+		"licenceLink": "https://raw.githubusercontent.com/phosphor-icons/phosphor-home/master/LICENSE"
 	},
 	{
 		"title": "Iconmonstr",
@@ -47,28 +62,28 @@
 		"img": "./images/icons/iconmonstr.webp",
 		"licence": "Free",
 		"licenceDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
-		"licencelink": "https://iconmonstr.com/license/"
+		"licenceLink": "https://iconmonstr.com/license/"
 	},
 	{
 		"title": "Streamline Icons",
 		"link": "https://www.streamlinehq.com",
 		"img": "./images/icons/streamline.webp",
 		"licence": "CC by 4.0",
-		"licencelink": "https://www.streamlinehq.com/license-free"
+		"licenceLink": "https://www.streamlinehq.com/license-free"
 	},
 	{
 		"title": "Keyicons",
 		"link": "https://keyicons.com",
 		"img": "./images/icons/keyicons.webp",
 		"licence": "CC BY 4.0",
-		"licencelink": "https://keyicons.com"
+		"licenceLink": "https://keyicons.com"
 	},
 	{
 		"title": "Zwicon",
 		"link": "http://zwicon.com",
 		"img": "./images/icons/zwicon.webp",
 		"licence": "CC BY-ND 4.0",
-		"licencelink": "http://zwicon.com/how-to-use.html"
+		"licenceLink": "http://zwicon.com/how-to-use.html"
 	},
 	{
 		"title": "Mono Icons",

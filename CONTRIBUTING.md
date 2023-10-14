@@ -63,7 +63,7 @@ git push origin my-branch
 - name*: Name of the resource
 - link*: Link to the resource
 - img*: Image of the resource, 1280px x 720px, webp format (you can use [squoosh](https://squoosh.app/) to convert the image to webp)
-- License: License of the resource if it exists..
+- License: License of the resource if it exists.
 - LicenseLink: Link to the resource license if it exists.
 - LicenseDescription: More complete license information.
 - Tags: Tags, for example: `ia`, `react`, `library`, `tool`...
@@ -79,6 +79,10 @@ git push origin my-branch
 	"tags": ["ia", "react", "library", "tool"]
 }
 ```
+
+#### Rules and recommendations for each category
+
+- Icons: Try not to put resources that are already in the [Iconify](https://icon-sets.iconify.design) list.
 
 > Note: Try to make the name and license as short as possible for better display.
 

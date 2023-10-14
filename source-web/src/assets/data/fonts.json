@@ -1,1 +1,16 @@
-[]
+[
+	{
+		"title": "Google fonts",
+		"link": "https://fonts.google.com/",
+		"img": "/images/fonts/google.webp",
+		"licence": "Multiple",
+		"licenceLink": "https://developers.google.com/fonts/faq#can_i_use_any_font_in_a_commercial_product"
+	},
+	{
+		"title": "Freefaces",
+		"link": "https://www.freefaces.gallery",
+		"img": "/images/fonts/freefaces.webp",
+		"licence": "Free",
+		"licenceDescription": "collection of typefaces that are available under a variety of free licences"
+	}
+]

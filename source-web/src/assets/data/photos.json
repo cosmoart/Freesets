@@ -5,7 +5,7 @@
 		"img": "./images/photos/pixabay.webp",
 		"licence": "Pixabay License",
 		"licenceDescription": "Free for commercial and noncommercial use. Attribution is not required.",
-		"licencelink": "https://pixabay.com/es/service/license/"
+		"licenceLink": "https://pixabay.com/es/service/license/"
 	},
 	{
 		"title": "Pexels",
@@ -13,7 +13,7 @@
 		"img": "./images/photos/pexels.webp",
 		"licence": "Free",
 		"licenceDescription": "All photos and videos on Pexels can be downloaded and used for free.",
-		"licencelink": "https://www.pexels.com/license/"
+		"licenceLink": "https://www.pexels.com/license/"
 	},
 	{
 		"title": "Unsplash",
@@ -21,27 +21,27 @@
 		"img": "./images/photos/unsplash.webp",
 		"licence": "Free",
 		"licenceDescription": "Free for Commercial and non-commercial purposes. No attribution required.",
-		"licencelink": "https://unsplash.com/license"
+		"licenceLink": "https://unsplash.com/license"
 	},
 	{
 		"title": "Picography",
 		"link": "https://picography.co",
 		"img": "./images/photos/picography.webp",
 		"licence": "CC0 1.0",
-		"licencelink": "https://picography.co/terms/"
+		"licenceLink": "https://picography.co/terms/"
 	},
 	{
 		"title": "StockSnap",
 		"link": "https://stocksnap.io",
 		"img": "https://stocksnap.io/img/stocksnap_og.png",
 		"licence": "CC0 1.0",
-		"licencelink": "https://stocksnap.io/license"
+		"licenceLink": "https://stocksnap.io/license"
 	},
 	{
 		"title": "Nappy",
 		"link": "https://nappy.co",
 		"img": "https://nappy.co/public/img/meta_header.jpg",
 		"licence": "CC0 1.0",
-		"licencelink": "https://nappy.co/license"
+		"licenceLink": "https://nappy.co/license"
 	}
 ]
