@@ -69,5 +69,75 @@
 		"img": "./images/icons/zwicon.webp",
 		"licence": "CC BY-ND 4.0",
 		"licencelink": "http://zwicon.com/how-to-use.html"
+	},
+	{
+		"title": "Mono Icons",
+		"link": "https://icons.mono.company/",
+		"img": "./images/icons/monoicons.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/mono-company/mono-icons/blob/master/LICENSE.md"
+	},
+	{
+		"title": "Hero Icons",
+		"link": "https://heroicons.com/",
+		"img": "./images/icons/heroicons.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+	},
+	{
+		"title": "Teenyicons",
+		"link": "https://teenyicons.com/",
+		"img": "./images/icons/teenyicons.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE"
+	},
+	{
+		"title": "CSS Icons",
+		"link": "https://css.gg/",
+		"img": "./images/icons/CSSIcons.webp",
+		"licence": "MIT",
+		"licencelink": "https://css.gg/doc/licence"
+	},
+	{
+		"title": "Core UI Icons",
+		"link": "https://coreui.io/icons/",
+		"img": "./images/icons/coreuiicons.webp",
+		"licence": "Freemium",
+		"licencelink": "https://coreui.io/license/"
+	},
+	{
+		"title": "Bootstrap Icons",
+		"link": "https://icons.getbootstrap.com/",
+		"img": "./images/icons/bootstrap.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/twbs/bootstrap/blob/main/LICENSE"
+	},
+	{
+		"title": "Material Icons",
+		"link": "https://material-ui.com/components/material-icons/",
+		"img": "./images/icons/materialicons.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/mui/material-ui/blob/master/LICENSE"
+	},
+	{
+		"title": "Font Awesome Icons",
+		"link": "https://fontawesome.com/icons",
+		"img": "./images/icons/fontawesome.webp",
+		"licence": "Multiple",
+		"licencelink": "https://fontawesome.com/license"
+	},
+	{
+		"title": "Eva Icons",
+		"link": "https://akveo.github.io/eva-icons/#/",
+		"img": "./images/icons/evaicons.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt"
+	},
+	{
+		"title": "Remix Icon",
+		"link": "https://remixicon.com/",
+		"img": "./images/icons/remixicon.webp",
+		"licence": "Apache License V2.0",
+		"licencelink": "https://remixicon.com/license"
 	}
 ]
