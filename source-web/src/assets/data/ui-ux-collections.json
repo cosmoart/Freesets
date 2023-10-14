@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Godly",
+		"link": "https://godly.website",
+		"img": "/images/ui-ux-collections/godly.webp"
+	},
+	{
+		"title": "BentoGrids",
+		"link": "https://bentogrids.com",
+		"img": "/images/ui-ux-collections/bentogrids.webp"
+	},
+	{
+		"title": "Landing Love",
+		"link": "https://www.landing.love",
+		"img": "/images/ui-ux-collections/landing-love.webp"
+	},
+	{
+		"title": "Dark Design",
+		"link": "https://www.dark.design",
+		"img": "/images/ui-ux-collections/darkdesign.webp"
+	}
+]

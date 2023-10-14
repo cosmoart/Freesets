@@ -76,7 +76,7 @@ git push origin my-branch
 	"license": "Free",
 	"licenseLink": "https://resource.com/licence",
 	"licenseDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
-	"tags": ["ia", "react", "library", "tool"]
+	"tags": ["ia", "react", "library", "3D"]
 }
 ```
 
