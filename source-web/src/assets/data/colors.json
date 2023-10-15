@@ -6,6 +6,13 @@
 		"tags": ["AI"]
 	},
 	{
+		"title": "Coolors",
+		"link": "https://coolors.co",
+		"img": "/images/colors/coolors.webp",
+		"licence": "CC0",
+		"licenceLink": "https://coolors.co/license"
+	},
+	{
 		"title": "Huetools",
 		"link": "https://hue.tools/",
 		"img": "/images/colors/huetools.webp"

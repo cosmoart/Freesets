@@ -1,5 +1,5 @@
 import ilustrationsJson from '@/assets/data/ilustrations.json';
-import uiUxCollectionsJson from '@/assets/data/ui-ux-collections.json';
+import uiCollectionsJson from '@/assets/data/ui-collections.json';
 import backgroundsJson from '@/assets/data/backgrounds.json';
 import iconsJson from '@/assets/data/icons.json';
 import loadersJson from '@/assets/data/loaders.json';
@@ -14,7 +14,7 @@ export default [
 	{
 		name: 'Icons',
 		items: iconsJson,
-		color: '#2563eb'
+		color: '#2563eb',
 	},
 	{
 		name: 'Ilustrations',
@@ -62,8 +62,8 @@ export default [
 		color: '#3b82f6'
 	},
 	{
-		name: "UI/UX collections",
-		items: uiUxCollectionsJson,
+		name: "UI collections",
+		items: uiCollectionsJson,
 		color: '#6366f1',
 	}
 ];

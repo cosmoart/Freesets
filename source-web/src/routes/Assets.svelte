@@ -1,11 +1,16 @@
 <script>
 	import autoAnimate from '@formkit/auto-animate';
 	import infoIcon from '@/assets/icons/info.svg';
-	export let categoriesFiltered;
+	export let categories;
+	let cardSize = 300;
 </script>
 
+<!-- <div class="flex gap-2">
+	<input type="range" min="150" max="450" step="10" bind:value={cardSize} class="w-56" />
+	<span>{cardSize}</span>
+</div> -->
 <main use:autoAnimate class="mb-10">
-	{#each categoriesFiltered as category}
+	{#each categories as category}
 		<article class="relative">
 			<div
 				class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
@@ -15,10 +20,9 @@
 					style={`background-color: ${category.color}; clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);`}
 				>
 					<img
-						src={'/categories-icons/' +
-							category.name.toLowerCase().replaceAll(/\/|\s/g, '-') +
-							'.svg'}
+						src={'/categories-icons/' + category.name.toLowerCase().replaceAll(' ', '-') + '.svg'}
 						alt=""
+						loading="lazy"
 						class="invert w-6"
 					/>
 					<h2 class="text-lg">
@@ -28,14 +32,21 @@
 				</div>
 			</div>
 			<div
-				class="mx-auto grid -mt-3 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5"
+				class="mx-auto grid -mt-3 gap-5"
+				style={`grid-template-columns: repeat(auto-fill,minmax(${cardSize}px,1fr))`}
 				use:autoAnimate
 			>
 				{#each category.items as asset}
 					<article
-						class="rounded-lg ring-2 ring-zinc-700 hover:ring-blue-600 bg-zinc-700 bg-opacity-30 backdrop-blur-md text-white overflow-hidden hover:scale-[1.02] transition-transform"
+						class="rounded-lg ring-2 ring-zinc-700 hover:ring-[--card-color] bg-zinc-700 bg-opacity-30 backdrop-blur-md text-white overflow-hidden hover:scale-[1.02] transition-transform"
+						style="--card-color: {category.color}"
 					>
-						<a href={asset.link} target="_blank" rel="noopener noreferrer">
+						<a
+							href={asset.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label={'Open ' + asset.title}
+						>
 							<img src={asset.img} alt="" class="aspect-video object-cover" />
 						</a>
 						<div class="p-5 flex flex-wrap justify-between items-center">
