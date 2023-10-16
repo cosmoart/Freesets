@@ -72,6 +72,13 @@
 		"licenceLink": "https://www.streamlinehq.com/license-free"
 	},
 	{
+		"title": "Iconbuddy",
+		"link": "https://iconbuddy.app",
+		"img": "./images/icons/iconbuddy.webp",
+		"licence": "Multiple",
+		"licenceLink": "https://iconbuddy.app"
+	},
+	{
 		"title": "Keyicons",
 		"link": "https://keyicons.com",
 		"img": "./images/icons/keyicons.webp",

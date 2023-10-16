@@ -80,10 +80,6 @@ git push origin my-branch
 }
 ```
 
-#### Rules and recommendations for each category
-
-- Icons: Try not to put resources that are already in the [Iconify](https://icon-sets.iconify.design) list.
-
 > Note: Try to make the name and license as short as possible for better display.
 
 ## Commit nomenclature

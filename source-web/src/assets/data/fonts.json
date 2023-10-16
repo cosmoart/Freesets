@@ -12,5 +12,25 @@
 		"img": "/images/fonts/freefaces.webp",
 		"licence": "Free",
 		"licenceDescription": "collection of typefaces that are available under a variety of free licences"
+	},
+	{
+		"title": "Fontshare",
+		"link": "https://www.fontshare.com",
+		"img": "/images/fonts/fontshare.webp"
+	},
+	{
+		"title": "Fontjoy",
+		"link": "https://fontjoy.com",
+		"img": "/images/fonts/fontjoy.webp"
+	},
+	{
+		"title": "Font style matcher",
+		"link": "https://meowni.ca/font-style-matcher/",
+		"img": "/images/fonts/font-style-matcher.webp"
+	},
+	{
+		"title": "Fluid typography",
+		"link": "https://modern-fluid-typography.vercel.app",
+		"img": "/images/fonts/fluid-typography.webp"
 	}
 ]
