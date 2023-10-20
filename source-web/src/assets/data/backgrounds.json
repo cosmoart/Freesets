@@ -40,5 +40,54 @@
 		"img": "https://patternpad.com/images/patternpad-banner.png",
 		"licence": "Free with attribution",
 		"licencelink": "https://patternpad.com"
+	},
+	{
+		"title": "SVG Backgrounds",
+		"link": "https://www.svgbackgrounds.com/",
+		"img": "/images/backgrounds/svg_backgrounds.webp",
+		"licence": "CC BY 4.0",
+		"licencelink": "https://www.svgbackgrounds.com/license/"
+	},
+	{
+		"title": "Kandinsky.io",
+		"link": "https://www.kandinsky.io/",
+		"img": "/images/backgrounds/kandinsky.webp",
+		"licence": "Freemium",
+		"licencelink": "https://www.kandinsky.io/pricing"
+	},
+	{
+		"title": "Visiwig",
+		"link": "https://www.visiwig.com/patterns/",
+		"img": "/images/backgrounds/visiwig.webp",
+		"licence": "Free",
+		"licencelink": "https://www.visiwig.com/pattern-license/"
+	},
+	{
+		"title": "CSS Pattern",
+		"link": "https://css-pattern.com/",
+		"img": "/images/backgrounds/css_pattern.webp",
+		"licence": "MIT",
+		"licencelink": "https://github.com/Afif13/CSS-Pattern/blob/main/LICENCE"
+	},
+	{
+		"title": "CSS3 Patterns Gallery",
+		"link": "https://projects.verou.me/css3patterns/",
+		"img": "/images/backgrounds/patterns_gallery.webp",
+		"licence": "Free",
+		"licencelink": "https://github.com/LeaVerou/css3patterns/blob/master/license.txt"
+	},
+	{
+		"title": "Tartanify",
+		"link": "https://tartanify.com/",
+		"img": "/images/backgrounds/tartanify.webp",
+		"licence": "Free",
+		"licencelink": "https://tartanify.com/terms-of-use"
+	},
+	{
+		"title": "Pattern Generator",
+		"link": "https://doodad.dev/pattern-generator/",
+		"img": "/images/backgrounds/pattern_generator.webp",
+		"licence": "Free",
+		"licencelink": "https://doodad.dev/pattern-generator/"
 	}
 ]
