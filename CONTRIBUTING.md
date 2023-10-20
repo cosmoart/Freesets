@@ -63,7 +63,7 @@ git push origin my-branch
 - name*: Name of the resource
 - link*: Link to the resource
 - img*: Image of the resource, 1280px x 720px, webp format (you can use [squoosh](https://squoosh.app/) to convert the image to webp)
-- License: License of the resource if it exists..
+- License: License of the resource if it exists.
 - LicenseLink: Link to the resource license if it exists.
 - LicenseDescription: More complete license information.
 - Tags: Tags, for example: `ia`, `react`, `library`, `tool`...
@@ -76,7 +76,7 @@ git push origin my-branch
 	"license": "Free",
 	"licenseLink": "https://resource.com/licence",
 	"licenseDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
-	"tags": ["ia", "react", "library", "tool"]
+	"tags": ["ia", "react", "library", "3D"]
 }
 ```
 

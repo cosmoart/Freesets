@@ -7,10 +7,10 @@
 	href="https://github.com/cosmoart/free-resources"
 	target="_blank"
 	rel="noopener noreferrer"
-	class="fixed group bottom-5 right-5 p-1 w-8 h-8 ring-2 ring-slate-800 hover:scale-105 transition-transform bg-white rounded-md z-50"
+	class="fixed group bottom-5 right-5 p-1 w-8 h-8 ring-2 ring-zinc-800 hover:scale-105 transition-transform bg-white rounded-md z-50"
 >
 	<span
-		class="absolute text-base right-0 transition-all opacity-0 group-hover:right-8 group-hover:opacity-100 rounded-l-md py-1 px-2 bg-slate-800 w-max top-0 bottom-0 m-auto tracking-wide"
+		class="absolute text-base right-0 transition-all opacity-0 group-hover:right-8 group-hover:opacity-100 rounded-l-md py-1 px-2 bg-zinc-800 w-max top-0 bottom-0 m-auto tracking-wide"
 		>Contribute</span
 	>
 	<div class="overflow-hidden relative w-8 h-8">

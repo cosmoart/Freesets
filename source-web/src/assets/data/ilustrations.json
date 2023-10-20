@@ -5,14 +5,14 @@
 		"img": "./images/ilustrations/pixabay.webp",
 		"licence": "Pixabay License",
 		"licenceDescription": "Free for commercial and noncommercial use. Attribution is not required",
-		"licencelink": "https://pixabay.com/service/license/"
+		"licenceLink": "https://pixabay.com/service/license/"
 	},
 	{
 		"title": "Reshot",
 		"link": "https://www.reshot.com/free-vector-illustrations/",
 		"img": "https://www.reshot.com/static/illustrations/og/reshot-free-illustrations.png",
 		"licence": "Reshot Free License",
-		"licencelink": "https://www.reshot.com/license/"
+		"licenceLink": "https://www.reshot.com/license/"
 	},
 	{
 		"title": "unDraw",
@@ -20,70 +20,70 @@
 		"img": "./images/ilustrations/undraw.webp",
 		"licence": "Free",
 		"licenceDescription": "\"You can use the illustrations in any project, commercial or personal without attribution or any costs\"",
-		"licencelink": "https://undraw.co/license"
+		"licenceLink": "https://undraw.co/license"
 	},
 	{
 		"title": "Designs AI",
 		"link": "https://designs.ai/graphicmaker",
 		"img": "./images/ilustrations/designsai.webp",
 		"licence": "Free with attribution",
-		"licencelink": "https://designs.ai/dos-and-donts"
+		"licenceLink": "https://designs.ai/dos-and-donts"
 	},
 	{
 		"title": "Iradesign",
 		"link": "https://iradesign.io",
 		"img": "./images/ilustrations/iradesign.webp",
 		"licence": "MIT",
-		"licencelink": "https://iradesign.io"
+		"licenceLink": "https://iradesign.io"
 	},
 	{
 		"title": "Open Doodles",
 		"link": "https://www.opendoodles.com",
 		"img": "https://assets.website-files.com/5d5d5904f8a21bfe5ff69367/5da4cb5454976755fcac7930_seo-doodles.jpg",
 		"licence": "CC0 1.0",
-		"licencelink": "https://www.opendoodles.com"
+		"licenceLink": "https://www.opendoodles.com"
 	},
 	{
 		"title": "Big Heads",
 		"link": "https://bigheads.io",
 		"img": "https://bigheads.io/card.png",
 		"licence": "Free",
-		"licencelink": "https://bigheads.io"
+		"licenceLink": "https://bigheads.io"
 	},
 	{
 		"title": "Humaaans",
 		"link": "https://www.humaaans.com/",
 		"img": "https://assets.website-files.com/5bff8886c3964a992e90d465/5c050a75fc73fba30bf816f1_seo-rectangle.jpg",
 		"licence": "CC0",
-		"licencelink": "https://www.humaaans.com/"
+		"licenceLink": "https://www.humaaans.com/"
 	},
 	{
 		"title": "Fresh Folk",
 		"link": "https://fresh-folk.com",
 		"img": "https://fresh-folk.com/assets/images/card.jpg",
 		"licence": "CC BY-NC-ND 4.0",
-		"licencelink": "https://fresh-folk.com"
+		"licenceLink": "https://fresh-folk.com"
 	},
 	{
 		"title": "Iconfinder",
 		"link": "https://www.iconfinder.com/search?q=&price=free",
 		"img": "https://www.iconfinder.com/static/img/meta-generic.png?d34117af5a",
 		"licence": "Multiple",
-		"licencelink": "https://www.iconfinder.com/search?q=&price=free"
+		"licenceLink": "https://www.iconfinder.com/search?q=&price=free"
 	},
 	{
 		"title": "Flexiple ilustrations",
 		"link": "https://flexiple.com/illustrations/",
 		"img": "https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png",
 		"licence": "Free",
-		"licencelink": "https://flexiple.com/illustrations/"
+		"licenceLink": "https://flexiple.com/illustrations/"
 	},
 	{
 		"title": "Storyset",
 		"link": "https://storyset.com",
 		"img": "./images/ilustrations/storyset.webp",
 		"licence": "Free with attribution.",
-		"licencelink": "https://storyset.com/faqs"
+		"licenceLink": "https://storyset.com/faqs"
 	},
 	{
 		"title": "Theme Isle",
@@ -91,7 +91,7 @@
 		"img": "./images/ilustrations/themeisle.webp",
 		"licence": "Free",
 		"licenceDescription": "\"All images and vectors published on Themeisle can be used for free. You can use them for noncommercial and commercial purposes.\"",
-		"licencelink": "https://themeisle.com/illustrations/"
+		"licenceLink": "https://themeisle.com/illustrations/"
 	},
 	{
 		"title": "DrawKit",
@@ -99,7 +99,7 @@
 		"img": "./images/ilustrations/drawkit.webp",
 		"licence": "DrawKit License",
 		"licenseDescription": "Free for Personal and Commercial. No attribution required.",
-		"licencelink": "https://www.drawkit.com/license"
+		"licenceLink": "https://www.drawkit.com/license"
 	},
 	{
 		"title": "Delesign",
@@ -107,7 +107,7 @@
 		"img": "./images/ilustrations/delesign.webp",
 		"licence": "Delesign License",
 		"licenseDescription": "Free for Personal and Commercial. No attribution required.",
-		"licencelink": "https://delesign.com/free-designs/free-license/"
+		"licenceLink": "https://delesign.com/free-designs/free-license/"
 	},
 	{
 		"title": "Streamline Illustrations",
@@ -115,6 +115,6 @@
 		"img": "./images/ilustrations/streamline.webp",
 		"licence": "CC by 4.0",
 		"licenseDescription": "Free for commercial and personal use WITH ATTRIBUTION",
-		"licencelink": "https://www.streamlinehq.com/license-free"
+		"licenceLink": "https://www.streamlinehq.com/license-free"
 	}
 ]

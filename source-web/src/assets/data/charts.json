@@ -1,1 +1,28 @@
-[]
+[
+	{
+		"title": "Tremor",
+		"link": "https://www.tremor.so",
+		"img": "/images/charts/chart.js.webp",
+		"tags": ["Library", "React"],
+		"licence": "Apache License 2.0",
+		"licenceLink": "https://github.com/tremorlabs/tremor/blob/main/License",
+		"licenceDescription": "Free with attribution"
+	},
+	{
+		"title": "Lightweight charts",
+		"link": "https://www.tradingview.com/lightweight-charts/",
+		"img": "/images/charts/lightweight-charts.webp",
+		"licence": "Free with attribution",
+		"licenceDescription": "The Lightweight Charts™ license requires specifying TradingView as the product creator.",
+		"licenceLink": "https://tradingview.github.io/lightweight-charts/docs#license-and-attribution",
+		"tags": ["Library"]
+	},
+	{
+		"title": "Chart.js",
+		"link": "https://www.chartjs.org",
+		"img": "/images/charts/tremor.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/chartjs/Chart.js/blob/master/LICENSE.md",
+		"tags": ["Library"]
+	}
+]

@@ -4,5 +4,27 @@
 		"link": "https://tintmint.net",
 		"img": "/images/colors/ai-colors.webp",
 		"tags": ["AI"]
+	},
+	{
+		"title": "Coolors",
+		"link": "https://coolors.co",
+		"img": "/images/colors/coolors.webp",
+		"licence": "CC0",
+		"licenceLink": "https://coolors.co/license"
+	},
+	{
+		"title": "Huetools",
+		"link": "https://hue.tools/",
+		"img": "/images/colors/huetools.webp"
+	},
+	{
+		"title": "Palette Maker",
+		"link": "https://palettemaker.com/app",
+		"img": "/images/colors/palettemaker.webp"
+	},
+	{
+		"title": "UI Colors",
+		"link": "https://uicolors.app/create",
+		"img": "/images/colors/uicolors.webp"
 	}
 ]
