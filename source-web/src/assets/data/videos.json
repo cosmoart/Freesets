@@ -5,7 +5,7 @@
 		"img": "./images/videos/pixabay.webp",
 		"licence": "Pixabay License",
 		"licenceDescription": "Free for commercial and noncommercial use. Attribution is not required.",
-		"licencelink": "https://pixabay.com/service/license/"
+		"licenceLink": "https://pixabay.com/service/license/"
 	},
 	{
 		"title": "Pexels",
@@ -13,7 +13,7 @@
 		"img": "./images/videos/pexels.webp",
 		"licence": "Free",
 		"licenceDescription": "\"All photos and videos on Pexels can be downloaded and used for free.\"",
-		"licencelink": "https://www.pexels.com/license/"
+		"licenceLink": "https://www.pexels.com/license/"
 	},
 	{
 		"title": "Coverr",
@@ -21,7 +21,7 @@
 		"img": "./images/videos/coverr.webp",
 		"licence": "Free",
 		"licenceDescription": "\"All Videos published on Coverr.co can be used free for commercial and non-commercial purposes. You do not need to ask permission from or provide credit to the videographer or Coverr.co, although it is appreciated when possible.\"",
-		"licencelink": "https://coverr.co/license"
+		"licenceLink": "https://coverr.co/license"
 	},
 	{
 		"title": "Videezy",
@@ -29,7 +29,7 @@
 		"img": "./images/videos/videezy.webp",
 		"licence": "Multiple",
 		"licenceDescription": "Standard, Pro, Creative Commons and Editorial Use Only",
-		"licencelink": "https://www.videezy.com/terms"
+		"licenceLink": "https://www.videezy.com/terms"
 	},
 	{
 		"title": "Mixkit",
@@ -37,7 +37,7 @@
 		"img": "./images/videos/mixkit.webp",
 		"licence": "Free",
 		"licenceDescription": "\"Items under the Mixkit Stock Video Free License can be used in your commercial and non-commercial projects, for free.\"",
-		"licencelink": "https://mixkit.co/license/"
+		"licenceLink": "https://mixkit.co/license/"
 	},
 	{
 		"title": "Videvo",
@@ -45,6 +45,6 @@
 		"img": "./images/videos/videvo.webp",
 		"licence": "Videvo Attribution License or CC BY 3.0",
 		"licenceDescription": "\"You may use these video clips free of charge, in both personal and commercial productions. Video clips that carry the Creative Commons 3.0 license must be attributed to the original author.\"",
-		"licencelink": "https://help.videvo.net/category/6-licensing"
+		"licenceLink": "https://help.videvo.net/category/6-licensing"
 	}
 ]

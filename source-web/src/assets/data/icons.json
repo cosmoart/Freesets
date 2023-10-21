@@ -4,42 +4,57 @@
 		"link": "https://icon-sets.iconify.design",
 		"img": "./images/icons/iconify.webp",
 		"licence": "Multiple",
-		"licencelink": "https://iconify.design/license/"
+		"licenceLink": "https://iconify.design/license/"
 	},
 	{
 		"title": "Google icons",
 		"link": "https://fonts.google.com/icons",
 		"img": "./images/icons/google.webp",
 		"licence": "Apache License V2.0",
-		"licencelink": "https://developers.google.com/fonts/docs/material_icons#licensing"
+		"licenceLink": "https://developers.google.com/fonts/docs/material_icons#licensing"
 	},
 	{
 		"title": "Tabler icons",
 		"link": "https://tabler-icons.io",
 		"img": "https://tabler-icons.io/img/tabler-icons/og.png",
 		"licence": "MIT",
-		"licencelink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+		"licenceLink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+	},
+	{
+		"title": "Animatedicons",
+		"link": "https://animatedicons.co/icons",
+		"img": "/images/icons/animatedicons.webp",
+		"licence": "Free",
+		"licenceLink": "https://animatedicons.co/license",
+		"licenceDescription": "\"You're free to use AnimatedIcons in any project, be it for commercial or personal use, without the need for attribution or any costs\""
 	},
 	{
 		"title": "svgl",
 		"link": "https://svgl.vercel.app",
 		"img": "https://svgl.vercel.app/images/screenshot.png",
 		"licence": "MIT",
-		"licencelink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
+		"licenceLink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
 	},
 	{
 		"title": "Ikonate",
 		"link": "https://ikonate.com",
 		"img": "https://ikonate.com/cover.png",
 		"licence": "MIT",
-		"licencelink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
+		"licenceLink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
 	},
 	{
 		"title": "SVGrepo",
 		"link": "https://www.svgrepo.com",
 		"img": "https://www.svgrepo.com/social.png",
 		"licence": "Multiple",
-		"licencelink": "https://www.svgrepo.com/page/licensing"
+		"licenceLink": "https://www.svgrepo.com/page/licensing"
+	},
+	{
+		"title": "Phosphor",
+		"link": "https://phosphoricons.com",
+		"img": "./images/icons/phosphor.webp",
+		"licence": "MIT",
+		"licenceLink": "https://raw.githubusercontent.com/phosphor-icons/phosphor-home/master/LICENSE"
 	},
 	{
 		"title": "Iconmonstr",
@@ -47,97 +62,104 @@
 		"img": "./images/icons/iconmonstr.webp",
 		"licence": "Free",
 		"licenceDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
-		"licencelink": "https://iconmonstr.com/license/"
+		"licenceLink": "https://iconmonstr.com/license/"
 	},
 	{
 		"title": "Streamline Icons",
 		"link": "https://www.streamlinehq.com",
 		"img": "./images/icons/streamline.webp",
 		"licence": "CC by 4.0",
-		"licencelink": "https://www.streamlinehq.com/license-free"
+		"licenceLink": "https://www.streamlinehq.com/license-free"
+	},
+	{
+		"title": "Iconbuddy",
+		"link": "https://iconbuddy.app",
+		"img": "./images/icons/iconbuddy.webp",
+		"licence": "Multiple",
+		"licenceLink": "https://iconbuddy.app"
 	},
 	{
 		"title": "Keyicons",
 		"link": "https://keyicons.com",
 		"img": "./images/icons/keyicons.webp",
 		"licence": "CC BY 4.0",
-		"licencelink": "https://keyicons.com"
+		"licenceLink": "https://keyicons.com"
 	},
 	{
 		"title": "Zwicon",
 		"link": "http://zwicon.com",
 		"img": "./images/icons/zwicon.webp",
 		"licence": "CC BY-ND 4.0",
-		"licencelink": "http://zwicon.com/how-to-use.html"
+		"licenceLink": "http://zwicon.com/how-to-use.html"
 	},
 	{
 		"title": "Mono Icons",
 		"link": "https://icons.mono.company/",
 		"img": "./images/icons/monoicons.webp",
 		"licence": "MIT",
-		"licencelink": "https://github.com/mono-company/mono-icons/blob/master/LICENSE.md"
+		"licenceLink": "https://github.com/mono-company/mono-icons/blob/master/LICENSE.md"
 	},
 	{
 		"title": "Hero Icons",
 		"link": "https://heroicons.com/",
 		"img": "./images/icons/heroicons.webp",
 		"licence": "MIT",
-		"licencelink": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+		"licenceLink": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
 	},
 	{
 		"title": "Teenyicons",
 		"link": "https://teenyicons.com/",
 		"img": "./images/icons/teenyicons.webp",
 		"licence": "MIT",
-		"licencelink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE"
+		"licenceLink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE"
 	},
 	{
 		"title": "CSS Icons",
 		"link": "https://css.gg/",
 		"img": "./images/icons/CSSIcons.webp",
 		"licence": "MIT",
-		"licencelink": "https://css.gg/doc/licence"
+		"licenceLink": "https://css.gg/doc/licence"
 	},
 	{
 		"title": "Core UI Icons",
 		"link": "https://coreui.io/icons/",
 		"img": "./images/icons/coreuiicons.webp",
 		"licence": "Freemium",
-		"licencelink": "https://coreui.io/license/"
+		"licenceLink": "https://coreui.io/license/"
 	},
 	{
 		"title": "Bootstrap Icons",
 		"link": "https://icons.getbootstrap.com/",
 		"img": "./images/icons/bootstrap.webp",
 		"licence": "MIT",
-		"licencelink": "https://github.com/twbs/bootstrap/blob/main/LICENSE"
+		"licenceLink": "https://github.com/twbs/bootstrap/blob/main/LICENSE"
 	},
 	{
 		"title": "Material Icons",
 		"link": "https://material-ui.com/components/material-icons/",
 		"img": "./images/icons/materialicons.webp",
 		"licence": "MIT",
-		"licencelink": "https://github.com/mui/material-ui/blob/master/LICENSE"
+		"licenceLink": "https://github.com/mui/material-ui/blob/master/LICENSE"
 	},
 	{
 		"title": "Font Awesome Icons",
 		"link": "https://fontawesome.com/icons",
 		"img": "./images/icons/fontawesome.webp",
 		"licence": "Multiple",
-		"licencelink": "https://fontawesome.com/license"
+		"licenceLink": "https://fontawesome.com/license"
 	},
 	{
 		"title": "Eva Icons",
 		"link": "https://akveo.github.io/eva-icons/#/",
 		"img": "./images/icons/evaicons.webp",
 		"licence": "MIT",
-		"licencelink": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt"
+		"licenceLink": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt"
 	},
 	{
 		"title": "Remix Icon",
 		"link": "https://remixicon.com/",
 		"img": "./images/icons/remixicon.webp",
 		"licence": "Apache License V2.0",
-		"licencelink": "https://remixicon.com/license"
+		"licenceLink": "https://remixicon.com/license"
 	}
 ]
