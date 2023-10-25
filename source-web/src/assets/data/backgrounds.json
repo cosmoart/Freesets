@@ -3,8 +3,16 @@
 		"title": "CSS Background Patterns",
 		"link": "https://www.magicpattern.design/tools/css-backgrounds",
 		"img": "https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg",
-		"licence": "Free",
+		"licence": "Multiple",
 		"licenceLink": "https://www.magicpattern.design/terms"
+	},
+	{
+		"title": "Pattern Generator",
+		"link": "https://doodad.dev/pattern-generator/",
+		"img": "/images/backgrounds/pattern_generator.webp",
+		"licence": "Free",
+		"licenceLink": "https://doodad.dev/pattern-generator/",
+		"licenceDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs"
 	},
 	{
 		"title": "Pattern Monster",
@@ -24,21 +32,60 @@
 		"title": "Haikei",
 		"link": "https://haikei.app/generators/",
 		"img": "https://haikei.app/haikei-cover.png",
-		"licence": "Free",
-		"licenceLink": "https://haikei.app/pricing/"
+		"licence": "Multiple",
+		"licenceLink": "https://haikei.app/pricing/",
+		"licenceDescription": "Basic Plan, Pro Plan"
 	},
 	{
 		"title": "Hero Patterns",
 		"link": "https://www.heropatterns.com",
 		"img": "/images/backgrounds/heropatterns.webp",
 		"licence": "CC BY 4.0",
-		"licenceLink": "https://heropatterns.com"
+		"licenceLink": "https://heropatterns.com",
+		"licenceDescription": "Free with attribution"
 	},
 	{
 		"title": "PatternPad",
 		"link": "https://patternpad.com",
 		"img": "https://patternpad.com/images/patternpad-banner.png",
-		"licence": "Free with attribution",
-		"licenceLink": "https://patternpad.com"
+		"licence": "CC BY 4.0",
+		"licenceLink": "https://patternpad.com",
+		"licenceDescription": "Free with attribution"
+	},
+	{
+		"title": "Visiwig",
+		"link": "https://www.visiwig.com/patterns/",
+		"img": "/images/backgrounds/visiwig.webp",
+		"licence": "Free",
+		"licenceLink": "https://www.visiwig.com/pattern-license/",
+		"licenceDescription": "\"You can use the patterns in any project, commercial or personal without attribution or any costs, but...\""
+	},
+	{
+		"title": "Tartanify",
+		"link": "https://tartanify.com/",
+		"img": "/images/backgrounds/tartanify.webp",
+		"licence": "Multiple",
+		"licenceLink": "https://tartanify.com/terms-of-use"
+	},
+	{
+		"title": "SVG Backgrounds",
+		"link": "https://www.svgbackgrounds.com/",
+		"img": "/images/backgrounds/svg_backgrounds.webp",
+		"licence": "CC BY 4.0",
+		"licenceLink": "https://www.svgbackgrounds.com/license/"
+	},
+	{
+		"title": "CSS Pattern",
+		"link": "https://css-pattern.com/",
+		"img": "/images/backgrounds/css_pattern.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/Afif13/CSS-Pattern/blob/main/LICENCE"
+	},
+	{
+		"title": "CSS3 Patterns Gallery",
+		"link": "https://projects.verou.me/css3patterns/",
+		"img": "/images/backgrounds/patterns_gallery.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/LeaVerou/css3patterns/blob/master/license.txt"
 	}
 ]
