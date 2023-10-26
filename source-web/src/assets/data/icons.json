@@ -16,7 +16,7 @@
 	{
 		"title": "Tabler icons",
 		"link": "https://tabler-icons.io",
-		"img": "https://tabler-icons.io/img/tabler-icons/og.png",
+		"img": "./images/icons/tabler.webp",
 		"licence": "MIT",
 		"licenceLink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
 	},
@@ -31,21 +31,21 @@
 	{
 		"title": "svgl",
 		"link": "https://svgl.vercel.app",
-		"img": "https://svgl.vercel.app/images/screenshot.png",
+		"img": "./images/icons/svgl.webp",
 		"licence": "MIT",
 		"licenceLink": "https://github.com/pheralb/svgl/blob/main/LICENSE"
 	},
 	{
 		"title": "Ikonate",
 		"link": "https://ikonate.com",
-		"img": "https://ikonate.com/cover.png",
+		"img": "./images/icons/ikonate.webp",
 		"licence": "MIT",
 		"licenceLink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE"
 	},
 	{
 		"title": "SVGrepo",
 		"link": "https://www.svgrepo.com",
-		"img": "https://www.svgrepo.com/social.png",
+		"img": "./images/icons/svgrepo.webp",
 		"licence": "Multiple",
 		"licenceLink": "https://www.svgrepo.com/page/licensing"
 	},

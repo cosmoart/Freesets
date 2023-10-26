@@ -6,7 +6,7 @@
 </script>
 
 <nav>
-	<ul class="flex gap-2 flex-wrap">
+	<ul class="flex gap-2 flex-wrap text-md">
 		<li class="flex-grow">
 			<a
 				href="/"
@@ -14,12 +14,12 @@
 					categoryParam === undefined ? 'outline' : ''
 				}`}
 			>
-				<img src="/categories-icons/all.svg" alt="" class="invert w-6" />
+				<img src="/categories-icons/all.svg" alt="" class="invert w-[23px]" />
 				All
 			</a>
 		</li>
 		{#each categories as category}
-			<li class="flex-grow md:min-w-[12rem] text-base">
+			<li class="flex-grow md:min-w-[10rem]">
 				<a
 					href={`/${category.name.toLowerCase().replaceAll(' ', '-')}`}
 					class={`flex items-center w-full justify-center gap-2 bg-[--item-color] rounded-md px-4 py-1.5 flex-grow outline-2 outline-[--item-color] outline-offset-2 cursor-pointer hover:scale-[1.03] transition-transform ${
@@ -34,7 +34,7 @@
 							category.name.toLowerCase().replaceAll(/\/|\s/g, '-') +
 							'.svg'}
 						alt=""
-						class="invert w-6"
+						class="invert w-[23px]"
 					/>
 					{category.name}
 				</a>

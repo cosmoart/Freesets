@@ -3,6 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	.appear {
+		@apply !translate-y-0 !opacity-100 !scale-100;
+	}
+}
+
+.recourse-title::after {
+	content: '';
+	position: absolute;
+	border-radius: 0 0 10px 10px;
+	-webkit-transform: perspective(100px) rotateX(-20deg);
+	transform: perspective(100px) rotateX(-20deg);
+	background: var(--resource-color);
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: -10;
+	height: 108%;
+	width: 100%;
+}
+
 :root {
 	--color-bg-1: #1e2022;
 	--color-text: rgba(0, 0, 0, 0.7);

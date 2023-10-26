@@ -1,8 +1,26 @@
 <script>
 	import autoAnimate from '@formkit/auto-animate';
 	import infoIcon from '@/assets/icons/info.svg';
+	import { afterUpdate } from 'svelte';
+
 	export let categories;
 	let cardSize = 300;
+
+	afterUpdate(() => {
+		let observer = new IntersectionObserver(
+			(cards) => {
+				cards.forEach((card) => {
+					console.log(card.isIntersecting);
+					if (card.isIntersecting) card.target.classList.add('appear');
+				});
+			},
+			{ threshold: 0.2 }
+		);
+
+		document.querySelectorAll('.asset-card').forEach((card) => observer.observe(card));
+
+		return () => observer.disconnect();
+	});
 </script>
 
 <!-- <div class="flex gap-2">
@@ -16,8 +34,8 @@
 				class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
 			>
 				<div
-					class="flex gap-2 px-10 py-1.5"
-					style={`background-color: ${category.color}; clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);`}
+					class="recourse-title relative flex gap-2 px-10 py-1.5"
+					style={`--resource-color: ${category.color}`}
 				>
 					<img
 						src={'/categories-icons/' + category.name.toLowerCase().replaceAll(' ', '-') + '.svg'}
@@ -25,9 +43,9 @@
 						loading="lazy"
 						class="invert w-6"
 					/>
-					<h2 class="text-lg">
+					<h2 class="text-[17px]">
 						{category.name}
-						<span class="text-base">({category.items.length})</span>
+						<span class="text-[15px]">({category.items.length})</span>
 					</h2>
 				</div>
 			</div>
@@ -38,7 +56,7 @@
 			>
 				{#each category.items as asset}
 					<article
-						class="rounded-lg ring-2 ring-zinc-700 hover:ring-[--card-color] bg-zinc-700 bg-opacity-30 backdrop-blur-md text-white overflow-hidden hover:scale-[1.02] transition-transform"
+						class="asset-card transition-all opacity-40 translate-y-6 scale-75 rounded-lg ring-2 ring-zinc-700 hover:ring-[--card-color] bg-zinc-700 bg-opacity-30 backdrop-blur-md text-white overflow-hidden hover:!scale-[1.02]"
 						style="--card-color: {category.color}"
 					>
 						<a
@@ -54,7 +72,7 @@
 							{#if asset.licence}
 								<div class="group relative">
 									<a
-										class="bg-blue-600 px-4 py-1 rounded-md text-sm tracking-wide"
+										class="bg-blue-600 px-4 py-1 rounded-md text-[13px] tracking-wide"
 										target="_blank"
 										rel="noopener noreferrer"
 										href={asset.licenceLink}
@@ -76,7 +94,7 @@
 							{#if asset.tags}
 								<ul class="flex gap-2">
 									{#each asset.tags as tag}
-										<li class="bg-blue-600 px-4 py-1 rounded-md text-sm tracking-wide">
+										<li class="bg-blue-600 rounded-full px-4 py-1 text-xs tracking-wide">
 											{tag}
 										</li>
 									{/each}

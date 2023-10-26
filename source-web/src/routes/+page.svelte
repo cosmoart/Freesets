@@ -1,8 +1,6 @@
 <script>
 	import categories from '@/assets/categories.js';
 	import Assets from './Assets.svelte';
-
-	console.log(categories);
 </script>
 
 <svelte:head>

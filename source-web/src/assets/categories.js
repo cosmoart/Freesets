@@ -7,34 +7,26 @@ import photosJson from '@/assets/data/photos.json';
 import videosJson from '@/assets/data/videos.json';
 import colorsJson from '@/assets/data/colors.json';
 import fontsJson from '@/assets/data/fonts.json';
-import chartsJson from '@/assets/data/charts.json';
+import librariesJson from '@/assets/data/libraries.json';
 import blogsJson from '@/assets/data/blogs.json';
+import threeDJson from '@/assets/data/3d.json';
+import componentsJson from '@/assets/data/components.json';
 
 export default [
 	{
 		name: 'Icons',
 		items: iconsJson,
-		color: '#2563eb',
+		color: '#2b6dff',
 	},
 	{
 		name: 'Ilustrations',
 		items: ilustrationsJson,
-		color: '#22c55e'
-	},
-	{
-		name: 'Loaders',
-		items: loadersJson,
-		color: '#f97316'
+		color: '#18d16b'
 	},
 	{
 		name: 'Photos',
 		items: photosJson,
 		color: '#d41cf1'
-	},
-	{
-		name: 'Backgrounds',
-		items: backgroundsJson,
-		color: '#4c3fed'
 	},
 	{
 		name: 'Videos',
@@ -47,23 +39,43 @@ export default [
 		color: '#f721a8'
 	},
 	{
-		name: 'Fonts',
-		items: fontsJson,
-		color: '#f59e0b'
+		name: 'Backgrounds',
+		items: backgroundsJson,
+		color: '#4c3fed'
 	},
 	{
-		name: 'Charts',
-		items: chartsJson,
-		color: '#10b981'
+		name: 'Fonts',
+		items: fontsJson,
+		color: '#ffaa1b'
+	},
+	{
+		name: "3D",
+		items: threeDJson,
+		color: '#8338ec',
+	},
+	{
+		name: 'libraries',
+		items: librariesJson,
+		color: '#ff006e'
 	},
 	{
 		name: 'Blogs',
 		items: blogsJson,
-		color: '#3b82f6'
+		color: '#00a1ff'
+	},
+	{
+		name: 'Loaders',
+		items: loadersJson,
+		color: '#f97316'
 	},
 	{
 		name: "UI collections",
 		items: uiCollectionsJson,
 		color: '#6366f1',
-	}
+	},
+	{
+		name: "Components",
+		items: componentsJson,
+		color: '#50bb49',
+	},
 ];

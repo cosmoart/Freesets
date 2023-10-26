@@ -16,7 +16,7 @@
 	{
 		"title": "Hola svg",
 		"link": "https://loaders.holasvg.com",
-		"img": "https://loaders.holasvg.com/holasvg-loaders.gif",
+		"img": "./images/loaders/hola-svg.webp",
 		"licence": "MIT",
 		"licenceLink": "https://loaders.holasvg.com"
 	},
@@ -35,7 +35,7 @@
 	{
 		"title": "CSS loaders and spinners",
 		"link": "https://cssloaders.github.io",
-		"img": "https://cssloaders.github.io/images/Loader-screen.png",
+		"img": "./images/loaders/cssloaders.webp",
 		"licence": "MIT",
 		"licenceLink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE"
 	}

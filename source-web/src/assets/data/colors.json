@@ -3,7 +3,9 @@
 		"title": "AI Colors",
 		"link": "https://tintmint.net",
 		"img": "/images/colors/ai-colors.webp",
-		"tags": ["AI"]
+		"tags": ["AI"],
+		"licence": "Free",
+		"licenceDescription": "\"Feel free to use the patterns you create in any commercial project.\""
 	},
 	{
 		"title": "Coolors",

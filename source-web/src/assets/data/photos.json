@@ -33,14 +33,14 @@
 	{
 		"title": "StockSnap",
 		"link": "https://stocksnap.io",
-		"img": "https://stocksnap.io/img/stocksnap_og.png",
+		"img": "./images/photos/stocksnap.webp",
 		"licence": "CC0 1.0",
 		"licenceLink": "https://stocksnap.io/license"
 	},
 	{
 		"title": "Nappy",
 		"link": "https://nappy.co",
-		"img": "https://nappy.co/public/img/meta_header.jpg",
+		"img": "./images/photos/nappy.webp",
 		"licence": "CC0 1.0",
 		"licenceLink": "https://nappy.co/license"
 	}

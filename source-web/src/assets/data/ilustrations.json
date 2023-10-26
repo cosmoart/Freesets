@@ -10,7 +10,7 @@
 	{
 		"title": "Reshot",
 		"link": "https://www.reshot.com/free-vector-illustrations/",
-		"img": "https://www.reshot.com/static/illustrations/og/reshot-free-illustrations.png",
+		"img": "./images/ilustrations/reshot.webp",
 		"licence": "Reshot Free License",
 		"licenceLink": "https://www.reshot.com/license/"
 	},
@@ -39,42 +39,42 @@
 	{
 		"title": "Open Doodles",
 		"link": "https://www.opendoodles.com",
-		"img": "https://assets.website-files.com/5d5d5904f8a21bfe5ff69367/5da4cb5454976755fcac7930_seo-doodles.jpg",
+		"img": "./images/ilustrations/opendoodles.webp",
 		"licence": "CC0 1.0",
 		"licenceLink": "https://www.opendoodles.com"
 	},
 	{
 		"title": "Big Heads",
 		"link": "https://bigheads.io",
-		"img": "https://bigheads.io/card.png",
+		"img": "./images/ilustrations/bigheads.webp",
 		"licence": "Free",
 		"licenceLink": "https://bigheads.io"
 	},
 	{
 		"title": "Humaaans",
 		"link": "https://www.humaaans.com/",
-		"img": "https://assets.website-files.com/5bff8886c3964a992e90d465/5c050a75fc73fba30bf816f1_seo-rectangle.jpg",
+		"img": "./images/ilustrations/humaaans.webp",
 		"licence": "CC0",
 		"licenceLink": "https://www.humaaans.com/"
 	},
 	{
 		"title": "Fresh Folk",
 		"link": "https://fresh-folk.com",
-		"img": "https://fresh-folk.com/assets/images/card.jpg",
+		"img": "./images/ilustrations/freshfolk.webp",
 		"licence": "CC BY-NC-ND 4.0",
 		"licenceLink": "https://fresh-folk.com"
 	},
 	{
 		"title": "Iconfinder",
 		"link": "https://www.iconfinder.com/search?q=&price=free",
-		"img": "https://www.iconfinder.com/static/img/meta-generic.png?d34117af5a",
+		"img": "./images/ilustrations/iconfinder.webp",
 		"licence": "Multiple",
 		"licenceLink": "https://www.iconfinder.com/search?q=&price=free"
 	},
 	{
 		"title": "Flexiple ilustrations",
 		"link": "https://flexiple.com/illustrations/",
-		"img": "https://ik.imagekit.io/6eslefmcf/flexiple/preview/scale-link-preview_TPkNnpjji.png",
+		"img": "./images/ilustrations/flexiple.webp",
 		"licence": "Free",
 		"licenceLink": "https://flexiple.com/illustrations/"
 	},

@@ -2,7 +2,7 @@
 	{
 		"title": "CSS Background Patterns",
 		"link": "https://www.magicpattern.design/tools/css-backgrounds",
-		"img": "https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg",
+		"img": "/images/backgrounds/csspatterns.webp",
 		"licence": "Multiple",
 		"licenceLink": "https://www.magicpattern.design/terms"
 	},
@@ -17,21 +17,21 @@
 	{
 		"title": "Pattern Monster",
 		"link": "https://pattern.monster",
-		"img": "https://giguom.com/pattern.monster/images//TwitterBG2.png",
+		"img": "/images/backgrounds/pattern_monster.webp",
 		"licence": "MIT",
 		"licenceLink": "https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md"
 	},
 	{
 		"title": "pattern.css",
 		"link": "https://bansal.io/pattern-css",
-		"img": "https://bansal.io/assets/images/pattern-css-preview.jpg",
+		"img": "/images/backgrounds/pattern_css.webp",
 		"licence": "MIT",
 		"licenceLink": "https://github.com/bansal/pattern.css"
 	},
 	{
 		"title": "Haikei",
 		"link": "https://haikei.app/generators/",
-		"img": "https://haikei.app/haikei-cover.png",
+		"img": "/images/backgrounds/haikei.webp",
 		"licence": "Multiple",
 		"licenceLink": "https://haikei.app/pricing/",
 		"licenceDescription": "Basic Plan, Pro Plan"
@@ -47,7 +47,7 @@
 	{
 		"title": "PatternPad",
 		"link": "https://patternpad.com",
-		"img": "https://patternpad.com/images/patternpad-banner.png",
+		"img": "/images/backgrounds/patternpad.webp",
 		"licence": "CC BY 4.0",
 		"licenceLink": "https://patternpad.com",
 		"licenceDescription": "Free with attribution"
