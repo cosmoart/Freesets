@@ -54,7 +54,7 @@ export default [
 		color: '#8338ec',
 	},
 	{
-		name: 'libraries',
+		name: 'Libraries',
 		items: librariesJson,
 		color: '#ff006e'
 	},

@@ -4,7 +4,7 @@
 	import { afterUpdate } from 'svelte';
 
 	export let categories;
-	let cardSize = 300;
+	let cardSize = 330;
 
 	afterUpdate(() => {
 		let observer = new IntersectionObserver(
@@ -40,7 +40,6 @@
 					<img
 						src={'/categories-icons/' + category.name.toLowerCase().replaceAll(' ', '-') + '.svg'}
 						alt=""
-						loading="lazy"
 						class="invert w-6"
 					/>
 					<h2 class="text-[17px]">
@@ -65,7 +64,12 @@
 							rel="noopener noreferrer"
 							aria-label={'Open ' + asset.title}
 						>
-							<img src={asset.img} alt="" class="aspect-video object-cover" />
+							<img
+								src={asset.img}
+								alt={asset.title + ' web preview'}
+								class="aspect-video object-cover"
+								loading="lazy"
+							/>
 						</a>
 						<div class="p-5 flex flex-wrap justify-between items-center">
 							<h3 class="text-xl">{asset.title}</h3>
@@ -84,7 +88,7 @@
 									</a>
 									{#if asset.licenceDescription}
 										<p
-											class="text-sm p-2 w-72 rounded-md absolute -bottom-8 right-0 opacity-0 bg-zinc-900 transition-all text-white group-hover:bottom-6 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none"
+											class="text-sm p-2 w-max max-w-xs rounded-md absolute -bottom-8 right-0 opacity-0 bg-zinc-900 transition-all text-white group-hover:bottom-6 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none"
 										>
 											{asset.licenceDescription}
 										</p>

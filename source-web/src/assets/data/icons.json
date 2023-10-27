@@ -135,13 +135,6 @@
 		"licenceLink": "https://github.com/twbs/bootstrap/blob/main/LICENSE"
 	},
 	{
-		"title": "Material Icons",
-		"link": "https://material-ui.com/components/material-icons/",
-		"img": "./images/icons/materialicons.webp",
-		"licence": "MIT",
-		"licenceLink": "https://github.com/mui/material-ui/blob/master/LICENSE"
-	},
-	{
 		"title": "Font Awesome Icons",
 		"link": "https://fontawesome.com/icons",
 		"img": "./images/icons/fontawesome.webp",
