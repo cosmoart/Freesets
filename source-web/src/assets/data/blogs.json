@@ -1,42 +1,36 @@
 [
 	{
 		"title": "Josh Comeau",
-		"author": "Josh Comeau",
 		"link": "https://www.joshwcomeau.com",
 		"img": "/images/blogs/josh.webp",
 		"tags": ["Web"]
 	},
 	{
 		"title": "Not a Number",
-		"author": "Nanda Syahrasyad",
 		"link": "https://www.nan.fyi",
 		"img": "/images/blogs/nan.webp",
 		"tags": ["Animations", "svg"]
 	},
 	{
 		"title": "Overreacted",
-		"author": "Dan Abramov",
 		"link": "https://overreacted.io",
 		"img": "/images/blogs/overreacted.webp",
 		"tags": ["React", "JavaScript"]
 	},
 	{
 		"title": "Modern CSS",
-		"author": "Stephanie Eckles",
 		"link": "https://moderncss.dev",
 		"img": "/images/blogs/moderncss.webp",
 		"tags": ["CSS"]
 	},
 	{
 		"title": "Maximeheckel",
-		"author": "Maxime",
 		"link": "https://blog.maximeheckel.com",
 		"img": "/images/blogs/maxime.webp",
 		"tags": ["Three.js", "React", "3D"]
 	},
 	{
 		"title": "Varun Vachhar",
-		"author": "Varun Vachhar",
 		"link": "https://varun.ca/writing/",
 		"img": "/images/blogs/varun.webp",
 		"tags": ["Three.js", "3D"]
