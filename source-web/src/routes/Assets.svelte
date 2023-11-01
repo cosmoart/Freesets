@@ -1,21 +1,19 @@
 <script>
-	import autoAnimate from '@formkit/auto-animate';
 	import arrowIcon from '@/assets/icons/arrow.svg';
+	import autoAnimate from '@formkit/auto-animate';
+	import AssetCard from './AssetCard.svelte';
 	import { afterUpdate } from 'svelte';
 	import { page } from '$app/stores';
-	import AssetCard from './AssetCard.svelte';
+	export let categories;
 
 	$: currentPage = $page.params.category;
-
-	export let categories;
-	let cardsNumber = 3;
 	$: cardsInHome = {
 		1: 4,
 		2: 6,
 		3: 9,
 		4: 12,
 		5: 12
-	}[cardsNumber];
+	}[3];
 
 	afterUpdate(() => {
 		let observer = new IntersectionObserver(
@@ -56,13 +54,16 @@
 				style={`grid-template-columns: repeat(auto-fill,minmax(${320}px,1fr))`}
 				use:autoAnimate
 			>
-				<AssetCard assets={category.items.slice(0, cardsInHome)} {cardsNumber} {category} />
+				<AssetCard
+					assets={category.items.slice(0, currentPage === undefined ? cardsInHome : undefined)}
+					{category}
+				/>
 			</div>
 
 			{#if currentPage === undefined}
 				<a
 					href={`/${category.name.toLowerCase().replaceAll(' ', '-')}`}
-					class="py-2 bg-[var(--resource-color)] w-full mt-5 rounded-md hover:brightness-110 flex gap-1 justify-center items-center text-white transition-all group relative"
+					class="py-2 bg-[var(--resource-color)] w-full mt-5 rounded-md hover:brightness-110 flex gap-1 justify-center items-center text-white dar transition-all group relative"
 				>
 					View all
 					<img

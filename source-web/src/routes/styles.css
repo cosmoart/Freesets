@@ -25,13 +25,19 @@
 }
 
 :root {
-	--color-bg-1: #1e2022;
+	--color-bg: #fafafa;
 	--color-text: rgba(0, 0, 0, 0.7);
 	color: var(--color-text);
-	background-color: var(--color-bg-1);
+	background-color: var(--color-bg);
 	color: white;
 	scroll-behavior: smooth;
 	font-family: 'Gabarito', sans-serif;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+:root.dark {
+	--color-bg: #1e2022;
+	--color-text: rgba(0, 0, 0, 0.7);
 }
 
 /* Fonts ======== */

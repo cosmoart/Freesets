@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='dark'>
 
 <head>
 	<meta charset="utf-8" />
@@ -10,6 +10,7 @@
 
 <body data-sveltekit-preload-data="hover">
 	<div style="display: contents">%sveltekit.body%</div>
+	<script>if (localStorage.getItem('darkMode') === 'false') document.documentElement.classList.remove('dark');</script>
 </body>
 
 </html>

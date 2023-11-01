@@ -1,7 +1,6 @@
 <script>
 	import BackTop from './BackTop.svelte';
 	import NavBar from './NavBar.svelte';
-	import ContributeLink from './ContributeLink.svelte';
 	import Menu from './Menu.svelte';
 	import './styles.css';
 </script>
@@ -10,6 +9,5 @@
 	<NavBar />
 	<slot />
 	<BackTop />
-	<ContributeLink />
-	<!-- <Menu/> -->
+	<Menu />
 </div>
