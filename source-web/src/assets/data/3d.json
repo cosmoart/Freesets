@@ -31,7 +31,6 @@
 		"licenceLink": "https://docs.ambientcg.com/license/",
 		"tags": ["HDRIs", "Textures", "Models"]
 	},
-
 	{
 		"title": "Share Textures",
 		"link": "https://www.sharetextures.com",
@@ -40,6 +39,13 @@
 		"licenceDescription": "\"All of our content is copyright-free [CC0]. It means you can use them anywhere you want which includes commercial projects too.\"",
 		"licenceLink": "https://www.sharetextures.com/p/license",
 		"tags": ["Atlases", "Textures", "Models"]
+	},
+	{
+		"title": "3Dassets.one",
+		"link": "https://3dassets.one",
+		"img": "./images/3d/3dassetsone.webp",
+		"licence": "Multiple",
+		"tags": ["HDRIs", "Textures", "Models"]
 	},
 	{
 		"title": "CG Bookcase",
@@ -67,6 +73,21 @@
 		"licenceDescription": "\"For the game assets in Freebies section, it's under Creative Common Zero (CC0) a.k.a Public Domain license.\"",
 		"licenceLink": "https://www.gameart2d.com/license.html",
 		"tags": ["Sprites", "Tileset", "GUI"]
+	},
+	{
+		"title": "Turbosquid",
+		"link": "https://www.turbosquid.com/",
+		"img": "./images/3d/turbosquid.webp",
+		"licence": "Multiple",
+		"licenceLink": "https://blog.turbosquid.com/turbosquid-3d-model-license/",
+		"tags": ["Models"]
+	},
+	{
+		"title": "Quaternius",
+		"link": "https://quaternius.com/",
+		"img": "./images/3d/quaternius.webp",
+		"licence": "CC0",
+		"tags": ["Models"]
 	},
 	{
 		"title": "textures.com",

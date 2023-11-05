@@ -20,8 +20,38 @@
 		"img": "/images/ui-collections/landing-love.webp"
 	},
 	{
+		"title": "Refero",
+		"link": "https://refero.design",
+		"img": "/images/ui-collections/refero.webp"
+	},
+	{
 		"title": "Dark Design",
 		"link": "https://www.dark.design",
 		"img": "/images/ui-collections/darkdesign.webp"
+	},
+	{
+		"title": "Pinterest",
+		"link": "https://pinterest.com/",
+		"img": "/images/ui-collections/pinterest.webp"
+	},
+	{
+		"title": "Dribbble",
+		"link": "https://dribbble.com/",
+		"img": "/images/ui-collections/dribbble.webp"
+	},
+	{
+		"title": "Behance",
+		"link": "https://www.behance.net/",
+		"img": "/images/ui-collections/behance.webp"
+	},
+	{
+		"title": "Three.js",
+		"link": "https://threejs.org",
+		"img": "/images/ui-collections/threejs.webp"
+	},
+	{
+		"title": "Awwwards",
+		"link": "https://www.awwwards.com/websites/",
+		"img": "/images/ui-collections/awwwards.webp"
 	}
 ]

@@ -1,5 +1,10 @@
 [
 	{
+		"title": "Realtime Colors",
+		"link": "https://www.realtimecolors.com",
+		"img": "/images/colors/realtime-colors.webp"
+	},
+	{
 		"title": "AI Colors",
 		"link": "https://tintmint.net",
 		"img": "/images/colors/ai-colors.webp",
