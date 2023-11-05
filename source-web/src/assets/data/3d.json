@@ -5,6 +5,91 @@
 		"img": "./images/3d/polyhaven.webp",
 		"licence": "CC0",
 		"licenceDescription": "\"Our assets are all licensed as CC0, which is effectively Public Domain.\"",
-		"licenceLink": "https://polyhaven.com/license"
+		"licenceLink": "https://polyhaven.com/license",
+		"tags": ["HDRIs", "Textures", "Models"]
+	},
+	{
+		"title": "Itchio",
+		"link": "https://itch.io/game-assets/free",
+		"img": "./images/3d/itchio.webp",
+		"licence": "Multiple",
+		"licenceDescription": "Itchio is a marketplace for indie game developers. Each asset has its own licence."
+	},
+	{
+		"title": "Kenney",
+		"link": "https://kenney.nl",
+		"img": "./images/3d/kenney.webp",
+		"licence": "CC0",
+		"licenceLink": "https://www.kenney.nl/support"
+	},
+	{
+		"title": "ambientCG",
+		"link": "https://ambientcg.com",
+		"img": "./images/3d/ambientcg.webp",
+		"licence": "CC0 1.0",
+		"licenceDescription": "\"All ambientCG assets are provided under the Creative Commons CC0 1.0 Universal License.\"",
+		"licenceLink": "https://docs.ambientcg.com/license/",
+		"tags": ["HDRIs", "Textures", "Models"]
+	},
+
+	{
+		"title": "Share Textures",
+		"link": "https://www.sharetextures.com",
+		"img": "./images/3d/sharetextures.webp",
+		"licence": "CC0",
+		"licenceDescription": "\"All of our content is copyright-free [CC0]. It means you can use them anywhere you want which includes commercial projects too.\"",
+		"licenceLink": "https://www.sharetextures.com/p/license",
+		"tags": ["Atlases", "Textures", "Models"]
+	},
+	{
+		"title": "CG Bookcase",
+		"link": "https://www.cgbookcase.com",
+		"img": "./images/3d/cgbookcase.webp",
+		"licence": "CC0 1.0",
+		"licenceDescription": "\"The textures are published under the CC0 1.0 license, which means means you can use them for free without giving credit.\"",
+		"licenceLink": "https://www.cgbookcase.com/textures",
+		"tags": ["Textures"]
+	},
+	{
+		"title": "BlenderKit",
+		"link": "https://www.blenderkit.com",
+		"img": "./images/3d/blenderkit.webp",
+		"licence": "RF & CC0",
+		"licenceDescription": "\"BlenderKit only has 2 available licenses. Everything you download is available for commercial use. Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified.\"",
+		"licenceLink": "https://www.blenderkit.com/docs/licenses/",
+		"tags": ["Textures", "Models", "HDRIs", "Brushes"]
+	},
+	{
+		"title": "Game Art 2D",
+		"link": "https://www.gameart2d.com/freebies.html",
+		"img": "./images/3d/gameart2d.webp",
+		"licence": "CC0",
+		"licenceDescription": "\"For the game assets in Freebies section, it's under Creative Common Zero (CC0) a.k.a Public Domain license.\"",
+		"licenceLink": "https://www.gameart2d.com/license.html",
+		"tags": ["Sprites", "Tileset", "GUI"]
+	},
+	{
+		"title": "textures.com",
+		"link": "https://www.textures.com/free",
+		"img": "./images/3d/textures.webp",
+		"licence": "Freemium",
+		"licenceLink": "https://www.textures.com/faq-license",
+		"tags": ["Textures"]
+	},
+	{
+		"title": "Quixel",
+		"link": "https://quixel.com/megascans/free",
+		"img": "./images/3d/quixel.webp",
+		"licence": "Freemium",
+		"licenceLink": "https://quixel.com/pricing",
+		"tags": ["Decals", "Textures", "Models"]
+	},
+	{
+		"title": "Poliigon",
+		"link": "https://www.poliigon.com/search/free",
+		"img": "./images/3d/poliigon.webp",
+		"licence": "Freemium",
+		"licenceLink": "https://www.poliigon.com/pricing",
+		"tags": ["HDRIs", "Textures", "Models"]
 	}
 ]
