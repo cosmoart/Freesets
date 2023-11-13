@@ -1,5 +1,14 @@
 [
 	{
+		"title": "UIverse",
+		"link": "https://uiverse.io",
+		"img": "./images/components/uiverse.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/AlfieJones/theme-toggles/blob/main/LICENSE",
+		"licenceDescription": "\"All content (UI elements) on this site are published under the MIT License.\""
+	},
+
+	{
 		"title": "Toggles",
 		"link": "https://toggles.dev",
 		"img": "./images/components/toggles.webp",

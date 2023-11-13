@@ -1,8 +1,18 @@
 [
 	{
+		"title": "Curated Design",
+		"link": "https://www.curated.design",
+		"img": "/images/ui-collections/curated-design.webp"
+	},
+	{
 		"title": "Godly",
 		"link": "https://godly.website",
 		"img": "/images/ui-collections/godly.webp"
+	},
+	{
+		"title": "Laand-book",
+		"link": "https://land-book.com",
+		"img": "/images/ui-collections/land-book.webp"
 	},
 	{
 		"title": "BentoGrids",
@@ -48,6 +58,11 @@
 		"title": "Three.js",
 		"link": "https://threejs.org",
 		"img": "/images/ui-collections/threejs.webp"
+	},
+	{
+		"title": "Sass Landing Page",
+		"link": "https://saaslandingpage.com",
+		"img": "/images/ui-collections/saaslandingpage.webp"
 	},
 	{
 		"title": "Awwwards",
