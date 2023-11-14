@@ -9,12 +9,11 @@
 	let navOpen = false;
 	let darkMode = true;
 
-	onMount(() => darkMode = localStorage.getItem('darkMode') === 'true')
+	onMount(() => (darkMode = localStorage.getItem('darkMode') === 'true'));
 
 	function changueTheme() {
 		document.documentElement.classList.toggle('dark');
 		localStorage.setItem('darkMode', !darkMode);
-		console.log(!darkMode);
 		darkMode = !darkMode;
 	}
 </script>

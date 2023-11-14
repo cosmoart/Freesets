@@ -7,13 +7,6 @@
 	export let categories;
 
 	$: currentPage = $page.params.category;
-	$: cardsInHome = {
-		1: 4,
-		2: 6,
-		3: 9,
-		4: 12,
-		5: 12
-	}[3];
 
 	afterUpdate(() => {
 		let observer = new IntersectionObserver(
@@ -50,12 +43,12 @@
 				</div>
 			</div>
 			<div
-				class="mx-auto grid -mt-3 gap-5"
+				class={`mx-auto grid -mt-3 gap-5 ${currentPage === undefined && 'homePageGrid'}`}
 				style={`grid-template-columns: repeat(auto-fill,minmax(${320}px,1fr))`}
 				use:autoAnimate
 			>
 				<AssetCard
-					assets={category.items.slice(0, currentPage === undefined ? cardsInHome : undefined)}
+					assets={category.items.slice(0, currentPage === undefined ? 8 : undefined)}
 					{category}
 				/>
 			</div>

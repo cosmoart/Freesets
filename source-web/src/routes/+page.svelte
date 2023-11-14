@@ -5,6 +5,7 @@
 
 <svelte:head>
 	<title>Freesets</title>
+	<link rel="icon" href="/favicon.svg" />
 	<meta name="description" content="Collection of free assets for your projects" />
 </svelte:head>
 

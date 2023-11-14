@@ -1,13 +1,41 @@
 [
 	{
+		"title": "shadcn/ui",
+		"link": "https://ui.shadcn.com",
+		"img": "./images/components/shadcn.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md"
+	},
+	{
+		"title": "Radix UI",
+		"link": "https://www.radix-ui.com",
+		"img": "./images/components/radix.webp",
+		"licence": "MIT",
+		"tags": ["React"],
+		"licenceLink": "https://github.com/radix-ui/themes#license"
+	},
+	{
 		"title": "UIverse",
 		"link": "https://uiverse.io",
 		"img": "./images/components/uiverse.webp",
 		"licence": "MIT",
-		"licenceLink": "https://github.com/AlfieJones/theme-toggles/blob/main/LICENSE",
 		"licenceDescription": "\"All content (UI elements) on this site are published under the MIT License.\""
 	},
-
+	{
+		"title": "Svelte UX",
+		"link": "https://svelte-ux.techniq.dev",
+		"img": "./images/components/svelte-ux.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/techniq/svelte-ux/blob/main/LICENSE"
+	},
+	{
+		"title": "Sonner",
+		"link": "https://sonner.emilkowal.ski",
+		"img": "./images/components/sonner.webp",
+		"licence": "MIT",
+		"tags": ["Toast"],
+		"licenceLink": "https://github.com/emilkowalski/sonner/blob/main/LICENSE.md"
+	},
 	{
 		"title": "Toggles",
 		"link": "https://toggles.dev",

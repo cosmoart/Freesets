@@ -24,6 +24,17 @@
 	width: 100%;
 }
 
+@media (width <=710px) {
+	.homePageGrid > :nth-child(n + 4) {
+		display: none;
+	}
+}
+@media (710px <= width <=1420px) {
+	.homePageGrid > :nth-child(n + 7) {
+		display: none;
+	}
+}
+
 :root {
 	--color-bg: #fafafa;
 	--color-text: rgba(0, 0, 0, 0.7);
