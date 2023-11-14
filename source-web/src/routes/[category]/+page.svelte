@@ -28,7 +28,7 @@
 		property="og:image"
 		content={`https://freesets.vercel.app/og-images/${data.page.name
 			.toLowerCase()
-			.replaceAll(' ', '-')}`}
+			.replaceAll(' ', '-')}.jpg`}
 	/>
 	<meta property="og:url" content="https://freesets.vercel.app" />
 	<meta
@@ -48,7 +48,7 @@
 		name="twitter:image"
 		content={`https://freesets.vercel.app/og-images/${data.page.name
 			.toLowerCase()
-			.replaceAll(' ', '-')}`}
+			.replaceAll(' ', '-')}.jpg`}
 	/>
 </svelte:head>
 <Assest categories={[data.page]} />
