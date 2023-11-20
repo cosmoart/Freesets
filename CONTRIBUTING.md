@@ -34,7 +34,7 @@ git checkout -b my-branch
 
 3. Make the changues in the website or add your resources to the jsons files in the `source-web/src/assets/data` folder using the [resource structure](#resource-structure).
 
-4. Commit your changes, you can use the [recommended nomenclature](#commit-nomenclature).
+4. Commit your changes.
 
 ```bash
 git commit -m "✨ add: 4 icons, 2 fonts and 1 illustration"
@@ -50,23 +50,13 @@ git push origin my-branch
 
 ## Resource structure
 
-### In discussions
-- Name*: Name of the resource
-- Link*: Link to the resource
-- License: License of the resource if it exists..
-- LicenseLink: Link to the resource license if it exists.
-- LicenseDescription: More complete license information.
-- Tags: Tags, for example: `ia`, `react`, `library`, `tool`...
-
-### In json files
-
 - name*: Name of the resource
 - link*: Link to the resource
-- img*: Image of the resource, 1280px x 720px, webp format (you can use [squoosh](https://squoosh.app/) to convert the image to webp)
-- License: License of the resource if it exists.
-- LicenseLink: Link to the resource license if it exists.
-- LicenseDescription: More complete license information.
-- Tags: Tags, for example: `ia`, `react`, `library`, `tool`...
+- img*: Path to the image. The image must look good in the 16:9 aspect ratio and be no larger than 100KB. The resolution 1280px x 720px and the `.webp` format is recommended. You can use [squoosh](https://squoosh.app/) to optimize and convert the image to webp.
+- License: License of the resource.
+- LicenseLink: Link to the resource license.
+- LicenseDescription: Description and important information of the license.
+- Tags: Tags, for example: `IA`, `React`, `Library`, `Loaders`...
 
 ```json
 {
@@ -76,21 +66,8 @@ git push origin my-branch
 	"license": "Free",
 	"licenseLink": "https://resource.com/licence",
 	"licenseDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",
-	"tags": ["ia", "react", "library", "3D"]
+	"tags": ["IA", "React", "Library", "3D"]
 }
 ```
 
 > Note: Try to make the name and license as short as possible for better display.
-
-## Commit nomenclature
-
-Commit nomenclature recommendation:
-
-* ✨ add: For new resources.
-* ⭐ feat: For new features or functionalities.
-* 🐞 fix: For bug/error fixes.
-* 🎨 style: For changes to the UI/UX.
-* 🛠️ refactor: For changes to the code that improve its structure without adding new functions or correcting errors.
-* 🚀 perf: For changes that improve code/web performance.
-* 🧪 test: For changes to code tests.
-* 🔧 chore: For changes related to the project's configuration or infrastructure.

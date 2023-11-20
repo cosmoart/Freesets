@@ -10,11 +10,11 @@
 		<li class="flex-grow">
 			<a
 				href="/"
-				class={`flex items-center w-full justify-center gap-2 bg-blue-500 rounded-md px-4 py-1.5 flex-grow outline-2 outline-blue-500 outline-offset-2 cursor-pointer hover:scale-[1.03] transition-transform ${
+				class={`flex items-center w-full justify-center gap-2 bg-zinc-800 dark:bg-white rounded-md px-4 py-1.5 flex-grow outline-2 outline-zinc-800 dark:outline-white text-white dark:text-zinc-950 outline-offset-2 cursor-pointer hover:scale-[1.03] transition-transform ${
 					currentPage === undefined ? 'outline' : ''
 				}`}
 			>
-				<img src="/categories-icons/all.svg" alt="" class="invert w-[23px]" />
+				<img src="/categories-icons/all.svg" alt="" class="invert dark:invert-0 w-[23px]" />
 				All
 			</a>
 		</li>
@@ -22,10 +22,10 @@
 			<li class="flex-grow md:min-w-[10.5rem] 2xl:min-w-[12rem]">
 				<a
 					href={`/${category.name.toLowerCase().replaceAll(' ', '-')}`}
-					class={`flex items-center w-full justify-center gap-2 bg-[--item-color] rounded-md px-4 py-1.5 flex-grow outline-2 outline-[--item-color] outline-offset-2 cursor-pointer hover:scale-[1.03] transition-transform ${
+					class={`flex items-center w-full justify-center gap-2 bg-[--item-color] rounded-md px-4 py-1.5 flex-grow outline-2 outline-[--item-color] outline-offset-2 cursor-pointer  transition-transform ${
 						category.name.toLowerCase().replaceAll(' ', '-') === currentPage
-							? 'scale-[1.03] outline'
-							: ''
+							? 'outline'
+							: 'hover:scale-[1.03]'
 					}`}
 					style={`--item-color: ${category.color}`}
 				>

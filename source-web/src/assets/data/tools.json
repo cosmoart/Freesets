@@ -1,1 +1,48 @@
-[{}]
+[
+	{
+		"title": "10015 Tools",
+		"link": "https://10015.io/tools/css-loader-generator",
+		"img": "./images/loaders/css_tools.webp",
+		"licence": "Free",
+		"licenceLink": "https://10015.io/tools/css-loader-generator",
+		"tags": ["Loaders"]
+	},
+	{
+		"title": "Loaders",
+		"link": "https://uiball.com/loaders/",
+		"img": "./images/loaders/uiball-loaders.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/GriffinJohnston/uiball-loaders/blob/main/LICENSE",
+		"tags": ["Loaders"]
+	},
+	{
+		"title": "Hola svg",
+		"link": "https://loaders.holasvg.com",
+		"img": "./images/loaders/hola-svg.webp",
+		"licence": "MIT",
+		"licenceLink": "https://loaders.holasvg.com",
+		"tags": ["Loaders"]
+	},
+	{
+		"title": "SVG Loaders",
+		"link": "https://samherbert.net/svg-loaders/",
+		"img": "./images/loaders/svg-loaders.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/SamHerbert/SVG-Loaders/blob/master/LICENSE.md",
+		"tags": ["Loaders"]
+	},
+	{
+		"title": "CSS loaders",
+		"link": "https://css-loaders.com",
+		"img": "./images/loaders/css-loaders.webp",
+		"tags": ["Loaders"]
+	},
+	{
+		"title": "CSS loaders and spinners",
+		"link": "https://cssloaders.github.io",
+		"img": "./images/loaders/cssloaders.webp",
+		"licence": "MIT",
+		"licenceLink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE",
+		"tags": ["Loaders"]
+	}
+]

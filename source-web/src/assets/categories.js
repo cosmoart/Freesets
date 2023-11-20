@@ -2,7 +2,7 @@ import ilustrationsJson from '@/assets/data/ilustrations.json';
 import uiCollectionsJson from '@/assets/data/ui-collections.json';
 import backgroundsJson from '@/assets/data/backgrounds.json';
 import iconsJson from '@/assets/data/icons.json';
-import loadersJson from '@/assets/data/loaders.json';
+import toolsJson from '@/assets/data/tools.json';
 import photosJson from '@/assets/data/photos.json';
 import videosJson from '@/assets/data/videos.json';
 import colorsJson from '@/assets/data/colors.json';
@@ -21,7 +21,7 @@ export default [
 	{
 		name: 'Ilustrations',
 		items: ilustrationsJson,
-		color: '#18d16b'
+		color: '#20c928'
 	},
 	{
 		name: 'Photos',
@@ -36,7 +36,7 @@ export default [
 	{
 		name: 'Colors',
 		items: colorsJson,
-		color: '#f721a8'
+		color: '#fd1793'
 	},
 	{
 		name: 'Backgrounds',
@@ -64,8 +64,8 @@ export default [
 		color: '#00a1ff'
 	},
 	{
-		name: 'Loaders',
-		items: loadersJson,
+		name: 'Tools',
+		items: toolsJson,
 		color: '#f97316'
 	},
 	{
@@ -76,6 +76,6 @@ export default [
 	{
 		name: "Components",
 		items: componentsJson,
-		color: '#50bb49',
+		color: '#13c153',
 	},
 ];
