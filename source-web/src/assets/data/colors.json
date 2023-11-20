@@ -13,6 +13,11 @@
 		"licenceDescription": "\"Feel free to use the patterns you create in any commercial project.\""
 	},
 	{
+		"title": "Color selector",
+		"link": "https://www.color-selector.com",
+		"img": "/images/colors/color-selector.webp"
+	},
+	{
 		"title": "Coolors",
 		"link": "https://coolors.co",
 		"img": "/images/colors/coolors.webp",
@@ -20,9 +25,25 @@
 		"licenceLink": "https://coolors.co/license"
 	},
 	{
+		"title": "Palette Maker",
+		"link": "https://palettemaker.com/app",
+		"img": "/images/colors/palettemaker.webp"
+	},
+
+	{
+		"title": "Colormind",
+		"link": "http://colormind.io/",
+		"img": "/images/colors/colormind.webp"
+	},
+	{
 		"title": "Huetools",
 		"link": "https://hue.tools/",
 		"img": "/images/colors/huetools.webp"
+	},
+	{
+		"title": "Palette",
+		"link": "https://palettte.app/",
+		"img": "/images/colors/palette.webp"
 	},
 	{
 		"title": "Randoma11y",
@@ -30,13 +51,19 @@
 		"img": "/images/colors/randoma11y.webp"
 	},
 	{
-		"title": "Palette Maker",
-		"link": "https://palettemaker.com/app",
-		"img": "/images/colors/palettemaker.webp"
-	},
-	{
 		"title": "UI Colors",
 		"link": "https://uicolors.app/create",
 		"img": "/images/colors/uicolors.webp"
+	},
+	{
+		"title": "Picular",
+		"link": "https://picular.co",
+		"img": "/images/colors/picular.webp"
+	},
+	{
+		"title": "Poline",
+		"link": "https://meodai.github.io/poline/",
+		"img": "/images/colors/poline.webp",
+		"tags": ["Library"]
 	}
 ]
