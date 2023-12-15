@@ -2,13 +2,34 @@
 	import externalIcon from '@/assets/icons/external.svg';
 	import infoIcon from '@/assets/icons/info.svg';
 	import tagIcon from '@/assets/icons/tag.svg';
+	import Image from './Image.svelte';
+	import { afterUpdate } from 'svelte';
+
 	export let assets;
 	export let category;
+	export let lazyImages;
+	export let homePage;
+	export let columns;
+
+	afterUpdate(() => {
+		let observer = new IntersectionObserver(
+			(cards) => {
+				cards.forEach((card) => {
+					if (card.isIntersecting) card.target.classList.add('appear');
+				});
+			},
+			{ threshold: 0.2 }
+		);
+		document.querySelectorAll('.asset-card').forEach((card) => observer.observe(card));
+
+		return () => observer.disconnect();
+	});
 </script>
 
-{#each assets as asset, i (i)}
+{#each assets as asset, i}
 	<article
-		class="asset-card group transition-all opacity-40 translate-y-6 scale-75 rounded-lg ring-2 ring-zinc-700 hover:ring-[--card-color] dark:bg-zinc-800 bg-zinc-200 backdrop-blur-md dark:text-white overflow-hidden hover:scale-[1.02]"
+		class="asset-card group {i > columns - 1 &&
+			'opacity-40 translate-y-6 scale-75'} transition-all rounded-lg ring-2 ring-zinc-700 hover:ring-[--card-color] dark:bg-zinc-800 bg-zinc-200 backdrop-blur-md dark:text-white overflow-hidden hover:scale-[1.02]"
 		style="--card-color: {category.color}"
 	>
 		<div class="relative">
@@ -18,12 +39,12 @@
 				rel="noopener noreferrer"
 				aria-label={'Open ' + asset.title}
 			>
-				<img
+				<Image
 					src={asset.img}
 					alt={asset.title + ' web preview'}
-					class="aspect-video object-cover"
-					loading="lazy"
-					height="200"
+					lazy={homePage ? lazyImages : i > 7}
+					className="aspect-video object-cover lazyImg"
+					height="230"
 				/>
 			</a>
 			{#if asset.tags}

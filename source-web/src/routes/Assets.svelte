@@ -2,30 +2,29 @@
 	import arrowIcon from '@/assets/icons/arrow.svg';
 	import autoAnimate from '@formkit/auto-animate';
 	import AssetCard from './AssetCard.svelte';
-	import { afterUpdate } from 'svelte';
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	export let categories;
 
 	$: currentPage = $page.params.category;
-
-	afterUpdate(() => {
-		let observer = new IntersectionObserver(
-			(cards) => {
-				cards.forEach((card) => {
-					if (card.isIntersecting) card.target.classList.add('appear');
-				});
-			},
-			{ threshold: 0.2 }
-		);
-
-		document.querySelectorAll('.asset-card').forEach((card) => observer.observe(card));
-
-		return () => observer.disconnect();
+	// screen <=710px = 3
+	// 710px <= screen <=1420px = 6
+	// screen >=1420px = 8
+	let columns = 8;
+	onMount(() => {
+		function checkColumns() {
+			if (window.innerWidth <= 710) columns = 3;
+			else if (window.innerWidth <= 1420) columns = 6;
+			else columns = 8;
+		}
+		checkColumns();
+		window.addEventListener('resize', checkColumns);
 	});
+	$: console.log(columns);
 </script>
 
 <main use:autoAnimate class="mb-10">
-	{#each categories as category}
+	{#each categories as category, i}
 		<article class="relative mb-20" style={`--resource-color: ${category.color}`}>
 			<div
 				class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
@@ -43,12 +42,14 @@
 				</div>
 			</div>
 			<div
-				class={`mx-auto grid -mt-3 gap-5 ${currentPage === undefined && 'homePageGrid'}`}
+				class="mx-auto grid -mt-3 gap-5"
 				style={`grid-template-columns: repeat(auto-fill,minmax(${320}px,1fr))`}
-				use:autoAnimate
 			>
 				<AssetCard
-					assets={category.items.slice(0, currentPage === undefined ? 8 : undefined)}
+					assets={category.items.slice(0, currentPage === undefined ? columns : undefined)}
+					homePage={currentPage === undefined}
+					lazyImages={i !== 0}
+					{columns}
 					{category}
 				/>
 			</div>
