@@ -79,24 +79,24 @@
 					class="absolute w-5 invert dark:invert-0 -right-3 top-0 bottom-0 m-auto opacity-0 group-hover:opacity-100 transition-all group-hover:-right-6"
 				/>
 			</div>
-			{#if asset.licence}
-				<div class="group/licence relative">
+			{#if asset.license}
+				<div class="group/license relative">
 					<a
 						class="bg-blue-700 transition-all hover:scale-105 inline-block px-2 py-1 rounded-md text-[13px] tracking-wide"
 						target="_blank"
 						rel="noopener noreferrer"
-						href={asset.licenceLink || asset.link}
+						href={asset.licenseLink || asset.link}
 					>
-						{#if asset.licenceDescription}
+						{#if asset.licenseDescription}
 							<img src={infoIcon} alt="" class="w-4 inline-block mr-.5 mb-0.5" />
 						{/if}
-						{asset.licence}
+						{asset.license}
 					</a>
-					{#if asset.licenceDescription}
+					{#if asset.licenseDescription}
 						<p
-							class="text-sm py-1 px-3 w-max max-w-xs rounded-md absolute -bottom-8 right-0 opacity-0 bg-zinc-800 transition-all group-hover/licence:bottom-6 group-hover/licence:opacity-100 group-hover/licence:pointer-events-auto pointer-events-none"
+							class="text-sm py-1 px-3 w-max max-w-xs rounded-md absolute -bottom-8 right-0 opacity-0 bg-zinc-800 transition-all group-hover/license:bottom-6 group-hover/license:opacity-100 group-hover/license:pointer-events-auto pointer-events-none"
 						>
-							{asset.licenceDescription}
+							{asset.licenseDescription}
 						</p>
 					{/if}
 				</div>

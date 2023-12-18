@@ -9,6 +9,10 @@
 	}
 }
 
+.title-responsive {
+	font-size: clamp(3.6rem, 9vw + 2rem, 8rem);
+}
+
 .recourse-title::after {
 	content: '';
 	position: absolute;
@@ -27,8 +31,10 @@
 :root {
 	--color-bg: #fafafa;
 	--color-text: rgba(0, 0, 0, 0.7);
+	--bg-gradient: radial-gradient(#43484d11 20%, #ffffff 70%);
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	background-image: var(--bg-gradient);
 	color: white;
 	scroll-behavior: smooth;
 	font-family: 'Gabarito', sans-serif;
@@ -37,6 +43,7 @@
 
 :root.dark {
 	--color-bg: #1e2022;
+	--bg-gradient: radial-gradient(#43484d33 20%, #1e2022 70%);
 	--color-text: rgba(0, 0, 0, 0.7);
 }
 

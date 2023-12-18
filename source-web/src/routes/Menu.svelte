@@ -27,7 +27,7 @@
 		<ul>
 			<li>
 				<button
-					class="rounded-t-md transition-colors hover:bg-zinc-800 px-3 py-1 flex gap-2 items-center"
+					class="rounded-t-md transition-colors hover:bg-zinc-800 px-3 w-full py-1 flex gap-2 items-center"
 					on:click={changueTheme}
 				>
 					<img src={darkMode ? lightModeIcon : darkModeIcon} alt="" class="w-5 invert" />
@@ -36,10 +36,10 @@
 			</li>
 			<li>
 				<a
-					href="https://github.com/cosmoart/free-resources"
+					href="https://github.com/cosmoart/Freesets"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="transition-colors hover:bg-zinc-800 px-3 py-1 flex items-center gap-2 rounded-b-md"
+					class="transition-colors w-full hover:bg-zinc-800 px-3 py-1 flex items-center gap-2 rounded-b-md"
 				>
 					<img src={starIcon} alt="" class="w-5" />
 					Contribute

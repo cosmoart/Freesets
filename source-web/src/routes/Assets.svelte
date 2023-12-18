@@ -7,9 +7,6 @@
 	export let categories;
 
 	$: currentPage = $page.params.category;
-	// screen <=710px = 3
-	// 710px <= screen <=1420px = 6
-	// screen >=1420px = 8
 	let columns = 8;
 	onMount(() => {
 		function checkColumns() {
@@ -20,7 +17,6 @@
 		checkColumns();
 		window.addEventListener('resize', checkColumns);
 	});
-	$: console.log(columns);
 </script>
 
 <main use:autoAnimate class="mb-10">
@@ -30,11 +26,7 @@
 				class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-40 right-0 left-0"
 			>
 				<div class="recourse-title relative flex gap-2 px-10 py-1.5">
-					<img
-						src={'/categories-icons/' + category.name.toLowerCase().replaceAll(' ', '-') + '.svg'}
-						alt=""
-						class="invert w-6"
-					/>
+					<img src={'/categories-icons/' + category.nameID + '.svg'} alt="" class="invert w-6" />
 					<h2 class="text-[17px]">
 						{category.name}
 						<span class="text-[15px]">({category.items.length})</span>
@@ -56,7 +48,7 @@
 
 			{#if currentPage === undefined}
 				<a
-					href={`/${category.name.toLowerCase().replaceAll(' ', '-')}`}
+					href={`/${category.nameID}`}
 					class="py-2 bg-[var(--resource-color)] w-full mt-5 rounded-md hover:brightness-110 flex gap-1 justify-center items-center text-white dar transition-all group relative"
 				>
 					View all

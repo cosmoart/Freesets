@@ -4,9 +4,9 @@
 
 <div align="center">
 
-![header](./readme/header.svg)
+![header](./readme/header.webp)
 
-# Freesets - Free assets for your projects
+# Freesets
 
 </div>
 
@@ -14,24 +14,21 @@ Freesets is a collection of free, high-quality multimedia resources that you can
 
 <div align="center">
 
-  <a href="https://github.com/cosmoart/free-multimedia-resources/blob/main/CONTRIBUTING.md">Contribute</a>
+  <a href="https://github.com/cosmoart/Freesets?tab=readme-ov-file#contributing">Contribute</a>
   ·
-  <a href="https://github.com/cosmoart/free-multimedia-resources/issues">Report Bug</a>
+  <a href="https://github.com/cosmoart/Freesets/issues">Report Bug</a>
   ·
-  <a href="https://github.com/cosmoart/free-multimedia-resources/discussions">Request Feature</a>
+  <a href="https://github.com/cosmoart/Freesets/discussions">Request Feature</a>
 
 </div>
 
 ## Contributing
 
-Please read the [CONTRIBUTING.md](https://github.com/cosmoart/free-resources/blob/main/CONTRIBUTING.md) for details on our process for submitting pull requests to us. Any contributions you make are **greatly appreciated**.
+You can contribute to this project:
+
+- Suggesting Resources: If you have ideas for new resources or enhancements, please open a [new issue](https://github.com/cosmoart/Freesets/pulls) or [start a discussion](https://github.com/cosmoart/Freesets/discussions/new/choose).
+- Submitting Changes: Feel free to create a pull request with improvements or fixes for the website.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contributors
-
-<a href="https://github.com/cosmoart/free-resources/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=cosmoart/free-resources" />
-</a>
+Web code distributed under the MIT License. See `LICENSE` for more information.
