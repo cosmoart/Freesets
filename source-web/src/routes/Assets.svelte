@@ -1,6 +1,5 @@
 <script>
 	import arrowIcon from '@/assets/icons/arrow.svg';
-	import autoAnimate from '@formkit/auto-animate';
 	import AssetCard from './AssetCard.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
@@ -19,7 +18,7 @@
 	});
 </script>
 
-<main use:autoAnimate class="mb-10">
+<main class="mb-10">
 	{#each categories as category, i}
 		<article class="relative mb-20" style={`--resource-color: ${category.color}`}>
 			<div
