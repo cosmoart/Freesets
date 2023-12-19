@@ -9,8 +9,15 @@
 	}
 }
 
+@media (1190px <= width <= 1310px) {
+	.navbar-item {
+		min-width: 9rem !important;
+	}
+}
+
 .title-responsive {
 	font-size: clamp(3.6rem, 9vw + 2rem, 8rem);
+	line-height: clamp(3.6rem, 9vw + 2rem, 8rem);
 }
 
 .recourse-title::after {

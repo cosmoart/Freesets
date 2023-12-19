@@ -1,6 +1,5 @@
 <script>
 	import categories from '@/assets/categories.json';
-	console.log(categories);
 </script>
 
 <svelte:head>
@@ -46,7 +45,8 @@
 		{#each categories as category, i}
 			<a
 				href={`/${category.nameID}`}
-				class="w-7 h-7 md:w-8 md:h-8 m-2 md:m-4 hover:scale-105 transition-transform"
+				class="w-7 h-7 md:w-8 md:h-8 m-2 md:m-4 hover:scale-110 transition-transform"
+				title={category.name}
 			>
 				<img
 					src={`/categories-icons/${category.nameID}.svg`}

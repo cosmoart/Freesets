@@ -1,7 +1,6 @@
 <script>
 	import Assest from '../Assets.svelte';
 	export let data;
-	console.log(data);
 </script>
 
 <svelte:head>

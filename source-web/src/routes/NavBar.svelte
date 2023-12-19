@@ -18,7 +18,7 @@
 			</a>
 		</li>
 		{#each categories as category}
-			<li class="flex-grow  md:min-w-[10.5rem] 2xl:min-w-[12rem]">
+			<li class="flex-grow md:min-w-[10.5rem] 2xl:min-w-[12rem] navbar-item">
 				<a
 					href={`/${category.nameID}`}
 					class={`flex items-center w-full justify-center gap-2 bg-[--item-color] rounded-md px-4 py-1.5 flex-grow outline-2 outline-[--item-color] outline-offset-2 cursor-pointer  transition-transform ${

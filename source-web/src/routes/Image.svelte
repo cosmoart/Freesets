@@ -29,7 +29,7 @@
 <img
 	bind:this={imgNode}
 	data-src={src}
-	src={lazy ? '/placeholder.webp' : src}
+	src={lazy ? '/placeholder.gif' : src}
 	{alt}
 	class={className}
 	{height}
