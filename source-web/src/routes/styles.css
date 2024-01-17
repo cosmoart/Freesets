@@ -15,6 +15,53 @@
 	}
 }
 
+:root {
+	--color-bg: #fafafa;
+	--color-text: rgba(0, 0, 0, 0.7);
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	color: white;
+	scroll-behavior: smooth;
+	font-family: 'Gabarito', sans-serif;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+:root.dark {
+	--color-bg: #1e2022;
+	--color-text: rgba(0, 0, 0, 0.7);
+}
+
+/* Asset card animation ======== */
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 70%;
+	}
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+.asset-card {
+	view-timeline: --assetCards block;
+	animation-timeline: --assetCards;
+
+	animation-name: show;
+	animation-fill-mode: both;
+	animation-range: entry 5% cover 30%;
+}
+
+/* Disable animations ========= */
+@media (prefers-reduced-motion) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
+
+/* Title ======== */
 .title-responsive {
 	font-size: clamp(3.6rem, 9vw + 2rem, 8rem);
 	line-height: clamp(3.6rem, 9vw + 2rem, 8rem);
@@ -33,25 +80,6 @@
 	z-index: -10;
 	height: 108%;
 	width: 100%;
-}
-
-:root {
-	--color-bg: #fafafa;
-	--color-text: rgba(0, 0, 0, 0.7);
-	--bg-gradient: radial-gradient(#43484d11 20%, #ffffff 70%);
-	color: var(--color-text);
-	background-color: var(--color-bg);
-	background-image: var(--bg-gradient);
-	color: white;
-	scroll-behavior: smooth;
-	font-family: 'Gabarito', sans-serif;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-:root.dark {
-	--color-bg: #1e2022;
-	--bg-gradient: radial-gradient(#43484d33 20%, #1e2022 70%);
-	--color-text: rgba(0, 0, 0, 0.7);
 }
 
 /* Fonts ======== */

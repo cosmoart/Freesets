@@ -2,34 +2,15 @@
 	import externalIcon from '@/assets/icons/external.svg';
 	import infoIcon from '@/assets/icons/info.svg';
 	import tagIcon from '@/assets/icons/tag.svg';
-	import Image from './Image.svelte';
-	import { afterUpdate } from 'svelte';
+	import Image from '@/components/ui/Image.svelte';
 
 	export let assets;
 	export let category;
-	export let lazyImages;
-	export let homePage;
-	export let columns;
-
-	afterUpdate(() => {
-		let observer = new IntersectionObserver(
-			(cards) => {
-				cards.forEach((card) => {
-					if (card.isIntersecting) card.target.classList.add('appear');
-				});
-			},
-			{ threshold: 0.2 }
-		);
-		document.querySelectorAll('.asset-card').forEach((card) => observer.observe(card));
-
-		return () => observer.disconnect();
-	});
 </script>
 
-{#each assets as asset, i}
+{#each assets as asset}
 	<article
-		class="asset-card group {i > columns - 1 &&
-			'opacity-40 translate-y-6 scale-75'} transition-all rounded-lg ring-2 ring-zinc-700 hover:ring-[--card-color] dark:bg-zinc-800 bg-zinc-200 backdrop-blur-md dark:text-white overflow-hidden hover:scale-[1.02]"
+		class="asset-card group transition-all rounded-lg ring-zinc-700 ring-2 hover:ring-[--card-color] dark:bg-zinc-800 bg-purple-50 dark:text-white overflow-hidden"
 		style="--card-color: {category.color}"
 	>
 		<div class="relative">
@@ -42,18 +23,19 @@
 				<Image
 					src={asset.img}
 					alt={asset.title + ' web preview'}
-					lazy={homePage ? lazyImages : i > 7}
-					className="aspect-video object-cover lazyImg"
-					height="230"
+					lazy={true}
+					className="aspect-video object-cover lazyImg inline-block w-full"
+					height="216"
+					width="384"
 				/>
 			</a>
 			{#if asset.tags}
 				<ul
-					class="flex gap-x-2.5 items-center absolute bottom-0 right-0 bg-zinc-200 dark:bg-zinc-800 before:rotate-[265deg] before:absolute flex-wrap justify-end before:w-3 before:h-3 before:-left-3 before:bottom-0 before:z-10 before:rounded-full before:shadow-[-0.5rem_0.5rem_#e4e4e7] dark:before:shadow-[-0.5rem_0.5rem_#27272a] before:rounded-br w-fit rounded-tl-md px-2 py-0.5 text-zinc-950 dark:text-white"
+					class="flex gap-x-2.5 items-center absolute bottom-0 right-0 bg-purple-50 dark:bg-zinc-800 before:rotate-[265deg] before:absolute flex-wrap justify-end before:w-3 before:h-3 before:-left-3 before:bottom-0 before:z-10 before:rounded-full before:shadow-[-0.5rem_0.5rem_#faf5ff] dark:before:shadow-[-0.5rem_0.5rem_#27272a] before:rounded-br w-fit rounded-tl-md px-2 py-0.5 text-zinc-950 dark:text-white"
 					title="Tags"
 				>
 					<li>
-						<img src={tagIcon} alt="" class="w-4 invert dark:invert-0" />
+						<img src={tagIcon} alt="" width="16" height="16" class="w-4 invert dark:invert-0" />
 					</li>
 					{#each asset.tags as tag}
 						<li
@@ -71,14 +53,14 @@
 					<h3 class="text-xl hover:underline text-zinc-950 dark:text-white">
 						{asset.title}
 					</h3>
+					<img
+						src={externalIcon}
+						alt=""
+						class="absolute w-5 invert dark:invert-0 -right-3 top-0 bottom-0 m-auto opacity-0 group-hover:opacity-100 transition-all group-hover:-right-6"
+					/>
 				</a>
-
-				<img
-					src={externalIcon}
-					alt=""
-					class="absolute w-5 invert dark:invert-0 -right-3 top-0 bottom-0 m-auto opacity-0 group-hover:opacity-100 transition-all group-hover:-right-6"
-				/>
 			</div>
+
 			{#if asset.license}
 				<div class="group/license relative">
 					<a
@@ -88,10 +70,17 @@
 						href={asset.licenseLink || asset.link}
 					>
 						{#if asset.licenseDescription}
-							<img src={infoIcon} alt="" class="w-4 inline-block mr-.5 mb-0.5" />
+							<img
+								src={infoIcon}
+								alt=""
+								width="16"
+								height="16"
+								class="w-4 inline-block mr-.5 mb-0.5"
+							/>
 						{/if}
 						{asset.license}
 					</a>
+
 					{#if asset.licenseDescription}
 						<p
 							class="text-sm py-1 px-3 w-max max-w-xs rounded-md absolute -bottom-8 right-0 opacity-0 bg-zinc-800 transition-all group-hover/license:bottom-6 group-hover/license:opacity-100 group-hover/license:pointer-events-auto pointer-events-none"

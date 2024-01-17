@@ -1,11 +1,12 @@
 <script>
-	import Assest from '../Assets.svelte';
+	import Assest from '@/components/Assets.svelte';
 	export let data;
 </script>
 
 <svelte:head>
 	<title>{data.name} - Freesets</title>
 	<meta name="theme-color" content={data.color} />
+	<meta name="view-transition" content="same-origin" />
 	<meta name="robots" content="index, nofollow" />
 	<meta name="author" content="Cosmo" />
 	<link

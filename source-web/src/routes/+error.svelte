@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section class="flex flex-col items-center justify-center flex-grow">
-	<h1 class="text-4xl font-bold">404 Error</h1>
+	<h1 class="text-6xl font-bold mb-3">404 Error</h1>
 	<p class="text-xl">Page not found</p>
 	<a href="/" class="text-blue-500 hover:underline flex items-center gap-2">
 		<img src={arrowIcon} alt="" class="w-5 invert" />

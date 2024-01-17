@@ -6,6 +6,7 @@
 	export let alt = 'image';
 	export let className = '';
 	export let height = '0';
+	export let width = '0';
 
 	let imgNode;
 
@@ -33,4 +34,5 @@
 	{alt}
 	class={className}
 	{height}
+	{width}
 />
