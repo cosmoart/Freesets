@@ -18,7 +18,7 @@
 	}
 </script>
 
-<div class="fixed bottom-5 right-5 z-50">
+<div class="menu fixed bottom-5 right-5 z-50">
 	<nav
 		class={`bg-blue-600 rounded-md transition-all p-2 ${
 			navOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
@@ -68,3 +68,9 @@
 		</label>
 	</div>
 </div>
+
+<style>
+	.menu {
+		view-transition-name: menu;
+	}
+</style>
