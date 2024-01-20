@@ -3,8 +3,8 @@
 	import AssetCard from './AssetCard.svelte';
 	export let categories;
 
-	let multiple = 40;
-	let assets = 40;
+	let multiple = 39;
+	let assets = 39;
 </script>
 
 <main class="mb-10">
@@ -36,7 +36,7 @@
 					on:click={() => (assets += multiple)}
 					class="py-2 bg-[var(--resource-color)] w-full mt-5 rounded-md hover:brightness-105 flex gap-1 justify-center items-center text-white dar transition-all group relative"
 				>
-					Load more
+					View more
 					<img
 						src={arrowIcon}
 						alt=""
