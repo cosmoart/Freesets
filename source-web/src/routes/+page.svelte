@@ -1,43 +1,34 @@
 <script>
 	import categories from '@/assets/categories.json';
+
+	const description =
+		'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.';
+	const image =
+		'https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home';
 </script>
 
 <svelte:head>
 	<title>Freesets</title>
 	<link rel="icon" href="/favicon.svg" />
-	<meta name="robots" content="index, nofollow" />
+	<meta name="robots" content="index, follow" />
 	<meta name="author" content="Cosmo" />
-	<meta
-		name="description"
-		content="Explore a wide collection of the best free assets for your next project."
-	/>
+	<meta name="description" content={description} />
 	<meta name="view-transition" content="same-origin" />
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="Freesets" />
 	<meta property="og:type" content="website" />
-	<meta
-		property="og:image"
-		content="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
-	/>
+	<meta property="og:site_name" content="Freesets" />
+	<meta property="og:image" content={image} />
 	<meta property="og:url" content="https://freesets.vercel.app" />
-	<meta
-		property="og:description"
-		content="Explore a wide collection of the best free assets for your next project."
-	/>
+	<meta property="og:description" content={description} />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:creator" content="@CosmoArt0" />
 	<meta name="twitter:title" content="Freesets" />
-	<meta
-		name="twitter:description"
-		content="Explore a wide collection of the best free assets for your next project."
-	/>
-	<meta
-		name="twitter:image"
-		content="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
-	/>
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={image} />
 </svelte:head>
 
 <section class="flex-grow items-center flex justify-center flex-col relative overflow-hidden">
