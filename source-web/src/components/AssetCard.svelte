@@ -17,7 +17,7 @@
 			<a
 				href={asset.link}
 				target="_blank"
-				rel="noopener noreferrer"
+				rel="noopener noreferrer nofollow"
 				aria-label={'Open ' + asset.title}
 			>
 				<Image
@@ -49,7 +49,7 @@
 		</div>
 		<div class="p-5 flex flex-wrap justify-between items-center relative">
 			<div class="relative">
-				<a href={asset.link} target="_blank" rel="noopener noreferrer">
+				<a href={asset.link} target="_blank" rel="noopener noreferrer nofollow">
 					<h3 class="text-xl hover:underline text-zinc-950 dark:text-white">
 						{asset.title}
 					</h3>
@@ -66,7 +66,7 @@
 					<a
 						class="bg-blue-700 transition-all hover:scale-105 inline-block px-2 py-1 rounded-md text-[13px] tracking-wide"
 						target="_blank"
-						rel="noopener noreferrer"
+						rel="noopener noreferrer nofollow"
 						href={asset.licenseLink || asset.link}
 					>
 						{#if asset.licenseDescription}
