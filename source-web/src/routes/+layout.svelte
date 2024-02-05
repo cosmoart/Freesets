@@ -2,11 +2,7 @@
 	import NavBar from '@/components/NavBar.svelte';
 	import Menu from '../components/Menu.svelte';
 	import { onNavigate } from '$app/navigation';
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
 	import './styles.css';
-
-	inject({ mode: dev ? 'development' : 'production' });
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
