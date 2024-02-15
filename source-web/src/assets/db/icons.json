@@ -1,517 +1,549 @@
 [
-  {
-    "id": 1,
-    "name": "Iconify",
-    "link": "https://icon-sets.iconify.design",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconify",
-    "license": "Multiple",
-    "licenseLink": "https://iconify.design/license/",
-    "order": 100
-  },
-  {
-    "id": 2,
-    "name": "Google icons",
-    "link": "https://fonts.google.com/icons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/google",
-    "license": "Apache V2.0",
-    "licenseLink": "https://developers.google.com/fonts/docs/material_icons#licensing",
-    "order": 98
-  },
-  {
-    "id": 42,
-    "name": "Simple Icons",
-    "link": "https://simpleicons.org",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705765217/freesets/icons/jvhe6jrpy38zrqi6dhvp.webp",
-    "tags": [
-      "Brands"
-    ],
-    "order": 96
-  },
-  {
-    "id": 3,
-    "name": "Tabler icons",
-    "link": "https://tabler-icons.io",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/tabler",
-    "license": "MIT",
-    "licenseLink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE",
-    "order": 95
-  },
-  {
-    "id": 7,
-    "name": "SVG Repo",
-    "link": "https://www.svgrepo.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/svgrepo",
-    "license": "Multiple",
-    "licenseLink": "https://www.svgrepo.com/page/licensing",
-    "order": 95
-  },
-  {
-    "id": 35,
-    "name": "Reshot",
-    "link": "https://www.reshot.com/free-svg-icons/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381958/freesets/icons/eum2c2gjrwgwfv7aq3qm.webp",
-    "license": "Reshot Free License",
-    "licenseLink": "https://www.reshot.com/license/",
-    "licenseDescription": "Items under the Reshot Free License can be used in your commercial and non-commercial projects, for free.",
-    "order": 87
-  },
-  {
-    "id": 43,
-    "name": "Radix Icons",
-    "link": "https://www.radix-ui.com/icons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705772255/freesets/icons/mzzgjxfoem5kafvfyyhh.webp",
-    "license": "MIT",
-    "licenseLink": "https://github.com/radix-ui/icons/blob/master/LICENSE",
-    "tags": [
-      "Package"
-    ],
-    "order": 87
-  },
-  {
-    "id": 48,
-    "name": "Iconoir",
-    "link": "https://iconoir.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777316/freesets/icons/ruzpsrpudbcvjvqtcv4j.webp",
-    "license": "MIT",
-    "licenseLink": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
-    "order": 86
-  },
-  {
-    "id": 15,
-    "name": "Hero Icons",
-    "link": "https://heroicons.com/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/heroicons",
-    "license": "MIT",
-    "licenseLink": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE",
-    "order": 85
-  },
-  {
-    "id": 30,
-    "name": "Lucide",
-    "link": "https://lucide.dev",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/jn6a97pgfb9sq4pa2tzn",
-    "license": "ISC License",
-    "licenseLink": "https://lucide.dev/license",
-    "tags": [
-      "Package"
-    ],
-    "order": 85
-  },
-  {
-    "id": 8,
-    "name": "Phosphor",
-    "link": "https://phosphoricons.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/phosphor",
-    "license": "MIT",
-    "licenseLink": "https://raw.githubusercontent.com/phosphor-icons/phosphor-home/master/LICENSE",
-    "tags": [
-      "Package"
-    ],
-    "order": 80
-  },
-  {
-    "id": 22,
-    "name": "Remix Icon",
-    "link": "https://remixicon.com/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/remixicon",
-    "license": "Apache License V2.0",
-    "licenseLink": "https://remixicon.com/license",
-    "tags": [
-      "Package"
-    ],
-    "order": 77
-  },
-  {
-    "id": 49,
-    "name": "Ionicons",
-    "link": "https://ionic.io/ionicons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777616/freesets/icons/cqpb3phdbpbkizotyl0f.webp",
-    "license": "MIT",
-    "licenseLink": "https://github.com/ionic-team/ionicons/blob/main/LICENSE",
-    "tags": [
-      "Package"
-    ],
-    "order": 76
-  },
-  {
-    "id": 21,
-    "name": "Eva Icons",
-    "link": "https://akveo.github.io/eva-icons/#/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/evaicons",
-    "license": "MIT",
-    "licenseLink": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt",
-    "order": 74
-  },
-  {
-    "id": 5,
-    "name": "svgl",
-    "link": "https://svgl.vercel.app",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/svgl",
-    "license": "MIT",
-    "licenseLink": "https://github.com/pheralb/svgl/blob/main/LICENSE",
-    "order": 70
-  },
-  {
-    "id": 20,
-    "name": "Font Awesome Icons",
-    "link": "https://fontawesome.com/icons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/fontawesome",
-    "license": "Multiple",
-    "licenseLink": "https://fontawesome.com/license",
-    "tags": [
-      "Package"
-    ],
-    "order": 70
-  },
-  {
-    "id": 36,
-    "name": "useAnimations",
-    "link": "https://useanimations.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382354/freesets/icons/ndch8kgt9gb92gaixk9a.webp",
-    "license": "CC",
-    "licenseLink": "https://useanimations.com/licencing-and-terms.html",
-    "licenseDescription": "All the free files available in useAnimations are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise.",
-    "tags": [
-      "Animated"
-    ],
-    "order": 70
-  },
-  {
-    "id": 45,
-    "name": "MingCute Design",
-    "link": "https://www.mingcute.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776623/freesets/icons/lgi0vtfqupkfqf5ruvmz.webp",
-    "license": "Apache 2.0",
-    "licenseLink": "https://github.com/Richard9394/MingCute/blob/main/LICENSE",
-    "order": 70
-  },
-  {
-    "id": 46,
-    "name": "Carbon",
-    "link": "https://carbondesignsystem.com/guidelines/icons/library",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776835/freesets/icons/rvzgmjez12yrvwjigqnn.webp",
-    "license": "Apache 2.0",
-    "licenseLink": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
-    "order": 66
-  },
-  {
-    "id": 11,
-    "name": "Iconbuddy",
-    "link": "https://iconbuddy.app",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconbuddy",
-    "license": "Multiple",
-    "licenseLink": "https://iconbuddy.app",
-    "order": 60
-  },
-  {
-    "id": 4,
-    "name": "Animatedicons",
-    "link": "https://animatedicons.co/icons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/animatedicons",
-    "license": "Free",
-    "licenseLink": "https://animatedicons.co/license",
-    "licenseDescription": "You're free to use AnimatedIcons in any project, be it for commercial or personal use, without the need for attribution or any costs",
-    "tags": [
-      "Animated"
-    ],
-    "order": 60
-  },
-  {
-    "id": 17,
-    "name": "CSS Icons",
-    "link": "https://css.gg/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/CSSIcons",
-    "license": "MIT",
-    "licenseLink": "https://css.gg/doc/licence",
-    "tags": [
-      "Package"
-    ],
-    "order": 60
-  },
-  {
-    "id": 6,
-    "name": "Ikonate",
-    "link": "https://ikonate.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/ikonate",
-    "license": "MIT",
-    "licenseLink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE",
-    "order": 50
-  },
-  {
-    "id": 39,
-    "name": "ManyPixels",
-    "link": "https://www.manypixels.co/gallery",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385023/freesets/icons/xxyu2syjxgm7twcyegba.webp",
-    "license": "Free",
-    "licenseDescription": "You can use the illustrations in any project, commercial or personal without attribution or any costs.",
-    "order": 50
-  },
-  {
-    "id": 40,
-    "name": "ICONSVG",
-    "link": "https://iconsvg.xyz",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704820992/freesets/icons/lq4ll4tgmsdzhe4ysibx.webp",
-    "order": 48
-  },
-  {
-    "id": 10,
-    "name": "Streamline Icons",
-    "link": "https://www.streamlinehq.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/streamline",
-    "license": "CC by 4.0",
-    "licenseLink": "https://www.streamlinehq.com/license-free",
-    "order": 46
-  },
-  {
-    "id": 50,
-    "name": "TDesign Icons",
-    "link": "https://tdesign.tencent.com/design/icon",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777927/freesets/icons/p16gzcdv7iacvdnud2ch.webp",
-    "license": "MIT",
-    "licenseLink": "https://github.com/Tencent/tdesign-icons/blob/main/LICENSE",
-    "order": 46
-  },
-  {
-    "id": 27,
-    "name": "3D Icons",
-    "link": "https://3dicons.co/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/hh9zkxpnfjckvekzz0ey",
-    "license": "CC0",
-    "licenseLink": "https://3dicons.co/?ref=lapaninja",
-    "tags": [
-      "3D"
-    ],
-    "order": 45
-  },
-  {
-    "id": 14,
-    "name": "Mono Icons",
-    "link": "https://icons.mono.company/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/monoicons",
-    "license": "MIT",
-    "licenseLink": "https://github.com/mono-company/mono-icons/blob/master/LICENSE.md",
-    "order": 40
-  },
-  {
-    "id": 9,
-    "name": "Iconmonstr",
-    "link": "https://iconmonstr.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconmonstr",
-    "license": "Free",
-    "licenseLink": "https://iconmonstr.com/license/",
-    "licenseDescription": "License may use the Work in non-commercial and commercial projects, services or products without attribution.",
-    "order": 40
-  },
-  {
-    "id": 32,
-    "name": "Drawkit",
-    "link": "https://www.drawkit.com/illustration-types/icons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/quqeaqpdwrr9pfl7syvz",
-    "license": "DrawKit License",
-    "licenseLink": "https://www.drawkit.com/license",
-    "licenseDescription": "Free for Personal and Commercial. No attribution required.",
-    "tags": [
-      "3D"
-    ],
-    "order": 40
-  },
-  {
-    "id": 41,
-    "name": "Basicons",
-    "link": "https://basicons.xyz",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704821116/freesets/icons/iugy1xeoa4h1rk0xopit.webp",
-    "license": "MIT",
-    "licenseLink": "https://github.com/solomon-fibonacci/react-basicons/blob/main/LICENSE",
-    "tags": [
-      "Package"
-    ],
-    "order": 40
-  },
-  {
-    "id": 51,
-    "name": "Clarity",
-    "link": "https://clarity.design/documentation/icons/shapes",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705778097/freesets/icons/ldvm1lc29yfknxdzzm1a.webp",
-    "license": "MIT",
-    "licenseLink": "https://github.com/vmware/clarity-assets/blob/master/LICENSE",
-    "order": 38
-  },
-  {
-    "id": 18,
-    "name": "Core UI Icons",
-    "link": "https://coreui.io/icons/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/coreuiicons",
-    "license": "Freemium",
-    "licenseLink": "https://coreui.io/license/",
-    "tags": [
-      "Package"
-    ],
-    "order": 35
-  },
-  {
-    "id": 33,
-    "name": "Unicorn icons",
-    "link": "https://unicornicons.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/ocpqwxgjvphvpk6b44ed",
-    "license": "Unicorn icons License",
-    "licenseLink": "https://unicornicons.com/license",
-    "licenseDescription": "Free with attribution",
-    "tags": [
-      "Animated"
-    ],
-    "order": 35
-  },
-  {
-    "id": 19,
-    "name": "Bootstrap Icons",
-    "link": "https://icons.getbootstrap.com/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/bootstrap",
-    "license": "MIT",
-    "licenseLink": "https://github.com/twbs/bootstrap/blob/main/LICENSE",
-    "tags": [
-      "Package"
-    ],
-    "order": 30
-  },
-  {
-    "id": 16,
-    "name": "Teenyicons",
-    "link": "https://teenyicons.com/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/teenyicons",
-    "license": "MIT",
-    "licenseLink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE",
-    "order": 25
-  },
-  {
-    "id": 38,
-    "name": "Potlab Icons",
-    "link": "https://www.potlabicons.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382810/freesets/icons/hsy0ykq8riokhajhzewl.webp",
-    "license": "CC 4.0",
-    "licenseLink": "https://www.potlabicons.com",
-    "tags": [
-      "Animated",
-      "Loaders"
-    ],
-    "order": 23
-  },
-  {
-    "id": 12,
-    "name": "Keyicons",
-    "link": "https://keyicons.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/keyicons",
-    "license": "CC BY 4.0",
-    "licenseLink": "https://keyicons.com",
-    "order": 20
-  },
-  {
-    "id": 13,
-    "name": "Zwicon",
-    "link": "http://zwicon.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/zwicon",
-    "license": "CC BY-ND 4.0",
-    "licenseLink": "http://zwicon.com/how-to-use.html",
-    "order": 20
-  },
-  {
-    "id": 25,
-    "name": "Notion-style Icons",
-    "link": "https://maryamato88.gumroad.com/l/pbmkt",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703028113/freesets/icons/Notion_Style_Icons_kpixkv.webp",
-    "license": "Free",
-    "licenseDescription": "Use on unlimited personal and commercial projects",
-    "tags": [
-      "Scribble"
-    ],
-    "order": 20
-  },
-  {
-    "id": 28,
-    "name": "Flagpack",
-    "link": "https://flagpack.xyz",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/w4emtntc7owwt8bu4etm",
-    "license": "Free",
-    "licenseLink": "https://flagpack.xyz/support",
-    "licenseDescription": "you can Flagpack for any project; commercial or personal. Flagpack is open source and can be used, changed and shared",
-    "tags": [
-      "Flags"
-    ],
-    "order": 18
-  },
-  {
-    "id": 29,
-    "name": "Grumpyicons",
-    "link": "https://www.petrbilek.com/products/grumpyicons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/eelqaxmso9pbbfstgl5z",
-    "license": "Free",
-    "licenseLink": "https://www.petrbilek.com/docs/license",
-    "licenseDescription": "Free for personal and commercial projects. No attribution required.",
-    "tags": [
-      "Scribble"
-    ],
-    "order": 17
-  },
-  {
-    "id": 24,
-    "name": "Icon Freebies Glimsy",
-    "link": "https://orenjistudio.gumroad.com/l/glimsy",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703027910/freesets/icons/Glimsy_bwpu4k.webp",
-    "license": "Free",
-    "order": 15
-  },
-  {
-    "id": 31,
-    "name": "Line Icon Pack",
-    "link": "https://www.petrbilek.com/products/line-icon-pack",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/l4zhbu6rb8yde0ckdnv2",
-    "license": "Free",
-    "licenseLink": "https://www.petrbilek.com/docs/license",
-    "licenseDescription": "Free for personal and commercial projects. No attribution required.",
-    "order": 15
-  },
-  {
-    "id": 37,
-    "name": "Tilda Icons",
-    "link": "https://tilda.cc/free-icons/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382565/freesets/icons/dxhlcgkgwque1gddimtd.webp",
-    "license": "Free with attribution",
-    "licenseLink": "https://tilda.cc/free-icons/license/",
-    "licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\\nLicensee mentions the owner of the Icons. ",
-    "order": 15
-  },
-  {
-    "id": 34,
-    "name": "Noun Project",
-    "link": "https://thenounproject.com/icons/",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/g4ovyr2rjrlb7l5kqggf",
-    "license": "Freemium",
-    "licenseLink": "https://thenounproject.com/pricing/#icons",
-    "licenseDescription": "Free with attribution",
-    "order": 10
-  },
-  {
-    "id": 47,
-    "name": "IconaMoon",
-    "link": "https://www.figma.com/community/file/1014143897459418663",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776986/freesets/icons/ubb1mslpo6luz1pivm0n.webp",
-    "license": "CC BY 4.0",
-    "order": 7
-  },
-  {
-    "id": 44,
-    "name": "Solar",
-    "link": "https://www.figma.com/community/file/1166831539721848736",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776270/freesets/icons/g5k7wqiikvrxcmevnhet.webp",
-    "license": "CC BY 4.0",
-    "order": 6
-  },
-  {
-    "id": 26,
-    "name": "Untitled UI Icons",
-    "link": "https://www.untitledui.com/icons",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/u0vnq5jvrwli4mzr4dl0",
-    "license": "Freemium",
-    "licenseLink": "https://www.untitledui.com/pricing",
-    "order": 1
-  }
+	{
+		"id": 1,
+		"name": "Iconify",
+		"link": "https://icon-sets.iconify.design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconify",
+		"license": "Multiple",
+		"licenseLink": "https://iconify.design/license/",
+		"order": 100
+	},
+	{
+		"id": 2,
+		"name": "Google icons",
+		"link": "https://fonts.google.com/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/google",
+		"license": "Apache V2.0",
+		"licenseLink": "https://developers.google.com/fonts/docs/material_icons#licensing",
+		"order": 98
+	},
+	{
+		"id": 42,
+		"name": "Simple Icons",
+		"link": "https://simpleicons.org",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705765217/freesets/icons/jvhe6jrpy38zrqi6dhvp.webp",
+		"tags": ["Brands"],
+		"order": 96
+	},
+	{
+		"id": 3,
+		"name": "Tabler icons",
+		"link": "https://tabler-icons.io",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/tabler",
+		"license": "MIT",
+		"licenseLink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE",
+		"order": 95
+	},
+	{
+		"id": 7,
+		"name": "SVG Repo",
+		"link": "https://www.svgrepo.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/svgrepo",
+		"license": "Multiple",
+		"licenseLink": "https://www.svgrepo.com/page/licensing",
+		"order": 95
+	},
+	{
+		"id": 35,
+		"name": "Reshot",
+		"link": "https://www.reshot.com/free-svg-icons/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381958/freesets/icons/eum2c2gjrwgwfv7aq3qm.webp",
+		"license": "Reshot Free License",
+		"licenseLink": "https://www.reshot.com/license/",
+		"licenseDescription": "Items under the Reshot Free License can be used in your commercial and non-commercial projects, for free.",
+		"order": 87
+	},
+	{
+		"id": 43,
+		"name": "Radix Icons",
+		"link": "https://www.radix-ui.com/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705772255/freesets/icons/mzzgjxfoem5kafvfyyhh.webp",
+		"license": "MIT",
+		"licenseLink": "https://github.com/radix-ui/icons/blob/master/LICENSE",
+		"tags": ["Package"],
+		"order": 87
+	},
+	{
+		"id": 48,
+		"name": "Iconoir",
+		"link": "https://iconoir.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777316/freesets/icons/ruzpsrpudbcvjvqtcv4j.webp",
+		"license": "MIT",
+		"licenseLink": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
+		"order": 86
+	},
+	{
+		"id": 15,
+		"name": "Hero Icons",
+		"link": "https://heroicons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/heroicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE",
+		"order": 85
+	},
+	{
+		"id": 30,
+		"name": "Lucide",
+		"link": "https://lucide.dev",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/jn6a97pgfb9sq4pa2tzn",
+		"license": "ISC License",
+		"licenseLink": "https://lucide.dev/license",
+		"tags": ["Package"],
+		"order": 85
+	},
+	{
+		"id": 8,
+		"name": "Phosphor",
+		"link": "https://phosphoricons.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/phosphor",
+		"license": "MIT",
+		"licenseLink": "https://raw.githubusercontent.com/phosphor-icons/phosphor-home/master/LICENSE",
+		"tags": ["Package"],
+		"order": 80
+	},
+	{
+		"id": 22,
+		"name": "Remix Icon",
+		"link": "https://remixicon.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/remixicon",
+		"license": "Apache License V2.0",
+		"licenseLink": "https://remixicon.com/license",
+		"tags": ["Package"],
+		"order": 77
+	},
+	{
+		"id": 49,
+		"name": "Ionicons",
+		"link": "https://ionic.io/ionicons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777616/freesets/icons/cqpb3phdbpbkizotyl0f.webp",
+		"license": "MIT",
+		"licenseLink": "https://github.com/ionic-team/ionicons/blob/main/LICENSE",
+		"tags": ["Package"],
+		"order": 76
+	},
+	{
+		"id": 21,
+		"name": "Eva Icons",
+		"link": "https://akveo.github.io/eva-icons/#/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/evaicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt",
+		"order": 74
+	},
+	{
+		"id": 5,
+		"name": "svgl",
+		"link": "https://svgl.vercel.app",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/svgl",
+		"license": "MIT",
+		"licenseLink": "https://github.com/pheralb/svgl/blob/main/LICENSE",
+		"order": 70
+	},
+	{
+		"id": 20,
+		"name": "Font Awesome Icons",
+		"link": "https://fontawesome.com/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/fontawesome",
+		"license": "Multiple",
+		"licenseLink": "https://fontawesome.com/license",
+		"tags": ["Package"],
+		"order": 70
+	},
+	{
+		"id": 36,
+		"name": "useAnimations",
+		"link": "https://useanimations.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382354/freesets/icons/ndch8kgt9gb92gaixk9a.webp",
+		"license": "CC",
+		"licenseLink": "https://useanimations.com/licencing-and-terms.html",
+		"licenseDescription": "All the free files available in useAnimations are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise.",
+		"tags": ["Animated"],
+		"order": 70
+	},
+	{
+		"id": 45,
+		"name": "MingCute Design",
+		"link": "https://www.mingcute.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776623/freesets/icons/lgi0vtfqupkfqf5ruvmz.webp",
+		"license": "Apache 2.0",
+		"licenseLink": "https://github.com/Richard9394/MingCute/blob/main/LICENSE",
+		"order": 70
+	},
+	{
+		"id": 46,
+		"name": "Carbon",
+		"link": "https://carbondesignsystem.com/guidelines/icons/library",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776835/freesets/icons/rvzgmjez12yrvwjigqnn.webp",
+		"license": "Apache 2.0",
+		"licenseLink": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+		"order": 66
+	},
+	{
+		"id": 11,
+		"name": "Iconbuddy",
+		"link": "https://iconbuddy.app",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconbuddy",
+		"license": "Multiple",
+		"licenseLink": "https://iconbuddy.app",
+		"order": 60
+	},
+	{
+		"id": 4,
+		"name": "Animatedicons",
+		"link": "https://animatedicons.co/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/animatedicons",
+		"license": "Free",
+		"licenseLink": "https://animatedicons.co/license",
+		"licenseDescription": "You're free to use AnimatedIcons in any project, be it for commercial or personal use, without the need for attribution or any costs",
+		"tags": ["Animated"],
+		"order": 60
+	},
+	{
+		"id": 17,
+		"name": "CSS Icons",
+		"link": "https://css.gg/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/CSSIcons",
+		"license": "MIT",
+		"licenseLink": "https://css.gg/doc/licence",
+		"tags": ["Package"],
+		"order": 60
+	},
+	{
+		"id": 6,
+		"name": "Ikonate",
+		"link": "https://ikonate.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/ikonate",
+		"license": "MIT",
+		"licenseLink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE",
+		"order": 50
+	},
+	{
+		"id": 39,
+		"name": "ManyPixels",
+		"link": "https://www.manypixels.co/gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385023/freesets/icons/xxyu2syjxgm7twcyegba.webp",
+		"license": "Free",
+		"licenseDescription": "You can use the illustrations in any project, commercial or personal without attribution or any costs.",
+		"order": 50
+	},
+	{
+		"id": 40,
+		"name": "ICONSVG",
+		"link": "https://iconsvg.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704820992/freesets/icons/lq4ll4tgmsdzhe4ysibx.webp",
+		"order": 48
+	},
+	{
+		"id": 10,
+		"name": "Streamline Icons",
+		"link": "https://www.streamlinehq.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/streamline",
+		"license": "CC by 4.0",
+		"licenseLink": "https://www.streamlinehq.com/license-free",
+		"order": 46
+	},
+	{
+		"id": 50,
+		"name": "TDesign Icons",
+		"link": "https://tdesign.tencent.com/design/icon",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777927/freesets/icons/p16gzcdv7iacvdnud2ch.webp",
+		"license": "MIT",
+		"licenseLink": "https://github.com/Tencent/tdesign-icons/blob/main/LICENSE",
+		"order": 46
+	},
+	{
+		"id": 27,
+		"name": "3D Icons",
+		"link": "https://3dicons.co/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/hh9zkxpnfjckvekzz0ey",
+		"license": "CC0",
+		"licenseLink": "https://3dicons.co/?ref=lapaninja",
+		"tags": ["3D"],
+		"order": 45
+	},
+	{
+		"id": 14,
+		"name": "Mono Icons",
+		"link": "https://icons.mono.company/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/monoicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/mono-company/mono-icons/blob/master/LICENSE.md",
+		"order": 40
+	},
+	{
+		"id": 9,
+		"name": "Iconmonstr",
+		"link": "https://iconmonstr.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconmonstr",
+		"license": "Free",
+		"licenseLink": "https://iconmonstr.com/license/",
+		"licenseDescription": "License may use the Work in non-commercial and commercial projects, services or products without attribution.",
+		"order": 40
+	},
+	{
+		"id": 32,
+		"name": "Drawkit",
+		"link": "https://www.drawkit.com/illustration-types/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/quqeaqpdwrr9pfl7syvz",
+		"license": "DrawKit License",
+		"licenseLink": "https://www.drawkit.com/license",
+		"licenseDescription": "Free for Personal and Commercial. No attribution required.",
+		"tags": ["3D"],
+		"order": 40
+	},
+	{
+		"id": 41,
+		"name": "Basicons",
+		"link": "https://basicons.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704821116/freesets/icons/iugy1xeoa4h1rk0xopit.webp",
+		"license": "MIT",
+		"licenseLink": "https://github.com/solomon-fibonacci/react-basicons/blob/main/LICENSE",
+		"tags": ["Package"],
+		"order": 40
+	},
+	{
+		"id": 51,
+		"name": "Clarity",
+		"link": "https://clarity.design/documentation/icons/shapes",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705778097/freesets/icons/ldvm1lc29yfknxdzzm1a.webp",
+		"license": "MIT",
+		"licenseLink": "https://github.com/vmware/clarity-assets/blob/master/LICENSE",
+		"order": 38
+	},
+	{
+		"id": 18,
+		"name": "Core UI Icons",
+		"link": "https://coreui.io/icons/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/coreuiicons",
+		"license": "Freemium",
+		"licenseLink": "https://coreui.io/license/",
+		"tags": ["Package"],
+		"order": 35
+	},
+	{
+		"id": 33,
+		"name": "Unicorn icons",
+		"link": "https://unicornicons.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/ocpqwxgjvphvpk6b44ed",
+		"license": "Unicorn icons License",
+		"licenseLink": "https://unicornicons.com/license",
+		"licenseDescription": "Free with attribution",
+		"tags": ["Animated"],
+		"order": 35
+	},
+	{
+		"id": 19,
+		"name": "Bootstrap Icons",
+		"link": "https://icons.getbootstrap.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/bootstrap",
+		"license": "MIT",
+		"licenseLink": "https://github.com/twbs/bootstrap/blob/main/LICENSE",
+		"tags": ["Package"],
+		"order": 30
+	},
+	{
+		"id": 16,
+		"name": "Teenyicons",
+		"link": "https://teenyicons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/teenyicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE",
+		"order": 25
+	},
+	{
+		"id": 38,
+		"name": "Potlab Icons",
+		"link": "https://www.potlabicons.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382810/freesets/icons/hsy0ykq8riokhajhzewl.webp",
+		"license": "CC 4.0",
+		"licenseLink": "https://www.potlabicons.com",
+		"tags": ["Animated", "Loaders"],
+		"order": 23
+	},
+	{
+		"id": 12,
+		"name": "Keyicons",
+		"link": "https://keyicons.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/keyicons",
+		"license": "CC BY 4.0",
+		"licenseLink": "https://keyicons.com",
+		"order": 20
+	},
+	{
+		"id": 13,
+		"name": "Zwicon",
+		"link": "http://zwicon.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/zwicon",
+		"license": "CC BY-ND 4.0",
+		"licenseLink": "http://zwicon.com/how-to-use.html",
+		"order": 20
+	},
+	{
+		"id": 25,
+		"name": "Notion-style Icons",
+		"link": "https://maryamato88.gumroad.com/l/pbmkt",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703028113/freesets/icons/Notion_Style_Icons_kpixkv.webp",
+		"license": "Free",
+		"licenseDescription": "Use on unlimited personal and commercial projects",
+		"tags": ["Scribble"],
+		"order": 20
+	},
+	{
+		"id": 28,
+		"name": "Flagpack",
+		"link": "https://flagpack.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/w4emtntc7owwt8bu4etm",
+		"license": "Free",
+		"licenseLink": "https://flagpack.xyz/support",
+		"licenseDescription": "you can Flagpack for any project; commercial or personal. Flagpack is open source and can be used, changed and shared",
+		"tags": ["Flags"],
+		"order": 18
+	},
+	{
+		"id": 29,
+		"name": "Grumpyicons",
+		"link": "https://www.petrbilek.com/products/grumpyicons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/eelqaxmso9pbbfstgl5z",
+		"license": "Free",
+		"licenseLink": "https://www.petrbilek.com/docs/license",
+		"licenseDescription": "Free for personal and commercial projects. No attribution required.",
+		"tags": ["Scribble"],
+		"order": 17
+	},
+	{
+		"id": 24,
+		"name": "Icon Freebies Glimsy",
+		"link": "https://orenjistudio.gumroad.com/l/glimsy",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703027910/freesets/icons/Glimsy_bwpu4k.webp",
+		"license": "Free",
+		"order": 15
+	},
+	{
+		"id": 31,
+		"name": "Line Icon Pack",
+		"link": "https://www.petrbilek.com/products/line-icon-pack",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/l4zhbu6rb8yde0ckdnv2",
+		"license": "Free",
+		"licenseLink": "https://www.petrbilek.com/docs/license",
+		"licenseDescription": "Free for personal and commercial projects. No attribution required.",
+		"order": 15
+	},
+	{
+		"id": 37,
+		"name": "Tilda Icons",
+		"link": "https://tilda.cc/free-icons/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382565/freesets/icons/dxhlcgkgwque1gddimtd.webp",
+		"license": "Free with attribution",
+		"licenseLink": "https://tilda.cc/free-icons/license/",
+		"licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\\nLicensee mentions the owner of the Icons. ",
+		"order": 15
+	},
+	{
+		"id": 34,
+		"name": "Noun Project",
+		"link": "https://thenounproject.com/icons/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/g4ovyr2rjrlb7l5kqggf",
+		"license": "Freemium",
+		"licenseLink": "https://thenounproject.com/pricing/#icons",
+		"licenseDescription": "Free with attribution",
+		"order": 10
+	},
+	{
+		"id": 47,
+		"name": "IconaMoon",
+		"link": "https://www.figma.com/community/file/1014143897459418663",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776986/freesets/icons/ubb1mslpo6luz1pivm0n.webp",
+		"license": "CC BY 4.0",
+		"order": 7
+	},
+	{
+		"id": 44,
+		"name": "Solar",
+		"link": "https://www.figma.com/community/file/1166831539721848736",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776270/freesets/icons/g5k7wqiikvrxcmevnhet.webp",
+		"license": "CC BY 4.0",
+		"order": 6
+	},
+	{
+		"id": 26,
+		"name": "Untitled UI Icons",
+		"link": "https://www.untitledui.com/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/u0vnq5jvrwli4mzr4dl0",
+		"license": "Freemium",
+		"licenseLink": "https://www.untitledui.com/pricing",
+		"order": 1
+	},
+	{
+		"id": 23,
+		"name": "React Icons",
+		"link": "https://react-icons.github.io/react-icons/",
+		"img": "https://user-images.githubusercontent.com/5782144/67554185-3e9e0d80-f6e5-11e9-8cf6-dc1bd91c4c17.png",
+		"license": "MIT",
+		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE"
+	},
+	{
+		"id": 52,
+		"name": "Icon Icons",
+		"link": "https://icon-icons.com",
+		"img": "https://blog.icon-icons.com/wp-content/uploads/2023/05/Flat-Style-Preview-Without-Text-1.png",
+		"license": "Free",
+		"licenseLink": "https://icon-icons.com/license",
+		"order": 3
+	},
+	{
+		"id": 7,
+		"name": "FlatIcon",
+		"link": "https://www.flaticon.com/",
+		"img": "https://cdn-share-sprites.flaticon.com/pack/0/149/149086-essential-set_facebook.jpg",
+		"license": "Free",
+		"order": 72
+	},
+	{
+		"id": 9,
+		"name": "Iconscout",
+		"link": "https://iconscout.com/",
+		"img": "https://iconscout.com/og.png",
+		"license": "Free & Paid",
+		"order": 74
+	},
+	{
+		"id": 10,
+		"name": "Zondicons",
+		"link": "http://www.zondicons.com/",
+		"img": "https://www.figma.com/community/thumbnail?resource_id=1146186011366851506&resource_type=plugin",
+		"license": "Free",
+		"order": 75
+	},
+	{
+		"id": 11,
+		"name": "Boxicons",
+		"link": "https://boxicons.com/",
+		"img": "https://www.figma.com/community/thumbnail?resource_id=1149932444698301284&resource_type=plugin",
+		"license": "CC BY 4.0",
+		"order": 76
+	},
+	{
+		"id": 12,
+		"name": "Feather Icons",
+		"link": "https://feathericons.com/",
+		"img": "https://s3-alpha.figma.com/hub/file/1248569669/f97d43d8-8af2-4eef-bef0-16a21c86ad66-cover.png",
+		"license": "MIT",
+		"order": 77
+	},
+	{
+		"id": 13,
+		"name": "Favicon Generator",
+		"link": "https://www.favicon-generator.org/",
+		"img": "https://www.favicongenerator.com/img/og.png",
+		"license": "Free",
+		"order": 78
+	},
+	{
+		"id": 14,
+		"name": "RealFaviconGenerator",
+		"link": "https://realfavicongenerator.net/",
+		"img": "https://realfavicongenerator.net/api/wordpress_realfavicongenerator.png",
+		"license": "Free",
+		"order": 79
+	}
 ]
