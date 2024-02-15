@@ -1,0 +1,116 @@
+[
+	{
+		"id": 1,
+		"order": 99,
+		"name": "Pixabay",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/pixabay",
+		"link": "https://pixabay.com/videos/",
+		"license": "Pixabay License",
+		"licenseLink": "https://pixabay.com/service/license/",
+		"licenseDescription": "Free for commercial and noncommercial use. Attribution is not required."
+	},
+	{
+		"id": 2,
+		"order": 95,
+		"name": "Pexels",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/pexels",
+		"link": "https://www.pexels.com/videos/",
+		"license": "Free",
+		"licenseLink": "https://www.pexels.com/license/",
+		"licenseDescription": "All photos and videos on Pexels can be downloaded and used for free."
+	},
+	{
+		"id": 3,
+		"order": 94,
+		"name": "Coverr",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/coverr",
+		"link": "https://coverr.co",
+		"license": "Free",
+		"licenseLink": "https://coverr.co/license",
+		"licenseDescription": "All Videos published on Coverr.co can be used free for commercial and non-commercial purposes. You do not need to ask permission from or provide credit to the videographer or Coverr.co, although it is appreciated when possible."
+	},
+	{
+		"id": 11,
+		"order": 80,
+		"name": "ISO Republic",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703379961/freesets/videos/seihdp8tiic1xff7lmty.webp",
+		"link": "https://isorepublic.com",
+		"license": "CC0",
+		"licenseLink": "https://isorepublic.com/license/"
+	},
+	{
+		"id": 9,
+		"order": 76,
+		"name": "Focastock",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/rmvbtxdr4upad8r1opip",
+		"link": "https://focastock.com/videos/",
+		"license": "CC0",
+		"licenseLink": "https://focastock.com/license/"
+	},
+	{
+		"id": 4,
+		"order": 40,
+		"name": "Videezy",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/videezy",
+		"link": "https://www.videezy.com",
+		"license": "Multiple",
+		"licenseLink": "https://www.videezy.com/terms",
+		"licenseDescription": "Standard, Pro, Creative Commons and Editorial Use Only"
+	},
+	{
+		"id": 5,
+		"order": 30,
+		"name": "Mixkit",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/mixkit",
+		"link": "https://mixkit.co/free-stock-video/",
+		"license": "Free",
+		"licenseLink": "https://mixkit.co/license/",
+		"licenseDescription": "Items under the Mixkit Stock Video Free License can be used in your commercial and non-commercial projects, for free."
+	},
+	{
+		"id": 8,
+		"order": 10,
+		"name": "Vidsplay",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/g6rwxg8wydrdpfnywijw",
+		"link": "https://www.vidsplay.com/",
+		"license": "Free with attribution",
+		"licenseLink": "https://www.vidsplay.com/terms/"
+	},
+	{
+		"id": 12,
+		"order": 7,
+		"name": "Dareful",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703380070/freesets/videos/luzv5hwxmjiwp0xzw2o9.webp",
+		"link": "https://dareful.com",
+		"license": "CC BY 4.0 DEED",
+		"licenseLink": "https://dareful.com"
+	},
+	{
+		"id": 7,
+		"order": 6,
+		"name": "Mazwai",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/uuyp3fx6to9gbzn4ehlj",
+		"link": "https://mazwai.com",
+		"license": "Multiple",
+		"licenseLink": "https://mazwai.com/license-details",
+		"licenseDescription": "There are two types of license: CC-BY 3.0 (with attribution) or Mazwai License (without attribution)."
+	},
+	{
+		"id": 10,
+		"order": 6,
+		"name": "Vimeo",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703379896/freesets/videos/eybg2hh9eshhaxvdtsci.webp",
+		"link": "https://vimeo.com/groups/freehd/",
+		"license": "Multiple"
+	},
+	{
+		"id": 6,
+		"order": 2,
+		"name": "Videvo",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/videos/videvo",
+		"link": "https://www.videvo.net",
+		"license": "Multiple",
+		"licenseLink": "https://help.videvo.net/category/6-licensing",
+		"licenseDescription": "Videvo Attribution License or CC BY 3.0"
+	}
+]

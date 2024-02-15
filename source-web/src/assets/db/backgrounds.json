@@ -1,0 +1,136 @@
+[
+  {
+    "id": 13,
+    "name": "bg.ibelick",
+    "link": "https://bg.ibelick.com",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614372/freesets/backgrounds/byn5pbw6ikqp95yyyske.webp",
+    "order": 100
+  },
+  {
+    "id": 1,
+    "name": "CSS Background Patterns",
+    "link": "https://www.magicpattern.design/tools/css-backgrounds",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/csspatterns",
+    "license": "Multiple",
+    "licenseLink": "https://www.magicpattern.design/terms",
+    "order": 95
+  },
+  {
+    "id": 2,
+    "name": "Pattern Generator",
+    "link": "https://doodad.dev/pattern-generator/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/pattern_generator",
+    "license": "Free",
+    "licenseLink": "https://doodad.dev/pattern-generator/",
+    "licenseDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs",
+    "order": 90
+  },
+  {
+    "id": 3,
+    "name": "Pattern Monster",
+    "link": "https://pattern.monster",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/pattern_monster",
+    "license": "MIT",
+    "licenseLink": "https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md",
+    "order": 85
+  },
+  {
+    "id": 4,
+    "name": "pattern.css",
+    "link": "https://bansal.io/pattern-css",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/pattern_css",
+    "license": "MIT",
+    "licenseLink": "https://github.com/bansal/pattern.css",
+    "order": 80
+  },
+  {
+    "id": 5,
+    "name": "Haikei",
+    "link": "https://haikei.app/generators/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/haikei",
+    "license": "Multiple",
+    "licenseLink": "https://haikei.app/pricing/",
+    "licenseDescription": "Basic Plan, Pro Plan",
+    "order": 77
+  },
+  {
+    "id": 6,
+    "name": "Hero Patterns",
+    "link": "https://www.heropatterns.com",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/heropatterns",
+    "license": "CC BY 4.0",
+    "licenseLink": "https://heropatterns.com",
+    "licenseDescription": "Free with attribution",
+    "order": 75
+  },
+  {
+    "id": 15,
+    "name": "Cool Backgrounds",
+    "link": "https://coolbackgrounds.io",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706404961/freesets/backgrounds/fe8ljxu66grtmvzvnlm4.webp",
+    "order": 75
+  },
+  {
+    "id": 7,
+    "name": "PatternPad",
+    "link": "https://patternpad.com",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/patternpad",
+    "license": "CC BY 4.0",
+    "licenseLink": "https://patternpad.com",
+    "licenseDescription": "Free with attribution",
+    "order": 70
+  },
+  {
+    "id": 8,
+    "name": "Visiwig",
+    "link": "https://www.visiwig.com/patterns/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/visiwig",
+    "license": "Free",
+    "licenseLink": "https://www.visiwig.com/pattern-license/",
+    "licenseDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs, but you can’t replicate Vector Pattern Generator, redistribute the patterns in packs, or create integrations for these patterns.",
+    "order": 65
+  },
+  {
+    "id": 9,
+    "name": "Tartanify",
+    "link": "https://tartanify.com/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/tartanify",
+    "license": "Multiple",
+    "licenseLink": "https://tartanify.com/terms-of-use",
+    "order": 60
+  },
+  {
+    "id": 10,
+    "name": "SVG Backgrounds",
+    "link": "https://www.svgbackgrounds.com/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/svg_backgrounds",
+    "license": "CC BY 4.0",
+    "licenseLink": "https://www.svgbackgrounds.com/license/",
+    "order": 58
+  },
+  {
+    "id": 11,
+    "name": "CSS Pattern",
+    "link": "https://css-pattern.com/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/css_pattern",
+    "license": "MIT",
+    "licenseLink": "https://github.com/Afif13/CSS-Pattern/blob/main/LICENCE",
+    "order": 55
+  },
+  {
+    "id": 14,
+    "name": "Super designer",
+    "link": "https://superdesigner.co",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704377698/freesets/backgrounds/kyzflrd7lyidfg5djpv8.webp",
+    "order": 55
+  },
+  {
+    "id": 12,
+    "name": "CSS3 Patterns Gallery",
+    "link": "https://projects.verou.me/css3patterns/",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/backgrounds/patterns_gallery",
+    "license": "MIT",
+    "licenseLink": "https://github.com/LeaVerou/css3patterns/blob/master/license.txt",
+    "order": 50
+  }
+]
