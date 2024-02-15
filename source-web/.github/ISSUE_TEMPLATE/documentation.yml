@@ -1,0 +1,41 @@
+name: 'Documentation 📋'
+description: 'Use this form to present your suggestions on how to improve our docs'
+title: '[DOCS] <write your suggestion here>'
+labels: ['documenation']
+
+body:
+  - type: textarea
+    id: docs_description
+    attributes:
+      label: 'Issue Description'
+      description: 'Please provide a brief summary of the documentation issue you are experiencing or would like to address.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots_examples_docs
+    attributes:
+      label: 'Screenshots or Examples (if applicable)'
+      description: 'Please include relevant screenshots or examples to help illustrate the problem.'
+
+  - type: textarea
+    id: proposed_solution_docs
+    attributes:
+      label: 'Proposed Solution (optional)'
+      description: 'If you have a proposed solution for the documentation issue, please provide it here. This can be helpful for speeding up the resolution process.'
+
+  - type: checkboxes
+    id: terms_checklist_docs
+    attributes:
+      label: 'Checklist'
+      options:
+        - label: 'I have checked the existing [issues](https://github.com/cosmoart/Freesets/issues).'
+          required: true
+
+        - label: 'I have read the [Contributing Guidelines](https://github.com/cosmoart/Freesets/blob/main/CODE_OF_CONDUCT.md).'
+          required: true
+
+          required: false
+  - type: markdown
+    attributes:
+      value: 'Thank you for taking the time to raise this issue! Your input is greatly appreciated.'

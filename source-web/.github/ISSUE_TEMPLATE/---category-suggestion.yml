@@ -1,0 +1,49 @@
+name: 'Category Request ⚡'
+description: 'Use this to add new category/subcategory into the project.'
+title: '[ADD] <write the name of category/subcategory>'
+
+body:
+  - type: input
+    id: concise_category
+    attributes:
+      label: 'Category Name'
+      description: "If you are adding to an existing category, please write 'none'"
+      placeholder: 'Enter the name of the category.'
+    validations:
+      required: true
+  - type: input
+    id: concise_subcategory
+    attributes:
+      label: 'Subcategory Name'
+      description: 'Please write the relevant subcategory that can be added for the category.'
+      placeholder: "For example 'images', 'fonts', 'colors', 'illustrations'"
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context_category
+    attributes:
+      label: 'Additional Context'
+      description: 'If you have any additional context or information that may help us understand the category/subcategory better, please provide it here'
+      placeholder: 'You can write why this category should be included in the project.'
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms_checklist
+    attributes:
+      label: 'Checklist'
+      options:
+        - label: 'I have checked the existing [issues](https://github.com/cosmoart/Freesets/issues).'
+          required: true
+        - label: 'I have read the [Contributing Guidelines](https://github.com/cosmoart/Freesets/blob/main/CODE_OF_CONDUCT.md).'
+          required: true
+        - label: "The changes don't break the code and don't introduce new functionality."
+          required: true
+        - label: 'I am willing to work on this issue (optional).'
+          required: false
+        - label: 'I have checked that this category does not exist'
+          required: false
+        - label: 'I have checked that this subcategory does not exist'
+          required: true
+  - type: markdown
+    attributes:
+      value: 'Thank you for taking the time to suggest a new request! Your input is greatly appreciated.'

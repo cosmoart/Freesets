@@ -1,0 +1,34 @@
+name: Feature Request 💡
+description: Have any new idea or new feature for Freesets? Please suggest!
+title: '[Feature] <write a small description here>'
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of any alternative solution or features you've considered.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please add screenshots if applicable
+    validations:
+      required: false
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: 'Checklist'
+      options:
+        - label: 'I have checked the existing [issues](https://github.com/cosmoart/Freesets/issues).'
+          required: true
+
+        - label: 'I have read the [Contributing Guidelines](https://github.com/cosmoart/Freesets/blob/main/CODE_OF_CONDUCT.md).'
+          required: true
+
+        - label: "The changes don't break the code and don't introduce new functionality."
+          required: true
+
+        - label: 'I am willing to work on this issue (optional).'
+          required: false

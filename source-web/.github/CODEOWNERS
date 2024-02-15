@@ -1,0 +1,15 @@
+# Codeowners file for Freesets repository
+
+# This file defines the code owners for the Freesets repository. Code owners are responsible for reviewing and approving any changes to the code in their respective areas
+
+## Files
+
+.github/ @cosmoart
+CODE_OF_CONDUCT.md @cosmoart
+LICENSE @cosmoart
+README.md @cosmoart
+
+## Directories
+
+readme @cosmoart
+source-web/ @cosmoart

@@ -1,0 +1,48 @@
+name: New Link 🔗
+description: Use this to add new link into the project.
+title: '[Add] <write what you want to add>'
+body:
+  - type: input
+    attributes:
+      label: Site URL
+      description: Provide complete/valid URL.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description of the above provided site
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Category
+      options:
+        - 'category 1'
+        - 'category 2'
+        - 'category 3'
+        - 'category 4'
+        - 'category 5'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Sub Category
+      description: For example "sub-category 1", "sub-category 2", "sub-category 3", "sub-category 4", "sub-category 5"
+    validations:
+      required: true
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: 'Checklist'
+      options:
+        - label: 'I have checked the existing [issues](https://github.com/cosmoart/Freesets/issues).'
+          required: true
+
+        - label: 'I have read the [Contributing Guidelines](https://github.com/cosmoart/Freesets/blob/main/CODE_OF_CONDUCT.md).'
+          required: true
+
+        - label: "The changes don't break the code and don't introduce new functionality."
+          required: true
+
+        - label: 'I am willing to work on this issue (optional).'
+          required: false
