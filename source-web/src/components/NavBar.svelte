@@ -1,5 +1,5 @@
 <script>
-	import categories from '@/assets/categories.json';
+	import categories from '@/assets/categories.js';
 	import { page } from '$app/stores';
 
 	$: currentPage = $page.params.category;

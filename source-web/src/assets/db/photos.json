@@ -1,0 +1,153 @@
+[
+	{
+		"id": 2,
+		"order": 99,
+		"name": "Pexels",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/pexels",
+		"link": "https://www.pexels.com",
+		"license": "Free",
+		"licenseLink": "https://www.pexels.com/license/",
+		"licenseDescription": "All photos and videos on Pexels can be downloaded and used for free."
+	},
+	{
+		"id": 1,
+		"order": 98,
+		"name": "PixaBay",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/pixabay",
+		"link": "https://pixabay.com/photos/",
+		"license": "Pixabay License",
+		"licenseLink": "https://pixabay.com/es/service/license/",
+		"licenseDescription": "Free for commercial and noncommercial use. Attribution is not required."
+	},
+	{
+		"id": 3,
+		"order": 87,
+		"name": "Unsplash",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/unsplash",
+		"link": "https://unsplash.com",
+		"license": "Free",
+		"licenseLink": "https://unsplash.com/license",
+		"licenseDescription": "Free for Commercial and non-commercial purposes. No attribution required."
+	},
+	{
+		"id": 4,
+		"order": 85,
+		"name": "Picography",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/picography",
+		"link": "https://picography.co",
+		"license": "CC0 1.0",
+		"licenseLink": "https://picography.co/terms/"
+	},
+	{
+		"id": 8,
+		"order": 79,
+		"name": "BURST",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/nqabpisbca27jeilwiz0",
+		"link": "https://www.shopify.com/stock-photos",
+		"license": "Burst license",
+		"licenseLink": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
+		"licenseDescription": "All our photos are free for commercial use with no attribution required"
+	},
+	{
+		"id": 14,
+		"order": 78,
+		"name": "ISO Republic",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703379961/freesets/videos/seihdp8tiic1xff7lmty.webp",
+		"link": "https://isorepublic.com",
+		"license": "CC0",
+		"licenseLink": "https://isorepublic.com/license/"
+	},
+	{
+		"id": 15,
+		"order": 73,
+		"name": "Foodiesfeed",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703380304/freesets/photos/dtpc63qf0lta9arfmjxp.webp",
+		"link": "https://www.foodiesfeed.com",
+		"tags": ["Food", "IA"],
+		"license": "CC0",
+		"licenseLink": "https://www.foodiesfeed.com/license/"
+	},
+	{
+		"id": 12,
+		"order": 70,
+		"name": "Foca stock",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/vo91kfa8yf1bfjlh3hp9",
+		"link": "https://focastock.com",
+		"license": "CC0",
+		"licenseLink": "https://focastock.com/license/"
+	},
+	{
+		"id": 9,
+		"order": 57,
+		"name": "Librestock",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/k0wczfs8jhkdyt2emb42",
+		"link": "https://librestock.com/",
+		"license": "CC0",
+		"licenseLink": "https://librestock.com/license/"
+	},
+	{
+		"id": 5,
+		"order": 40,
+		"name": "StockSnap",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/stocksnap",
+		"link": "https://stocksnap.io",
+		"license": "CC0 1.0",
+		"licenseLink": "https://stocksnap.io/license"
+	},
+	{
+		"id": 10,
+		"order": 40,
+		"name": "Little Visuals",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/dnhigbkxnmiyyb4niexl",
+		"link": "https://littlevisuals.co",
+		"license": "CC0",
+		"licenseLink": "https://littlevisuals.co"
+	},
+	{
+		"id": 11,
+		"order": 40,
+		"name": "Barnimages",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/cxuir76i6d8mt9misxxg",
+		"link": "https://barnimages.com",
+		"license": "Free",
+		"licenseLink": "https://barnimages.com/license/"
+	},
+	{
+		"id": 7,
+		"order": 25,
+		"name": "Shotstash",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/bnxx11wyktgmdczf7a7i",
+		"link": "https://shotstash.com",
+		"license": "CC0",
+		"licenseLink": "https://shotstash.com/license/"
+	},
+	{
+		"id": 6,
+		"order": 20,
+		"name": "Nappy",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/nappy",
+		"link": "https://nappy.co",
+		"license": "CC0 1.0",
+		"licenseLink": "https://nappy.co/license"
+	},
+	{
+		"id": 16,
+		"order": 9,
+		"name": "Gratisography",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703380639/freesets/photos/gvsm7y89qgfqju6mwvsi.webp",
+		"link": "https://gratisography.com",
+		"tags": ["IA"],
+		"license": "Free",
+		"licenseLink": "https://gratisography.com/license/"
+	},
+	{
+		"id": 13,
+		"order": 7,
+		"name": "Noun Project",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/photos/rjsgqt0ldn8betpkcmty",
+		"link": "https://thenounproject.com/photos/",
+		"license": "Freemium",
+		"licenseLink": "https://thenounproject.com/pricing/#photos",
+		"licenseDescription": "Free with attribution"
+	}
+]

@@ -1,6 +1,6 @@
 {
-	"name": "my-app",
-	"version": "0.0.1",
+	"name": "freesets",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build",
@@ -10,7 +10,6 @@
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
-		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"autoprefixer": "^10.4.16",
@@ -24,8 +23,5 @@
 		"tailwindcss": "^3.3.3",
 		"vite": "^4.4.2"
 	},
-	"type": "module",
-	"dependencies": {
-		"@supabase/supabase-js": "^2.39.1"
-	}
+	"type": "module"
 }

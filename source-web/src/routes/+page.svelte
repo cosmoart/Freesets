@@ -1,5 +1,5 @@
 <script>
-	import categories from '@/assets/categories.json';
+	import categories from '@/assets/categories.js';
 
 	const description =
 		'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.';
@@ -40,14 +40,14 @@
 				<li style="--delay: {i * 0.4}s">
 					<a
 						href={`/${category.nameID}`}
-						class="p-2 hover:scale-110 transition-transform inline-block rounded-md hover:bg-[var(--item-color)]"
+						class="p-2 hover:scale-110 transition-transform group inline-block rounded-md hover:bg-[var(--item-color)]"
 						style={`--item-color: ${category.color}`}
 						title={category.name}
 					>
 						<img
 							src={`/categories-icons/${category.nameID}.svg`}
 							alt={category.name}
-							class="w-8 aspect-square object-contain dark:invert"
+							class="w-8 aspect-square object-contain dark:invert group-hover:invert"
 						/>
 					</a>
 				</li>
@@ -58,14 +58,14 @@
 				<li style="--delay: {i * 0.4}s">
 					<a
 						href={`/${category.nameID}`}
-						class="p-2 hover:scale-110 transition-transform inline-block rounded-md hover:bg-[var(--item-color)]"
+						class="p-2 hover:scale-110 transition-transform inline-block group rounded-md hover:bg-[var(--item-color)]"
 						style={`--item-color: ${category.color}`}
 						title={category.name}
 					>
 						<img
 							src={`/categories-icons/${category.nameID}.svg`}
 							alt={category.name}
-							class="w-8 aspect-square object-contain dark:invert"
+							class="w-8 aspect-square object-contain dark:invert group-hover:invert"
 						/>
 					</a>
 				</li>

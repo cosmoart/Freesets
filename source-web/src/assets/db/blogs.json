@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "order": 100,
+    "name": "Josh Comeau",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/josh.webp",
+    "link": "https://www.joshwcomeau.com",
+    "tags": [
+      "Web"
+    ]
+  },
+  {
+    "id": 8,
+    "order": 95,
+    "name": "DEV",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705068140/freesets/blogs/u1nkrg7tysvugcd8nwy0.webp",
+    "link": "https://dev.to"
+  },
+  {
+    "id": 4,
+    "order": 88,
+    "name": "Modern CSS",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/moderncss",
+    "link": "https://moderncss.dev",
+    "tags": [
+      "CSS"
+    ]
+  },
+  {
+    "id": 15,
+    "order": 81,
+    "name": "Rauno Craft",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706403955/freesets/blogs/ypica0qiozuuuamcyk6c.webp",
+    "link": "https://rauno.me/craft",
+    "tags": [
+      "UI"
+    ]
+  },
+  {
+    "id": 2,
+    "order": 80,
+    "name": "Not a Number",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/nan",
+    "link": "https://www.nan.fyi",
+    "tags": [
+      "Animations",
+      "svg"
+    ]
+  },
+  {
+    "id": 5,
+    "order": 78,
+    "name": "Maximeheckel",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/maxime",
+    "link": "https://blog.maximeheckel.com",
+    "tags": [
+      "Three.js",
+      "React",
+      "3D"
+    ]
+  },
+  {
+    "id": 6,
+    "order": 76,
+    "name": "Varun Vachhar",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/varun",
+    "link": "https://varun.ca/writing/",
+    "tags": [
+      "Three.js",
+      "3D"
+    ]
+  },
+  {
+    "id": 3,
+    "order": 70,
+    "name": "Overreacted",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/overreacted",
+    "link": "https://overreacted.io",
+    "tags": [
+      "React",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 7,
+    "order": 70,
+    "name": "CSS-Tricks",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703443444/freesets/blogs/t8ufepbmlyfmcphliioh.webp",
+    "link": "https://css-tricks.com",
+    "tags": [
+      "CSS"
+    ]
+  },
+  {
+    "id": 9,
+    "order": 65,
+    "name": "Smashing Magazine",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703443742/freesets/blogs/uzktydktlmwcig9xgrtu.webp",
+    "link": "https://www.smashingmagazine.com"
+  },
+  {
+    "id": 10,
+    "order": 40,
+    "name": "web.dev",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703444856/freesets/blogs/fd6dopnvhkecuooyvrhv.webp",
+    "link": "https://web.dev/blog"
+  },
+  {
+    "id": 14,
+    "order": 40,
+    "name": "Design Systems",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703459247/freesets/blogs/u4hastncvnhlfdc8iaal.webp",
+    "link": "https://www.designsystems.com",
+    "tags": [
+      "Design system"
+    ]
+  },
+  {
+    "id": 16,
+    "order": 32,
+    "name": "Design good practices",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/cyyuklvwucjn7hrxljfr.webp",
+    "link": "https://goodpractices.design",
+    "tags": [
+      "UI/UX"
+    ]
+  },
+  {
+    "id": 12,
+    "order": 25,
+    "name": "Paul Scanlon Articles",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703452484/freesets/blogs/qzwz1ulr6yjg9cb8bygn.webp",
+    "link": "https://www.paulie.dev/articles/",
+    "tags": [
+      "Three.js"
+    ]
+  },
+  {
+    "id": 13,
+    "order": 23,
+    "name": "Patterns.dev",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703459200/freesets/blogs/mvif3lc9bdwrcjtfgsxh.webp",
+    "link": "https://www.patterns.dev",
+    "tags": [
+      "Patterns"
+    ]
+  },
+  {
+    "id": 11,
+    "order": 8,
+    "name": "Delba Blog",
+    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703445154/freesets/blogs/chfpxvalueckpy8uhahk.webp",
+    "link": "https://delba.dev/blog"
+  }
+]

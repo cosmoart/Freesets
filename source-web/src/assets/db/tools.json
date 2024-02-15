@@ -1,0 +1,130 @@
+[
+	{
+		"id": 6,
+		"order": 88,
+		"name": "Squoosh",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703696273/freesets/tools/tix7qdzgrhabjjyyhqfd.webp",
+		"link": "https://squoosh.app",
+		"tags": ["Image optimizer"]
+	},
+	{
+		"id": 1,
+		"order": 87,
+		"name": "Shots",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703007575/freesets/tools/shots.so__mntgnr.webp",
+		"link": "https://shots.so",
+		"tags": ["Mockups"]
+	},
+	{
+		"id": 13,
+		"order": 70,
+		"name": "Layoutit Grid",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705765960/freesets/tools/zyht5hsanjj3u8x90urj.webp",
+		"link": "https://grid.layoutit.com",
+		"tags": ["Grid generator"]
+	},
+	{
+		"id": 14,
+		"order": 70,
+		"name": "Monkeytype",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564906/freesets/tools/fvrsm72jltufe17ldcjr.webp",
+		"link": "https://monkeytype.com",
+		"tags": ["Typing test"]
+	},
+	{
+		"id": 16,
+		"order": 70,
+		"name": "RapidAPI",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707611793/freesets/tools/boexcwzmhjfb7xzwwynl.webp",
+		"link": "https://rapidapi.com/collections",
+		"tags": ["API Collections"]
+	},
+	{
+		"id": 2,
+		"order": 65,
+		"name": "JS Benchmark",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703007858/freesets/tools/jsbenchmark.com__s9tkth.webp",
+		"link": "https://jsbenchmark.com",
+		"tags": ["Benchmark"]
+	},
+	{
+		"id": 10,
+		"order": 64,
+		"name": "Chalk.ist",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705069474/freesets/tools/to4nrd4wroizt5yyhwhi.webp",
+		"link": "https://chalk.ist",
+		"tags": ["Code screenshots"]
+	},
+	{
+		"id": 9,
+		"order": 60,
+		"name": "CodeImage",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705069400/freesets/tools/ttljqybxfi5rp3yzmczy.webp",
+		"link": "https://app.codeimage.dev",
+		"tags": ["Code screenshots"]
+	},
+	{
+		"id": 7,
+		"order": 50,
+		"name": "Excalidraw",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703696414/freesets/tools/x8cznjuhqty30kj7aabe.webp",
+		"link": "https://excalidraw.com",
+		"tags": ["Whiteboard"]
+	},
+	{
+		"id": 3,
+		"order": 40,
+		"name": "Tally",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703458941/freesets/tools/aur2ldiowy6y25j7mgmy.webp",
+		"link": "https://tally.so",
+		"tags": ["Forms"]
+	},
+	{
+		"id": 4,
+		"order": 36,
+		"name": "Component Party",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460201/freesets/tools/plhgkf9he7pzz9mcs2ac.webp",
+		"link": "https://component-party.dev",
+		"tags": ["Framework comparator"]
+	},
+	{
+		"id": 12,
+		"order": 25,
+		"name": "React Skeleton",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705506754/freesets/tools/t4yd2iphzvqihcgoj5gw.webp",
+		"link": "https://skeletonreact.com",
+		"tags": ["Skeleton loader"]
+	},
+	{
+		"id": 11,
+		"order": 23,
+		"name": "Slidev",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705069666/freesets/tools/kvaydsvk4smo54hq0fgd.webp",
+		"link": "https://sli.dev",
+		"tags": ["Code to slides"]
+	},
+	{
+		"id": 8,
+		"order": 20,
+		"name": "Glyphy",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704379365/freesets/tools/diets4yvtwotg7yvi8do.webp",
+		"link": "https://glyphy.io",
+		"tags": ["Font generator"]
+	},
+	{
+		"id": 5,
+		"order": 19,
+		"name": "Microcopy",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703554682/freesets/tools/kef9otwvixr44geier9v.webp",
+		"link": "https://www.microcopy.me",
+		"tags": ["Microcopies"]
+	},
+	{
+		"id": 15,
+		"order": 15,
+		"name": "Transform tools",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069166/freesets/tools/hvxjb3ktzko8xztb1qcl.webp",
+		"link": "https://transform.tools/",
+		"tags": ["Transform data"]
+	}
+]

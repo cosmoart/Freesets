@@ -18,11 +18,11 @@
 				href={asset.link}
 				target="_blank"
 				rel="noopener noreferrer nofollow"
-				aria-label={'Open ' + asset.title}
+				aria-label={'Open ' + asset.name}
 			>
 				<Image
 					src={asset.img}
-					alt={asset.title + ' web preview'}
+					alt={asset.name + ' web preview'}
 					lazy={true}
 					className="aspect-video object-cover lazyImg inline-block w-full"
 					height="216"
@@ -51,7 +51,7 @@
 			<div class="relative">
 				<a href={asset.link} target="_blank" rel="noopener noreferrer nofollow">
 					<h3 class="text-xl hover:underline text-zinc-950 dark:text-white">
-						{asset.title}
+						{asset.name}
 					</h3>
 					<img
 						src={externalIcon}
