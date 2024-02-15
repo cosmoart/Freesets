@@ -479,7 +479,8 @@
 		"link": "https://react-icons.github.io/react-icons/",
 		"img": "https://user-images.githubusercontent.com/5782144/67554185-3e9e0d80-f6e5-11e9-8cf6-dc1bd91c4c17.png",
 		"license": "MIT",
-		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE"
+		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE",
+		"order": 60
 	},
 	{
 		"id": 52,
@@ -491,7 +492,7 @@
 		"order": 3
 	},
 	{
-		"id": 7,
+		"id": 53,
 		"name": "FlatIcon",
 		"link": "https://www.flaticon.com/",
 		"img": "https://cdn-share-sprites.flaticon.com/pack/0/149/149086-essential-set_facebook.jpg",
@@ -499,7 +500,7 @@
 		"order": 72
 	},
 	{
-		"id": 9,
+		"id": 54,
 		"name": "Iconscout",
 		"link": "https://iconscout.com/",
 		"img": "https://iconscout.com/og.png",
@@ -507,7 +508,7 @@
 		"order": 74
 	},
 	{
-		"id": 10,
+		"id": 55,
 		"name": "Zondicons",
 		"link": "http://www.zondicons.com/",
 		"img": "https://www.figma.com/community/thumbnail?resource_id=1146186011366851506&resource_type=plugin",
@@ -515,7 +516,7 @@
 		"order": 75
 	},
 	{
-		"id": 11,
+		"id": 56,
 		"name": "Boxicons",
 		"link": "https://boxicons.com/",
 		"img": "https://www.figma.com/community/thumbnail?resource_id=1149932444698301284&resource_type=plugin",
@@ -523,7 +524,7 @@
 		"order": 76
 	},
 	{
-		"id": 12,
+		"id": 57,
 		"name": "Feather Icons",
 		"link": "https://feathericons.com/",
 		"img": "https://s3-alpha.figma.com/hub/file/1248569669/f97d43d8-8af2-4eef-bef0-16a21c86ad66-cover.png",
@@ -531,7 +532,7 @@
 		"order": 77
 	},
 	{
-		"id": 13,
+		"id": 58,
 		"name": "Favicon Generator",
 		"link": "https://www.favicon-generator.org/",
 		"img": "https://www.favicongenerator.com/img/og.png",
@@ -539,7 +540,7 @@
 		"order": 78
 	},
 	{
-		"id": 14,
+		"id": 59,
 		"name": "RealFaviconGenerator",
 		"link": "https://realfavicongenerator.net/",
 		"img": "https://realfavicongenerator.net/api/wordpress_realfavicongenerator.png",
