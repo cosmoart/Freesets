@@ -477,7 +477,7 @@
 		"id": 23,
 		"name": "React Icons",
 		"link": "https://react-icons.github.io/react-icons/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/51",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/react-icons",
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE",
 		"order": 80
@@ -486,7 +486,7 @@
 		"id": 52,
 		"name": "Icon Icons",
 		"link": "https://icon-icons.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/52",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/icon-icons",
 		"license": "Free",
 		"licenseLink": "https://icon-icons.com/license",
 		"order": 20
@@ -495,56 +495,45 @@
 		"id": 53,
 		"name": "FlatIcon",
 		"link": "https://www.flaticon.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/53",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/flaticon",
 		"license": "Free",
+		"licenseLink": "https://support.flaticon.com/s/topic/0TO3V000000CmIxWAK/licenses?language=en_US",
 		"order": 26
 	},
 	{
 		"id": 54,
 		"name": "Iconscout",
 		"link": "https://iconscout.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/54",
-		"license": "Free & Paid",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconscout",
+		"license": "MIT",
+		"licenseLink": "https://github.com/Iconscout/iconscout-plugins/blob/master/LICENSE",
 		"order": 74
 	},
 	{
 		"id": 55,
 		"name": "Zondicons",
 		"link": "http://www.zondicons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/55",
-		"license": "Free",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/zondicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE",
 		"order": 75
 	},
 	{
 		"id": 56,
 		"name": "Boxicons",
 		"link": "https://boxicons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/56",
-		"license": "CC BY 4.0",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/boxicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/atisawd/boxicons/blob/master/LICENSE",
 		"order": 76
 	},
 	{
 		"id": 57,
 		"name": "Feather Icons",
 		"link": "https://feathericons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/57",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/feather-icons",
 		"license": "MIT",
+		"licenseLink": "https://github.com/feathericons/feather/blob/main/LICENSE",
 		"order": 77
-	},
-	{
-		"id": 58,
-		"name": "Favicon Generator",
-		"link": "https://www.favicon-generator.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/58",
-		"license": "Free",
-		"order": 78
-	},
-	{
-		"id": 59,
-		"name": "Real Favicon Generator",
-		"link": "https://realfavicongenerator.net/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/59",
-		"license": "Free",
-		"order": 79
 	}
 ]
