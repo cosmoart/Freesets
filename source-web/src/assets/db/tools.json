@@ -131,7 +131,7 @@
 		"id": 17,
 		"order": 30,
 		"name": "Favicon Generator",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/favicon-generator",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/favicon-generator",
 		"link": "https://www.favicon-generator.org/",
 		"license": "Free",
 		"tags": ["Favicon"]
@@ -140,7 +140,7 @@
 		"id": 18,
 		"order": 30,
 		"name": "Real Favicon Generator",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/real-favicon",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/real-favicon",
 		"link": "https://realfavicongenerator.net/",
 		"license": "Free",
 		"tags": ["Favicon"]

@@ -435,7 +435,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382565/freesets/icons/dxhlcgkgwque1gddimtd.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://tilda.cc/free-icons/license/",
-		"licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\\nLicensee mentions the owner of the Icons. ",
+		"licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\nLicensee mentions the owner of the Icons. ",
 		"order": 15
 	},
 	{
@@ -480,7 +480,8 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/react-icons",
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE",
-		"order": 80
+		"order": 80,
+		"tags": ["Package"]
 	},
 	{
 		"id": 52,
@@ -489,34 +490,37 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/icon-icons",
 		"license": "Free",
 		"licenseLink": "https://icon-icons.com/license",
-		"order": 20
+		"licenseDescription": "Free for personal or commercial use as long as the owner of the icons is mentioned.",
+		"order": 6
 	},
 	{
 		"id": 53,
 		"name": "FlatIcon",
 		"link": "https://www.flaticon.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/flaticon",
-		"license": "Free",
+		"license": "Freemium",
 		"licenseLink": "https://support.flaticon.com/s/topic/0TO3V000000CmIxWAK/licenses?language=en_US",
-		"order": 26
+		"licenseDescription": "Free for personal or commercial use as long as the owner of the icons is mentioned.",
+		"order": 6
 	},
 	{
 		"id": 54,
 		"name": "Iconscout",
-		"link": "https://iconscout.com/",
+		"link": "https://iconscout.com/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconscout",
 		"license": "MIT",
 		"licenseLink": "https://github.com/Iconscout/iconscout-plugins/blob/master/LICENSE",
-		"order": 74
+		"order": 5
 	},
 	{
 		"id": 55,
 		"name": "Zondicons",
 		"link": "http://www.zondicons.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/zondicons",
-		"license": "MIT",
+		"license": "CC",
 		"licenseLink": "https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE",
-		"order": 75
+		"licenseDescription": "All the free files available in zondicons are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise.",
+		"order": 50
 	},
 	{
 		"id": 56,
@@ -524,8 +528,8 @@
 		"link": "https://boxicons.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/boxicons",
 		"license": "MIT",
-		"licenseLink": "https://github.com/atisawd/boxicons/blob/master/LICENSE",
-		"order": 76
+		"licenseLink": "https://boxicons.com/usage#license",
+		"order": 55
 	},
 	{
 		"id": 57,
