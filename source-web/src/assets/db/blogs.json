@@ -133,14 +133,6 @@
 	},
 	{
 		"id": 18,
-		"order": 60,
-		"name": "Chat.Zulip",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/chat-zulip",
-		"link": "https://chat.zulip.org",
-		"tags": ["Community"]
-	},
-	{
-		"id": 19,
 		"order": 40,
 		"name": "Hashnode",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/hashnode",
@@ -148,7 +140,7 @@
 		"tags": ["Community"]
 	},
 	{
-		"id": 20,
+		"id": 19,
 		"order": 20,
 		"name": "A List Apart",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/alistapart",
@@ -156,7 +148,7 @@
 		"tags": ["Community"]
 	},
 	{
-		"id": 21,
+		"id": 20,
 		"order": 10,
 		"name": "Sitepoint",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/sitepoint",
