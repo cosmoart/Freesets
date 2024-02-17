@@ -508,8 +508,9 @@
 		"name": "Iconscout",
 		"link": "https://iconscout.com/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconscout",
-		"license": "MIT",
-		"licenseLink": "https://github.com/Iconscout/iconscout-plugins/blob/master/LICENSE",
+		"license": "Freemium",
+		"licenseLink": "https://iconscout.com/pricing",
+		"tags": ["Package"],
 		"order": 5
 	},
 	{
