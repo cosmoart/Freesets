@@ -126,5 +126,23 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069166/freesets/tools/hvxjb3ktzko8xztb1qcl.webp",
 		"link": "https://transform.tools/",
 		"tags": ["Transform data"]
+	},
+	{
+		"id": 17,
+		"order": 8,
+		"name": "Favicon Generator",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/favicon-generator",
+		"link": "https://www.favicon-generator.org/",
+		"license": "Free",
+		"tags": ["Favicon generator"]
+	},
+	{
+		"id": 18,
+		"order": 8,
+		"name": "Real Favicon Generator",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/real-favicon",
+		"link": "https://realfavicongenerator.net/",
+		"license": "Free",
+		"tags": ["Favicon generator"]
 	}
 ]
