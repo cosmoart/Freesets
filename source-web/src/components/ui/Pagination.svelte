@@ -18,6 +18,7 @@
 				1
 					? 'pointer-events-none opacity-80'
 					: ''}"
+				aria-label="Go to the previous page"
 			>
 				<img src={arrowIcon} alt="" class="w-5" />
 			</a>
@@ -44,6 +45,7 @@
 				totalPages
 					? 'pointer-events-none opacity-80'
 					: ''}"
+				aria-label="Go to the next page"
 			>
 				<img src={arrowIcon} alt="" class="w-5 rotate-180" />
 			</a>
