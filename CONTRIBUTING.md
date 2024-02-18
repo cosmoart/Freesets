@@ -56,7 +56,7 @@ git push origin my-branch
 - name*: `string - required`- Name of the resource.
 - link*: `string - required` - Link to the resource.
 - img*: `string - required` - Image URL
-	- It must follow the following format: https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/category/name_id, where category is the category of the image (icons, tools, 3d...) and name_id It is a unique name that should not be repeated. An example can be: https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rjsgqt0ldn8betpkcmty.
+	- It must follow the following format: https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/category/name, where category is the category of the image (icons, tools, 3d...) and name It is a unique name that should not be repeated (bootstrap, css_tools, gratisography...). An example can be: https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rjsgqt0ldn8betpkcm.
 	- You don't need to upload any photos, just complete the url.
 - license: `string`
 	- License of the resource.
@@ -71,7 +71,7 @@ git push origin my-branch
 	"order": 73,
 	"name": "Resource name",
 	"link": "https://resource.com",
-	"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/category/resource-id",
+	"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/category/name",
 	"license": "Free",
 	"licenseLink": "https://resource.com/licence",
 	"licenseDescription": "\"License may use the Work in non-commercial and commercial projects, services or products without attribution.\"",

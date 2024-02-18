@@ -14,7 +14,7 @@ Freesets is a collection of free, high-quality resources that you can use in you
 
 <div align="center">
 
-  <a href="https://github.com/cosmoart/Freesets?tab=readme-ov-file#contributing">Contribute</a>
+  <a href="https://github.com/cosmoart/freesets/blob/main/CONTRIBUTING.md">Contribute</a>
   ·
   <a href="https://github.com/cosmoart/Freesets/issues">Report Bug/Error</a>
   ·

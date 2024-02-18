@@ -1,10 +1,9 @@
 <script>
-	import arrowIcon from '@/assets/icons/arrow.svg';
+	import Pagination from './ui/Pagination.svelte';
 	import AssetCard from './AssetCard.svelte';
 	export let categories;
 
-	let multiple = 39;
-	let assets = 39;
+	const testa = 'awf';
 </script>
 
 <main class="mb-10">
@@ -20,7 +19,7 @@
 					<img src={'/categories-icons/' + category.nameID + '.svg'} alt="" class="invert w-6" />
 					<h2 class="text-[17px]">
 						{category.name}
-						<span class="text-[15px]">({category.items.length})</span>
+						<span class="text-[15px]">({category.totalItems})</span>
 					</h2>
 				</button>
 			</div>
@@ -28,21 +27,15 @@
 				class="mx-auto grid -mt-3 gap-5"
 				style={`grid-template-columns: repeat(auto-fill,minmax(${320}px,1fr))`}
 			>
-				<AssetCard assets={category.items.slice(0, assets)} {category} />
+				<AssetCard assets={category.items} {category} />
 			</div>
 
-			{#if category.items.length > assets}
-				<button
-					on:click={() => (assets += multiple)}
-					class="py-2 bg-[var(--resource-color)] w-full mt-5 rounded-md hover:brightness-105 flex gap-1 justify-center items-center text-white dar transition-all group relative"
-				>
-					View more
-					<img
-						src={arrowIcon}
-						alt=""
-						class="invert -rotate-90 w-0 opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 group-hover:w-5"
-					/>
-				</button>
+			{#if category.totalPages > 1}
+				<Pagination
+					currentPage={category.page}
+					totalPages={category.totalPages}
+					className="mt-12"
+				/>
 			{/if}
 		</article>
 	{/each}

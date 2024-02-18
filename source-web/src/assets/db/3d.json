@@ -1,185 +1,144 @@
 [
-  {
-    "id": 15,
-    "order": 100,
-    "name": "Poly Haven",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/polyhaven",
-    "link": "https://polyhaven.com",
-    "tags": [
-      "HDRIs",
-      "Textures",
-      "Models"
-    ],
-    "license": "CC0",
-    "licenseLink": "https://polyhaven.com/license",
-    "licenseDescription": "Our assets are all licensed as CC0, which is effectively Public Domain."
-  },
-  {
-    "id": 16,
-    "order": 98,
-    "name": "Itchio",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/itchio",
-    "link": "https://itch.io/game-assets/free",
-    "license": "Multiple",
-    "licenseDescription": "Itchio is a marketplace for indie game developers. Each asset has its own license."
-  },
-  {
-    "id": 17,
-    "order": 95,
-    "name": "Kenney",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/kenney",
-    "link": "https://kenney.nl",
-    "license": "CC0",
-    "licenseLink": "https://www.kenney.nl/support"
-  },
-  {
-    "id": 18,
-    "order": 92,
-    "name": "ambientCG",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/ambientcg",
-    "link": "https://ambientcg.com",
-    "tags": [
-      "HDRIs",
-      "Textures",
-      "Models"
-    ],
-    "license": "CC0 1.0",
-    "licenseLink": "https://docs.ambientcg.com/license/",
-    "licenseDescription": "All ambientCG assets are provided under the Creative Commons CC0 1.0 Universal License."
-  },
-  {
-    "id": 19,
-    "order": 90,
-    "name": "Share Textures",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/sharetextures",
-    "link": "https://www.sharetextures.com",
-    "tags": [
-      "Atlases",
-      "Textures",
-      "Models"
-    ],
-    "license": "CC0",
-    "licenseLink": "https://www.sharetextures.com/p/license",
-    "licenseDescription": "All of our content is copyright-free [CC0]. It means you can use them anywhere you want which includes commercial projects too."
-  },
-  {
-    "id": 22,
-    "order": 83,
-    "name": "BlenderKit",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/blenderkit",
-    "link": "https://www.blenderkit.com",
-    "tags": [
-      "Textures",
-      "Models",
-      "HDRIs",
-      "Brushes"
-    ],
-    "license": "RF & CC0",
-    "licenseLink": "https://www.blenderkit.com/docs/licenses/",
-    "licenseDescription": "BlenderKit only has 2 available licenses. Everything you download is available for commercial use. Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified."
-  },
-  {
-    "id": 21,
-    "order": 78,
-    "name": "CG Bookcase",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/cgbookcase",
-    "link": "https://www.cgbookcase.com",
-    "tags": [
-      "Textures"
-    ],
-    "license": "CC0 1.0",
-    "licenseLink": "https://www.cgbookcase.com/textures",
-    "licenseDescription": "The textures are published under the CC0 1.0 license, which means means you can use them for free without giving credit."
-  },
-  {
-    "id": 20,
-    "order": 70,
-    "name": "3Dassets.one",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/3dassetsone",
-    "link": "https://3dassets.one",
-    "tags": [
-      "HDRIs",
-      "Textures",
-      "Models"
-    ],
-    "license": "Multiple"
-  },
-  {
-    "id": 25,
-    "order": 40,
-    "name": "Quaternius",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/quaternius",
-    "link": "https://quaternius.com/",
-    "tags": [
-      "Models"
-    ],
-    "license": "CC0"
-  },
-  {
-    "id": 24,
-    "order": 35,
-    "name": "Turbosquid",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/turbosquid",
-    "link": "https://www.turbosquid.com/",
-    "tags": [
-      "Models"
-    ],
-    "license": "Multiple",
-    "licenseLink": "https://blog.turbosquid.com/turbosquid-3d-model-license/"
-  },
-  {
-    "id": 23,
-    "order": 10,
-    "name": "Game Art 2D",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/gameart2d",
-    "link": "https://www.gameart2d.com/freebies.html",
-    "tags": [
-      "Sprites",
-      "Tileset",
-      "GUI"
-    ],
-    "license": "CC0",
-    "licenseLink": "https://www.gameart2d.com/license.html",
-    "licenseDescription": "For the game assets in Freebies section, it's under Creative Common Zero (CC0) a.k.a Public Domain license."
-  },
-  {
-    "id": 26,
-    "order": 8,
-    "name": "textures.com",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/textures",
-    "link": "https://www.textures.com/free",
-    "tags": [
-      "Textures"
-    ],
-    "license": "Freemium",
-    "licenseLink": "https://www.textures.com/faq-license"
-  },
-  {
-    "id": 27,
-    "order": 8,
-    "name": "Quixel",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/quixel",
-    "link": "https://quixel.com/megascans/free",
-    "tags": [
-      "Decals",
-      "Textures",
-      "Models"
-    ],
-    "license": "Freemium",
-    "licenseLink": "https://quixel.com/pricing"
-  },
-  {
-    "id": 28,
-    "order": 8,
-    "name": "Poliigon",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/poliigon",
-    "link": "https://www.poliigon.com/search/free",
-    "tags": [
-      "HDRIs",
-      "Textures",
-      "Models"
-    ],
-    "license": "Freemium",
-    "licenseLink": "https://www.poliigon.com/pricing"
-  }
+	{
+		"id": 1,
+		"order": 100,
+		"name": "Poly Haven",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/polyhaven",
+		"link": "https://polyhaven.com",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "CC0",
+		"licenseLink": "https://polyhaven.com/license",
+		"licenseDescription": "Our assets are all licensed as CC0, which is effectively Public Domain."
+	},
+	{
+		"id": 2,
+		"order": 98,
+		"name": "Itchio",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/itchio",
+		"link": "https://itch.io/game-assets/free",
+		"license": "Multiple",
+		"licenseDescription": "Itchio is a marketplace for indie game developers. Each asset has its own license."
+	},
+	{
+		"id": 3,
+		"order": 95,
+		"name": "Kenney",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/kenney",
+		"link": "https://kenney.nl",
+		"license": "CC0",
+		"licenseLink": "https://www.kenney.nl/support"
+	},
+	{
+		"id": 4,
+		"order": 92,
+		"name": "ambientCG",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/ambientcg",
+		"link": "https://ambientcg.com",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "CC0 1.0",
+		"licenseLink": "https://docs.ambientcg.com/license/",
+		"licenseDescription": "All ambientCG assets are provided under the Creative Commons CC0 1.0 Universal License."
+	},
+	{
+		"id": 5,
+		"order": 90,
+		"name": "Share Textures",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/sharetextures",
+		"link": "https://www.sharetextures.com",
+		"tags": ["Atlases", "Textures", "Models"],
+		"license": "CC0",
+		"licenseLink": "https://www.sharetextures.com/p/license",
+		"licenseDescription": "All of our content is copyright-free [CC0]. It means you can use them anywhere you want which includes commercial projects too."
+	},
+	{
+		"id": 6,
+		"order": 83,
+		"name": "BlenderKit",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/blenderkit",
+		"link": "https://www.blenderkit.com",
+		"tags": ["Textures", "Models", "HDRIs", "Brushes"],
+		"license": "RF & CC0",
+		"licenseLink": "https://www.blenderkit.com/docs/licenses/",
+		"licenseDescription": "BlenderKit only has 2 available licenses. Everything you download is available for commercial use. Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified."
+	},
+	{
+		"id": 7,
+		"order": 78,
+		"name": "CG Bookcase",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/cgbookcase",
+		"link": "https://www.cgbookcase.com",
+		"tags": ["Textures"],
+		"license": "CC0 1.0",
+		"licenseLink": "https://www.cgbookcase.com/textures",
+		"licenseDescription": "The textures are published under the CC0 1.0 license, which means means you can use them for free without giving credit."
+	},
+	{
+		"id": 8,
+		"order": 70,
+		"name": "3Dassets.one",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/3dassetsone",
+		"link": "https://3dassets.one",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "Multiple"
+	},
+	{
+		"id": 9,
+		"order": 40,
+		"name": "Quaternius",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/quaternius",
+		"link": "https://quaternius.com/",
+		"tags": ["Models"],
+		"license": "CC0"
+	},
+	{
+		"id": 10,
+		"order": 35,
+		"name": "Turbosquid",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/turbosquid",
+		"link": "https://www.turbosquid.com/",
+		"tags": ["Models"],
+		"license": "Multiple",
+		"licenseLink": "https://blog.turbosquid.com/turbosquid-3d-model-license/"
+	},
+	{
+		"id": 11,
+		"order": 10,
+		"name": "Game Art 2D",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/gameart2d",
+		"link": "https://www.gameart2d.com/freebies.html",
+		"tags": ["Sprites", "Tileset", "GUI"],
+		"license": "CC0",
+		"licenseLink": "https://www.gameart2d.com/license.html",
+		"licenseDescription": "For the game assets in Freebies section, it's under Creative Common Zero (CC0) a.k.a Public Domain license."
+	},
+	{
+		"id": 12,
+		"order": 8,
+		"name": "textures.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/textures",
+		"link": "https://www.textures.com/free",
+		"tags": ["Textures"],
+		"license": "Freemium",
+		"licenseLink": "https://www.textures.com/faq-license"
+	},
+	{
+		"id": 13,
+		"order": 8,
+		"name": "Quixel",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/quixel",
+		"link": "https://quixel.com/megascans/free",
+		"tags": ["Decals", "Textures", "Models"],
+		"license": "Freemium",
+		"licenseLink": "https://quixel.com/pricing"
+	},
+	{
+		"id": 14,
+		"order": 8,
+		"name": "Poliigon",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/poliigon",
+		"link": "https://www.poliigon.com/search/free",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "Freemium",
+		"licenseLink": "https://www.poliigon.com/pricing"
+	}
 ]

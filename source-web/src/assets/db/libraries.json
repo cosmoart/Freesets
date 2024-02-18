@@ -1,226 +1,180 @@
 [
-  {
-    "id": 8,
-    "order": 96,
-    "name": "Matter.js",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703714061/freesets/libraries/umlx1hgt8bjycqzwpqqj.webp",
-    "link": "https://brm.io/matter-js/",
-    "tags": [
-      "Physics"
-    ]
-  },
-  {
-    "id": 1,
-    "order": 88,
-    "name": "react-magic-motion",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/libraries/react-magic-motion",
-    "link": "https://www.react-magic-motion.com",
-    "tags": [
-      "Animation",
-      "React"
-    ],
-    "license": "MIT"
-  },
-  {
-    "id": 7,
-    "order": 80,
-    "name": "useHooks",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703461359/freesets/libraries/cnxclmmyt8gkenlzjhsw.webp",
-    "link": "https://usehooks.com",
-    "tags": [
-      "Hooks"
-    ]
-  },
-  {
-    "id": 18,
-    "order": 70,
-    "name": "AutoAnimate",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722122/freesets/libraries/x1cx4uqv29hd6ylowwcv.webp",
-    "link": "https://auto-animate.formkit.com",
-    "tags": [
-      "Animations"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/formkit/auto-animate/blob/master/LICENSE"
-  },
-  {
-    "id": 23,
-    "order": 67,
-    "name": "Mousetrap",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069869/freesets/libraries/b4uluaeygy8jpnk2flzs.webp",
-    "link": "https://craig.is/killing/mice",
-    "tags": [
-      "Keyboard shortcuts"
-    ]
-  },
-  {
-    "id": 3,
-    "order": 67,
-    "name": "next-video",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/libraries/next-video",
-    "link": "https://next-video.dev",
-    "tags": [
-      "Video",
-      "Next.js"
-    ],
-    "license": "MIT"
-  },
-  {
-    "id": 9,
-    "order": 67,
-    "name": "Luxon",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703714373/freesets/libraries/zzq11qc4dh3byrn2g1o1.webp",
-    "link": "https://moment.github.io/luxon/#/",
-    "tags": [
-      "Time",
-      "Dates"
-    ]
-  },
-  {
-    "id": 19,
-    "order": 48,
-    "name": "GSAP",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722231/freesets/libraries/y0vnr0nzd18wdbsg1lkz.webp",
-    "link": "https://gsap.com",
-    "tags": [
-      "Animations"
-    ]
-  },
-  {
-    "id": 20,
-    "order": 45,
-    "name": "react-spring",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722374/freesets/libraries/qp1ugsdvlw1umw7ozp7d.webp",
-    "link": "https://www.react-spring.dev",
-    "tags": [
-      "Animations",
-      "React"
-    ]
-  },
-  {
-    "id": 6,
-    "order": 45,
-    "name": "Locomotive Scroll",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460989/freesets/libraries/c624lahc77sg5fgo1eaq.webp",
-    "link": "https://locomotivemtl.github.io/locomotive-scroll/",
-    "tags": [
-      "Scroll"
-    ]
-  },
-  {
-    "id": 13,
-    "order": 43,
-    "name": "Vaul",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703716210/freesets/libraries/xzlo82pgowtivmpjxdlk.webp",
-    "link": "https://vaul.emilkowal.ski",
-    "tags": [
-      "Drawer",
-      "React"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/emilkowalski/vaul/blob/main/LICENSE.md"
-  },
-  {
-    "id": 10,
-    "order": 40,
-    "name": "Atropos",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703715783/freesets/libraries/fnn0q2erzzpqkyhrzckk.webp",
-    "link": "https://atroposjs.com",
-    "tags": [
-      "Parallax"
-    ]
-  },
-  {
-    "id": 16,
-    "order": 40,
-    "name": "Sandpack",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721779/freesets/libraries/pd8lyjpwf79zercchctr.webp",
-    "link": "https://sandpack.codesandbox.io",
-    "tags": [
-      "Live coding"
-    ],
-    "license": "Apache License 2.0",
-    "licenseLink": "https://github.com/codesandbox/sandpack"
-  },
-  {
-    "id": 15,
-    "order": 39,
-    "name": "Framer Motion",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721531/freesets/libraries/mwfnikeq6pgt2y8xeeuu.webp",
-    "link": "https://www.framer.com/motion/",
-    "tags": [
-      "Animations",
-      "React"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/framer/motion?tab=readme-ov-file#%EF%B8%8F-license"
-  },
-  {
-    "id": 12,
-    "order": 37,
-    "name": "RoughNotation",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703716041/freesets/libraries/xywhclwf3zv29jtmppkf.webp",
-    "link": "https://roughnotation.com",
-    "tags": [
-      "Annotations"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/rough-stuff/rough-notation/blob/master/LICENSE"
-  },
-  {
-    "id": 22,
-    "order": 35,
-    "name": "lightGallery",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705093204/freesets/libraries/gbvshhwql1vuevniicae.webp",
-    "link": "https://www.lightgalleryjs.com",
-    "tags": [
-      "Image gallery"
-    ]
-  },
-  {
-    "id": 21,
-    "order": 34,
-    "name": "PhotoSwipe",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705093099/freesets/libraries/p4tly9q7bbbnseutl1al.webp",
-    "link": "https://photoswipe.com",
-    "tags": [
-      "Image gallery"
-    ]
-  },
-  {
-    "id": 17,
-    "order": 34,
-    "name": "Plyr",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722052/freesets/libraries/vnzjqkvjkko8oynzkvoa.webp",
-    "link": "https://plyr.io",
-    "tags": [
-      "Media player"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/sampotts/plyr/blob/master/LICENSE.md"
-  },
-  {
-    "id": 11,
-    "order": 30,
-    "name": "FilePond",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703715871/freesets/libraries/eadtlmvs1fn45whzka3p.webp",
-    "link": "https://pqina.nl/filepond/",
-    "tags": [
-      "Uploads"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/pqina/filepond/blob/master/LICENSE"
-  },
-  {
-    "id": 14,
-    "order": 25,
-    "name": "yup",
-    "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721354/freesets/libraries/vf3bljcv8cw7nklk3s1o.webp",
-    "link": "https://github.com/jquense/yup",
-    "tags": [
-      "Form validation"
-    ],
-    "license": "MIT",
-    "licenseLink": "https://github.com/jquense/yup/blob/master/LICENSE.md"
-  }
+	{
+		"id": 1,
+		"order": 96,
+		"name": "Matter.js",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703714061/freesets/libraries/umlx1hgt8bjycqzwpqqj.webp",
+		"link": "https://brm.io/matter-js/",
+		"tags": ["Physics"]
+	},
+	{
+		"id": 2,
+		"order": 88,
+		"name": "react-magic-motion",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/libraries/react-magic-motion",
+		"link": "https://www.react-magic-motion.com",
+		"tags": ["Animation", "React"],
+		"license": "MIT"
+	},
+	{
+		"id": 3,
+		"order": 80,
+		"name": "useHooks",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703461359/freesets/libraries/cnxclmmyt8gkenlzjhsw.webp",
+		"link": "https://usehooks.com",
+		"tags": ["Hooks"]
+	},
+	{
+		"id": 4,
+		"order": 70,
+		"name": "AutoAnimate",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722122/freesets/libraries/x1cx4uqv29hd6ylowwcv.webp",
+		"link": "https://auto-animate.formkit.com",
+		"tags": ["Animations"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/formkit/auto-animate/blob/master/LICENSE"
+	},
+	{
+		"id": 5,
+		"order": 67,
+		"name": "Mousetrap",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069869/freesets/libraries/b4uluaeygy8jpnk2flzs.webp",
+		"link": "https://craig.is/killing/mice",
+		"tags": ["Keyboard shortcuts"]
+	},
+	{
+		"id": 6,
+		"order": 67,
+		"name": "next-video",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/libraries/next-video",
+		"link": "https://next-video.dev",
+		"tags": ["Video", "Next.js"],
+		"license": "MIT"
+	},
+	{
+		"id": 7,
+		"order": 67,
+		"name": "Luxon",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703714373/freesets/libraries/zzq11qc4dh3byrn2g1o1.webp",
+		"link": "https://moment.github.io/luxon/#/",
+		"tags": ["Time", "Dates"]
+	},
+	{
+		"id": 8,
+		"order": 48,
+		"name": "GSAP",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722231/freesets/libraries/y0vnr0nzd18wdbsg1lkz.webp",
+		"link": "https://gsap.com",
+		"tags": ["Animations"]
+	},
+	{
+		"id": 9,
+		"order": 45,
+		"name": "react-spring",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722374/freesets/libraries/qp1ugsdvlw1umw7ozp7d.webp",
+		"link": "https://www.react-spring.dev",
+		"tags": ["Animations", "React"]
+	},
+	{
+		"id": 10,
+		"order": 45,
+		"name": "Locomotive Scroll",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460989/freesets/libraries/c624lahc77sg5fgo1eaq.webp",
+		"link": "https://locomotivemtl.github.io/locomotive-scroll/",
+		"tags": ["Scroll"]
+	},
+	{
+		"id": 11,
+		"order": 43,
+		"name": "Vaul",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703716210/freesets/libraries/xzlo82pgowtivmpjxdlk.webp",
+		"link": "https://vaul.emilkowal.ski",
+		"tags": ["Drawer", "React"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/emilkowalski/vaul/blob/main/LICENSE.md"
+	},
+	{
+		"id": 12,
+		"order": 40,
+		"name": "Atropos",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703715783/freesets/libraries/fnn0q2erzzpqkyhrzckk.webp",
+		"link": "https://atroposjs.com",
+		"tags": ["Parallax"]
+	},
+	{
+		"id": 13,
+		"order": 40,
+		"name": "Sandpack",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721779/freesets/libraries/pd8lyjpwf79zercchctr.webp",
+		"link": "https://sandpack.codesandbox.io",
+		"tags": ["Live coding"],
+		"license": "Apache License 2.0",
+		"licenseLink": "https://github.com/codesandbox/sandpack"
+	},
+	{
+		"id": 14,
+		"order": 39,
+		"name": "Framer Motion",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721531/freesets/libraries/mwfnikeq6pgt2y8xeeuu.webp",
+		"link": "https://www.framer.com/motion/",
+		"tags": ["Animations", "React"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/framer/motion?tab=readme-ov-file#%EF%B8%8F-license"
+	},
+	{
+		"id": 15,
+		"order": 37,
+		"name": "RoughNotation",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703716041/freesets/libraries/xywhclwf3zv29jtmppkf.webp",
+		"link": "https://roughnotation.com",
+		"tags": ["Annotations"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/rough-stuff/rough-notation/blob/master/LICENSE"
+	},
+	{
+		"id": 16,
+		"order": 35,
+		"name": "lightGallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705093204/freesets/libraries/gbvshhwql1vuevniicae.webp",
+		"link": "https://www.lightgalleryjs.com",
+		"tags": ["Image gallery"]
+	},
+	{
+		"id": 17,
+		"order": 34,
+		"name": "PhotoSwipe",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705093099/freesets/libraries/p4tly9q7bbbnseutl1al.webp",
+		"link": "https://photoswipe.com",
+		"tags": ["Image gallery"]
+	},
+	{
+		"id": 18,
+		"order": 34,
+		"name": "Plyr",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703722052/freesets/libraries/vnzjqkvjkko8oynzkvoa.webp",
+		"link": "https://plyr.io",
+		"tags": ["Media player"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/sampotts/plyr/blob/master/LICENSE.md"
+	},
+	{
+		"id": 19,
+		"order": 30,
+		"name": "FilePond",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703715871/freesets/libraries/eadtlmvs1fn45whzka3p.webp",
+		"link": "https://pqina.nl/filepond/",
+		"tags": ["Uploads"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/pqina/filepond/blob/master/LICENSE"
+	},
+	{
+		"id": 20,
+		"order": 25,
+		"name": "yup",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721354/freesets/libraries/vf3bljcv8cw7nklk3s1o.webp",
+		"link": "https://github.com/jquense/yup",
+		"tags": ["Form validation"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/jquense/yup/blob/master/LICENSE.md"
+	}
 ]

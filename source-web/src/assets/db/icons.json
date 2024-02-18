@@ -18,7 +18,7 @@
 		"order": 98
 	},
 	{
-		"id": 42,
+		"id": 3,
 		"name": "Simple Icons",
 		"link": "https://simpleicons.org",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705765217/freesets/icons/jvhe6jrpy38zrqi6dhvp.webp",
@@ -26,7 +26,7 @@
 		"order": 96
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"name": "Tabler icons",
 		"link": "https://tabler-icons.io",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/tabler",
@@ -35,7 +35,7 @@
 		"order": 95
 	},
 	{
-		"id": 7,
+		"id": 5,
 		"name": "SVG Repo",
 		"link": "https://www.svgrepo.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/svgrepo",
@@ -44,7 +44,7 @@
 		"order": 95
 	},
 	{
-		"id": 35,
+		"id": 6,
 		"name": "Reshot",
 		"link": "https://www.reshot.com/free-svg-icons/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381958/freesets/icons/eum2c2gjrwgwfv7aq3qm.webp",
@@ -54,7 +54,7 @@
 		"order": 87
 	},
 	{
-		"id": 43,
+		"id": 7,
 		"name": "Radix Icons",
 		"link": "https://www.radix-ui.com/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705772255/freesets/icons/mzzgjxfoem5kafvfyyhh.webp",
@@ -64,7 +64,7 @@
 		"order": 87
 	},
 	{
-		"id": 48,
+		"id": 8,
 		"name": "Iconoir",
 		"link": "https://iconoir.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777316/freesets/icons/ruzpsrpudbcvjvqtcv4j.webp",
@@ -73,7 +73,7 @@
 		"order": 86
 	},
 	{
-		"id": 15,
+		"id": 9,
 		"name": "Hero Icons",
 		"link": "https://heroicons.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/heroicons",
@@ -82,7 +82,7 @@
 		"order": 85
 	},
 	{
-		"id": 30,
+		"id": 10,
 		"name": "Lucide",
 		"link": "https://lucide.dev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/jn6a97pgfb9sq4pa2tzn",
@@ -92,7 +92,7 @@
 		"order": 85
 	},
 	{
-		"id": 8,
+		"id": 11,
 		"name": "Phosphor",
 		"link": "https://phosphoricons.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/phosphor",
@@ -102,7 +102,17 @@
 		"order": 80
 	},
 	{
-		"id": 22,
+		"id": 12,
+		"name": "React Icons",
+		"link": "https://react-icons.github.io/react-icons/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/react-icons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE",
+		"order": 80,
+		"tags": ["Package"]
+	},
+	{
+		"id": 13,
 		"name": "Remix Icon",
 		"link": "https://remixicon.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/remixicon",
@@ -112,7 +122,16 @@
 		"order": 77
 	},
 	{
-		"id": 49,
+		"id": 14,
+		"name": "Feather Icons",
+		"link": "https://feathericons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/feather-icons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/feathericons/feather/blob/main/LICENSE",
+		"order": 77
+	},
+	{
+		"id": 15,
 		"name": "Ionicons",
 		"link": "https://ionic.io/ionicons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777616/freesets/icons/cqpb3phdbpbkizotyl0f.webp",
@@ -122,7 +141,7 @@
 		"order": 76
 	},
 	{
-		"id": 21,
+		"id": 16,
 		"name": "Eva Icons",
 		"link": "https://akveo.github.io/eva-icons/#/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/evaicons",
@@ -131,7 +150,7 @@
 		"order": 74
 	},
 	{
-		"id": 5,
+		"id": 17,
 		"name": "svgl",
 		"link": "https://svgl.vercel.app",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/svgl",
@@ -140,7 +159,7 @@
 		"order": 70
 	},
 	{
-		"id": 20,
+		"id": 18,
 		"name": "Font Awesome Icons",
 		"link": "https://fontawesome.com/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/fontawesome",
@@ -150,7 +169,7 @@
 		"order": 70
 	},
 	{
-		"id": 36,
+		"id": 19,
 		"name": "useAnimations",
 		"link": "https://useanimations.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382354/freesets/icons/ndch8kgt9gb92gaixk9a.webp",
@@ -161,7 +180,7 @@
 		"order": 70
 	},
 	{
-		"id": 45,
+		"id": 20,
 		"name": "MingCute Design",
 		"link": "https://www.mingcute.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776623/freesets/icons/lgi0vtfqupkfqf5ruvmz.webp",
@@ -170,7 +189,7 @@
 		"order": 70
 	},
 	{
-		"id": 46,
+		"id": 21,
 		"name": "Carbon",
 		"link": "https://carbondesignsystem.com/guidelines/icons/library",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776835/freesets/icons/rvzgmjez12yrvwjigqnn.webp",
@@ -179,7 +198,7 @@
 		"order": 66
 	},
 	{
-		"id": 11,
+		"id": 22,
 		"name": "Iconbuddy",
 		"link": "https://iconbuddy.app",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconbuddy",
@@ -188,7 +207,7 @@
 		"order": 60
 	},
 	{
-		"id": 4,
+		"id": 23,
 		"name": "Animatedicons",
 		"link": "https://animatedicons.co/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/animatedicons",
@@ -199,7 +218,7 @@
 		"order": 60
 	},
 	{
-		"id": 17,
+		"id": 24,
 		"name": "CSS Icons",
 		"link": "https://css.gg/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/CSSIcons",
@@ -209,7 +228,16 @@
 		"order": 60
 	},
 	{
-		"id": 6,
+		"id": 25,
+		"name": "Boxicons",
+		"link": "https://boxicons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/boxicons",
+		"license": "MIT",
+		"licenseLink": "https://boxicons.com/usage#license",
+		"order": 55
+	},
+	{
+		"id": 26,
 		"name": "Ikonate",
 		"link": "https://ikonate.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/ikonate",
@@ -218,7 +246,7 @@
 		"order": 50
 	},
 	{
-		"id": 39,
+		"id": 27,
 		"name": "ManyPixels",
 		"link": "https://www.manypixels.co/gallery",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385023/freesets/icons/xxyu2syjxgm7twcyegba.webp",
@@ -227,14 +255,24 @@
 		"order": 50
 	},
 	{
-		"id": 40,
+		"id": 28,
+		"name": "Zondicons",
+		"link": "http://www.zondicons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/zondicons",
+		"license": "CC",
+		"licenseLink": "https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE",
+		"licenseDescription": "All the free files available in zondicons are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise.",
+		"order": 50
+	},
+	{
+		"id": 29,
 		"name": "ICONSVG",
 		"link": "https://iconsvg.xyz",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704820992/freesets/icons/lq4ll4tgmsdzhe4ysibx.webp",
 		"order": 48
 	},
 	{
-		"id": 10,
+		"id": 30,
 		"name": "Streamline Icons",
 		"link": "https://www.streamlinehq.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/streamline",
@@ -243,7 +281,7 @@
 		"order": 46
 	},
 	{
-		"id": 50,
+		"id": 31,
 		"name": "TDesign Icons",
 		"link": "https://tdesign.tencent.com/design/icon",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777927/freesets/icons/p16gzcdv7iacvdnud2ch.webp",
@@ -252,7 +290,7 @@
 		"order": 46
 	},
 	{
-		"id": 27,
+		"id": 32,
 		"name": "3D Icons",
 		"link": "https://3dicons.co/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/hh9zkxpnfjckvekzz0ey",
@@ -262,7 +300,7 @@
 		"order": 45
 	},
 	{
-		"id": 14,
+		"id": 33,
 		"name": "Mono Icons",
 		"link": "https://icons.mono.company/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/monoicons",
@@ -271,7 +309,7 @@
 		"order": 40
 	},
 	{
-		"id": 9,
+		"id": 34,
 		"name": "Iconmonstr",
 		"link": "https://iconmonstr.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconmonstr",
@@ -281,7 +319,7 @@
 		"order": 40
 	},
 	{
-		"id": 32,
+		"id": 35,
 		"name": "Drawkit",
 		"link": "https://www.drawkit.com/illustration-types/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/quqeaqpdwrr9pfl7syvz",
@@ -292,7 +330,7 @@
 		"order": 40
 	},
 	{
-		"id": 41,
+		"id": 36,
 		"name": "Basicons",
 		"link": "https://basicons.xyz",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704821116/freesets/icons/iugy1xeoa4h1rk0xopit.webp",
@@ -302,7 +340,7 @@
 		"order": 40
 	},
 	{
-		"id": 51,
+		"id": 37,
 		"name": "Clarity",
 		"link": "https://clarity.design/documentation/icons/shapes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705778097/freesets/icons/ldvm1lc29yfknxdzzm1a.webp",
@@ -311,7 +349,7 @@
 		"order": 38
 	},
 	{
-		"id": 18,
+		"id": 38,
 		"name": "Core UI Icons",
 		"link": "https://coreui.io/icons/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/coreuiicons",
@@ -321,7 +359,7 @@
 		"order": 35
 	},
 	{
-		"id": 33,
+		"id": 39,
 		"name": "Unicorn icons",
 		"link": "https://unicornicons.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/ocpqwxgjvphvpk6b44ed",
@@ -332,7 +370,7 @@
 		"order": 35
 	},
 	{
-		"id": 19,
+		"id": 40,
 		"name": "Bootstrap Icons",
 		"link": "https://icons.getbootstrap.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/bootstrap",
@@ -342,7 +380,7 @@
 		"order": 30
 	},
 	{
-		"id": 16,
+		"id": 41,
 		"name": "Teenyicons",
 		"link": "https://teenyicons.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/teenyicons",
@@ -351,7 +389,7 @@
 		"order": 25
 	},
 	{
-		"id": 38,
+		"id": 42,
 		"name": "Potlab Icons",
 		"link": "https://www.potlabicons.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382810/freesets/icons/hsy0ykq8riokhajhzewl.webp",
@@ -361,7 +399,7 @@
 		"order": 23
 	},
 	{
-		"id": 12,
+		"id": 43,
 		"name": "Keyicons",
 		"link": "https://keyicons.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/keyicons",
@@ -370,7 +408,7 @@
 		"order": 20
 	},
 	{
-		"id": 13,
+		"id": 44,
 		"name": "Zwicon",
 		"link": "http://zwicon.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/zwicon",
@@ -379,7 +417,7 @@
 		"order": 20
 	},
 	{
-		"id": 25,
+		"id": 45,
 		"name": "Notion-style Icons",
 		"link": "https://maryamato88.gumroad.com/l/pbmkt",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703028113/freesets/icons/Notion_Style_Icons_kpixkv.webp",
@@ -389,7 +427,7 @@
 		"order": 20
 	},
 	{
-		"id": 28,
+		"id": 46,
 		"name": "Flagpack",
 		"link": "https://flagpack.xyz",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/w4emtntc7owwt8bu4etm",
@@ -400,7 +438,7 @@
 		"order": 18
 	},
 	{
-		"id": 29,
+		"id": 47,
 		"name": "Grumpyicons",
 		"link": "https://www.petrbilek.com/products/grumpyicons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/eelqaxmso9pbbfstgl5z",
@@ -411,7 +449,7 @@
 		"order": 17
 	},
 	{
-		"id": 24,
+		"id": 48,
 		"name": "Icon Freebies Glimsy",
 		"link": "https://orenjistudio.gumroad.com/l/glimsy",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703027910/freesets/icons/Glimsy_bwpu4k.webp",
@@ -419,7 +457,7 @@
 		"order": 15
 	},
 	{
-		"id": 31,
+		"id": 49,
 		"name": "Line Icon Pack",
 		"link": "https://www.petrbilek.com/products/line-icon-pack",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/l4zhbu6rb8yde0ckdnv2",
@@ -429,7 +467,7 @@
 		"order": 15
 	},
 	{
-		"id": 37,
+		"id": 50,
 		"name": "Tilda Icons",
 		"link": "https://tilda.cc/free-icons/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382565/freesets/icons/dxhlcgkgwque1gddimtd.webp",
@@ -439,7 +477,7 @@
 		"order": 15
 	},
 	{
-		"id": 34,
+		"id": 51,
 		"name": "Noun Project",
 		"link": "https://thenounproject.com/icons/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/g4ovyr2rjrlb7l5kqggf",
@@ -449,7 +487,7 @@
 		"order": 10
 	},
 	{
-		"id": 47,
+		"id": 52,
 		"name": "IconaMoon",
 		"link": "https://www.figma.com/community/file/1014143897459418663",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776986/freesets/icons/ubb1mslpo6luz1pivm0n.webp",
@@ -457,7 +495,7 @@
 		"order": 7
 	},
 	{
-		"id": 44,
+		"id": 53,
 		"name": "Solar",
 		"link": "https://www.figma.com/community/file/1166831539721848736",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776270/freesets/icons/g5k7wqiikvrxcmevnhet.webp",
@@ -465,26 +503,7 @@
 		"order": 6
 	},
 	{
-		"id": 26,
-		"name": "Untitled UI Icons",
-		"link": "https://www.untitledui.com/icons",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/u0vnq5jvrwli4mzr4dl0",
-		"license": "Freemium",
-		"licenseLink": "https://www.untitledui.com/pricing",
-		"order": 1
-	},
-	{
-		"id": 23,
-		"name": "React Icons",
-		"link": "https://react-icons.github.io/react-icons/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/react-icons",
-		"license": "MIT",
-		"licenseLink": "https://github.com/react-icons/react-icons/blob/master/LICENSE",
-		"order": 80,
-		"tags": ["Package"]
-	},
-	{
-		"id": 52,
+		"id": 54,
 		"name": "Icon Icons",
 		"link": "https://icon-icons.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/icon-icons",
@@ -494,7 +513,7 @@
 		"order": 6
 	},
 	{
-		"id": 53,
+		"id": 55,
 		"name": "FlatIcon",
 		"link": "https://www.flaticon.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/flaticon",
@@ -504,7 +523,7 @@
 		"order": 6
 	},
 	{
-		"id": 54,
+		"id": 56,
 		"name": "Iconscout",
 		"link": "https://iconscout.com/icons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconscout",
@@ -514,31 +533,12 @@
 		"order": 5
 	},
 	{
-		"id": 55,
-		"name": "Zondicons",
-		"link": "http://www.zondicons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/zondicons",
-		"license": "CC",
-		"licenseLink": "https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE",
-		"licenseDescription": "All the free files available in zondicons are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise.",
-		"order": 50
-	},
-	{
-		"id": 56,
-		"name": "Boxicons",
-		"link": "https://boxicons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/boxicons",
-		"license": "MIT",
-		"licenseLink": "https://boxicons.com/usage#license",
-		"order": 55
-	},
-	{
 		"id": 57,
-		"name": "Feather Icons",
-		"link": "https://feathericons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/feather-icons",
-		"license": "MIT",
-		"licenseLink": "https://github.com/feathericons/feather/blob/main/LICENSE",
-		"order": 77
+		"name": "Untitled UI Icons",
+		"link": "https://www.untitledui.com/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/u0vnq5jvrwli4mzr4dl0",
+		"license": "Freemium",
+		"licenseLink": "https://www.untitledui.com/pricing",
+		"order": 1
 	}
 ]
