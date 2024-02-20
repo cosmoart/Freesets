@@ -2,8 +2,6 @@
 	import Pagination from './ui/Pagination.svelte';
 	import AssetCard from './AssetCard.svelte';
 	export let categories;
-
-	const testa = 'awf';
 </script>
 
 <main class="mb-10">

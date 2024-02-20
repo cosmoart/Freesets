@@ -5,7 +5,7 @@
 	$: currentPage = $page.params.category;
 </script>
 
-<nav class="header">
+<nav class="[view-transition-name:header]">
 	<ul class="flex gap-2 flex-wrap text-md">
 		<li>
 			<a
@@ -47,9 +47,3 @@
 		{/each}
 	</ul>
 </nav>
-
-<style>
-	.header {
-		view-transition-name: header;
-	}
-</style>

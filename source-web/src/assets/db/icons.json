@@ -5,7 +5,7 @@
 		"link": "https://icon-sets.iconify.design",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/iconify",
 		"license": "Multiple",
-		"licenseLink": "https://iconify.design/license/",
+		"licenseLink": "https://iconify.design/#license",
 		"order": 100
 	},
 	{
@@ -252,6 +252,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385023/freesets/icons/xxyu2syjxgm7twcyegba.webp",
 		"license": "Free",
 		"licenseDescription": "You can use the illustrations in any project, commercial or personal without attribution or any costs.",
+		"licenseLink": "https://www.manypixels.co/terms-of-service",
 		"order": 50
 	},
 	{
@@ -269,7 +270,9 @@
 		"name": "ICONSVG",
 		"link": "https://iconsvg.xyz",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704820992/freesets/icons/lq4ll4tgmsdzhe4ysibx.webp",
-		"order": 48
+		"license": "MIT",
+		"licenseLink": "https://iconsvg.xyz",
+		"order": 30
 	},
 	{
 		"id": 30,
@@ -387,16 +390,6 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE",
 		"order": 25
-	},
-	{
-		"id": 42,
-		"name": "Potlab Icons",
-		"link": "https://www.potlabicons.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382810/freesets/icons/hsy0ykq8riokhajhzewl.webp",
-		"license": "CC 4.0",
-		"licenseLink": "https://www.potlabicons.com",
-		"tags": ["Animated", "Loaders"],
-		"order": 23
 	},
 	{
 		"id": 43,
