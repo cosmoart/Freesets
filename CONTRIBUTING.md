@@ -49,7 +49,7 @@ git push origin my-branch
 
 - id*: `number - required`
 	- Unique number: an id should not be repeated in the same json file.
-	- It is recommended to add the new resources at the end and follow the order with the previous id.
+	- It is recommended to add the new resources at the end and follow the order with the previous ids.
 - order*: `number - required`
 	-  Number between 0 and 100 that represents the quality of the resource. Being 0 bad and 100 excellent.
 	-	 To rate the quality of a resource, you can use criteria like: UI/UX design, how permissive the license is (CC0 is great, needing to attribute or not use in commercial projects not so much), is it completely free or just some elements, etc.

@@ -357,7 +357,7 @@
 		"link": "https://coreui.io/icons/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/coreuiicons",
 		"license": "Freemium",
-		"licenseLink": "https://coreui.io/license/",
+		"licenseLink": "https://coreui.io/icons/pricing/",
 		"tags": ["Package"],
 		"order": 35
 	},
@@ -390,6 +390,15 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE",
 		"order": 25
+	},
+	{
+		"id": 42,
+		"name": "Sargam Icons",
+		"link": "https://sargamicons.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/sargamicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/planetabhi/sargam-icons/blob/main/LICENSE.txt",
+		"order": 41
 	},
 	{
 		"id": 43,
@@ -529,9 +538,18 @@
 		"id": 57,
 		"name": "Untitled UI Icons",
 		"link": "https://www.untitledui.com/icons",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/icons/u0vnq5jvrwli4mzr4dl0",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/u0vnq5jvrwli4mzr4dl0",
 		"license": "Freemium",
 		"licenseLink": "https://www.untitledui.com/pricing",
 		"order": 1
+	},
+	{
+		"id": 58,
+		"name": "Majesticons",
+		"link": "https://www.majesticons.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/majesticons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/halfmage/majesticons/blob/main/LICENSE",
+		"order": 29
 	}
 ]

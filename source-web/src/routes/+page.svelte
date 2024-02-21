@@ -53,7 +53,10 @@
 				</li>
 			{/each}
 		</ul>
-		<ul class="carousel2 flex flex-wrap gap-1 sm:gap-4 justify-center w-full items-center">
+		<ul
+			aria-hidden="true"
+			class="carousel2 flex flex-wrap gap-1 sm:gap-4 justify-center w-full items-center"
+		>
 			{#each categories as category, i}
 				<li style="--delay: {i * 0.4}s">
 					<a
