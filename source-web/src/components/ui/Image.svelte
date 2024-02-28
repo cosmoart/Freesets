@@ -1,7 +1,7 @@
 <script>
 	import { afterUpdate } from 'svelte';
 	export let src;
-	export let lazy = false;
+	export let lazy = true;
 
 	export let alt = 'image';
 	export let className = '';

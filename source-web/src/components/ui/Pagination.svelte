@@ -7,6 +7,7 @@
 
 	$: url = $page.url.pathname;
 	$: pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+	$: q = new URLSearchParams($page.url.searchParams).get('q');
 </script>
 
 <nav>
@@ -14,7 +15,7 @@
 		{#if currentPage > 1}
 			<li>
 				<a
-					href="{url}?page={currentPage - 1}"
+					href="{url}?page={currentPage - 1}{q ? '&q=' + q : ''}"
 					class="hover:bg-zinc-700 mr-3 bg-zinc-800 dark:bg-white dark:hover:bg-slate-300 transition-colors p-1 size-9 md:size-10 text-xl text-center rounded-md flex justify-center items-center {currentPage ===
 					1
 						? 'pointer-events-none opacity-80'
@@ -35,7 +36,7 @@
 		{#each pages as page}
 			<li>
 				<a
-					href="{url}?page={page}"
+					href="{url}?page={page}{q ? '&q=' + q : ''}"
 					class="hover:bg-zinc-700 bg-zinc-800 dark:bg-white dark:hover:bg-slate-300 transition-colors p-1 size-9 md:size-10 text-xl text-center rounded-md flex justify-center items-center {page ===
 					currentPage
 						? 'pointer-events-none'
@@ -51,7 +52,7 @@
 		{#if currentPage < totalPages}
 			<li>
 				<a
-					href="{url}?page={currentPage + 1}"
+					href="{url}?page={currentPage + 1}{q ? '&q=' + q : ''}"
 					class="hover:bg-zinc-700 ml-3 bg-zinc-800 dark:bg-white dark:hover:bg-slate-300 transition-colors p-1 size-9 md:size-10 text-xl text-center rounded-md flex justify-center items-center {currentPage ===
 					totalPages
 						? 'pointer-events-none opacity-80'

@@ -38,4 +38,4 @@
 	<meta name="twitter:image" content={image} />
 </svelte:head>
 
-<Assest categories={[data]} />
+<Assest {data} />

@@ -5,13 +5,13 @@
 	import Image from '@/components/ui/Image.svelte';
 
 	export let assets;
-	export let category;
+	export let data;
 </script>
 
 {#each assets as asset}
 	<article
 		class="asset-card group transition-all rounded-lg ring-zinc-700 ring-2 hover:ring-[--card-color] dark:bg-zinc-800 bg-purple-50 dark:text-white overflow-hidden"
-		style="--card-color: {category.color}"
+		style="--card-color: {data.color}"
 	>
 		<div class="relative">
 			<a
@@ -23,10 +23,13 @@
 				<Image
 					src={asset.img}
 					alt={asset.name + ' web preview'}
-					lazy={true}
 					className="aspect-video object-cover lazyImg inline-block w-full"
 					height="216"
 					width="384"
+				/>
+				<Image
+					className="absolute bottom-0 aspect-square box-content object-cover w-11 rounded-tr-md"
+					src="https://www.google.com/s2/favicons?domain={asset.link}&sz=128"
 				/>
 			</a>
 			{#if asset.tags}
