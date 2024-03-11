@@ -137,7 +137,7 @@
 		"id": 16,
 		"name": "UVCanvas",
 		"link": "https://uvcanvas.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1/freesets/backgrounds/uvcanvas",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/uvcanvas",
 		"license": "MIT",
 		"licenseLink": "https://github.com/latentcat/uvcanvas?tab=readme-ov-file#license",
 		"tags": ["React", "Package"],
@@ -147,7 +147,7 @@
 		"id": 17,
 		"name": "SVG Patterns",
 		"link": "https://nucleoapp.com/svg-patterns",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1/freesets/backgrounds/svg-patterns",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg-patterns",
 		"order": 96
 	}
 ]
