@@ -158,5 +158,14 @@
 		"license": "Freemium",
 		"licenseLink": "https://thenounproject.com/pricing/#photos",
 		"licenseDescription": "Free with attribution"
+	},
+	{
+		"id": 18,
+		"order": 80,
+		"name": "Openverse",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/openverse",
+		"link": "https://openverse.org",
+		"license": "CC",
+		"licenseLink": "https://openverse.org"
 	}
 ]

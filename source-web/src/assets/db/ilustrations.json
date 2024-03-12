@@ -65,7 +65,7 @@
 	},
 	{
 		"id": 8,
-		"order": 85,
+		"order": 80,
 		"name": "DrawKit",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ilustrations/drawkit",
 		"link": "https://www.drawkit.com/?pricing-type=Free",
@@ -459,5 +459,32 @@
 		"link": "https://svghub.vercel.app",
 		"tags": ["Doodles"],
 		"license": "CC BY-NC 4.0"
+	},
+	{
+		"id": 53,
+		"order": 16,
+		"name": "Free Userpics Pack",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ilustrations/freepack",
+		"link": "https://userpics.craftwork.design/",
+		"tags": ["Avatars"]
+	},
+	{
+		"id": 54,
+		"order": 11,
+		"name": "Memojis",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ilustrations/memojis",
+		"link": "https://www.figma.com/community/plugin/1090391796325905912/memojis",
+		"tags": ["Avatars", "3D"],
+		"license": "C. Free Resource L."
+	},
+	{
+		"id": 55,
+		"order": 70,
+		"name": "Shapefest",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ilustrations/shapefest",
+		"link": "https://www.shapefest.com",
+		"license": "Shapefest™ Commercial",
+		"licenseLink": "https://www.shapefest.com/license-agreement",
+		"tags": ["3D"]
 	}
 ]

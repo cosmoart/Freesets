@@ -551,5 +551,25 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/halfmage/majesticons/blob/main/LICENSE",
 		"order": 29
+	},
+	{
+		"id": 59,
+		"name": "Gravity UI",
+		"link": "https://preview.gravity-ui.com/icons/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/gravity-ui",
+		"license": "MIT",
+		"licenseLink": "https://github.com/gravity-ui/icons/blob/main/LICENSE",
+		"tags": ["Package", "React"],
+		"order": 11
+	},
+	{
+		"id": 60,
+		"name": "Octicons",
+		"link": "https://primer.style/foundations/icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/octicons",
+		"license": "MIT",
+		"licenseLink": "https://github.com/primer/octicons/blob/main/LICENSE",
+		"tags": ["Package"],
+		"order": 5
 	}
 ]
