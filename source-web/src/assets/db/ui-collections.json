@@ -131,5 +131,20 @@
 		"name": "Sass Landing Page",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/saaslandingpage",
 		"link": "https://saaslandingpage.com"
+	},
+	{
+		"id": 20,
+		"order": 55,
+		"name": "Navbar Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/navbargallery",
+		"link": "https://www.navbar.gallery",
+		"tags": ["Navbars"]
+	},
+	{
+		"id": 21,
+		"order": 87,
+		"name": "Unsection",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/unsection",
+		"link": "https://www.unsection.com"
 	}
 ]

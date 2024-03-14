@@ -228,5 +228,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203257/freesets/colors/oakf9ule9y1chxb8yatt.webp",
 		"link": "https://uigradients.com/",
 		"tags": ["Gradients"]
+	},
+	{
+		"id": 32,
+		"order": 87,
+		"name": "Inspotype",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/inspotype",
+		"link": "https://www.inspotype.com",
+		"tags": ["Preview"]
 	}
 ]
