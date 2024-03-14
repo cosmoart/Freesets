@@ -176,5 +176,15 @@
 		"tags": ["Form validation"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/jquense/yup/blob/master/LICENSE.md"
+	},
+	{
+		"id": 21,
+		"order": 45,
+		"name": "Tempo",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tempo",
+		"link": "https://tempo.formkit.com",
+		"tags": ["Time", "Dates"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/formkit/tempo/blob/main/LICENSE"
 	}
 ]
