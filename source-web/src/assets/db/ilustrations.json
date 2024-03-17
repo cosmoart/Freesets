@@ -486,5 +486,15 @@
 		"license": "Shapefest™ Commercial",
 		"licenseLink": "https://www.shapefest.com/license-agreement",
 		"tags": ["3D"]
+	},
+	{
+		"id": 56,
+		"order": 8,
+		"name": "Items.Design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ilustrations/itemsdesign",
+		"link": "https://items.design/category/free",
+		"license": "Freemium",
+		"licenseLink": "https://items.design/usage-license",
+		"tags": ["3D", "IA"]
 	}
 ]

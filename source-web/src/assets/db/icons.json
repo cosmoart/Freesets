@@ -570,6 +570,14 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/primer/octicons/blob/main/LICENSE",
 		"tags": ["Package"],
-		"order": 5
+		"order": 8
+	},
+	{
+		"id": 61,
+		"name": "SVG Flag Icons",
+		"link": "https://nucleoapp.com/svg-flag-icons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/svg-flag-icons",
+		"order": 15,
+		"tags": ["Flags"]
 	}
 ]

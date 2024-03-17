@@ -494,5 +494,13 @@
 		"tags": ["Loaders"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE"
+	},
+	{
+		"id": 53,
+		"order": 44,
+		"name": "ui.ibelick",
+		"link": "https://ui.ibelick.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ibelick",
+		"tags": ["Effects", "React", "Tailwind"]
 	}
 ]

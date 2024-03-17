@@ -186,5 +186,36 @@
 		"tags": ["Time", "Dates"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/formkit/tempo/blob/main/LICENSE"
+	},
+	{
+		"id": 22,
+		"order": 39,
+		"name": "Editor.js",
+		"link": "https://editorjs.io",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/editorjs",
+		"tags": ["Block-style editor"],
+		"license": "Apache License 2.0",
+		"licenseLink": "https://github.com/codex-team/editor.js/blob/next/LICENSE"
+	},
+	{
+		"id": 23,
+		"order": 46,
+		"name": "tldraw SDK",
+		"link": "https://editorjs.io",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
+		"tags": ["Infinite canvas"],
+		"license": "tldraw license",
+		"licenseLink": "https://tldraw.dev/community/license",
+		"licenseDescription": "\"This license does not permit commercial use. If you wish to use tldraw in a commercial product or enterprise, you will need to purchase a commercial license.\""
+	},
+	{
+		"id": 24,
+		"order": 52,
+		"name": "Driver.js",
+		"link": "https://driverjs.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/driverjs",
+		"tags": ["Drive user's focus"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/kamranahmedse/driver.js/blob/master/license"
 	}
 ]
