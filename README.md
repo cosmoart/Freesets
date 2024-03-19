@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![header](./readme/header.webp)
+![header](./readme/header.svg)
 
 # Freesets
 

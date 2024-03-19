@@ -129,20 +129,26 @@
 	},
 	{
 		"id": 17,
-		"order": 8,
+		"order": 1,
 		"name": "Favicon Generator",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/favicon-generator",
 		"link": "https://www.favicon-generator.org/",
-		"license": "Free",
 		"tags": ["Favicon generator"]
 	},
 	{
 		"id": 18,
-		"order": 8,
+		"order": 1,
 		"name": "Real Favicon Generator",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/real-favicon",
 		"link": "https://realfavicongenerator.net/",
-		"license": "Free",
 		"tags": ["Favicon generator"]
+	},
+	{
+		"id": 19,
+		"order": 30,
+		"name": "readme.so",
+		"link": "https://readme.so/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/readmeso",
+		"tags": ["Readme generator"]
 	}
 ]

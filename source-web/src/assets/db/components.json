@@ -496,11 +496,28 @@
 		"licenseLink": "https://github.com/vineethtrv/css-loader/blob/master/LICENSE"
 	},
 	{
-		"id": 53,
+		"id": 54,
 		"order": 44,
 		"name": "ui.ibelick",
 		"link": "https://ui.ibelick.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ibelick",
 		"tags": ["Effects", "React", "Tailwind"]
+	},
+	{
+		"id": 55,
+		"order": 30,
+		"name": "Lobe UI",
+		"link": "https://ui.lobehub.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/lobehub",
+		"license": "MIT",
+		"licenseLink": "https://github.com/lobehub/lobe-ui/blob/master/LICENSE"
+	},
+	{
+		"id": 56,
+		"order": 10,
+		"name": "Drams",
+		"link": "https://drams.framer.website",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/drams",
+		"tags": ["Framer"]
 	}
 ]

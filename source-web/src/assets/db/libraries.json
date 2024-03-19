@@ -217,5 +217,15 @@
 		"tags": ["Drive user's focus"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/kamranahmedse/driver.js/blob/master/license"
+	},
+	{
+		"id": 25,
+		"order": 40,
+		"name": "Tilt",
+		"link": "https://jdion.xyz/tilt",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tilt",
+		"tags": ["Parallax"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/jonathandion/mono/blob/main/LICENSE"
 	}
 ]
