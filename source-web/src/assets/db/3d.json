@@ -152,12 +152,12 @@
 		"licenseLink": "https://www.cgtrader.com/pages/terms-and-conditions#royalty-free-license"
 	},
 	{
-	  "id": 16,
-	  "order": 8,
-	  "name": "3DExport",
-	  "link": "https://3dexport.com/",
-	  "img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/3dexport",
-	  "tags": ["Models"],
-	  "license": "Multiple"
+		"id": 16,
+		"order": 8,
+		"name": "3DExport",
+		"link": "https://3dexport.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/3d/3dexport",
+		"tags": ["Models"],
+		"license": "Multiple"
 	}
 ]
