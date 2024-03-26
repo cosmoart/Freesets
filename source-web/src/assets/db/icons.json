@@ -579,5 +579,15 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/svg-flag-icons",
 		"order": 15,
 		"tags": ["Flags"]
+	},
+	{
+		"id": 62,
+		"name": "Unicons",
+		"link": "https://iconscout.com/unicons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/unicons",
+		"license": "Freemium",
+		"licenseLink": "https://iconscout.com/pricing",
+		"tags": ["Package"],
+		"order": 30
 	}
 ]
