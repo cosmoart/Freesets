@@ -146,5 +146,21 @@
 		"name": "Unsection",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/unsection",
 		"link": "https://www.unsection.com"
+	},
+	{
+		"id": 22,
+		"order": 57,
+		"name": "404s",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/404s",
+		"link": "https://www.404s.design/",
+		"tags": ["404"]
+	},
+	{
+		"id": 23,
+		"order": 84,
+		"name": "Logo System",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/logosystems",
+		"link": "https://logosystem.co/",
+		"tags": ["Logos"]
 	}
 ]
