@@ -11,7 +11,7 @@
 		"id": 2,
 		"order": 88,
 		"name": "react-magic-motion",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/libraries/react-magic-motion",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-magic-motion",
 		"link": "https://www.react-magic-motion.com",
 		"tags": ["Animation", "React"],
 		"license": "MIT"
@@ -46,7 +46,7 @@
 		"id": 6,
 		"order": 67,
 		"name": "next-video",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/libraries/next-video",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/next-video",
 		"link": "https://next-video.dev",
 		"tags": ["Video", "Next.js"],
 		"license": "MIT"

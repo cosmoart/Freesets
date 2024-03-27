@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 100,
 		"name": "Josh Comeau",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/josh.webp",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/josh.webp",
 		"link": "https://www.joshwcomeau.com",
 		"tags": ["Web"]
 	},
@@ -18,7 +18,7 @@
 		"id": 3,
 		"order": 88,
 		"name": "Modern CSS",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/moderncss",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/moderncss",
 		"link": "https://moderncss.dev",
 		"tags": ["CSS"]
 	},
@@ -42,7 +42,7 @@
 		"id": 6,
 		"order": 80,
 		"name": "Not a Number",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/nan",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/nan",
 		"link": "https://www.nan.fyi",
 		"tags": ["Animations", "svg"]
 	},
@@ -50,7 +50,7 @@
 		"id": 7,
 		"order": 78,
 		"name": "Maximeheckel",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/maxime",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/maxime",
 		"link": "https://blog.maximeheckel.com",
 		"tags": ["Three.js", "React", "3D"]
 	},
@@ -58,7 +58,7 @@
 		"id": 8,
 		"order": 76,
 		"name": "Varun Vachhar",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/varun",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/varun",
 		"link": "https://varun.ca/writing/",
 		"tags": ["Three.js", "3D"]
 	},
@@ -66,7 +66,7 @@
 		"id": 9,
 		"order": 70,
 		"name": "Overreacted",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/blogs/overreacted",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/overreacted",
 		"link": "https://overreacted.io",
 		"tags": ["React", "JavaScript"]
 	},
@@ -128,7 +128,7 @@
 		"id": 17,
 		"order": 23,
 		"name": "Patterns.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703459200/freesets/blogs/mvif3lc9bdwrcjtfgsxh.webp",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/mvif3lc9bdwrcjtfgsxh.webp",
 		"link": "https://www.patterns.dev",
 		"tags": ["Patterns"]
 	},
@@ -136,7 +136,7 @@
 		"id": 18,
 		"order": 20,
 		"name": "A List Apart",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/alistapart",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/alistapart",
 		"link": "https://www.alistapart.com",
 		"tags": ["Community"]
 	},
@@ -144,7 +144,7 @@
 		"id": 19,
 		"order": 10,
 		"name": "Sitepoint",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/sitepoint",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/sitepoint",
 		"link": "https://www.sitepoint.com",
 		"tags": ["Learning"]
 	},
@@ -152,7 +152,7 @@
 		"id": 20,
 		"order": 8,
 		"name": "Delba Blog",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703445154/freesets/blogs/chfpxvalueckpy8uhahk.webp",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/chfpxvalueckpy8uhahk.webp",
 		"link": "https://delba.dev/blog"
 	}
 ]

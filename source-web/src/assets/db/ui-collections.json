@@ -3,49 +3,49 @@
 		"id": 1,
 		"order": 100,
 		"name": "Curated Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/curated-design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/curated-design",
 		"link": "https://www.curated.design"
 	},
 	{
 		"id": 2,
 		"order": 98,
 		"name": "Godly",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/godly",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/godly",
 		"link": "https://godly.website"
 	},
 	{
 		"id": 3,
 		"order": 95,
 		"name": "Laand-book",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/land-book",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/land-book",
 		"link": "https://land-book.com"
 	},
 	{
 		"id": 4,
 		"order": 90,
 		"name": "BentoGrids",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/bentogrids",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/bentogrids",
 		"link": "https://bentogrids.com"
 	},
 	{
 		"id": 5,
 		"order": 80,
 		"name": "Darkmode Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/darkmodedesign",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/darkmodedesign",
 		"link": "https://www.darkmodedesign.com"
 	},
 	{
 		"id": 6,
 		"order": 80,
 		"name": "Dark Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/darkdesign",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/darkdesign",
 		"link": "https://www.dark.design"
 	},
 	{
 		"id": 7,
 		"order": 78,
 		"name": "Landing Love",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/landing-love",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/landing-love",
 		"link": "https://www.landing.love"
 	},
 	{
@@ -66,7 +66,7 @@
 		"id": 10,
 		"order": 70,
 		"name": "Pinterest",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/pinterest",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/pinterest",
 		"link": "https://pinterest.com/"
 	},
 	{
@@ -87,14 +87,14 @@
 		"id": 13,
 		"order": 60,
 		"name": "Dribbble",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/dribbble",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/dribbble",
 		"link": "https://dribbble.com/"
 	},
 	{
 		"id": 14,
 		"order": 60,
 		"name": "Behance",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/behance",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/behance",
 		"link": "https://www.behance.net/"
 	},
 	{
@@ -115,21 +115,21 @@
 		"id": 17,
 		"order": 20,
 		"name": "Three.js",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/threejs",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/threejs",
 		"link": "https://threejs.org"
 	},
 	{
 		"id": 18,
 		"order": 15,
 		"name": "Awwwards",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/awwwards",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/awwwards",
 		"link": "https://www.awwwards.com/websites/"
 	},
 	{
 		"id": 19,
 		"order": 10,
 		"name": "Sass Landing Page",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/ui-collections/saaslandingpage",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/saaslandingpage",
 		"link": "https://saaslandingpage.com"
 	},
 	{

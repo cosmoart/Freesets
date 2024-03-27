@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 100,
 		"name": "Realtime Colors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/realtime-colors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/realtime-colors",
 		"link": "https://www.realtimecolors.com",
 		"tags": ["Preview"]
 	},
@@ -11,7 +11,7 @@
 		"id": 2,
 		"order": 95,
 		"name": "AI Colors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/ai-colors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/ai-colors",
 		"link": "https://tintmint.net",
 		"tags": ["AI", "Preview"]
 	},
@@ -19,7 +19,7 @@
 		"id": 3,
 		"order": 94,
 		"name": "Color selector",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/color-selector",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-selector",
 		"link": "https://www.color-selector.com",
 		"tags": ["Catalogue"]
 	},
@@ -27,7 +27,7 @@
 		"id": 4,
 		"order": 93,
 		"name": "Coolors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/coolors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolors",
 		"link": "https://coolors.co",
 		"tags": ["Image"]
 	},
@@ -43,14 +43,14 @@
 		"id": 6,
 		"order": 87,
 		"name": "Huetools",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/huetools",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huetools",
 		"link": "https://hue.tools/"
 	},
 	{
 		"id": 7,
 		"order": 87,
 		"name": "Picular",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/picular",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/picular",
 		"link": "https://picular.co"
 	},
 	{
@@ -71,7 +71,7 @@
 		"id": 10,
 		"order": 86,
 		"name": "Colormind",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/colormind",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormind",
 		"link": "http://colormind.io/"
 	},
 	{
@@ -102,7 +102,7 @@
 		"id": 14,
 		"order": 82,
 		"name": "Palette Maker",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/palettemaker",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/palettemaker",
 		"link": "https://palettemaker.com/app",
 		"tags": ["Preview"]
 	},
@@ -110,7 +110,7 @@
 		"id": 15,
 		"order": 80,
 		"name": "Randoma11y",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/randoma11y",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/randoma11y",
 		"link": "https://randoma11y.com"
 	},
 	{
@@ -125,7 +125,7 @@
 		"id": 17,
 		"order": 70,
 		"name": "Palette",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/palette",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/palette",
 		"link": "https://palettte.app/"
 	},
 	{
@@ -181,7 +181,7 @@
 		"id": 25,
 		"order": 45,
 		"name": "UI Colors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/uicolors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/uicolors",
 		"link": "https://uicolors.app/create",
 		"tags": ["Preview"]
 	},
@@ -189,7 +189,7 @@
 		"id": 26,
 		"order": 40,
 		"name": "Poline",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/colors/poline",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/poline",
 		"link": "https://meodai.github.io/poline/",
 		"tags": ["Library"]
 	},
@@ -211,21 +211,21 @@
 		"id": 29,
 		"order": 31,
 		"name": "M.D. Palette Generator",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706205935/freesets/colors/h9xk2r0tj0cmem8lrrrq.webp",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/h9xk2r0tj0cmem8lrrrq.webp",
 		"link": "https://materialpalettes.com"
 	},
 	{
 		"id": 30,
 		"order": 26,
 		"name": "Scale",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706205494/freesets/colors/o4mxuxdozuahnutgopw5.webp",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/o4mxuxdozuahnutgopw5.webp",
 		"link": "https://hihayk.github.io/scale/"
 	},
 	{
 		"id": 31,
 		"order": 22,
 		"name": "uiGradients",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203257/freesets/colors/oakf9ule9y1chxb8yatt.webp",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/oakf9ule9y1chxb8yatt.webp",
 		"link": "https://uigradients.com/",
 		"tags": ["Gradients"]
 	},
