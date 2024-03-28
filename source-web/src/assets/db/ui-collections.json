@@ -162,5 +162,54 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/logosystems",
 		"link": "https://logosystem.co/",
 		"tags": ["Logos"]
+	},
+	{
+		"id": 24,
+		"order": 4,
+		"name": "Design Vault",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/designvault",
+		"link": "https://designvault.io/"
+	},
+	{
+		"id": 25,
+		"order": 30,
+		"name": "lookup.design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/lookupdesign",
+		"link": "https://lookup.design/"
+	},
+	{
+		"id": 26,
+		"order": 38,
+		"name": "CallToInspiration",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/calltoinspiration",
+		"link": "https://calltoinspiration.com/"
+	},
+	{
+		"id": 27,
+		"order": 86,
+		"name": "Design Spells",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/designspells",
+		"link": "https://www.designspells.com/"
+	},
+	{
+		"id": 28,
+		"order": 75,
+		"name": "Httpster",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/httpster",
+		"link": "https://httpster.net/"
+	},
+	{
+		"id": 29,
+		"order": 20,
+		"name": "OGimage.gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/ogimage",
+		"link": "https://www.ogimage.gallery/"
+	},
+	{
+		"id": 30,
+		"order": 28,
+		"name": "Siteinspire",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/siteinspire",
+		"link": "https://www.siteinspire.com/"
 	}
 ]
