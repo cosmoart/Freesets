@@ -109,5 +109,62 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/xmqlrpdre5sm4gnly50g",
 		"link": "https://www.onlinewebfonts.com/fonts",
 		"license": "Free with attribution"
+	},
+	{
+		"id": 15,
+		"order": 70,
+		"name": "UNCUT.wtf",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/uncutwtf",
+		"link": "https://uncut.wtf/"
+	},
+	{
+		"id": 16,
+		"order": 20,
+		"name": "Beautiful web type",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/beautifulwebtype",
+		"link": "https://beautifulwebtype.com/",
+		"tags": ["Inspiration"]
+	},
+	{
+		"id": 17,
+		"order": 50,
+		"name": "Font Brief",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/fontbrief",
+		"link": "https://www.fontbrief.com/home",
+		"tags": ["Tool"],
+		"license": "Multiple"
+	},
+	{
+		"id": 18,
+		"order": 10,
+		"name": "Font Pairings",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/fontpairings",
+		"link": "https://fontpairings.bypeople.com/",
+		"license": "Freemium",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 19,
+		"order": 76,
+		"name": "Fonts in the Wild",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/fontsinthewild",
+		"link": "https://www.fontsinthewild.com/free",
+		"license": "Multiple"
+	},
+	{
+		"id": 20,
+		"order": 57,
+		"name": "Archetype",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/archetype",
+		"link": "https://archetypeapp.com/",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 20,
+		"order": 20,
+		"name": "Typescale",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/fonts/typescale",
+		"link": "https://typescale.io/",
+		"tags": ["Plugin"]
 	}
 ]
