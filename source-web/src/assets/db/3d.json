@@ -159,5 +159,37 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/3dexport",
 		"tags": ["Models"],
 		"license": "Multiple"
+	},
+	{
+		"id": 17,
+		"order": 75,
+		"name": "ArtStation Marketplace",
+		"link": "https://www.artstation.com/marketplace/game-dev?section=trending&price_to=0",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/artstation",
+		"license": "Multiple"
+	},
+	{
+		"id": 18,
+		"order": 80,
+		"name": "Sketchfab",
+		"link": "https://sketchfab.com/features/free-3d-models",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/sketchfab",
+		"license": "Multiple"
+	},
+	{
+		"id": 19,
+		"order": 20,
+		"name": "NormalMap-Online",
+		"link": "https://cpetry.github.io/NormalMap-Online/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/normalmap",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 20,
+		"order": 30,
+		"name": "Online 3D Viewer",
+		"link": "https://3dviewer.net/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/3dviewer",
+		"tags": ["Tool"]
 	}
 ]

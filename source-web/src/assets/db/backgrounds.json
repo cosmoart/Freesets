@@ -4,7 +4,8 @@
 		"name": "bg.ibelick",
 		"link": "https://bg.ibelick.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614372/freesets/backgrounds/byn5pbw6ikqp95yyyske.webp",
-		"order": 100
+		"order": 100,
+		"tags": ["Tailwind"]
 	},
 	{
 		"id": 2,
@@ -149,5 +150,34 @@
 		"name": "SVG Patterns",
 		"link": "https://nucleoapp.com/svg-patterns",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg-patterns"
+	},
+	{
+		"id": 18,
+		"order": 67,
+		"name": "Basic Pattern Repository",
+		"link": "https://patterns.helloyes.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternshelloyes",
+		"tags": ["SVG"]
+	},
+	{
+		"id": 19,
+		"order": 78,
+		"name": "fffuel",
+		"link": "https://fffuel.co/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/fffuel"
+	},
+	{
+		"id": 20,
+		"order": 55,
+		"name": "Shape Divider App",
+		"link": "https://www.shapedivider.app",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shapedivider"
+	},
+	{
+		"id": 21,
+		"order": 50,
+		"name": "Tabbied",
+		"link": "https://tabbied.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/tabbied"
 	}
 ]
