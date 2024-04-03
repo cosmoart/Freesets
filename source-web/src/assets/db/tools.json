@@ -153,7 +153,7 @@
 	},
 	{
 		"id": 20,
-		"order": 50,
+		"order": 8,
 		"name": "eraser.io",
 		"link": "https://www.eraser.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/eraser-io",
@@ -161,7 +161,7 @@
 	},
 	{
 		"id": 21,
-		"order": 50,
+		"order": 38,
 		"name": "draw.io",
 		"link": "https://www.draw.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/draw-io",
