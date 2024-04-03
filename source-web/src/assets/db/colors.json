@@ -239,7 +239,7 @@
 	},
 	{
 		"id": 33,
-		"order": 80,
+		"order": 68,
 		"name": "CSS Gradient",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/css-gradient",
 		"link": "https://cssgradient.io",
@@ -259,6 +259,6 @@
 		"name": "Culrs",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/culrs",
 		"link": "https://culrs.com",
-		"tags": ["Color Palettes"]
+		"tags": ["Palettes"]
 	}
 ]
