@@ -236,5 +236,29 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/inspotype",
 		"link": "https://www.inspotype.com",
 		"tags": ["Preview"]
+	},
+	{
+		"id": 33,
+		"order": 68,
+		"name": "CSS Gradient",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/css-gradient",
+		"link": "https://cssgradient.io",
+		"tags": ["Gradients"]
+	},
+	{
+		"id": 34,
+		"order": 65,
+		"name": "Colorable",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorable",
+		"link": "https://colorable.jxnblk.com",
+		"tags": ["Preview"]
+	},
+	{
+		"id": 35,
+		"order": 66,
+		"name": "Culrs",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/culrs",
+		"link": "https://culrs.com",
+		"tags": ["Palettes"]
 	}
 ]
