@@ -211,5 +211,13 @@
 		"name": "Siteinspire",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/siteinspire",
 		"link": "https://www.siteinspire.com/"
+	},
+	{
+		"id": 31,
+		"order": 49,
+		"name": "ArchDaily",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/archdaily",
+		"link": "https://www.archdaily.com/",
+		"tags": ["Architecture"]
 	}
 ]

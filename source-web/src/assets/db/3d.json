@@ -17,7 +17,8 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/itchio",
 		"link": "https://itch.io/game-assets/free",
 		"license": "Multiple",
-		"licenseDescription": "Itchio is a marketplace for indie game developers. Each asset has its own license."
+		"licenseDescription": "Itchio is a marketplace for indie game developers. Each asset has its own license.",
+		"tags": ["Store"]
 	},
 	{
 		"id": 3,
@@ -166,7 +167,8 @@
 		"name": "ArtStation Marketplace",
 		"link": "https://www.artstation.com/marketplace/game-dev?section=trending&price_to=0",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/artstation",
-		"license": "Multiple"
+		"license": "Multiple",
+		"tags": ["Store"]
 	},
 	{
 		"id": 18,
@@ -174,7 +176,8 @@
 		"name": "Sketchfab",
 		"link": "https://sketchfab.com/features/free-3d-models",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/sketchfab",
-		"license": "Multiple"
+		"license": "Multiple",
+		"tags": ["Store"]
 	},
 	{
 		"id": 19,
@@ -191,5 +194,39 @@
 		"link": "https://3dviewer.net/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/3dviewer",
 		"tags": ["Tool"]
+	},
+	{
+		"id": 21,
+		"order": 68,
+		"name": "3dsky",
+		"link": "https://3dsky.org/3dmodels?types=free",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/3dskyorg",
+		"tags": ["Store"]
+	},
+	{
+		"id": 22,
+		"order": 12,
+		"name": "Dimensiva",
+		"link": "https://dimensiva.com/free-3d-models/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/dimensiva",
+		"tags": ["Models"]
+	},
+	{
+		"id": 23,
+		"order": 91,
+		"name": "3D model collection",
+		"link": "https://sketchfab.com/nebulousflynn/collections/cc0-9e9b8c5442ab4b59ba16b6fa5e43b8da",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nebulousflynn",
+		"tags": ["Models", "Heritage", "Models"],
+		"license": "CC0"
+	},
+	{
+		"id": 24,
+		"order": 36,
+		"name": "Blend Swap",
+		"link": "https://www.blendswap.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/blendswap",
+		"tags": ["Models"],
+		"license": "Multiple"
 	}
 ]
