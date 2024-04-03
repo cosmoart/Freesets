@@ -150,5 +150,21 @@
 		"link": "https://readme.so/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/readmeso",
 		"tags": ["Readme generator"]
+	},
+	{
+		"id": 20,
+		"order": 50,
+		"name": "eraser.io",
+		"link": "https://www.eraser.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/eraser-io",
+		"tags": ["Canvas"]
+	},
+	{
+		"id": 21,
+		"order": 50,
+		"name": "draw.io",
+		"link": "https://www.draw.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/draw-io",
+		"tags": ["Flowcharts"]
 	}
 ]

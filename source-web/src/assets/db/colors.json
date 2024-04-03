@@ -236,5 +236,21 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/inspotype",
 		"link": "https://www.inspotype.com",
 		"tags": ["Preview"]
+	},
+	{
+		"id": 33,
+		"order": 80,
+		"name": "CSS Gradient",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/css-gradient",
+		"link": "https://cssgradient.io/",
+		"tags": ["Gradients"]
+	},
+	{
+		"id": 34,
+		"order": 65,
+		"name": "Colorable",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorable",
+		"link": "https://colorable.jxnblk.com/",
+		"tags": ["Preview"]
 	}
 ]
