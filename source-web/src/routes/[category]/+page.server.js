@@ -17,12 +17,15 @@ export async function load ({ params, url }) {
 	if (start >= resources.assets.length) return error(404, 'Not found')
 
 	if (q) {
+		const searchTerms = q.split(' ').map(term => term.toLowerCase()).filter((t) => t)
 		resources = {
 			...resources, assets: resources.assets.filter(resource =>
-				resource.name.toLowerCase().includes(q)
-				|| resource.link.toLowerCase().includes(q)
-				|| resource.license?.toLowerCase().includes(q)
-				|| resource.tags?.some(a => a.toLowerCase().includes(q)))
+				searchTerms.every(searchTerm =>
+					resource.name.toLowerCase().includes(searchTerm)
+					|| resource.link.toLowerCase().includes(searchTerm)
+					|| resource.license?.toLowerCase().includes(searchTerm)
+					|| resource.tags?.some(tag => tag.toLowerCase().includes(searchTerm)))
+			)
 		}
 	}
 

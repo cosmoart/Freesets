@@ -61,26 +61,26 @@
 			{/if}
 			<li>
 				<button
-					class="transition-colors hover:bg-zinc-800 px-3 w-full {$page.url.pathname !== '/'
+					class="group transition-colors hover:bg-zinc-800 px-3 w-full {$page.url.pathname !== '/'
 						? ''
-						: 'rounded-t'} py-1.5 flex gap-2 items-center"
+						: 'rounded-t'} py-1.5 flex items-center"
 					on:click={changueTheme}
 				>
 					<img
 						src={lightModeIcon}
 						alt=""
-						class="w-5 transition-all absolute invert {darkMode
+						class="w-5 group-hover:scale-110 transition-all absolute invert {darkMode
 							? ''
 							: 'opacity-0 scale-0 rotate-90'}"
 					/>
 					<img
 						src={darkModeIcon}
 						alt=""
-						class="w-5 transition-all absolute invert {darkMode
+						class="w-5 group-hover:scale-110 transition-all absolute invert {darkMode
 							? 'opacity-0 scale-0 -rotate-90'
 							: ''}"
 					/>
-					<span class="w-20 ml-6 inline-block">{darkMode ? 'Light mode' : 'Dark mode'}</span>
+					<span class="w-20 ml-7 inline-block">{darkMode ? 'Light mode' : 'Dark mode'}</span>
 				</button>
 			</li>
 			<li>
@@ -88,9 +88,9 @@
 					href="https://github.com/cosmoart/Freesets"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="transition-colors w-full hover:bg-zinc-800 px-3 py-1.5 flex items-center gap-2 rounded-b-md"
+					class="transition-colors group w-full hover:bg-zinc-800 px-3 py-1.5 flex items-center gap-2.5 rounded-b-md"
 				>
-					<img src={starIcon} alt="" class="w-5" />
+					<img src={starIcon} alt="" class="w-5 group-hover:scale-110 transition-transform" />
 					Contribute
 				</a>
 			</li>
@@ -98,8 +98,8 @@
 	</nav>
 
 	<div
-		class="flex justify-end w-9 h-9 relative bg-blue-600 transition-all rounded-md {navOpen
-			? 'rounded-t-none'
+		class="before:rotate-[180deg] before:absolute before:w-3 before:h-3 before:-left-3 before:transition-all before:opacity-0 before:top-2 before:z-10 before:rounded-full before:shadow-[-0.5rem_0.5rem_#faf5ff] dark:before:shadow-[-0.5rem_0.5rem_#2563eb] before:rounded-br flexjustify-end w-9 h-9 relative bg-blue-600 transition-all rounded-md {navOpen
+			? 'rounded-t-none before:!top-0 before:opacity-100'
 			: ''} ml-auto group"
 	>
 		<input type="checkbox" bind:checked={navOpen} id="nav-toggle" class="cursor-pointer hidden" />
