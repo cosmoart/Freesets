@@ -42,7 +42,7 @@
 	{
 		"id": 6,
 		"order": 87,
-		"name": "Huetools",
+		"name": "hue.tools",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huetools",
 		"link": "https://hue.tools/"
 	},

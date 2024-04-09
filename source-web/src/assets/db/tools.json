@@ -166,5 +166,13 @@
 		"link": "https://www.draw.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/draw-io",
 		"tags": ["Flowcharts"]
+	},
+	{
+		"id": 22,
+		"order": 41,
+		"name": "SVGOMG",
+		"link": "https://svgomg.net/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/svgomg",
+		"tags": ["SVG optimizer"]
 	}
 ]
