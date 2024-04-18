@@ -10,7 +10,7 @@
 
 {#each assets as asset}
 	<article
-		class="asset-card group transition-all rounded-lg ring-zinc-700 ring-2 hover:ring-[--card-color] dark:bg-zinc-800 bg-purple-50 dark:text-white overflow-hidden"
+		class="asset-card group transition-all rounded-lg ring-zinc-700 ring-2 hover:ring-[--card-color] dark:text-white overflow-hidden"
 		style="--card-color: {data.color}"
 	>
 		<div class="relative">
@@ -23,7 +23,7 @@
 				<Image
 					src={asset.img}
 					alt={asset.name + ' web preview'}
-					className="aspect-video object-cover lazyImg inline-block w-full"
+					className="aspect-video object-cover duration-300 group-hover:scale-[1.03] -z-10 transition-transform lazyImg inline-block w-full"
 					height="216"
 					width="384"
 				/>
@@ -50,7 +50,10 @@
 				</ul>
 			{/if}
 		</div>
-		<div class="p-5 flex flex-wrap justify-between items-center relative">
+
+		<div
+			class="p-5 dark:bg-zinc-800 bg-purple-50 flex flex-wrap justify-between items-center relative"
+		>
 			<div class="relative">
 				<a href={asset.link} target="_blank" rel="noopener noreferrer nofollow">
 					<h3 class="text-xl hover:underline text-zinc-950 dark:text-white">
@@ -59,7 +62,7 @@
 					<img
 						src={externalIcon}
 						alt=""
-						class="absolute w-5 invert dark:invert-0 -right-3 top-0 bottom-0 m-auto opacity-0 group-hover:opacity-100 transition-all group-hover:-right-6"
+						class="absolute w-[22px] invert dark:invert-0 -right-3 top-0 bottom-0 m-auto opacity-0 group-hover:opacity-100 transition-all group-hover:-right-7"
 					/>
 				</a>
 			</div>

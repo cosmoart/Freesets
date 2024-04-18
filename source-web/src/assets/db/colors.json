@@ -260,5 +260,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/culrs",
 		"link": "https://culrs.com",
 		"tags": ["Palettes"]
+	},
+	{
+		"id": 36,
+		"order": 51,
+		"name": "Cool Contrast",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolcontrast",
+		"link": "https://coolcontrast.vercel.app/",
+		"tags": ["Preview", "Contrast"]
 	}
 ]

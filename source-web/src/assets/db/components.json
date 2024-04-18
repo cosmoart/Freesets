@@ -39,7 +39,7 @@
 	},
 	{
 		"id": 5,
-		"order": 90,
+		"order": 85,
 		"name": "Tailblocks",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703009391/freesets/components/tailblocks.cc__D-720_rg8avy.webp",
 		"link": "https://tailblocks.cc",
@@ -49,7 +49,7 @@
 	},
 	{
 		"id": 6,
-		"order": 90,
+		"order": 92,
 		"name": "Component Gallery",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707070156/freesets/components/lom1hgu83gzrtsetjbq3.webp",
 		"link": "https://component.gallery/components/"
@@ -519,5 +519,21 @@
 		"link": "https://drams.framer.website",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/drams",
 		"tags": ["Framer"]
+	},
+	{
+		"id": 57,
+		"order": 39,
+		"name": "enhanced-button",
+		"link": "https://enhanced-button.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/enhanced-button",
+		"tags": ["Buttons"]
+	},
+	{
+		"id": 58,
+		"order": 29,
+		"name": "Variant Vault",
+		"link": "https://variantvault.chrisabdo.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/variantvault",
+		"tags": ["Animations", "Framer"]
 	}
 ]
