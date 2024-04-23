@@ -268,5 +268,20 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolcontrast",
 		"link": "https://coolcontrast.vercel.app/",
 		"tags": ["Preview", "Contrast"]
+	},
+	{
+		"id": 37,
+		"order": 90,
+		"name": "ColorBeta",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbeta",
+		"link": "https://colorbeta.com/",
+		"tags": ["Gradients"]
+	},
+	{
+		"id": 38,
+		"order": 20,
+		"name": "ColorHexa",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorhexa",
+		"link": "https://www.colorhexa.com/"
 	}
 ]

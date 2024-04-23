@@ -179,5 +179,12 @@
 		"name": "Tabbied",
 		"link": "https://tabbied.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/tabbied"
+	},{
+		"id": 22,
+		"order": 95,
+		"name": "ColorBeta",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbeta",
+		"link": "https://colorbeta.com/",
+		"tags": ["Gradients"]
 	}
 ]
