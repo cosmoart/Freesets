@@ -1,5 +1,5 @@
 import iconsDB from '@/assets/db/icons.json'
-import ilustrationsDB from '@/assets/db/ilustrations.json'
+import illustrationsDB from '@/assets/db/illustrations.json'
 import photosDB from '@/assets/db/photos.json'
 import videosDB from '@/assets/db/videos.json'
 import colorsDB from '@/assets/db/colors.json'
@@ -20,10 +20,10 @@ export default [
 		assets: iconsDB.sort((a, b) => b.order - a.order)
 	},
 	{
-		name: 'Ilustrations',
+		name: 'Illustrations',
 		color: '#20c928',
-		nameID: 'ilustrations',
-		assets: ilustrationsDB.sort((a, b) => b.order - a.order)
+		nameID: 'illustrations',
+		assets: illustrationsDB.sort((a, b) => b.order - a.order)
 	},
 	{
 		name: 'Photos',

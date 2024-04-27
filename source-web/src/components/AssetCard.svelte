@@ -69,23 +69,40 @@
 
 			{#if asset.license}
 				<div class="group/license relative">
-					<a
-						class="bg-blue-700 transition-all hover:scale-105 inline-block px-2 py-1 rounded-md text-[13px] tracking-wide"
-						target="_blank"
-						rel="noopener noreferrer nofollow"
-						href={asset.licenseLink || asset.link}
-					>
-						{#if asset.licenseDescription}
-							<img
-								src={infoIcon}
-								alt=""
-								width="16"
-								height="16"
-								class="w-4 inline-block mr-.5 mb-0.5"
-							/>
-						{/if}
-						{asset.license}
-					</a>
+					{#if asset.licenceLink}
+						<a
+							class="bg-blue-700 transition-all hover:scale-105 inline-block px-2 py-1 rounded-md text-[13px] tracking-wide"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							href={asset.licenseLink || asset.link}
+						>
+							{#if asset.licenseDescription}
+								<img
+									src={infoIcon}
+									alt=""
+									width="16"
+									height="16"
+									class="w-4 inline-block mr-.5 mb-0.5"
+								/>
+							{/if}
+							{asset.license}
+						</a>
+					{:else}
+						<div
+							class="bg-blue-700 transition-all inline-block px-2 py-1 rounded-md text-[13px] tracking-wide"
+						>
+							{#if asset.licenseDescription}
+								<img
+									src={infoIcon}
+									alt=""
+									width="16"
+									height="16"
+									class="w-4 inline-block mr-.5 mb-0.5"
+								/>
+							{/if}
+							{asset.license}
+						</div>
+					{/if}
 
 					{#if asset.licenseDescription}
 						<p
