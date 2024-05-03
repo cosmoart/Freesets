@@ -148,7 +148,7 @@
 	},
 	{
 		"id": 17,
-		"order": 70,
+		"order": 57,
 		"name": "Shapes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704587990/freesets/illustrations/mezhdpcgrgwri14okctx.webp",
 		"link": "https://shapes.framer.website"
@@ -535,5 +535,21 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/kapwing404",
 		"link": "https://www.kapwing.com/404-illustrations",
 		"tags": ["404"]
+	},
+	{
+		"id": 62,
+		"order": 79,
+		"name": "coolshapes",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
+		"link": "https://coolshap.es/"
+	},
+	{
+		"id": 63,
+		"order": 39,
+		"name": "uilogos",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/uilogos",
+		"link": "https://www.uilogos.co/",
+		"license": "CC BY 4.0",
+		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md"
 	}
 ]

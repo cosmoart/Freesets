@@ -167,5 +167,25 @@
 		"link": "https://openverse.org",
 		"license": "CC",
 		"licenseLink": "https://openverse.org"
+	},
+	{
+		"id": 19,
+		"order": 85,
+		"name": "Lummi Photos",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/lummi",
+		"link": "https://www.lummi.ai/",
+		"license": "Free",
+		"licenseLink": "https://www.lummi.ai/terms",
+		"tags": ["AI"]
+	},
+	{
+		"id": 20,
+		"order": 83,
+		"name": "Neurascapes",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/neurascapes",
+		"link": "https://www.neurascapes.com",
+		"license": "Free",
+		"licenseLink": "https://www.neurascapes.com/license",
+		"tags": ["AI"]
 	}
 ]

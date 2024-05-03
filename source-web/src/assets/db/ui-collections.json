@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"order": 100,
+		"order": 80,
 		"name": "Curated Design",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/curated-design",
 		"link": "https://www.curated.design"
@@ -219,5 +219,41 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/archdaily",
 		"link": "https://www.archdaily.com/",
 		"tags": ["Architecture"]
+	},
+	{
+		"id": 32,
+		"order": 32,
+		"name": "Site of Sites",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/siteofsites",
+		"link": "https://www.siteofsites.co/"
+	},
+	{
+		"id": 33,
+		"order": 45,
+		"name": "LogoFav",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/logofav",
+		"link": "https://www.logofav.com/"
+	},
+	{
+		"id": 34,
+		"order": 30,
+		"name": "Dead Simple Sites",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/deadsimplesites",
+		"link": "https://deadsimplesites.com/"
+	},
+	{
+		"id": 35,
+		"order": 85,
+		"name": "Wall of Portfolios",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/wallofportfolios",
+		"link": "https://www.wallofportfolios.in/"
+	},
+	{
+		"id": 36,
+		"order": 52,
+		"name": "Footer",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/footer",
+		"link": "https://www.footer.design/",
+		"tags": ["Footers"]
 	}
 ]
