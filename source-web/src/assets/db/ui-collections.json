@@ -255,5 +255,36 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/footer",
 		"link": "https://www.footer.design/",
 		"tags": ["Footers"]
+	},
+	{
+		"id": 37,
+		"order": 55,
+		"name": "Prettyfolio",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/prettyfolio",
+		"link": "https://www.prettyfolio.com/",
+		"tags": ["Portfolios"]
+	},
+	{
+		"id": 38,
+		"order": 48,
+		"name": "illustrations universe",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/illustrationsuniverse",
+		"link": "https://illustrationsuniverse.com/",
+		"tags": ["Illustrations"]
+	},
+	{
+		"id": 39,
+		"order": 61,
+		"name": "Design Everywhere",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/designeverywhere",
+		"link": "https://designeverywhere.co/",
+		"tags": ["Products"]
+	},
+	{
+		"id": 40,
+		"order": 80,
+		"name": "HUDS+GUIS",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/hudsandguis",
+		"link": "https://www.hudsandguis.com"
 	}
 ]

@@ -589,5 +589,15 @@
 		"license": "Freemium",
 		"licenseLink": "https://iconscout.com/pricing",
 		"tags": ["Package"]
+	},
+	{
+		"id": 63,
+		"order": 78,
+		"name": "Mage Icons",
+		"link": "https://mageicons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/mageicons",
+		"license": "Apache 2.0",
+		"licenseLink": "https://github.com/Mage-Icons/mage-icons/blob/main/License.txt",
+		"tags": ["Package"]
 	}
 ]

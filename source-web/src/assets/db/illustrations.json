@@ -541,7 +541,8 @@
 		"order": 79,
 		"name": "coolshapes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
-		"link": "https://coolshap.es/"
+		"link": "https://coolshap.es/",
+		"tags": ["Package"]
 	},
 	{
 		"id": 63,
@@ -551,5 +552,13 @@
 		"link": "https://www.uilogos.co/",
 		"license": "CC BY 4.0",
 		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md"
+	},
+	{
+		"id": 64,
+		"order": 39,
+		"name": "illustrations universe",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/illustrationsuniverse",
+		"link": "https://illustrationsuniverse.com/",
+		"tags": ["Inspiration"]
 	}
 ]
