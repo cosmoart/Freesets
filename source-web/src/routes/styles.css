@@ -24,6 +24,7 @@
 	scroll-behavior: smooth;
 	font-family: 'Gabarito', sans-serif;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	font-display: swap;
 }
 
 :root.dark {
@@ -43,6 +44,7 @@
 		scale: 100%;
 	}
 }
+
 .asset-card {
 	view-timeline: --assetCards block;
 	animation-timeline: --assetCards;

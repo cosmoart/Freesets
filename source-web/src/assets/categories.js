@@ -4,12 +4,12 @@ import photosDB from '@/assets/db/photos.json'
 import videosDB from '@/assets/db/videos.json'
 import colorsDB from '@/assets/db/colors.json'
 import backgroundsDB from '@/assets/db/backgrounds.json'
-import fontsDB from '@/assets/db/fonts.json'
+import typographyDB from '@/assets/db/typography.json'
 import threeDB from '@/assets/db/3d.json'
 import librariesDB from '@/assets/db/libraries.json'
 import blogsDB from '@/assets/db/blogs.json'
 import toolsDB from '@/assets/db/tools.json'
-import UICollectionsDB from '@/assets/db/ui-collections.json'
+import inspirationsDB from '@/assets/db/inspirations.json'
 import componentsDB from '@/assets/db/components.json'
 
 export default [
@@ -33,31 +33,31 @@ export default [
 	},
 	{
 		name: 'Videos',
-		color: '#e11d48',
+		color: '#ef2350',
 		nameID: 'videos',
 		assets: videosDB.sort((a, b) => b.order - a.order)
 	},
 	{
 		name: 'Colors',
-		color: '#fd1793',
+		color: '#ff36a2',
 		nameID: 'colors',
 		assets: colorsDB.sort((a, b) => b.order - a.order)
 	},
 	{
 		name: 'Backgrounds',
-		color: '#4c3fed',
+		color: '#5345f7',
 		nameID: 'backgrounds',
 		assets: backgroundsDB.sort((a, b) => b.order - a.order)
 	},
 	{
-		name: 'Fonts',
+		name: 'Typography',
 		color: '#ffaa1b',
-		nameID: 'fonts',
-		assets: fontsDB.sort((a, b) => b.order - a.order)
+		nameID: 'typography',
+		assets: typographyDB.sort((a, b) => b.order - a.order)
 	},
 	{
 		name: '3D',
-		color: '#8338ec',
+		color: '#8935ff',
 		nameID: '3d',
 		assets: threeDB.sort((a, b) => b.order - a.order)
 	},
@@ -80,14 +80,14 @@ export default [
 		assets: toolsDB.sort((a, b) => b.order - a.order)
 	},
 	{
-		name: 'UI collections',
+		name: 'Inspirations',
 		color: '#6366f1',
-		nameID: 'ui-collections',
-		assets: UICollectionsDB.sort((a, b) => b.order - a.order)
+		nameID: 'inspirations',
+		assets: inspirationsDB.sort((a, b) => b.order - a.order)
 	},
 	{
 		name: 'Components',
-		color: '#13c153',
+		color: '#21c95f',
 		nameID: 'components',
 		assets: componentsDB.sort((a, b) => b.order - a.order)
 	}

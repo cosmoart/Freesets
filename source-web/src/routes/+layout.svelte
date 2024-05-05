@@ -17,7 +17,7 @@
 	});
 </script>
 
-<div class="app flex-1 flex flex-col p-6 md:px-10 max-w-[95rem] mx-auto min-h-screen">
+<div class="app flex flex-col p-6 md:px-10 max-w-[95rem] mx-auto min-h-dvh">
 	<div
 		class="bg-dots [view-transition-name:bgDots] invert dark:invert-0 fixed opacity-10 inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
 	/>

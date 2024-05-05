@@ -69,12 +69,12 @@
 
 			{#if asset.license}
 				<div class="group/license relative">
-					{#if asset.licenceLink}
+					{#if asset.licenseLink}
 						<a
 							class="bg-blue-700 transition-all hover:scale-105 inline-block px-2 py-1 rounded-md text-[13px] tracking-wide"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
-							href={asset.licenseLink || asset.link}
+							href={asset.licenseLink}
 						>
 							{#if asset.licenseDescription}
 								<img
