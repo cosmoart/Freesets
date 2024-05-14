@@ -24,7 +24,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --no-progress '.github/output.md' --exclude-mail --exclude 'https://pixabay.com/*' --exclude 'https://www.pexels.com/*' --exclude 'https://svgl.vercel.app/' --exclude "https://help.videvo.net/*" --exclude 'https://remixicon.com/license' --exclude 'flaticon.com/*' --exclude 'https://www.artstation.com/' --exclude 'https://archetypeapp.com' --exclude 'https://github.com/chakra-ui/ark/*'
+          args: --no-progress '.github/output.md' --exclude-mail --exclude 'https://pixabay.com/*' --exclude 'https://www.pexels.com/*' --exclude 'https://svgl.vercel.app/' --exclude "https://help.videvo.net/*" --exclude 'https://remixicon.com/license' --exclude 'flaticon.com/*' --exclude 'https://www.artstation.com/' --exclude 'https://archetypeapp.com' --exclude 'https://github.com/chakra-ui/ark/*' --exclude 'https://medium.com'
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
