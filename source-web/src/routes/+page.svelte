@@ -13,6 +13,7 @@
 	<meta name="author" content="Cosmo" />
 	<meta name="description" content={description} />
 	<meta name="view-transition" content="same-origin" />
+	<link rel="canonical" href="https://freesets.vercel.app" />
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="Freesets" />
