@@ -157,11 +157,10 @@
 	},
 	{
 		"id": 23,
-		"order": 84,
-		"name": "Logo System",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logosystems",
-		"link": "https://logosystem.co/",
-		"tags": ["Logos"]
+		"order": 80,
+		"name": "HUDS+GUIS",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hudsandguis",
+		"link": "https://www.hudsandguis.com"
 	},
 	{
 		"id": 24,
@@ -279,12 +278,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designeverywhere",
 		"link": "https://designeverywhere.co/",
 		"tags": ["Products"]
-	},
-	{
-		"id": 40,
-		"order": 80,
-		"name": "HUDS+GUIS",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hudsandguis",
-		"link": "https://www.hudsandguis.com"
 	}
 ]
