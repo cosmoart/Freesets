@@ -278,5 +278,12 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designeverywhere",
 		"link": "https://designeverywhere.co/",
 		"tags": ["Products"]
+	},
+	{
+		"id": 40,
+		"order": 78,
+		"name": "Browsing Mode",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/browsingmode",
+		"link": "https://browsingmode.com/"
 	}
 ]

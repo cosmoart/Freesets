@@ -142,7 +142,7 @@
 	},
 	{
 		"id": 16,
-		"order": 8,
+		"order": 18,
 		"name": "Picjumbo",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/picjumbo",
 		"link": "https://picjumbo.com/",
@@ -187,5 +187,14 @@
 		"license": "Free",
 		"licenseLink": "https://www.neurascapes.com/license",
 		"tags": ["AI"]
+	},
+	{
+		"id": 21,
+		"order": 26,
+		"name": "Skitterphoto",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/skitterphoto",
+		"link": "https://skitterphoto.com",
+		"license": "CC0",
+		"licenseLink": "https://skitterphoto.com/license"
 	}
 ]
