@@ -283,5 +283,13 @@
 		"name": "ColorHexa",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorhexa",
 		"link": "https://www.colorhexa.com/"
+	},
+	{
+		"id": 39,
+		"order": 74,
+		"name": "ColorMagic",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormagic",
+		"link": "https://colormagic.app/",
+		"tags": ["Generator", "AI"]
 	}
 ]

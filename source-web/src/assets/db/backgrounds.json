@@ -197,5 +197,13 @@
 		"tags": ["Gradients", "Package"],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/firecmsco/neat/blob/main/LICENSE"
+	},
+	{
+		"id": 24,
+		"order": 85,
+		"name": "Gradienty",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradienty",
+		"link": "https://gradienty.codes/",
+		"tags": ["Tailwind"]
 	}
 ]

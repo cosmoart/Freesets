@@ -166,5 +166,12 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/typescale",
 		"link": "https://typescale.io/",
 		"tags": ["Plugin"]
+	},
+	{
+		"id": 22,
+		"order": 20,
+		"name": "Font.Download",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontdownload",
+		"link": "https://font.download/"
 	}
 ]
