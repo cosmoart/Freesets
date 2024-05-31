@@ -5,7 +5,7 @@
 		"name": "shadcn/ui",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn",
 		"link": "https://ui.shadcn.com",
-		"tags": ["React", "Tailwind", "Copy"],
+		"tags": ["React", "Tailwind"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md"
 	},
@@ -35,7 +35,7 @@
 		"name": "Float UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704376726/freesets/components/ztoak6hgzaj7oy0unfsh.webp",
 		"link": "https://floatui.com",
-		"tags": ["Tailwind", "Frameworks"]
+		"tags": ["Tailwind", "React", "Vue", "Svelte", "HTML", "Alpine"]
 	},
 	{
 		"id": 5,
@@ -100,7 +100,7 @@
 		"name": "Preline UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703601910/freesets/components/dr99a9rkspjafbrqb3bp.webp",
 		"link": "https://preline.co/",
-		"tags": ["Tailwind"],
+		"tags": ["Tailwind", "HTML", "React", "Vue"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/htmlstreamofficial/preline?tab=readme-ov-file#license"
 	},
@@ -110,7 +110,7 @@
 		"name": "HyperUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703555425/freesets/components/qij8gxukb0qgx73keqet.webp",
 		"link": "https://www.hyperui.dev",
-		"tags": ["Tailwind"],
+		"tags": ["Tailwind", "HTML"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/markmead/hyperui/blob/main/LICENSE"
 	},
@@ -128,7 +128,7 @@
 		"name": "Shadcn for Vue",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705070886/freesets/components/tq8verdcllyichpzjuzx.webp",
 		"link": "https://www.shadcn-vue.com",
-		"tags": ["Vue", "Copy", "Tailwind"],
+		"tags": ["Vue", "Tailwind"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/radix-vue/shadcn-vue/blob/dev/LICENSE"
 	},
@@ -138,7 +138,7 @@
 		"name": "daisyUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385880/freesets/components/rww2uufklcug7afxcilt.webp",
 		"link": "https://daisyui.com",
-		"tags": ["Tailwind"]
+		"tags": ["Tailwind", "HTML"]
 	},
 	{
 		"id": 16,
@@ -146,7 +146,7 @@
 		"name": "Windstatic",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460628/freesets/components/ospblbgczbwzq0xc40mf.webp",
 		"link": "https://windstatic.com",
-		"tags": ["Tailwind", "AlpineJS"]
+		"tags": ["Tailwind", "Alpine"]
 	},
 	{
 		"id": 17,
@@ -173,7 +173,7 @@
 		"name": "Material Tailwind",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703613034/freesets/components/valpasgzusvtdj2x0h55.webp",
 		"link": "https://www.material-tailwind.com",
-		"tags": ["Frameworks", "Tailwind"],
+		"tags": ["React", "HTML", "Remix", "Gatsby", "Tailwind"],
 		"license": "Freemium",
 		"licenseLink": "https://www.material-tailwind.com/blocks#pricing"
 	},
@@ -193,7 +193,7 @@
 		"name": "Park UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704376342/freesets/components/zzrebeofyyv25lnhkein.webp",
 		"link": "https://park-ui.com",
-		"tags": ["Frameworks"],
+		"tags": ["React", "Vue", "Solid", "Panda", "Tailwind"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/cschroeter/park-ui/blob/main/LICENSE"
 	},
@@ -241,7 +241,7 @@
 		"name": "Chart.js",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/chart.js",
 		"link": "https://www.chartjs.org",
-		"tags": ["Chart", "Frameworks"],
+		"tags": ["Chart", "React", "Vue", "Svelte", "Angular"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/chartjs/Chart.js/blob/master/LICENSE.md"
 	},
@@ -261,7 +261,7 @@
 		"name": "Aceternity UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703456555/freesets/components/puf7ov5ywajnsdircxmo.webp",
 		"link": "https://ui.aceternity.com",
-		"tags": ["Frameworks"]
+		"tags": ["React", "Tailwind", "Motion"]
 	},
 	{
 		"id": 29,
@@ -269,7 +269,7 @@
 		"name": "LayerChart",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614228/freesets/components/jz7h94o3obh4l7lxsz2w.webp",
 		"link": "https://www.layerchart.com",
-		"tags": ["Svelte"],
+		"tags": ["Svelte", "Chart"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/techniq/layerchart/blob/main/LICENSE"
 	},
@@ -323,7 +323,7 @@
 		"name": "Zag",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703612418/freesets/components/elhlvbikjnovlf4yrq49.webp",
 		"link": "https://zagjs.com",
-		"tags": ["Frameworks"],
+		"tags": ["React", "Vue", "Solid"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/chakra-ui/zag/blob/main/LICENSE"
 	},
@@ -378,7 +378,7 @@
 		"name": "LoaderShip",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069281/freesets/components/tgovgqfcvl1snnisibtd.webp",
 		"link": "https://www.loadership.com",
-		"tags": ["Loaders"]
+		"tags": ["Loaders", "HTML"]
 	},
 	{
 		"id": 42,
@@ -406,7 +406,7 @@
 		"name": "Toggles",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/toggles",
 		"link": "https://toggles.dev",
-		"tags": ["Toggles"],
+		"tags": ["Toggles", "HTML"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/AlfieJones/theme-toggles/blob/main/LICENSE"
 	},
@@ -416,7 +416,7 @@
 		"name": "tailwindUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703601630/freesets/components/ewiat7s397akwrcaxd2f.webp",
 		"link": "https://tailwindui.com",
-		"tags": ["Tailwind", "Frameworks"],
+		"tags": ["Tailwind", "HTML", "React", "Vue"],
 		"license": "Freemium"
 	},
 	{
@@ -465,7 +465,7 @@
 		"name": "React Responsive Pagination",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703456826/freesets/components/y9vgyzcmtlkzo1jqicxh.webp",
 		"link": "https://react-responsive-pagination.elantha.com",
-		"tags": ["Pagination"]
+		"tags": ["Pagination", "React"]
 	},
 	{
 		"id": 51,
@@ -535,5 +535,21 @@
 		"link": "https://variantvault.chrisabdo.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/variantvault",
 		"tags": ["Animations", "Framer"]
+	},
+	{
+		"id": 59,
+		"order": 44,
+		"name": "PrimeReact",
+		"link": "https://primereact.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/primereact",
+		"tags": ["React"]
+	},
+	{
+		"id": 60,
+		"order": 29,
+		"name": "cult/ui",
+		"link": "https://www.cult-ui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cultui",
+		"tags": ["Tailwind", "React"]
 	}
 ]
