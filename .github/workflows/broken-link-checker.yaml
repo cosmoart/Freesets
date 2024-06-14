@@ -24,7 +24,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --no-progress '.github/output.md' --exclude-mail'
+          args: --no-progress '.github/output.md' --exclude-mail
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
