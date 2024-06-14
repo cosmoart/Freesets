@@ -15,10 +15,12 @@
 	},
 	{
 		"id": 3,
-		"order": 95,
+		"order": 78,
 		"name": "Laand-book",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/land-book",
-		"link": "https://land-book.com"
+		"link": "https://land-book.com",
+		"licence": "Freemium",
+		"licenceLink": "https://land-book.com/pro"
 	},
 	{
 		"id": 4,
