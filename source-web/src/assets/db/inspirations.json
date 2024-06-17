@@ -287,5 +287,12 @@
 		"name": "Browsing Mode",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/browsingmode",
 		"link": "https://browsingmode.com/"
+	},
+	{
+		"id": 41,
+		"order": 46,
+		"name": "App Motion",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/appmotion",
+		"link": "https://appmotion.design/"
 	}
 ]

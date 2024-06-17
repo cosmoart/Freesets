@@ -154,5 +154,13 @@
 		"name": "Delba Blog",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/chfpxvalueckpy8uhahk.webp",
 		"link": "https://delba.dev/blog"
+	},
+	{
+		"id": 21,
+		"order": 76,
+		"name": "Zajno Digital Studio",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/motionzajno.webp",
+		"link": "https://motion.zajno.com/",
+		"tags": ["Animation", "Design"]
 	}
 ]

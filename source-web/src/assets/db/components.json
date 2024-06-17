@@ -551,5 +551,23 @@
 		"link": "https://www.cult-ui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cultui",
 		"tags": ["Tailwind", "React"]
+	},
+	{
+		"id": 61,
+		"order": 89,
+		"name": "Magic UI",
+		"link": "https://magicui.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/magicui",
+		"tags": ["Tailwind", "React", "Typescript", "Framer"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/magicuidesign/magicui/blob/main/LICENSE.md"
+	},
+	{
+		"id": 62,
+		"order": 23,
+		"name": "AnimatiSS",
+		"link": "https://xsgames.co/animatiss/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/animatiss",
+		"tags": ["Animations", "CSS"]
 	}
 ]

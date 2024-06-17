@@ -227,5 +227,35 @@
 		"tags": ["Parallax"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/jonathandion/mono/blob/main/LICENSE"
+	},
+	{
+		"id": 26,
+		"order": 43,
+		"name": "swup",
+		"link": "https://swup.js.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/swup",
+		"tags": ["Transitions for server-rendered pages"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/swup/swup/blob/master/LICENSE"
+	},
+	{
+		"id": 27,
+		"order": 33,
+		"name": "React Google Maps",
+		"link": "https://visgl.github.io/react-google-maps/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-google-maps",
+		"license": "MIT",
+		"licenseLink": "https://github.com/visgl/react-google-maps/blob/main/LICENSE.md",
+		"tags": ["Maps"]
+	},
+	{
+		"id": 28,
+		"order": 13,
+		"name": "Mapbox",
+		"link": "https://www.mapbox.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapbox",
+		"tags": ["Maps"],
+		"license": "Freemium",
+		"licenseLink": "https://www.mapbox.com/pricing"
 	}
 ]

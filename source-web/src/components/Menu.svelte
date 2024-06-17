@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 
+	import coffeIcon from '@/assets/icons/coffee.svg';
 	import darkModeIcon from '@/assets/icons/darkmode.svg';
 	import lightModeIcon from '@/assets/icons/lightmode.svg';
 	import starIcon from '@/assets/icons/star.svg';
@@ -26,7 +27,7 @@
 
 <div class="[view-transition-name:menu] fixed bottom-5 right-5 z-50">
 	<nav
-		class="bg-blue-600 rounded-md rounded-br-none transition-all p-2 {navOpen
+		class="bg-blue-600 rounded-md rounded-br-none transition-all p-2.5 {navOpen
 			? 'opacity-100 translate-y-0'
 			: 'opacity-0 translate-y-4 pointer-events-none'}"
 	>
@@ -43,12 +44,12 @@
 								name="q"
 								value={q}
 								placeholder="Search..."
-								class="rounded-t px-3 w-44 py-1"
+								class="rounded-t px-3.5 py-2 max-w-48 focus:outline-none"
 							/>
 							<button
 								type="submit"
 								aria-label="Search"
-								class="group transition-colors p-1.5 right-0 rounded-r-md absolute"
+								class="group transition-colors p-1.5 right-1 rounded-r-md absolute top-0 bottom-0"
 							>
 								<img
 									src={searchIcon}
@@ -62,9 +63,9 @@
 			{/if}
 			<li>
 				<button
-					class="group transition-colors hover:bg-zinc-800 px-3 w-full {$page.url.pathname !== '/'
+					class="group transition-colors hover:bg-zinc-800 px-3.5 w-full {$page.url.pathname !== '/'
 						? ''
-						: 'rounded-t'} py-1.5 flex items-center"
+						: 'rounded-t'} py-2 flex items-center"
 					on:click={changueTheme}
 				>
 					<img
@@ -89,7 +90,7 @@
 					href="https://github.com/cosmoart/Freesets"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="transition-colors group w-full hover:bg-zinc-800 px-3 py-1.5 flex items-center gap-2.5 rounded-b-md"
+					class="transition-colors group w-full hover:bg-zinc-800 px-3.5 py-2 flex items-center gap-2.5"
 				>
 					<img
 						src={externalLinkIcon}
@@ -102,6 +103,21 @@
 						class="w-5 group-hover:scale-110 opacity-100 group-hover:opacity-0 transition-all"
 					/>
 					Contribute
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://buymeacoffee.com/cosmoart"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group hover:bg-[#FFDD00] w-full px-3.5 hover:text-slate-900 transition-all py-2 flex items-center gap-2.5 rounded-b-md"
+				>
+					<img
+						src={coffeIcon}
+						alt=""
+						class="w-5 invert group-hover:invert-0 group-hover:scale-110 transition-transform"
+					/>
+					Buy me a coffee
 				</a>
 			</li>
 		</ul>
