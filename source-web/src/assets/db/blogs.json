@@ -44,7 +44,7 @@
 		"name": "Not a Number",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/nan",
 		"link": "https://www.nan.fyi",
-		"tags": ["Animations", "svg"]
+		"tags": ["Animation", "svg"]
 	},
 	{
 		"id": 7,
@@ -162,5 +162,21 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/motionzajno.webp",
 		"link": "https://motion.zajno.com/",
 		"tags": ["Animation", "Design"]
+	},
+	{
+		"id": 22,
+		"order": 75,
+		"name": "Emil Kowalski",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/milkowalski",
+		"link": "https://emilkowal.ski/",
+		"tags": ["Animation", "Design"]
+	},
+	{
+		"id": 23,
+		"order": 95,
+		"name": "Codrops",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
+		"link": "https://tympanus.net/codrops/demos/",
+		"tags": ["Three.js", "Webgl"]
 	}
 ]

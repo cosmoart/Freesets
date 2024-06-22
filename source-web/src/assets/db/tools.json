@@ -174,5 +174,15 @@
 		"link": "https://svgomg.net/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/svgomg",
 		"tags": ["SVG optimizer"]
+	},
+	{
+		"id": 23,
+		"order": 35,
+		"name": "Freeter",
+		"link": "https://freeter.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/freeter",
+		"tags": ["Organizer"],
+		"license": "GPL-3.0",
+		"licenseLink": "https://github.com/FreeterApp/Freeter/blob/master/COPYING"
 	}
 ]

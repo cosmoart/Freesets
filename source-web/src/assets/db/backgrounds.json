@@ -205,5 +205,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradienty",
 		"link": "https://gradienty.codes/",
 		"tags": ["Tailwind"]
+	},
+	{
+		"id": 25,
+		"order": 78,
+		"name": "Magic UI",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/magicui",
+		"link": "https://magicui.design/docs/components/animated-grid-pattern",
+		"tags": ["Tailwind"]
 	}
 ]

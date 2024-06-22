@@ -257,5 +257,25 @@
 		"tags": ["Maps"],
 		"license": "Freemium",
 		"licenseLink": "https://www.mapbox.com/pricing"
+	},
+	{
+		"id": 29,
+		"order": 28,
+		"name": "Draggable JS",
+		"link": "https://shopify.github.io/draggable/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/draggable",
+		"tags": ["Drag and drop"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/Shopify/shopify.github.com/blob/main/LICENSE.md"
+	},
+	{
+		"id": 30,
+		"order": 20,
+		"name": "ipad-cursor",
+		"link": "https://cursor.oooo.so/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/cursoroooo",
+		"tags": ["iPad's mouse effect"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/CatsJuice/ipad-cursor/blob/main/LICENSE"
 	}
 ]
