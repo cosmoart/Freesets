@@ -277,5 +277,25 @@
 		"tags": ["iPad's mouse effect"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/CatsJuice/ipad-cursor/blob/main/LICENSE"
+	},
+	{
+		"id": 31,
+		"order": 54,
+		"name": "PDFSlick",
+		"link": "https://pdfslick.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/pdfslick",
+		"tags": ["View and Interact with PDFs"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/pdfslick/pdfslick/blob/main/LICENSE"
+	},
+	{
+		"id": 32,
+		"order": 47,
+		"name": "Swiper",
+		"link": "https://swiperjs.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/swiperjs",
+		"tags": ["Sliders"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/nolimits4web/swiper/blob/master/LICENSE"
 	}
 ]

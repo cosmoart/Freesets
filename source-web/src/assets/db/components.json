@@ -5,7 +5,7 @@
 		"name": "shadcn/ui",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn",
 		"link": "https://ui.shadcn.com",
-		"tags": ["React", "Tailwind"],
+		"tags": ["React", "Tailwind", "Chart"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md"
 	},

@@ -560,5 +560,12 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/illustrationsuniverse",
 		"link": "https://illustrationsuniverse.com/",
 		"tags": ["Inspiration"]
+	},
+	{
+		"id": 65,
+		"order": 42,
+		"name": "Hand Drawn Arrows",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
+		"link": "https://handyarrows.com/"
 	}
 ]

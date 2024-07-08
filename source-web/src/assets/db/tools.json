@@ -184,5 +184,15 @@
 		"tags": ["Organizer"],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/FreeterApp/Freeter/blob/master/COPYING"
+	},
+	{
+		"id": 24,
+		"order": 38,
+		"name": "ray.so",
+		"link": "https://ray.so",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/rayso",
+		"license": "MIT",
+		"licenseLink": "https://github.com/raycast/ray-so/blob/main/LICENSE",
+		"tags": ["Code screenshots"]
 	}
 ]
