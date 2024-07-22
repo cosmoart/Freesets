@@ -577,5 +577,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
 		"link": "https://tympanus.net/codrops/demos/",
 		"tags": ["Three.js", "Webgl"]
+	},
+	{
+		"id": 64,
+		"order": 48,
+		"name": "Just D",
+		"link": "https://justd.co/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/justd",
+		"tags": ["Accessible", "Aria", "React", "Tailwind"]
 	}
 ]

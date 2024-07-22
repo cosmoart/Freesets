@@ -178,5 +178,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
 		"link": "https://tympanus.net/codrops/demos/",
 		"tags": ["Three.js", "Webgl"]
+	},
+	{
+		"id": 24,
+		"order": 80,
+		"name": "The Shape of AI",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/shapeofai",
+		"link": "https://www.shapeof.ai/",
+		"tags": ["AI", "Patterns"]
 	}
 ]

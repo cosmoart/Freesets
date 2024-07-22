@@ -118,7 +118,8 @@
 		"order": 20,
 		"name": "Three.js",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/threejs",
-		"link": "https://threejs.org"
+		"link": "https://threejs.org",
+		"tags": ["3D"]
 	},
 	{
 		"id": 18,
@@ -129,7 +130,7 @@
 	},
 	{
 		"id": 19,
-		"order": 10,
+		"order": 19,
 		"name": "Sass Landing Page",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/saaslandingpage",
 		"link": "https://saaslandingpage.com"
@@ -294,5 +295,35 @@
 		"name": "App Motion",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/appmotion",
 		"link": "https://appmotion.design/"
+	},
+	{
+		"id": 42,
+		"order": 58,
+		"name": "Commerce Cream",
+		"link": "https://commercecream.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/commercecream",
+		"tags": ["Shopify"]
+	},
+	{
+		"id": 43,
+		"order": 64,
+		"name": "One Page Love",
+		"link": "https://onepagelove.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/onepagelove"
+	},
+	{
+		"id": 44,
+		"order": 38,
+		"name": "3D Websites",
+		"link": "https://3dwebsites.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/3dwebsites",
+		"tags": ["3D"]
+	},
+	{
+		"id": 45,
+		"order": 85,
+		"name": "Web Interactions Gallery",
+		"link": "https://www.webinteractions.gallery/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/webinteractions"
 	}
 ]

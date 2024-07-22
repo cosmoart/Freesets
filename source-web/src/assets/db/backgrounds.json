@@ -24,7 +24,7 @@
 		"license": "Free",
 		"licenseLink": "https://doodad.dev/pattern-generator/",
 		"licenseDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs",
-		"order": 90
+		"order": 80
 	},
 	{
 		"id": 4,
@@ -146,7 +146,7 @@
 	},
 	{
 		"id": 17,
-		"order": 96,
+		"order": 82,
 		"name": "SVG Patterns",
 		"link": "https://nucleoapp.com/svg-patterns",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg-patterns"
@@ -213,5 +213,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/magicui",
 		"link": "https://magicui.design/docs/components/animated-grid-pattern",
 		"tags": ["Tailwind"]
+	},
+	{
+		"id": 26,
+		"order": 90,
+		"name": "Shader Gradient",
+		"link": "https://www.shadergradient.co/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shadergradient",
+		"tags": ["React", "Framer", "Figma"]
 	}
 ]
