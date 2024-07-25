@@ -203,6 +203,6 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/responsively",
 		"license": "AGPL-3.0",
 		"licenseLink": "https://github.com/responsively-org/responsively-app/blob/main/LICENSE",
-		"tags": ["Responsive design", "React", "JavaScript"]
+		"tags": ["Responsive design", "App"]
 	}
 ]
