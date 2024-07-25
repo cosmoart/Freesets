@@ -204,5 +204,15 @@
 		"license": "AGPL-3.0",
 		"licenseLink": "https://github.com/responsively-org/responsively-app/blob/main/LICENSE",
 		"tags": ["Responsive design", "App"]
+	},
+	{
+		"id": 27,
+		"order": 60,
+		"name": "Free For Geeks",
+		"link": "https://freeforgeeks.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/freeforgeeks",
+		"license": "MIT",
+		"licenseLink": "https://github.com/JuanPabloDiaz/freeForGeeks/blob/main/license",
+		"tags": ["Resources"]
 	}
 ]
