@@ -204,5 +204,12 @@
 		"license": "AGPL-3.0",
 		"licenseLink": "https://github.com/responsively-org/responsively-app/blob/main/LICENSE",
 		"tags": ["Responsive design", "App"]
+	},
+	{
+		"id": 26,
+		"order": 60,
+		"name": "TOOOLS.design",
+		"link": "https://www.toools.design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/toools-design"
 	}
 ]
