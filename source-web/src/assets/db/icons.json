@@ -590,5 +590,14 @@
 		"license": "Freemium",
 		"licenseLink": "https://iconscout.com/pricing",
 		"tags": ["Package"]
+	},
+	{
+		"id": 63,
+		"order": 40,
+		"name": "Iconic",
+		"link": "https://iconic.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconic",
+		"license": "Free",
+		"licenseLink": "https://iconic.app/iconic-pro-license/"
 	}
 ]
