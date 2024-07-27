@@ -567,5 +567,14 @@
 		"name": "Hand Drawn Arrows",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
 		"link": "https://handyarrows.com/"
+	},
+	{
+		"id": 66,
+		"order": 35,
+		"name": "Lottielab",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/lottielab",
+		"link": "https://www.lottielab.com/",
+		"license": "MIT",
+		"licenseLink": "https://github.com/lottielab/lottie-player/blob/master/LICENSE"
 	}
 ]
