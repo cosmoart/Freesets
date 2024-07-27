@@ -196,5 +196,14 @@
 		"link": "https://skitterphoto.com",
 		"license": "CC0",
 		"licenseLink": "https://skitterphoto.com/license"
+	},
+	{
+		"id": 22,
+		"order": 35,
+		"name": "Freepik",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/freepik",
+		"link": "https://www.freepik.com/",
+		"license": "Freepik License",
+		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement"
 	}
 ]
