@@ -207,9 +207,10 @@
 	},
 	{
 		"id": 26,
-		"order": 20,
+		"order": 38,
 		"name": "UptoSite",
 		"link": "https://upto.site/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/uptosite"
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/uptosite",
+		"tags": ["Link shortener"]
 	}
 ]
