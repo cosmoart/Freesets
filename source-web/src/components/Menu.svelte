@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 
-	import coffeIcon from '@/assets/icons/coffee.svg';
 	import darkModeIcon from '@/assets/icons/darkmode.svg';
 	import lightModeIcon from '@/assets/icons/lightmode.svg';
 	import starIcon from '@/assets/icons/star.svg';
@@ -29,7 +28,7 @@
 	<nav
 		class="bg-blue-600 rounded-md rounded-br-none transition-all p-2.5 {navOpen
 			? 'opacity-100 translate-y-0'
-			: 'opacity-0 translate-y-4 pointer-events-none'}"
+			: 'opacity-0 translate-y-4 pointer-events-none absolute bottom-5 right-0'}"
 	>
 		<ul>
 			{#if $page.url.pathname !== '/'}
@@ -90,7 +89,7 @@
 					href="https://github.com/cosmoart/Freesets"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="transition-colors group w-full hover:bg-zinc-800 px-3.5 py-2 flex items-center gap-2.5"
+					class="transition-colors rounded-b-md group w-full hover:bg-zinc-800 px-3.5 py-2 flex items-center gap-2.5"
 				>
 					<img
 						src={externalLinkIcon}
@@ -105,28 +104,13 @@
 					Contribute
 				</a>
 			</li>
-			<li>
-				<a
-					href="https://buymeacoffee.com/cosmoart"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="group hover:bg-[#FFDD00] w-full px-3.5 hover:text-slate-900 transition-all py-2 flex items-center gap-2.5 rounded-b-md"
-				>
-					<img
-						src={coffeIcon}
-						alt=""
-						class="w-5 invert group-hover:invert-0 group-hover:scale-110 transition-transform"
-					/>
-					Buy me a coffee
-				</a>
-			</li>
 		</ul>
 	</nav>
 
 	<div
 		class="before:rotate-[180deg] before:absolute before:w-3 before:h-3 before:-left-3 before:transition-all before:opacity-0 before:top-2 before:z-10 before:rounded-full before:shadow-[-0.5rem_0.5rem_#2563eb] before:rounded-br flexjustify-end w-9 h-9 relative bg-blue-600 transition-all rounded-md {navOpen
 			? 'rounded-t-none before:!top-0 before:opacity-100'
-			: ''} ml-auto group"
+			: 'before:translate-y-4'} ml-auto group"
 	>
 		<input type="checkbox" bind:checked={navOpen} id="nav-toggle" class="cursor-pointer hidden" />
 		<label for="nav-toggle" class="cursor-pointer">
