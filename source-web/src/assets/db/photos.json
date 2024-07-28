@@ -199,11 +199,12 @@
 	},
 	{
 		"id": 22,
-		"order": 35,
+		"order": 7,
 		"name": "Freepik",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/freepik",
 		"link": "https://www.freepik.com/",
 		"license": "Freepik License",
-		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement"
+		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement",
+		"licenseDescription": "Free with attribution"
 	}
 ]
