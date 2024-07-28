@@ -270,7 +270,7 @@
 		"id": 38,
 		"order": 48,
 		"name": "illustrations universe",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/illustrationsuniverse",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/universe",
 		"link": "https://illustrationsuniverse.com/",
 		"tags": ["Illustrations"]
 	},
@@ -325,13 +325,5 @@
 		"name": "Web Interactions Gallery",
 		"link": "https://www.webinteractions.gallery/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/webinteractions"
-	},
-	{
-		"id": 46,
-		"order": 45,
-		"name": "illustrations universe",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/ui-collections/illustrations/universe",
-		"link": "https://illustrationsuniverse.com/",
-		"tags": ["Illustrations"]
 	}
 ]
