@@ -151,7 +151,8 @@
 		"order": 57,
 		"name": "Shapes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704587990/freesets/illustrations/mezhdpcgrgwri14okctx.webp",
-		"link": "https://shapes.framer.website"
+		"link": "https://shapes.framer.website",
+		"tags": ["Logos"]
 	},
 	{
 		"id": 18,
@@ -542,7 +543,7 @@
 		"name": "coolshapes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
 		"link": "https://coolshap.es/",
-		"tags": ["Package"]
+		"tags": ["Package", "Logos"]
 	},
 	{
 		"id": 63,
@@ -551,7 +552,8 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/uilogos",
 		"link": "https://www.uilogos.co/",
 		"license": "CC BY 4.0",
-		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md"
+		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
+		"tags": ["Placeholder logos"]
 	},
 	{
 		"id": 64,
@@ -567,5 +569,21 @@
 		"name": "Hand Drawn Arrows",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
 		"link": "https://handyarrows.com/"
+	},
+	{
+		"id": 66,
+		"order": 72,
+		"name": "Public Work by Cosmos",
+		"link": "https://public.work/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
+		"tags": ["Vintage"]
+	},
+	{
+		"id": 67,
+		"order": 57,
+		"name": "Logoipsum",
+		"link": "https://logoipsum.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/logoipsum",
+		"tags": ["Placeholder logos"]
 	}
 ]

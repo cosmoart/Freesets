@@ -206,5 +206,13 @@
 		"license": "Freepik License",
 		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement",
 		"licenseDescription": "Free with attribution"
+	},
+	{
+		"id": 23,
+		"order": 78,
+		"name": "Public Work by Cosmos",
+		"link": "https://public.work/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
+		"tags": ["Vintage"]
 	}
 ]
