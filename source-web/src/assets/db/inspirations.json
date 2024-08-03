@@ -234,7 +234,8 @@
 		"order": 45,
 		"name": "LogoFav",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logofav",
-		"link": "https://www.logofav.com/"
+		"link": "https://www.logofav.com/",
+		"tags": ["Logos"]
 	},
 	{
 		"id": 34,
@@ -332,5 +333,28 @@
 		"name": "Viewport UI",
 		"link": "https://viewport-ui.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/viewport-ui"
+	},
+	{
+		"id": 47,
+		"order": 67,
+		"name": "Logo System",
+		"link": "https://logosystem.co/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logosystem",
+		"tags": ["Logos"]
+	},
+	{
+		"id": 48,
+		"order": 56,
+		"name": "Adfolio",
+		"link": "https://www.adfolio.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/adfolio",
+		"tags": ["Ads"]
+	},
+	{
+		"id": 49,
+		"order": 38,
+		"name": "Landings",
+		"link": "https://landings.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
 	}
 ]
