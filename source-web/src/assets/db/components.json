@@ -585,5 +585,15 @@
 		"link": "https://justd.co/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/justd",
 		"tags": ["Accessible", "Aria", "React", "Tailwind"]
+	},
+	{
+		"id": 65,
+		"order": 45,
+		"name": "Tailbits",
+		"link": "https://www.tailbits.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/tailbits",
+		"license": "CC-BY-4.0",
+		"licenseDescription": "This project is licensed under the Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you provide appropriate credit, a link to the license, and indicate if changes were made.",
+		"tags": ["Templates","Tailwind", "HTML"]
 	}
 ]
