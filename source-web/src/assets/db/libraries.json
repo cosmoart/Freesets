@@ -297,5 +297,15 @@
 		"tags": ["Sliders"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/nolimits4web/swiper/blob/master/LICENSE"
+	},
+  {
+		"id": 33,
+		"order": 66,
+		"name": "Haiku",
+		"link": "https://www.reacthaiku.dev",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-haiku",
+		"tags": ["React","Hooks", "Utilities"],
+		"license": "MIT",
+    "licenseLink": "https://github.com/DavidHDev/react-haiku/blob/main/LICENSE.md"
 	}
 ]
