@@ -223,7 +223,7 @@
 		"link": "https://css.gg/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/CSSIcons",
 		"license": "MIT",
-		"licenseLink": "https://css.gg/doc/licence",
+		"licenseLink": "https://github.com/astrit/css.gg/blob/master/LICENSE",
 		"tags": ["Package"],
 		"order": 60
 	},

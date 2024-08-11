@@ -13,14 +13,14 @@
 	<meta name="author" content="Cosmo" />
 	<meta name="description" content={description} />
 	<meta name="view-transition" content="same-origin" />
-	<link rel="canonical" href="https://freesets.vercel.app" />
+	<link rel="canonical" href="https://freesets.dev" />
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="Freesets" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Freesets" />
 	<meta property="og:image" content={image} />
-	<meta property="og:url" content="https://freesets.vercel.app" />
+	<meta property="og:url" content="https://freesets.dev" />
 	<meta property="og:description" content={description} />
 
 	<!-- Twitter -->

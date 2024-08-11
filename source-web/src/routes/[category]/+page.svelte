@@ -18,14 +18,14 @@
 	<meta name="author" content="Cosmo" />
 	<link rel="icon" href={icon} />
 	<meta name="description" content={description} />
-	<link rel="canonical" href="https://freesets.vercel.app/{data.nameID}" />
+	<link rel="canonical" href="https://freesets.dev/{data.nameID}" />
 
 	<!-- Open Graph -->
 	<meta property="og:title" content={title} />
 	<meta property="og:site_name" content={title} />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content={image} />
-	<meta property="og:url" content="https://freesets.vercel.app/{data.nameID}" />
+	<meta property="og:url" content="https://freesets.dev/{data.nameID}" />
 	<meta property="og:description" content={description} />
 
 	<!-- Twitter -->
