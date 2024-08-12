@@ -611,7 +611,7 @@
 		"id": 67,
 		"order": 64,
 		"name": "Cuicui",
-		"link": "https://www.cuicui.day",
+		"link": "https://cuicui.day",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
 		"tags": ["React","Typescript","Framer","Motion","Tailwind"],
 		"license": "MIT",
