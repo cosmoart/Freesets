@@ -609,11 +609,11 @@
 	},
 	{
 		"id": 67,
-		"order": 64,
+		"order": 57,
 		"name": "Cuicui",
 		"link": "https://cuicui.day",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
-		"tags": ["React","Typescript","Framer","Motion","Tailwind"],
+		"tags": ["React","Typescript","Motion","Tailwind"],
 		"license": "MIT",
     "licenseLink": "https://github.com/damien-schneider/cuicui/blob/main/license.md"
 	}
