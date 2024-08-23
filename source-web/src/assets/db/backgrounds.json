@@ -221,5 +221,19 @@
 		"link": "https://www.shadergradient.co/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shadergradient",
 		"tags": ["React", "Framer", "Figma"]
+	},
+	{
+		"id": 27,
+		"order": 30,
+		"name": "Photo Gradient",
+		"link": "https://photogradient.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/photogradient"
+	},
+	{
+		"id": 28,
+		"order": 75,
+		"name": "CSS mesh gradients",
+		"link": "https://csshero.org/mesher/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/cssheromesher"
 	}
 ]

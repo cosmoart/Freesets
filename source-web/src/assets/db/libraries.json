@@ -298,14 +298,24 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/nolimits4web/swiper/blob/master/LICENSE"
 	},
-  {
+	{
 		"id": 33,
 		"order": 66,
 		"name": "Haiku",
 		"link": "https://www.reacthaiku.dev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-haiku",
-		"tags": ["React","Hooks", "Utilities"],
+		"tags": ["React", "Hooks", "Utilities"],
 		"license": "MIT",
-    "licenseLink": "https://github.com/DavidHDev/react-haiku/blob/main/LICENSE.md"
+		"licenseLink": "https://github.com/DavidHDev/react-haiku/blob/main/LICENSE.md"
+	},
+	{
+		"id": 33,
+		"order": 60,
+		"name": "COBE",
+		"link": "https://cobe.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/cobe",
+		"tags": ["WebGL globe"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/shuding/cobe/blob/main/LICENSE"
 	}
 ]
