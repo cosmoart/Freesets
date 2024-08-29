@@ -616,5 +616,16 @@
 		"tags": ["React","Typescript","Motion","Tailwind"],
 		"license": "MIT",
     "licenseLink": "https://github.com/damien-schneider/cuicui/blob/main/license.md"
+	},
+	{
+		"id": 68,
+		"order": 100,
+		"name": "Eldora UI",
+		"link": "https://eldoraui.site/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/eldoraui",
+		"tags": ["Tailwind", "React", "Typescript", "Framer"],
+		"license": "MIT",
+    "licenseDescription": "Free to use, open source.",
+    "licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE"
 	}
 ]
