@@ -619,13 +619,12 @@
 	},
 	{
 		"id": 68,
-		"order": 100,
+		"order": 29,
 		"name": "Eldora UI",
 		"link": "https://eldoraui.site/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/eldoraui",
 		"tags": ["Tailwind", "React", "Typescript", "Framer"],
 		"license": "MIT",
-    "licenseDescription": "Free to use, open source.",
-    "licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE"
+                "licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE"
 	}
 ]
