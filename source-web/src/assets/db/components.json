@@ -94,7 +94,7 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/rewindui/rewindui/blob/main/LICENSE"
 	},
-  {
+	{
 		"id": 11,
 		"order": 85,
 		"name": "Preline UI",
@@ -534,7 +534,7 @@
 		"name": "Variant Vault",
 		"link": "https://variantvault.chrisabdo.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/variantvault",
-		"tags": ["Animations", "Framer"]
+		"tags": ["Animations", "Framer", "Texts"]
 	},
 	{
 		"id": 59,
@@ -594,18 +594,18 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/tailbits",
 		"license": "CC-BY-4.0",
 		"licenseDescription": "This project is licensed under the Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you provide appropriate credit, a link to the license, and indicate if changes were made.",
-		"tags": ["Templates","Tailwind", "HTML"]
+		"tags": ["Templates", "Tailwind", "HTML"]
 	},
-  {
+	{
 		"id": 66,
 		"order": 45,
 		"name": "React Bits",
 		"link": "https://www.reactbits.dev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-bits",
-		"tags": ["React","Animations"],
+		"tags": ["React", "Animations"],
 		"license": "Free",
-    "licenseDescription": "Free to use, open source.",
-    "licenseLink": "https://github.com/DavidHDev/react-bits"
+		"licenseDescription": "Free to use, open source.",
+		"licenseLink": "https://github.com/DavidHDev/react-bits"
 	},
 	{
 		"id": 67,
@@ -613,9 +613,9 @@
 		"name": "Cuicui",
 		"link": "https://cuicui.day",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
-		"tags": ["React","Typescript","Motion","Tailwind"],
+		"tags": ["React", "Typescript", "Motion", "Tailwind"],
 		"license": "MIT",
-    "licenseLink": "https://github.com/damien-schneider/cuicui/blob/main/license.md"
+		"licenseLink": "https://github.com/damien-schneider/cuicui/blob/main/license.md"
 	},
 	{
 		"id": 68,
@@ -625,6 +625,6 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/eldoraui",
 		"tags": ["Tailwind", "React", "Typescript", "Framer"],
 		"license": "MIT",
-                "licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE"
+		"licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE"
 	}
 ]
