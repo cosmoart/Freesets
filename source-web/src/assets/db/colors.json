@@ -294,11 +294,11 @@
 	},
 	{
 		"id": 40,
-		"order": 85,
+		"order": 76,
 		"name": "Material Theme Builder",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/material-theme-builder",
 		"link": "https://material-foundation.github.io/material-theme-builder/",
-		"tags": ["Generator", "Preview", "Android"],
+		"tags": ["Generator", "Preview"],
 		"license": "Apache V2.0",
 		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
 	}
