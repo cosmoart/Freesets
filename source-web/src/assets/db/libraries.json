@@ -309,7 +309,7 @@
 		"licenseLink": "https://github.com/DavidHDev/react-haiku/blob/main/LICENSE.md"
 	},
 	{
-		"id": 33,
+		"id": 34,
 		"order": 60,
 		"name": "COBE",
 		"link": "https://cobe.vercel.app/",
@@ -317,5 +317,13 @@
 		"tags": ["WebGL globe"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/shuding/cobe/blob/main/LICENSE"
+	},
+	{
+		"id": 35,
+		"order": 78,
+		"name": "MotionNumber for Framer Motion",
+		"link": "https://motion-number.barvian.me/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/motion-number",
+		"tags": ["Transition, format, and localize numbers"]
 	}
 ]

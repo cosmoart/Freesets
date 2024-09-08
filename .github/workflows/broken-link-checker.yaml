@@ -3,7 +3,7 @@ name: Check broken links
 on:
   workflow_dispatch:
   schedule:
-    - cron: "00 18 */4 * *"
+    - cron: "00 18 */7 * *"
 
 jobs:
   generate_md_file:

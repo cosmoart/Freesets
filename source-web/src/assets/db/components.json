@@ -626,5 +626,15 @@
 		"tags": ["Tailwind", "React", "Typescript", "Framer"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE"
+	},
+	{
+		"id": 69,
+		"order": 87,
+		"name": "Justd",
+		"link": "https://getjustd.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/getjustd",
+		"tags": ["Tailwind", "React", "Accessible", "Aria"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/justdlabs/justd/blob/main/LICENSE"
 	}
 ]
