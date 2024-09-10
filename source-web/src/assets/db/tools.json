@@ -212,5 +212,13 @@
 		"link": "https://upto.site/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/uptosite",
 		"tags": ["Link shortener"]
+	},
+	{
+		"id": 27,
+		"order": 56,
+		"name": "imgto.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imgtoasdasdqw",
+		"link": "https://imgto.xyz/",
+		"tags": ["Image optimizer"]
 	}
 ]
