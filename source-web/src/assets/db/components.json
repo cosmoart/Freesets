@@ -636,5 +636,13 @@
 		"tags": ["Tailwind", "React", "Accessible", "Aria"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/justdlabs/justd/blob/main/LICENSE"
+	},
+	{
+		"id": 70,
+		"order": 47,
+		"name": "TW Components",
+		"link": "https://www.creative-tim.com/twcomponents",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/twcomponentsqwd",
+		"tags": ["Tailwind"]
 	}
 ]
