@@ -220,5 +220,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imgtoasdasdqw",
 		"link": "https://imgto.xyz/",
 		"tags": ["Image optimizer"]
+	},
+		{
+		"id": 28,
+		"order": 36,
+		"name": "CSS Code Quality",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
+		"link": "https://www.projectwallace.com/css-code-quality",
+		"tags": ["CSS analyzer"]
 	}
 ]
