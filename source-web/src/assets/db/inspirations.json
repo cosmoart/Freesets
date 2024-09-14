@@ -356,5 +356,13 @@
 		"name": "Landings",
 		"link": "https://landings.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
+	},
+	{
+		"id": 50,
+		"order": 30,
+		"name": "Pattern Collection",
+		"link": "https://wpshout.com/pattern-collection/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
+		"tags": ["Patterns"]
 	}
 ]
