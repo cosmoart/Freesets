@@ -191,10 +191,11 @@
 	{
 		"id": 21,
 		"name": "Carbon",
-		"link": "https://carbondesignsystem.com/guidelines/icons/library",
+		"link": "https://carbondesignsystem.com/elements/icons/library/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776835/freesets/icons/rvzgmjez12yrvwjigqnn.webp",
 		"license": "Apache 2.0",
-		"licenseLink": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+		"licenseLink": "https://github.com/carbon-design-system/carbon/tree/v10/packages/icons#-license",
+		"tags": ["Package"],
 		"order": 66
 	},
 	{
