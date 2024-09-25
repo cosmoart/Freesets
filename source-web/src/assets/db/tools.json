@@ -228,5 +228,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
 		"link": "https://www.projectwallace.com/css-code-quality",
 		"tags": ["CSS analyzer"]
+	},
+	{
+		"id": 29,
+		"order": 39,
+		"name": "Image Color Detector",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imagecoloriwjk",
+		"link": "https://image-color-detector.vercel.app/",
+		"tags": ["Image color", "Preview"]
 	}
 ]
