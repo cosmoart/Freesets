@@ -193,7 +193,7 @@
 		"name": "Park UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704376342/freesets/components/zzrebeofyyv25lnhkein.webp",
 		"link": "https://park-ui.com",
-		"tags": ["React", "Vue", "Solid", "Panda", "Tailwind"],
+		"tags": ["React", "Solid", "Panda", "Tailwind"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/cschroeter/park-ui/blob/main/LICENSE"
 	},
