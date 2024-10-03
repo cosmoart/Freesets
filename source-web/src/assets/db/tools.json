@@ -228,5 +228,14 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
 		"link": "https://www.projectwallace.com/css-code-quality",
 		"tags": ["CSS analyzer"]
+	},
+	{
+		"id": 29,
+		"order": 36,
+		"name": "Llamacoder Together Ai",
+		"img": "https://res.cloudinary.com/dgls1iyao/image/upload/v1727950416/llamacoder.png",
+		"link": "https://llamacoder.together.ai/",
+		"tags": ["Code generator"]
 	}
+
 ]
