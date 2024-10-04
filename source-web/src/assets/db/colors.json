@@ -308,7 +308,7 @@
 		"name": "Hypercolor",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/hypercolor",
 		"link": "https://hypercolor.dev/",
-		"tags": ["Generator", "Gradients"],
+		"tags": ["Generator", "Gradients", "Tailwind"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
 	}
