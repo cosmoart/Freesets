@@ -644,5 +644,15 @@
 		"link": "https://www.creative-tim.com/twcomponents",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/twcomponentsqwd",
 		"tags": ["Tailwind", "HTML"]
+	},
+	{
+		"id": 71,
+		"order": 38,
+		"name": "React Hot Toast",
+		"link": "https://react-hot-toast.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-hot-toast",
+		"tags": ["React", "Toast"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/timolins/react-hot-toast/blob/main/LICENSE"
 	}
 ]

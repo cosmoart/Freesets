@@ -301,5 +301,15 @@
 		"tags": ["Generator", "Preview"],
 		"license": "Apache V2.0",
 		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
+	},
+	{
+		"id": 41,
+		"order": 80,
+		"name": "Hypercolor",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/hypercolor",
+		"link": "https://hypercolor.dev/",
+		"tags": ["Generator", "Gradients", "Tailwind"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
 	}
 ]
