@@ -613,9 +613,7 @@
 		"name": "Cuicui",
 		"link": "https://cuicui.day",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
-		"tags": ["React", "Typescript", "Motion", "Tailwind"],
-		"license": "MIT",
-		"licenseLink": "https://github.com/damien-schneider/cuicui/blob/main/license.md"
+		"tags": ["React", "Typescript", "Motion", "Tailwind"]
 	},
 	{
 		"id": 68,
@@ -654,5 +652,25 @@
 		"tags": ["React", "Toast"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/timolins/react-hot-toast/blob/main/LICENSE"
+	},
+	{
+		"id": 72,
+		"order": 47,
+		"name": "Motion-Primitives",
+		"link": "https://motion-primitives.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/motion-primitives",
+		"tags": ["Framer", "React"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/ibelick/motion-primitives/blob/main/LICENCE.md"
+	},
+	{
+		"id": 73,
+		"order": 50,
+		"name": "Fulldev UI",
+		"link": "https://ui.full.dev",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ui_full_dev",
+		"tags": ["Astro"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/fulldotdev/ui/blob/main/LICENCE"
 	}
 ]
