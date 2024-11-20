@@ -325,5 +325,13 @@
 		"link": "https://motion-number.barvian.me/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/motion-number",
 		"tags": ["Transition, format, and localize numbers"]
+	},
+	{
+		"id": 36,
+		"order": 82,
+		"name": "Tweakpane",
+		"link": "https://tweakpane.github.io/docs/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tweakpane",
+		"tags": ["GUI"]
 	}
 ]

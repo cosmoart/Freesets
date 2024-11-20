@@ -1,5 +1,4 @@
 <script>
-	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 
@@ -8,16 +7,15 @@
 	import starIcon from '@/assets/icons/star.svg';
 	import menuIcon from '@/assets/icons/menu.svg';
 	import closeIcon from '@/assets/icons/close.svg';
-	import searchIcon from '@/assets/icons/search.svg';
 	import externalLinkIcon from '@/assets/icons/external-link.svg';
+	import Search from './ui/Search.svelte';
 
-	$: q = new URLSearchParams($page.url.searchParams).get('q');
-	let navOpen = false;
-	let darkMode = true;
+	let navOpen = $state(false);
+	let darkMode = $state(true);
 
 	onMount(() => (darkMode = localStorage.getItem('darkMode') === 'true'));
 
-	function changueTheme() {
+	function changeTheme() {
 		document.documentElement.classList.toggle('dark');
 		localStorage.setItem('darkMode', !darkMode);
 		darkMode = !darkMode;
@@ -32,40 +30,14 @@
 	>
 		<ul>
 			{#if $page.url.pathname !== '/'}
-				<li>
-					<search>
-						<form
-							class="relative rounded-t-md text-zinc-950"
-							on:submit={(e) => goto(`/?q=${new FormData(e.target).get('q')}`)}
-						>
-							<input
-								type="search"
-								name="q"
-								value={q}
-								placeholder="Search..."
-								class="rounded-t px-3.5 py-2 max-w-48 focus:outline-none"
-							/>
-							<button
-								type="submit"
-								aria-label="Search"
-								class="group transition-colors p-1.5 right-1 rounded-r-md absolute top-0 bottom-0"
-							>
-								<img
-									src={searchIcon}
-									alt=""
-									class="w-5 opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-transform"
-								/>
-							</button>
-						</form>
-					</search>
-				</li>
+				<Search />
 			{/if}
 			<li>
 				<button
 					class="group transition-colors hover:bg-zinc-800 px-3.5 w-full {$page.url.pathname !== '/'
 						? ''
 						: 'rounded-t'} py-2 flex items-center"
-					on:click={changueTheme}
+					onclick={changeTheme}
 				>
 					<img
 						src={lightModeIcon}
@@ -131,13 +103,3 @@
 		</label>
 	</div>
 </div>
-
-<style>
-	input[type='search']::-webkit-search-decoration,
-	input[type='search']::-webkit-search-cancel-button,
-	input[type='search']::-webkit-search-results-button,
-	input[type='search']::-webkit-search-results-decoration {
-		-webkit-appearance: none;
-		appearance: none;
-	}
-</style>

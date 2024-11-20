@@ -113,11 +113,11 @@
 	},
 	{
 		"id": 15,
-		"order": 19,
-		"name": "Microcopy",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703554682/freesets/tools/kef9otwvixr44geier9v.webp",
-		"link": "https://www.microcopy.me",
-		"tags": ["Microcopies"]
+		"order": 36,
+		"name": "CSS Code Quality",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
+		"link": "https://www.projectwallace.com/css-code-quality",
+		"tags": ["CSS analyzer"]
 	},
 	{
 		"id": 16,
@@ -220,13 +220,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imgtoasdasdqw",
 		"link": "https://imgto.xyz/",
 		"tags": ["Image optimizer"]
-	},
-		{
-		"id": 28,
-		"order": 36,
-		"name": "CSS Code Quality",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
-		"link": "https://www.projectwallace.com/css-code-quality",
-		"tags": ["CSS analyzer"]
 	}
 ]

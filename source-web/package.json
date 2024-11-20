@@ -1,6 +1,6 @@
 {
 	"name": "freesets",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build",
@@ -9,19 +9,20 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@fontsource/fira-mono": "^4.5.10",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
-		"autoprefixer": "^10.4.16",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
-		"postcss": "^8.4.31",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.0.5",
-		"tailwindcss": "^3.3.3",
-		"vite": "^4.4.2"
+		"@fontsource/fira-mono": "^5.1.0",
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/kit": "^2.8.1",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^9.14.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.46.0",
+		"postcss": "^8.4.49",
+		"prettier": "^3.3.3",
+		"prettier-plugin-svelte": "^3.2.8",
+		"svelte": "^5.2.0",
+		"sveltekit-search-params": "^3.0.0",
+		"tailwindcss": "^3.4.15",
+		"vite": "^5.4.11"
 	},
 	"type": "module"
 }

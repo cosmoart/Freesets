@@ -1,8 +1,15 @@
 <script>
 	import NavBar from '@/components/NavBar.svelte';
-	import Menu from '../components/Menu.svelte';
+	import Menu from '@/components/Menu.svelte';
 	import { onNavigate } from '$app/navigation';
 	import './styles.css';
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -20,9 +27,9 @@
 <div class="app flex flex-col p-6 md:px-10 max-w-[95rem] mx-auto min-h-dvh">
 	<div
 		class="bg-dots [view-transition-name:bgDots] invert dark:invert-0 fixed opacity-10 inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
-	/>
+	></div>
 	<NavBar />
-	<slot />
+	{@render children?.()}
 	<Menu />
 </div>
 

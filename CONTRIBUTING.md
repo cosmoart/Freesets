@@ -29,7 +29,7 @@ git clone https://github.com/cosmoart/free-resources
 git checkout -b my-branch
 ```
 
-3. Make the changues in the website or add your resources to the jsons files in the `source-web/src/assets/db`.
+3. Make the changes in the website or add your resources to the jsons files in the `source-web/src/assets/db`.
 
 4. Commit your changes.
 

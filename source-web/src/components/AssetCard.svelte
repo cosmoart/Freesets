@@ -4,14 +4,13 @@
 	import tagIcon from '@/assets/icons/tag.svg';
 	import Image from '@/components/ui/Image.svelte';
 
-	export let assets;
-	export let data;
+	let { assets } = $props();
 </script>
 
-{#each assets as asset}
+{#each assets.assets as asset}
 	<article
-		class="asset-card group transition-all rounded-lg ring-zinc-700 ring-2 hover:ring-[--card-color] dark:text-white overflow-hidden"
-		style="--card-color: {data.color}"
+		class="asset-card group transition-all rounded-lg ring-zinc-600 ring-2 hover:ring-[--card-color] dark:text-white overflow-hidden"
+		style="--card-color: {assets.color}"
 	>
 		<div class="relative">
 			<a

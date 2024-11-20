@@ -2,7 +2,7 @@
 	import categories from '@/assets/categories.js';
 	import { page } from '$app/stores';
 
-	$: currentPage = $page.params.category;
+	let currentPage = $derived($page.params.category);
 </script>
 
 <nav class="[view-transition-name:header]">
@@ -10,7 +10,7 @@
 		<li>
 			<a
 				href="/"
-				class={`flex items-center w-full justify-center gap-2 bg-zinc-800 dark:bg-white rounded-md px-4 py-1.5 flex-grow outline-2 outline-zinc-800 dark:outline-white text-white dark:text-zinc-950 outline-offset-2 cursor-pointer hover:scale-[1.03] transition-transform ${
+				class={`flex items-center w-full justify-center gap-2 bg-slate-900 dark:bg-white rounded-md px-4 py-1.5 flex-grow outline-2 outline-zinc-800 dark:outline-white text-white dark:text-zinc-950 outline-offset-2 cursor-pointer hover:scale-[1.03] transition-transform ${
 					currentPage === undefined ? 'outline' : ''
 				}`}
 				aria-label="Home"
