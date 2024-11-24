@@ -369,12 +369,11 @@
 	},
 	{
 		"id": 42,
-		"order": 16,
-		"name": "Smash illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704587154/freesets/illustrations/a87zjoigtpm67zxoss5o.webp",
-		"link": "https://usesmash.com",
-		"license": "Free",
-		"licenseDescription": "Free for commercial or personal use"
+		"order": 57,
+		"name": "Logoipsum",
+		"link": "https://logoipsum.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/logoipsum",
+		"tags": ["Placeholder logos"]
 	},
 	{
 		"id": 43,
@@ -577,13 +576,5 @@
 		"link": "https://public.work/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
 		"tags": ["Vintage"]
-	},
-	{
-		"id": 67,
-		"order": 57,
-		"name": "Logoipsum",
-		"link": "https://logoipsum.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/logoipsum",
-		"tags": ["Placeholder logos"]
 	}
 ]
