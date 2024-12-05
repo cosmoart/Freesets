@@ -235,5 +235,12 @@
 		"name": "CSS mesh gradients",
 		"link": "https://csshero.org/mesher/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/cssheromesher"
+	},
+	{
+		"id": 29,
+		"order": 94,
+		"name": "Mazeletter",
+		"link": "http://mazeletter.xyz/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/mazeletter"
 	}
 ]

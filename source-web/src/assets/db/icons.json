@@ -600,5 +600,14 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconic",
 		"license": "Free",
 		"licenseLink": "https://iconic.app/iconic-pro-license/"
+	},
+	{
+		"id": 64,
+		"order": 67,
+		"name": "Isocons",
+		"link": "https://www.isocons.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/isocons",
+		"license": "CC BY 4.0 ",
+		"tags": ["3D"]
 	}
 ]

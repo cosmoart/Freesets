@@ -672,5 +672,15 @@
 		"tags": ["Astro"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/fulldotdev/ui/blob/main/LICENCE"
+	},
+	{
+		"id": 74,
+		"order": 84,
+		"name": "Origin UI",
+		"link": "https://originui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/originui",
+		"tags": ["React", "Tailwind", "Next.js", "HTML"],
+		"license": "Free",
+		"licenseLink": "https://github.com/origin-space/originui?tab=readme-ov-file#terms-of-use"
 	}
 ]

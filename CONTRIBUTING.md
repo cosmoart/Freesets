@@ -17,33 +17,49 @@ You can contribute new resources to Freesets in two different ways:
 
 To make a pull request follow the following steps:
 
-1. Clone the repository.
+1. Fork the repository on GitHub.
+
+2. Clone your forked repository.
 
 ```bash
-git clone https://github.com/cosmoart/free-resources
+git clone https://github.com/your-username/freesets
 ```
 
-2. Create a new branch. This step is optional, but recommended.
+3. Navigate to the repository directory.
 
 ```bash
-git checkout -b my-branch
+cd freesets
 ```
 
-3. Make the changes in the website or add your resources to the jsons files in the `source-web/src/assets/db`.
+> Or you can use `code freesets` to open the repository in Visual Studio Code.
 
-4. Commit your changes.
+4. Create a new branch. This step is optional, but recommended.
+
+```bash
+git checkout -b your-branch-name
+```
+
+5. Make the changes in the website or add your resources to the jsons files in `source-web/src/assets/db`.
+
+6. Add your changes to the staging area.
+
+```bash
+git add .
+```
+
+7. Commit your changes.
 
 ```bash
 git commit -m "✨ add resources"
 ```
 
-5. Push to the branch.
+8. Push to the branch.
 
 ```bash
-git push origin my-branch
+git push origin your-branch-name
 ```
 
-6. Open a pull request.
+9. Open a pull request.
 
 ## Resource structure
 
