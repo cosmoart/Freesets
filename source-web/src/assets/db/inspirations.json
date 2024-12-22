@@ -80,10 +80,13 @@
 	},
 	{
 		"id": 12,
-		"order": 64,
-		"name": "InspoVault",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707066801/freesets/inspirations/udgbsgzh5sr6ytdiyx1g.webp",
-		"link": "https://www.inspovault.com"
+		"order": 30,
+		"name": "Pattern Collection",
+		"link": "https://wpshout.com/pattern-collection/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
+		"tags": [
+			"Patterns"
+		]
 	},
 	{
 		"id": 13,
@@ -356,13 +359,5 @@
 		"name": "Landings",
 		"link": "https://landings.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
-	},
-	{
-		"id": 50,
-		"order": 30,
-		"name": "Pattern Collection",
-		"link": "https://wpshout.com/pattern-collection/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
-		"tags": ["Patterns"]
 	}
 ]

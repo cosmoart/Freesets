@@ -5,7 +5,9 @@
 		"link": "https://bg.ibelick.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614372/freesets/backgrounds/byn5pbw6ikqp95yyyske.webp",
 		"order": 100,
-		"tags": ["Tailwind"]
+		"tags": [
+			"Tailwind"
+		]
 	},
 	{
 		"id": 2,
@@ -142,7 +144,10 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/uvcanvas",
 		"license": "MIT",
 		"licenseLink": "https://github.com/latentcat/uvcanvas?tab=readme-ov-file#license",
-		"tags": ["React", "Package"]
+		"tags": [
+			"React",
+			"Package"
+		]
 	},
 	{
 		"id": 17,
@@ -157,7 +162,9 @@
 		"name": "Basic Pattern Repository",
 		"link": "https://patterns.helloyes.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternshelloyes",
-		"tags": ["SVG"]
+		"tags": [
+			"SVG"
+		]
 	},
 	{
 		"id": 19,
@@ -186,7 +193,9 @@
 		"name": "ColorBeta",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbeta",
 		"link": "https://colorbeta.com/",
-		"tags": ["Gradients"]
+		"tags": [
+			"Gradients"
+		]
 	},
 	{
 		"id": 23,
@@ -194,7 +203,10 @@
 		"name": "NEAT",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/neat",
 		"link": "https://neat.firecms.co/",
-		"tags": ["Gradients", "Package"],
+		"tags": [
+			"Gradients",
+			"Package"
+		],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/firecmsco/neat/blob/main/LICENSE"
 	},
@@ -204,7 +216,9 @@
 		"name": "Gradienty",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradienty",
 		"link": "https://gradienty.codes/",
-		"tags": ["Tailwind"]
+		"tags": [
+			"Tailwind"
+		]
 	},
 	{
 		"id": 25,
@@ -212,7 +226,9 @@
 		"name": "Magic UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/magicui",
 		"link": "https://magicui.design/docs/components/animated-grid-pattern",
-		"tags": ["Tailwind"]
+		"tags": [
+			"Tailwind"
+		]
 	},
 	{
 		"id": 26,
@@ -220,7 +236,11 @@
 		"name": "Shader Gradient",
 		"link": "https://www.shadergradient.co/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shadergradient",
-		"tags": ["React", "Framer", "Figma"]
+		"tags": [
+			"React",
+			"Framer",
+			"Figma"
+		]
 	},
 	{
 		"id": 27,
@@ -242,5 +262,15 @@
 		"name": "Mazeletter",
 		"link": "http://mazeletter.xyz/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/mazeletter"
+	},
+	{
+		"id": 30,
+		"order": 30,
+		"name": "Pattern Collection",
+		"link": "https://wpshout.com/pattern-collection/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
+		"tags": [
+			"Inspiration"
+		]
 	}
 ]
