@@ -304,11 +304,11 @@
 	},
 	{
 		"id": 34,
-		"order": 28,
-		"name": "AI Emojis",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705800953/freesets/illustrations/ymmab4diix8yhblnwtch.webp",
-		"link": "https://emojigen.com",
-		"tags": ["IA", "Generator", "Emojis"]
+		"order": 72,
+		"name": "Public Work by Cosmos",
+		"link": "https://public.work/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
+		"tags": ["Vintage"]
 	},
 	{
 		"id": 35,
@@ -568,13 +568,5 @@
 		"name": "Hand Drawn Arrows",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
 		"link": "https://handyarrows.com/"
-	},
-	{
-		"id": 66,
-		"order": 72,
-		"name": "Public Work by Cosmos",
-		"link": "https://public.work/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
-		"tags": ["Vintage"]
 	}
 ]
