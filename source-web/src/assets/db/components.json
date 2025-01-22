@@ -682,5 +682,15 @@
 		"tags": ["React", "Tailwind", "Next.js", "HTML"],
 		"license": "Free",
 		"licenseLink": "https://github.com/origin-space/originui?tab=readme-ov-file#terms-of-use"
+	},
+	{
+		"id": 75,
+		"order": 84,
+		"name": "Fancy Components",
+		"link": "https://www.fancycomponents.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/viyq7pgwtlelyn7lftyn",
+		"tags": ["React", "Tailwind", "TypeScript", "Motion"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/danielpetho/fancy/blob/main/LICENSE"
 	}
 ]

@@ -333,5 +333,13 @@
 		"link": "https://tweakpane.github.io/docs/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tweakpane",
 		"tags": ["GUI"]
+	},
+	{
+		"id": 37,
+		"order": 42,
+		"name": "Yoopta-Editor",
+		"link": "https://yoopta.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/bvivtqfwrnj2xakfi8zt",
+		"tags": ["Rich-text editor"]
 	}
 ]

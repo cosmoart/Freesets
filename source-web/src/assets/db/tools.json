@@ -220,5 +220,23 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imgtoasdasdqw",
 		"link": "https://imgto.xyz/",
 		"tags": ["Image optimizer"]
+	},
+	{
+		"id": 28,
+		"order": 93,
+		"name": "og.new",
+		"link": "https://og.new/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/usxfnxgq0vrxfvkk7qpf",
+		"tags": ["Generate Open Graph images"]
+	},
+	{
+		"id": 29,
+		"order": 56,
+		"name": "gleam.so",
+		"link": "https://gleam.so/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/trww6z9uivyb33vtdzas",
+		"tags": ["Generate Open Graph images"],
+		"licenseLink": "https://gleam.so/pricing",
+		"license": "Freemium"
 	}
 ]
