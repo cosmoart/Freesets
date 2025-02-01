@@ -22,12 +22,12 @@
 	{
 		"id": 3,
 		"order": 95,
-		"name": "NextUI",
+		"name": "HeroUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703602206/freesets/components/toajvq9dzuq5b41zlhfn.webp",
-		"link": "https://nextui.org",
+		"link": "https://www.heroui.com",
 		"tags": ["Tailwind", "React"],
 		"license": "MIT",
-		"licenseLink": "https://github.com/nextui-org/nextui/blob/main/LICENSE"
+		"licenseLink": "https://github.com/heroui-inc/heroui/blob/main/LICENSE"
 	},
 	{
 		"id": 4,
