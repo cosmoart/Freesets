@@ -359,5 +359,12 @@
 		"name": "Landings",
 		"link": "https://landings.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
+	},
+	{
+		"id": 50,
+		"order": 80,
+		"name": "CollWeb",
+		"link": "https://collweb.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collweb"
 	}
 ]
