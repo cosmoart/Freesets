@@ -238,5 +238,13 @@
 		"tags": ["Generate Open Graph images"],
 		"licenseLink": "https://gleam.so/pricing",
 		"license": "Freemium"
+	},
+	{
+		"id": 30,
+		"order": 60,
+		"name": "Shape Dividers",
+		"link": "https://www.shapedivider.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
+		"tags": ["Section separator"]
 	}
 ]
