@@ -270,5 +270,13 @@
 		"link": "https://wpshout.com/pattern-collection/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
 		"tags": ["Inspiration"]
+	},
+	{
+		"id": 31,
+		"order": 60,
+		"name": "Shape Dividers",
+		"link": "https://www.shapedivider.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
+		"tags": ["Section separator"]
 	}
 ]
