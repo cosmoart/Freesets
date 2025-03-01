@@ -87,13 +87,13 @@
 	},
 	{
 		"id": 10,
-		"order": 6,
-		"name": "Mazwai",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/uuyp3fx6to9gbzn4ehlj",
-		"link": "https://mazwai.com",
-		"license": "Multiple",
-		"licenseLink": "https://mazwai.com/license-details",
-		"licenseDescription": "There are two types of license: CC-BY 3.0 (with attribution) or Mazwai License (without attribution)."
+		"order": 14,
+		"name": "Freepik",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/freepik",
+		"link": "https://www.freepik.com/videos",
+		"license": "Freepik License",
+		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement",
+		"licenseDescription": "Free with attribution"
 	},
 	{
 		"id": 11,
