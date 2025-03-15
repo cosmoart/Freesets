@@ -609,5 +609,15 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/isocons",
 		"license": "CC BY 4.0 ",
 		"tags": ["3D"]
+	},
+	{
+		"id": 65,
+		"order": 48,
+		"name": "Pixelarticons",
+		"link": "https://pixelarticons.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/pixelarticons",
+		"license": "Freemium",
+		"licenseDescription": "486 icons free",
+		"tags": ["Pixelart", "Package"]
 	}
 ]

@@ -156,10 +156,10 @@
 	},
 	{
 		"id": 18,
-		"order": 68,
-		"name": "Freeillustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705092666/freesets/illustrations/zuwsrsc5ltkzef4xarvh.webp",
-		"link": "https://www.freeillustrations.club"
+		"order": 42,
+		"name": "Hand Drawn Arrows",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
+		"link": "https://handyarrows.com/"
 	},
 	{
 		"id": 19,
@@ -561,12 +561,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/universe",
 		"link": "https://illustrationsuniverse.com/",
 		"tags": ["Inspiration"]
-	},
-	{
-		"id": 65,
-		"order": 42,
-		"name": "Hand Drawn Arrows",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
-		"link": "https://handyarrows.com/"
 	}
 ]

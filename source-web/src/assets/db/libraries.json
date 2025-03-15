@@ -341,5 +341,29 @@
 		"link": "https://yoopta.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/bvivtqfwrnj2xakfi8zt",
 		"tags": ["Rich-text editor"]
+	},
+	{
+		"id": 38,
+		"order": 56,
+		"name": "Swapy",
+		"link": "https://swapy.tahazsh.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/swapytahazsh",
+		"tags": ["drag-to-swap layout"]
+	},
+	{
+		"id": 39,
+		"order": 55,
+		"name": "Blendy",
+		"link": "https://blendy.tahazsh.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/blendytahazsh",
+		"tags": ["Transitions", "framework-agnostic"]
+	},
+	{
+		"id": 40,
+		"order": 45,
+		"name": "Unpic",
+		"link": "https://unpic.pics/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/unpicpics",
+		"tags": ["Image tools"]
 	}
 ]

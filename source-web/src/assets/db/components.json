@@ -692,5 +692,15 @@
 		"tags": ["React", "Tailwind", "TypeScript", "Motion"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/danielpetho/fancy/blob/main/LICENSE"
+	},
+	{
+		"id": 76,
+		"order": 58,
+		"name": "SmoothUI",
+		"link": "https://www.smoothui.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/smoothui",
+		"tags": ["React", "Tailwind", "Animations", "Motion", "HTML"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/educlopez/smoothui/blob/main/LICENSE"
 	}
 ]
