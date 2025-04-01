@@ -270,14 +270,7 @@
 		"link": "https://www.prettyfolio.com/",
 		"tags": ["Portfolios"]
 	},
-	{
-		"id": 38,
-		"order": 48,
-		"name": "illustrations universe",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/universe",
-		"link": "https://illustrationsuniverse.com/",
-		"tags": ["Illustrations"]
-	},
+
 	{
 		"id": 39,
 		"order": 61,
@@ -285,6 +278,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designeverywhere",
 		"link": "https://designeverywhere.co/",
 		"tags": ["Products"]
+	},
+	{
+		"id": 38,
+		"order": 38,
+		"name": "Landings",
+		"link": "https://landings.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
 	},
 	{
 		"id": 40,
@@ -352,12 +352,5 @@
 		"link": "https://www.adfolio.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/adfolio",
 		"tags": ["Ads"]
-	},
-	{
-		"id": 49,
-		"order": 38,
-		"name": "Landings",
-		"link": "https://landings.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
 	}
 ]

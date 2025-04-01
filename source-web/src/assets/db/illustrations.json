@@ -553,13 +553,5 @@
 		"license": "CC BY 4.0",
 		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
 		"tags": ["Placeholder logos"]
-	},
-	{
-		"id": 64,
-		"order": 39,
-		"name": "illustrations universe",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/universe",
-		"link": "https://illustrationsuniverse.com/",
-		"tags": ["Inspiration"]
 	}
 ]
