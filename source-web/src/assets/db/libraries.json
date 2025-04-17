@@ -365,5 +365,21 @@
 		"link": "https://unpic.pics/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/unpicpics",
 		"tags": ["Image tools"]
+	},
+	{
+		"id": 41,
+		"order": 54,
+		"name": "Anime.js",
+		"link": "https://animejs.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/animejs",
+		"tags": ["Animation Engine"]
+	},
+	{
+		"id": 41,
+		"order": 66,
+		"name": "Starlight",
+		"link": "https://starlight.astro.build/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/starlight",
+		"tags": ["Documentation sites", "Astro"]
 	}
 ]

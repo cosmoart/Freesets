@@ -278,5 +278,13 @@
 		"link": "https://www.shapedivider.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
 		"tags": ["Section separator"]
+	},
+	{
+		"id": 32,
+		"order": 40,
+		"name": "Gradii",
+		"link": "https://www.gradii.fun/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
+		"tags": ["Gradients"]
 	}
 ]

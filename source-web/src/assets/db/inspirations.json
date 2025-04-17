@@ -270,7 +270,13 @@
 		"link": "https://www.prettyfolio.com/",
 		"tags": ["Portfolios"]
 	},
-
+	{
+		"id": 38,
+		"order": 38,
+		"name": "Landings",
+		"link": "https://landings.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
+	},
 	{
 		"id": 39,
 		"order": 61,
@@ -278,13 +284,6 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designeverywhere",
 		"link": "https://designeverywhere.co/",
 		"tags": ["Products"]
-	},
-	{
-		"id": 38,
-		"order": 38,
-		"name": "Landings",
-		"link": "https://landings.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
 	},
 	{
 		"id": 40,
@@ -347,10 +346,39 @@
 	},
 	{
 		"id": 48,
-		"order": 56,
+		"order": 75,
 		"name": "Adfolio",
 		"link": "https://www.adfolio.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/adfolio",
 		"tags": ["Ads"]
+	},
+	{
+		"id": 49,
+		"order": 78,
+		"name": "A1",
+		"link": "https://www.a1.gallery/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/a1gallery"
+	},
+	{
+		"id": 50,
+		"order": 28,
+		"name": "Daily Delights",
+		"link": "https://delights.design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/delights"
+	},
+	{
+		"id": 51,
+		"order": 48,
+		"name": "CTA.gallery",
+		"link": "https://www.cta.gallery/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/ctagallery"
+	},
+	{
+		"id": 52,
+		"order": 78,
+		"name": "Supahero",
+		"link": "https://www.supahero.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/supahero",
+		"tags": ["Hero sections"]
 	}
 ]

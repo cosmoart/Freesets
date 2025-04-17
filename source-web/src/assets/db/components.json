@@ -580,10 +580,10 @@
 	},
 	{
 		"id": 64,
-		"order": 48,
-		"name": "Just D",
-		"link": "https://justd.co/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/justd",
+		"order": 67,
+		"name": "Intent UI",
+		"link": "https://intentui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/intentui",
 		"tags": ["Accessible", "Aria", "React", "Tailwind"]
 	},
 	{
@@ -598,14 +598,11 @@
 	},
 	{
 		"id": 66,
-		"order": 45,
+		"order": 89,
 		"name": "React Bits",
 		"link": "https://www.reactbits.dev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-bits",
-		"tags": ["React", "Animations"],
-		"license": "Free",
-		"licenseDescription": "Free to use, open source.",
-		"licenseLink": "https://github.com/DavidHDev/react-bits"
+		"tags": ["React", "Animations", "Copy&Paste"]
 	},
 	{
 		"id": 67,
@@ -627,13 +624,13 @@
 	},
 	{
 		"id": 69,
-		"order": 87,
-		"name": "Justd",
-		"link": "https://getjustd.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/getjustd",
-		"tags": ["Tailwind", "React", "Accessible", "Aria"],
+		"order": 58,
+		"name": "SmoothUI",
+		"link": "https://www.smoothui.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/smoothui",
+		"tags": ["React", "Tailwind", "Animations", "Motion", "HTML"],
 		"license": "MIT",
-		"licenseLink": "https://github.com/justdlabs/justd/blob/main/LICENSE"
+		"licenseLink": "https://github.com/educlopez/smoothui/blob/main/LICENSE"
 	},
 	{
 		"id": 70,
@@ -695,12 +692,11 @@
 	},
 	{
 		"id": 76,
-		"order": 58,
-		"name": "SmoothUI",
-		"link": "https://www.smoothui.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/smoothui",
-		"tags": ["React", "Tailwind", "Animations", "Motion", "HTML"],
+		"order": 34,
+		"name": "magecdn SVG Loaders",
+		"link": "https://magecdn.com/tools/svg-loaders",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
 		"license": "MIT",
-		"licenseLink": "https://github.com/educlopez/smoothui/blob/main/LICENSE"
+		"tags": ["Loaders"]
 	}
 ]

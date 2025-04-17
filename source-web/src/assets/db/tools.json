@@ -13,7 +13,7 @@
 		"name": "Shots",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703007575/freesets/tools/shots.so__mntgnr.webp",
 		"link": "https://shots.so",
-		"tags": ["Mockups"]
+		"tags": ["Mockups", "Open Graph"]
 	},
 	{
 		"id": 3,
@@ -227,7 +227,7 @@
 		"name": "og.new",
 		"link": "https://og.new/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/usxfnxgq0vrxfvkk7qpf",
-		"tags": ["Generate Open Graph images"]
+		"tags": ["Open Graph"]
 	},
 	{
 		"id": 29,
@@ -235,7 +235,7 @@
 		"name": "gleam.so",
 		"link": "https://gleam.so/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/trww6z9uivyb33vtdzas",
-		"tags": ["Generate Open Graph images"],
+		"tags": ["Open Graph"],
 		"licenseLink": "https://gleam.so/pricing",
 		"license": "Freemium"
 	},
@@ -246,5 +246,29 @@
 		"link": "https://www.shapedivider.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
 		"tags": ["Section separator"]
+	},
+	{
+		"id": 31,
+		"order": 82,
+		"name": "PostSpark",
+		"link": "https://postspark.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/postspark",
+		"tags": ["Open Graph", "Mockups"]
+	},
+	{
+		"id": 32,
+		"order": 40,
+		"name": "Gradii",
+		"link": "https://www.gradii.fun/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
+		"tags": ["Open Graph"]
+	},
+		{
+		"id": 33,
+		"order": 40,
+		"name": "Squish",
+		"link": "https://squish.addy.ie/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/squish",
+		"tags": ["Image optimizer"]
 	}
 ]

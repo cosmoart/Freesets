@@ -538,7 +538,7 @@
 	},
 	{
 		"id": 62,
-		"order": 79,
+		"order": 69,
 		"name": "coolshapes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
 		"link": "https://coolshap.es/",
@@ -553,5 +553,13 @@
 		"license": "CC BY 4.0",
 		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
 		"tags": ["Placeholder logos"]
+	},
+		{
+		"id": 64,
+		"order": 44,
+		"name": "Spectrum",
+		"link": "https://spectrums.framer.website/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/spectrums",
+		"tags": ["Logos"]
 	}
 ]
