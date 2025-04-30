@@ -33,11 +33,13 @@
 	},
 	{
 		"id": 5,
-		"order": 93,
-		"name": "Grabient",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203980/freesets/colors/g3flh0qgawnbey9te9t2.webp",
-		"link": "https://www.grabient.com",
-		"tags": ["Gradients"]
+		"order": 80,
+		"name": "Hypercolor",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/hypercolor",
+		"link": "https://hypercolor.dev/",
+		"tags": ["Generator", "Gradients", "Tailwind"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
 	},
 	{
 		"id": 6,
@@ -301,15 +303,5 @@
 		"tags": ["Generator", "Preview"],
 		"license": "Apache V2.0",
 		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
-	},
-	{
-		"id": 41,
-		"order": 80,
-		"name": "Hypercolor",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/hypercolor",
-		"link": "https://hypercolor.dev/",
-		"tags": ["Generator", "Gradients", "Tailwind"],
-		"license": "MIT",
-		"licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
 	}
 ]
