@@ -233,9 +233,9 @@
 		"name": "Boxicons",
 		"link": "https://boxicons.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/boxicons",
-		"license": "MIT",
-		"licenseLink": "https://boxicons.com/usage#license",
-		"order": 55
+		"license": "Freemium",
+		"licenseLink": "https://boxicons.com/pricing",
+		"order": 33
 	},
 	{
 		"id": 26,
