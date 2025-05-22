@@ -181,13 +181,5 @@
 		"link": "https://modernfontstacks.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/modernfontstacks",
 		"tags": ["CSS"]
-	},
-	{
-		"id": 24,
-		"order": 73,
-		"name": "Typefaces.today",
-		"link": "https://typefaces.today/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/typefacestoday",
-		"license": "Multiple"
 	}
 ]
