@@ -270,5 +270,13 @@
 		"link": "https://squish.addy.ie/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/squish",
 		"tags": ["Image optimizer"]
+	},
+	{
+		"id": 34,
+		"order": 63,
+		"name": "Format JSON Online",
+		"link": "https://www.formatjsononline.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/formatjsononline",
+		"tags": ["JSON formatter"]
 	}
 ]
