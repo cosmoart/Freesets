@@ -287,12 +287,11 @@
 	},
 	{
 		"id": 32,
-		"order": 37,
-		"name": "404 Illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705799631/freesets/illustrations/iic8y10pukfwajwzabw4.webp",
-		"link": "https://error404.fun/",
-		"license": "Free",
-		"licenseLink": "https://craftwork.design/license/"
+		"order": 44,
+		"name": "Spectrum",
+		"link": "https://spectrums.framer.website/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/spectrums",
+		"tags": ["Logos"]
 	},
 	{
 		"id": 33,
@@ -553,13 +552,5 @@
 		"license": "CC BY 4.0",
 		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
 		"tags": ["Placeholder logos"]
-	},
-		{
-		"id": 64,
-		"order": 44,
-		"name": "Spectrum",
-		"link": "https://spectrums.framer.website/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/spectrums",
-		"tags": ["Logos"]
 	}
 ]
