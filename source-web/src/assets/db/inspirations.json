@@ -380,5 +380,28 @@
 		"link": "https://www.supahero.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/supahero",
 		"tags": ["Hero sections"]
+	},
+	{
+		"id": 53,
+		"order": 29,
+		"name": "Websitevice",
+		"link": "https://websitevice.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/websitevice"
+	},
+	{
+		"id": 54,
+		"order": 45,
+		"name": "60fps",
+		"link": "https://60fps.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/60fps",
+		"tags": ["Apps", "Animations"]
+	},
+	{
+		"id": 55,
+		"order": 55,
+		"name": "Minimum",
+		"link": "https://mnmm.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/mnmm",
+		"tags": ["Minimalist"]
 	}
 ]

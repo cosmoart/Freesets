@@ -35,7 +35,7 @@
 		"name": "Float UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704376726/freesets/components/ztoak6hgzaj7oy0unfsh.webp",
 		"link": "https://floatui.com",
-		"tags": ["Tailwind", "React", "Vue", "Svelte", "HTML", "Alpine"]
+		"tags": ["Tailwind", "React", "Vue", "Svelte", "Copy&Paste", "Alpine", "Templates"]
 	},
 	{
 		"id": 5,
@@ -43,7 +43,7 @@
 		"name": "Tailblocks",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703009391/freesets/components/tailblocks.cc__D-720_rg8avy.webp",
 		"link": "https://tailblocks.cc",
-		"tags": ["Tailwind", "HTML"],
+		"tags": ["Tailwind", "HTML", "Copy&Paste"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/mertJF/tailblocks/blob/master/LICENSE"
 	},
@@ -80,7 +80,7 @@
 		"name": "Tailus UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703008051/freesets/components/tailus.io__zed6xv.webp",
 		"link": "https://tailus.io",
-		"tags": ["Tailwind", "HTML"],
+		"tags": ["Tailwind", "Copy&Paste", "Templates"],
 		"license": "CC",
 		"licenseLink": "https://github.com/Tailus-UI/blocks?tab=License"
 	},
@@ -100,7 +100,7 @@
 		"name": "Preline UI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703601910/freesets/components/dr99a9rkspjafbrqb3bp.webp",
 		"link": "https://preline.co/",
-		"tags": ["Tailwind", "HTML", "React", "Vue"],
+		"tags": ["Tailwind", "Copy&Paste", "React", "Vue", "Templates"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/htmlstreamofficial/preline?tab=readme-ov-file#license"
 	},
@@ -110,7 +110,7 @@
 		"name": "HyperUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703555425/freesets/components/qij8gxukb0qgx73keqet.webp",
 		"link": "https://www.hyperui.dev",
-		"tags": ["Tailwind", "HTML"],
+		"tags": ["Tailwind", "HTML", "Copy&Paste"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/markmead/hyperui/blob/main/LICENSE"
 	},
@@ -120,7 +120,7 @@
 		"name": "LangUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706404490/freesets/components/fq5eyrvkle6viwojpxj9.webp",
 		"link": "https://www.langui.dev",
-		"tags": ["HTML", "Tailwind"]
+		"tags": ["HTML", "Tailwind", "Copy&Paste"]
 	},
 	{
 		"id": 14,
@@ -138,15 +138,16 @@
 		"name": "daisyUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385880/freesets/components/rww2uufklcug7afxcilt.webp",
 		"link": "https://daisyui.com",
-		"tags": ["Tailwind", "HTML"]
+		"tags": ["Tailwind"]
 	},
 	{
 		"id": 16,
-		"order": 75,
-		"name": "Windstatic",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460628/freesets/components/ospblbgczbwzq0xc40mf.webp",
-		"link": "https://windstatic.com",
-		"tags": ["Tailwind", "Alpine"]
+		"order": 34,
+		"name": "magecdn SVG Loaders",
+		"link": "https://magecdn.com/tools/svg-loaders",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
+		"license": "MIT",
+		"tags": ["Loaders"]
 	},
 	{
 		"id": 17,
@@ -154,7 +155,7 @@
 		"name": "UIverse",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/uiverse",
 		"link": "https://uiverse.io",
-		"tags": ["HTML"],
+		"tags": ["HTML", "Copy&Paste"],
 		"license": "MIT"
 	},
 	{
@@ -173,7 +174,7 @@
 		"name": "Material Tailwind",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703613034/freesets/components/valpasgzusvtdj2x0h55.webp",
 		"link": "https://www.material-tailwind.com",
-		"tags": ["React", "HTML", "Remix", "Gatsby", "Tailwind"],
+		"tags": ["React", "Remix", "Gatsby", "Tailwind"],
 		"license": "Freemium",
 		"licenseLink": "https://www.material-tailwind.com/blocks#pricing"
 	},
@@ -307,7 +308,7 @@
 		"name": "buttons.ibelick",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706405496/freesets/components/virh7entwwa55smst4ol.webp",
 		"link": "https://buttons.ibelick.com",
-		"tags": ["Buttons", "Tailwind", "HTML"]
+		"tags": ["Buttons", "Tailwind", "Copy&Paste"]
 	},
 	{
 		"id": 34,
@@ -315,7 +316,7 @@
 		"name": "3D buttons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705768856/freesets/components/vxcfat4frzzdbwfqxcvn.webp",
 		"link": "https://csspro.com/css-3d-buttons/",
-		"tags": ["3D", "Buttons", "HTML"]
+		"tags": ["3D", "Buttons", "Copy&Paste"]
 	},
 	{
 		"id": 35,
@@ -362,7 +363,7 @@
 		"name": "CSS checkboxes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705769069/freesets/components/wgqjufaceb0fqgaeqebt.webp",
 		"link": "https://getcssscan.com/css-checkboxes-examples?ref=css-3d-buttons-bottom",
-		"tags": ["HTML", "Checkboxes"]
+		"tags": ["HTML", "Checkboxes", "Copy&Paste"]
 	},
 	{
 		"id": 40,
@@ -370,7 +371,7 @@
 		"name": "CSS box-shadow",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705768965/freesets/components/fyvka42qkl8nh136frxm.webp",
 		"link": "https://getcssscan.com/css-box-shadow-examples",
-		"tags": ["HTML", "Shadows"]
+		"tags": ["HTML", "Shadows", "Copy&Paste"]
 	},
 	{
 		"id": 41,
@@ -378,7 +379,7 @@
 		"name": "LoaderShip",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069281/freesets/components/tgovgqfcvl1snnisibtd.webp",
 		"link": "https://www.loadership.com",
-		"tags": ["Loaders", "HTML"]
+		"tags": ["Loaders", "CSS", "Copy&Paste"]
 	},
 	{
 		"id": 42,
@@ -386,7 +387,7 @@
 		"name": "Flowbite",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703009841/freesets/components/flowbite.com__D-720_rjocmi.webp",
 		"link": "https://flowbite.com",
-		"tags": ["Tailwind", "HTML"],
+		"tags": ["Tailwind", "Copy&Paste"],
 		"license": "Freemium",
 		"licenseLink": "https://flowbite.com/pro/#pricing"
 	},
@@ -406,7 +407,7 @@
 		"name": "Toggles",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/toggles",
 		"link": "https://toggles.dev",
-		"tags": ["Toggles", "HTML"],
+		"tags": ["Toggles", "HTML", "Copy&Paste"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/AlfieJones/theme-toggles/blob/main/LICENSE"
 	},
@@ -416,16 +417,16 @@
 		"name": "tailwindUI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703601630/freesets/components/ewiat7s397akwrcaxd2f.webp",
 		"link": "https://tailwindui.com",
-		"tags": ["Tailwind", "HTML", "React", "Vue"],
+		"tags": ["Tailwind","React", "Vue", "Copy&Paste"],
 		"license": "Freemium"
 	},
 	{
 		"id": 46,
-		"order": 14,
+		"order": 7,
 		"name": "Tailwind UI KIT",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703613682/freesets/components/qeeexxul0yg6rostly73.webp",
 		"link": "https://www.tailwind-kit.com",
-		"tags": ["Tailwind", "HTML"],
+		"tags": ["Tailwind", "HTML", "Copy&Paste"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/Charlie85270/tail-kit/blob/main/LICENCE.md"
 	},
@@ -558,7 +559,7 @@
 		"name": "Magic UI",
 		"link": "https://magicui.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/magicui",
-		"tags": ["Tailwind", "React", "Typescript", "Framer"],
+		"tags": ["Tailwind", "React", "Typescript", "Framer", "Templates"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/magicuidesign/magicui/blob/main/LICENSE.md"
 	},
@@ -594,7 +595,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/tailbits",
 		"license": "CC-BY-4.0",
 		"licenseDescription": "This project is licensed under the Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you provide appropriate credit, a link to the license, and indicate if changes were made.",
-		"tags": ["Templates", "Tailwind", "HTML"]
+		"tags": ["Templates", "Tailwind", "HTML", "Copy&Paste"]
 	},
 	{
 		"id": 66,
@@ -628,7 +629,7 @@
 		"name": "SmoothUI",
 		"link": "https://www.smoothui.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/smoothui",
-		"tags": ["React", "Tailwind", "Animations", "Motion", "HTML"],
+		"tags": ["React", "Tailwind", "Animations", "Motion"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/educlopez/smoothui/blob/main/LICENSE"
 	},
@@ -638,7 +639,7 @@
 		"name": "TW Components",
 		"link": "https://www.creative-tim.com/twcomponents",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/twcomponentsqwd",
-		"tags": ["Tailwind", "HTML"]
+		"tags": ["Tailwind", "HTML", "Copy&Paste"]
 	},
 	{
 		"id": 71,
@@ -676,7 +677,7 @@
 		"name": "Origin UI",
 		"link": "https://originui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/originui",
-		"tags": ["React", "Tailwind", "Next.js", "HTML"],
+		"tags": ["React", "Tailwind", "Next.js", "Copy&Paste"],
 		"license": "Free",
 		"licenseLink": "https://github.com/origin-space/originui?tab=readme-ov-file#terms-of-use"
 	},
@@ -692,11 +693,18 @@
 	},
 	{
 		"id": 76,
-		"order": 34,
-		"name": "magecdn SVG Loaders",
-		"link": "https://magecdn.com/tools/svg-loaders",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
-		"license": "MIT",
-		"tags": ["Loaders"]
+		"order": 68,
+		"name": "HTMLrev",
+		"link": "https://htmlrev.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/htmlrev",
+		"tags": ["Templates","Tailwind","React","Vue","Svelte","Astro"]
+	},
+	{
+		"id": 77,
+		"order": 48,
+		"name": "Stepperize",
+		"link": "https://stepperize.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/stepperize",
+		"tags": ["Multi-Step Flows", "Forms", "React","Vue","Solid","Svelte"]
 	}
 ]
