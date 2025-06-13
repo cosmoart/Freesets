@@ -39,7 +39,7 @@
 					<li>
 						<img src={tagIcon} alt="" width="16" height="16" class="w-4 invert dark:invert-0" />
 					</li>
-					{#each asset.tags as tag}
+					{#each asset.tags.slice(0, 6) as tag}
 						<li
 							class="text-[14px] tracking-wide before:h-2.5 before:w-[1px] before:bg-zinc-900 dark:before:bg-white before:bg-opacity-50 before:absolute before:-left-1.5 before:top-0 before:bottom-0 before:m-auto relative"
 						>
