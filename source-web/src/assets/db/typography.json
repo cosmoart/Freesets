@@ -145,11 +145,11 @@
 	},
 	{
 		"id": 19,
-		"order": 76,
-		"name": "Fonts in the Wild",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontsinthewild",
-		"link": "https://www.fontsinthewild.com/free",
-		"license": "Multiple"
+		"order": 19,
+		"name": "Modern Font Stacks",
+		"link": "https://modernfontstacks.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/modernfontstacks",
+		"tags": ["CSS"]
 	},
 	{
 		"id": 20,
@@ -173,13 +173,5 @@
 		"name": "Font.Download",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontdownload",
 		"link": "https://font.download/"
-	},
-	{
-		"id": 23,
-		"order": 19,
-		"name": "Modern Font Stacks",
-		"link": "https://modernfontstacks.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/modernfontstacks",
-		"tags": ["CSS"]
 	}
 ]

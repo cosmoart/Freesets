@@ -452,12 +452,13 @@
 	},
 	{
 		"id": 52,
-		"order": 0,
-		"name": "SVG Hub",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705088776/freesets/illustrations/okkc8phzwav9g9laqtw8.webp",
-		"link": "https://svghub.vercel.app",
-		"tags": ["Doodles"],
-		"license": "CC BY-NC 4.0"
+		"order": 39,
+		"name": "uilogos",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/uilogos",
+		"link": "https://www.uilogos.co/",
+		"license": "CC BY 4.0",
+		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
+		"tags": ["Placeholder logos"]
 	},
 	{
 		"id": 53,
@@ -542,15 +543,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
 		"link": "https://coolshap.es/",
 		"tags": ["Package", "Logos"]
-	},
-	{
-		"id": 63,
-		"order": 39,
-		"name": "uilogos",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/uilogos",
-		"link": "https://www.uilogos.co/",
-		"license": "CC BY 4.0",
-		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
-		"tags": ["Placeholder logos"]
 	}
 ]

@@ -129,19 +129,19 @@
 	},
 	{
 		"id": 17,
-		"order": 1,
-		"name": "Favicon Generator",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/favicon-generator",
-		"link": "https://www.favicon-generator.org/",
-		"tags": ["Favicon generator"]
+		"order": 40,
+		"name": "Squish",
+		"link": "https://squish.addy.ie/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/squish",
+		"tags": ["Image optimizer"]
 	},
 	{
 		"id": 18,
-		"order": 1,
-		"name": "Real Favicon Generator",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/real-favicon",
-		"link": "https://realfavicongenerator.net/",
-		"tags": ["Favicon generator"]
+		"order": 60,
+		"name": "Starlight",
+		"link": "https://starlight.astro.build/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/starlight",
+		"tags": ["Build documentation sites"]
 	},
 	{
 		"id": 19,
@@ -262,21 +262,5 @@
 		"link": "https://www.gradii.fun/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
 		"tags": ["Open Graph"]
-	},
-		{
-		"id": 33,
-		"order": 40,
-		"name": "Squish",
-		"link": "https://squish.addy.ie/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/squish",
-		"tags": ["Image optimizer"]
-	},
-		{
-		"id": 34,
-		"order": 60,
-		"name": "Starlight",
-		"link": "https://starlight.astro.build/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/starlight",
-		"tags": ["Build documentation sites"]
 	}
 ]

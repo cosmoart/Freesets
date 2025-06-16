@@ -301,11 +301,11 @@
 	},
 	{
 		"id": 42,
-		"order": 58,
-		"name": "Commerce Cream",
-		"link": "https://commercecream.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/commercecream",
-		"tags": ["Shopify"]
+		"order": 55,
+		"name": "Minimum",
+		"link": "https://mnmm.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/mnmm",
+		"tags": ["Minimalist"]
 	},
 	{
 		"id": 43,
@@ -395,13 +395,5 @@
 		"link": "https://60fps.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/60fps",
 		"tags": ["Apps", "Animations"]
-	},
-	{
-		"id": 55,
-		"order": 55,
-		"name": "Minimum",
-		"link": "https://mnmm.xyz",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/mnmm",
-		"tags": ["Minimalist"]
 	}
 ]
