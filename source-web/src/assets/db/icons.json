@@ -200,12 +200,12 @@
 	},
 	{
 		"id": 22,
-		"name": "Iconbuddy",
-		"link": "https://iconbuddy.app",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconbuddy",
-		"license": "Multiple",
-		"licenseLink": "https://iconbuddy.app",
-		"order": 60
+		"order": 19,
+		"name": "Icons for AI",
+		"link": "https://iconsforai.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconsforai",
+		"license": "CC BY 4.0",
+		"licenseLink": "https://iconsforai.com/license"
 	},
 	{
 		"id": 23,
@@ -654,14 +654,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
 		"link": "https://coolshap.es/",
 		"tags": ["Package", "Logos"]
-	},
-	{
-		"id": 71,
-		"order": 19,
-		"name": "Icons for AI",
-		"link": "https://iconsforai.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconsforai",
-		"license": "CC BY 4.0",
-		"licenseLink": "https://iconsforai.com/license"
 	}
 ]
