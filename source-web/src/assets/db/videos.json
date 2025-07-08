@@ -102,15 +102,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/eybg2hh9eshhaxvdtsci.webp",
 		"link": "https://vimeo.com/groups/freehd/",
 		"license": "Multiple"
-	},
-	{
-		"id": 12,
-		"order": 2,
-		"name": "Videvo",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/videvo",
-		"link": "https://www.videvo.net",
-		"license": "Multiple",
-		"licenseLink": "https://help.videvo.net/category/6-licensing",
-		"licenseDescription": "Videvo Attribution License or CC BY 3.0"
 	}
 ]
