@@ -1,8 +1,8 @@
 <script>
 	import externalIcon from '@/assets/icons/external.svg';
 	import infoIcon from '@/assets/icons/info.svg';
-	import tagIcon from '@/assets/icons/tag.svg';
 	import Image from '@/components/ui/Image.svelte';
+	import Tags from './ui/Tags.svelte';
 
 	let { assets } = $props();
 </script>
@@ -31,23 +31,7 @@
 					src="https://www.google.com/s2/favicons?domain={asset.link}&sz=128"
 				/>
 			</a>
-			{#if asset.tags}
-				<ul
-					class="flex gap-x-2.5 items-center absolute bottom-0 right-0 bg-purple-50 dark:bg-zinc-800 before:rotate-[265deg] before:absolute flex-wrap justify-end before:w-3 before:h-3 before:-left-3 before:bottom-0 before:z-10 before:rounded-full before:shadow-[-0.5rem_0.5rem_#faf5ff] dark:before:shadow-[-0.5rem_0.5rem_#27272a] before:rounded-br w-fit rounded-tl-md px-2 py-0.5 text-zinc-950 dark:text-white"
-					title="Tags"
-				>
-					<li>
-						<img src={tagIcon} alt="" width="16" height="16" class="w-4 invert dark:invert-0" />
-					</li>
-					{#each asset.tags.slice(0, 6) as tag}
-						<li
-							class="text-[14px] tracking-wide before:h-2.5 before:w-[1px] before:bg-zinc-900 dark:before:bg-white before:bg-opacity-50 before:absolute before:-left-1.5 before:top-0 before:bottom-0 before:m-auto relative"
-						>
-							{tag}
-						</li>
-					{/each}
-				</ul>
-			{/if}
+			<Tags tags={asset.tags} />
 		</div>
 
 		<div
