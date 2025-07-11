@@ -706,5 +706,29 @@
 		"link": "https://stepperize.vercel.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/stepperize",
 		"tags": ["Multi-Step Flows", "Forms", "React","Vue","Solid","Svelte"]
+	},
+	{
+		"id": 78,
+		"order": 80,
+		"name": "Mvpblocks",
+		"link": "https://blocks.mvp-subha.me/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/Mvpblocks",
+		"tags": ["Copy&Paste", "React", "Tailwind"]
+	},
+	{
+		"id": 79,
+		"order": 37,
+		"name": "SHSF UI",
+		"link": "https://www.shsfui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shsfui",
+		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Motion","Shadcn"]
+	},
+	{
+		"id": 80,
+		"order": 82,
+		"name": "Kibo UI",
+		"link": "https://www.kibo-ui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kibo-ui",
+		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Shadcn", "Lucide"]
 	}
 ]
