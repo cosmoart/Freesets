@@ -1,0 +1,93 @@
+[
+	{
+		"id": 1,
+		"name": "JavaScript Mastery",
+		"img": "/backgrounds/javascriptmastery.png",
+		"link": "https://www.youtube.com/@javascriptmastery",
+		"tags": []
+	},
+	{
+		"id": 2,
+		"name": "Fazt Code",
+		"img": "/backgrounds/faztcode.png",
+		"link": "https://www.youtube.com/@FaztCode",
+		"tags": ["Coding", "Learning", "Tutorials","Proyects","Courses"]
+	},
+	{
+		"id": 3,
+		"name": "Code With Antonio",
+		"img": "/backgrounds/codewithantonio.png",
+		"link": "https://www.youtube.com/@codewithantonio",
+		"tags": ["Proyects"]
+	}, 
+	{
+		"id": 4,
+		"name": "Coding With Dawid",
+		"img": "/backgrounds/codingwithdawid.png",
+		"link": "https://www.youtube.com/@CodingWithDawid",
+		"tags": ["Proyects"]
+	}, 
+	{
+		"id": 5,
+		"name": "TubeGuruji",
+		"img": "/backgrounds/tubeguruji.png",
+		"link": "https://www.youtube.com/@tubeguruji",
+		"tags": ["Proyects","Tutorials"]
+	}, 
+	{
+		"id": 6,
+		"name": "Jan Marshal",
+		"img": "/backgrounds/janmarshalcoding.png",
+		"link": "https://www.youtube.com/@janmarshalcoding",
+		"tags": ["Tutorials","Proyects"]
+	}, 
+	{
+		"id": 7,
+		"name": "WebDevCody",
+		"img": "/backgrounds/webdevcody.png",
+		"link": "https://www.youtube.com/@WebDevCody",
+		"tags": ["Tutorials", "Coding", "Learning"]
+	},
+	{
+		"id": 8,
+		"name": "BecodemyOfficial",
+		"img": "/backgrounds/becodemyofficial.png",
+		"link": "https://www.youtube.com/@BecodemyOfficial",
+		"tags": ["Proyects"]
+	}, 
+	{
+		"id": 9,
+		"name": "freeCodeCamp.org",
+		"img": "/backgrounds/freecodecamp.png",
+		"link": "https://www.youtube.com/@freecodecamp",
+		"tags": ["Proyects", "Tutorials", "Courses"]
+	},
+	{
+		"id": 10,
+		"name": "GreatStack",
+		"img": "/backgrounds/greatstack.png",
+		"link": "https://www.youtube.com/@GreatStackDev",
+		"tags": ["Proyects"]
+	},
+	{
+		"id": 11,
+		"name": "Fireship",
+		"img": "/backgrounds/fireship.png",
+		"link": "https://www.youtube.com/@Fireship",
+		"tags": ["Learning"]
+	},
+	{
+		"id": 12,
+		"name": "midudev",
+		"img": "/backgrounds/midudev.png",
+		"link": "https://www.youtube.com/@midudev",
+		"tags": ["Proyects", "Tutorials", "Courses","Coding"]
+	},
+	{
+		"id": 13,
+		"name": "ThePrimeTime",
+		"img": "/backgrounds/theprimetime.png",
+		"link": "https://www.youtube.com/@ThePrimeTime",
+		"tags": ["Proyects", "Tutorials","Coding"]
+	}
+]
