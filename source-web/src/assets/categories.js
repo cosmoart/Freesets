@@ -11,6 +11,7 @@ import blogsDB from '@/assets/db/blogs.json'
 import toolsDB from '@/assets/db/tools.json'
 import inspirationsDB from '@/assets/db/inspirations.json'
 import componentsDB from '@/assets/db/components.json'
+import youtubeDB from '@/assets/db/youtube.json' 
 
 export default [
 	{
@@ -90,5 +91,11 @@ export default [
 		color: '#21c95f',
 		nameID: 'components',
 		assets: componentsDB.sort((a, b) => b.order - a.order)
-	}
+	},
+	{
+		name: 'Youtube',
+		color: 'red',
+		nameID: 'youtube',
+		assets: youtubeDB.sort((a, b) => b.id - a.id)
+	} 
 ]
