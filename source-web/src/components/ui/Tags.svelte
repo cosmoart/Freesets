@@ -3,19 +3,26 @@
 	let { tags } = $props();
 	const maxChars = 30;
 
-	let visibleTags = [];
-	let hiddenTags = [];
+	let visibleTags = $state([]);
+	let hiddenTags = $state([]);
 
-	let totalChars = 0;
+	$effect(() => {
+		const localVisible = [];
+		const localHidden = [];
+		let totalChars = 0;
 
-	for (let tag of tags ?? []) {
-		if (totalChars + tag.length <= maxChars) {
-			visibleTags.push(tag);
-			totalChars += tag.length;
-		} else {
-			hiddenTags.push(tag);
+		for (let tag of tags ?? []) {
+			if (totalChars + tag.length <= maxChars) {
+				localVisible.push(tag);
+				totalChars += tag.length;
+			} else {
+				localHidden.push(tag);
+			}
 		}
-	}
+
+		visibleTags = localVisible;
+		hiddenTags = localHidden;
+	});
 </script>
 
 {#if tags}
