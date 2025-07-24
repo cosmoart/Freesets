@@ -654,5 +654,13 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
 		"link": "https://coolshap.es/",
 		"tags": ["Package", "Logos"]
+	},
+	{
+		"id": 71,
+		"order": 2,
+		"name": "freesvgicons",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/freesvgicons",
+		"link": "https://freesvgicons.com/"	
 	}
+	
 ]
