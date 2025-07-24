@@ -730,5 +730,15 @@
 		"link": "https://www.kibo-ui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kibo-ui",
 		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Shadcn", "Lucide"]
+	},
+	{
+		"id": 81,
+		"order": 90,
+		"name": "feflow",
+		"link": "https://feflow.dxdns.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/feflow",
+		"license": "MIT",
+		"licenseLink": "https://github.com/dxdns/feflow/blob/main/LICENSE",
+		"tags": ["TypeScript", "React", "Svelte","Vue"]
 	}
 ]
