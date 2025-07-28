@@ -262,5 +262,13 @@
 		"link": "https://www.gradii.fun/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
 		"tags": ["Open Graph"]
+	},
+	{
+		"id": 33,
+		"order": 20,
+		"name": "TinyPNG",
+		"link": "https://tinypng.com/",
+		"img": "https://i.ibb.co/xKLM0zf1/tinypng.png",
+		"tags": ["Image Optimization", "AVIF, WebP, PNG and JPEG Compression"]
 	}
 ]
