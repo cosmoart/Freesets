@@ -531,11 +531,11 @@
 	},
 	{
 		"id": 58,
-		"order": 29,
-		"name": "Variant Vault",
-		"link": "https://variantvault.chrisabdo.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/variantvault",
-		"tags": ["Animations", "Framer", "Texts"]
+		"order": 82,
+		"name": "Kibo UI",
+		"link": "https://www.kibo-ui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kibo-ui",
+		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Shadcn", "Lucide"]
 	},
 	{
 		"id": 59,
@@ -722,13 +722,5 @@
 		"link": "https://www.shsfui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shsfui",
 		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Motion","Shadcn"]
-	},
-	{
-		"id": 80,
-		"order": 82,
-		"name": "Kibo UI",
-		"link": "https://www.kibo-ui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kibo-ui",
-		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Shadcn", "Lucide"]
 	}
 ]
