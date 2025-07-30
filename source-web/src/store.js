@@ -9,7 +9,25 @@ const { subscribe, set, update } = writable({
 	totalAssets: 0,
 	totalPages: 0,
 	currentPage: 1,
+	isSearching: false,
+	searchQuery: '',
+	currentCategory: null,
+	globalAssets: [],
 });
+
+function initGlobalAssets() {
+	const combined = [];
+	categories.forEach(category => {
+		const categoryAssets = category.assets || [];
+		combined.push(...categoryAssets.map(asset => ({
+			...asset,
+			category: category.nameID,
+			categoryName: category.name,
+			categoryColor: category.color
+		})));
+	});
+	return combined;
+}
 
 function changeCategory (category) {
 	const categoryData = categories.find((c) => c.nameID === category);
@@ -20,13 +38,17 @@ function changeCategory (category) {
 		assets: categoryData.assets.slice(0, assetsPerPage),
 		filteredAssets: categoryData.assets,
 		allAssets: categoryData.assets,
+		globalAssets: initGlobalAssets(),
 		totalAssets: categoryData.assets.length,
 		totalPages: Math.ceil(categoryData.assets.length / assetsPerPage),
 		currentPage: 1,
+		currentCategory: category,
+		isSearching: false,
+		searchQuery: '',
 	});
 }
 
-function search (query) {
+function search (query, isGlobalSearch = false) {
 	update((state) => {
 		const searchTerms = query
 			?.toLowerCase()
@@ -34,17 +56,24 @@ function search (query) {
 			.map((term) => term.trim())
 			.filter((term) => term);
 
+		const searchAssets = isGlobalSearch ? state.globalAssets : state.allAssets;
 		const start = assetsPerPage * (state.currentPage - 1);
 		const end = assetsPerPage * state.currentPage;
 
-		if (!searchTerms.length) return {
-			...state,
-			assets: state.allAssets.slice(start, end),
-			totalAssets: state.allAssets.length,
-			totalPages: Math.ceil(state.allAssets.length / assetsPerPage)
-		};
+		if (!searchTerms.length) {
+			const assetsToShow = isGlobalSearch ? state.globalAssets : state.allAssets;
+			return {
+				...state,
+				assets: assetsToShow.slice(start, end),
+				filteredAssets: assetsToShow,
+				totalAssets: assetsToShow.length,
+				totalPages: Math.ceil(assetsToShow.length / assetsPerPage),
+				isSearching: false,
+				searchQuery: '',
+			};
+		}
 
-		const filteredAssets = state.allAssets.filter((resource) =>
+		const filteredAssets = searchAssets.filter((resource) =>
 			searchTerms.every(
 				(searchTerm) =>
 					resource.name.toLowerCase().includes(searchTerm) ||
@@ -59,6 +88,60 @@ function search (query) {
 			filteredAssets: filteredAssets,
 			totalAssets: filteredAssets.length,
 			totalPages: Math.ceil(filteredAssets.length / assetsPerPage),
+			isSearching: true,
+			searchQuery: query,
+			currentPage: 1,
+		};
+	});
+}
+
+function globalSearch(query) {
+	update((state) => {
+		if (!state.globalAssets.length) {
+			state.globalAssets = initGlobalAssets();
+		}
+
+		const searchTerms = query
+			?.toLowerCase()
+			.split(' ')
+			.map((term) => term.trim())
+			.filter((term) => term);
+
+		if (!searchTerms.length) return {
+			...state,
+			assets: [],
+			filteredAssets: [],
+			totalAssets: 0,
+			totalPages: 0,
+			currentPage: 1,
+			currentCategory: null,
+			isSearching: false,
+			searchQuery: '',
+		};
+
+		const filteredAssets = state.globalAssets.filter((resource) =>
+			searchTerms.every(
+				(searchTerm) =>
+					resource.name.toLowerCase().includes(searchTerm) ||
+					resource.license?.toLowerCase().includes(searchTerm) ||
+					resource.tags?.some((tag) => tag.toLowerCase().includes(searchTerm))
+			)
+		);
+
+		const start = 0; // İlk sayfa
+		const end = assetsPerPage;
+
+		return {
+			...state,
+			assets: filteredAssets.slice(start, end),
+			filteredAssets: filteredAssets,
+			allAssets: state.globalAssets, // Global asset'leri allAssets'e ata
+			totalAssets: filteredAssets.length,
+			totalPages: Math.ceil(filteredAssets.length / assetsPerPage),
+			currentPage: 1,
+			currentCategory: null,
+			isSearching: true,
+			searchQuery: query,
 		};
 	});
 }
@@ -82,9 +165,16 @@ function changePage (page) {
 	});
 }
 
+function getByCategory(categoryName) {
+	const categoryData = categories.find((c) => c.nameID === categoryName);
+	return categoryData ? categoryData.assets : [];
+}
+
 export default {
 	subscribe,
 	changeCategory,
 	search,
+	globalSearch,
 	changePage,
+	getByCategory,
 }

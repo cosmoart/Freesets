@@ -6,21 +6,24 @@
 </script>
 
 <main class="{$assets.totalAssets > 0 ? 'mb-32' : ''} relative flex-grow">
-	<article style={`--resource-color: ${$assets.color}`}>
-		<div
-			class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-20 right-0 left-0"
-		>
-			<button class="recourse-title relative flex gap-2 px-10 py-1.5" onclick={() => scroll(0, 0)}>
-				<img src={'/categories-icons/' + $assets.nameID + '.svg'} alt="" class="invert w-6" />
-				<h2 class="text-[17px]">
-					{$assets.name}
-					<span class="text-[15px]">({$assets.totalAssets})</span>
-				</h2>
-			</button>
-		</div>
+	<article style={`--resource-color: ${$assets.color || '#6366f1'}`}>
+		{#if $assets.currentCategory}
+			<div
+				class="flex justify-center border-t-2 mt-6 border-zinc-600 mx-auto sticky top-0 z-20 right-0 left-0"
+			>
+				<button class="recourse-title relative flex gap-2 px-10 py-1.5" onclick={() => scroll(0, 0)}>
+					<img src={'/categories-icons/' + $assets.nameID + '.svg'} alt="" class="invert w-6" />
+					<h2 class="text-[17px]">
+						{$assets.name}
+						<span class="text-[15px]">({$assets.totalAssets})</span>
+					</h2>
+				</button>
+			</div>
+		{/if}
+		
 		{#if $assets.totalAssets > 0}
 			<div
-				class="mx-auto grid -mt-3 gap-5"
+				class="mx-auto grid {$assets.currentCategory ? '-mt-3' : 'mt-6'} gap-5"
 				style={`grid-template-columns: repeat(auto-fill,minmax(${320}px,1fr))`}
 			>
 				<AssetCard assets={$assets} />

@@ -8,7 +8,6 @@
 	import menuIcon from '@/assets/icons/menu.svg';
 	import closeIcon from '@/assets/icons/close.svg';
 	import externalLinkIcon from '@/assets/icons/external-link.svg';
-	import Search from './ui/Search.svelte';
 
 	let navOpen = $state(false);
 	let darkMode = $state(true);
@@ -29,9 +28,6 @@
 			: 'opacity-0 translate-y-4 pointer-events-none absolute bottom-5 right-0'}"
 	>
 		<ul>
-			{#if $page.url.pathname !== '/'}
-				<Search />
-			{/if}
 			<li>
 				<button
 					class="group transition-colors hover:bg-zinc-800 px-3.5 w-full {$page.url.pathname !== '/'

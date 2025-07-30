@@ -4,13 +4,9 @@
 	import { page } from '$app/stores';
 	import { queryParameters } from 'sveltekit-search-params';
 	const params = queryParameters();
-	const { category } = $derived($page.params);
-
-	assets.changeCategory(category);
-	if ($params.q) assets.search($params.q);
-	if ($params.page) assets.changePage($params.page);
 
 	$effect(() => {
+		const category = $page.params.category;
 		assets.changeCategory(category);
 		if ($params.q) assets.search($params.q);
 		if ($params.page) assets.changePage($params.page);

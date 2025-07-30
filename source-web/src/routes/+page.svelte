@@ -1,5 +1,6 @@
 <script>
 	import Slider from '@/components/ui/Slider.svelte';
+	import SearchBar from '@/components/SearchBar.svelte';
 	const description =
 		'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.';
 	const image =
@@ -35,4 +36,8 @@
 	<h1 class="title-responsive text-center px-6 z-10 text-slate-950 dark:text-white">Freesets</h1>
 
 	<Slider />
+
+	<div class="mt-4 w-full max-w-2xl px-6 mb-8">
+		<SearchBar variant="home" />
+	</div>
 </section>

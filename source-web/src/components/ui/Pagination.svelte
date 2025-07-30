@@ -7,11 +7,11 @@
 	let pages = $derived(Array.from({ length: $assets.totalPages }, (_, i) => i + 1));
 
 	function changePage(page) {
+		assets.changePage(page);
+		$pageUrl = page;
 		setTimeout(() => {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 		}, 100);
-		assets.changePage(page);
-		$pageUrl = page;
 	}
 </script>
 

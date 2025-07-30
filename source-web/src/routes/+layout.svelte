@@ -1,7 +1,10 @@
 <script>
 	import NavBar from '@/components/NavBar.svelte';
 	import Menu from '@/components/Menu.svelte';
+	import SearchBar from '@/components/SearchBar.svelte';
 	import { onNavigate } from '$app/navigation';
+	import { page } from '$app/stores';
+	import assets from '@/store.js';
 	import './styles.css';
 	/**
 	 * @typedef {Object} Props
@@ -10,6 +13,8 @@
 
 	/** @type {Props} */
 	let { children } = $props();
+
+	const showHeaderSearch = $derived($page.url.pathname !== '/' && ($assets.isSearching || $page.url.pathname === '/search'));
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -29,7 +34,14 @@
 		class="bg-dots [view-transition-name:bgDots] invert dark:invert-0 fixed opacity-10 inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
 	></div>
 	<NavBar />
-	{@render children?.()}
+
+	{#if showHeaderSearch}
+		<div>
+			<SearchBar variant="header" />
+		</div>
+	{/if}
+
+	{@render children()}
 	<Menu />
 </div>
 
@@ -59,12 +71,14 @@
 	}
 
 	:root::view-transition-old(root) {
-		animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+		animation:
+			90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
 			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
 	}
 
 	:root::view-transition-new(root) {
-		animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+		animation:
+			210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
 			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 	}
 </style>
