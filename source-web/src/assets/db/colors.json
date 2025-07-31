@@ -303,5 +303,13 @@
 		"tags": ["Generator", "Preview"],
 		"license": "Apache V2.0",
 		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
+	},
+	{
+		"id": 41,
+		"order": 77,
+		"name": "ColorsWall",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorswall",
+		"link": "https://colorswall.com/",
+		"tags": ["Palettes", "Colors", "Generator"]
 	}
 ]
