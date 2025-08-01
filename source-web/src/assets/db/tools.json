@@ -268,7 +268,7 @@
 		"order": 38,
 		"name": "tldraw",
 		"link": "https://www.tldraw.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/tldraw",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
 		"tags": ["Whiteboard"],
 		"licenseLink":"https://github.com/tldraw/tldraw?tab=License-1-ov-file"
 	}
