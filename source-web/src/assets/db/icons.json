@@ -200,12 +200,11 @@
 	},
 	{
 		"id": 22,
-		"order": 19,
-		"name": "Icons for AI",
-		"link": "https://iconsforai.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconsforai",
-		"license": "CC BY 4.0",
-		"licenseLink": "https://iconsforai.com/license"
+		"order": 39,
+		"name": "coolshapes",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
+		"link": "https://coolshap.es/",
+		"tags": ["Package", "Logos"]
 	},
 	{
 		"id": 23,
@@ -386,12 +385,11 @@
 	},
 	{
 		"id": 41,
-		"name": "Teenyicons",
-		"link": "https://teenyicons.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/teenyicons",
-		"license": "MIT",
-		"licenseLink": "https://github.com/teenyicons/teenyicons/blob/master/LICENSE",
-		"order": 25
+		"order": 44,
+		"name": "Spectrum",
+		"link": "https://spectrums.framer.website/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/spectrums",
+		"tags": ["Logos"]
 	},
 	{
 		"id": 42,
@@ -638,21 +636,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
 		"license": "MIT",
 		"tags": ["Loaders"]
-	},
-	{
-		"id": 69,
-		"order": 44,
-		"name": "Spectrum",
-		"link": "https://spectrums.framer.website/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/spectrums",
-		"tags": ["Logos"]
-	},
-	{
-		"id": 70,
-		"order": 39,
-		"name": "coolshapes",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
-		"link": "https://coolshap.es/",
-		"tags": ["Package", "Logos"]
 	}
 ]
