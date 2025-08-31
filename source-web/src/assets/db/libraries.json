@@ -381,5 +381,37 @@
 		"link": "https://starlight.astro.build/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/starlight",
 		"tags": ["Documentation sites", "Astro"]
+	},
+	{
+		"id": 42,
+		"order": 70,
+		"name": "Gridstack.js",
+		"link": "https://gridstackjs.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/gridstackjs",
+		"tags": ["Interactive dashboards"]
+	},
+	{
+		"id": 43,
+		"order": 38,
+		"name": "Smooothy",
+		"link": "https://smooothy.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/smooothy",
+		"tags": ["Carousel", "Slider", "Webgl"]
+	},
+	{
+		"id": 44,
+		"order": 88,
+		"name": "React Scan",
+		"link": "https://react-scan.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-scan",
+		"tags": ["React", "Render"]
+	},
+	{
+		"id": 44,
+		"order": 85,
+		"name": "nuqs",
+		"link": "https://nuqs-47ng-com.translate.goog",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/nuqs",
+		"tags": ["Search params", "React"]
 	}
 ]

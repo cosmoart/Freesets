@@ -722,5 +722,47 @@
 		"link": "https://www.shsfui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shsfui",
 		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Motion","Shadcn"]
+	},
+	{
+		"id": 80,
+		"order": 45,
+		"name": "Evil Charts",
+		"link": "https://evilcharts.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/evilcharts",
+		"tags": ["Copy&Paste","Chart"]
+	},
+	{
+		"id": 81,
+		"order": 65,
+		"name": "Basecoat",
+		"link": "https://basecoatui.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/basecoatui",
+		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
+	},
+	{
+		"id": 82,
+		"order": 68,
+		"name": "Blookie",
+		"link": "https://blookie.io",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/blookie",
+		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
+	},
+	{
+		"id": 83,
+		"order": 34,
+		"name": "Shadcnblocks",
+		"link": "https://www.shadcnblocks.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcnblocks",
+		"tags": ["Copy&Paste","Tailwind", "Shadcn"],
+		"license": "Freemium",
+		"licenseLink": "https://www.shadcnblocks.com/pricing"
+	},
+	{
+		"id": 84,
+		"order": 28,
+		"name": "shadcn/editor",
+		"link": "https://shadcn-editor.vercel.app",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn-editor",
+		"tags": ["Text editor", "Shadcn"]
 	}
 ]

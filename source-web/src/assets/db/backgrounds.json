@@ -275,7 +275,7 @@
 		"id": 31,
 		"order": 60,
 		"name": "Shape Dividers",
-		"link": "https://www.shapedivider.app/",
+		"link": "https://www.shapedivider.app",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
 		"tags": ["Section separator"]
 	},
@@ -283,8 +283,16 @@
 		"id": 32,
 		"order": 40,
 		"name": "Gradii",
-		"link": "https://www.gradii.fun/",
+		"link": "https://www.gradii.fun",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
 		"tags": ["Gradients"]
+	},
+	{
+		"id": 33,
+		"order": 97,
+		"name": "Pattern Craft",
+		"link": "https://patterncraft.fun",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patterncraft",
+		"tags": ["Tailwind"]
 	}
 ]
