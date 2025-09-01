@@ -615,13 +615,11 @@
 	},
 	{
 		"id": 68,
-		"order": 29,
-		"name": "Eldora UI",
-		"link": "https://eldoraui.site/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/eldoraui",
-		"tags": ["Tailwind", "React", "Typescript", "Framer"],
-		"license": "MIT",
-		"licenseLink": "https://github.com/karthikmudunuri/eldoraui/blob/main/LICENSE.md"
+		"order": 28,
+		"name": "shadcn/editor",
+		"link": "https://shadcn-editor.vercel.app",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn-editor",
+		"tags": ["Text editor", "Shadcn"]
 	},
 	{
 		"id": 69,
@@ -756,13 +754,5 @@
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"],
 		"license": "Freemium",
 		"licenseLink": "https://www.shadcnblocks.com/pricing"
-	},
-	{
-		"id": 84,
-		"order": 28,
-		"name": "shadcn/editor",
-		"link": "https://shadcn-editor.vercel.app",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn-editor",
-		"tags": ["Text editor", "Shadcn"]
 	}
 ]

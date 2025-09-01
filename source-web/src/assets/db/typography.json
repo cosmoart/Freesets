@@ -127,12 +127,10 @@
 	},
 	{
 		"id": 17,
-		"order": 50,
-		"name": "Font Brief",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontbrief",
-		"link": "https://www.fontbrief.com/home",
-		"tags": ["Tool"],
-		"license": "Multiple"
+		"order": 20,
+		"name": "Font.Download",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontdownload",
+		"link": "https://font.download/"
 	},
 	{
 		"id": 18,
@@ -166,12 +164,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/typescale",
 		"link": "https://typescale.io/",
 		"tags": ["Plugin"]
-	},
-	{
-		"id": 22,
-		"order": 20,
-		"name": "Font.Download",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontdownload",
-		"link": "https://font.download/"
 	}
 ]
