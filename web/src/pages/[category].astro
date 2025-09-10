@@ -1,0 +1,62 @@
+---
+import categories from '../assets/categories';
+import Layout from '../layouts/Layout.astro';
+
+export function getStaticPaths() {
+	return categories.map((category) => ({
+		params: { category: category.nameID },
+	}));
+}
+
+const { category } = Astro.params;
+const assets = categories.find((cat) => cat.nameID === category)?.assets || [];
+---
+
+<Layout>
+	<h1 class="text-4xl font-bold">{category}</h1>
+
+	<form>
+		<label for="search">Search</label>
+		<input
+			type="text"
+			id="search"
+			name="search"
+			placeholder="Buscar..."
+			class="border rounded px-2 py-1"
+		/>
+	</form>
+
+	<ul id="assets-list" class="grid grid-cols-3 gap-4 flex-wrap mt-4">
+		{
+			assets.map((asset) => (
+				<li
+					class="p-4 rounded bg-gray-200"
+					data-name={asset.name.toLowerCase()}>
+					<a href={asset.link}>
+						<h3>{asset.name}</h3>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+
+	<script>
+		import autoAnimate from 'https://cdn.jsdelivr.net/npm/@formkit/auto-animate@latest/+esm';
+
+		const searchInput = document.querySelector('#search');
+		const list = document.querySelector('#assets-list');
+		const items = list.querySelectorAll('li');
+
+		// activar animación automática en el UL
+		autoAnimate(list);
+
+		searchInput.addEventListener('input', (e) => {
+			const query = e.target.value.toLowerCase();
+
+			items.forEach((item) => {
+				const name = item.dataset.name;
+				item.style.display = name.includes(query) ? 'block' : 'none';
+			});
+		});
+	</script>
+</Layout>

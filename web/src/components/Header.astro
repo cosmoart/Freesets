@@ -1,0 +1,16 @@
+---
+import categories from '../assets/categories';
+---
+
+<ul class="flex gap-5">
+	<li>
+		<a href={`/`}>home</a>
+	</li>
+	{
+		categories.map((category) => (
+			<li>
+				<a href={`/${category.nameID}`}>{category.name}</a>
+			</li>
+		))
+	}
+</ul>
