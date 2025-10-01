@@ -231,13 +231,11 @@
 	},
 	{
 		"id": 29,
-		"order": 56,
-		"name": "gleam.so",
-		"link": "https://gleam.so/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/trww6z9uivyb33vtdzas",
-		"tags": ["Open Graph"],
-		"licenseLink": "https://gleam.so/pricing",
-		"license": "Freemium"
+		"order": 38,
+		"name": "tldraw",
+		"link": "https://www.tldraw.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
+		"tags": ["Whiteboard"]
 	},
 	{
 		"id": 30,
@@ -262,13 +260,5 @@
 		"link": "https://www.gradii.fun/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
 		"tags": ["Open Graph"]
-	},
-	{
-		"id": 33,
-		"order": 38,
-		"name": "tldraw",
-		"link": "https://www.tldraw.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
-		"tags": ["Whiteboard"]
 	}
 ]
