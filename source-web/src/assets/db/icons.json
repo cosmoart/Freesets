@@ -402,12 +402,12 @@
 	},
 	{
 		"id": 43,
-		"name": "Keyicons",
-		"link": "https://keyicons.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/keyicons",
-		"license": "CC BY 4.0",
-		"licenseLink": "https://keyicons.com",
-		"order": 20
+		"order": 30,
+		"name": "magecdn SVG Loaders",
+		"link": "https://magecdn.com/tools/svg-loaders",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
+		"license": "MIT",
+		"tags": ["Loaders"]
 	},
 	{
 		"id": 44,
@@ -627,14 +627,5 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/pqoqubbw/icons/blob/main/LICENSE",
 		"tags": ["Motion", "Lucide", "Package", "React"]
-	},
-	{
-		"id": 68,
-		"order": 30,
-		"name": "magecdn SVG Loaders",
-		"link": "https://magecdn.com/tools/svg-loaders",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
-		"license": "MIT",
-		"tags": ["Loaders"]
 	}
 ]
