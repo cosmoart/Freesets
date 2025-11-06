@@ -10,25 +10,25 @@
 
 </div>
 
-Freesets is a collection of free, high-quality resources that you can use in your web projects. Here you will find icons, images, videos, illustrations, fonts and more. All resources have at least one free version or free plan, but please read the license before using them. You can contribute to this project by suggesting new resources or making a pull request.
+Freesets — это коллекция бесплатных высококачественных ресурсов, которые вы можете использовать в своих веб-проектах. Здесь вы найдёте иконки, изображения, видео, иллюстрации, шрифты и многое другое. Все ресурсы имеют как минимум одну бесплатную версию или бесплатный тариф, но, пожалуйста, ознакомьтесь с лицензией перед их использованием. Вы можете внести свой вклад в этот проект, предложив новые ресурсы или отправив запрос на включение.
 
 <div align="center">
 
-<a href="https://github.com/cosmoart/freesets/blob/main/CONTRIBUTING.md">Contribute</a>
+<a href="https://github.com/cosmoart/freesets/blob/main/CONTRIBUTING.md">Способствовать</a>
 ·
-<a href="https://github.com/cosmoart/Freesets/issues">Report Bug/Error</a>
+<a href="https://github.com/cosmoart/Freesets/issues">Сообщить об ошибке/ошибке</a>
 ·
-<a href="https://github.com/cosmoart/Freesets/discussions">Request Feature</a>
+<a href="https://github.com/cosmoart/Freesets/discussions">Запросить функцию</a>
 
 </div>
 
 ## Contributing
 
-Everyone is welcome to collaborate with this project. Before contributing, please read the [contribution guide](https://github.com/cosmoart/freesets/blob/main/CONTRIBUTING.md).
+Мы рады сотрудничеству с этим проектом. Прежде чем вносить свой вклад, пожалуйста, ознакомьтесь с [руководством по участию](https://github.com/cosmoart/freesets/blob/main/CONTRIBUTING.md).
 
 ## License
 
-Website code distributed under the MIT License. See `LICENSE` for more information.
+Код веб-сайта распространяется по лицензии MIT. Подробнее см. в разделе «ЛИЦЕНЗИЯ».
 
 ## Contributors
 
