@@ -294,10 +294,11 @@
 	},
 	{
 		"id": 41,
-		"order": 46,
-		"name": "App Motion",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/appmotion",
-		"link": "https://appmotion.design/"
+		"order": 45,
+		"name": "60fps",
+		"link": "https://60fps.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/60fps",
+		"tags": ["Apps", "Animations"]
 	},
 	{
 		"id": 42,
@@ -387,13 +388,5 @@
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/websitevice"
-	},
-	{
-		"id": 54,
-		"order": 45,
-		"name": "60fps",
-		"link": "https://60fps.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/60fps",
-		"tags": ["Apps", "Animations"]
 	}
 ]
