@@ -1,0 +1,33 @@
+<!-- Dark theme dotted circular spinner -->
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" role="img" aria-label="Loading">
+  <style>
+    .dot {
+      fill: #ccc;
+      transform-origin: 22px 22px;
+      animation: fade 1s linear infinite;
+    }
+    @keyframes fade {
+      0% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dot { animation: none; opacity: 0.6; }
+    }
+  </style>
+
+  <!-- Same 12-dot layout -->
+  <g>
+    <circle class="dot" cx="22" cy="6" r="3" style="animation-delay:0s"/>
+    <circle class="dot" cx="31.3" cy="8.3" r="3" style="animation-delay:-0.0833s"/>
+    <circle class="dot" cx="37.7" cy="14.7" r="3" style="animation-delay:-0.1666s"/>
+    <circle class="dot" cx="40" cy="22" r="3" style="animation-delay:-0.25s"/>
+    <circle class="dot" cx="37.7" cy="29.3" r="3" style="animation-delay:-0.3333s"/>
+    <circle class="dot" cx="31.3" cy="35.7" r="3" style="animation-delay:-0.4166s"/>
+    <circle class="dot" cx="22" cy="38" r="3" style="animation-delay:-0.5s"/>
+    <circle class="dot" cx="12.7" cy="35.7" r="3" style="animation-delay:-0.5833s"/>
+    <circle class="dot" cx="6.3" cy="29.3" r="3" style="animation-delay:-0.6666s"/>
+    <circle class="dot" cx="4" cy="22" r="3" style="animation-delay:-0.75s"/>
+    <circle class="dot" cx="6.3" cy="14.7" r="3" style="animation-delay:-0.8333s"/>
+    <circle class="dot" cx="12.7" cy="8.3" r="3" style="animation-delay:-0.9166s"/>
+  </g>
+</svg>

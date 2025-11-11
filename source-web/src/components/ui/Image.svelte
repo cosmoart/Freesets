@@ -27,12 +27,26 @@
 	});
 </script>
 
-<img
-	bind:this={imgNode}
-	data-src={src}
-	src={lazy ? '/placeholder.gif' : src}
-	{alt}
-	class={className}
-	{height}
-	{width}
-/>
+{#if lazy}
+	<picture>
+		<source media="(prefers-color-scheme: dark)" srcset="/placeholder-dark.svg" />
+		<img
+			bind:this={imgNode}
+			data-src={src}
+			src="/placeholder.svg"
+			{alt}
+			class={className}
+			{height}
+			{width}
+		/>
+	</picture>
+{:else}
+	<img
+		bind:this={imgNode}
+		src={src}
+		{alt}
+		class={className}
+		{height}
+		{width}
+	/>
+{/if}
