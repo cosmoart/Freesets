@@ -754,5 +754,15 @@
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"],
 		"license": "Freemium",
 		"licenseLink": "https://www.shadcnblocks.com/pricing"
+	},
+	{
+		"id": 84,
+		"order": 70,
+		"name": "Wireframe-ui",
+		"link": "https://wireframe-ui.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/wireframe-ui",
+		"license": "MIT",
+		"licenseLink": "https://github.com/aguiarsc/wireframe-ui/blob/master/LICENSE.md",
+		"tags": ["Copy&Paste", "Shadcn", "Tailwind", "Wireframe"]
 	}
 ]
