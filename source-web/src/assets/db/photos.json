@@ -214,5 +214,16 @@
 		"link": "https://public.work/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
 		"tags": ["Vintage"]
+	},
+	{
+	  "id": 107,
+	  "order": 88,
+	  "name": "SnapShots",
+	  "link": "https://www.getsnapshots.app/image-editor",
+	  "img": "https://oafigsv8yj.ufs.sh/f/b7ZUAnePqlpydctMx0VVA9S1UZiNxWHkBYjofKD5gRObEJyp",
+	  "license": "Free",
+	  "licenseLink": "https://www.getsnapshots.app",
+	  "licenseDescription": "Free tier available, commercial use allowed.",
+	  "tags": ["Image Editor", "Visuals", "Mockups", "Screenshots"]
 	}
 ]
