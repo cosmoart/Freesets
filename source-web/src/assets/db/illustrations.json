@@ -325,12 +325,11 @@
 	},
 	{
 		"id": 37,
-		"order": 26,
-		"name": "Avatar U",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705800238/freesets/illustrations/pysxtdzabt5tibygkhaz.webp",
-		"link": "https://avatar-u.webflow.io",
-		"tags": ["Avatars"],
-		"license": "CC0"
+		"order": 69,
+		"name": "The Thiings Collection",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/thiings",
+		"link": "https://www.thiings.co",
+		"tags": ["IA"]
 	},
 	{
 		"id": 38,
@@ -543,13 +542,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
 		"link": "https://coolshap.es/",
 		"tags": ["Package", "Logos"]
-	},
-	{
-		"id": 63,
-		"order": 69,
-		"name": "The Thiings Collection",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/thiings",
-		"link": "https://www.thiings.co",
-		"tags": ["IA"]
 	}
 ]
