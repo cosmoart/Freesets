@@ -392,12 +392,11 @@
 	},
 	{
 		"id": 45,
-		"order": 10,
-		"name": "Iconfinder",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/iconfinder",
-		"link": "https://www.iconfinder.com/search?q=&price=free",
-		"license": "Multiple",
-		"licenseLink": "https://www.iconfinder.com/search?q=&price=free"
+		"order": 69,
+		"name": "coolshapes",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
+		"link": "https://coolshap.es/",
+		"tags": ["Package", "Logos"]
 	},
 	{
 		"id": 46,
@@ -488,13 +487,11 @@
 	},
 	{
 		"id": 56,
-		"order": 8,
-		"name": "Items.Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/itemsdesign",
-		"link": "https://items.design/category/free",
-		"license": "Freemium",
-		"licenseLink": "https://items.design/usage-license",
-		"tags": ["3D", "IA"]
+		"order": 51,
+		"name": "Kapwing",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/kapwing404",
+		"link": "https://www.kapwing.com/404-illustrations",
+		"tags": ["404"]
 	},
 	{
 		"id": 57,
@@ -526,21 +523,5 @@
 		"name": "GEE! ME",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/geeme",
 		"link": "https://geeme.vercel.app/"
-	},
-	{
-		"id": 61,
-		"order": 51,
-		"name": "Kapwing",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/kapwing404",
-		"link": "https://www.kapwing.com/404-illustrations",
-		"tags": ["404"]
-	},
-	{
-		"id": 62,
-		"order": 69,
-		"name": "coolshapes",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
-		"link": "https://coolshap.es/",
-		"tags": ["Package", "Logos"]
 	}
 ]

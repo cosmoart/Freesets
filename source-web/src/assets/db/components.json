@@ -607,11 +607,13 @@
 	},
 	{
 		"id": 67,
-		"order": 57,
-		"name": "Cuicui",
-		"link": "https://cuicui.day",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
-		"tags": ["React", "Typescript", "Motion", "Tailwind"]
+		"order": 34,
+		"name": "Shadcnblocks",
+		"link": "https://www.shadcnblocks.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcnblocks",
+		"tags": ["Copy&Paste","Tailwind", "Shadcn"],
+		"license": "Freemium",
+		"licenseLink": "https://www.shadcnblocks.com/pricing"
 	},
 	{
 		"id": 68,
@@ -744,15 +746,5 @@
 		"link": "https://blookie.io",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/blookie",
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
-	},
-	{
-		"id": 83,
-		"order": 34,
-		"name": "Shadcnblocks",
-		"link": "https://www.shadcnblocks.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcnblocks",
-		"tags": ["Copy&Paste","Tailwind", "Shadcn"],
-		"license": "Freemium",
-		"licenseLink": "https://www.shadcnblocks.com/pricing"
 	}
 ]
