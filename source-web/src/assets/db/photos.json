@@ -59,13 +59,14 @@
 	},
 	{
 		"id": 7,
-		"order": 73,
+		"order": 84,
 		"name": "Foodiesfeed",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703380304/freesets/photos/dtpc63qf0lta9arfmjxp.webp",
-		"link": "https://www.foodiesfeed.com",
-		"tags": ["Food", "IA"],
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/foodiesfeed",
+		"link": "https://www.foodiesfeed.com/",
+		"tags": ["Photos", "Food", "CC0", "Commercial Use", "Free"],
 		"license": "CC0",
-		"licenseLink": "https://www.foodiesfeed.com/license/"
+		"licenseLink": "https://www.foodiesfeed.com/license/",
+		"licenseDescription": "CC0: can copy/modify/distribute/use for free including commercial; attribution not required."
 	},
 	{
 		"id": 8,
@@ -214,5 +215,82 @@
 		"link": "https://public.work/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
 		"tags": ["Vintage"]
+	},
+	{
+		"id": 24,
+		"order": 90,
+		"name": "Kaboompics",
+		"link": "https://kaboompics.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/kaboompics",
+		"license": "Free (Standard / Editorial per asset)",
+		"licenseLink": "https://kaboompics.com/page/license-and-faq",
+		"licenseDescription": "\"Each asset indicates Standard or Editorial license; Standard supports personal & commercial use.\"",
+		"tags": ["Photos", "Stock", "Free"]
+	},
+	{
+		"id": 25,
+		"order": 84,
+		"name": "SplitShire",
+		"link": "https://www.splitshire.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/splitshire",
+		"license": "Royalty-Free",
+		"licenseLink": "https://www.splitshire.com/license",
+		"licenseDescription": "\"Commercial/non-commercial use allowed; restrictions apply (no resell/redistribute).\"",
+		"tags": ["Photos", "Stock", "Royalty-Free"]
+	},
+	{
+		"id": 26,
+		"order": 80,
+		"name": "Wikimedia Commons",
+		"link": "https://commons.wikimedia.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/wikimedia-commons",
+		"license": "Mixed (per file)",
+		"licenseLink": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia_Commons",
+		"licenseDescription": "\"Reuse depends on the specific file’s license; verify attribution/terms per file.\"",
+		"tags": ["Photos", "Archive", "Mixed License"]
+	},
+	{
+		"id": 27,
+		"order": 90,
+		"name": "The Met Open Access",
+		"link": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/the-met-open-access",
+		"license": "CC0",
+		"licenseLink": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+		"licenseDescription": "Imágenes Open Access bajo CC0 (sin pedir permiso al museo).",
+		"tags": ["Photos", "Museum", "Open Access", "CC0"]
+	},
+	{
+		"id": 28,
+		"order": 86,
+		"name": "Rijksmuseum Rijksstudio",
+		"link": "https://www.rijksmuseum.nl/en/rijksstudio",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rijksmuseum-rijksstudio",
+		"license": "CC0 / Public domain (según ítem)",
+		"licenseLink": "https://www.rijksmuseum.nl/en/rijksstudio",
+		"licenseDescription": "Colección digital con descargas; revisar derechos por obra/ítem.",
+		"tags": ["Photos", "Art", "Museum", "Open Access"]
+	},
+	{
+		"id": 29,
+		"order": 88,
+		"name": "National Gallery of Art Open Access",
+		"link": "https://www.nga.gov/open-access-images.html",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nga-open-access",
+		"license": "CC0",
+		"licenseLink": "https://www.nga.gov/open-access-images.html",
+		"licenseDescription": "Imágenes Open Access bajo CC0.",
+		"tags": ["Photos", "Museum", "Open Access", "CC0"]
+	},
+	{
+		"id": 30,
+		"order": 80,
+		"name": "NYPL Digital Collections",
+		"link": "https://digitalcollections.nypl.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nypl-digital-collections",
+		"license": "Varies (mucho Public Domain)",
+		"licenseLink": "https://digitalcollections.nypl.org/",
+		"licenseDescription": "Los derechos varían por ítem; hay muchísimo material de dominio público.",
+		"tags": ["Photos", "Archive", "Public Domain", "Open Access"]
 	}
 ]

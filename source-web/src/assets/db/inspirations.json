@@ -73,10 +73,14 @@
 	},
 	{
 		"id": 11,
-		"order": 70,
-		"name": "Landing Gallery",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381074/freesets/inspirations/o8kszgfesntegltgoxwf.webp",
-		"link": "https://www.landing.gallery"
+		"order": 76,
+		"name": "Landing.Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspiration/landing-gallery",
+		"link": "https://www.landing.gallery/",
+		"license": "Free",
+		"licenseLink": "https://www.landing.gallery/",
+		"licenseDescription": "Landing page inspiration library.",
+		"tags": ["Inspiration", "Landing Pages", "UI", "UX", "Design"]
 	},
 	{
 		"id": 12,
@@ -272,10 +276,14 @@
 	},
 	{
 		"id": 38,
-		"order": 38,
-		"name": "Landings",
+		"order": 68,
+		"name": "Landings.dev",
 		"link": "https://landings.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspiration/landings-dev",
+		"license": "Free",
+		"licenseLink": "https://landings.dev/",
+		"licenseDescription": "Landing page examples for design inspiration.",
+		"tags": ["Inspiration", "Landing Pages", "Design", "UI", "UX"]
 	},
 	{
 		"id": 39,
@@ -388,5 +396,61 @@
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/websitevice"
+	},
+	{
+		"id": 54,
+		"order": 92,
+		"name": "Mobbin",
+		"link": "https://mobbin.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/mobbin",
+		"tags": ["Inspiration", "UI", "UX"]
+	},
+	{
+		"id": 55,
+		"order": 88,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lapa-ninja",
+		"tags": ["Inspiration", "Landing Pages", "Design"]
+	},
+	{
+		"id": 56,
+		"order": 90,
+		"name": "Page Flows",
+		"link": "https://pageflows.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/page-flows",
+		"tags": ["Inspiration", "UX", "User Flows"]
+	},
+	{
+		"id": 57,
+		"order": 80,
+		"name": "Collect UI",
+		"link": "https://collectui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui",
+		"tags": ["Inspiration", "UI", "Patterns", "Screens"]
+	},
+	{
+		"id": 58,
+		"order": 82,
+		"name": "Hoverstat.es",
+		"link": "https://hoverstat.es/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hoverstates",
+		"tags": ["Inspiration", "Web Design", "Typography", "UI"]
+	},
+	{
+		"id": 59,
+		"order": 78,
+		"name": "Nicelydone",
+		"link": "https://nicelydone.club/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/nicelydone",
+		"tags": ["Inspiration", "Landing Pages", "Web Design"]
+	},
+	{
+		"id": 60,
+		"order": 77,
+		"name": "SaaS Pages",
+		"link": "https://saaspages.xyz/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/saas-pages",
+		"tags": ["Inspiration", "SaaS", "Landing Pages", "Copywriting"]
 	}
 ]

@@ -16,19 +16,25 @@
 	},
 	{
 		"id": 3,
-		"order": 88,
+		"order": 70,
 		"name": "Modern CSS",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/moderncss",
-		"link": "https://moderncss.dev",
-		"tags": ["CSS"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/articles/moderncss",
+		"link": "https://moderncss.dev/",
+		"license": "Free",
+		"licenseLink": "https://moderncss.dev/",
+		"licenseDescription": "Modern CSS techniques and articles.",
+		"tags": ["CSS", "Web", "Articles", "Frontend", "Learning"]
 	},
 	{
 		"id": 4,
-		"order": 85,
+		"order": 55,
 		"name": "Medium",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/medium",
-		"link": "https://www.medium.com",
-		"tags": ["Community"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/articles/medium",
+		"link": "https://medium.com/",
+		"license": "Free",
+		"licenseLink": "https://medium.com/",
+		"licenseDescription": "Reading and writing platform (general resource).",
+		"tags": ["Articles", "Blog", "Writing", "Tech", "Design"]
 	},
 	{
 		"id": 5,
@@ -134,11 +140,14 @@
 	},
 	{
 		"id": 18,
-		"order": 20,
+		"order": 70,
 		"name": "A List Apart",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/alistapart",
-		"link": "https://www.alistapart.com",
-		"tags": ["Community"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/articles/a-list-apart",
+		"link": "https://alistapart.com/",
+		"license": "Free",
+		"licenseLink": "https://alistapart.com/",
+		"licenseDescription": "Articles for people who make websites.",
+		"tags": ["Articles", "Web", "UX", "Frontend", "Design"]
 	},
 	{
 		"id": 19,
@@ -179,5 +188,61 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
 		"link": "https://tympanus.net/codrops/demos/",
 		"tags": ["Three.js", "Webgl"]
+	},
+	{
+		"id": 24,
+		"order": 88,
+		"name": "CSS Wizardry",
+		"link": "https://csswizardry.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-wizardry",
+		"tags": ["Blog", "CSS", "Performance"]
+	},
+	{
+		"id": 25,
+		"order": 87,
+		"name": "Ahmad Shadeed (ishadeed.com)",
+		"link": "https://ishadeed.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/ahmad-shadeed",
+		"tags": ["Blog", "CSS", "Layout"]
+	},
+	{
+		"id": 26,
+		"order": 84,
+		"name": "SmolCSS",
+		"link": "https://smolcss.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/smolcss",
+		"tags": ["Blog", "CSS", "Snippets"]
+	},
+	{
+		"id": 27,
+		"order": 86,
+		"name": "Sara Soueidan Blog",
+		"link": "https://www.sarasoueidan.com/blog/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/sara-soueidan",
+		"tags": ["Blog", "CSS", "SVG", "Accessibility"]
+	},
+	{
+		"id": 28,
+		"order": 85,
+		"name": "Julia Evans (jvns.ca)",
+		"link": "https://jvns.ca/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/jvns",
+		"tags": ["Blog", "Systems", "Debugging", "Networking"]
+	},
+	{
+		"id": 29,
+		"order": 84,
+		"name": "Kent C. Dodds Blog",
+		"link": "https://kentcdodds.com/blog",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/kent-c-dodds",
+		"tags": ["Blog", "React", "Testing", "DX"]
+	},
+	{
+		"id": 30,
+		"order": 78,
+		"name": "CSS Weekly",
+		"link": "https://css-weekly.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-weekly",
+		"tags": ["Blog", "Newsletter", "CSS", "Frontend"]
 	}
 ]

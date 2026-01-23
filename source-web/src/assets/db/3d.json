@@ -228,5 +228,57 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/blendswap",
 		"tags": ["Models"],
 		"license": "Multiple"
+	},
+	{
+		"id": 25,
+		"order": 88,
+		"name": "Poly Pizza",
+		"link": "https://poly.pizza/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/poly-pizza",
+		"license": "CC0 (filter available)",
+		"licenseLink": "https://poly.pizza/search/CC0",
+		"licenseDescription": "\"Includes a CC0 collection; verify license per asset/filter.\"",
+		"tags": ["3D", "CC0", "Low Poly", "Models"]
+	},
+	{
+		"id": 26,
+		"order": 84,
+		"name": "OpenGameArt",
+		"link": "https://opengameart.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/opengameart",
+		"license": "Mixed (per asset)",
+		"licenseLink": "https://opengameart.org/content/faq",
+		"licenseDescription": "\"Assets can have multiple licenses; you typically comply with one license listed for that asset.\"",
+		"tags": ["3D", "Game Assets", "Mixed License"]
+	},
+	{
+		"id": 27,
+		"order": 78,
+		"name": "Free3D",
+		"link": "https://free3d.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/free3d",
+		"tags": ["3D", "Models", "Marketplace"]
+	},
+	{
+		"id": 28,
+		"order": 83,
+		"name": "NASA 3D Resources",
+		"link": "https://science.nasa.gov/3d-resources/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nasa-3d-resources",
+		"license": "NASA media guidelines (revisar)",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"licenseDescription": "Modelos/medios generalmente no sujetos a copyright en EE.UU.; uso principalmente educativo/informativo (ver guía).",
+		"tags": ["3D", "Models", "Space", "Free"]
+	},
+	{
+		"id": 29,
+		"order": 74,
+		"name": "NIH 3D",
+		"link": "https://3d.nih.gov/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nih-3d",
+		"license": "Varies (per model)",
+		"licenseLink": "https://3d.nih.gov/terms",
+		"licenseDescription": "Cada contribución/modelo puede tener su propia licencia (ver términos).",
+		"tags": ["3D", "Science", "Biomedical", "Repository"]
 	}
 ]

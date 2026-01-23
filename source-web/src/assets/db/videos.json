@@ -59,13 +59,14 @@
 	},
 	{
 		"id": 7,
-		"order": 30,
-		"name": "Mixkit",
+		"order": 88,
+		"name": "Mixkit (Free Stock Video)",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/mixkit",
 		"link": "https://mixkit.co/free-stock-video/",
 		"license": "Free",
 		"licenseLink": "https://mixkit.co/license/",
-		"licenseDescription": "Items under the Mixkit Stock Video Free License can be used in your commercial and non-commercial projects, for free."
+		"licenseDescription": "Free stock video with no attribution required (per Mixkit page/FAQ).",
+		"tags": ["Video", "Stock", "4K", "No Attribution", "Free"]
 	},
 	{
 		"id": 8,
@@ -102,5 +103,49 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/eybg2hh9eshhaxvdtsci.webp",
 		"link": "https://vimeo.com/groups/freehd/",
 		"license": "Multiple"
+	},
+	{
+		"id": 12,
+		"order": 88,
+		"name": "NASA Image and Video Library",
+		"link": "https://images.nasa.gov/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/nasa-images",
+		"license": "Public domain (mostly) + NASA guidelines",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"licenseDescription": "\"Most NASA imagery is public domain; follow NASA media usage guidelines and restrictions.\"",
+		"tags": ["Videos", "Space", "Public Domain"]
+	},
+	{
+		"id": 13,
+		"order": 78,
+		"name": "Mazwai",
+		"link": "https://mazwai.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/mazwai",
+		"license": "Creative Commons (per clip)",
+		"licenseLink": "https://creativecommons.org/licenses/by/4.0/deed.en",
+		"licenseDescription": "\"Licensing varies per clip; commonly CC with attribution—verify on each clip page.\"",
+		"tags": ["Videos", "Stock", "Creative Commons"]
+	},
+	{
+		"id": 14,
+		"order": 75,
+		"name": "Motion Places",
+		"link": "https://www.motionplaces.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/motion-places",
+		"license": "Royalty-Free (per terms)",
+		"licenseLink": "https://www.motionplaces.com/license-and-terms/",
+		"licenseDescription": "\"Perpetual, non-exclusive, royalty-free license (see terms for restrictions).\"",
+		"tags": ["Videos", "Stock", "Royalty-Free"]
+	},
+	{
+		"id": 15,
+		"order": 78,
+		"name": "Free Nature Stock",
+		"link": "https://freenaturestock.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/free-nature-stock",
+		"license": "Free",
+		"licenseLink": "https://freenaturestock.com/",
+		"licenseDescription": "Stock de naturaleza (revisar términos en el sitio).",
+		"tags": ["Videos", "Stock", "Nature", "Free"]
 	}
 ]

@@ -49,12 +49,13 @@
 	{
 		"id": 6,
 		"name": "Haikei",
-		"link": "https://haikei.app/generators/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/haikei",
-		"license": "Multiple",
+		"link": "https://haikei.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/haikei",
+		"license": "Freemium",
 		"licenseLink": "https://haikei.app/pricing/",
-		"licenseDescription": "Basic Plan, Pro Plan",
-		"order": 77
+		"licenseDescription": "Commercial use allowed; credit not required (link appreciated).",
+		"order": 86,
+		"tags": ["SVG", "Generator", "Backgrounds", "React", "Design Tool"]
 	},
 	{
 		"id": 7,
@@ -104,12 +105,14 @@
 	},
 	{
 		"id": 12,
-		"name": "SVG Backgrounds",
+		"name": "SVGBackgrounds",
 		"link": "https://www.svgbackgrounds.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg_backgrounds",
-		"license": "CC BY 4.0",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/patterns/svgbackgrounds",
+		"license": "Free with attribution",
 		"licenseLink": "https://www.svgbackgrounds.com/license/",
-		"order": 58
+		"licenseDescription": "Free graphics usable in personal/commercial/client work; attribution required unless you have an active subscription.",
+		"order": 82,
+		"tags": ["SVG", "Backgrounds", "Patterns", "Web", "Design Assets"]
 	},
 	{
 		"id": 13,
@@ -294,5 +297,73 @@
 		"link": "https://patterncraft.fun",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patterncraft",
 		"tags": ["Tailwind"]
+	},
+	{
+		"id": 34,
+		"order": 88,
+		"name": "Doodad Pattern Generator",
+		"link": "https://doodad.dev/pattern-generator/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/doodad-pattern-generator",
+		"tags": ["Backgrounds", "Patterns", "SVG", "Generator"]
+	},
+	{
+		"id": 35,
+		"order": 86,
+		"name": "BGJar",
+		"link": "https://bgjar.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/bgjar",
+		"tags": ["Backgrounds", "SVG", "Generator"]
+	},
+	{
+		"id": 36,
+		"order": 82,
+		"name": "Patternico",
+		"link": "https://patternico.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico",
+		"tags": ["Backgrounds", "Patterns", "Generator"]
+	},
+	{
+		"id": 37,
+		"order": 77,
+		"name": "Mesh Gradients",
+		"link": "https://www.meshgradients.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/meshgradients",
+		"license": "Free",
+		"licenseLink": "https://www.meshgradients.com/",
+		"licenseDescription": "Generador + colección de mesh gradients.",
+		"tags": ["Backgrounds", "Gradients", "Mesh", "UI"]
+	},
+	{
+		"id": 38,
+		"order": 78,
+		"name": "MagicPattern Mesh Gradients",
+		"link": "https://www.magicpattern.design/tools/mesh-gradients",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/magicpattern-mesh-gradients",
+		"license": "Free",
+		"licenseLink": "https://www.magicpattern.design/tools/mesh-gradients",
+		"licenseDescription": "Tool para generar mesh gradients rápidamente.",
+		"tags": ["Backgrounds", "Gradients", "Tool", "UI"]
+	},
+	{
+		"id": 39,
+		"order": 80,
+		"name": "Get Waves",
+		"link": "https://getwaves.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves",
+		"license": "Free",
+		"licenseLink": "https://getwaves.io/",
+		"licenseDescription": "Generador de waves SVG para separadores y fondos.",
+		"tags": ["Backgrounds", "SVG", "Waves", "Tool"]
+	},
+	{
+		"id": 40,
+		"order": 76,
+		"name": "Meshgradient.in (Meshy)",
+		"link": "https://meshgradient.in/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/meshgradient-in",
+		"license": "Free",
+		"licenseLink": "https://meshgradient.in/",
+		"licenseDescription": "Generador de mesh gradients con presets y export.",
+		"tags": ["Backgrounds", "Gradients", "Mesh", "Tool"]
 	}
 ]

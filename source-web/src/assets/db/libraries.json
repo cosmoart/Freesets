@@ -413,5 +413,71 @@
 		"link": "https://nuqs.47ng.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/nuqs",
 		"tags": ["Search params", "React"]
+	},
+	{
+		"id": 45,
+		"order": 92,
+		"name": "Floating UI",
+		"link": "https://floating-ui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/floating-ui",
+		"license": "MIT",
+		"licenseLink": "https://github.com/floating-ui/floating-ui/blob/master/LICENSE",
+		"licenseDescription": "\"MIT-licensed positioning engine for tooltips/popovers/dropdowns.\"",
+		"tags": ["Library", "JavaScript", "UI", "Popover"]
+	},
+	{
+		"id": 46,
+		"order": 82,
+		"name": "Embla Carousel",
+		"link": "https://www.embla-carousel.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/embla-carousel",
+		"license": "MIT",
+		"licenseLink": "https://github.com/davidjerleke/embla-carousel",
+		"licenseDescription": "Carousel liviano y súper personalizable.",
+		"tags": ["Library", "Carousel", "UI", "JS"]
+	},
+	{
+		"id": 47,
+		"order": 90,
+		"name": "Zustand",
+		"link": "https://github.com/pmndrs/zustand",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zustand",
+		"license": "MIT",
+		"licenseLink": "https://github.com/pmndrs/zustand/blob/main/LICENSE",
+		"licenseDescription": "\"MIT-licensed state management for React (hooks-based).\"",
+		"tags": ["Library", "React", "State Management"]
+	},
+	{
+		"id": 48,
+		"order": 88,
+		"name": "TanStack Query",
+		"link": "https://tanstack.com/query/latest",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tanstack-query",
+		"license": "MIT",
+		"licenseLink": "https://github.com/TanStack/query",
+		"licenseDescription": "Data-fetching/caching para React (y más).",
+		"tags": ["Library", "React", "State", "Data Fetching"]
+	},
+	{
+		"id": 49,
+		"order": 86,
+		"name": "Zod",
+		"link": "https://github.com/colinhacks/zod",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zod",
+		"license": "MIT",
+		"licenseLink": "https://github.com/colinhacks/zod",
+		"licenseDescription": "Validación y parsing de schemas TypeScript-first.",
+		"tags": ["Library", "TypeScript", "Validation"]
+	},
+	{
+		"id": 50,
+		"order": 84,
+		"name": "React Hook Form",
+		"link": "https://react-hook-form.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-hook-form",
+		"license": "MIT",
+		"licenseLink": "https://github.com/react-hook-form/react-hook-form",
+		"licenseDescription": "Forms performantes en React.",
+		"tags": ["Library", "React", "Forms"]
 	}
 ]

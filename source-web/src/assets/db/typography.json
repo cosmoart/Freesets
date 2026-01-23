@@ -164,5 +164,57 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/typescale",
 		"link": "https://typescale.io/",
 		"tags": ["Plugin"]
+	},
+	{
+		"id": 22,
+		"order": 88,
+		"name": "Font Squirrel",
+		"link": "https://www.fontsquirrel.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-squirrel",
+		"license": "Mixed (per font)",
+		"licenseLink": "https://www.fontsquirrel.com/license",
+		"licenseDescription": "\"License varies by font—check each font’s license page.\"",
+		"tags": ["Typography", "Fonts", "Webfonts"]
+	},
+	{
+		"id": 23,
+		"order": 84,
+		"name": "The League of Moveable Type",
+		"link": "https://www.theleagueofmoveabletype.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/league-of-moveable-type",
+		"tags": ["Typography", "Fonts", "Open Source"]
+	},
+	{
+		"id": 24,
+		"order": 75,
+		"name": "Velvetyne Type Foundry",
+		"link": "https://velvetyne.fr/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/velvetyne",
+		"license": "Open source (varies, often OFL)",
+		"licenseLink": "https://velvetyne.fr/",
+		"licenseDescription": "Tipografías open-source (revisar licencia por familia).",
+		"tags": ["Typography", "Fonts", "Open Source"]
+	},
+	{
+		"id": 25,
+		"order": 72,
+		"name": "Font Library",
+		"link": "https://fontlibrary.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-library",
+		"license": "Varies (per font)",
+		"licenseLink": "https://fontlibrary.org/",
+		"licenseDescription": "Biblioteca comunitaria; la licencia depende de cada fuente.",
+		"tags": ["Typography", "Fonts", "Open Source"]
+	},
+	{
+		"id": 26,
+		"order": 72,
+		"name": "Lost Type Co-op",
+		"link": "https://www.losttype.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/lost-type",
+		"license": "Pay-what-you-want / varies by font",
+		"licenseLink": "https://www.losttype.com/",
+		"licenseDescription": "Fuentes tipo “paga lo que quieras”; condiciones varían por familia.",
+		"tags": ["Typography", "Fonts", "Foundry"]
 	}
 ]
