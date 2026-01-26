@@ -480,7 +480,7 @@
 		"name": "Memojis",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/memojis",
 		"link": "https://www.figma.com/community/plugin/1090391796325905912/memojis",
-		"tags": ["Avatars", "3D"],
+		"tags": ["Avatars"],
 		"license": "C. Free Resource L."
 	},
 	{
@@ -490,8 +490,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/shapefest",
 		"link": "https://www.shapefest.com",
 		"license": "Shapefest™ Commercial",
-		"licenseLink": "https://www.shapefest.com/license-agreement",
-		"tags": ["3D"]
+		"licenseLink": "https://www.shapefest.com/license-agreement"
 	},
 	{
 		"id": 56,
@@ -573,7 +572,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/pixeltrue",
 		"license": "Free (royalty-free)",
 		"licenseLink": "https://www.pixeltrue.com/license",
-		"licenseDescription": "Uso personal y comercial sin atribución; permite modificaciones.",
+		"licenseDescription": "Personal and commercial use without attribution; modifications allowed.",
 		"tags": ["Illustrations", "SVG", "PNG", "Free"]
 	},
 	{
@@ -584,7 +583,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/delesign",
 		"license": "Free (royalty-free)",
 		"licenseLink": "https://free-designs.delesign.com/free-designs/graphics/",
-		"licenseDescription": "Recursos “royalty-free” para uso en sitios, redes, emails, etc. (ver licencia en el sitio).",
+		"licenseDescription": "Royalty-free resources for use on sites, social media, emails, etc. (see license on the site).",
 		"tags": ["Illustrations", "SVG", "PNG", "Free"]
 	},
 	{
@@ -595,7 +594,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/stubborn-generator",
 		"license": "Free",
 		"licenseLink": "https://freeillustrations.xyz/illustration/stubborn-generator/",
-		"licenseDescription": "Uso personal y comercial (según el listado/curación del recurso).",
+		"licenseDescription": "Personal and commercial use (per the listing/curation of the resource).",
 		"tags": ["Illustrations", "Character Builder", "Figma", "SVG", "PNG"]
 	},
 	{
@@ -606,7 +605,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/huumph",
 		"license": "Free with attribution",
 		"licenseLink": "https://www.ls.graphics/illustrations/huumph",
-		"licenseDescription": "Uso comercial permitido; atribución requerida (revisar términos del pack).",
+		"licenseDescription": "Commercial use permitted; attribution required (check pack terms).",
 		"tags": ["Illustrations", "SaaS", "Marketing", "SVG", "PNG"]
 	}
 ]

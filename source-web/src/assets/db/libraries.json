@@ -433,7 +433,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/embla-carousel",
 		"license": "MIT",
 		"licenseLink": "https://github.com/davidjerleke/embla-carousel",
-		"licenseDescription": "Carousel liviano y súper personalizable.",
+		"licenseDescription": "Lightweight, highly customizable carousel.",
 		"tags": ["Library", "Carousel", "UI", "JS"]
 	},
 	{
@@ -455,7 +455,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tanstack-query",
 		"license": "MIT",
 		"licenseLink": "https://github.com/TanStack/query",
-		"licenseDescription": "Data-fetching/caching para React (y más).",
+		"licenseDescription": "Data fetching and caching for React (and more).",
 		"tags": ["Library", "React", "State", "Data Fetching"]
 	},
 	{
@@ -466,7 +466,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zod",
 		"license": "MIT",
 		"licenseLink": "https://github.com/colinhacks/zod",
-		"licenseDescription": "Validación y parsing de schemas TypeScript-first.",
+		"licenseDescription": "TypeScript-first schema validation and parsing.",
 		"tags": ["Library", "TypeScript", "Validation"]
 	},
 	{
@@ -477,7 +477,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-hook-form",
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-hook-form/react-hook-form",
-		"licenseDescription": "Forms performantes en React.",
+		"licenseDescription": "High-performance forms for React.",
 		"tags": ["Library", "React", "Forms"]
 	}
 ]

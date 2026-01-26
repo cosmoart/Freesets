@@ -318,7 +318,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/hoppscotch",
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
-		"licenseDescription": "Cliente API rápido (Postman-like) web + self-host.",
+		"licenseDescription": "Fast API client (Postman-like), web and self-hosted.",
 		"tags": ["Tool", "API", "HTTP", "Open Source"]
 	},
 	{
@@ -329,7 +329,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/lighthouse",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/GoogleChrome/lighthouse/blob/main/LICENSE",
-		"licenseDescription": "Auditoría de performance, accesibilidad, SEO, etc.",
+		"licenseDescription": "Audit for performance, accessibility, SEO, etc.",
 		"tags": ["Tool", "WebPerf", "SEO", "Accessibility"]
 	},
 	{
@@ -340,7 +340,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/webpagetest",
 		"license": "Polyform Shield 1.0.0 (master) / Apache-2.0 (apache branch)",
 		"licenseLink": "https://github.com/catchpoint/WebPageTest",
-		"licenseDescription": "Repo con líneas de desarrollo bajo distintas licencias (ver README del repo).",
+		"licenseDescription": "Repository with different development branches under different licenses (see repo README).",
 		"tags": ["Tool", "WebPerf", "Core Web Vitals", "Testing"]
 	},
 	{

@@ -192,7 +192,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/velvetyne",
 		"license": "Open source (varies, often OFL)",
 		"licenseLink": "https://velvetyne.fr/",
-		"licenseDescription": "Tipografías open-source (revisar licencia por familia).",
+		"licenseDescription": "Open-source typefaces (check license per family).",
 		"tags": ["Typography", "Fonts", "Open Source"]
 	},
 	{
@@ -203,7 +203,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-library",
 		"license": "Varies (per font)",
 		"licenseLink": "https://fontlibrary.org/",
-		"licenseDescription": "Biblioteca comunitaria; la licencia depende de cada fuente.",
+		"licenseDescription": "Community library; license depends on each font.",
 		"tags": ["Typography", "Fonts", "Open Source"]
 	},
 	{
@@ -214,7 +214,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/lost-type",
 		"license": "Pay-what-you-want / varies by font",
 		"licenseLink": "https://www.losttype.com/",
-		"licenseDescription": "Fuentes tipo “paga lo que quieras”; condiciones varían por familia.",
+		"licenseDescription": "Pay-what-you-want fonts; terms vary by family.",
 		"tags": ["Typography", "Fonts", "Foundry"]
 	}
 ]

@@ -299,7 +299,6 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/hh9zkxpnfjckvekzz0ey",
 		"license": "CC0",
 		"licenseLink": "https://3dicons.co/?ref=lapaninja",
-		"tags": ["3D"],
 		"order": 45
 	},
 	{
@@ -330,7 +329,6 @@
 		"license": "DrawKit License",
 		"licenseLink": "https://www.drawkit.com/license",
 		"licenseDescription": "Free for Personal and Commercial. No attribution required.",
-		"tags": ["3D"],
 		"order": 40
 	},
 	{
@@ -370,7 +368,7 @@
 		"license": "Free with attribution",
 		"licenseLink": "https://unicornicons.com/license",
 		"licenseDescription": "Free icons require visible attribution; Pro removes attribution requirement.",
-		"tags": ["Icons", "Animated", "SVG", "UI", "Free with Attribution"],
+		"tags": ["Animated", "SVG", "UI", "Free with Attribution"],
 		"order": 75
 	},
 	{
@@ -382,7 +380,7 @@
 		"license": "Freemium",
 		"licenseLink": "https://www.freepik.com/icons",
 		"licenseDescription": "Iconfinder free-search now redirects to Freepik Icons (update the resource link).",
-		"tags": ["Icons", "SVG", "PNG", "Freemium", "Design Assets"]
+		"tags": ["SVG", "PNG", "Freemium", "Design Assets"]
 	},
 	{
 		"id": 40,
@@ -616,8 +614,7 @@
 		"name": "Isocons",
 		"link": "https://www.isocons.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/isocons",
-		"license": "CC BY 4.0 ",
-		"tags": ["3D"]
+		"license": "CC BY 4.0 "
 	},
 	{
 		"id": 65,
@@ -648,7 +645,7 @@
 		"license": "Apache-2.0",
 		"licenseLink": "https://pictogrammers.com/docs/general/license/",
 		"licenseDescription": "\"Icon set published under Apache-2.0 (see license page for details).\"",
-		"tags": ["Icons", "SVG", "Open Source", "UI"]
+		"tags": ["SVG", "Open Source", "UI"]
 	},
 	{
 		"id": 69,
@@ -659,7 +656,7 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/devicons/devicon/blob/master/LICENSE",
 		"licenseDescription": "\"MIT-licensed developer/tech brand icon set.\"",
-		"tags": ["Icons", "Dev", "SVG", "Open Source"]
+		"tags": ["Dev", "SVG", "Open Source"]
 	},
 	{
 		"id": 70,
@@ -670,7 +667,7 @@
 		"license": "CC BY-SA 4.0",
 		"licenseLink": "https://openmoji.org/faq/",
 		"licenseDescription": "\"Free to share/adapt (even commercially) with attribution + share-alike.\"",
-		"tags": ["Icons", "Emoji", "SVG", "CC BY-SA"]
+		"tags": ["Emoji", "SVG", "CC BY-SA"]
 	},
 	{
 		"id": 71,
@@ -680,8 +677,8 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE",
-		"licenseDescription": "Open-source, uso comercial permitido (manteniendo avisos de copyright/licencia).",
-		"tags": ["Icons", "SVG", "Open Source", "React", "Vue"]
+		"licenseDescription": "Open source; commercial use permitted (retain copyright/license notices).",
+		"tags": ["SVG", "Open Source", "React", "Vue"]
 	},
 	{
 		"id": 72,
@@ -691,8 +688,8 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/game-icons",
 		"license": "CC BY 3.0",
 		"licenseLink": "https://game-icons.net/about.html",
-		"licenseDescription": "Uso comercial permitido con atribución al autor original.",
-		"tags": ["Icons", "SVG", "CC BY", "Game Dev"]
+		"licenseDescription": "Commercial use allowed with attribution to the original author.",
+		"tags": ["SVG", "CC BY", "Game Dev"]
 	},
 	{
 		"id": 73,
@@ -702,7 +699,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/fluent-ui-system-icons",
 		"license": "MIT",
 		"licenseLink": "https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE",
-		"licenseDescription": "Open-source, uso comercial permitido.",
-		"tags": ["Icons", "SVG", "Open Source", "Microsoft", "Design System"]
+		"licenseDescription": "Open source; commercial use permitted.",
+		"tags": ["SVG", "Open Source", "Microsoft", "Design System"]
 	}
 ]

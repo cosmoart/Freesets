@@ -336,7 +336,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbox-algorithm",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/Automattic/colorbox",
-		"licenseDescription": "Algoritmo para generar sistemas de color; ideal para paletas accesibles.",
+		"licenseDescription": "Algorithm to generate color systems; ideal for accessible palettes.",
 		"tags": ["Colors", "Accessibility", "Open Source", "Library"]
 	},
 	{
@@ -347,7 +347,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/gradient-hunt",
 		"license": "Free",
 		"licenseLink": "https://gradienthunt.com/about",
-		"licenseDescription": "Galería de gradients listos para usar.",
+		"licenseDescription": "Gallery of ready-to-use gradients.",
 		"tags": ["Colors", "Gradients", "UI", "Free"]
 	}
 ]

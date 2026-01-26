@@ -125,8 +125,7 @@
 		"order": 20,
 		"name": "Three.js",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/threejs",
-		"link": "https://threejs.org",
-		"tags": ["3D"]
+		"link": "https://threejs.org"
 	},
 	{
 		"id": 18,
@@ -328,8 +327,7 @@
 		"order": 38,
 		"name": "3D Websites",
 		"link": "https://3dwebsites.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/3dwebsites",
-		"tags": ["3D"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/3dwebsites"
 	},
 	{
 		"id": 45,

@@ -316,7 +316,7 @@
 		"name": "3D buttons",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705768856/freesets/components/vxcfat4frzzdbwfqxcvn.webp",
 		"link": "https://csspro.com/css-3d-buttons/",
-		"tags": ["3D", "Buttons", "Copy&Paste"]
+		"tags": ["Buttons", "Copy&Paste"]
 	},
 	{
 		"id": 35,
@@ -803,7 +803,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/evergreen-ui",
 		"license": "MIT",
 		"licenseLink": "https://github.com/segmentio/evergreen",
-		"licenseDescription": "Componentes React listos para producto.",
+		"licenseDescription": "Production-ready React components.",
 		"tags": ["Components", "React", "UI Kit", "Open Source"]
 	},
 	{
@@ -814,7 +814,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-bootstrap",
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-bootstrap/react-bootstrap",
-		"licenseDescription": "Bootstrap components nativos para React.",
+		"licenseDescription": "Native Bootstrap components for React.",
 		"tags": ["Components", "React", "Bootstrap", "UI Kit"]
 	},
 	{
@@ -825,7 +825,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/rsuite",
 		"license": "MIT",
 		"licenseLink": "https://github.com/rsuite/rsuite",
-		"licenseDescription": "Suite de componentes React para apps complejas.",
+		"licenseDescription": "React component suite for complex apps.",
 		"tags": ["Components", "React", "UI Kit", "Dashboard"]
 	}
 ]

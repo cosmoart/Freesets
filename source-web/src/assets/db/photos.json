@@ -257,7 +257,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/the-met-open-access",
 		"license": "CC0",
 		"licenseLink": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
-		"licenseDescription": "Imágenes Open Access bajo CC0 (sin pedir permiso al museo).",
+		"licenseDescription": "Open Access images under CC0 (no permission required from the museum).",
 		"tags": ["Photos", "Museum", "Open Access", "CC0"]
 	},
 	{
@@ -268,7 +268,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rijksmuseum-rijksstudio",
 		"license": "CC0 / Public domain (según ítem)",
 		"licenseLink": "https://www.rijksmuseum.nl/en/rijksstudio",
-		"licenseDescription": "Colección digital con descargas; revisar derechos por obra/ítem.",
+		"licenseDescription": "Digital collection with downloads; check rights per work/item.",
 		"tags": ["Photos", "Art", "Museum", "Open Access"]
 	},
 	{
@@ -279,7 +279,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nga-open-access",
 		"license": "CC0",
 		"licenseLink": "https://www.nga.gov/open-access-images.html",
-		"licenseDescription": "Imágenes Open Access bajo CC0.",
+		"licenseDescription": "Open Access images under CC0.",
 		"tags": ["Photos", "Museum", "Open Access", "CC0"]
 	},
 	{
@@ -290,7 +290,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nypl-digital-collections",
 		"license": "Varies (mucho Public Domain)",
 		"licenseLink": "https://digitalcollections.nypl.org/",
-		"licenseDescription": "Los derechos varían por ítem; hay muchísimo material de dominio público.",
+		"licenseDescription": "Rights vary by item; there is a lot of public-domain material.",
 		"tags": ["Photos", "Archive", "Public Domain", "Open Access"]
 	}
 ]
