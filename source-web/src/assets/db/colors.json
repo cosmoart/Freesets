@@ -225,11 +225,11 @@
 	},
 	{
 		"id": 31,
-		"order": 22,
-		"name": "uiGradients",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/oakf9ule9y1chxb8yatt.webp",
-		"link": "https://uigradients.com/",
-		"tags": ["Gradients"]
+		"order": 47,
+		"name": "Color.review",
+		"link": "https://color.review/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-review",
+		"tags": ["Accessibility", "Contrast"]
 	},
 	{
 		"id": 32,
@@ -311,13 +311,5 @@
 		"link": "https://huemint.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huemint",
 		"tags": ["Preview", "Palette"]
-	},
-	{
-		"id": 42,
-		"order": 47,
-		"name": "Color.review",
-		"link": "https://color.review/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-review",
-		"tags": ["Accessibility", "Contrast"]
 	}
 ]

@@ -285,11 +285,10 @@
 	},
 	{
 		"id": 32,
-		"order": 40,
-		"name": "Gradii",
-		"link": "https://www.gradii.fun",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
-		"tags": ["Gradients"]
+		"order": 47,
+		"name": "Get Waves",
+		"link": "https://getwaves.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves"
 	},
 	{
 		"id": 33,
@@ -305,12 +304,5 @@
 		"name": "Patternico",
 		"link": "https://patternico.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
-	},
-	{
-		"id": 35,
-		"order": 47,
-		"name": "Get Waves",
-		"link": "https://getwaves.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves"
 	}
 ]
