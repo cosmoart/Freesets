@@ -93,14 +93,11 @@
 	},
 	{
 		"id": 11,
-		"order": 70,
-		"name": "Scribbles (illustrations.run)",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/illustrations-run",
-		"link": "https://illustrations.run/",
-		"license": "Free",
-		"licenseLink": "https://illustrations.run/",
-		"licenseDescription": "Free SVG scribble illustrations (site states they are free to use).",
-		"tags": ["Illustrations", "SVG", "Free", "Figma", "Download"]
+		"order": 80,
+		"name": "Scribbles",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704588205/freesets/illustrations/hslkb98bbnal2tubllug.webp",
+		"link": "https://illustrations.run",
+		"tags": ["Doodles"]
 	},
 	{
 		"id": 12,
@@ -215,14 +212,12 @@
 	},
 	{
 		"id": 24,
-		"order": 80,
-		"name": "Ultima (Storytale) – Free Illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/ultima",
-		"link": "https://ultima.storytale.io/",
+		"order": 50,
+		"name": "Ultima",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705091883/freesets/illustrations/csupf4kdrz9vcxxvhrm3.webp",
+		"link": "https://ultima.storytale.io",
 		"license": "Free",
-		"licenseLink": "https://ultima.storytale.io/",
-		"licenseDescription": "Illustration bundle offered for free download.",
-		"tags": ["Illustrations", "Bundle", "Design Assets", "SVG", "Free"]
+		"licenseDescription": "All illustrations are available for use in any commercial and personal projects."
 	},
 	{
 		"id": 25,
@@ -300,14 +295,11 @@
 	},
 	{
 		"id": 33,
-		"order": 85,
-		"name": "LottieFiles (Featured Free Animations)",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/animations/lottiefiles",
+		"order": 37,
+		"name": "LottieFiles",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705802516/freesets/illustrations/vf9nfhugpnemyw294hpb.webp",
 		"link": "https://lottiefiles.com/featured",
-		"license": "Freemium",
-		"licenseLink": "https://lottiefiles.com/featured",
-		"licenseDescription": "Featured free animations page (redirects to featured-free-animations).",
-		"tags": ["Lottie", "Animations", "Motion", "UI", "Freemium"]
+		"tags": ["Animated"]
 	},
 	{
 		"id": 34,
@@ -480,7 +472,7 @@
 		"name": "Memojis",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/memojis",
 		"link": "https://www.figma.com/community/plugin/1090391796325905912/memojis",
-		"tags": ["Avatars"],
+		"tags": ["Avatars", "3D"],
 		"license": "C. Free Resource L."
 	},
 	{
@@ -490,7 +482,8 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/shapefest",
 		"link": "https://www.shapefest.com",
 		"license": "Shapefest™ Commercial",
-		"licenseLink": "https://www.shapefest.com/license-agreement"
+		"licenseLink": "https://www.shapefest.com/license-agreement",
+		"tags": ["3D"]
 	},
 	{
 		"id": 56,
@@ -533,79 +526,31 @@
 	},
 	{
 		"id": 61,
-		"order": 88,
-		"name": "Ouch! Illustrations (Icons8)",
+		"order": 58,
+		"name": "Icons8",
 		"link": "https://icons8.com/illustrations/style--ouch",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/ouch-icons8",
-		"license": "Free with attribution",
+		"license": "Freemium with attribution",
 		"licenseLink": "https://icons8.com/license",
-		"licenseDescription": "\"Free use typically requires attribution (see Icons8 license).\"",
-		"tags": ["Illustrations", "Vector", "PNG", "Attribution"]
+		"tags": ["Animated", "3D"]
 	},
 	{
 		"id": 62,
-		"order": 82,
+		"order": 72,
 		"name": "Absurd.Design",
 		"link": "https://absurd.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/absurd-design",
-		"license": "Free",
-		"licenseLink": "https://absurd.design/#license",
-		"licenseDescription": "\"Hand-drawn illustration library; check on-page license section.\"",
-		"tags": ["Illustrations", "Hand-drawn", "SVG", "Free"]
-	},
-	{
-		"id": 63,
-		"order": 86,
-		"name": "Openclipart",
-		"link": "https://openclipart.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/openclipart",
-		"license": "CC0",
-		"licenseLink": "https://openclipart.org/share",
-		"licenseDescription": "\"All uploads are released under CC0 1.0 for any use, including commercial.\"",
-		"tags": ["Illustrations", "Vector", "SVG", "CC0"]
-	},
-	{
-		"id": 64,
-		"order": 82,
-		"name": "Pixeltrue Free Illustrations",
-		"link": "https://www.pixeltrue.com/free-illustrations-copy",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/pixeltrue",
-		"license": "Free (royalty-free)",
-		"licenseLink": "https://www.pixeltrue.com/license",
-		"licenseDescription": "Personal and commercial use without attribution; modifications allowed.",
-		"tags": ["Illustrations", "SVG", "PNG", "Free"]
-	},
-	{
-		"id": 65,
-		"order": 80,
-		"name": "Delesign Free Resources",
-		"link": "https://free-designs.delesign.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/delesign",
-		"license": "Free (royalty-free)",
-		"licenseLink": "https://free-designs.delesign.com/free-designs/graphics/",
-		"licenseDescription": "Royalty-free resources for use on sites, social media, emails, etc. (see license on the site).",
-		"tags": ["Illustrations", "SVG", "PNG", "Free"]
-	},
-	{
-		"id": 66,
-		"order": 76,
-		"name": "Stubborn Generator",
-		"link": "https://stubborn.fun/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/stubborn-generator",
-		"license": "Free",
-		"licenseLink": "https://freeillustrations.xyz/illustration/stubborn-generator/",
-		"licenseDescription": "Personal and commercial use (per the listing/curation of the resource).",
-		"tags": ["Illustrations", "Character Builder", "Figma", "SVG", "PNG"]
-	},
-	{
-		"id": 67,
-		"order": 72,
-		"name": "Huumph Illustrations (LS Graphics)",
-		"link": "https://www.ls.graphics/illustrations/huumph",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/huumph",
 		"license": "Free with attribution",
-		"licenseLink": "https://www.ls.graphics/illustrations/huumph",
-		"licenseDescription": "Commercial use permitted; attribution required (check pack terms).",
-		"tags": ["Illustrations", "SaaS", "Marketing", "SVG", "PNG"]
+		"licenseLink": "https://absurd.design/license",
+		"tags": ["Hand-drawn", "Doodles"]
+	},
+		{
+		"id": 63,
+		"order": 56,
+		"name": "IconPark",
+		"link": "https://iconpark.oceanengine.com/illustrations",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
+		"license": "Apache-2.0",
+		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	}
 ]

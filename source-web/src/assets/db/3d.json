@@ -235,50 +235,37 @@
 		"name": "Poly Pizza",
 		"link": "https://poly.pizza/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/poly-pizza",
-		"license": "CC0 (filter available)",
-		"licenseLink": "https://poly.pizza/search/CC0",
-		"licenseDescription": "\"Includes a CC0 collection; verify license per asset/filter.\"",
-		"tags": ["CC0", "Low Poly", "Models"]
-	},
-	{
-		"id": 26,
-		"order": 84,
-		"name": "OpenGameArt",
-		"link": "https://opengameart.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/opengameart",
-		"license": "Mixed (per asset)",
-		"licenseLink": "https://opengameart.org/content/faq",
-		"licenseDescription": "\"Assets can have multiple licenses; you typically comply with one license listed for that asset.\"",
-		"tags": ["Game Assets", "Mixed License"]
+		"license": "CC0",
+		"licenseDescription": "CC0 and CC-BY",
+		"tags": ["Low Poly"]
 	},
 	{
 		"id": 27,
-		"order": 78,
+		"order": 9,
 		"name": "Free3D",
-		"link": "https://free3d.com/",
+		"link": "https://free3d.com/3d-models/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/free3d",
-		"tags": ["Models", "Marketplace"]
+		"license": "Freemium",
+		"tags": ["Marketplace"]
 	},
 	{
 		"id": 28,
-		"order": 83,
+		"order": 43,
 		"name": "NASA 3D Resources",
 		"link": "https://science.nasa.gov/3d-resources/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nasa-3d-resources",
-		"license": "NASA media guidelines (revisar)",
+		"license": "NASA guidelines",
 		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-		"licenseDescription": "Models/media are generally not subject to copyright in the U.S.; primarily for educational/informational use (see guidelines).",
-		"tags": ["Models", "Space", "Free"]
+		"tags": ["Space"]
 	},
 	{
 		"id": 29,
-		"order": 74,
+		"order": 15,
 		"name": "NIH 3D",
 		"link": "https://3d.nih.gov/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nih-3d",
-		"license": "Varies (per model)",
+		"license": "Multiple",
 		"licenseLink": "https://3d.nih.gov/terms",
-		"licenseDescription": "Each contribution/model can have its own license (see terms).",
-		"tags": ["Science", "Biomedical", "Repository"]
+		"tags": ["Medical", "Bioscientific"]
 	}
 ]

@@ -375,7 +375,7 @@
 		"tags": ["Animation Engine"]
 	},
 	{
-		"id": 41,
+		"id": 42,
 		"order": 66,
 		"name": "Starlight",
 		"link": "https://starlight.astro.build/",
@@ -383,7 +383,7 @@
 		"tags": ["Documentation sites", "Astro"]
 	},
 	{
-		"id": 42,
+		"id": 43,
 		"order": 70,
 		"name": "Gridstack.js",
 		"link": "https://gridstackjs.com/",
@@ -391,7 +391,7 @@
 		"tags": ["Interactive dashboards"]
 	},
 	{
-		"id": 43,
+		"id": 44,
 		"order": 38,
 		"name": "Smooothy",
 		"link": "https://smooothy.vercel.app/",
@@ -399,7 +399,7 @@
 		"tags": ["Carousel", "Slider", "Webgl"]
 	},
 	{
-		"id": 44,
+		"id": 45,
 		"order": 88,
 		"name": "React Scan",
 		"link": "https://react-scan.com",
@@ -407,7 +407,7 @@
 		"tags": ["React", "Render"]
 	},
 	{
-		"id": 44,
+		"id": 46,
 		"order": 85,
 		"name": "nuqs",
 		"link": "https://nuqs.47ng.com",
@@ -415,69 +415,59 @@
 		"tags": ["Search params", "React"]
 	},
 	{
-		"id": 45,
-		"order": 92,
+		"id": 47,
+		"order": 32,
 		"name": "Floating UI",
 		"link": "https://floating-ui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/floating-ui",
 		"license": "MIT",
 		"licenseLink": "https://github.com/floating-ui/floating-ui/blob/master/LICENSE",
-		"licenseDescription": "\"MIT-licensed positioning engine for tooltips/popovers/dropdowns.\"",
-		"tags": ["Library", "JavaScript", "UI", "Popover"]
-	},
-	{
-		"id": 46,
-		"order": 82,
-		"name": "Embla Carousel",
-		"link": "https://www.embla-carousel.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/embla-carousel",
-		"license": "MIT",
-		"licenseLink": "https://github.com/davidjerleke/embla-carousel",
-		"licenseDescription": "Lightweight, highly customizable carousel.",
-		"tags": ["Library", "Carousel", "UI", "JS"]
-	},
-	{
-		"id": 47,
-		"order": 90,
-		"name": "Zustand",
-		"link": "https://github.com/pmndrs/zustand",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zustand",
-		"license": "MIT",
-		"licenseLink": "https://github.com/pmndrs/zustand/blob/main/LICENSE",
-		"licenseDescription": "\"MIT-licensed state management for React (hooks-based).\"",
-		"tags": ["Library", "React", "State Management"]
+		"tags": ["JavaScript", "Tooltips", "Popover"]
 	},
 	{
 		"id": 48,
-		"order": 88,
-		"name": "TanStack Query",
-		"link": "https://tanstack.com/query/latest",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tanstack-query",
-		"license": "MIT",
-		"licenseLink": "https://github.com/TanStack/query",
-		"licenseDescription": "Data fetching and caching for React (and more).",
-		"tags": ["Library", "React", "State", "Data Fetching"]
+		"order": 52,
+		"name": "Embla Carousel",
+		"link": "https://www.embla-carousel.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/embla-carousel",
+		"tags": ["Carousel"]
 	},
 	{
 		"id": 49,
-		"order": 86,
+		"order": 70,
+		"name": "Zustand",
+		"link": "https://zustand-demo.pmnd.rs/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zustand",
+		"license": "MIT",
+		"licenseLink": "https://github.com/pmndrs/zustand/blob/main/LICENSE",
+		"tags": ["React", "State Management"]
+	},
+	{
+		"id": 50,
+		"order": 88,
+		"name": "TanStack",
+		"link": "https://tanstack.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tanstack",
+		"tags": ["Multi-framework"]
+	},
+	{
+		"id": 51,
+		"order": 56,
 		"name": "Zod",
 		"link": "https://github.com/colinhacks/zod",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zod",
 		"license": "MIT",
 		"licenseLink": "https://github.com/colinhacks/zod",
-		"licenseDescription": "TypeScript-first schema validation and parsing.",
-		"tags": ["Library", "TypeScript", "Validation"]
+		"tags": ["TypeScript", "Validation"]
 	},
 	{
-		"id": 50,
-		"order": 84,
+		"id": 52,
+		"order": 44,
 		"name": "React Hook Form",
 		"link": "https://react-hook-form.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-hook-form",
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-hook-form/react-hook-form",
-		"licenseDescription": "High-performance forms for React.",
-		"tags": ["Library", "React", "Forms"]
+		"tags": ["React", "Validation"]
 	}
 ]

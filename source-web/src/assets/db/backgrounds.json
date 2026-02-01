@@ -14,9 +14,9 @@
 		"name": "CSS Background Patterns",
 		"link": "https://www.magicpattern.design/tools/css-backgrounds",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/csspatterns",
-		"license": "Multiple",
-		"licenseLink": "https://www.magicpattern.design/terms",
-		"order": 95
+		"license": "Freemium",
+		"licenseLink": "https://www.magicpattern.design/pricing",
+		"order": 45
 	},
 	{
 		"id": 3,
@@ -25,7 +25,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/pattern_generator",
 		"license": "Free",
 		"licenseLink": "https://doodad.dev/pattern-generator/",
-		"licenseDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs",
+		"licenseDescription": "Feel free to use the patterns you create in any commercial project.",
 		"order": 80
 	},
 	{
@@ -50,12 +50,11 @@
 		"id": 6,
 		"name": "Haikei",
 		"link": "https://haikei.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/haikei",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/haikei",
 		"license": "Freemium",
 		"licenseLink": "https://haikei.app/pricing/",
 		"licenseDescription": "Commercial use allowed; credit not required (link appreciated).",
-		"order": 86,
-		"tags": ["SVG", "Generator", "React", "Design Tool"]
+		"order": 56
 	},
 	{
 		"id": 7,
@@ -105,14 +104,13 @@
 	},
 	{
 		"id": 12,
-		"name": "SVGBackgrounds",
+		"name": "SVG Backgrounds",
 		"link": "https://www.svgbackgrounds.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/patterns/svgbackgrounds",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg_backgrounds",
 		"license": "Free with attribution",
 		"licenseLink": "https://www.svgbackgrounds.com/license/",
 		"licenseDescription": "Free graphics usable in personal/commercial/client work; attribution required unless you have an active subscription.",
-		"order": 82,
-		"tags": ["SVG", "Patterns", "Web", "Design Assets"]
+		"order": 32
 	},
 	{
 		"id": 13,
@@ -174,7 +172,10 @@
 		"order": 78,
 		"name": "fffuel",
 		"link": "https://fffuel.co/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/fffuel"
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/fffuel",
+		"license": "Free",
+		"licenseLink": "https://www.fffuel.co/license/",
+		"licenseDescription": "\"You are free to use the Images for both personal and commercial projects. No attribution is required, but a mention is really appreciated.\""
 	},
 	{
 		"id": 20,
@@ -300,70 +301,16 @@
 	},
 	{
 		"id": 34,
-		"order": 88,
-		"name": "Doodad Pattern Generator",
-		"link": "https://doodad.dev/pattern-generator/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/doodad-pattern-generator",
-		"tags": ["Patterns", "SVG", "Generator"]
+		"order": 58,
+		"name": "Patternico",
+		"link": "https://patternico.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
 	},
 	{
 		"id": 35,
-		"order": 86,
-		"name": "BGJar",
-		"link": "https://bgjar.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/bgjar",
-		"tags": ["SVG", "Generator"]
-	},
-	{
-		"id": 36,
-		"order": 82,
-		"name": "Patternico",
-		"link": "https://patternico.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico",
-		"tags": ["Patterns", "Generator"]
-	},
-	{
-		"id": 37,
-		"order": 77,
-		"name": "Mesh Gradients",
-		"link": "https://www.meshgradients.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/meshgradients",
-		"license": "Free",
-		"licenseLink": "https://www.meshgradients.com/",
-		"licenseDescription": "Generator and collection of mesh gradients.",
-		"tags": ["Gradients", "Mesh", "UI"]
-	},
-	{
-		"id": 38,
-		"order": 78,
-		"name": "MagicPattern Mesh Gradients",
-		"link": "https://www.magicpattern.design/tools/mesh-gradients",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/magicpattern-mesh-gradients",
-		"license": "Free",
-		"licenseLink": "https://www.magicpattern.design/tools/mesh-gradients",
-		"licenseDescription": "Tool to generate mesh gradients quickly.",
-		"tags": ["Gradients", "Tool", "UI"]
-	},
-	{
-		"id": 39,
-		"order": 80,
+		"order": 47,
 		"name": "Get Waves",
 		"link": "https://getwaves.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves",
-		"license": "Free",
-		"licenseLink": "https://getwaves.io/",
-		"licenseDescription": "SVG wave generator for separators and backgrounds.",
-		"tags": ["SVG", "Waves", "Tool"]
-	},
-	{
-		"id": 40,
-		"order": 76,
-		"name": "Meshgradient.in (Meshy)",
-		"link": "https://meshgradient.in/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/meshgradient-in",
-		"license": "Free",
-		"licenseLink": "https://meshgradient.in/",
-		"licenseDescription": "Mesh gradient generator with presets and export.",
-		"tags": ["Gradients", "Mesh", "Tool"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves"
 	}
 ]

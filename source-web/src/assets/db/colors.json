@@ -306,48 +306,18 @@
 	},
 	{
 		"id": 41,
-		"order": 85,
+		"order": 94,
 		"name": "Huemint",
 		"link": "https://huemint.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huemint",
-		"tags": ["Colors", "AI", "Palette"]
+		"tags": ["Preview", "Palette"]
 	},
 	{
 		"id": 42,
-		"order": 83,
-		"name": "ColorSpace",
-		"link": "https://mycolor.space/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-space",
-		"tags": ["Colors", "Palette", "Gradient"]
-	},
-	{
-		"id": 43,
-		"order": 80,
+		"order": 47,
 		"name": "Color.review",
 		"link": "https://color.review/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-review",
-		"tags": ["Colors", "Accessibility", "Contrast"]
-	},
-	{
-		"id": 44,
-		"order": 78,
-		"name": "ColorBox (algorithm)",
-		"link": "https://github.com/Automattic/colorbox",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbox-algorithm",
-		"license": "Apache-2.0",
-		"licenseLink": "https://github.com/Automattic/colorbox",
-		"licenseDescription": "Algorithm to generate color systems; ideal for accessible palettes.",
-		"tags": ["Colors", "Accessibility", "Open Source", "Library"]
-	},
-	{
-		"id": 45,
-		"order": 79,
-		"name": "Gradient Hunt",
-		"link": "https://gradienthunt.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/gradient-hunt",
-		"license": "Free",
-		"licenseLink": "https://gradienthunt.com/about",
-		"licenseDescription": "Gallery of ready-to-use gradients.",
-		"tags": ["Colors", "Gradients", "UI", "Free"]
+		"tags": ["Accessibility", "Contrast"]
 	}
 ]

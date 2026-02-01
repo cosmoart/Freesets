@@ -255,100 +255,36 @@
 	},
 	{
 		"id": 32,
-		"order": 40,
-		"name": "Gradii",
-		"link": "https://www.gradii.fun/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
-		"tags": ["Open Graph"]
-	},
-	{
-		"id": 33,
-		"order": 83,
-		"name": "Project Wallace",
-		"link": "https://www.projectwallace.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallace",
-		"license": "Free",
-		"licenseLink": "https://www.projectwallace.com/",
-		"licenseDescription": "Web app for CSS analysis and related tooling.",
-		"tags": ["CSS", "Analyzer", "Performance", "Tool", "Web"]
-	},
-	{
-		"id": 34,
-		"order": 65,
-		"name": "Items.Design",
-		"link": "https://items.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/directories/items-design",
-		"license": "Freemium",
-		"licenseLink": "https://items.design/",
-		"licenseDescription": "Design resources directory (category/free page may be JS-rendered).",
-		"tags": ["Directory", "Design Assets", "UI Kits", "Resources", "Freemium"]
-	},
-	{
-		"id": 35,
-		"order": 40,
-		"name": "Upto.Site",
-		"link": "https://upto.site/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/utilities/upto-site",
-		"license": "Free",
-		"licenseLink": "https://upto.site/",
-		"licenseDescription": "URL shortener (not a design-asset library; may be an accidental entry).",
-		"tags": ["Utility", "URL Shortener", "Web", "Free", "Tools"]
-	},
-	{
-		"id": 36,
-		"order": 90,
+		"order": 64,
 		"name": "Bundlephobia",
 		"link": "https://bundlephobia.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/bundlephobia",
-		"tags": ["Tool", "NPM", "Performance"]
+		"tags": ["NPM", "Performance"]
 	},
 	{
-		"id": 37,
-		"order": 92,
+		"id": 33,
+		"order": 62,
 		"name": "Can I use",
 		"link": "https://caniuse.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/caniuse",
-		"tags": ["Tool", "Browser Support", "CSS"]
+		"tags": ["Browser Support", "CSS"]
 	},
 	{
-		"id": 38,
-		"order": 86,
+		"id": 34,
+		"order": 79,
 		"name": "Hoppscotch",
 		"link": "https://hoppscotch.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/hoppscotch",
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
-		"licenseDescription": "Fast API client (Postman-like), web and self-hosted.",
-		"tags": ["Tool", "API", "HTTP", "Open Source"]
+		"tags": ["API", "Postman"]
 	},
 	{
-		"id": 39,
-		"order": 88,
-		"name": "Lighthouse",
-		"link": "https://developer.chrome.com/docs/lighthouse/overview",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/lighthouse",
-		"license": "Apache-2.0",
-		"licenseLink": "https://github.com/GoogleChrome/lighthouse/blob/main/LICENSE",
-		"licenseDescription": "Audit for performance, accessibility, SEO, etc.",
-		"tags": ["Tool", "WebPerf", "SEO", "Accessibility"]
-	},
-	{
-		"id": 40,
-		"order": 82,
-		"name": "WebPageTest",
-		"link": "https://www.webpagetest.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/webpagetest",
-		"license": "Polyform Shield 1.0.0 (master) / Apache-2.0 (apache branch)",
-		"licenseLink": "https://github.com/catchpoint/WebPageTest",
-		"licenseDescription": "Repository with different development branches under different licenses (see repo README).",
-		"tags": ["Tool", "WebPerf", "Core Web Vitals", "Testing"]
-	},
-	{
-		"id": 41,
-		"order": 76,
+		"id": 35,
+		"order": 46,
 		"name": "JSON Crack",
 		"link": "https://jsoncrack.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/json-crack",
-		"tags": ["Tool", "JSON", "Visualizer", "Debugging"]
+		"tags": ["JSON Visualizer"]
 	}
 ]

@@ -167,14 +167,11 @@
 	},
 	{
 		"id": 22,
-		"order": 88,
+		"order": 18,
 		"name": "Font Squirrel",
 		"link": "https://www.fontsquirrel.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-squirrel",
-		"license": "Mixed (per font)",
-		"licenseLink": "https://www.fontsquirrel.com/license",
-		"licenseDescription": "\"License varies by font—check each font’s license page.\"",
-		"tags": ["Typography", "Fonts", "Webfonts"]
+		"license": "Multiple"
 	},
 	{
 		"id": 23,
