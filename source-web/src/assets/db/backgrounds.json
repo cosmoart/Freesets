@@ -14,9 +14,9 @@
 		"name": "CSS Background Patterns",
 		"link": "https://www.magicpattern.design/tools/css-backgrounds",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/csspatterns",
-		"license": "Multiple",
-		"licenseLink": "https://www.magicpattern.design/terms",
-		"order": 95
+		"license": "Freemium",
+		"licenseLink": "https://www.magicpattern.design/pricing",
+		"order": 45
 	},
 	{
 		"id": 3,
@@ -25,7 +25,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/pattern_generator",
 		"license": "Free",
 		"licenseLink": "https://doodad.dev/pattern-generator/",
-		"licenseDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs",
+		"licenseDescription": "Feel free to use the patterns you create in any commercial project.",
 		"order": 80
 	},
 	{
@@ -49,12 +49,12 @@
 	{
 		"id": 6,
 		"name": "Haikei",
-		"link": "https://haikei.app/generators/",
+		"link": "https://haikei.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/haikei",
-		"license": "Multiple",
+		"license": "Freemium",
 		"licenseLink": "https://haikei.app/pricing/",
-		"licenseDescription": "Basic Plan, Pro Plan",
-		"order": 77
+		"licenseDescription": "Commercial use allowed; credit not required (link appreciated).",
+		"order": 56
 	},
 	{
 		"id": 7,
@@ -107,9 +107,10 @@
 		"name": "SVG Backgrounds",
 		"link": "https://www.svgbackgrounds.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg_backgrounds",
-		"license": "CC BY 4.0",
+		"license": "Free with attribution",
 		"licenseLink": "https://www.svgbackgrounds.com/license/",
-		"order": 58
+		"licenseDescription": "Free graphics usable in personal/commercial/client work; attribution required unless you have an active subscription.",
+		"order": 32
 	},
 	{
 		"id": 13,
@@ -171,7 +172,10 @@
 		"order": 78,
 		"name": "fffuel",
 		"link": "https://fffuel.co/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/fffuel"
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/fffuel",
+		"license": "Free",
+		"licenseLink": "https://www.fffuel.co/license/",
+		"licenseDescription": "\"You are free to use the Images for both personal and commercial projects. No attribution is required, but a mention is really appreciated.\""
 	},
 	{
 		"id": 20,
@@ -294,5 +298,19 @@
 		"link": "https://patterncraft.fun",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patterncraft",
 		"tags": ["Tailwind"]
+	},
+	{
+		"id": 34,
+		"order": 58,
+		"name": "Patternico",
+		"link": "https://patternico.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
+	},
+	{
+		"id": 35,
+		"order": 47,
+		"name": "Get Waves",
+		"link": "https://getwaves.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves"
 	}
 ]

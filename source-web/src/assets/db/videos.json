@@ -59,7 +59,7 @@
 	},
 	{
 		"id": 7,
-		"order": 30,
+		"order": 48,
 		"name": "Mixkit",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/mixkit",
 		"link": "https://mixkit.co/free-stock-video/",
@@ -102,5 +102,35 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/eybg2hh9eshhaxvdtsci.webp",
 		"link": "https://vimeo.com/groups/freehd/",
 		"license": "Multiple"
+	},
+	{
+		"id": 12,
+		"order": 48,
+		"name": "NASA",
+		"link": "https://images.nasa.gov/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/nasa-images",
+		"license": "Free",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"licenseDescription": "\"Most NASA imagery is public domain; follow NASA media usage guidelines and restrictions.\"",
+		"tags": ["Space"]
+	},
+	{
+		"id": 13,
+		"order": 87,
+		"name": "Free Nature Stock",
+		"link": "https://freenaturestock.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/free-nature-stock",
+		"license": "CC0",
+		"licenseLink": "https://freenaturestock.com/license/"
+	},
+	{
+		"id": 14,
+		"order": 18,
+		"name": "SplitShire",
+		"link": "https://www.splitshire.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/splitshire",
+		"license": "Free with attribution",
+		"licenseLink": "https://www.splitshire.com/license",
+		"tags": ["AI"]
 	}
 ]

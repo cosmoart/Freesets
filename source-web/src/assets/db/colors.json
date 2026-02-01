@@ -303,5 +303,21 @@
 		"tags": ["Generator", "Preview"],
 		"license": "Apache V2.0",
 		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
+	},
+	{
+		"id": 41,
+		"order": 94,
+		"name": "Huemint",
+		"link": "https://huemint.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huemint",
+		"tags": ["Preview", "Palette"]
+	},
+	{
+		"id": 42,
+		"order": 47,
+		"name": "Color.review",
+		"link": "https://color.review/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-review",
+		"tags": ["Accessibility", "Contrast"]
 	}
 ]

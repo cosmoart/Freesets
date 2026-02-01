@@ -523,5 +523,34 @@
 		"name": "GEE! ME",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/geeme",
 		"link": "https://geeme.vercel.app/"
+	},
+	{
+		"id": 61,
+		"order": 58,
+		"name": "Icons8",
+		"link": "https://icons8.com/illustrations/style--ouch",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/ouch-icons8",
+		"license": "Freemium with attribution",
+		"licenseLink": "https://icons8.com/license",
+		"tags": ["Animated", "3D"]
+	},
+	{
+		"id": 62,
+		"order": 72,
+		"name": "Absurd.Design",
+		"link": "https://absurd.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/absurd-design",
+		"license": "Free with attribution",
+		"licenseLink": "https://absurd.design/license",
+		"tags": ["Hand-drawn", "Doodles"]
+	},
+		{
+		"id": 63,
+		"order": 56,
+		"name": "IconPark",
+		"link": "https://iconpark.oceanengine.com/illustrations",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
+		"license": "Apache-2.0",
+		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	}
 ]

@@ -362,7 +362,7 @@
 		"order": 30,
 		"name": "CSS checkboxes",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705769069/freesets/components/wgqjufaceb0fqgaeqebt.webp",
-		"link": "https://getcssscan.com/css-checkboxes-examples?ref=css-3d-buttons-bottom",
+		"link": "https://getcssscan.com/css-checkboxes-examples",
 		"tags": ["HTML", "Checkboxes", "Copy&Paste"]
 	},
 	{
@@ -746,5 +746,39 @@
 		"link": "https://blookie.io",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/blookie",
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
+	},
+	{
+		"id": 83,
+		"order": 78,
+		"name": "CuiCui",
+		"link": "https://cuicui.day/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
+		"tags": ["React", "TypeScript", "Copy&Paste", "Library"]
+	},
+	{
+		"id": 84,
+		"order": 30,
+		"name": "Ant Design",
+		"link": "https://ant.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ant-design",
+		"license": "MIT",
+		"licenseLink": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+		"tags": ["React", "Design System"]
+	},
+	{
+		"id": 85,
+		"order": 67,
+		"name": "React Aria",
+		"link": "https://react-aria.adobe.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-aria-components",
+		"tags": ["React", "Accessibility"]
+	},
+	{
+		"id": 86,
+		"order": 46,
+		"name": "RSuite",
+		"link": "https://rsuitejs.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/rsuite",
+		"tags": ["React"]
 	}
 ]

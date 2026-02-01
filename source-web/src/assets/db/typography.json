@@ -164,5 +164,44 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/typescale",
 		"link": "https://typescale.io/",
 		"tags": ["Plugin"]
+	},
+	{
+		"id": 22,
+		"order": 18,
+		"name": "Font Squirrel",
+		"link": "https://www.fontsquirrel.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-squirrel",
+		"license": "Multiple"
+	},
+	{
+		"id": 23,
+		"order": 44,
+		"name": "The League Type",
+		"link": "https://www.theleagueofmoveabletype.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/league-of-moveable-type",
+		"license": "Open source",
+		"licenseDescription": "\"All the fonts from The League of Moveable Type are free & open source, available to use commercially and subject to the Open Font License.\""
+	},
+	{
+		"id": 24,
+		"order": 25,
+		"name": "Velvetyne Type Foundry",
+		"link": "https://velvetyne.fr/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/velvetyne"
+	},
+	{
+		"id": 25,
+		"order": 22,
+		"name": "Font Library",
+		"link": "https://fontlibrary.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-library"
+	},
+	{
+		"id": 26,
+		"order": 72,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/typeface/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/lapa-ninja",
+		"tags": ["Inspiration"]
 	}
 ]

@@ -255,10 +255,36 @@
 	},
 	{
 		"id": 32,
-		"order": 40,
-		"name": "Gradii",
-		"link": "https://www.gradii.fun/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradii",
-		"tags": ["Open Graph"]
+		"order": 64,
+		"name": "Bundlephobia",
+		"link": "https://bundlephobia.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/bundlephobia",
+		"tags": ["NPM", "Performance"]
+	},
+	{
+		"id": 33,
+		"order": 62,
+		"name": "Can I use",
+		"link": "https://caniuse.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/caniuse",
+		"tags": ["Browser Support", "CSS"]
+	},
+	{
+		"id": 34,
+		"order": 79,
+		"name": "Hoppscotch",
+		"link": "https://hoppscotch.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/hoppscotch",
+		"license": "MIT",
+		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
+		"tags": ["API", "Postman"]
+	},
+	{
+		"id": 35,
+		"order": 46,
+		"name": "JSON Crack",
+		"link": "https://jsoncrack.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/json-crack",
+		"tags": ["JSON Visualizer"]
 	}
 ]

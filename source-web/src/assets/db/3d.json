@@ -228,5 +228,44 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/blendswap",
 		"tags": ["Models"],
 		"license": "Multiple"
+	},
+	{
+		"id": 25,
+		"order": 88,
+		"name": "Poly Pizza",
+		"link": "https://poly.pizza/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/poly-pizza",
+		"license": "CC0",
+		"licenseDescription": "CC0 and CC-BY",
+		"tags": ["Low Poly"]
+	},
+	{
+		"id": 27,
+		"order": 9,
+		"name": "Free3D",
+		"link": "https://free3d.com/3d-models/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/free3d",
+		"license": "Freemium",
+		"tags": ["Marketplace"]
+	},
+	{
+		"id": 28,
+		"order": 43,
+		"name": "NASA 3D Resources",
+		"link": "https://science.nasa.gov/3d-resources/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nasa-3d-resources",
+		"license": "NASA guidelines",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"tags": ["Space"]
+	},
+	{
+		"id": 29,
+		"order": 15,
+		"name": "NIH 3D",
+		"link": "https://3d.nih.gov/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/nih-3d",
+		"license": "Multiple",
+		"licenseLink": "https://3d.nih.gov/terms",
+		"tags": ["Medical", "Bioscientific"]
 	}
 ]

@@ -24,14 +24,6 @@
 	},
 	{
 		"id": 4,
-		"order": 85,
-		"name": "Medium",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/medium",
-		"link": "https://www.medium.com",
-		"tags": ["Community"]
-	},
-	{
-		"id": 5,
 		"order": 81,
 		"name": "Rauno Craft",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706403955/freesets/blogs/ypica0qiozuuuamcyk6c.webp",
@@ -39,7 +31,7 @@
 		"tags": ["UI"]
 	},
 	{
-		"id": 6,
+		"id": 5,
 		"order": 80,
 		"name": "Not a Number",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/nan",
@@ -47,7 +39,7 @@
 		"tags": ["Animation", "svg"]
 	},
 	{
-		"id": 7,
+		"id": 6,
 		"order": 78,
 		"name": "Maximeheckel",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/maxime",
@@ -55,7 +47,7 @@
 		"tags": ["Three.js", "React", "3D"]
 	},
 	{
-		"id": 8,
+		"id": 7,
 		"order": 76,
 		"name": "Varun Vachhar",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/varun",
@@ -63,7 +55,7 @@
 		"tags": ["Three.js", "3D"]
 	},
 	{
-		"id": 9,
+		"id": 8,
 		"order": 70,
 		"name": "Overreacted",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/overreacted",
@@ -71,7 +63,7 @@
 		"tags": ["React", "JavaScript"]
 	},
 	{
-		"id": 10,
+		"id": 9,
 		"order": 70,
 		"name": "CSS-Tricks",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703443444/freesets/blogs/t8ufepbmlyfmcphliioh.webp",
@@ -79,21 +71,21 @@
 		"tags": ["CSS"]
 	},
 	{
-		"id": 11,
+		"id": 10,
 		"order": 65,
 		"name": "Smashing Magazine",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703443742/freesets/blogs/uzktydktlmwcig9xgrtu.webp",
 		"link": "https://www.smashingmagazine.com"
 	},
 	{
-		"id": 12,
+		"id": 11,
 		"order": 40,
 		"name": "web.dev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703444856/freesets/blogs/fd6dopnvhkecuooyvrhv.webp",
 		"link": "https://web.dev/blog"
 	},
 	{
-		"id": 13,
+		"id": 12,
 		"order": 40,
 		"name": "Design Systems",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703459247/freesets/blogs/u4hastncvnhlfdc8iaal.webp",
@@ -101,7 +93,7 @@
 		"tags": ["Design system"]
 	},
 	{
-		"id": 14,
+		"id": 13,
 		"order": 40,
 		"name": "Hashnode",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/hashnode",
@@ -109,7 +101,7 @@
 		"tags": ["Community"]
 	},
 	{
-		"id": 15,
+		"id": 14,
 		"order": 32,
 		"name": "Design good practices",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/cyyuklvwucjn7hrxljfr.webp",
@@ -117,7 +109,7 @@
 		"tags": ["UI/UX"]
 	},
 	{
-		"id": 16,
+		"id": 15,
 		"order": 25,
 		"name": "Paul Scanlon Articles",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703452484/freesets/blogs/qzwz1ulr6yjg9cb8bygn.webp",
@@ -125,7 +117,7 @@
 		"tags": ["Three.js"]
 	},
 	{
-		"id": 17,
+		"id": 16,
 		"order": 23,
 		"name": "Patterns.dev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/mvif3lc9bdwrcjtfgsxh.webp",
@@ -133,7 +125,7 @@
 		"tags": ["Patterns"]
 	},
 	{
-		"id": 18,
+		"id": 17,
 		"order": 20,
 		"name": "A List Apart",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/alistapart",
@@ -141,7 +133,7 @@
 		"tags": ["Community"]
 	},
 	{
-		"id": 19,
+		"id": 18,
 		"order": 10,
 		"name": "Sitepoint",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/sitepoint",
@@ -149,7 +141,7 @@
 		"tags": ["Learning"]
 	},
 	{
-		"id": 20,
+		"id": 19,
 		"order": 80,
 		"name": "The Shape of AI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/shapeofai",
@@ -157,7 +149,7 @@
 		"tags": ["AI", "Patterns"]
 	},
 	{
-		"id": 21,
+		"id": 20,
 		"order": 76,
 		"name": "Zajno Digital Studio",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/motionzajno.webp",
@@ -165,7 +157,7 @@
 		"tags": ["Animation", "Design"]
 	},
 	{
-		"id": 22,
+		"id": 21,
 		"order": 75,
 		"name": "Emil Kowalski",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/milkowalski",
@@ -173,11 +165,43 @@
 		"tags": ["Animation", "Design"]
 	},
 	{
-		"id": 23,
+		"id": 22,
 		"order": 95,
 		"name": "Codrops",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
 		"link": "https://tympanus.net/codrops/demos/",
 		"tags": ["Three.js", "Webgl"]
+	},
+	{
+		"id": 23,
+		"order": 48,
+		"name": "CSS Wizardry",
+		"link": "https://csswizardry.com/blog/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-wizardry",
+		"tags": ["CSS"]
+	},
+	{
+		"id": 24,
+		"order": 67,
+		"name": "Ahmad Shadeed",
+		"link": "https://ishadeed.com/articles/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/ahmad-shadeed",
+		"tags": ["CSS"]
+	},
+	{
+		"id": 25,
+		"order": 66,
+		"name": "Sara Soueidan Blog",
+		"link": "https://www.sarasoueidan.com/blog/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/sara-soueidan",
+		"tags": ["CSS", "Accessibility"]
+	},
+	{
+		"id": 26,
+		"order": 78,
+		"name": "CSS Weekly",
+		"link": "https://css-weekly.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-weekly",
+		"tags": ["Newsletter", "CSS", "Frontend"]
 	}
 ]

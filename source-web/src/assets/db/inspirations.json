@@ -388,5 +388,27 @@
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/websitevice"
+	},
+	{
+		"id": 54,
+		"order": 85,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lapa-ninja",
+		"tags": ["OG", "Fonts"]
+	},
+	{
+		"id": 55,
+		"order": 20,
+		"name": "Collect UI",
+		"link": "https://collectui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui"
+	},
+	{
+		"id": 56,
+		"order": 22,
+		"name": "HOVERSTAT.ES",
+		"link": "https://hoverstat.es/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hoverstates"
 	}
 ]

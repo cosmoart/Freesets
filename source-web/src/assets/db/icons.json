@@ -298,7 +298,7 @@
 		"link": "https://3dicons.co/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/hh9zkxpnfjckvekzz0ey",
 		"license": "CC0",
-		"licenseLink": "https://3dicons.co/?ref=lapaninja",
+		"licenseLink": "https://3dicons.co",
 		"tags": ["3D"],
 		"order": 45
 	},
@@ -627,5 +627,33 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/pqoqubbw/icons/blob/main/LICENSE",
 		"tags": ["Motion", "Lucide", "Package", "React"]
+	},
+	{
+		"id": 68,
+		"order": 45,
+		"name": "Material Design Icons",
+		"link": "https://pictogrammers.com/library/mdi/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/material-design-icons-pictogrammers",
+		"license": "Apache-2.0",
+		"licenseLink": "https://pictogrammers.com/docs/general/license/"
+	},
+	{
+		"id": 70,
+		"order": 35,
+		"name": "OpenMoji",
+		"link": "https://openmoji.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/openmoji",
+		"license": "CC BY-SA 4.0",
+		"licenseLink": "https://openmoji.org/faq/",
+		"licenseDescription": "\"You must give OpenMoji appropriate credit, and indicate if changes were made\""
+	},
+	{
+		"id": 71,
+		"order": 26,
+		"name": "IconPark",
+		"link": "https://iconpark.oceanengine.com/official",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
+		"license": "Apache-2.0",
+		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	}
 ]

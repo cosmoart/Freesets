@@ -214,5 +214,91 @@
 		"link": "https://public.work/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
 		"tags": ["Vintage"]
+	},
+	{
+		"id": 24,
+		"order": 90,
+		"name": "Kaboompics",
+		"link": "https://kaboompics.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/kaboompics",
+		"license": "Free",
+		"licenseLink": "https://kaboompics.com/page/license-and-faq",
+		"licenseDescription": "\"Each asset indicates Standard or Editorial license; Standard supports personal & commercial use.\""
+	},
+	{
+		"id": 25,
+		"order": 24,
+		"name": "SplitShire",
+		"link": "https://www.splitshire.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/splitshire",
+		"license": "Free with attribution",
+		"licenseLink": "https://www.splitshire.com/license",
+		"tags": ["AI"]
+	},
+	{
+		"id": 26,
+		"order": 52,
+		"name": "Wikimedia Commons",
+		"link": "https://commons.wikimedia.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/wikimedia-commons",
+		"license": "Multiple"
+	},
+	{
+		"id": 27,
+		"order": 79,
+		"name": "The Met Open Access",
+		"link": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/the-met-open-access",
+		"license": "CC0",
+		"licenseLink": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+		"tags": ["Museum" , "Art"]
+	},
+	{
+		"id": 28,
+		"order": 16,
+		"name": "Rijksmuseum Rijksstudio",
+		"link": "https://www.rijksmuseum.nl/en/rijksstudio",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rijksmuseum-rijksstudio",
+		"tags": ["Art", "Museum"]
+	},
+	{
+		"id": 29,
+		"order": 48,
+		"name": "National Gallery of Art",
+		"link": "https://www.nga.gov/open-access-images.html",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nga-open-access",
+		"license": "CC0",
+		"licenseLink": "https://www.nga.gov/open-access-images.html",
+		"tags": ["Museum", "Art"]
+	},
+	{
+		"id": 30,
+		"order": 20,
+		"name": "NYPL Digital Collections",
+		"link": "https://digitalcollections.nypl.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nypl-digital-collections",
+		"license": "Public Domain",
+		"licenseLink": "https://digitalcollections.nypl.org/about#public_domain",
+		"tags": ["Archive", "Art", "Vintage"]
+	},
+		{
+		"id": 31,
+		"order": 38,
+		"name": "NASA",
+		"link": "https://images.nasa.gov/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/nasa-images",
+		"license": "Free",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"licenseDescription": "\"Most NASA imagery is public domain; follow NASA media usage guidelines and restrictions.\"",
+		"tags": ["Space"]
+	},
+	{
+		"id": 32,
+		"order": 84,
+		"name": "Free Nature Stock",
+		"link": "https://freenaturestock.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/free-nature-stock",
+		"license": "CC0",
+		"licenseLink": "https://freenaturestock.com/license/"
 	}
 ]
