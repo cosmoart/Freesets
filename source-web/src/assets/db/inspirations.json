@@ -325,20 +325,13 @@
 	},
 	{
 		"id": 45,
-		"order": 85,
-		"name": "Web Interactions Gallery",
-		"link": "https://www.webinteractions.gallery/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/webinteractions"
-	},
-	{
-		"id": 46,
 		"order": 10,
 		"name": "Viewport UI",
 		"link": "https://viewport-ui.design/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/viewport-ui"
 	},
 	{
-		"id": 47,
+		"id": 46,
 		"order": 67,
 		"name": "Logo System",
 		"link": "https://logosystem.co/",
@@ -346,7 +339,7 @@
 		"tags": ["Logos"]
 	},
 	{
-		"id": 48,
+		"id": 47,
 		"order": 75,
 		"name": "Adfolio",
 		"link": "https://www.adfolio.design/",
@@ -354,28 +347,28 @@
 		"tags": ["Ads"]
 	},
 	{
-		"id": 49,
+		"id": 48,
 		"order": 78,
 		"name": "A1",
 		"link": "https://www.a1.gallery/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/a1gallery"
 	},
 	{
-		"id": 50,
+		"id": 49,
 		"order": 28,
 		"name": "Daily Delights",
 		"link": "https://delights.design",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/delights"
 	},
 	{
-		"id": 51,
+		"id": 50,
 		"order": 48,
 		"name": "CTA.gallery",
 		"link": "https://www.cta.gallery/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/ctagallery"
 	},
 	{
-		"id": 52,
+		"id": 51,
 		"order": 78,
 		"name": "Supahero",
 		"link": "https://www.supahero.io/",
@@ -383,7 +376,7 @@
 		"tags": ["Hero sections"]
 	},
 	{
-		"id": 53,
+		"id": 52,
 		"order": 29,
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",

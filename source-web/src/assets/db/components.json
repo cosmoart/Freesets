@@ -717,14 +717,6 @@
 	},
 	{
 		"id": 79,
-		"order": 37,
-		"name": "SHSF UI",
-		"link": "https://www.shsfui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shsfui",
-		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Motion","Shadcn"]
-	},
-	{
-		"id": 80,
 		"order": 45,
 		"name": "Evil Charts",
 		"link": "https://evilcharts.com/",
@@ -732,7 +724,7 @@
 		"tags": ["Copy&Paste","Chart"]
 	},
 	{
-		"id": 81,
+		"id": 80,
 		"order": 65,
 		"name": "Basecoat",
 		"link": "https://basecoatui.com",
@@ -740,7 +732,7 @@
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
 	},
 	{
-		"id": 82,
+		"id": 81,
 		"order": 68,
 		"name": "Blookie",
 		"link": "https://blookie.io",

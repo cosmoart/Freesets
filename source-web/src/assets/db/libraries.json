@@ -80,7 +80,7 @@
 		"order": 45,
 		"name": "Locomotive Scroll",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460989/freesets/libraries/c624lahc77sg5fgo1eaq.webp",
-		"link": "https://locomotivemtl.github.io/locomotive-scroll/",
+		"link": "https://scroll.locomotive.ca/",
 		"tags": ["Scroll"]
 	},
 	{
@@ -220,13 +220,11 @@
 	},
 	{
 		"id": 25,
-		"order": 40,
-		"name": "Tilt",
-		"link": "https://jdion.xyz/tilt",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tilt",
-		"tags": ["Parallax"],
-		"license": "MIT",
-		"licenseLink": "https://github.com/jonathandion/mono/blob/main/LICENSE"
+		"order": 85,
+		"name": "nuqs",
+		"link": "https://nuqs.47ng.com",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/nuqs",
+		"tags": ["Search params", "React"]
 	},
 	{
 		"id": 26,

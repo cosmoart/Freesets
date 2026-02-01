@@ -89,7 +89,7 @@
 
 					{#if asset.licenseDescription}
 						<p
-							class="text-sm py-1 px-3 w-max max-w-xs rounded-md absolute -bottom-8 right-0 opacity-0 bg-zinc-800 transition-all group-hover/license:bottom-6 group-hover/license:opacity-100 group-hover/license:pointer-events-auto pointer-events-none"
+							class="text-sm py-1 px-3 w-max max-w-xs rounded-md absolute -bottom-2 right-0 opacity-0 bg-zinc-800 transition-all group-hover/license:bottom-6 group-hover/license:opacity-100 group-hover/license:pointer-events-auto pointer-events-none"
 						>
 							{asset.licenseDescription}
 						</p>
