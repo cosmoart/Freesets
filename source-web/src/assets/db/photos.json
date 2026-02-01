@@ -280,5 +280,25 @@
 		"license": "Public Domain",
 		"licenseLink": "https://digitalcollections.nypl.org/about#public_domain",
 		"tags": ["Archive", "Art", "Vintage"]
+	},
+		{
+		"id": 31,
+		"order": 38,
+		"name": "NASA",
+		"link": "https://images.nasa.gov/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/nasa-images",
+		"license": "Free",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"licenseDescription": "\"Most NASA imagery is public domain; follow NASA media usage guidelines and restrictions.\"",
+		"tags": ["Space"]
+	},
+	{
+		"id": 32,
+		"order": 84,
+		"name": "Free Nature Stock",
+		"link": "https://freenaturestock.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/free-nature-stock",
+		"license": "CC0",
+		"licenseLink": "https://freenaturestock.com/license/"
 	}
 ]

@@ -175,43 +175,33 @@
 	},
 	{
 		"id": 23,
-		"order": 84,
-		"name": "The League of Moveable Type",
+		"order": 44,
+		"name": "The League Type",
 		"link": "https://www.theleagueofmoveabletype.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/league-of-moveable-type",
-		"tags": ["Typography", "Fonts", "Open Source"]
+		"license": "Open source",
+		"licenseDescription": "\"All the fonts from The League of Moveable Type are free & open source, available to use commercially and subject to the Open Font License.\""
 	},
 	{
 		"id": 24,
-		"order": 75,
+		"order": 25,
 		"name": "Velvetyne Type Foundry",
 		"link": "https://velvetyne.fr/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/velvetyne",
-		"license": "Open source (varies, often OFL)",
-		"licenseLink": "https://velvetyne.fr/",
-		"licenseDescription": "Open-source typefaces (check license per family).",
-		"tags": ["Typography", "Fonts", "Open Source"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/velvetyne"
 	},
 	{
 		"id": 25,
-		"order": 72,
+		"order": 22,
 		"name": "Font Library",
 		"link": "https://fontlibrary.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-library",
-		"license": "Varies (per font)",
-		"licenseLink": "https://fontlibrary.org/",
-		"licenseDescription": "Community library; license depends on each font.",
-		"tags": ["Typography", "Fonts", "Open Source"]
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-library"
 	},
 	{
 		"id": 26,
 		"order": 72,
-		"name": "Lost Type Co-op",
-		"link": "https://www.losttype.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/lost-type",
-		"license": "Pay-what-you-want / varies by font",
-		"licenseLink": "https://www.losttype.com/",
-		"licenseDescription": "Pay-what-you-want fonts; terms vary by family.",
-		"tags": ["Typography", "Fonts", "Foundry"]
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/typeface/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/lapa-ninja",
+		"tags": ["Inspiration"]
 	}
 ]
