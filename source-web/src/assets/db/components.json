@@ -617,11 +617,11 @@
 	},
 	{
 		"id": 68,
-		"order": 28,
-		"name": "shadcn/editor",
-		"link": "https://shadcn-editor.vercel.app",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn-editor",
-		"tags": ["Text editor", "Shadcn"]
+		"order": 46,
+		"name": "RSuite",
+		"link": "https://rsuitejs.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/rsuite",
+		"tags": ["React"]
 	},
 	{
 		"id": 69,
@@ -764,13 +764,5 @@
 		"link": "https://react-aria.adobe.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-aria-components",
 		"tags": ["React", "Accessibility"]
-	},
-	{
-		"id": 86,
-		"order": 46,
-		"name": "RSuite",
-		"link": "https://rsuitejs.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/rsuite",
-		"tags": ["React"]
 	}
 ]

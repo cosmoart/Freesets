@@ -145,11 +145,11 @@
 	},
 	{
 		"id": 19,
-		"order": 30,
-		"name": "readme.so",
-		"link": "https://readme.so/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/readmeso",
-		"tags": ["Readme generator"]
+		"order": 46,
+		"name": "JSON Crack",
+		"link": "https://jsoncrack.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/json-crack",
+		"tags": ["JSON Visualizer"]
 	},
 	{
 		"id": 20,
@@ -278,13 +278,5 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
 		"tags": ["API", "Postman"]
-	},
-	{
-		"id": 35,
-		"order": 46,
-		"name": "JSON Crack",
-		"link": "https://jsoncrack.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/json-crack",
-		"tags": ["JSON Visualizer"]
 	}
 ]
