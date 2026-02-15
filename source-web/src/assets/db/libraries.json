@@ -406,14 +406,6 @@
 	},
 	{
 		"id": 46,
-		"order": 85,
-		"name": "nuqs",
-		"link": "https://nuqs.47ng.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/nuqs",
-		"tags": ["Search params", "React"]
-	},
-	{
-		"id": 47,
 		"order": 32,
 		"name": "Floating UI",
 		"link": "https://floating-ui.com/",
@@ -423,7 +415,7 @@
 		"tags": ["JavaScript", "Tooltips", "Popover"]
 	},
 	{
-		"id": 48,
+		"id": 47,
 		"order": 52,
 		"name": "Embla Carousel",
 		"link": "https://www.embla-carousel.com/",
@@ -431,7 +423,7 @@
 		"tags": ["Carousel"]
 	},
 	{
-		"id": 49,
+		"id": 48,
 		"order": 70,
 		"name": "Zustand",
 		"link": "https://zustand-demo.pmnd.rs/",
@@ -441,7 +433,7 @@
 		"tags": ["React", "State Management"]
 	},
 	{
-		"id": 50,
+		"id": 49,
 		"order": 88,
 		"name": "TanStack",
 		"link": "https://tanstack.com/",
@@ -449,7 +441,7 @@
 		"tags": ["Multi-framework"]
 	},
 	{
-		"id": 51,
+		"id": 50,
 		"order": 56,
 		"name": "Zod",
 		"link": "https://github.com/colinhacks/zod",
@@ -459,7 +451,7 @@
 		"tags": ["TypeScript", "Validation"]
 	},
 	{
-		"id": 52,
+		"id": 51,
 		"order": 44,
 		"name": "React Hook Form",
 		"link": "https://react-hook-form.com/",
