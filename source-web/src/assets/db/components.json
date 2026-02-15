@@ -74,15 +74,13 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/mantinedev/ui.mantine.dev/blob/master/LICENCE"
 	},
-	{
+		{
 		"id": 9,
-		"order": 87,
-		"name": "Tailus UI",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703008051/freesets/components/tailus.io__zed6xv.webp",
-		"link": "https://tailus.io",
-		"tags": ["Tailwind", "Copy&Paste", "Templates"],
-		"license": "CC",
-		"licenseLink": "https://github.com/Tailus-UI/blocks?tab=License"
+		"order": 67,
+		"name": "React Aria",
+		"link": "https://react-aria.adobe.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-aria-components",
+		"tags": ["React", "Accessibility"]
 	},
 	{
 		"id": 10,
@@ -756,13 +754,5 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
 		"tags": ["React", "Design System"]
-	},
-	{
-		"id": 85,
-		"order": 67,
-		"name": "React Aria",
-		"link": "https://react-aria.adobe.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-aria-components",
-		"tags": ["React", "Accessibility"]
 	}
 ]
