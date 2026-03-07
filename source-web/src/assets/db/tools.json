@@ -278,5 +278,31 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
 		"tags": ["API", "Postman"]
+	},
+	{
+		"id": 35,
+		"order": 80,
+		"name": "alg0.dev",
+		"link": "https://alg0.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/alg0dev",
+		"license": "MIT",
+		"licenseLink": "https://github.com/midudev/alg0.dev?tab=readme-ov-file#license",
+		"tags": ["Algorithm Visualizer"]
+	},
+	{
+		"id": 36,
+		"order": 83,
+		"name": "OpenGraph.to",
+		"link": "https://www.opengraph.to/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/opengraphto",
+		"tags": ["Open Graph"]
+	},
+	{
+		"id": 37,
+		"order": 88,
+		"name": "npmx",
+		"link": "https://npmx.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
+		"tags": ["npm browser"]
 	}
 ]

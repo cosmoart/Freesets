@@ -240,7 +240,7 @@
 		"tags": ["Low Poly"]
 	},
 	{
-		"id": 27,
+		"id": 26,
 		"order": 9,
 		"name": "Free3D",
 		"link": "https://free3d.com/3d-models/",
@@ -249,7 +249,7 @@
 		"tags": ["Marketplace"]
 	},
 	{
-		"id": 28,
+		"id": 27,
 		"order": 43,
 		"name": "NASA 3D Resources",
 		"link": "https://science.nasa.gov/3d-resources/",
@@ -259,7 +259,7 @@
 		"tags": ["Space"]
 	},
 	{
-		"id": 29,
+		"id": 28,
 		"order": 15,
 		"name": "NIH 3D",
 		"link": "https://3d.nih.gov/",
@@ -267,5 +267,21 @@
 		"license": "Multiple",
 		"licenseLink": "https://3d.nih.gov/terms",
 		"tags": ["Medical", "Bioscientific"]
+	},
+	{
+		"id": 29,
+		"order": 37,
+		"name": "noclip",
+		"link": "https://noclip.website/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/noclip",
+		"tags": ["Game Levels"]
+	},
+	{
+		"id": 30,
+		"order": 43,
+		"name": "EZ-Tree",
+		"link": "https://www.eztree.dev",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/3d/eztree",
+		"tags": ["Tree Generator"]
 	}
 ]

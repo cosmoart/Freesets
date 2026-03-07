@@ -738,7 +738,7 @@
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
 	},
 	{
-		"id": 83,
+		"id": 82,
 		"order": 78,
 		"name": "CuiCui",
 		"link": "https://cuicui.day/",
@@ -746,7 +746,7 @@
 		"tags": ["React", "TypeScript", "Copy&Paste", "Library"]
 	},
 	{
-		"id": 84,
+		"id": 83,
 		"order": 30,
 		"name": "Ant Design",
 		"link": "https://ant.design/",
@@ -754,5 +754,29 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
 		"tags": ["React", "Design System"]
+	},
+	{
+		"id": 84,
+		"order": 56,
+		"name": "GNOME",
+		"link": "https://gnome-react-ui.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/gnome-react-ui",
+		"tags": ["React", "Lucide", "Tailwind"]
+	},
+	{
+		"id": 85,
+		"order": 89,
+		"name": "KokonutUI",
+		"link": "https://kokonutui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kokonutui",
+		"tags": ["Motion", "shadcn", "Tailwind"]
+	},
+	{
+		"id": 86,
+		"order": 48,
+		"name": "mapcn",
+		"link": "https://mapcn.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapcn",
+		"tags": ["React", "Tailwind", "MapLibre"]
 	}
 ]

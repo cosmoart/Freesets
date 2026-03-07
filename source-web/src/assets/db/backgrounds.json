@@ -304,5 +304,14 @@
 		"name": "Patternico",
 		"link": "https://patternico.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
+	},
+	{
+		"id": 35,
+		"order": 75,
+		"name": "Shaders",
+		"link": "https://shaders.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shaders",
+		"license": "Freemium",
+		"tags": ["Package","Library"]
 	}
 ]

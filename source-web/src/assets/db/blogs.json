@@ -203,5 +203,13 @@
 		"link": "https://css-weekly.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-weekly",
 		"tags": ["Newsletter", "CSS", "Frontend"]
+	},
+	{
+		"id": 27,
+		"order": 58,
+		"name": "Motion Magazine",
+		"link": "https://motion.dev/magazine",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/motion-magazine",
+		"tags": ["Animation"]
 	}
 ]

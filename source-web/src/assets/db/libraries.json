@@ -459,5 +459,43 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-hook-form/react-hook-form",
 		"tags": ["React", "Validation"]
+	},
+	{
+		"id": 52,
+		"order": 88,
+		"name": "npmx",
+		"link": "https://npmx.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
+		"tags": ["npm browser", "Tool"]
+	},
+	{
+		"id": 53,
+		"order": 83,
+		"name": "Sileo",
+		"link": "https://sileo.aaryan.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/sileo",
+		"tags": ["Toast", "React"]
+	},
+	{
+		"id": 54,
+		"order": 43,
+		"name": "LibPDF",
+		"link": "https://libpdf.documenso.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/libpdf"
+	},
+	{
+		"id": 55,
+		"order": 48,
+		"name": "mapcn",
+		"link": "https://mapcn.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapcn",
+		"tags": ["React", "Tailwind", "MapLibre"]
+	},
+	{
+		"id": 56,
+		"order": 78,
+		"name": "Tailwind Animations",
+		"link": "https://tailwind-animations.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tailwind-animations"
 	}
 ]
