@@ -655,5 +655,16 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
+	},
+	{
+		"id": 72,
+		"order": 70,
+		"name": "Woopicx",
+		"link": "https://woopicx.com/collection/basic3d",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/woopicx",
+		"license": "Freemium",
+		"licenseLink": "https://woopicx.com/terms",
+		"licenseDescription": "Free to browse and use. Premium plans for full access.",
+		"tags": ["3D", "AI"]
 	}
 ]
