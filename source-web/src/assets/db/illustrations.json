@@ -381,13 +381,14 @@
 		"link": "https://sketchvalley.com",
 		"license": "Multiple"
 	},
-	{
+		{
 		"id": 44,
-		"order": 10,
-		"name": "Designs AI",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/designsai",
-		"link": "https://designs.ai/graphicmaker",
-		"license": "Free with attribution"
+		"order": 56,
+		"name": "IconPark",
+		"link": "https://iconpark.oceanengine.com/illustrations",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
+		"license": "Apache-2.0",
+		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	},
 	{
 		"id": 45,
@@ -542,14 +543,5 @@
 		"license": "Free with attribution",
 		"licenseLink": "https://absurd.design/license",
 		"tags": ["Hand-drawn", "Doodles"]
-	},
-		{
-		"id": 63,
-		"order": 56,
-		"name": "IconPark",
-		"link": "https://iconpark.oceanengine.com/illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
-		"license": "Apache-2.0",
-		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	}
 ]

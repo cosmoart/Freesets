@@ -545,12 +545,12 @@
 	},
 	{
 		"id": 58,
-		"name": "Majesticons",
-		"link": "https://www.majesticons.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/majesticons",
-		"license": "MIT",
-		"licenseLink": "https://github.com/halfmage/majesticons/blob/main/LICENSE",
-		"order": 29
+		"order": 26,
+		"name": "IconPark",
+		"link": "https://iconpark.oceanengine.com/official",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
+		"license": "Apache-2.0",
+		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	},
 	{
 		"id": 59,
@@ -646,14 +646,5 @@
 		"license": "CC BY-SA 4.0",
 		"licenseLink": "https://openmoji.org/faq/",
 		"licenseDescription": "\"You must give OpenMoji appropriate credit, and indicate if changes were made\""
-	},
-	{
-		"id": 71,
-		"order": 26,
-		"name": "IconPark",
-		"link": "https://iconpark.oceanengine.com/official",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
-		"license": "Apache-2.0",
-		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	}
 ]
