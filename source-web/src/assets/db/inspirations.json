@@ -272,10 +272,10 @@
 	},
 	{
 		"id": 38,
-		"order": 38,
-		"name": "Landings",
-		"link": "https://landings.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landingsdev"
+		"order": 22,
+		"name": "HOVERSTAT.ES",
+		"link": "https://hoverstat.es/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hoverstates"
 	},
 	{
 		"id": 39,
@@ -396,12 +396,5 @@
 		"name": "Collect UI",
 		"link": "https://collectui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui"
-	},
-	{
-		"id": 56,
-		"order": 22,
-		"name": "HOVERSTAT.ES",
-		"link": "https://hoverstat.es/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hoverstates"
 	}
 ]

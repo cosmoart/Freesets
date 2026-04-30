@@ -75,12 +75,13 @@
 	},
 	{
 		"id": 9,
-		"order": 80,
-		"name": "Iradesign",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/iradesign",
-		"link": "https://iradesign.io",
-		"license": "MIT",
-		"licenseLink": "https://iradesign.io"
+		"order": 72,
+		"name": "Absurd.Design",
+		"link": "https://absurd.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/absurd-design",
+		"license": "Free with attribution",
+		"licenseLink": "https://absurd.design/license",
+		"tags": ["Hand-drawn", "Doodles"]
 	},
 	{
 		"id": 10,
@@ -533,15 +534,5 @@
 		"license": "Freemium with attribution",
 		"licenseLink": "https://icons8.com/license",
 		"tags": ["Animated", "3D"]
-	},
-	{
-		"id": 62,
-		"order": 72,
-		"name": "Absurd.Design",
-		"link": "https://absurd.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/absurd-design",
-		"license": "Free with attribution",
-		"licenseLink": "https://absurd.design/license",
-		"tags": ["Hand-drawn", "Doodles"]
 	}
 ]
