@@ -264,11 +264,10 @@
 	},
 	{
 		"id": 37,
-		"order": 55,
-		"name": "Prettyfolio",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/prettyfolio",
-		"link": "https://www.prettyfolio.com/",
-		"tags": ["Portfolios"]
+		"order": 20,
+		"name": "Collect UI",
+		"link": "https://collectui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui"
 	},
 	{
 		"id": 38,
@@ -389,12 +388,5 @@
 		"link": "https://www.lapa.ninja/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lapa-ninja",
 		"tags": ["OG", "Fonts"]
-	},
-	{
-		"id": 55,
-		"order": 20,
-		"name": "Collect UI",
-		"link": "https://collectui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui"
 	}
 ]
