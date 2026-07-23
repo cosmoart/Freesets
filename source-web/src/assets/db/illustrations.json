@@ -111,13 +111,10 @@
 	},
 	{
 		"id": 13,
-		"order": 76,
-		"name": "Big Heads",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/bigheads",
-		"link": "https://bigheads.io",
-		"tags": ["Avatars", "Package"],
-		"license": "MIT",
-		"licenseLink": "https://github.com/RobertBroersma/bigheads/blob/main/LICENSE"
+		"order": 75,
+		"name": "GEE! ME",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/geeme",
+		"link": "https://geeme.vercel.app/"
 	},
 	{
 		"id": 14,
@@ -157,10 +154,13 @@
 	},
 	{
 		"id": 18,
-		"order": 42,
-		"name": "Hand Drawn Arrows",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/handyarrows",
-		"link": "https://handyarrows.com/"
+		"order": 58,
+		"name": "Icons8",
+		"link": "https://icons8.com/illustrations/style--ouch",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/ouch-icons8",
+		"license": "Freemium with attribution",
+		"licenseLink": "https://icons8.com/license",
+		"tags": ["Animated", "3D"]
 	},
 	{
 		"id": 19,
@@ -517,22 +517,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/khagwal",
 		"link": "https://3d.khagwal.com/",
 		"license": " CC0"
-	},
-	{
-		"id": 60,
-		"order": 75,
-		"name": "GEE! ME",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/geeme",
-		"link": "https://geeme.vercel.app/"
-	},
-	{
-		"id": 61,
-		"order": 58,
-		"name": "Icons8",
-		"link": "https://icons8.com/illustrations/style--ouch",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/ouch-icons8",
-		"license": "Freemium with attribution",
-		"licenseLink": "https://icons8.com/license",
-		"tags": ["Animated", "3D"]
 	}
 ]
