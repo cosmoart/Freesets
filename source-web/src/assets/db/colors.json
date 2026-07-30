@@ -153,10 +153,13 @@
 	},
 	{
 		"id": 21,
-		"order": 48,
-		"name": "tints.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703609895/freesets/colors/xadvbhxlkdnnpjgdl2lk.webp",
-		"link": "https://www.tints.dev/brand/8C1AE5"
+		"order": 76,
+		"name": "Material Theme Builder",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/material-theme-builder",
+		"link": "https://material-foundation.github.io/material-theme-builder/",
+		"tags": ["Generator", "Preview"],
+		"license": "Apache V2.0",
+		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
 	},
 	{
 		"id": 22,
@@ -293,15 +296,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormagic",
 		"link": "https://colormagic.app/",
 		"tags": ["Generator", "AI"]
-	},
-	{
-		"id": 40,
-		"order": 76,
-		"name": "Material Theme Builder",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/material-theme-builder",
-		"link": "https://material-foundation.github.io/material-theme-builder/",
-		"tags": ["Generator", "Preview"],
-		"license": "Apache V2.0",
-		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
 	}
 ]

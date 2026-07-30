@@ -441,14 +441,13 @@
 	},
 	{
 		"id": 47,
-		"name": "Grumpyicons",
-		"link": "https://www.petrbilek.com/products/grumpyicons",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/eelqaxmso9pbbfstgl5z",
-		"license": "Free",
-		"licenseLink": "https://www.petrbilek.com/docs/license",
-		"licenseDescription": "Free for personal and commercial projects. No attribution required.",
-		"tags": ["Scribble"],
-		"order": 17
+		"order": 35,
+		"name": "OpenMoji",
+		"link": "https://openmoji.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/openmoji",
+		"license": "CC BY-SA 4.0",
+		"licenseLink": "https://openmoji.org/faq/",
+		"licenseDescription": "\"You must give OpenMoji appropriate credit, and indicate if changes were made\""
 	},
 	{
 		"id": 48,
@@ -636,15 +635,5 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/material-design-icons-pictogrammers",
 		"license": "Apache-2.0",
 		"licenseLink": "https://pictogrammers.com/docs/general/license/"
-	},
-	{
-		"id": 70,
-		"order": 35,
-		"name": "OpenMoji",
-		"link": "https://openmoji.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/openmoji",
-		"license": "CC BY-SA 4.0",
-		"licenseLink": "https://openmoji.org/faq/",
-		"licenseDescription": "\"You must give OpenMoji appropriate credit, and indicate if changes were made\""
 	}
 ]

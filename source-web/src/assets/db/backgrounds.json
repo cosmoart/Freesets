@@ -292,21 +292,13 @@
 	},
 	{
 		"id": 33,
-		"order": 97,
-		"name": "Pattern Craft",
-		"link": "https://patterncraft.fun",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patterncraft",
-		"tags": ["Tailwind"]
-	},
-	{
-		"id": 34,
 		"order": 58,
 		"name": "Patternico",
 		"link": "https://patternico.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
 	},
 	{
-		"id": 35,
+		"id": 34,
 		"order": 75,
 		"name": "Shaders",
 		"link": "https://shaders.com/",
