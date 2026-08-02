@@ -459,13 +459,12 @@
 	},
 	{
 		"id": 49,
-		"name": "Line Icon Pack",
-		"link": "https://www.petrbilek.com/products/line-icon-pack",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/l4zhbu6rb8yde0ckdnv2",
-		"license": "Free",
-		"licenseLink": "https://www.petrbilek.com/docs/license",
-		"licenseDescription": "Free for personal and commercial projects. No attribution required.",
-		"order": 15
+		"order": 45,
+		"name": "Material Design Icons",
+		"link": "https://pictogrammers.com/library/mdi/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/material-design-icons-pictogrammers",
+		"license": "Apache-2.0",
+		"licenseLink": "https://pictogrammers.com/docs/general/license/"
 	},
 	{
 		"id": 50,
@@ -626,14 +625,5 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/pqoqubbw/icons/blob/main/LICENSE",
 		"tags": ["Motion", "Lucide", "Package", "React"]
-	},
-	{
-		"id": 68,
-		"order": 45,
-		"name": "Material Design Icons",
-		"link": "https://pictogrammers.com/library/mdi/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/material-design-icons-pictogrammers",
-		"license": "Apache-2.0",
-		"licenseLink": "https://pictogrammers.com/docs/general/license/"
 	}
 ]

@@ -226,13 +226,11 @@
 	},
 	{
 		"id": 25,
-		"order": 58,
-		"name": "Vuesax",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705078954/freesets/components/vscputhcnpf4c9hcxala.webp",
-		"link": "https://vuesax.com",
-		"tags": ["Vue"],
-		"license": "Free",
-		"licenseLink": "https://vuesax.com/license/"
+		"order": 48,
+		"name": "mapcn",
+		"link": "https://mapcn.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapcn",
+		"tags": ["React", "Tailwind", "MapLibre"]
 	},
 	{
 		"id": 26,
@@ -770,13 +768,5 @@
 		"link": "https://kokonutui.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kokonutui",
 		"tags": ["Motion", "shadcn", "Tailwind"]
-	},
-	{
-		"id": 86,
-		"order": 48,
-		"name": "mapcn",
-		"link": "https://mapcn.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapcn",
-		"tags": ["React", "Tailwind", "MapLibre"]
 	}
 ]
