@@ -1,0 +1,392 @@
+[
+	{
+		"id": 1,
+		"order": 80,
+		"name": "Curated Design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/curated-design",
+		"link": "https://www.curated.design"
+	},
+	{
+		"id": 2,
+		"order": 98,
+		"name": "Godly",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/godly",
+		"link": "https://godly.website"
+	},
+	{
+		"id": 3,
+		"order": 78,
+		"name": "Laand-book",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/land-book",
+		"link": "https://land-book.com",
+		"licence": "Freemium",
+		"licenceLink": "https://land-book.com/pro"
+	},
+	{
+		"id": 4,
+		"order": 90,
+		"name": "BentoGrids",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/bentogrids",
+		"link": "https://bentogrids.com"
+	},
+	{
+		"id": 5,
+		"order": 80,
+		"name": "Darkmode Design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/darkmodedesign",
+		"link": "https://www.darkmodedesign.com"
+	},
+	{
+		"id": 6,
+		"order": 80,
+		"name": "Dark Design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/darkdesign",
+		"link": "https://www.dark.design"
+	},
+	{
+		"id": 7,
+		"order": 78,
+		"name": "Landing Love",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landing-love",
+		"link": "https://www.landing.love"
+	},
+	{
+		"id": 8,
+		"order": 76,
+		"name": "Minimal Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706407304/freesets/inspirations/cindmoknr2lysvna4iwj.webp",
+		"link": "https://minimal.gallery"
+	},
+	{
+		"id": 9,
+		"order": 73,
+		"name": "MaxiBestOf",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381293/freesets/inspirations/ndgtbollo4dhqqt3kowy.webp",
+		"link": "https://maxibestof.one"
+	},
+	{
+		"id": 10,
+		"order": 70,
+		"name": "Pinterest",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pinterest",
+		"link": "https://pinterest.com/"
+	},
+	{
+		"id": 11,
+		"order": 70,
+		"name": "Landing Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381074/freesets/inspirations/o8kszgfesntegltgoxwf.webp",
+		"link": "https://www.landing.gallery"
+	},
+	{
+		"id": 12,
+		"order": 30,
+		"name": "Pattern Collection",
+		"link": "https://wpshout.com/pattern-collection/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
+		"tags": [
+			"Patterns"
+		]
+	},
+	{
+		"id": 13,
+		"order": 60,
+		"name": "Dribbble",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/dribbble",
+		"link": "https://dribbble.com/"
+	},
+	{
+		"id": 14,
+		"order": 60,
+		"name": "Behance",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/behance",
+		"link": "https://www.behance.net/"
+	},
+	{
+		"id": 15,
+		"order": 40,
+		"name": "a-fresh",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706407151/freesets/inspirations/qkca9a1zqyzcs2c6vaeo.webp",
+		"link": "https://a-fresh.website"
+	},
+	{
+		"id": 16,
+		"order": 22,
+		"name": "Layers",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707067044/freesets/inspirations/zfqj3ezli1xkq5bkpoep.webp",
+		"link": "https://layers.to/"
+	},
+	{
+		"id": 17,
+		"order": 20,
+		"name": "Three.js",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/threejs",
+		"link": "https://threejs.org",
+		"tags": ["3D"]
+	},
+	{
+		"id": 18,
+		"order": 75,
+		"name": "Awwwards",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/awwwards",
+		"link": "https://www.awwwards.com/websites/"
+	},
+	{
+		"id": 19,
+		"order": 19,
+		"name": "Sass Landing Page",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/saaslandingpage",
+		"link": "https://saaslandingpage.com"
+	},
+	{
+		"id": 20,
+		"order": 55,
+		"name": "Navbar Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/navbargallery",
+		"link": "https://www.navbar.gallery",
+		"tags": ["Navbars"]
+	},
+	{
+		"id": 21,
+		"order": 87,
+		"name": "Unsection",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/unsection",
+		"link": "https://www.unsection.com"
+	},
+	{
+		"id": 22,
+		"order": 57,
+		"name": "404s",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/404s",
+		"link": "https://www.404s.design/",
+		"tags": ["404"]
+	},
+	{
+		"id": 23,
+		"order": 80,
+		"name": "HUDS+GUIS",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hudsandguis",
+		"link": "https://www.hudsandguis.com"
+	},
+	{
+		"id": 24,
+		"order": 4,
+		"name": "Design Vault",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designvault",
+		"link": "https://designvault.io/"
+	},
+	{
+		"id": 25,
+		"order": 30,
+		"name": "lookup.design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lookupdesign",
+		"link": "https://lookup.design/"
+	},
+	{
+		"id": 26,
+		"order": 38,
+		"name": "CallToInspiration",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/calltoinspiration",
+		"link": "https://calltoinspiration.com/"
+	},
+	{
+		"id": 27,
+		"order": 86,
+		"name": "Design Spells",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designspells",
+		"link": "https://www.designspells.com/"
+	},
+	{
+		"id": 28,
+		"order": 75,
+		"name": "Httpster",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/httpster",
+		"link": "https://httpster.net/"
+	},
+	{
+		"id": 29,
+		"order": 20,
+		"name": "OGimage.gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/ogimage",
+		"link": "https://www.ogimage.gallery/"
+	},
+	{
+		"id": 30,
+		"order": 28,
+		"name": "Siteinspire",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/siteinspire",
+		"link": "https://www.siteinspire.com/"
+	},
+	{
+		"id": 31,
+		"order": 49,
+		"name": "ArchDaily",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/archdaily",
+		"link": "https://www.archdaily.com/",
+		"tags": ["Architecture"]
+	},
+	{
+		"id": 32,
+		"order": 32,
+		"name": "Site of Sites",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/siteofsites",
+		"link": "https://www.siteofsites.co/"
+	},
+	{
+		"id": 33,
+		"order": 45,
+		"name": "LogoFav",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logofav",
+		"link": "https://www.logofav.com/",
+		"tags": ["Logos"]
+	},
+	{
+		"id": 34,
+		"order": 30,
+		"name": "Dead Simple Sites",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/deadsimplesites",
+		"link": "https://deadsimplesites.com/"
+	},
+	{
+		"id": 35,
+		"order": 85,
+		"name": "Wall of Portfolios",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/wallofportfolios",
+		"link": "https://www.wallofportfolios.in/"
+	},
+	{
+		"id": 36,
+		"order": 52,
+		"name": "Footer",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/footer",
+		"link": "https://www.footer.design/",
+		"tags": ["Footers"]
+	},
+	{
+		"id": 37,
+		"order": 20,
+		"name": "Collect UI",
+		"link": "https://collectui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui"
+	},
+	{
+		"id": 38,
+		"order": 22,
+		"name": "HOVERSTAT.ES",
+		"link": "https://hoverstat.es/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hoverstates"
+	},
+	{
+		"id": 39,
+		"order": 61,
+		"name": "Design Everywhere",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designeverywhere",
+		"link": "https://designeverywhere.co/",
+		"tags": ["Products"]
+	},
+	{
+		"id": 40,
+		"order": 78,
+		"name": "Browsing Mode",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/browsingmode",
+		"link": "https://browsingmode.com/"
+	},
+	{
+		"id": 41,
+		"order": 45,
+		"name": "60fps",
+		"link": "https://60fps.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/60fps",
+		"tags": ["Apps", "Animations"]
+	},
+	{
+		"id": 42,
+		"order": 55,
+		"name": "Minimum",
+		"link": "https://mnmm.xyz",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/mnmm",
+		"tags": ["Minimalist"]
+	},
+	{
+		"id": 43,
+		"order": 64,
+		"name": "One Page Love",
+		"link": "https://onepagelove.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/onepagelove"
+	},
+	{
+		"id": 44,
+		"order": 38,
+		"name": "3D Websites",
+		"link": "https://3dwebsites.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/3dwebsites",
+		"tags": ["3D"]
+	},
+	{
+		"id": 45,
+		"order": 10,
+		"name": "Viewport UI",
+		"link": "https://viewport-ui.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/viewport-ui"
+	},
+	{
+		"id": 46,
+		"order": 67,
+		"name": "Logo System",
+		"link": "https://logosystem.co/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logosystem",
+		"tags": ["Logos"]
+	},
+	{
+		"id": 47,
+		"order": 75,
+		"name": "Adfolio",
+		"link": "https://www.adfolio.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/adfolio",
+		"tags": ["Ads"]
+	},
+	{
+		"id": 48,
+		"order": 78,
+		"name": "A1",
+		"link": "https://www.a1.gallery/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/a1gallery"
+	},
+	{
+		"id": 49,
+		"order": 28,
+		"name": "Daily Delights",
+		"link": "https://delights.design",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/delights"
+	},
+	{
+		"id": 50,
+		"order": 48,
+		"name": "CTA.gallery",
+		"link": "https://www.cta.gallery/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/ctagallery"
+	},
+	{
+		"id": 51,
+		"order": 78,
+		"name": "Supahero",
+		"link": "https://www.supahero.io/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/supahero",
+		"tags": ["Hero sections"]
+	},
+	{
+		"id": 52,
+		"order": 29,
+		"name": "Websitevice",
+		"link": "https://websitevice.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/websitevice"
+	},
+	{
+		"id": 54,
+		"order": 85,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lapa-ninja",
+		"tags": ["OG", "Fonts"]
+	}
+]

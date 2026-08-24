@@ -1,0 +1,207 @@
+[
+	{
+		"id": 1,
+		"order": 100,
+		"name": "Google fonts",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/google",
+		"link": "https://fonts.google.com/",
+		"license": "Multiple",
+		"licenseLink": "https://developers.google.com/fonts/faq#can_i_use_any_font_in_a_commercial_product"
+	},
+	{
+		"id": 2,
+		"order": 98,
+		"name": "Fontsource",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614544/freesets/typography/i5momje7eakesx8ltcex.webp",
+		"link": "https://fontsource.org",
+		"license": "Multiple",
+		"licenseLink": "https://github.com/fontsource/fontsource?tab=readme-ov-file#licensing"
+	},
+	{
+		"id": 3,
+		"order": 95,
+		"name": "Typewolf",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703374218/freesets/typography/uhcny9gmqaobpoxtfglb.webp",
+		"link": "https://www.typewolf.com/",
+		"tags": ["Inspiration"]
+	},
+	{
+		"id": 4,
+		"order": 85,
+		"name": "Typo/graphic",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/mawekotxpersuho9mast",
+		"link": "https://www.typographicposters.com",
+		"tags": ["Inspiration"]
+	},
+	{
+		"id": 5,
+		"order": 80,
+		"name": "Fontshare",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontshare",
+		"link": "https://www.fontshare.com"
+	},
+	{
+		"id": 6,
+		"order": 76,
+		"name": "Fontpair",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/j8zzfqs6ujvggncphlip",
+		"link": "https://www.fontpair.co",
+		"license": "Multiple"
+	},
+	{
+		"id": 7,
+		"order": 70,
+		"name": "Free Faces",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/freefaces",
+		"link": "https://www.freefaces.gallery",
+		"license": "Free"
+	},
+	{
+		"id": 8,
+		"order": 56,
+		"name": "Font Meme",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703378435/freesets/typography/lhrtmhl3nrcuqlvht8nt.webp",
+		"link": "https://fontmeme.com"
+	},
+	{
+		"id": 9,
+		"order": 50,
+		"name": "Fontjoy",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontjoy",
+		"link": "https://fontjoy.com",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 10,
+		"order": 40,
+		"name": "Font style matcher",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-style-matcher",
+		"link": "https://meowni.ca/font-style-matcher/",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 11,
+		"order": 38,
+		"name": "Fonts In Use",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564814/freesets/typography/i91pmpuedxlquhnh6n7q.webp",
+		"link": "https://fontsinuse.com"
+	},
+	{
+		"id": 12,
+		"order": 20,
+		"name": "Fluid typography",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fluid-typography",
+		"link": "https://modern-fluid-typography.vercel.app",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 13,
+		"order": 10,
+		"name": "DaFont",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/viak4hfmoiao8nywnzbc",
+		"link": "https://www.dafont.com",
+		"license": "Multiple"
+	},
+	{
+		"id": 14,
+		"order": 1,
+		"name": "OnlineWebFonts.COM",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/xmqlrpdre5sm4gnly50g",
+		"link": "https://www.onlinewebfonts.com/fonts",
+		"license": "Free with attribution"
+	},
+	{
+		"id": 15,
+		"order": 70,
+		"name": "UNCUT.wtf",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/uncutwtf",
+		"link": "https://uncut.wtf/"
+	},
+	{
+		"id": 16,
+		"order": 20,
+		"name": "Beautiful web type",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/beautifulwebtype",
+		"link": "https://beautifulwebtype.com/",
+		"tags": ["Inspiration"]
+	},
+	{
+		"id": 17,
+		"order": 20,
+		"name": "Font.Download",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontdownload",
+		"link": "https://font.download/"
+	},
+	{
+		"id": 18,
+		"order": 10,
+		"name": "Font Pairings",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/fontpairings",
+		"link": "https://fontpairings.bypeople.com/",
+		"license": "Freemium",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 19,
+		"order": 19,
+		"name": "Modern Font Stacks",
+		"link": "https://modernfontstacks.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/modernfontstacks",
+		"tags": ["CSS"]
+	},
+	{
+		"id": 20,
+		"order": 57,
+		"name": "Archetype",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/archetype",
+		"link": "https://archetypeapp.com/",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 21,
+		"order": 20,
+		"name": "Typescale",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/typescale",
+		"link": "https://typescale.io/",
+		"tags": ["Plugin"]
+	},
+	{
+		"id": 22,
+		"order": 18,
+		"name": "Font Squirrel",
+		"link": "https://www.fontsquirrel.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-squirrel",
+		"license": "Multiple"
+	},
+	{
+		"id": 23,
+		"order": 44,
+		"name": "The League Type",
+		"link": "https://www.theleagueofmoveabletype.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/league-of-moveable-type",
+		"license": "Open source",
+		"licenseDescription": "\"All the fonts from The League of Moveable Type are free & open source, available to use commercially and subject to the Open Font License.\""
+	},
+	{
+		"id": 24,
+		"order": 25,
+		"name": "Velvetyne Type Foundry",
+		"link": "https://velvetyne.fr/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/velvetyne"
+	},
+	{
+		"id": 25,
+		"order": 22,
+		"name": "Font Library",
+		"link": "https://fontlibrary.org/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/font-library"
+	},
+	{
+		"id": 26,
+		"order": 72,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/typeface/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/typography/lapa-ninja",
+		"tags": ["Inspiration"]
+	}
+]

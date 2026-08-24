@@ -1,0 +1,300 @@
+[
+	{
+		"id": 1,
+		"order": 100,
+		"name": "Realtime Colors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/realtime-colors",
+		"link": "https://www.realtimecolors.com",
+		"tags": ["Preview"]
+	},
+	{
+		"id": 2,
+		"order": 94,
+		"name": "Huemint",
+		"link": "https://huemint.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huemint",
+		"tags": ["Preview", "Palette"]
+	},
+	{
+		"id": 3,
+		"order": 94,
+		"name": "Color selector",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-selector",
+		"link": "https://www.color-selector.com",
+		"tags": ["Catalogue"]
+	},
+	{
+		"id": 4,
+		"order": 93,
+		"name": "Coolors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolors",
+		"link": "https://coolors.co",
+		"tags": ["Image"]
+	},
+	{
+		"id": 5,
+		"order": 80,
+		"name": "Hypercolor",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/hypercolor",
+		"link": "https://hypercolor.dev/",
+		"tags": ["Generator", "Gradients", "Tailwind"],
+		"license": "MIT",
+		"licenseLink": "https://github.com/jordihales/hypercolor/blob/main/LICENSE"
+	},
+	{
+		"id": 6,
+		"order": 87,
+		"name": "hue.tools",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huetools",
+		"link": "https://hue.tools/"
+	},
+	{
+		"id": 7,
+		"order": 87,
+		"name": "Picular",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/picular",
+		"link": "https://picular.co"
+	},
+	{
+		"id": 8,
+		"order": 87,
+		"name": "Color Leap",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706205331/freesets/colors/vlvjtgfchdlyfp0y5hhr.webp",
+		"link": "https://colorleap.app/"
+	},
+	{
+		"id": 9,
+		"order": 87,
+		"name": "Pigment",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706206051/freesets/colors/mxpvc3dhmnidvwu3hnkq.webp",
+		"link": "https://pigment.shapefactory.co"
+	},
+	{
+		"id": 10,
+		"order": 86,
+		"name": "Colormind",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormind",
+		"link": "http://colormind.io/"
+	},
+	{
+		"id": 11,
+		"order": 86,
+		"name": "Werner",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706204887/freesets/colors/nlwp5zdb5a92xvkiqakr.webp",
+		"link": "https://www.c82.net/werner/",
+		"tags": ["Catalogue"]
+	},
+	{
+		"id": 12,
+		"order": 84,
+		"name": "HueSnap",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706206139/freesets/colors/ilpiojkklmm5indg4niz.webp",
+		"link": "https://www.huesnap.com",
+		"tags": ["Image"]
+	},
+	{
+		"id": 13,
+		"order": 83,
+		"name": "Adobe Color",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706202013/freesets/colors/ex9scrdemangoqjif70o.webp",
+		"link": "https://color.adobe.com/es/create/color-wheel",
+		"tags": ["Images"]
+	},
+	{
+		"id": 14,
+		"order": 82,
+		"name": "Palette Maker",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/palettemaker",
+		"link": "https://palettemaker.com/app",
+		"tags": ["Preview"]
+	},
+	{
+		"id": 15,
+		"order": 80,
+		"name": "Randoma11y",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/randoma11y",
+		"link": "https://randoma11y.com"
+	},
+	{
+		"id": 16,
+		"order": 72,
+		"name": "WebGradients",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706201464/freesets/colors/f4k7kpstuybqrq5iivep.webp",
+		"link": "https://webgradients.com",
+		"tags": ["Gradients"]
+	},
+	{
+		"id": 17,
+		"order": 70,
+		"name": "Palette",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/palette",
+		"link": "https://palettte.app/"
+	},
+	{
+		"id": 18,
+		"order": 68,
+		"name": "Flat UI Colors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203336/freesets/colors/lwhtjq9voxepwbq5vegj.webp",
+		"link": "https://flatuicolors.com"
+	},
+	{
+		"id": 19,
+		"order": 54,
+		"name": "Material UI",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706201744/freesets/colors/dzigel4p6odtxm6a7vek.webp",
+		"link": "https://materialui.co/colors"
+	},
+	{
+		"id": 20,
+		"order": 50,
+		"name": "Happy Hues",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703609981/freesets/colors/nqn5hl6bvuoq4wfhvj1j.webp",
+		"link": "https://www.happyhues.co"
+	},
+	{
+		"id": 21,
+		"order": 76,
+		"name": "Material Theme Builder",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/material-theme-builder",
+		"link": "https://material-foundation.github.io/material-theme-builder/",
+		"tags": ["Generator", "Preview"],
+		"license": "Apache V2.0",
+		"licenseLink": "https://github.com/material-foundation/material-theme-builder/blob/main/LICENSE"
+	},
+	{
+		"id": 22,
+		"order": 47,
+		"name": "Color Hunt",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203553/freesets/colors/tf04wgbxukm07xo2tinj.webp",
+		"link": "https://colorhunt.co"
+	},
+	{
+		"id": 23,
+		"order": 47,
+		"name": "Shaper",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707612765/freesets/colors/zjo076mgjflmmbpefkjr.webp",
+		"link": "https://hihayk.github.io/shaper/"
+	},
+	{
+		"id": 24,
+		"order": 46,
+		"name": "Toptal",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706204167/freesets/colors/jxfys7m34d2ysx1urjqf.webp",
+		"link": "https://www.toptal.com/designers/colourcode/freebuild-color-builder"
+	},
+	{
+		"id": 25,
+		"order": 45,
+		"name": "UI Colors",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/uicolors",
+		"link": "https://uicolors.app/create",
+		"tags": ["Preview"]
+	},
+	{
+		"id": 26,
+		"order": 40,
+		"name": "Poline",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/poline",
+		"link": "https://meodai.github.io/poline/",
+		"tags": ["Library"]
+	},
+	{
+		"id": 27,
+		"order": 40,
+		"name": "Khroma",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706205072/freesets/colors/nanohbilxxdv7az375iz.webp",
+		"link": "https://www.khroma.co"
+	},
+	{
+		"id": 28,
+		"order": 37,
+		"name": "Paletton",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706201622/freesets/colors/bueddeahtc97swuendgx.webp",
+		"link": "https://www.paletton.com"
+	},
+	{
+		"id": 29,
+		"order": 31,
+		"name": "M.D. Palette Generator",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/h9xk2r0tj0cmem8lrrrq.webp",
+		"link": "https://materialpalettes.com"
+	},
+	{
+		"id": 30,
+		"order": 26,
+		"name": "Scale",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/o4mxuxdozuahnutgopw5.webp",
+		"link": "https://hihayk.github.io/scale/"
+	},
+	{
+		"id": 31,
+		"order": 47,
+		"name": "Color.review",
+		"link": "https://color.review/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-review",
+		"tags": ["Accessibility", "Contrast"]
+	},
+	{
+		"id": 32,
+		"order": 87,
+		"name": "Inspotype",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/inspotype",
+		"link": "https://www.inspotype.com",
+		"tags": ["Preview"]
+	},
+	{
+		"id": 33,
+		"order": 68,
+		"name": "CSS Gradient",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/css-gradient",
+		"link": "https://cssgradient.io",
+		"tags": ["Gradients"]
+	},
+	{
+		"id": 34,
+		"order": 65,
+		"name": "Colorable",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorable",
+		"link": "https://colorable.jxnblk.com",
+		"tags": ["Preview"]
+	},
+	{
+		"id": 35,
+		"order": 66,
+		"name": "Culrs",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/culrs",
+		"link": "https://culrs.com",
+		"tags": ["Palettes"]
+	},
+	{
+		"id": 36,
+		"order": 51,
+		"name": "Cool Contrast",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolcontrast",
+		"link": "https://coolcontrast.vercel.app/",
+		"tags": ["Preview", "Contrast"]
+	},
+	{
+		"id": 37,
+		"order": 90,
+		"name": "ColorBeta",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbeta",
+		"link": "https://colorbeta.com/",
+		"tags": ["Gradients"]
+	},
+	{
+		"id": 38,
+		"order": 20,
+		"name": "ColorHexa",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorhexa",
+		"link": "https://www.colorhexa.com/"
+	},
+	{
+		"id": 39,
+		"order": 74,
+		"name": "ColorMagic",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormagic",
+		"link": "https://colormagic.app/",
+		"tags": ["Generator", "AI"]
+	}
+]

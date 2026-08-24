@@ -1,17 +1,28 @@
 ---
+import categories from '@/assets/categories'
 
+const total = categories.reduce((acc, c) => acc + c.assets.length, 0)
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Freesets</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Freesets</h1>
+		<p>{total} recursos en {categories.length} categorías</p>
+		<ul>
+			{categories.map((category) => (
+				<li>
+					<span style={`color: ${category.color}`}>●</span>
+					{category.name} — {category.assets.length}
+				</li>
+			))}
+		</ul>
 	</body>
 </html>
