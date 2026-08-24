@@ -89,11 +89,11 @@
 	},
 	{
 		"id": 12,
-		"order": 25,
-		"name": "React Skeleton",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705506754/freesets/tools/t4yd2iphzvqihcgoj5gw.webp",
-		"link": "https://skeletonreact.com",
-		"tags": ["Skeleton loader"]
+		"order": 88,
+		"name": "npmx",
+		"link": "https://npmx.dev/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
+		"tags": ["npm browser"]
 	},
 	{
 		"id": 13,
@@ -296,13 +296,5 @@
 		"link": "https://www.opengraph.to/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/opengraphto",
 		"tags": ["Open Graph"]
-	},
-	{
-		"id": 37,
-		"order": 88,
-		"name": "npmx",
-		"link": "https://npmx.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
-		"tags": ["npm browser"]
 	}
 ]

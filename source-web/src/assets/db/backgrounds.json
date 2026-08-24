@@ -1,13 +1,12 @@
 [
 	{
 		"id": 1,
-		"name": "bg.ibelick",
-		"link": "https://bg.ibelick.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614372/freesets/backgrounds/byn5pbw6ikqp95yyyske.webp",
-		"order": 100,
-		"tags": [
-			"Tailwind"
-		]
+		"order": 75,
+		"name": "Shaders",
+		"link": "https://shaders.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shaders",
+		"license": "Freemium",
+		"tags": ["Package","Library"]
 	},
 	{
 		"id": 2,
@@ -296,14 +295,5 @@
 		"name": "Patternico",
 		"link": "https://patternico.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
-	},
-	{
-		"id": 34,
-		"order": 75,
-		"name": "Shaders",
-		"link": "https://shaders.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shaders",
-		"license": "Freemium",
-		"tags": ["Package","Library"]
 	}
 ]

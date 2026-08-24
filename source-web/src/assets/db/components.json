@@ -300,11 +300,11 @@
 	},
 	{
 		"id": 33,
-		"order": 40,
-		"name": "buttons.ibelick",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706405496/freesets/components/virh7entwwa55smst4ol.webp",
-		"link": "https://buttons.ibelick.com",
-		"tags": ["Buttons", "Tailwind", "Copy&Paste"]
+		"order": 89,
+		"name": "KokonutUI",
+		"link": "https://kokonutui.com/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kokonutui",
+		"tags": ["Motion", "shadcn", "Tailwind"]
 	},
 	{
 		"id": 34,
@@ -494,11 +494,11 @@
 	},
 	{
 		"id": 54,
-		"order": 44,
-		"name": "ui.ibelick",
-		"link": "https://ui.ibelick.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ibelick",
-		"tags": ["Effects", "React", "Tailwind"]
+		"order": 56,
+		"name": "GNOME",
+		"link": "https://gnome-react-ui.vercel.app/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/gnome-react-ui",
+		"tags": ["React", "Lucide", "Tailwind"]
 	},
 	{
 		"id": 55,
@@ -752,21 +752,5 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
 		"tags": ["React", "Design System"]
-	},
-	{
-		"id": 84,
-		"order": 56,
-		"name": "GNOME",
-		"link": "https://gnome-react-ui.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/gnome-react-ui",
-		"tags": ["React", "Lucide", "Tailwind"]
-	},
-	{
-		"id": 85,
-		"order": 89,
-		"name": "KokonutUI",
-		"link": "https://kokonutui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kokonutui",
-		"tags": ["Motion", "shadcn", "Tailwind"]
 	}
 ]
