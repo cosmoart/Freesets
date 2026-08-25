@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from 'astro:transitions'
 import '@/styles/global.css'
 import NavBar from '@/components/NavBar.astro'
 
@@ -39,16 +40,21 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={image} />
+
+		<ClientRouter />
 	</head>
 	<body class="bg-white text-zinc-950 dark:bg-zinc-950 dark:text-white">
 		<div
+			transition:name="bgDots"
 			class="fixed inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[size:16px_16px] opacity-10 invert dark:invert-0"
 		>
 		</div>
 
 		<div class="mx-auto flex min-h-dvh max-w-[95rem] flex-col p-6 md:px-10">
 			<NavBar />
-			<slot />
+			<main class="flex grow flex-col">
+				<slot />
+			</main>
 		</div>
 	</body>
 </html>
