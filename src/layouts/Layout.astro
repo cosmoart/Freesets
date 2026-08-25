@@ -1,0 +1,54 @@
+---
+import '@/styles/global.css'
+import NavBar from '@/components/NavBar.astro'
+
+interface Props {
+	title: string
+	description: string
+	image: string
+	themeColor?: string
+}
+
+const { title, description, image, themeColor } = Astro.props
+const canonical = new URL(Astro.url.pathname, Astro.site)
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="author" content="Cosmo" />
+		<meta name="robots" content="index, follow" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={canonical} />
+		{themeColor && <meta name="theme-color" content={themeColor} />}
+
+		<meta property="og:title" content={title} />
+		<meta property="og:site_name" content="Freesets" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={image} />
+		<meta property="og:description" content={description} />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@CosmoArt0" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={image} />
+	</head>
+	<body class="bg-white text-zinc-950 dark:bg-zinc-950 dark:text-white">
+		<div
+			class="fixed inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[size:16px_16px] opacity-10 invert dark:invert-0"
+		>
+		</div>
+
+		<div class="mx-auto flex min-h-dvh max-w-[95rem] flex-col p-6 md:px-10">
+			<NavBar />
+			<slot />
+		</div>
+	</body>
+</html>

@@ -1,28 +1,39 @@
 ---
+import Layout from '@/layouts/Layout.astro'
 import categories from '@/assets/categories'
 
-const total = categories.reduce((acc, c) => acc + c.assets.length, 0)
+const description =
+	'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.'
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Freesets</title>
-	</head>
-	<body>
-		<h1>Freesets</h1>
-		<p>{total} recursos en {categories.length} categorías</p>
-		<ul>
-			{categories.map((category) => (
-				<li>
-					<span style={`color: ${category.color}`}>●</span>
-					{category.name} — {category.assets.length}
-				</li>
-			))}
+<Layout
+	title="Freesets"
+	description={description}
+	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
+>
+	<section class="flex grow flex-col items-center justify-center gap-6 py-16 text-center">
+		<h1 class="text-6xl font-semibold sm:text-8xl">Freesets</h1>
+		<p class="max-w-2xl text-lg text-balance text-zinc-600 dark:text-zinc-400">{description}</p>
+		<p class="text-sm text-zinc-500">
+			{total} free resources across {categories.length} categories
+		</p>
+
+		<ul class="mt-6 flex flex-wrap justify-center gap-3">
+			{
+				categories.map((category) => (
+					<li>
+						<a
+							href={`/${category.nameID}`}
+							style={`--item-color: ${category.color}`}
+							class="inline-flex items-center gap-2 rounded-md bg-[var(--item-color)] px-4 py-2 text-white transition-transform hover:scale-[1.03]"
+						>
+							{category.name}
+							<span class="text-sm opacity-80">{category.assets.length}</span>
+						</a>
+					</li>
+				))
+			}
 		</ul>
-	</body>
-</html>
+	</section>
+</Layout>

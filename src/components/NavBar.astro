@@ -1,0 +1,52 @@
+---
+import categories from '@/assets/categories'
+
+const current = Astro.url.pathname.split('/')[1]
+---
+
+<nav class="mb-10">
+	<ul class="flex flex-wrap gap-2">
+		<li>
+			<a
+				href="/"
+				aria-label="Home"
+				class:list={[
+					'flex w-full items-center justify-center rounded-md bg-zinc-900 px-4 py-1.5 outline-2 outline-offset-2 outline-zinc-900 transition-transform dark:bg-white dark:outline-white',
+					current ? 'hover:scale-[1.03]' : 'outline'
+				]}
+			>
+				<img
+					src="/categories-icons/home.svg"
+					alt=""
+					width="23"
+					height="23"
+					class="w-[23px] invert dark:invert-0"
+				/>
+			</a>
+		</li>
+
+		{
+			categories.map((category) => (
+				<li class="grow md:min-w-[10.5rem]">
+					<a
+						href={`/${category.nameID}`}
+						style={`--item-color: ${category.color}`}
+						class:list={[
+							'flex w-full items-center justify-center gap-2 rounded-md bg-[var(--item-color)] px-4 py-1.5 text-white outline-2 outline-offset-2 outline-[var(--item-color)] transition-transform',
+							category.nameID === current ? 'outline' : 'hover:scale-[1.03]'
+						]}
+					>
+						<img
+							src={`/categories-icons/${category.nameID}.svg`}
+							alt=""
+							width="23"
+							height="23"
+							class="w-[23px] invert"
+						/>
+						{category.name}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</nav>

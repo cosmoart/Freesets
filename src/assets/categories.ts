@@ -19,7 +19,12 @@ const byOrder = (db: unknown[]): Asset[] =>
 
 const categories: Category[] = [
 	{ name: 'Icons', color: '#2b6dff', nameID: 'icons', assets: byOrder(iconsDB) },
-	{ name: 'Illustrations', color: '#20c928', nameID: 'illustrations', assets: byOrder(illustrationsDB) },
+	{
+		name: 'Illustrations',
+		color: '#20c928',
+		nameID: 'illustrations',
+		assets: byOrder(illustrationsDB)
+	},
 	{ name: 'Photos', color: '#d41cf1', nameID: 'photos', assets: byOrder(photosDB) },
 	{ name: 'Videos', color: '#ef2350', nameID: 'videos', assets: byOrder(videosDB) },
 	{ name: 'Colors', color: '#ff36a2', nameID: 'colors', assets: byOrder(colorsDB) },
@@ -29,10 +34,13 @@ const categories: Category[] = [
 	{ name: 'Libraries', color: '#ff006e', nameID: 'libraries', assets: byOrder(librariesDB) },
 	{ name: 'Blogs', color: '#00a1ff', nameID: 'blogs', assets: byOrder(blogsDB) },
 	{ name: 'Tools', color: '#f97316', nameID: 'tools', assets: byOrder(toolsDB) },
-	{ name: 'Inspirations', color: '#6366f1', nameID: 'inspirations', assets: byOrder(inspirationsDB) },
-	{ name: 'Components', color: '#21c95f', nameID: 'components', assets: byOrder(componentsDB) ,}
+	{
+		name: 'Inspirations',
+		color: '#6366f1',
+		nameID: 'inspirations',
+		assets: byOrder(inspirationsDB)
+	},
+	{ name: 'Components', color: '#21c95f', nameID: 'components', assets: byOrder(componentsDB) }
 ]
 
 export default categories
-
-const awgw = "a2";

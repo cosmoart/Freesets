@@ -1,0 +1,20 @@
+---
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout
+	title="Page not found - Freesets"
+	description="The page you are looking for does not exist."
+	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
+>
+	<section class="flex grow flex-col items-center justify-center gap-4 py-16 text-center">
+		<h1 class="text-6xl font-semibold">404</h1>
+		<p class="text-lg text-zinc-600 dark:text-zinc-400">This page does not exist.</p>
+		<a
+			href="/"
+			class="rounded-md bg-zinc-900 px-4 py-2 text-white dark:bg-white dark:text-zinc-950"
+		>
+			Back home
+		</a>
+	</section>
+</Layout>

@@ -1,0 +1,38 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Layout from '@/layouts/Layout.astro'
+import AssetCard from '@/components/AssetCard.astro'
+import categories from '@/assets/categories'
+
+export const getStaticPaths = (() =>
+	categories.map((category) => ({
+		params: { category: category.nameID },
+		props: { category }
+	}))) satisfies GetStaticPaths
+
+const { category } = Astro.props
+---
+
+<Layout
+	title={`${category.name} - Freesets`}
+	description={`Explore a collection of the best free ${category.name} resources/assets for your next project.`}
+	image={`https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/${category.nameID}`}
+	themeColor={category.color}
+>
+	<section class="grow">
+		<h1 class="mb-6 text-4xl font-semibold">
+			{category.name}
+			<span class="text-lg text-zinc-500">{category.assets.length}</span>
+		</h1>
+
+		<ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+			{
+				category.assets.map((asset) => (
+					<li>
+						<AssetCard asset={asset} color={category.color} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</Layout>
