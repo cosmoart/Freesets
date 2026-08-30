@@ -1,0 +1,97 @@
+---
+const icon = 'size-4'
+---
+
+<button
+	type="button"
+	data-theme-toggle
+	aria-label="Toggle color theme"
+	title="Toggle color theme"
+	class="flex size-9 shrink-0 items-center justify-center rounded-md border-2 border-zinc-300 bg-zinc-100 transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500">
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		aria-hidden="true"
+		class={`${icon} dark:hidden`}>
+		<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+		></path>
+	</svg>
+
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		aria-hidden="true"
+		class={`${icon} hidden dark:block`}>
+		<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+		<path
+			d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+		></path>
+	</svg>
+</button>
+
+<script>
+	function applyTheme() {
+		const dark = document.documentElement.classList.toggle('dark')
+		localStorage.setItem('theme', dark ? 'dark' : 'light')
+	}
+
+	async function reveal(button: HTMLButtonElement) {
+		const root = document.documentElement
+		const { left, top, width, height } = button.getBoundingClientRect()
+		const x = left + width / 2
+		const y = top + height / 2
+		const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y))
+
+		root.dataset.themeTransition = ''
+
+		try {
+			const transition = document.startViewTransition(applyTheme)
+			await transition.ready
+
+			root.animate(
+				{
+					clipPath: [
+						`circle(0px at ${x}px ${y}px)`,
+						`circle(${radius}px at ${x}px ${y}px)`
+					]
+				},
+				{
+					duration: 500,
+					easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+					pseudoElement: '::view-transition-new(root)'
+				}
+			)
+
+			await transition.finished
+		} finally {
+			delete root.dataset.themeTransition
+		}
+	}
+
+	function setup() {
+		const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]')
+
+		button?.addEventListener('click', () => {
+			const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
+
+			if (reduced || !document.startViewTransition) {
+				applyTheme()
+				return
+			}
+
+			reveal(button)
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

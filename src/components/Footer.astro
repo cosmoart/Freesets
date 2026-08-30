@@ -1,0 +1,96 @@
+---
+import categories from '@/assets/categories'
+import { REPO } from '@/lib/github'
+
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
+const year = new Date().getFullYear()
+const link = 'text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-white'
+---
+
+<footer
+	data-footer
+	class="fixed inset-x-0 bottom-0 z-0 bg-zinc-100 text-zinc-950 dark:bg-zinc-900 dark:text-white"
+>
+	<div class="mx-auto max-w-380 p-6 md:px-10">
+		<div class="flex flex-wrap justify-between gap-10">
+			<div class="max-w-sm">
+				<p class="text-2xl font-semibold">Freesets</p>
+				<p class="mt-2 text-sm text-zinc-500">
+					A collection of {total} free resources and tools for developers and artists, across {
+						categories.length
+					} categories.
+				</p>
+			</div>
+
+			<div class="flex flex-wrap gap-10 sm:gap-16">
+				<div>
+					<p class="mb-3 text-sm font-semibold">Explore</p>
+					<ul class="flex flex-col gap-2 text-sm">
+						<li><a href="/" class={link}>Home</a></li>
+						<li><a href="/search" class={link}>Search</a></li>
+						<li><a href={`/${categories[0]!.nameID}`} class={link}>Browse categories</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<p class="mb-3 text-sm font-semibold">Project</p>
+					<ul class="flex flex-col gap-2 text-sm">
+						<li>
+							<a
+								href={`https://github.com/${REPO}`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class={link}
+							>
+								GitHub
+							</a>
+						</li>
+						<li>
+							<a
+								href={`https://github.com/${REPO}/issues/new?labels=suggest`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class={link}
+							>
+								Suggest a resource
+							</a>
+						</li>
+						<li>
+							<a
+								href={`https://github.com/${REPO}/issues`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class={link}
+							>
+								Report an issue
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<p class="mt-10 border-t border-zinc-300 pt-5 text-sm text-zinc-500 dark:border-zinc-700">
+			&copy; {year} Freesets &middot; Made by Cosmo
+		</p>
+	</div>
+</footer>
+
+<script>
+	let observer: ResizeObserver | undefined
+
+	function setup() {
+		const footer = document.querySelector<HTMLElement>('[data-footer]')
+		if (!footer) return
+
+		const sync = () =>
+			document.documentElement.style.setProperty('--footer-height', `${footer.offsetHeight}px`)
+
+		observer?.disconnect()
+		observer = new ResizeObserver(sync)
+		observer.observe(footer)
+		sync()
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

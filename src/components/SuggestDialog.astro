@@ -1,0 +1,156 @@
+---
+import categories from '@/assets/categories'
+import { REPO } from '@/lib/github'
+
+const field =
+	'w-full rounded-md border-2 border-zinc-200 px-3 py-2 outline-none focus:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:focus:border-zinc-500'
+const label = 'mb-1 block text-sm text-zinc-500'
+---
+
+<button
+	type="button"
+	data-suggest-open
+	class="flex h-9 shrink-0 items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-100 px-3 text-sm transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500"
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		aria-hidden="true"
+		class="size-4"
+	>
+		<path d="M12 5l0 14"></path>
+		<path d="M5 12l14 0"></path>
+	</svg>
+	<span class="hidden sm:inline">Suggest</span>
+</button>
+
+<dialog
+	data-suggest-dialog
+	aria-label="Suggest a resource"
+	class="m-auto max-h-[90dvh] w-[min(92vw,34rem)] overflow-y-auto rounded-lg bg-white p-0 text-zinc-950 backdrop:bg-zinc-950/60 lg:w-[min(92vw,46rem)] dark:bg-zinc-900 dark:text-white"
+>
+	<form data-suggest-form data-repo={REPO} class="grid gap-x-4 gap-y-3 p-6 lg:grid-cols-2">
+		<div class="lg:col-span-2">
+			<h2 class="text-2xl font-semibold">Suggest a resource</h2>
+			<p class="mt-1 text-sm text-zinc-500">
+				This opens a pre-filled issue on GitHub. You need a GitHub account to submit it.
+			</p>
+		</div>
+
+		<div>
+			<label for="suggest-name" class={label}>Name *</label>
+			<input id="suggest-name" name="name" required class={field} placeholder="Tabler Icons" />
+		</div>
+
+		<div>
+			<label for="suggest-link" class={label}>Link *</label>
+			<input
+				id="suggest-link"
+				name="link"
+				type="url"
+				required
+				class={field}
+				placeholder="https://tabler.io/icons"
+			/>
+		</div>
+
+		<div>
+			<label for="suggest-category" class={label}>Category *</label>
+			<select id="suggest-category" name="category" required class={field}>
+				{categories.map((category) => <option value={category.name}>{category.name}</option>)}
+			</select>
+		</div>
+
+		<div>
+			<label for="suggest-license" class={label}>License</label>
+			<input id="suggest-license" name="license" class={field} placeholder="MIT" />
+		</div>
+
+		<div class="lg:col-span-2">
+			<label for="suggest-tags" class={label}>Tags</label>
+			<input id="suggest-tags" name="tags" class={field} placeholder="SVG, Brands" />
+		</div>
+
+		<div class="lg:col-span-2">
+			<label for="suggest-notes" class={label}>Notes</label>
+			<textarea id="suggest-notes" name="notes" rows="2" class={field}></textarea>
+		</div>
+
+		<div class="mt-1 flex justify-end gap-3 lg:col-span-2">
+			<button
+				type="button"
+				data-suggest-close
+				class="rounded-md border-2 border-zinc-200 px-4 py-2 dark:border-zinc-700"
+			>
+				Cancel
+			</button>
+			<button
+				type="submit"
+				class="rounded-md bg-zinc-900 px-4 py-2 text-white dark:bg-white dark:text-zinc-950"
+			>
+				Open issue on GitHub
+			</button>
+		</div>
+	</form>
+</dialog>
+
+<script>
+	function buildIssueUrl(form: HTMLFormElement) {
+		const data = new FormData(form)
+		const value = (key: string) => String(data.get(key) ?? '').trim()
+
+		const name = value('name')
+		const category = value('category')
+		const license = value('license')
+		const tags = value('tags')
+		const notes = value('notes')
+
+		const body = [
+			`**Name:** ${name}`,
+			`**Link:** ${value('link')}`,
+			`**Category:** ${category}`,
+			license && `**License:** ${license}`,
+			tags && `**Tags:** ${tags}`,
+			notes && `\n### Notes\n\n${notes}`
+		]
+			.filter(Boolean)
+			.join('\n')
+
+		const params = new URLSearchParams({
+			labels: 'suggest',
+			title: `Add "${name}" to ${category}`,
+			body
+		})
+
+		return `https://github.com/${form.dataset.repo}/issues/new?${params}`
+	}
+
+	function setup() {
+		const dialog = document.querySelector<HTMLDialogElement>('[data-suggest-dialog]')
+		const button = document.querySelector<HTMLButtonElement>('[data-suggest-open]')
+		const form = document.querySelector<HTMLFormElement>('[data-suggest-form]')
+		if (!dialog || !button || !form) return
+
+		button.addEventListener('click', () => dialog.showModal())
+		dialog.addEventListener('click', (event) => {
+			if (event.target === dialog) dialog.close()
+		})
+		form
+			.querySelector<HTMLButtonElement>('[data-suggest-close]')
+			?.addEventListener('click', () => dialog.close())
+
+		form.addEventListener('submit', (event) => {
+			event.preventDefault()
+			window.open(buildIssueUrl(form), '_blank', 'noopener')
+			dialog.close()
+			form.reset()
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

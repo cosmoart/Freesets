@@ -22,51 +22,100 @@ const { category } = Astro.props
 	themeColor={category.color}
 >
 	<section class="grow">
-		<h1 class="mb-6 text-4xl font-semibold">
-			{category.name}
-			<span class="text-lg text-zinc-500">{category.assets.length}</span>
-		</h1>
+		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+			<h1 class="text-4xl font-semibold">
+				{category.name}
+				<span class="text-lg text-zinc-500">{category.assets.length}</span>
+			</h1>
+
+			<div class="flex flex-wrap items-center justify-end gap-3">
+				<Pagination />
+
+				<label for="category-search" class="sr-only">Search in {category.name}</label>
+				<input
+					id="category-search"
+					data-category-search
+					type="search"
+					autocomplete="off"
+					placeholder={`Search in ${category.name}...`}
+					class="w-56 shrink-0 rounded-md border-2 border-zinc-200 px-3 py-1.5 text-sm outline-none focus:border-zinc-400 dark:border-zinc-700 dark:focus:border-zinc-500"
+				/>
+			</div>
+		</div>
 
 		<ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 			{
 				category.assets.map((asset, index) => (
-					<li data-item hidden={index >= PER_PAGE}>
+					<li
+						data-item
+						hidden={index >= PER_PAGE}
+						data-text={[asset.name, asset.license ?? asset.licence, ...(asset.tags ?? [])]
+							.filter(Boolean)
+							.join(' ')
+							.toLowerCase()}
+					>
 						<AssetCard asset={asset} color={category.color} />
 					</li>
 				))
 			}
 		</ul>
 
-		<Pagination />
+		<p data-empty hidden class="py-16 text-center text-lg text-zinc-500">
+			No resources match your search.
+		</p>
 	</section>
 </Layout>
 
 <script>
 	import { paginate } from '@/scripts/paginate'
+	import { matches } from '@/scripts/filter'
 
 	function setup() {
 		const nav = document.querySelector<HTMLElement>('[data-pagination]')
-		if (!nav) return
+		const search = document.querySelector<HTMLInputElement>('[data-category-search]')
+		if (!nav || !search) return
 
+		const empty = document.querySelector<HTMLParagraphElement>('[data-empty]')!
 		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
 
-		function show(page: number, scroll = false) {
-			const current = paginate(nav!, items, page)
-			const params = new URLSearchParams(location.search)
+		const params = new URLSearchParams(location.search)
+		search.value = params.get('q') ?? ''
+		let page = Number(params.get('page')) || 1
 
-			if (current > 1) params.set('page', String(current))
-			else params.delete('page')
+		function apply(scroll = false) {
+			const query = search!.value.trim()
+			const found: HTMLLIElement[] = []
 
-			history.replaceState(null, '', params.size ? `?${params}` : location.pathname)
+			for (const item of items) {
+				const match = !query || matches(item.dataset.text ?? '', query)
+				item.hidden = !match
+				if (match) found.push(item)
+			}
+
+			page = paginate(nav!, found, page)
+			empty.hidden = found.length > 0
+
+			const next = new URLSearchParams()
+			if (query) next.set('q', query)
+			if (page > 1) next.set('page', String(page))
+
+			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
 			if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
 		}
 
-		nav.addEventListener('click', (event) => {
-			const button = (event.target as HTMLElement).closest<HTMLElement>('[data-page]')
-			if (button) show(Number(button.dataset.page), true)
+		search.addEventListener('input', () => {
+			page = 1
+			apply()
 		})
 
-		show(Number(new URLSearchParams(location.search).get('page')) || 1)
+		nav.addEventListener('click', (event) => {
+			const button = (event.target as HTMLElement).closest<HTMLElement>('[data-page]')
+			if (!button) return
+			page = Number(button.dataset.page)
+			apply(true)
+		})
+
+		apply()
 	}
 
 	document.addEventListener('astro:page-load', setup)

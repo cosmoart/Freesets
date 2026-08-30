@@ -13,6 +13,7 @@ import blogsDB from '@/assets/db/blogs.json'
 import toolsDB from '@/assets/db/tools.json'
 import inspirationsDB from '@/assets/db/inspirations.json'
 import componentsDB from '@/assets/db/components.json'
+import directoriesDB from '@/assets/db/directories.json'
 
 const byOrder = (db: unknown[]): Asset[] =>
 	(db as Asset[]).slice().sort((a, b) => b.order - a.order)
@@ -40,7 +41,8 @@ const categories: Category[] = [
 		nameID: 'inspirations',
 		assets: byOrder(inspirationsDB)
 	},
-	{ name: 'Components', color: '#21c95f', nameID: 'components', assets: byOrder(componentsDB) }
+	{ name: 'Components', color: '#21c95f', nameID: 'components', assets: byOrder(componentsDB) },
+	{ name: 'Directories', color: '#14b8a6', nameID: 'directories', assets: byOrder(directoriesDB) }
 ]
 
 export default categories

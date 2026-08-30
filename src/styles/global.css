@@ -1,11 +1,23 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+	color-scheme: light;
+	--footer-height: 22rem;
+}
+
+:root.dark {
+	color-scheme: dark;
+}
+
 @theme {
 	--font-sans: 'Gabarito', ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
 	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
 }
 
 @keyframes fade-in {
@@ -42,6 +54,20 @@ html {
 	animation:
 		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
 		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+html[data-theme-transition]::view-transition-old(root),
+html[data-theme-transition]::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
+}
+
+html[data-theme-transition]::view-transition-image-pair(root) {
+	isolation: auto;
+}
+
+html[data-theme-transition] [data-astro-transition-scope] {
+	view-transition-name: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

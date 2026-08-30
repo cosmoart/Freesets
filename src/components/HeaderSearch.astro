@@ -1,0 +1,130 @@
+<div
+	data-header-search
+	class="relative w-56 shrink-0 transition-[width] duration-200 focus-within:w-full sm:focus-within:w-96"
+>
+	<form action="/search" method="get" class="flex items-center gap-2">
+		<label for="header-search" class="sr-only">Search all resources</label>
+		<div
+			class="flex h-9 w-full items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-100 px-3 text-sm transition-colors focus-within:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:focus-within:border-zinc-500"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="16"
+				height="16"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"
+				class="shrink-0"
+			>
+				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+				<path d="M21 21l-6 -6"></path>
+			</svg>
+			<input
+				id="header-search"
+				type="search"
+				name="q"
+				autocomplete="off"
+				placeholder="Search all resources..."
+				class="w-full min-w-0 bg-transparent text-zinc-950 outline-none placeholder:text-zinc-500 dark:text-white"
+			/>
+		</div>
+	</form>
+
+	<ul
+		data-search-results
+		hidden
+		class="absolute inset-x-0 top-full z-30 mt-2 max-h-80 overflow-y-auto rounded-md border-2 border-zinc-200 bg-white py-1 shadow-lg dark:border-zinc-700 dark:bg-zinc-900"
+	>
+	</ul>
+</div>
+
+<script>
+	import { matches } from '@/scripts/filter'
+
+	type Entry = { name: string; link: string; category: string; color: string }
+
+	const MAX_RESULTS = 8
+	let index: Entry[] | undefined
+	let loading: Promise<Entry[]> | undefined
+
+	function loadIndex() {
+		loading ??= fetch('/search-index.json')
+			.then((response) => (response.ok ? response.json() : []))
+			.then((data: Entry[]) => (index = data))
+			.catch(() => [])
+
+		return loading
+	}
+
+	function resultItem(entry: Entry) {
+		const name = document.createElement('span')
+		name.textContent = entry.name
+		name.className = 'truncate'
+
+		const badge = document.createElement('span')
+		badge.textContent = entry.category
+		badge.className = 'shrink-0 rounded px-1.5 py-0.5 text-xs text-white'
+		badge.style.backgroundColor = entry.color
+
+		const link = document.createElement('a')
+		link.href = entry.link
+		link.target = '_blank'
+		link.rel = 'noopener noreferrer nofollow'
+		link.className =
+			'flex items-center justify-between gap-3 px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+		link.append(name, badge)
+
+		const item = document.createElement('li')
+		item.append(link)
+		return item
+	}
+
+	function setup() {
+		const root = document.querySelector<HTMLElement>('[data-header-search]')
+		const input = root?.querySelector<HTMLInputElement>('input[name="q"]')
+		const results = root?.querySelector<HTMLUListElement>('[data-search-results]')
+		if (!root || !input || !results) return
+
+		const close = () => (results.hidden = true)
+
+		async function render() {
+			const query = input!.value.trim()
+			if (!query) return close()
+
+			const entries = index ?? (await loadIndex())
+			const found = entries
+				.filter((entry) => matches(entry.name.toLowerCase(), query))
+				.slice(0, MAX_RESULTS)
+
+			results!.replaceChildren(...found.map(resultItem))
+			results!.hidden = found.length === 0
+		}
+
+		input.addEventListener('focus', loadIndex, { once: true })
+		input.addEventListener('input', render)
+		input.addEventListener('focus', render)
+		input.form?.addEventListener('submit', close)
+
+		root.addEventListener('keydown', (event) => {
+			if (event.key !== 'Escape') return
+			close()
+			input.blur()
+		})
+
+		document.addEventListener('click', (event) => {
+			if (!root.contains(event.target as Node)) close()
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key !== 'k' || !(event.ctrlKey || event.metaKey)) return
+		event.preventDefault()
+		document.querySelector<HTMLInputElement>('[data-header-search] input[name="q"]')?.focus()
+	})
+</script>

@@ -12,7 +12,7 @@ const licenseLink = asset.licenseLink ?? asset.licenceLink
 ---
 
 <article
-	class="group overflow-hidden rounded-lg ring-2 ring-zinc-600 transition-all hover:ring-[var(--card-color)]"
+	class="group overflow-hidden outline outline-white/5 transition-all"
 	style={`--card-color: ${color}`}
 >
 	<div class="relative">
@@ -28,7 +28,7 @@ const licenseLink = asset.licenseLink ?? asset.licenceLink
 				width="384"
 				height="216"
 				loading="lazy"
-				class="inline-block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+				class="inline-block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103"
 			/>
 			<img
 				src={`https://www.google.com/s2/favicons?domain=${asset.link}&sz=128`}
@@ -51,7 +51,7 @@ const licenseLink = asset.licenseLink ?? asset.licenceLink
 		}
 	</div>
 
-	<div class="flex flex-wrap items-center justify-between gap-2 bg-purple-50 p-5 dark:bg-zinc-800">
+	<div class="flex flex-wrap items-center justify-between gap-2 p-5">
 		<a href={asset.link} target="_blank" rel="noopener noreferrer nofollow">
 			<h3 class="text-xl hover:underline">{asset.name}</h3>
 		</a>

@@ -2,6 +2,7 @@
 import { ClientRouter } from 'astro:transitions'
 import '@/styles/global.css'
 import NavBar from '@/components/NavBar.astro'
+import Footer from '@/components/Footer.astro'
 
 interface Props {
 	title: string
@@ -42,19 +43,38 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 		<meta name="twitter:image" content={image} />
 
 		<ClientRouter />
+
+		<script is:inline>
+			;(() => {
+				const apply = () => {
+					const stored = localStorage.getItem('theme')
+					const dark = stored
+						? stored === 'dark'
+						: matchMedia('(prefers-color-scheme: dark)').matches
+					document.documentElement.classList.toggle('dark', dark)
+				}
+
+				apply()
+
+				if (!window.themeListenerReady) {
+					window.themeListenerReady = true
+					document.addEventListener('astro:after-swap', apply)
+				}
+			})()
+		</script>
 	</head>
 	<body class="bg-white text-zinc-950 dark:bg-zinc-950 dark:text-white">
 		<div
-			transition:name="bgDots"
-			class="fixed inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[size:16px_16px] opacity-10 invert dark:invert-0"
+			class="relative z-10 mb-(--footer-height) bg-white shadow-[0_1rem_2rem_rgba(0,0,0,0.25)] dark:bg-zinc-950"
 		>
+			<div class="mx-auto flex min-h-dvh max-w-380 flex-col p-4">
+				<NavBar />
+				<main class="flex grow flex-col">
+					<slot />
+				</main>
+			</div>
 		</div>
 
-		<div class="mx-auto flex min-h-dvh max-w-[95rem] flex-col p-6 md:px-10">
-			<NavBar />
-			<main class="flex grow flex-col">
-				<slot />
-			</main>
-		</div>
+		<Footer />
 	</body>
 </html>

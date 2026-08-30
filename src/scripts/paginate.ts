@@ -1,4 +1,5 @@
 export const PER_PAGE = 42
+const SIBLINGS = 2
 
 const ACTIVE = 'pointer-events-none bg-blue-600 text-white'
 const IDLE =
@@ -11,7 +12,7 @@ function pageItem(page: number, current: number) {
 	button.textContent = String(page)
 	button.setAttribute('aria-label', `Go to page ${page}`)
 	if (page === current) button.setAttribute('aria-current', 'page')
-	button.className = `flex size-9 items-center justify-center rounded-md transition-colors md:size-10 ${
+	button.className = `flex size-7 items-center justify-center rounded-md text-sm transition-colors ${
 		page === current ? ACTIVE : IDLE
 	}`
 
@@ -30,17 +31,20 @@ export function paginate(nav: HTMLElement, matches: HTMLElement[], page: number)
 	})
 
 	const pages = nav.querySelector<HTMLUListElement>('[data-pages]')!
-	const previous = nav.querySelector<HTMLButtonElement>('[data-page-prev]')!
-	const next = nav.querySelector<HTMLButtonElement>('[data-page-next]')!
+	const first = nav.querySelector<HTMLButtonElement>('[data-page-first]')!
+	const last = nav.querySelector<HTMLButtonElement>('[data-page-last]')!
+
+	const from = Math.max(1, current - SIBLINGS)
+	const to = Math.min(totalPages, current + SIBLINGS)
 
 	pages.replaceChildren(
-		...Array.from({ length: totalPages }, (_, index) => pageItem(index + 1, current))
+		...Array.from({ length: to - from + 1 }, (_, index) => pageItem(from + index, current))
 	)
 
-	previous.disabled = current === 1
-	previous.dataset.page = String(current - 1)
-	next.disabled = current === totalPages
-	next.dataset.page = String(current + 1)
+	first.disabled = current === 1
+	first.dataset.page = '1'
+	last.disabled = current === totalPages
+	last.dataset.page = String(totalPages)
 	nav.hidden = totalPages <= 1
 
 	return current

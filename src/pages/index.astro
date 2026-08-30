@@ -18,22 +18,5 @@ const total = categories.reduce((acc, category) => acc + category.assets.length,
 		<p class="text-sm text-zinc-500">
 			{total} free resources across {categories.length} categories
 		</p>
-
-		<ul class="mt-6 flex flex-wrap justify-center gap-3">
-			{
-				categories.map((category) => (
-					<li>
-						<a
-							href={`/${category.nameID}`}
-							style={`--item-color: ${category.color}`}
-							class="inline-flex items-center gap-2 rounded-md bg-[var(--item-color)] px-4 py-2 text-white transition-transform hover:scale-[1.03]"
-						>
-							{category.name}
-							<span class="text-sm opacity-80">{category.assets.length}</span>
-						</a>
-					</li>
-				))
-			}
-		</ul>
 	</section>
 </Layout>

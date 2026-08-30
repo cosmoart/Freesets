@@ -24,7 +24,11 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
 >
 	<section class="grow">
-		<h1 class="mb-6 text-4xl font-semibold">Search</h1>
+		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+			<h1 class="text-4xl font-semibold">Search</h1>
+
+			<Pagination />
+		</div>
 
 		<form
 			data-filters
@@ -85,13 +89,12 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		<p data-empty hidden class="py-16 text-center text-lg text-zinc-500">
 			No resources match your search.
 		</p>
-
-		<Pagination />
 	</section>
 </Layout>
 
 <script>
 	import { paginate } from '@/scripts/paginate'
+	import { matches as textMatches } from '@/scripts/filter'
 
 	function setup() {
 		const form = document.querySelector<HTMLFormElement>('[data-filters]')
@@ -112,13 +115,12 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		let page = Number(params.get('page')) || 1
 
 		function apply(scroll = false) {
-			const terms = query.value.toLowerCase().split(' ').filter(Boolean)
+			const search = query.value.trim()
 			const matches: HTMLLIElement[] = []
 
 			for (const item of items) {
-				const text = item.dataset.text ?? ''
 				const match =
-					terms.every((term) => text.includes(term)) &&
+					textMatches(item.dataset.text ?? '', search) &&
 					(!category.value || item.dataset.category === category.value) &&
 					(!license.value || item.dataset.license === license.value)
 
@@ -136,7 +138,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 			if (license.value) next.set('license', license.value)
 			if (page > 1) next.set('page', String(page))
 
-			history.replaceState(null, '', next.size ? `?${next}` : location.pathname)
+			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
 			if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
 		}
 
