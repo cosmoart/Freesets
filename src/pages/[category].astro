@@ -2,7 +2,9 @@
 import type { GetStaticPaths } from 'astro'
 import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
+import Pagination from '@/components/Pagination.astro'
 import categories from '@/assets/categories'
+import { PER_PAGE } from '@/scripts/paginate'
 
 export const getStaticPaths = (() =>
 	categories.map((category) => ({
@@ -27,12 +29,45 @@ const { category } = Astro.props
 
 		<ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 			{
-				category.assets.map((asset) => (
-					<li>
+				category.assets.map((asset, index) => (
+					<li data-item hidden={index >= PER_PAGE}>
 						<AssetCard asset={asset} color={category.color} />
 					</li>
 				))
 			}
 		</ul>
+
+		<Pagination />
 	</section>
 </Layout>
+
+<script>
+	import { paginate } from '@/scripts/paginate'
+
+	function setup() {
+		const nav = document.querySelector<HTMLElement>('[data-pagination]')
+		if (!nav) return
+
+		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
+
+		function show(page: number, scroll = false) {
+			const current = paginate(nav!, items, page)
+			const params = new URLSearchParams(location.search)
+
+			if (current > 1) params.set('page', String(current))
+			else params.delete('page')
+
+			history.replaceState(null, '', params.size ? `?${params}` : location.pathname)
+			if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
+		}
+
+		nav.addEventListener('click', (event) => {
+			const button = (event.target as HTMLElement).closest<HTMLElement>('[data-page]')
+			if (button) show(Number(button.dataset.page), true)
+		})
+
+		show(Number(new URLSearchParams(location.search).get('page')) || 1)
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

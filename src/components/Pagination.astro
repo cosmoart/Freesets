@@ -1,0 +1,42 @@
+---
+const arrow =
+	'flex size-9 items-center justify-center rounded-md bg-zinc-900 text-white transition-colors hover:bg-zinc-700 disabled:pointer-events-none disabled:opacity-50 md:size-10 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-300'
+---
+
+<nav data-pagination hidden aria-label="Pagination" class="mt-12 flex justify-center gap-2">
+	<button type="button" data-page-prev aria-label="Go to the previous page" class={`mr-3 ${arrow}`}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="20"
+			height="20"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+		>
+			<path d="M15 6l-6 6l6 6"></path>
+		</svg>
+	</button>
+
+	<ul data-pages class="flex flex-wrap justify-center gap-2"></ul>
+
+	<button type="button" data-page-next aria-label="Go to the next page" class={`ml-3 ${arrow}`}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="20"
+			height="20"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+		>
+			<path d="M9 6l6 6l-6 6"></path>
+		</svg>
+	</button>
+</nav>

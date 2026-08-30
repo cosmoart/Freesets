@@ -1,7 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
+import Pagination from '@/components/Pagination.astro'
 import categories from '@/assets/categories'
+import { PER_PAGE } from '@/scripts/paginate'
 
 const results = categories.flatMap((category) =>
 	category.assets.map((asset) => ({
@@ -66,9 +68,10 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 
 		<ul data-results class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 			{
-				results.map(({ asset, category, license }) => (
+				results.map(({ asset, category, license }, index) => (
 					<li
 						data-item
+						hidden={index >= PER_PAGE}
 						data-category={category.nameID}
 						data-license={license}
 						data-text={[asset.name, license, ...(asset.tags ?? [])].join(' ').toLowerCase()}
@@ -82,13 +85,18 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		<p data-empty hidden class="py-16 text-center text-lg text-zinc-500">
 			No resources match your search.
 		</p>
+
+		<Pagination />
 	</section>
 </Layout>
 
 <script>
+	import { paginate } from '@/scripts/paginate'
+
 	function setup() {
 		const form = document.querySelector<HTMLFormElement>('[data-filters]')
-		if (!form) return
+		const nav = document.querySelector<HTMLElement>('[data-pagination]')
+		if (!form || !nav) return
 
 		const query = form.elements.namedItem('q') as HTMLInputElement
 		const category = form.elements.namedItem('category') as HTMLSelectElement
@@ -101,10 +109,11 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		query.value = params.get('q') ?? ''
 		category.value = params.get('category') ?? ''
 		license.value = params.get('license') ?? ''
+		let page = Number(params.get('page')) || 1
 
-		function apply() {
+		function apply(scroll = false) {
 			const terms = query.value.toLowerCase().split(' ').filter(Boolean)
-			let visible = 0
+			const matches: HTMLLIElement[] = []
 
 			for (const item of items) {
 				const text = item.dataset.text ?? ''
@@ -114,23 +123,40 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 					(!license.value || item.dataset.license === license.value)
 
 				item.hidden = !match
-				if (match) visible++
+				if (match) matches.push(item)
 			}
 
-			count.textContent = `${visible} ${visible === 1 ? 'resource' : 'resources'} found`
-			empty.hidden = visible > 0
+			page = paginate(nav!, matches, page)
+			count.textContent = `${matches.length} ${matches.length === 1 ? 'resource' : 'resources'} found`
+			empty.hidden = matches.length > 0
 
 			const next = new URLSearchParams()
 			if (query.value) next.set('q', query.value)
 			if (category.value) next.set('category', category.value)
 			if (license.value) next.set('license', license.value)
+			if (page > 1) next.set('page', String(page))
+
 			history.replaceState(null, '', next.size ? `?${next}` : location.pathname)
+			if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
+		}
+
+		function reset() {
+			page = 1
+			apply()
 		}
 
 		form.addEventListener('submit', (event) => event.preventDefault())
-		form.addEventListener('input', apply)
-		form.addEventListener('change', apply)
-		form.addEventListener('reset', () => requestAnimationFrame(apply))
+		form.addEventListener('input', reset)
+		form.addEventListener('change', reset)
+		form.addEventListener('reset', () => requestAnimationFrame(reset))
+
+		nav.addEventListener('click', (event) => {
+			const button = (event.target as HTMLElement).closest<HTMLElement>('[data-page]')
+			if (!button) return
+			page = Number(button.dataset.page)
+			apply(true)
+		})
+
 		apply()
 	}
 
