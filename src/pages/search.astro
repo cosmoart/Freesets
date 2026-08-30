@@ -1,0 +1,138 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import AssetCard from '@/components/AssetCard.astro'
+import categories from '@/assets/categories'
+
+const results = categories.flatMap((category) =>
+	category.assets.map((asset) => ({
+		asset,
+		category,
+		license: (asset.license ?? asset.licence)?.trim() ?? ''
+	}))
+)
+
+const licenses = [...new Set(results.map(({ license }) => license).filter(Boolean))].sort((a, b) =>
+	a.localeCompare(b)
+)
+---
+
+<Layout
+	title="Search - Freesets"
+	description="Search across every free resource and tool collected in Freesets."
+	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
+>
+	<section class="grow">
+		<h1 class="mb-6 text-4xl font-semibold">Search</h1>
+
+		<form
+			data-filters
+			class="mb-8 flex flex-wrap items-center gap-3 rounded-lg border-2 border-zinc-200 p-4 dark:border-zinc-800"
+		>
+			<input
+				type="search"
+				name="q"
+				autocomplete="off"
+				placeholder="Name, tag or license..."
+				class="min-w-56 grow rounded-md border-2 border-zinc-200 px-3 py-2 outline-none focus:border-zinc-400 dark:border-zinc-700 dark:focus:border-zinc-500"
+			/>
+
+			<select
+				name="category"
+				aria-label="Category"
+				class="rounded-md border-2 border-zinc-200 px-3 py-2 dark:border-zinc-700 dark:bg-zinc-900"
+			>
+				<option value="">All categories</option>
+				{categories.map((category) => <option value={category.nameID}>{category.name}</option>)}
+			</select>
+
+			<select
+				name="license"
+				aria-label="License"
+				class="rounded-md border-2 border-zinc-200 px-3 py-2 dark:border-zinc-700 dark:bg-zinc-900"
+			>
+				<option value="">All licenses</option>
+				{licenses.map((license) => <option value={license}>{license}</option>)}
+			</select>
+
+			<button
+				type="reset"
+				class="rounded-md bg-zinc-900 px-4 py-2 text-white dark:bg-white dark:text-zinc-950"
+			>
+				Clear
+			</button>
+		</form>
+
+		<p data-count class="mb-6 text-zinc-500"></p>
+
+		<ul data-results class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+			{
+				results.map(({ asset, category, license }) => (
+					<li
+						data-item
+						data-category={category.nameID}
+						data-license={license}
+						data-text={[asset.name, license, ...(asset.tags ?? [])].join(' ').toLowerCase()}
+					>
+						<AssetCard asset={asset} color={category.color} />
+					</li>
+				))
+			}
+		</ul>
+
+		<p data-empty hidden class="py-16 text-center text-lg text-zinc-500">
+			No resources match your search.
+		</p>
+	</section>
+</Layout>
+
+<script>
+	function setup() {
+		const form = document.querySelector<HTMLFormElement>('[data-filters]')
+		if (!form) return
+
+		const query = form.elements.namedItem('q') as HTMLInputElement
+		const category = form.elements.namedItem('category') as HTMLSelectElement
+		const license = form.elements.namedItem('license') as HTMLSelectElement
+		const count = document.querySelector<HTMLParagraphElement>('[data-count]')!
+		const empty = document.querySelector<HTMLParagraphElement>('[data-empty]')!
+		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
+
+		const params = new URLSearchParams(location.search)
+		query.value = params.get('q') ?? ''
+		category.value = params.get('category') ?? ''
+		license.value = params.get('license') ?? ''
+
+		function apply() {
+			const terms = query.value.toLowerCase().split(' ').filter(Boolean)
+			let visible = 0
+
+			for (const item of items) {
+				const text = item.dataset.text ?? ''
+				const match =
+					terms.every((term) => text.includes(term)) &&
+					(!category.value || item.dataset.category === category.value) &&
+					(!license.value || item.dataset.license === license.value)
+
+				item.hidden = !match
+				if (match) visible++
+			}
+
+			count.textContent = `${visible} ${visible === 1 ? 'resource' : 'resources'} found`
+			empty.hidden = visible > 0
+
+			const next = new URLSearchParams()
+			if (query.value) next.set('q', query.value)
+			if (category.value) next.set('category', category.value)
+			if (license.value) next.set('license', license.value)
+			history.replaceState(null, '', next.size ? `?${next}` : location.pathname)
+		}
+
+		form.addEventListener('submit', (event) => event.preventDefault())
+		form.addEventListener('input', apply)
+		form.addEventListener('change', apply)
+		form.addEventListener('reset', () => requestAnimationFrame(apply))
+		apply()
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

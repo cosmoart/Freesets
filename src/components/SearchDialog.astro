@@ -1,0 +1,107 @@
+---
+import categories from '@/assets/categories'
+
+const current = Astro.url.pathname.split('/')[1]
+const scope = categories.find((category) => category.nameID === current)
+---
+
+<button
+	type="button"
+	data-search-open
+	class="flex w-full items-center gap-2 rounded-md border-2 border-zinc-300 px-4 py-2 text-zinc-500 transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500"
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="20"
+		height="20"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		aria-hidden="true"
+	>
+		<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+		<path d="M21 21l-6 -6"></path>
+	</svg>
+	<span>Search {scope ? scope.name.toLowerCase() : 'resources'}...</span>
+	<kbd class="ml-auto rounded border border-zinc-300 px-1.5 py-0.5 text-xs dark:border-zinc-700">
+		Ctrl K
+	</kbd>
+</button>
+
+<dialog
+	data-search-dialog
+	aria-label="Search resources"
+	class="m-auto w-[min(92vw,34rem)] rounded-lg bg-white p-0 text-zinc-950 backdrop:bg-zinc-950/60 dark:bg-zinc-900 dark:text-white"
+>
+	<form method="get" action="/search" class="flex flex-col gap-3 p-5">
+		<div class="flex items-center gap-3 border-b-2 border-zinc-200 pb-3 dark:border-zinc-700">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="22"
+				height="22"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"
+			>
+				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+				<path d="M21 21l-6 -6"></path>
+			</svg>
+			<input
+				type="search"
+				name="q"
+				autofocus
+				autocomplete="off"
+				placeholder="Search resources..."
+				class="w-full bg-transparent text-lg outline-none"
+			/>
+		</div>
+
+		{scope && <input type="hidden" name="category" value={scope.nameID} />}
+
+		<p class="text-sm text-zinc-500">
+			Press <kbd class="rounded border border-zinc-300 px-1 dark:border-zinc-700">Enter</kbd> to search
+			in {
+				scope ? (
+					<span style={`color: ${scope.color}`} class="font-semibold">
+						{scope.name}
+					</span>
+				) : (
+					<span class="font-semibold">all categories</span>
+				)
+			}
+		</p>
+	</form>
+</dialog>
+
+<script>
+	function openDialog() {
+		document.querySelector<HTMLDialogElement>('[data-search-dialog]')?.showModal()
+	}
+
+	function setup() {
+		const dialog = document.querySelector<HTMLDialogElement>('[data-search-dialog]')
+		const button = document.querySelector<HTMLButtonElement>('[data-search-open]')
+		if (!dialog || !button) return
+
+		button.addEventListener('click', openDialog)
+		dialog.addEventListener('click', (event) => {
+			if (event.target === dialog) dialog.close()
+		})
+		dialog.querySelector('form')?.addEventListener('submit', () => dialog.close())
+	}
+
+	document.addEventListener('astro:page-load', setup)
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key !== 'k' || !(event.ctrlKey || event.metaKey)) return
+		event.preventDefault()
+		openDialog()
+	})
+</script>
