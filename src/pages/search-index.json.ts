@@ -6,7 +6,9 @@ const index = categories.flatMap((category) =>
 		name: asset.name,
 		link: asset.link,
 		category: category.name,
-		color: category.color
+		nameID: category.nameID,
+		color: category.color,
+		meta: (asset.license ?? asset.licence)?.trim() || asset.tags?.[0] || ''
 	}))
 )
 

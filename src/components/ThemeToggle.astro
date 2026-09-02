@@ -7,7 +7,8 @@ const icon = 'size-4'
 	data-theme-toggle
 	aria-label="Toggle color theme"
 	title="Toggle color theme"
-	class="flex size-9 shrink-0 items-center justify-center rounded-md border-2 border-zinc-300 bg-zinc-100 transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500">
+	class="flex size-9 shrink-0 items-center justify-center rounded-md border-2 border-zinc-300 bg-zinc-100 transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500"
+>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 24 24"
@@ -17,9 +18,9 @@ const icon = 'size-4'
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		aria-hidden="true"
-		class={`${icon} dark:hidden`}>
-		<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
-		></path>
+		class={`${icon} dark:hidden`}
+	>
+		<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
 	</svg>
 
 	<svg
@@ -31,7 +32,8 @@ const icon = 'size-4'
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		aria-hidden="true"
-		class={`${icon} hidden dark:block`}>
+		class={`${icon} hidden dark:block`}
+	>
 		<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
 		<path
 			d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
@@ -60,10 +62,7 @@ const icon = 'size-4'
 
 			root.animate(
 				{
-					clipPath: [
-						`circle(0px at ${x}px ${y}px)`,
-						`circle(${radius}px at ${x}px ${y}px)`
-					]
+					clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`]
 				},
 				{
 					duration: 500,

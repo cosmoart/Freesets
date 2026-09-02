@@ -1,0 +1,171 @@
+---
+import categories from '@/assets/categories'
+
+const current = Astro.url.pathname.split('/')[1]
+---
+
+<nav
+	aria-label="Categories"
+	transition:name="categories"
+	class="sticky top-0 z-40 -mx-4 mb-7 bg-white/20 px-4 py-3 backdrop-blur-md dark:bg-zinc-950/20">
+	<div class="categories-slider" data-categories-slider data-at-start data-at-end>
+		<ul class="flex w-max gap-2 py-0.5">
+			{
+				categories.map((category) => (
+					<li>
+						<a
+							href={`/${category.nameID}`}
+							style={`--item-color: ${category.color}`}
+							data-current={category.nameID === current ? '' : undefined}
+							draggable="false"
+							class:list={[
+								'flex items-center gap-2.5 rounded-full bg-zinc-100 outline-2 -outline-offset-2 transition-colors dark:bg-zinc-900',
+								category.nameID === current
+									? 'outline-(--item-color)'
+									: 'outline-zinc-200 hover:outline-zinc-400 dark:outline-zinc-800 dark:hover:outline-zinc-600'
+							]}>
+							<span class="flex size-8 items-center justify-center rounded-full bg-(--item-color)">
+								<img
+									src={`/categories-icons/${category.nameID}.svg`}
+									alt=""
+									width="18"
+									height="18"
+									draggable="false"
+									class="w-4.5 invert"
+								/>
+							</span>
+							<span class="py-1 pe-3 text-sm font-medium whitespace-nowrap">
+								{category.name}
+							</span>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</nav>
+
+<style>
+	.categories-slider {
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		scrollbar-width: none;
+		cursor: grab;
+		-webkit-mask-image: linear-gradient(
+			to right,
+			transparent,
+			#000 var(--fade-start, 2rem),
+			#000 calc(100% - var(--fade-end, 2rem)),
+			transparent
+		);
+		mask-image: linear-gradient(
+			to right,
+			transparent,
+			#000 var(--fade-start, 2rem),
+			#000 calc(100% - var(--fade-end, 2rem)),
+			transparent
+		);
+		transition: mask-image 200ms ease;
+	}
+
+	.categories-slider::-webkit-scrollbar {
+		display: none;
+	}
+
+	.categories-slider[data-at-start] {
+		--fade-start: 0px;
+	}
+
+	.categories-slider[data-at-end] {
+		--fade-end: 0px;
+	}
+
+	.categories-slider[data-dragging] {
+		cursor: grabbing;
+		user-select: none;
+	}
+
+	.categories-slider[data-dragging] a {
+		pointer-events: none;
+	}
+</style>
+
+<script>
+	const DRAG_THRESHOLD = 5
+
+	function setup() {
+		const slider = document.querySelector<HTMLElement>('[data-categories-slider]')
+		if (!slider) return
+
+		const updateFades = () => {
+			const max = slider.scrollWidth - slider.clientWidth
+			slider.toggleAttribute('data-at-start', slider.scrollLeft <= 1)
+			slider.toggleAttribute('data-at-end', slider.scrollLeft >= max - 1)
+		}
+
+		slider.addEventListener('scroll', updateFades, { passive: true })
+		window.addEventListener('resize', updateFades)
+
+		slider
+			.querySelector<HTMLElement>('a[data-current]')
+			?.scrollIntoView({ block: 'nearest', inline: 'center' })
+
+		updateFades()
+
+		let pointerId: number | null = null
+		let startX = 0
+		let startScroll = 0
+		let dragged = false
+
+		slider.addEventListener('pointerdown', (event) => {
+			if (event.pointerType === 'touch' || event.button !== 0) return
+
+			pointerId = event.pointerId
+			startX = event.clientX
+			startScroll = slider.scrollLeft
+			dragged = false
+		})
+
+		slider.addEventListener('pointermove', (event) => {
+			if (event.pointerId !== pointerId) return
+
+			const distance = event.clientX - startX
+
+			if (!dragged) {
+				if (Math.abs(distance) < DRAG_THRESHOLD) return
+
+				dragged = true
+				slider.toggleAttribute('data-dragging', true)
+				slider.setPointerCapture(pointerId)
+			}
+
+			slider.scrollLeft = startScroll - distance
+		})
+
+		const stop = (event: PointerEvent) => {
+			if (event.pointerId !== pointerId) return
+
+			if (dragged) slider.releasePointerCapture(pointerId)
+			pointerId = null
+			slider.toggleAttribute('data-dragging', false)
+		}
+
+		slider.addEventListener('pointerup', stop)
+		slider.addEventListener('pointercancel', stop)
+
+		slider.addEventListener('click', (event) => {
+			if (dragged) {
+				event.preventDefault()
+				return
+			}
+
+			// The bar is pinned while scrolled but sits lower on the fresh page, so reset the
+			// scroll before the router captures the view transition snapshots.
+			if (window.scrollY > 0) window.scrollTo({ top: 0, behavior: 'instant' })
+		})
+
+		slider.addEventListener('dragstart', (event) => event.preventDefault())
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

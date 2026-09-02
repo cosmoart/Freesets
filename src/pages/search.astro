@@ -3,7 +3,8 @@ import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
 import Pagination from '@/components/Pagination.astro'
 import categories from '@/assets/categories'
-import { PER_PAGE } from '@/scripts/paginate'
+import { DEFAULT_PER_PAGE } from '@/scripts/view'
+import ViewControls from '@/components/ViewControls.astro'
 
 const results = categories.flatMap((category) =>
 	category.assets.map((asset) => ({
@@ -26,6 +27,8 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 	<section class="grow">
 		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
 			<h1 class="text-4xl font-semibold">Search</h1>
+
+			<ViewControls />
 
 			<Pagination />
 		</div>
@@ -70,12 +73,12 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 
 		<p data-count class="mb-6 text-zinc-500"></p>
 
-		<ul data-results class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+		<ul data-results class="flex flex-wrap">
 			{
 				results.map(({ asset, category, license }, index) => (
 					<li
 						data-item
-						hidden={index >= PER_PAGE}
+						hidden={index >= DEFAULT_PER_PAGE}
 						data-category={category.nameID}
 						data-license={license}
 						data-text={[asset.name, license, ...(asset.tags ?? [])].join(' ').toLowerCase()}
@@ -94,7 +97,16 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 
 <script>
 	import { paginate } from '@/scripts/paginate'
+	import { readPerPage } from '@/scripts/view'
 	import { matches as textMatches } from '@/scripts/filter'
+
+	let perPage = 0
+	let onPerPageChange: (() => void) | undefined
+
+	document.addEventListener('view:perpage', (event) => {
+		perPage = (event as CustomEvent<number>).detail
+		onPerPageChange?.()
+	})
 
 	function setup() {
 		const form = document.querySelector<HTMLFormElement>('[data-filters]')
@@ -113,6 +125,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		category.value = params.get('category') ?? ''
 		license.value = params.get('license') ?? ''
 		let page = Number(params.get('page')) || 1
+		perPage = readPerPage()
 
 		function apply(scroll = false) {
 			const search = query.value.trim()
@@ -128,7 +141,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 				if (match) matches.push(item)
 			}
 
-			page = paginate(nav!, matches, page)
+			page = paginate(nav!, matches, page, perPage)
 			count.textContent = `${matches.length} ${matches.length === 1 ? 'resource' : 'resources'} found`
 			empty.hidden = matches.length > 0
 
@@ -158,6 +171,11 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 			page = Number(button.dataset.page)
 			apply(true)
 		})
+
+		onPerPageChange = () => {
+			page = 1
+			apply()
+		}
 
 		apply()
 	}

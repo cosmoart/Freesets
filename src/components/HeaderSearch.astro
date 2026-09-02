@@ -1,8 +1,14 @@
+---
+const hint = 'flex items-center gap-1.5'
+const key =
+	'rounded border border-zinc-300 px-1 font-sans text-[10px] text-zinc-500 dark:border-zinc-700'
+---
+
 <div
 	data-header-search
 	class="relative w-56 shrink-0 transition-[width] duration-200 focus-within:w-full sm:focus-within:w-96"
 >
-	<form action="/search" method="get" class="flex items-center gap-2">
+	<form action="/search" method="get">
 		<label for="header-search" class="sr-only">Search all resources</label>
 		<div
 			class="flex h-9 w-full items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-100 px-3 text-sm transition-colors focus-within:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:focus-within:border-zinc-500"
@@ -18,36 +24,68 @@
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				aria-hidden="true"
-				class="shrink-0"
+				class="shrink-0 text-zinc-500"
 			>
 				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
 				<path d="M21 21l-6 -6"></path>
 			</svg>
+
+			<span
+				data-search-filter
+				hidden
+				class="flex shrink-0 items-center gap-1 rounded px-1.5 py-0.5 text-xs text-white"></span>
+
 			<input
 				id="header-search"
 				type="search"
 				name="q"
 				autocomplete="off"
+				role="combobox"
+				aria-expanded="false"
+				aria-controls="header-search-results"
 				placeholder="Search all resources..."
 				class="w-full min-w-0 bg-transparent text-zinc-950 outline-none placeholder:text-zinc-500 dark:text-white"
 			/>
 		</div>
 	</form>
 
-	<ul
-		data-search-results
+	<div
+		data-search-panel
 		hidden
-		class="absolute inset-x-0 top-full z-30 mt-2 max-h-80 overflow-y-auto rounded-md border-2 border-zinc-200 bg-white py-1 shadow-lg dark:border-zinc-700 dark:bg-zinc-900"
+		class="absolute top-full right-0 z-30 mt-2 w-[min(85vw,34rem)] min-w-full overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-950"
 	>
-	</ul>
+		<div
+			id="header-search-results"
+			data-search-results
+			role="listbox"
+			aria-label="Search results"
+			class="max-h-96 overflow-y-auto p-2"
+		>
+		</div>
+
+		<div
+			class="flex flex-wrap items-center gap-4 border-t border-zinc-200 px-3 py-2 text-[10px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800"
+		>
+			<span class={hint}><kbd class={key}>↑↓</kbd> Navigate</span>
+			<span class={hint}><kbd class={key}>⏎</kbd> Open</span>
+			<span class={hint}><kbd class={key}>Tab</kbd> Filter by category</span>
+		</div>
+	</div>
 </div>
 
 <script>
 	import { matches } from '@/scripts/filter'
 
-	type Entry = { name: string; link: string; category: string; color: string }
+	type Entry = {
+		name: string
+		link: string
+		category: string
+		nameID: string
+		color: string
+		meta: string
+	}
 
-	const MAX_RESULTS = 8
+	const MAX_RESULTS = 12
 	let index: Entry[] | undefined
 	let loading: Promise<Entry[]> | undefined
 
@@ -60,60 +98,195 @@
 		return loading
 	}
 
-	function resultItem(entry: Entry) {
-		const name = document.createElement('span')
-		name.textContent = entry.name
-		name.className = 'truncate'
+	function groupHeader(entry: Entry) {
+		const icon = document.createElement('img')
+		icon.src = `/categories-icons/${entry.nameID}.svg`
+		icon.alt = ''
+		icon.width = 12
+		icon.height = 12
+		icon.className = 'w-3 invert'
 
 		const badge = document.createElement('span')
-		badge.textContent = entry.category
-		badge.className = 'shrink-0 rounded px-1.5 py-0.5 text-xs text-white'
+		badge.className = 'flex size-5 shrink-0 items-center justify-center rounded'
 		badge.style.backgroundColor = entry.color
+		badge.append(icon)
 
-		const link = document.createElement('a')
-		link.href = entry.link
-		link.target = '_blank'
-		link.rel = 'noopener noreferrer nofollow'
-		link.className =
-			'flex items-center justify-between gap-3 px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-		link.append(name, badge)
+		const name = document.createElement('span')
+		name.textContent = entry.category
+		name.className = 'text-[10px] font-medium tracking-widest text-zinc-500 uppercase'
 
-		const item = document.createElement('li')
-		item.append(link)
-		return item
+		const rule = document.createElement('span')
+		rule.className = 'h-px grow bg-zinc-200 dark:bg-zinc-800'
+
+		const header = document.createElement('div')
+		header.className = 'flex items-center gap-2 px-2 pt-3 pb-1'
+		header.append(badge, name, rule)
+		return header
+	}
+
+	function resultRow(entry: Entry, position: number) {
+		const favicon = document.createElement('img')
+		favicon.src = `https://www.google.com/s2/favicons?domain=${entry.link}&sz=64`
+		favicon.alt = ''
+		favicon.width = 24
+		favicon.height = 24
+		favicon.loading = 'lazy'
+		favicon.className = 'size-6 shrink-0 rounded'
+
+		const name = document.createElement('span')
+		name.textContent = entry.name
+		name.className = 'truncate font-medium'
+
+		const meta = document.createElement('span')
+		meta.textContent = entry.meta
+		meta.className = 'ml-auto shrink-0 pl-4 text-sm text-zinc-500'
+
+		const row = document.createElement('a')
+		row.id = `header-search-option-${position}`
+		row.href = entry.link
+		row.target = '_blank'
+		row.rel = 'noopener noreferrer nofollow'
+		row.dataset.result = ''
+		row.setAttribute('role', 'option')
+		row.setAttribute('aria-selected', 'false')
+		row.className =
+			'flex items-center gap-3 rounded-md px-2 py-2 aria-selected:bg-zinc-100 dark:aria-selected:bg-zinc-900'
+		row.append(favicon, name, meta)
+		return row
 	}
 
 	function setup() {
 		const root = document.querySelector<HTMLElement>('[data-header-search]')
 		const input = root?.querySelector<HTMLInputElement>('input[name="q"]')
-		const results = root?.querySelector<HTMLUListElement>('[data-search-results]')
-		if (!root || !input || !results) return
+		const panel = root?.querySelector<HTMLElement>('[data-search-panel]')
+		const list = root?.querySelector<HTMLElement>('[data-search-results]')
+		const chip = root?.querySelector<HTMLElement>('[data-search-filter]')
+		if (!root || !input || !panel || !list || !chip) return
 
-		const close = () => (results.hidden = true)
+		let options: HTMLAnchorElement[] = []
+		let available: Entry[] = []
+		let filter = ''
+		let active = -1
 
-		async function render() {
+		function highlight(next: number) {
+			if (!options.length) return
+			active = (next + options.length) % options.length
+
+			options.forEach((option, position) =>
+				option.setAttribute('aria-selected', String(position === active))
+			)
+			input!.setAttribute('aria-activedescendant', options[active]!.id)
+			options[active]!.scrollIntoView({ block: 'nearest' })
+		}
+
+		function close() {
+			panel!.hidden = true
+			input!.setAttribute('aria-expanded', 'false')
+			input!.removeAttribute('aria-activedescendant')
+			active = -1
+		}
+
+		function render() {
+			const source = filter ? available.filter((entry) => entry.nameID === filter) : available
+			const shown = source.slice(0, MAX_RESULTS)
+
+			list!.replaceChildren()
+			options = []
+
+			const groups = new Map<string, Entry[]>()
+			for (const entry of shown) {
+				groups.set(entry.nameID, [...(groups.get(entry.nameID) ?? []), entry])
+			}
+
+			for (const entries of groups.values()) {
+				list!.append(groupHeader(entries[0]!))
+				for (const entry of entries) {
+					const row = resultRow(entry, options.length)
+					options.push(row)
+					list!.append(row)
+				}
+			}
+
+			panel!.hidden = shown.length === 0
+			input!.setAttribute('aria-expanded', String(shown.length > 0))
+			active = -1
+		}
+
+		function setFilter(nameID: string) {
+			filter = nameID
+			const entry = available.find((item) => item.nameID === nameID)
+
+			chip!.hidden = !entry
+			if (entry) {
+				chip!.textContent = entry.category
+				chip!.style.backgroundColor = entry.color
+			}
+
+			render()
+		}
+
+		async function search() {
 			const query = input!.value.trim()
-			if (!query) return close()
+
+			if (!query) {
+				available = []
+				setFilter('')
+				close()
+				return
+			}
 
 			const entries = index ?? (await loadIndex())
-			const found = entries
-				.filter((entry) => matches(entry.name.toLowerCase(), query))
-				.slice(0, MAX_RESULTS)
+			available = entries.filter((entry) => matches(entry.name.toLowerCase(), query))
 
-			results!.replaceChildren(...found.map(resultItem))
-			results!.hidden = found.length === 0
+			if (filter && !available.some((entry) => entry.nameID === filter)) {
+				setFilter('')
+				return
+			}
+
+			render()
 		}
 
 		input.addEventListener('focus', loadIndex, { once: true })
-		input.addEventListener('input', render)
-		input.addEventListener('focus', render)
-		input.form?.addEventListener('submit', close)
+		input.addEventListener('input', search)
+		input.addEventListener('focus', search)
 
-		root.addEventListener('keydown', (event) => {
-			if (event.key !== 'Escape') return
-			close()
-			input.blur()
+		input.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape') {
+				if (filter) {
+					setFilter('')
+					return
+				}
+				close()
+				input.blur()
+				return
+			}
+
+			if (event.key === 'Tab' && !panel.hidden) {
+				event.preventDefault()
+				const order = [...new Set(available.map((entry) => entry.nameID))]
+				const cycle = ['', ...order]
+				const step = event.shiftKey ? -1 : 1
+				const next = (cycle.indexOf(filter) + step + cycle.length) % cycle.length
+				setFilter(cycle[next]!)
+				return
+			}
+
+			if (panel.hidden) return
+
+			if (event.key === 'ArrowDown') {
+				event.preventDefault()
+				highlight(active + 1)
+			} else if (event.key === 'ArrowUp') {
+				event.preventDefault()
+				highlight(active - 1)
+			} else if (event.key === 'Enter' && active >= 0) {
+				event.preventDefault()
+				options[active]!.click()
+				close()
+			}
 		})
+
+		input.form?.addEventListener('submit', close)
 
 		document.addEventListener('click', (event) => {
 			if (!root.contains(event.target as Node)) close()

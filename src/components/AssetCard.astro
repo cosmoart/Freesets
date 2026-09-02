@@ -12,33 +12,25 @@ const licenseLink = asset.licenseLink ?? asset.licenceLink
 ---
 
 <article
-	class="group overflow-hidden outline outline-white/5 transition-all"
+	class="group relative flex h-full w-full flex-col overflow-hidden p-3 outline outline-white/5 transition-all hover:bg-white/5"
 	style={`--card-color: ${color}`}
 >
+	<a
+		href={asset.link}
+		target="_blank"
+		rel="noopener noreferrer nofollow"
+		aria-label={`Open ${asset.name}`}
+		class="absolute inset-0 z-10"></a>
+
 	<div class="relative">
-		<a
-			href={asset.link}
-			target="_blank"
-			rel="noopener noreferrer nofollow"
-			aria-label={`Open ${asset.name}`}
-		>
-			<img
-				src={asset.img}
-				alt={`${asset.name} web preview`}
-				width="384"
-				height="216"
-				loading="lazy"
-				class="inline-block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103"
-			/>
-			<img
-				src={`https://www.google.com/s2/favicons?domain=${asset.link}&sz=128`}
-				alt=""
-				width="44"
-				height="44"
-				loading="lazy"
-				class="absolute bottom-0 aspect-square w-11 rounded-tr-md object-cover"
-			/>
-		</a>
+		<img
+			src={asset.img}
+			alt={`${asset.name} web preview`}
+			width="384"
+			height="216"
+			loading="lazy"
+			class="inline-block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103"
+		/>
 
 		{
 			asset.tags && (
@@ -51,10 +43,18 @@ const licenseLink = asset.licenseLink ?? asset.licenceLink
 		}
 	</div>
 
-	<div class="flex flex-wrap items-center justify-between gap-2 p-5">
-		<a href={asset.link} target="_blank" rel="noopener noreferrer nofollow">
-			<h3 class="text-xl hover:underline">{asset.name}</h3>
-		</a>
+	<div class="mt-auto flex flex-wrap items-center justify-between gap-2 p-3">
+		<div class="flex items-center gap-2">
+			<img
+				src={`https://www.google.com/s2/favicons?domain=${asset.link}&sz=128`}
+				alt=""
+				width="44"
+				height="44"
+				loading="lazy"
+				class="aspect-square w-7 shrink-0 rounded-md object-cover"
+			/>
+			<h3 class="font-medium group-hover:underline">{asset.name}</h3>
+		</div>
 
 		{
 			license &&
@@ -64,7 +64,7 @@ const licenseLink = asset.licenseLink ?? asset.licenceLink
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 						title={asset.licenseDescription}
-						class="inline-block rounded-md bg-blue-700 px-2 py-1 text-[13px] tracking-wide text-white transition-transform hover:scale-105"
+						class="relative z-20 inline-block rounded-md bg-blue-700 px-2 py-1 text-[13px] tracking-wide text-white transition-transform hover:scale-105"
 					>
 						{license}
 					</a>

@@ -1,4 +1,5 @@
-export const PER_PAGE = 42
+import { DEFAULT_PER_PAGE } from '@/scripts/view'
+
 const SIBLINGS = 2
 
 const ACTIVE = 'pointer-events-none bg-blue-600 text-white'
@@ -21,13 +22,18 @@ function pageItem(page: number, current: number) {
 	return item
 }
 
-export function paginate(nav: HTMLElement, matches: HTMLElement[], page: number) {
-	const totalPages = Math.max(1, Math.ceil(matches.length / PER_PAGE))
+export function paginate(
+	nav: HTMLElement,
+	matches: HTMLElement[],
+	page: number,
+	perPage: number = DEFAULT_PER_PAGE
+) {
+	const totalPages = Math.max(1, Math.ceil(matches.length / perPage))
 	const current = Math.min(Math.max(page, 1), totalPages)
-	const start = (current - 1) * PER_PAGE
+	const start = (current - 1) * perPage
 
 	matches.forEach((item, index) => {
-		item.hidden = index < start || index >= start + PER_PAGE
+		item.hidden = index < start || index >= start + perPage
 	})
 
 	const pages = nav.querySelector<HTMLUListElement>('[data-pages]')!

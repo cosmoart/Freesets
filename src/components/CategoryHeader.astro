@@ -1,0 +1,96 @@
+---
+import type { Category } from '@/types'
+import Pagination from '@/components/Pagination.astro'
+import ViewControls from '@/components/ViewControls.astro'
+
+interface Props {
+	category: Category
+}
+
+const { category } = Astro.props
+---
+
+<div
+	transition:name="category-header"
+	class="overflow-hidden rounded-xl border border-zinc-200 bg-grid dark:border-zinc-800"
+>
+	<div class="flex flex-wrap items-stretch">
+		<div
+			class="flex w-32 shrink-0 items-center justify-center border-r border-zinc-200 bg-zinc-100/60 p-6 dark:border-zinc-800 dark:bg-zinc-900/60"
+		>
+			<span
+				transition:name="category-icon"
+				style={`--item-color: ${category.color}`}
+				class="flex size-14 items-center justify-center rounded-xl bg-(--item-color)"
+			>
+				<img
+					src={`/categories-icons/${category.nameID}.svg`}
+					alt=""
+					width="30"
+					height="30"
+					class="w-7.5 invert"
+				/>
+			</span>
+		</div>
+
+		<div class="flex min-w-64 grow flex-col justify-center gap-2 p-6">
+			<div class="flex flex-wrap items-center gap-3">
+				<h1 class="text-3xl font-bold">{category.name}</h1>
+				<span
+					class="rounded-md border border-zinc-200 px-2 py-0.5 text-[11px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800"
+				>
+					<span data-total>{category.assets.length}</span> resources
+				</span>
+			</div>
+
+			<p class="max-w-xl text-sm text-zinc-500">{category.description}</p>
+		</div>
+
+		<div
+			class="flex flex-col justify-center gap-3 border-l border-zinc-200 p-6 dark:border-zinc-800"
+		>
+			<label for="category-search" class="sr-only">Search in {category.name}</label>
+			<input
+				id="category-search"
+				data-category-search
+				type="search"
+				autocomplete="off"
+				placeholder={`Search in ${category.name}...`}
+				class="w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm outline-none focus:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:focus:border-zinc-600"
+			/>
+
+			<div class="flex flex-wrap items-end justify-between gap-4">
+				<div class="flex flex-wrap items-end gap-5">
+					<div class="flex flex-col gap-1">
+						<div
+							class="flex rounded-md border border-zinc-200 p-0.5 text-sm dark:border-zinc-800"
+							role="group"
+							aria-label="Sort resources"
+						>
+							{
+								[
+									['popular', 'Popular'],
+									['newest', 'Newest'],
+									['name', 'A–Z']
+								].map(([value, text]) => (
+									<button
+										type="button"
+										data-sort={value}
+										aria-pressed="false"
+										class="rounded px-3 py-1 transition-colors aria-pressed:bg-zinc-200 aria-pressed:font-medium dark:aria-pressed:bg-zinc-800"
+									>
+										{text}
+									</button>
+								))
+							}
+						</div>
+					</div>
+
+					<ViewControls color={category.color} />
+				</div>
+
+				<Pagination />
+			</div>
+		</div>
+	</div>
+</div>

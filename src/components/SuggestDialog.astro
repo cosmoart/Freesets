@@ -2,9 +2,21 @@
 import categories from '@/assets/categories'
 import { REPO } from '@/lib/github'
 
+const licenses = [
+	...new Set(
+		categories
+			.flatMap((category) =>
+				category.assets.map((asset) => (asset.license ?? asset.licence)?.trim())
+			)
+			.filter((license): license is string => Boolean(license))
+	)
+].sort((a, b) => a.localeCompare(b))
+
+const label = 'mb-2 block text-xs font-medium tracking-widest text-zinc-500 uppercase'
 const field =
-	'w-full rounded-md border-2 border-zinc-200 px-3 py-2 outline-none focus:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:focus:border-zinc-500'
-const label = 'mb-1 block text-sm text-zinc-500'
+	'w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm outline-none focus:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:focus:border-zinc-600'
+const ghost =
+	'rounded-md border border-zinc-200 px-4 py-2 text-sm transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-800'
 ---
 
 <button
@@ -31,75 +43,243 @@ const label = 'mb-1 block text-sm text-zinc-500'
 
 <dialog
 	data-suggest-dialog
-	aria-label="Suggest a resource"
-	class="m-auto max-h-[90dvh] w-[min(92vw,34rem)] overflow-y-auto rounded-lg bg-white p-0 text-zinc-950 backdrop:bg-zinc-950/60 lg:w-[min(92vw,46rem)] dark:bg-zinc-900 dark:text-white"
+	aria-label="Submit a resource"
+	class="m-auto max-h-[90dvh] w-[min(94vw,46rem)] overflow-y-auto rounded-xl border border-zinc-200 bg-white p-0 text-zinc-950 backdrop:bg-zinc-950/70 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white"
 >
-	<form data-suggest-form data-repo={REPO} class="grid gap-x-4 gap-y-3 p-6 lg:grid-cols-2">
-		<div class="lg:col-span-2">
-			<h2 class="text-2xl font-semibold">Suggest a resource</h2>
-			<p class="mt-1 text-sm text-zinc-500">
-				This opens a pre-filled issue on GitHub. You need a GitHub account to submit it.
-			</p>
-		</div>
+	<form data-suggest-form data-repo={REPO}>
+		<header
+			class="flex items-start justify-between gap-4 border-b border-zinc-200 p-6 dark:border-zinc-800"
+		>
+			<div>
+				<h2 class="text-xl font-semibold">Submit a resource</h2>
+				<p class="mt-1 text-sm text-zinc-500">
+					We'll open a prefilled issue on GitHub — you just press submit there.
+				</p>
+			</div>
 
-		<div>
-			<label for="suggest-name" class={label}>Name *</label>
-			<input id="suggest-name" name="name" required class={field} placeholder="Tabler Icons" />
-		</div>
-
-		<div>
-			<label for="suggest-link" class={label}>Link *</label>
-			<input
-				id="suggest-link"
-				name="link"
-				type="url"
-				required
-				class={field}
-				placeholder="https://tabler.io/icons"
-			/>
-		</div>
-
-		<div>
-			<label for="suggest-category" class={label}>Category *</label>
-			<select id="suggest-category" name="category" required class={field}>
-				{categories.map((category) => <option value={category.name}>{category.name}</option>)}
-			</select>
-		</div>
-
-		<div>
-			<label for="suggest-license" class={label}>License</label>
-			<input id="suggest-license" name="license" class={field} placeholder="MIT" />
-		</div>
-
-		<div class="lg:col-span-2">
-			<label for="suggest-tags" class={label}>Tags</label>
-			<input id="suggest-tags" name="tags" class={field} placeholder="SVG, Brands" />
-		</div>
-
-		<div class="lg:col-span-2">
-			<label for="suggest-notes" class={label}>Notes</label>
-			<textarea id="suggest-notes" name="notes" rows="2" class={field}></textarea>
-		</div>
-
-		<div class="mt-1 flex justify-end gap-3 lg:col-span-2">
 			<button
 				type="button"
 				data-suggest-close
-				class="rounded-md border-2 border-zinc-200 px-4 py-2 dark:border-zinc-700"
+				aria-label="Close"
+				class="flex size-8 shrink-0 items-center justify-center rounded-md border border-zinc-200 text-zinc-500 transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-800"
 			>
-				Cancel
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="16"
+					height="16"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					aria-hidden="true"
+				>
+					<path d="M18 6l-12 12"></path>
+					<path d="M6 6l12 12"></path>
+				</svg>
 			</button>
-			<button
-				type="submit"
-				class="rounded-md bg-zinc-900 px-4 py-2 text-white dark:bg-white dark:text-zinc-950"
-			>
-				Open issue on GitHub
-			</button>
+		</header>
+
+		<div class="flex flex-col gap-5 p-6">
+			<div class="grid gap-4 sm:grid-cols-2">
+				<div>
+					<label for="suggest-name" class={label}>Name</label>
+					<input id="suggest-name" name="name" required class={field} placeholder="Lucide" />
+				</div>
+
+				<div>
+					<label for="suggest-link" class={label}>URL</label>
+					<input
+						id="suggest-link"
+						name="link"
+						type="url"
+						required
+						class={field}
+						placeholder="https://lucide.dev"
+					/>
+				</div>
+			</div>
+
+			<fieldset>
+				<legend class={label}>Category</legend>
+				<div class="flex flex-wrap gap-1">
+					{
+						categories.map((category, index) => (
+							<label class="cursor-pointer">
+								<input
+									type="radio"
+									name="category"
+									value={category.name}
+									checked={index === 0}
+									class="peer sr-only"
+								/>
+								<span
+									style={`--item-color: ${category.color}`}
+									class="flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-100 py-1 pr-3 pl-1 text-sm transition-colors peer-checked:border-blue-500 peer-checked:ring-1 peer-checked:ring-blue-500 peer-focus-visible:border-zinc-500 dark:border-zinc-800 dark:bg-zinc-950"
+								>
+									<span class="flex size-6 items-center justify-center rounded-full bg-(--item-color)">
+										<img
+											src={`/categories-icons/${category.nameID}.svg`}
+											alt=""
+											width="14"
+											height="14"
+											class="w-3.5 invert"
+										/>
+									</span>
+									{category.name}
+								</span>
+							</label>
+						))
+					}
+				</div>
+			</fieldset>
+
+			<div class="grid gap-4 sm:grid-cols-2">
+				<div>
+					<label for="suggest-license" class={label}>License</label>
+					<select id="suggest-license" name="license" class={field}>
+						<option value="">Unknown</option>
+						{licenses.map((license) => <option value={license}>{license}</option>)}
+					</select>
+				</div>
+
+				<div>
+					<label for="suggest-github" class={label}>Your GitHub</label>
+					<input
+						id="suggest-github"
+						name="github"
+						class={field}
+						placeholder="@yourhandle"
+						autocomplete="off"
+					/>
+				</div>
+			</div>
+
+			<div class="grid gap-4 sm:grid-cols-2">
+				<div>
+					<span class={label}>Tags</span>
+					<div
+						data-tags
+						class="flex flex-wrap items-center gap-2 rounded-md border border-zinc-200 bg-zinc-50 px-2 py-2 focus-within:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:focus-within:border-zinc-600"
+					>
+						<input
+							data-tag-input
+							type="text"
+							aria-label="Add a tag"
+							placeholder="Add a tag..."
+							autocomplete="off"
+							class="min-w-32 grow bg-transparent px-1 text-sm outline-none"
+						/>
+					</div>
+				</div>
+
+				<div>
+					<label for="suggest-notes" class={label}>Notes</label>
+					<textarea
+						id="suggest-notes"
+						name="notes"
+						rows="3"
+						class={field}
+						placeholder="Anything worth knowing about this resource"></textarea>
+				</div>
+			</div>
 		</div>
+
+		<footer
+			class="flex flex-wrap items-center justify-between gap-4 border-t border-zinc-200 p-6 dark:border-zinc-800"
+		>
+			<p class="font-mono text-xs tracking-wider text-zinc-500 uppercase">
+				&rarr; github.com/{REPO}/issues/new
+			</p>
+
+			<div class="flex gap-3">
+				<button type="button" data-suggest-close class={ghost}>Cancel</button>
+				<button
+					type="submit"
+					class="flex items-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90 dark:bg-white dark:text-zinc-950"
+				>
+					Open issue
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="14"
+						height="14"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+					>
+						<path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+						<path d="M11 13l9 -9"></path>
+						<path d="M15 4h5v5"></path>
+					</svg>
+				</button>
+			</div>
+		</footer>
 	</form>
 </dialog>
 
 <script>
+	function readTags(container: HTMLElement) {
+		return [...container.querySelectorAll<HTMLElement>('[data-tag]')].map(
+			(tag) => tag.dataset.tag ?? ''
+		)
+	}
+
+	function addTag(container: HTMLElement, input: HTMLInputElement, value: string) {
+		const name = value.trim().replace(/,+$/, '')
+		if (!name || readTags(container).some((tag) => tag.toLowerCase() === name.toLowerCase())) return
+
+		const remove = document.createElement('button')
+		remove.type = 'button'
+		remove.setAttribute('aria-label', `Remove ${name}`)
+		remove.textContent = '×'
+		remove.className = 'text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-white'
+		remove.addEventListener('click', () => {
+			chip.remove()
+			input.focus()
+		})
+
+		const chip = document.createElement('span')
+		chip.dataset.tag = name
+		chip.className =
+			'flex items-center gap-1.5 rounded border border-zinc-200 bg-zinc-100 py-0.5 pr-1.5 pl-2 text-sm dark:border-zinc-700 dark:bg-zinc-800'
+		chip.append(name, remove)
+
+		container.insertBefore(chip, input)
+	}
+
+	function setupTags(form: HTMLFormElement) {
+		const container = form.querySelector<HTMLElement>('[data-tags]')
+		const input = container?.querySelector<HTMLInputElement>('[data-tag-input]')
+		if (!container || !input) return
+
+		container.addEventListener('click', (event) => {
+			if (event.target === container) input.focus()
+		})
+
+		input.addEventListener('keydown', (event) => {
+			if (event.key === 'Enter' || event.key === ',') {
+				event.preventDefault()
+				addTag(container, input, input.value)
+				input.value = ''
+				return
+			}
+
+			if (event.key === 'Backspace' && !input.value) {
+				container.querySelector<HTMLElement>('[data-tag]:last-of-type')?.remove()
+			}
+		})
+
+		input.addEventListener('blur', () => {
+			addTag(container, input, input.value)
+			input.value = ''
+		})
+	}
+
 	function buildIssueUrl(form: HTMLFormElement) {
 		const data = new FormData(form)
 		const value = (key: string) => String(data.get(key) ?? '').trim()
@@ -107,16 +287,23 @@ const label = 'mb-1 block text-sm text-zinc-500'
 		const name = value('name')
 		const category = value('category')
 		const license = value('license')
-		const tags = value('tags')
+		const github = value('github').replace(/^@/, '')
 		const notes = value('notes')
+		const container = form.querySelector<HTMLElement>('[data-tags]')
+		const tags = container ? readTags(container) : []
 
 		const body = [
 			`**Name:** ${name}`,
-			`**Link:** ${value('link')}`,
+			`**URL:** ${value('link')}`,
 			`**Category:** ${category}`,
 			license && `**License:** ${license}`,
-			tags && `**Tags:** ${tags}`,
-			notes && `\n### Notes\n\n${notes}`
+			tags.length && `**Tags:** ${tags.join(', ')}`,
+			github && `**Submitted by:** @${github}`,
+			notes &&
+				`
+### Notes
+
+${notes}`
 		]
 			.filter(Boolean)
 			.join('\n')
@@ -136,19 +323,24 @@ const label = 'mb-1 block text-sm text-zinc-500'
 		const form = document.querySelector<HTMLFormElement>('[data-suggest-form]')
 		if (!dialog || !button || !form) return
 
+		setupTags(form)
+
 		button.addEventListener('click', () => dialog.showModal())
 		dialog.addEventListener('click', (event) => {
 			if (event.target === dialog) dialog.close()
 		})
-		form
-			.querySelector<HTMLButtonElement>('[data-suggest-close]')
-			?.addEventListener('click', () => dialog.close())
+
+		for (const close of form.querySelectorAll<HTMLButtonElement>('[data-suggest-close]')) {
+			close.addEventListener('click', () => dialog.close())
+		}
 
 		form.addEventListener('submit', (event) => {
 			event.preventDefault()
 			window.open(buildIssueUrl(form), '_blank', 'noopener')
 			dialog.close()
+
 			form.reset()
+			for (const chip of form.querySelectorAll('[data-tag]')) chip.remove()
 		})
 	}
 

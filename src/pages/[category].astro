@@ -2,9 +2,9 @@
 import type { GetStaticPaths } from 'astro'
 import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
-import Pagination from '@/components/Pagination.astro'
+import CategoryHeader from '@/components/CategoryHeader.astro'
 import categories from '@/assets/categories'
-import { PER_PAGE } from '@/scripts/paginate'
+import { DEFAULT_PER_PAGE } from '@/scripts/view'
 
 export const getStaticPaths = (() =>
 	categories.map((category) => ({
@@ -21,34 +21,18 @@ const { category } = Astro.props
 	image={`https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/${category.nameID}`}
 	themeColor={category.color}
 >
-	<section class="grow">
-		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
-			<h1 class="text-4xl font-semibold">
-				{category.name}
-				<span class="text-lg text-zinc-500">{category.assets.length}</span>
-			</h1>
+	<section class="flex grow flex-col gap-6">
+		<CategoryHeader category={category} />
 
-			<div class="flex flex-wrap items-center justify-end gap-3">
-				<Pagination />
-
-				<label for="category-search" class="sr-only">Search in {category.name}</label>
-				<input
-					id="category-search"
-					data-category-search
-					type="search"
-					autocomplete="off"
-					placeholder={`Search in ${category.name}...`}
-					class="w-56 shrink-0 rounded-md border-2 border-zinc-200 px-3 py-1.5 text-sm outline-none focus:border-zinc-400 dark:border-zinc-700 dark:focus:border-zinc-500"
-				/>
-			</div>
-		</div>
-
-		<ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+		<ul data-results class="flex flex-wrap">
 			{
 				category.assets.map((asset, index) => (
 					<li
 						data-item
-						hidden={index >= PER_PAGE}
+						hidden={index >= DEFAULT_PER_PAGE}
+						data-order={asset.order}
+						data-id={asset.id}
+						data-name={asset.name.toLowerCase()}
 						data-text={[asset.name, asset.license ?? asset.licence, ...(asset.tags ?? [])]
 							.filter(Boolean)
 							.join(' ')
@@ -68,7 +52,22 @@ const { category } = Astro.props
 
 <script>
 	import { paginate } from '@/scripts/paginate'
+	import { readPerPage, readSort, saveSort, type Sort } from '@/scripts/view'
+
+	const compare: Record<Sort, (a: HTMLElement, b: HTMLElement) => number> = {
+		popular: (a, b) => Number(b.dataset.order) - Number(a.dataset.order),
+		newest: (a, b) => Number(b.dataset.id) - Number(a.dataset.id),
+		name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '')
+	}
 	import { matches } from '@/scripts/filter'
+
+	let perPage = 0
+	let onPerPageChange: (() => void) | undefined
+
+	document.addEventListener('view:perpage', (event) => {
+		perPage = (event as CustomEvent<number>).detail
+		onPerPageChange?.()
+	})
 
 	function setup() {
 		const nav = document.querySelector<HTMLElement>('[data-pagination]')
@@ -76,11 +75,24 @@ const { category } = Astro.props
 		if (!nav || !search) return
 
 		const empty = document.querySelector<HTMLParagraphElement>('[data-empty]')!
+		const list = document.querySelector<HTMLUListElement>('[data-results]')!
 		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
+		const sortButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')]
 
 		const params = new URLSearchParams(location.search)
 		search.value = params.get('q') ?? ''
 		let page = Number(params.get('page')) || 1
+		perPage = readPerPage()
+		let sort = readSort()
+
+		function applySort() {
+			items.sort(compare[sort])
+			list.append(...items)
+
+			for (const button of sortButtons) {
+				button.setAttribute('aria-pressed', String(button.dataset.sort === sort))
+			}
+		}
 
 		function apply(scroll = false) {
 			const query = search!.value.trim()
@@ -92,7 +104,7 @@ const { category } = Astro.props
 				if (match) found.push(item)
 			}
 
-			page = paginate(nav!, found, page)
+			page = paginate(nav!, found, page, perPage)
 			empty.hidden = found.length > 0
 
 			const next = new URLSearchParams()
@@ -114,6 +126,23 @@ const { category } = Astro.props
 			page = Number(button.dataset.page)
 			apply(true)
 		})
+
+		for (const button of sortButtons) {
+			button.addEventListener('click', () => {
+				sort = button.dataset.sort as Sort
+				saveSort(sort)
+				applySort()
+				page = 1
+				apply()
+			})
+		}
+
+		onPerPageChange = () => {
+			page = 1
+			apply()
+		}
+
+		applySort()
 
 		apply()
 	}

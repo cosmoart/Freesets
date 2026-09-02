@@ -67,7 +67,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 		<div
 			class="relative z-10 mb-(--footer-height) bg-white shadow-[0_1rem_2rem_rgba(0,0,0,0.25)] dark:bg-zinc-950"
 		>
-			<div class="mx-auto flex min-h-dvh max-w-380 flex-col p-4">
+			{
+				themeColor && (
+					<div aria-hidden="true" class="accent-blobs" style={`--accent: ${themeColor}`}>
+						<span />
+						<span />
+					</div>
+				)
+			}
+
+			<div class="relative mx-auto flex min-h-dvh max-w-380 flex-col p-4">
 				<NavBar />
 				<main class="flex grow flex-col">
 					<slot />

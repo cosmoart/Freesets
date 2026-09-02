@@ -16,6 +16,7 @@ export interface Asset {
 
 export interface Category {
 	name: string
+	description: string
 	color: string
 	nameID: string
 	assets: Asset[]

@@ -1,0 +1,120 @@
+---
+import { MAX_COLUMNS, MIN_COLUMNS, PER_PAGE_OPTIONS } from '@/scripts/view'
+
+interface Props {
+	color?: string
+}
+
+const { color } = Astro.props
+
+const steps = Array.from(
+	{ length: MAX_COLUMNS - MIN_COLUMNS + 1 },
+	(_, index) => MIN_COLUMNS + index
+)
+
+const bars = (count: number) => {
+	const width = (24 - (count - 1) * 3) / count
+	return Array.from({ length: count }, (_, index) => ({ x: index * (width + 3), width }))
+}
+---
+
+<div
+	class="view-controls flex items-center gap-5"
+	style={color ? `--control-color: ${color}` : undefined}
+>
+	<div class="hidden flex-col gap-1 lg:flex">
+		<div class="flex items-end justify-between">
+			{
+				steps.map((count) => (
+					<button
+						type="button"
+						data-column-step={count}
+						aria-pressed="false"
+						aria-label={`${count} columns`}
+						class="cursor-pointer px-0.5 text-zinc-400 transition-colors hover:text-zinc-600 aria-pressed:text-(--control-color) dark:text-zinc-600 dark:hover:text-zinc-400"
+					>
+						<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+							{bars(count).map((bar) => (
+								<rect x={bar.x} y="3" width={bar.width} height="18" rx="1.5" />
+							))}
+						</svg>
+					</button>
+				))
+			}
+		</div>
+
+		<input
+			type="range"
+			data-columns
+			aria-label="Columns"
+			min={MIN_COLUMNS}
+			max={MAX_COLUMNS}
+			step="1"
+			class="column-slider w-28"
+		/>
+	</div>
+
+	<label class="flex flex-col gap-1">
+		<select
+			data-per-page
+			aria-label="Items per page"
+			class="cursor-pointer rounded-md border-2 border-zinc-200 bg-zinc-100 px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900"
+		>
+			{PER_PAGE_OPTIONS.map((option) => <option value={option}>{option} / page</option>)}
+		</select>
+	</label>
+</div>
+
+<script>
+	import { readColumns, readPerPage, saveColumns, savePerPage } from '@/scripts/view'
+
+	function setup() {
+		const results = document.querySelector<HTMLElement>('[data-results]')
+		if (!results) return
+
+		const columns = document.querySelector<HTMLInputElement>('[data-columns]')
+		const perPage = document.querySelector<HTMLSelectElement>('[data-per-page]')
+
+		if (columns) {
+			const steps = [...document.querySelectorAll<HTMLButtonElement>('[data-column-step]')]
+			const min = Number(columns.min)
+			const max = Number(columns.max)
+
+			const apply = (value: number) => {
+				results.style.setProperty('--user-columns', String(value))
+				columns.style.setProperty('--progress', `${((value - min) / (max - min)) * 100}%`)
+
+				for (const step of steps) {
+					step.setAttribute('aria-pressed', String(Number(step.dataset.columnStep) === value))
+				}
+			}
+
+			const change = (value: number) => {
+				columns.value = String(value)
+				apply(value)
+				saveColumns(value)
+			}
+
+			columns.value = String(readColumns())
+			apply(Number(columns.value))
+
+			columns.addEventListener('input', () => change(Number(columns.value)))
+
+			for (const step of steps) {
+				step.addEventListener('click', () => change(Number(step.dataset.columnStep)))
+			}
+		}
+
+		if (perPage) {
+			perPage.value = String(readPerPage())
+
+			perPage.addEventListener('change', () => {
+				const value = Number(perPage.value)
+				savePerPage(value)
+				document.dispatchEvent(new CustomEvent('view:perpage', { detail: value }))
+			})
+		}
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>
