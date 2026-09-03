@@ -4,6 +4,8 @@ export interface Asset {
 	link: string
 	img: string
 	order: number
+	/** ISO date of when the resource was added. Optional: no entry carries one yet. */
+	added?: string
 	tags?: string[]
 	license?: string
 	licenseLink?: string

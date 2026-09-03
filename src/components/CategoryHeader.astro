@@ -12,17 +12,14 @@ const { category } = Astro.props
 
 <div
 	transition:name="category-header"
-	class="overflow-hidden rounded-xl border border-zinc-200 bg-grid dark:border-zinc-800"
->
+	class="overflow-hidden rounded-xl border border-zinc-200 bg-grid dark:border-zinc-800">
 	<div class="flex flex-wrap items-stretch">
 		<div
-			class="flex w-32 shrink-0 items-center justify-center border-r border-zinc-200 bg-zinc-100/60 p-6 dark:border-zinc-800 dark:bg-zinc-900/60"
-		>
+			class="flex w-32 shrink-0 items-center justify-center border-r border-zinc-200 bg-zinc-100/60 p-4 dark:border-zinc-800 dark:bg-zinc-900/60">
 			<span
 				transition:name="category-icon"
 				style={`--item-color: ${category.color}`}
-				class="flex size-14 items-center justify-center rounded-xl bg-(--item-color)"
-			>
+				class="flex size-14 items-center justify-center rounded-xl bg-(--item-color)">
 				<img
 					src={`/categories-icons/${category.nameID}.svg`}
 					alt=""
@@ -33,12 +30,11 @@ const { category } = Astro.props
 			</span>
 		</div>
 
-		<div class="flex min-w-64 grow flex-col justify-center gap-2 p-6">
+		<div class="flex min-w-64 grow flex-col justify-center gap-2 p-4">
 			<div class="flex flex-wrap items-center gap-3">
 				<h1 class="text-3xl font-bold">{category.name}</h1>
 				<span
-					class="rounded-md border border-zinc-200 px-2 py-0.5 text-[11px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800"
-				>
+					class="rounded-md border border-zinc-200 px-2 py-0.5 text-[11px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800">
 					<span data-total>{category.assets.length}</span> resources
 				</span>
 			</div>
@@ -47,8 +43,7 @@ const { category } = Astro.props
 		</div>
 
 		<div
-			class="flex flex-col justify-center gap-3 border-l border-zinc-200 p-6 dark:border-zinc-800"
-		>
+			class="flex flex-col justify-center gap-3 border-l border-zinc-200 p-4 dark:border-zinc-800">
 			<label for="category-search" class="sr-only">Search in {category.name}</label>
 			<input
 				id="category-search"
@@ -65,8 +60,7 @@ const { category } = Astro.props
 						<div
 							class="flex rounded-md border border-zinc-200 p-0.5 text-sm dark:border-zinc-800"
 							role="group"
-							aria-label="Sort resources"
-						>
+							aria-label="Sort resources">
 							{
 								[
 									['popular', 'Popular'],
@@ -77,8 +71,7 @@ const { category } = Astro.props
 										type="button"
 										data-sort={value}
 										aria-pressed="false"
-										class="rounded px-3 py-1 transition-colors aria-pressed:bg-zinc-200 aria-pressed:font-medium dark:aria-pressed:bg-zinc-800"
-									>
+										class="rounded px-3 py-1 transition-colors aria-pressed:bg-zinc-200 aria-pressed:font-medium dark:aria-pressed:bg-zinc-800">
 										{text}
 									</button>
 								))

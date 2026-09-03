@@ -1,0 +1,27 @@
+---
+import AssetCard from '@/components/AssetCard.astro'
+import { RECENT_DAYS, recentlyAdded } from '@/scripts/recent'
+
+const { dated, entries } = recentlyAdded()
+---
+
+<section class="flex flex-col gap-5">
+	<header class="flex flex-wrap items-center gap-3">
+		<h2 class="text-2xl font-semibold">Recently added</h2>
+		<span
+			class="rounded-md border border-zinc-200 px-2 py-0.5 text-[11px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800"
+		>
+			{dated ? `Last ${RECENT_DAYS} days` : 'Latest additions'}
+		</span>
+	</header>
+
+	<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+		{
+			entries.map(({ asset, category }) => (
+				<li>
+					<AssetCard asset={asset} color={category.color} />
+				</li>
+			))
+		}
+	</ul>
+</section>

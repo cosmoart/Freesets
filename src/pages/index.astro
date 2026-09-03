@@ -1,6 +1,8 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import categories from '@/assets/categories'
+import RecentlyAdded from '@/components/RecentlyAdded.astro'
+import CategoryGrid from '@/components/CategoryGrid.astro'
 
 const description =
 	'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.'
@@ -12,11 +14,17 @@ const total = categories.reduce((acc, category) => acc + category.assets.length,
 	description={description}
 	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
 >
-	<section class="flex grow flex-col items-center justify-center gap-6 py-16 text-center">
-		<h1 class="text-6xl font-semibold sm:text-8xl">Freesets</h1>
-		<p class="max-w-2xl text-lg text-balance text-zinc-600 dark:text-zinc-400">{description}</p>
-		<p class="text-sm text-zinc-500">
-			{total} free resources across {categories.length} categories
-		</p>
-	</section>
+	<div class="flex grow flex-col gap-16 pb-16">
+		<section class="flex flex-col items-center justify-center gap-6 py-16 text-center">
+			<h1 class="text-6xl font-semibold sm:text-8xl">Freesets</h1>
+			<p class="max-w-2xl text-lg text-balance text-zinc-600 dark:text-zinc-400">{description}</p>
+			<p class="text-sm text-zinc-500">
+				{total} free resources across {categories.length} categories
+			</p>
+		</section>
+
+		<RecentlyAdded />
+
+		<CategoryGrid />
+	</div>
 </Layout>

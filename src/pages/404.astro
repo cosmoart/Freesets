@@ -1,5 +1,18 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+import categories from '@/assets/categories'
+
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
+
+// Spread across the band, using the palette the categories already own.
+const blobs = [
+	{ color: '#2b6dff', x: 8 },
+	{ color: '#5345f7', x: 24 },
+	{ color: '#d41cf1', x: 40 },
+	{ color: '#ffaa1b', x: 58 },
+	{ color: '#21c95f', x: 74 },
+	{ color: '#14b8a6', x: 90 }
+]
 ---
 
 <Layout
@@ -7,14 +20,94 @@ import Layout from '@/layouts/Layout.astro'
 	description="The page you are looking for does not exist."
 	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
 >
-	<section class="flex grow flex-col items-center justify-center gap-4 py-16 text-center">
-		<h1 class="text-6xl font-semibold">404</h1>
-		<p class="text-lg text-zinc-600 dark:text-zinc-400">This page does not exist.</p>
-		<a
-			href="/"
-			class="rounded-md bg-zinc-900 px-4 py-2 text-white dark:bg-white dark:text-zinc-950"
+	<section
+		class="relative flex grow flex-col items-center justify-center gap-6 bg-grid py-20 text-center"
+	>
+		<div aria-hidden="true" class="error-blobs">
+			{blobs.map((blob) => <span style={`--blob: ${blob.color}; --x: ${blob.x}%`} />)}
+		</div>
+
+		<p
+			class="relative rounded-full border border-zinc-300 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-zinc-500 uppercase dark:border-zinc-700"
 		>
-			Back home
-		</a>
+			Error 404
+		</p>
+
+		<h1
+			class="relative bg-gradient-to-b from-zinc-950 to-zinc-500 bg-clip-text text-7xl font-semibold text-transparent sm:text-9xl dark:from-white dark:to-zinc-500"
+		>
+			Nothing here
+		</h1>
+
+		<p class="relative max-w-lg text-lg text-balance text-zinc-600 dark:text-zinc-400">
+			This page moved, or it never existed. The other {total} resources are still where you left them.
+		</p>
+
+		<div class="relative mt-2 flex flex-wrap items-center justify-center gap-3">
+			<a
+				href="/"
+				class="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-85 dark:bg-white dark:text-zinc-950"
+			>
+				Back to home
+			</a>
+
+			<a
+				href="/#categories"
+				class="flex items-center gap-2 rounded-md border-2 border-zinc-300 px-4 py-2 text-sm font-medium transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500"
+			>
+				Browse all categories
+				<svg
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					aria-hidden="true"
+					class="size-4"
+				>
+					<path d="M5 12h14M13 6l6 6-6 6"></path>
+				</svg>
+			</a>
+		</div>
 	</section>
 </Layout>
+
+<style>
+	/* Sits behind the nav, so it is pulled above the section and clipped to its own box. The
+	   mask dissolves the bottom edge: overflow alone cuts the blur off in a hard line. */
+	.error-blobs {
+		--blob-opacity: 0.1;
+		position: absolute;
+		inset-inline: -1rem;
+		top: -13rem;
+		height: 22rem;
+		overflow: hidden;
+		pointer-events: none;
+		-webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
+		mask-image: linear-gradient(to bottom, #000 35%, transparent);
+	}
+
+	:global(.dark) .error-blobs {
+		--blob-opacity: 0.18;
+	}
+
+	.error-blobs > span {
+		position: absolute;
+		top: 0;
+		left: var(--x);
+		width: 30rem;
+		height: 16rem;
+		translate: -50% 0;
+		border-radius: 9999px;
+		background: var(--blob);
+		opacity: var(--blob-opacity);
+		filter: blur(120px);
+	}
+
+	@media (prefers-reduced-transparency: reduce) {
+		.error-blobs {
+			display: none;
+		}
+	}
+</style>

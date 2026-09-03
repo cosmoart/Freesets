@@ -1,10 +1,33 @@
 ---
 import categories from '@/assets/categories'
-import { REPO } from '@/lib/github'
+import { REPO, getStars, formatStars } from '@/lib/github'
 
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
-const year = new Date().getFullYear()
-const link = 'text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-white'
+const owner = REPO.split('/')[0]
+const stars = await getStars()
+const built = new Date()
+
+const repo = `https://github.com/${REPO}`
+const issue = (labels: string) => `${repo}/issues/new?labels=${labels}`
+
+const contribute = [
+	{ name: 'Submit a resource', href: issue('resource') },
+	{ name: 'Report a broken link', href: issue('broken-link') },
+	{ name: 'Suggest a category', href: issue('category') },
+	{ name: 'Open an issue', href: `${repo}/issues` }
+]
+
+const project = [
+	{ name: 'Source code', href: repo },
+	{ name: 'Changelog', href: `${repo}/releases` },
+	{ name: 'Sponsor', href: `https://github.com/sponsors/${owner}` }
+]
+
+const heading = 'mb-4 text-xs font-medium tracking-widest text-zinc-500 uppercase'
+const link =
+	'inline-flex items-center gap-1.5 text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-white'
+const button =
+	'flex items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-50 px-3 py-2 text-sm font-medium transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-950 dark:hover:border-zinc-500'
 ---
 
 <footer
@@ -12,83 +35,280 @@ const link = 'text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:tex
 	class="fixed inset-x-0 bottom-0 z-0 bg-zinc-100 text-zinc-950 dark:bg-zinc-900 dark:text-white"
 >
 	<div class="mx-auto max-w-380 p-6 md:px-10">
-		<div class="flex flex-wrap justify-between gap-10">
-			<div class="max-w-sm">
-				<p class="text-2xl font-semibold">Freesets</p>
-				<p class="mt-2 text-sm text-zinc-500">
-					A collection of {total} free resources and tools for developers and artists, across {
-						categories.length
-					} categories.
+		<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[20rem_1fr_auto_auto] lg:gap-16">
+			<div class="flex flex-col items-start">
+				<p class="flex items-center gap-2.5 text-2xl font-semibold">
+					<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" class="size-6.5">
+						<rect width="11" height="11" x="0" y="0" rx="2.5" fill="currentColor"></rect>
+						<rect
+							width="11"
+							height="11"
+							x="13"
+							y="0"
+							rx="2.5"
+							class="fill-zinc-400 dark:fill-zinc-700"></rect>
+						<rect
+							width="11"
+							height="11"
+							x="0"
+							y="13"
+							rx="2.5"
+							class="fill-zinc-400 dark:fill-zinc-700"></rect>
+						<rect width="11" height="11" x="13" y="13" rx="2.5" fill="#2b6dff"></rect>
+					</svg>
+					Freesets
 				</p>
+
+				<p class="mt-4 text-sm text-zinc-500">
+					{total} free resources for developers and artists, kept in one open-source list. No accounts,
+					no paywalls, no affiliate links.
+				</p>
+
+				<div class="mt-6 flex flex-wrap gap-3">
+					<a href={repo} target="_blank" rel="noopener noreferrer" class={button}>
+						<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4">
+							<path
+								d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+							></path>
+						</svg>
+						Star on GitHub
+						{
+							stars !== null && (
+								<span class="rounded bg-zinc-200 px-1.5 text-sm tabular-nums dark:bg-zinc-800">
+									{formatStars(stars)}
+								</span>
+							)
+						}
+					</a>
+
+					<a
+						href={`https://github.com/sponsors/${owner}`}
+						target="_blank"
+						rel="noopener noreferrer"
+						class={button}
+					>
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+							class="size-4"
+						>
+							<path
+								d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+							></path>
+						</svg>
+						Sponsor
+					</a>
+				</div>
 			</div>
 
-			<div class="flex flex-wrap gap-10 sm:gap-16">
-				<div>
-					<p class="mb-3 text-sm font-semibold">Explore</p>
-					<ul class="flex flex-col gap-2 text-sm">
-						<li><a href="/" class={link}>Home</a></li>
-						<li><a href="/search" class={link}>Search</a></li>
-						<li><a href={`/${categories[0]!.nameID}`} class={link}>Browse categories</a></li>
-					</ul>
-				</div>
+			<div>
+				<p class={heading}>Categories</p>
 
-				<div>
-					<p class="mb-3 text-sm font-semibold">Project</p>
-					<ul class="flex flex-col gap-2 text-sm">
-						<li>
-							<a
-								href={`https://github.com/${REPO}`}
-								target="_blank"
-								rel="noopener noreferrer"
-								class={link}
+				<ul
+					class="grid grid-cols-[minmax(0,10rem)] gap-x-8 gap-y-2 text-sm sm:grid-cols-[repeat(2,minmax(0,10rem))]"
+				>
+					{
+						categories.map((category) => (
+							<li>
+								<a href={`/${category.nameID}`} class={`${link} w-full`}>
+									<span
+										style={`--item-color: ${category.color}`}
+										class="flex size-5 shrink-0 items-center justify-center rounded bg-(--item-color)"
+									>
+										<img
+											src={`/categories-icons/${category.nameID}.svg`}
+											alt=""
+											width="12"
+											height="12"
+											loading="lazy"
+											class="w-3 invert"
+										/>
+									</span>
+									{category.name}
+									<span class="ml-auto text-xs text-zinc-400 tabular-nums dark:text-zinc-600">
+										{category.assets.length}
+									</span>
+								</a>
+							</li>
+						))
+					}
+
+					<li>
+						<a href="/search" class={`${link} w-full`}>
+							<span
+								class="flex size-5 shrink-0 items-center justify-center rounded bg-zinc-400 dark:bg-zinc-700"
 							>
-								GitHub
-							</a>
-						</li>
-						<li>
-							<a
-								href={`https://github.com/${REPO}/issues/new?labels=suggest`}
-								target="_blank"
-								rel="noopener noreferrer"
-								class={link}
+								<svg
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3"
+									stroke-linecap="round"
+									aria-hidden="true"
+									class="size-3 text-white"
+								>
+									<path d="M4 6h16M4 12h16M4 18h16"></path>
+								</svg>
+							</span>
+							Everything
+							<span class="ml-auto text-xs text-zinc-400 tabular-nums dark:text-zinc-600"
+								>{total}</span
 							>
-								Suggest a resource
-							</a>
-						</li>
-						<li>
-							<a
-								href={`https://github.com/${REPO}/issues`}
-								target="_blank"
-								rel="noopener noreferrer"
-								class={link}
-							>
-								Report an issue
-							</a>
-						</li>
-					</ul>
-				</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<p class={heading}>Contribute</p>
+
+				<ul class="flex flex-col gap-2 text-sm">
+					{
+						contribute.map((item) => (
+							<li>
+								<a href={item.href} target="_blank" rel="noopener noreferrer" class={link}>
+									{item.name}
+									<svg
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										aria-hidden="true"
+										class="size-3 opacity-60"
+									>
+										<path d="M7 17 17 7M9 7h8v8" />
+									</svg>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+
+			<div>
+				<p class={heading}>Project</p>
+
+				<ul class="flex flex-col gap-2 text-sm">
+					{
+						project.map((item) => (
+							<li>
+								<a href={item.href} target="_blank" rel="noopener noreferrer" class={link}>
+									{item.name}
+									<svg
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										aria-hidden="true"
+										class="size-3 opacity-60"
+									>
+										<path d="M7 17 17 7M9 7h8v8" />
+									</svg>
+								</a>
+							</li>
+						))
+					}
+				</ul>
 			</div>
 		</div>
 
-		<p class="mt-10 border-t border-zinc-300 pt-5 text-sm text-zinc-500 dark:border-zinc-700">
-			&copy; {year} Freesets &middot; Made by Cosmo
+		<p
+			class="mt-10 flex items-start gap-3 rounded-lg border border-zinc-300 p-4 text-sm text-zinc-500 dark:border-zinc-700"
+		>
+			<svg
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"
+				class="mt-0.5 size-4 shrink-0"
+			>
+				<circle cx="12" cy="12" r="10"></circle>
+				<path d="M12 16v-4M12 8h.01"></path>
+			</svg>
+			Every resource here is free to use, but licences differ. Freesets records the licence each author
+			states and links to it &mdash; always check the original terms before shipping commercially. Listings
+			are not endorsements, and no listing is paid for.
 		</p>
+
+		<div
+			class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-zinc-300 pt-5 text-sm text-zinc-500 dark:border-zinc-700"
+		>
+			<p>&copy; {built.getFullYear()} Freesets. Built by Cosmo.</p>
+
+			<p class="flex items-center gap-2 text-xs tracking-widest uppercase">
+				<span class="size-1.5 rounded-full bg-green-500"></span>
+				Updated
+				<time data-built datetime={built.toISOString()}>
+					{built.toLocaleDateString('en', { day: 'numeric', month: 'short', year: 'numeric' })}
+				</time>
+			</p>
+		</div>
 	</div>
 </footer>
 
+<style>
+	[data-footer][data-static] {
+		position: static;
+	}
+</style>
+
 <script>
 	let observer: ResizeObserver | undefined
+	let controller: AbortController | undefined
 
 	function setup() {
 		const footer = document.querySelector<HTMLElement>('[data-footer]')
 		if (!footer) return
 
-		const sync = () =>
-			document.documentElement.style.setProperty('--footer-height', `${footer.offsetHeight}px`)
+		// Baked at build time, so turn it into a relative label in the browser rather than
+		// shipping a "today" that goes stale until the next deploy.
+		const built = footer.querySelector<HTMLTimeElement>('[data-built]')
+
+		if (built) {
+			const days = Math.floor((Date.now() - Date.parse(built.dateTime)) / 86_400_000)
+
+			if (days >= 0) {
+				built.textContent =
+					days === 0
+						? 'today'
+						: new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(-days, 'day')
+			}
+		}
+
+		// The footer is revealed by scrolling past the page, which only works while it fits on
+		// screen. Taller than the viewport and its top would be unreachable, so fall back to a
+		// regular footer in normal flow.
+		const sync = () => {
+			const fits = footer.offsetHeight < window.innerHeight
+
+			footer.toggleAttribute('data-static', !fits)
+			document.documentElement.style.setProperty(
+				'--footer-height',
+				fits ? `${footer.offsetHeight}px` : '0px'
+			)
+		}
 
 		observer?.disconnect()
 		observer = new ResizeObserver(sync)
 		observer.observe(footer)
+
+		// A shorter viewport can flip that decision without the footer itself resizing.
+		controller?.abort()
+		controller = new AbortController()
+		window.addEventListener('resize', sync, { signal: controller.signal })
+
 		sync()
 	}
 

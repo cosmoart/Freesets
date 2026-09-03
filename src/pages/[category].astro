@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro'
 import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
 import CategoryHeader from '@/components/CategoryHeader.astro'
+import EmptyState from '@/components/EmptyState.astro'
 import categories from '@/assets/categories'
 import { DEFAULT_PER_PAGE } from '@/scripts/view'
 
@@ -33,6 +34,11 @@ const { category } = Astro.props
 						data-order={asset.order}
 						data-id={asset.id}
 						data-name={asset.name.toLowerCase()}
+						data-label={asset.name}
+						data-link={asset.link}
+						data-meta={[asset.license ?? asset.licence, ...(asset.tags ?? [])]
+							.filter(Boolean)
+							.join(String.fromCharCode(32, 183, 32))}
 						data-text={[asset.name, asset.license ?? asset.licence, ...(asset.tags ?? [])]
 							.filter(Boolean)
 							.join(' ')
@@ -44,9 +50,7 @@ const { category } = Astro.props
 			}
 		</ul>
 
-		<p data-empty hidden class="py-16 text-center text-lg text-zinc-500">
-			No resources match your search.
-		</p>
+		<EmptyState scope={category.name} />
 	</section>
 </Layout>
 
@@ -60,6 +64,7 @@ const { category } = Astro.props
 		name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '')
 	}
 	import { matches } from '@/scripts/filter'
+	import { closestTo, renderEmpty } from '@/scripts/empty'
 
 	let perPage = 0
 	let onPerPageChange: (() => void) | undefined
@@ -74,7 +79,7 @@ const { category } = Astro.props
 		const search = document.querySelector<HTMLInputElement>('[data-category-search]')
 		if (!nav || !search) return
 
-		const empty = document.querySelector<HTMLParagraphElement>('[data-empty]')!
+		const empty = document.querySelector<HTMLElement>('[data-empty]')!
 		const list = document.querySelector<HTMLUListElement>('[data-results]')!
 		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
 		const sortButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')]
@@ -106,6 +111,19 @@ const { category } = Astro.props
 
 			page = paginate(nav!, found, page, perPage)
 			empty.hidden = found.length > 0
+
+			if (found.length === 0) {
+				renderEmpty(empty, {
+					query,
+					scope: empty.dataset.scope ?? 'this category',
+					closest: closestTo(items, query),
+					onTerm: (term) => {
+						search!.value = term
+						page = 1
+						apply()
+					}
+				})
+			}
 
 			const next = new URLSearchParams()
 			if (query) next.set('q', query)

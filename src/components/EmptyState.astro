@@ -1,0 +1,73 @@
+---
+interface Props {
+	/** Where the "closest" matches come from, e.g. a category name. */
+	scope?: string
+}
+
+const { scope } = Astro.props
+---
+
+<div
+	data-empty
+	data-scope={scope}
+	hidden
+	class="flex flex-col items-center gap-5 py-16 text-center"
+>
+	<span
+		class="flex size-16 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-400 dark:bg-zinc-900 dark:text-zinc-600"
+	>
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+			class="size-7"
+		>
+			<circle cx="11" cy="11" r="7"></circle>
+			<path d="m20 20-3.5-3.5M4 20 20 4"></path>
+		</svg>
+	</span>
+
+	<h2 class="text-3xl font-semibold">No resources match your search</h2>
+
+	<p data-empty-hint class="max-w-xl text-balance text-zinc-500"></p>
+
+	<div class="flex flex-wrap items-center justify-center gap-3">
+		<button
+			type="button"
+			data-empty-remove
+			hidden
+			class="cursor-pointer rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-85 dark:bg-white dark:text-zinc-950"
+		>
+		</button>
+
+		<a
+			data-empty-all
+			href="/search"
+			class="rounded-md border-2 border-zinc-300 px-4 py-2 text-sm font-medium transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500"
+		>
+			Search all categories
+		</a>
+	</div>
+
+	<p
+		data-empty-terms
+		hidden
+		class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-zinc-500"
+	>
+	</p>
+
+	<section data-empty-closest hidden class="mt-10 w-full text-left">
+		<p class="mb-3 flex flex-wrap items-center gap-3">
+			<span data-empty-closest-title class="font-semibold"></span>
+			<span
+				data-empty-closest-note
+				class="text-[11px] font-medium tracking-widest text-zinc-500 uppercase"></span>
+		</p>
+
+		<ul data-empty-closest-list class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></ul>
+	</section>
+</div>

@@ -5,6 +5,7 @@ import Pagination from '@/components/Pagination.astro'
 import categories from '@/assets/categories'
 import { DEFAULT_PER_PAGE } from '@/scripts/view'
 import ViewControls from '@/components/ViewControls.astro'
+import EmptyState from '@/components/EmptyState.astro'
 
 const results = categories.flatMap((category) =>
 	category.assets.map((asset) => ({
@@ -81,6 +82,11 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 						hidden={index >= DEFAULT_PER_PAGE}
 						data-category={category.nameID}
 						data-license={license}
+						data-label={asset.name}
+						data-link={asset.link}
+						data-meta={[license, ...(asset.tags ?? [])]
+							.filter(Boolean)
+							.join(String.fromCharCode(32, 183, 32))}
 						data-text={[asset.name, license, ...(asset.tags ?? [])].join(' ').toLowerCase()}
 					>
 						<AssetCard asset={asset} color={category.color} />
@@ -89,9 +95,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 			}
 		</ul>
 
-		<p data-empty hidden class="py-16 text-center text-lg text-zinc-500">
-			No resources match your search.
-		</p>
+		<EmptyState />
 	</section>
 </Layout>
 
@@ -99,6 +103,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 	import { paginate } from '@/scripts/paginate'
 	import { readPerPage } from '@/scripts/view'
 	import { matches as textMatches } from '@/scripts/filter'
+	import { closestTo, renderEmpty, type EmptyFilter } from '@/scripts/empty'
 
 	let perPage = 0
 	let onPerPageChange: (() => void) | undefined
@@ -117,7 +122,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		const category = form.elements.namedItem('category') as HTMLSelectElement
 		const license = form.elements.namedItem('license') as HTMLSelectElement
 		const count = document.querySelector<HTMLParagraphElement>('[data-count]')!
-		const empty = document.querySelector<HTMLParagraphElement>('[data-empty]')!
+		const empty = document.querySelector<HTMLElement>('[data-empty]')!
 		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
 
 		const params = new URLSearchParams(location.search)
@@ -127,23 +132,67 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		let page = Number(params.get('page')) || 1
 		perPage = readPerPage()
 
+		/** Every item passing the active filters, optionally ignoring one of them. */
+		function select(search: string, skip?: 'category' | 'license') {
+			return items.filter(
+				(item) =>
+					textMatches(item.dataset.text ?? '', search) &&
+					(skip === 'category' || !category.value || item.dataset.category === category.value) &&
+					(skip === 'license' || !license.value || item.dataset.license === license.value)
+			)
+		}
+
+		function describe(select: HTMLSelectElement) {
+			return select.options[select.selectedIndex]?.text ?? select.value
+		}
+
 		function apply(scroll = false) {
 			const search = query.value.trim()
-			const matches: HTMLLIElement[] = []
+			const matches = select(search)
+			const found = new Set(matches)
 
-			for (const item of items) {
-				const match =
-					textMatches(item.dataset.text ?? '', search) &&
-					(!category.value || item.dataset.category === category.value) &&
-					(!license.value || item.dataset.license === license.value)
-
-				item.hidden = !match
-				if (match) matches.push(item)
-			}
+			for (const item of items) item.hidden = !found.has(item)
 
 			page = paginate(nav!, matches, page, perPage)
 			count.textContent = `${matches.length} ${matches.length === 1 ? 'resource' : 'resources'} found`
 			empty.hidden = matches.length > 0
+
+			if (matches.length === 0) {
+				const filters: EmptyFilter[] = []
+
+				if (license.value) {
+					filters.push({
+						label: describe(license),
+						count: select(search, 'license').length,
+						clear: () => {
+							license.value = ''
+							reset()
+						}
+					})
+				}
+
+				if (category.value) {
+					filters.push({
+						label: describe(category),
+						count: select(search, 'category').length,
+						clear: () => {
+							category.value = ''
+							reset()
+						}
+					})
+				}
+
+				renderEmpty(empty, {
+					query: search,
+					scope: category.value ? describe(category) : 'all resources',
+					filters,
+					closest: closestTo(items, search),
+					onTerm: (term) => {
+						query.value = term
+						reset()
+					}
+				})
+			}
 
 			const next = new URLSearchParams()
 			if (query.value) next.set('q', query.value)
