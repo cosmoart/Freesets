@@ -5,7 +5,9 @@
 		"name": "Squoosh",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703696273/freesets/tools/tix7qdzgrhabjjyyhqfd.webp",
 		"link": "https://squoosh.app",
-		"tags": ["Image optimizer"]
+		"tags": [
+			"Image optimizer"
+		]
 	},
 	{
 		"id": 2,
@@ -13,7 +15,10 @@
 		"name": "Shots",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703007575/freesets/tools/shots.so__mntgnr.webp",
 		"link": "https://shots.so",
-		"tags": ["Mockups", "Open Graph"]
+		"tags": [
+			"Mockups",
+			"Open Graph"
+		]
 	},
 	{
 		"id": 3,
@@ -21,7 +26,9 @@
 		"name": "Layoutit Grid",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705765960/freesets/tools/zyht5hsanjj3u8x90urj.webp",
 		"link": "https://grid.layoutit.com",
-		"tags": ["Grid generator"]
+		"tags": [
+			"Grid generator"
+		]
 	},
 	{
 		"id": 4,
@@ -29,7 +36,9 @@
 		"name": "Monkeytype",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564906/freesets/tools/fvrsm72jltufe17ldcjr.webp",
 		"link": "https://monkeytype.com",
-		"tags": ["Typing test"]
+		"tags": [
+			"Typing test"
+		]
 	},
 	{
 		"id": 5,
@@ -37,7 +46,9 @@
 		"name": "RapidAPI",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707611793/freesets/tools/boexcwzmhjfb7xzwwynl.webp",
 		"link": "https://rapidapi.com/collections",
-		"tags": ["API Collections"]
+		"tags": [
+			"API Collections"
+		]
 	},
 	{
 		"id": 6,
@@ -45,7 +56,9 @@
 		"name": "JS Benchmark",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703007858/freesets/tools/jsbenchmark.com__s9tkth.webp",
 		"link": "https://jsbenchmark.com",
-		"tags": ["Benchmark"]
+		"tags": [
+			"Benchmark"
+		]
 	},
 	{
 		"id": 7,
@@ -53,7 +66,9 @@
 		"name": "Chalk.ist",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705069474/freesets/tools/to4nrd4wroizt5yyhwhi.webp",
 		"link": "https://chalk.ist",
-		"tags": ["Code screenshots"]
+		"tags": [
+			"Code screenshots"
+		]
 	},
 	{
 		"id": 8,
@@ -61,7 +76,9 @@
 		"name": "CodeImage",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705069400/freesets/tools/ttljqybxfi5rp3yzmczy.webp",
 		"link": "https://app.codeimage.dev",
-		"tags": ["Code screenshots"]
+		"tags": [
+			"Code screenshots"
+		]
 	},
 	{
 		"id": 9,
@@ -69,7 +86,9 @@
 		"name": "Excalidraw",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703696414/freesets/tools/x8cznjuhqty30kj7aabe.webp",
 		"link": "https://excalidraw.com",
-		"tags": ["Whiteboard"]
+		"tags": [
+			"Whiteboard"
+		]
 	},
 	{
 		"id": 10,
@@ -77,7 +96,9 @@
 		"name": "Tally",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703458941/freesets/tools/aur2ldiowy6y25j7mgmy.webp",
 		"link": "https://tally.so",
-		"tags": ["Forms"]
+		"tags": [
+			"Forms"
+		]
 	},
 	{
 		"id": 11,
@@ -85,7 +106,9 @@
 		"name": "Component Party",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703460201/freesets/tools/plhgkf9he7pzz9mcs2ac.webp",
 		"link": "https://component-party.dev",
-		"tags": ["Framework comparator"]
+		"tags": [
+			"Framework comparator"
+		]
 	},
 	{
 		"id": 12,
@@ -93,7 +116,9 @@
 		"name": "npmx",
 		"link": "https://npmx.dev/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
-		"tags": ["npm browser"]
+		"tags": [
+			"npm browser"
+		]
 	},
 	{
 		"id": 13,
@@ -101,7 +126,9 @@
 		"name": "Slidev",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705069666/freesets/tools/kvaydsvk4smo54hq0fgd.webp",
 		"link": "https://sli.dev",
-		"tags": ["Code to slides"]
+		"tags": [
+			"Code to slides"
+		]
 	},
 	{
 		"id": 14,
@@ -109,7 +136,9 @@
 		"name": "Glyphy",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704379365/freesets/tools/diets4yvtwotg7yvi8do.webp",
 		"link": "https://glyphy.io",
-		"tags": ["Font generator"]
+		"tags": [
+			"Font generator"
+		]
 	},
 	{
 		"id": 15,
@@ -117,7 +146,9 @@
 		"name": "CSS Code Quality",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
 		"link": "https://www.projectwallace.com/css-code-quality",
-		"tags": ["CSS analyzer"]
+		"tags": [
+			"CSS analyzer"
+		]
 	},
 	{
 		"id": 16,
@@ -125,7 +156,9 @@
 		"name": "Transform tools",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707069166/freesets/tools/hvxjb3ktzko8xztb1qcl.webp",
 		"link": "https://transform.tools/",
-		"tags": ["Transform data"]
+		"tags": [
+			"Transform data"
+		]
 	},
 	{
 		"id": 17,
@@ -133,7 +166,9 @@
 		"name": "Squish",
 		"link": "https://squish.addy.ie/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/squish",
-		"tags": ["Image optimizer"]
+		"tags": [
+			"Image optimizer"
+		]
 	},
 	{
 		"id": 18,
@@ -141,7 +176,9 @@
 		"name": "Starlight",
 		"link": "https://starlight.astro.build/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/starlight",
-		"tags": ["Build documentation sites"]
+		"tags": [
+			"Build documentation sites"
+		]
 	},
 	{
 		"id": 19,
@@ -149,7 +186,9 @@
 		"name": "JSON Crack",
 		"link": "https://jsoncrack.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/json-crack",
-		"tags": ["JSON Visualizer"]
+		"tags": [
+			"JSON Visualizer"
+		]
 	},
 	{
 		"id": 20,
@@ -157,7 +196,9 @@
 		"name": "eraser.io",
 		"link": "https://www.eraser.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/eraser-io",
-		"tags": ["Canvas"]
+		"tags": [
+			"Canvas"
+		]
 	},
 	{
 		"id": 21,
@@ -165,7 +206,9 @@
 		"name": "draw.io",
 		"link": "https://www.draw.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/draw-io",
-		"tags": ["Flowcharts"]
+		"tags": [
+			"Flowcharts"
+		]
 	},
 	{
 		"id": 22,
@@ -173,7 +216,9 @@
 		"name": "SVGOMG",
 		"link": "https://svgomg.net/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/svgomg",
-		"tags": ["SVG optimizer"]
+		"tags": [
+			"SVG optimizer"
+		]
 	},
 	{
 		"id": 23,
@@ -181,7 +226,9 @@
 		"name": "Freeter",
 		"link": "https://freeter.io/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/freeter",
-		"tags": ["Organizer"],
+		"tags": [
+			"Organizer"
+		],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/FreeterApp/Freeter/blob/master/COPYING"
 	},
@@ -193,7 +240,9 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/rayso",
 		"license": "MIT",
 		"licenseLink": "https://github.com/raycast/ray-so/blob/main/LICENSE",
-		"tags": ["Code screenshots"]
+		"tags": [
+			"Code screenshots"
+		]
 	},
 	{
 		"id": 25,
@@ -203,7 +252,10 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/responsively",
 		"license": "AGPL-3.0",
 		"licenseLink": "https://github.com/responsively-org/responsively-app/blob/main/LICENSE",
-		"tags": ["Responsive design", "App"]
+		"tags": [
+			"Responsive design",
+			"App"
+		]
 	},
 	{
 		"id": 26,
@@ -211,7 +263,10 @@
 		"name": "Format JSON Online",
 		"link": "https://formatjsononline.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/format-json-online",
-		"tags": ["JSON", "Mockups"]
+		"tags": [
+			"JSON",
+			"Mockups"
+		]
 	},
 	{
 		"id": 27,
@@ -219,7 +274,9 @@
 		"name": "imgto.xyz",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imgtoasdasdqw",
 		"link": "https://imgto.xyz/",
-		"tags": ["Image optimizer"]
+		"tags": [
+			"Image optimizer"
+		]
 	},
 	{
 		"id": 28,
@@ -227,7 +284,9 @@
 		"name": "og.new",
 		"link": "https://og.new/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/usxfnxgq0vrxfvkk7qpf",
-		"tags": ["Open Graph"]
+		"tags": [
+			"Open Graph"
+		]
 	},
 	{
 		"id": 29,
@@ -235,7 +294,9 @@
 		"name": "tldraw",
 		"link": "https://www.tldraw.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
-		"tags": ["Whiteboard"]
+		"tags": [
+			"Whiteboard"
+		]
 	},
 	{
 		"id": 30,
@@ -243,7 +304,9 @@
 		"name": "Shape Dividers",
 		"link": "https://www.shapedivider.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
-		"tags": ["Section separator"]
+		"tags": [
+			"Section separator"
+		]
 	},
 	{
 		"id": 31,
@@ -251,7 +314,10 @@
 		"name": "PostSpark",
 		"link": "https://postspark.app/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/postspark",
-		"tags": ["Open Graph", "Mockups"]
+		"tags": [
+			"Open Graph",
+			"Mockups"
+		]
 	},
 	{
 		"id": 32,
@@ -259,7 +325,10 @@
 		"name": "Bundlephobia",
 		"link": "https://bundlephobia.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/bundlephobia",
-		"tags": ["NPM", "Performance"]
+		"tags": [
+			"NPM",
+			"Performance"
+		]
 	},
 	{
 		"id": 33,
@@ -267,7 +336,10 @@
 		"name": "Can I use",
 		"link": "https://caniuse.com/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/caniuse",
-		"tags": ["Browser Support", "CSS"]
+		"tags": [
+			"Browser Support",
+			"CSS"
+		]
 	},
 	{
 		"id": 34,
@@ -277,7 +349,10 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/hoppscotch",
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
-		"tags": ["API", "Postman"]
+		"tags": [
+			"API",
+			"Postman"
+		]
 	},
 	{
 		"id": 35,
@@ -287,7 +362,9 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/alg0dev",
 		"license": "MIT",
 		"licenseLink": "https://github.com/midudev/alg0.dev?tab=readme-ov-file#license",
-		"tags": ["Algorithm Visualizer"]
+		"tags": [
+			"Algorithm Visualizer"
+		]
 	},
 	{
 		"id": 36,
@@ -295,6 +372,23 @@
 		"name": "OpenGraph.to",
 		"link": "https://www.opengraph.to/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/opengraphto",
-		"tags": ["Open Graph"]
+		"tags": [
+			"Open Graph"
+		]
+	},
+	{
+		"id": 37,
+		"order": 85,
+		"name": "Uwarp",
+		"link": "https://www.uwarp.design/",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/uwarp",
+		"license": "Free",
+		"tags": [
+			"UI",
+			"Design",
+			"SVG",
+			"Color",
+			"Icons"
+		]
 	}
 ]
