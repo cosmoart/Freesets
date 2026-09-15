@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 100,
 		"name": "Realtime Colors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/realtime-colors",
+		"img": "https://cdn.freesets.dev/colors/realtime-colors.webp",
 		"link": "https://www.realtimecolors.com",
 		"tags": ["Preview"]
 	},
@@ -12,14 +12,14 @@
 		"order": 94,
 		"name": "Huemint",
 		"link": "https://huemint.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huemint",
+		"img": "https://cdn.freesets.dev/colors/huemint.webp",
 		"tags": ["Preview", "Palette"]
 	},
 	{
 		"id": 3,
 		"order": 94,
 		"name": "Color selector",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-selector",
+		"img": "https://cdn.freesets.dev/colors/color-selector.webp",
 		"link": "https://www.color-selector.com",
 		"tags": ["Catalogue"]
 	},
@@ -27,7 +27,7 @@
 		"id": 4,
 		"order": 93,
 		"name": "Coolors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolors",
+		"img": "https://cdn.freesets.dev/colors/coolors.webp",
 		"link": "https://coolors.co",
 		"tags": ["Image"]
 	},
@@ -35,7 +35,7 @@
 		"id": 5,
 		"order": 80,
 		"name": "Hypercolor",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/hypercolor",
+		"img": "https://cdn.freesets.dev/colors/hypercolor.webp",
 		"link": "https://hypercolor.dev/",
 		"tags": ["Generator", "Gradients", "Tailwind"],
 		"license": "MIT",
@@ -45,14 +45,14 @@
 		"id": 6,
 		"order": 87,
 		"name": "hue.tools",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/huetools",
+		"img": "https://cdn.freesets.dev/colors/huetools.webp",
 		"link": "https://hue.tools/"
 	},
 	{
 		"id": 7,
 		"order": 87,
 		"name": "Picular",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/picular",
+		"img": "https://cdn.freesets.dev/colors/picular.webp",
 		"link": "https://picular.co"
 	},
 	{
@@ -73,7 +73,7 @@
 		"id": 10,
 		"order": 86,
 		"name": "Colormind",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormind",
+		"img": "https://cdn.freesets.dev/colors/colormind.webp",
 		"link": "http://colormind.io/"
 	},
 	{
@@ -104,7 +104,7 @@
 		"id": 14,
 		"order": 82,
 		"name": "Palette Maker",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/palettemaker",
+		"img": "https://cdn.freesets.dev/colors/palettemaker.webp",
 		"link": "https://palettemaker.com/app",
 		"tags": ["Preview"]
 	},
@@ -112,7 +112,7 @@
 		"id": 15,
 		"order": 80,
 		"name": "Randoma11y",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/randoma11y",
+		"img": "https://cdn.freesets.dev/colors/randoma11y.webp",
 		"link": "https://randoma11y.com"
 	},
 	{
@@ -127,7 +127,7 @@
 		"id": 17,
 		"order": 70,
 		"name": "Palette",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/palette",
+		"img": "https://cdn.freesets.dev/colors/palette.webp",
 		"link": "https://palettte.app/"
 	},
 	{
@@ -155,7 +155,7 @@
 		"id": 21,
 		"order": 76,
 		"name": "Material Theme Builder",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/material-theme-builder",
+		"img": "https://cdn.freesets.dev/colors/material-theme-builder.webp",
 		"link": "https://material-foundation.github.io/material-theme-builder/",
 		"tags": ["Generator", "Preview"],
 		"license": "Apache V2.0",
@@ -186,7 +186,7 @@
 		"id": 25,
 		"order": 45,
 		"name": "UI Colors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/uicolors",
+		"img": "https://cdn.freesets.dev/colors/uicolors.webp",
 		"link": "https://uicolors.app/create",
 		"tags": ["Preview"]
 	},
@@ -194,7 +194,7 @@
 		"id": 26,
 		"order": 40,
 		"name": "Poline",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/poline",
+		"img": "https://cdn.freesets.dev/colors/poline.webp",
 		"link": "https://meodai.github.io/poline/",
 		"tags": ["Library"]
 	},
@@ -216,14 +216,14 @@
 		"id": 29,
 		"order": 31,
 		"name": "M.D. Palette Generator",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/h9xk2r0tj0cmem8lrrrq.webp",
+		"img": "https://cdn.freesets.dev/colors/h9xk2r0tj0cmem8lrrrq.webp",
 		"link": "https://materialpalettes.com"
 	},
 	{
 		"id": 30,
 		"order": 26,
 		"name": "Scale",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/o4mxuxdozuahnutgopw5.webp",
+		"img": "https://cdn.freesets.dev/colors/o4mxuxdozuahnutgopw5.webp",
 		"link": "https://hihayk.github.io/scale/"
 	},
 	{
@@ -231,14 +231,14 @@
 		"order": 47,
 		"name": "Color.review",
 		"link": "https://color.review/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/color-review",
+		"img": "https://cdn.freesets.dev/colors/color-review.webp",
 		"tags": ["Accessibility", "Contrast"]
 	},
 	{
 		"id": 32,
 		"order": 87,
 		"name": "Inspotype",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/inspotype",
+		"img": "https://cdn.freesets.dev/colors/inspotype.webp",
 		"link": "https://www.inspotype.com",
 		"tags": ["Preview"]
 	},
@@ -246,7 +246,7 @@
 		"id": 33,
 		"order": 68,
 		"name": "CSS Gradient",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/css-gradient",
+		"img": "https://cdn.freesets.dev/colors/css-gradient.webp",
 		"link": "https://cssgradient.io",
 		"tags": ["Gradients"]
 	},
@@ -254,7 +254,7 @@
 		"id": 34,
 		"order": 65,
 		"name": "Colorable",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorable",
+		"img": "https://cdn.freesets.dev/colors/colorable.webp",
 		"link": "https://colorable.jxnblk.com",
 		"tags": ["Preview"]
 	},
@@ -262,7 +262,7 @@
 		"id": 35,
 		"order": 66,
 		"name": "Culrs",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/culrs",
+		"img": "https://cdn.freesets.dev/colors/culrs.webp",
 		"link": "https://culrs.com",
 		"tags": ["Palettes"]
 	},
@@ -270,7 +270,7 @@
 		"id": 36,
 		"order": 51,
 		"name": "Cool Contrast",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/coolcontrast",
+		"img": "https://cdn.freesets.dev/colors/coolcontrast.webp",
 		"link": "https://coolcontrast.vercel.app/",
 		"tags": ["Preview", "Contrast"]
 	},
@@ -278,7 +278,7 @@
 		"id": 37,
 		"order": 90,
 		"name": "ColorBeta",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbeta",
+		"img": "https://cdn.freesets.dev/colors/colorbeta.webp",
 		"link": "https://colorbeta.com/",
 		"tags": ["Gradients"]
 	},
@@ -286,14 +286,14 @@
 		"id": 38,
 		"order": 20,
 		"name": "ColorHexa",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorhexa",
+		"img": "https://cdn.freesets.dev/colors/colorhexa.webp",
 		"link": "https://www.colorhexa.com/"
 	},
 	{
 		"id": 39,
 		"order": 74,
 		"name": "ColorMagic",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colormagic",
+		"img": "https://cdn.freesets.dev/colors/colormagic.webp",
 		"link": "https://colormagic.app/",
 		"tags": ["Generator", "AI"]
 	}

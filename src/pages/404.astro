@@ -20,41 +20,31 @@ const blobs = [
 	description="The page you are looking for does not exist."
 	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
 >
-	<section
-		class="relative flex grow flex-col items-center justify-center gap-6 bg-grid py-20 text-center"
-	>
+	<section class="relative flex grow flex-col items-center justify-center gap-5 py-20 text-center">
 		<div aria-hidden="true" class="error-blobs">
 			{blobs.map((blob) => <span style={`--blob: ${blob.color}; --x: ${blob.x}%`} />)}
 		</div>
 
 		<p
-			class="relative rounded-full border border-zinc-300 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-zinc-500 uppercase dark:border-zinc-700"
+			class="relative rounded-full border border-line bg-field px-3 py-1 eyebrow tracking-[0.22em]"
 		>
 			Error 404
 		</p>
 
 		<h1
-			class="relative bg-gradient-to-b from-zinc-950 to-zinc-500 bg-clip-text text-7xl font-semibold text-transparent sm:text-9xl dark:from-white dark:to-zinc-500"
+			class="relative bg-linear-to-b from-ink from-30% to-muted bg-clip-text pb-2 text-7xl leading-[0.9] font-bold tracking-tighter text-transparent sm:text-[8.25rem]"
 		>
 			Nothing here
 		</h1>
 
-		<p class="relative max-w-lg text-lg text-balance text-zinc-600 dark:text-zinc-400">
+		<p class="relative max-w-lg text-lg text-balance text-soft">
 			This page moved, or it never existed. The other {total} resources are still where you left them.
 		</p>
 
-		<div class="relative mt-2 flex flex-wrap items-center justify-center gap-3">
-			<a
-				href="/"
-				class="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-85 dark:bg-white dark:text-zinc-950"
-			>
-				Back to home
-			</a>
+		<div class="relative mt-3 flex flex-wrap items-center justify-center gap-2.5">
+			<a href="/" class="btn h-9.5 btn-primary px-4 text-sm"> Back to home </a>
 
-			<a
-				href="/#categories"
-				class="flex items-center gap-2 rounded-md border-2 border-zinc-300 px-4 py-2 text-sm font-medium transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500"
-			>
+			<a href="/#categories" class="btn h-9.5 btn-ghost px-4 text-sm">
 				Browse all categories
 				<svg
 					viewBox="0 0 24 24"

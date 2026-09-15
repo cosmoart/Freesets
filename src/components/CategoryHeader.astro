@@ -1,6 +1,5 @@
 ---
 import type { Category } from '@/types'
-import Pagination from '@/components/Pagination.astro'
 import ViewControls from '@/components/ViewControls.astro'
 
 interface Props {
@@ -10,16 +9,16 @@ interface Props {
 const { category } = Astro.props
 ---
 
-<div
-	transition:name="category-header"
-	class="overflow-hidden rounded-xl border border-zinc-200 bg-grid dark:border-zinc-800">
+<div transition:name="category-header" class="overflow-hidden rounded-2xl surface">
 	<div class="flex flex-wrap items-stretch">
 		<div
-			class="flex w-32 shrink-0 items-center justify-center border-r border-zinc-200 bg-zinc-100/60 p-4 dark:border-zinc-800 dark:bg-zinc-900/60">
+			class="flex w-32 shrink-0 items-center justify-center border-r border-line bg-field bg-grid p-4"
+		>
 			<span
 				transition:name="category-icon"
 				style={`--item-color: ${category.color}`}
-				class="flex size-14 items-center justify-center rounded-xl bg-(--item-color)">
+				class="flex size-14 items-center justify-center rounded-2xl bg-(--item-color) shadow-[0_0_32px_color-mix(in_srgb,var(--item-color)_40%,transparent)]"
+			>
 				<img
 					src={`/categories-icons/${category.nameID}.svg`}
 					alt=""
@@ -30,20 +29,18 @@ const { category } = Astro.props
 			</span>
 		</div>
 
-		<div class="flex min-w-64 grow flex-col justify-center gap-2 p-4">
+		<div class="flex min-w-64 grow flex-col justify-center gap-2 p-5">
 			<div class="flex flex-wrap items-center gap-3">
-				<h1 class="text-3xl font-bold">{category.name}</h1>
-				<span
-					class="rounded-md border border-zinc-200 px-2 py-0.5 text-[11px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800">
+				<h1 class="text-3xl font-bold tracking-tight">{category.name}</h1>
+				<span class="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-subtle">
 					<span data-total>{category.assets.length}</span> resources
 				</span>
 			</div>
 
-			<p class="max-w-xl text-sm text-zinc-500">{category.description}</p>
+			<p class="max-w-xl text-sm text-muted">{category.description}</p>
 		</div>
 
-		<div
-			class="flex flex-col justify-center gap-3 border-l border-zinc-200 p-4 dark:border-zinc-800">
+		<div class="flex flex-col justify-center gap-3 border-l border-line p-4">
 			<label for="category-search" class="sr-only">Search in {category.name}</label>
 			<input
 				id="category-search"
@@ -51,39 +48,93 @@ const { category } = Astro.props
 				type="search"
 				autocomplete="off"
 				placeholder={`Search in ${category.name}...`}
-				class="w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm outline-none focus:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:focus:border-zinc-600"
+				class="w-full control px-3 py-2 text-sm outline-none placeholder:text-subtle"
 			/>
 
-			<div class="flex flex-wrap items-end justify-between gap-4">
-				<div class="flex flex-wrap items-end gap-5">
-					<div class="flex flex-col gap-1">
-						<div
-							class="flex rounded-md border border-zinc-200 p-0.5 text-sm dark:border-zinc-800"
-							role="group"
-							aria-label="Sort resources">
-							{
-								[
-									['popular', 'Popular'],
-									['newest', 'Newest'],
-									['name', 'A–Z']
-								].map(([value, text]) => (
-									<button
-										type="button"
-										data-sort={value}
-										aria-pressed="false"
-										class="rounded px-3 py-1 transition-colors aria-pressed:bg-zinc-200 aria-pressed:font-medium dark:aria-pressed:bg-zinc-800">
-										{text}
-									</button>
-								))
-							}
-						</div>
-					</div>
-
-					<ViewControls color={category.color} />
+			<div class="flex flex-wrap items-end gap-5">
+				<div
+					data-sort-group
+					class="relative flex gap-0.5 rounded-[9px] border border-line bg-field p-0.75 text-[13px]"
+					role="group"
+					aria-label="Sort resources"
+				>
+					<!-- One shared highlight that slides to the pressed tab, placed by the script below -->
+					<span
+						data-sort-indicator
+						aria-hidden="true"
+						class="pointer-events-none absolute top-0.75 bottom-0.75 left-0 w-(--indicator-width) translate-x-(--indicator-x) rounded-md bg-hover opacity-0 shadow-[inset_0_1px_0_var(--highlight)] data-placed:opacity-100 data-ready:transition-[translate,width] data-ready:duration-300 data-ready:ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none"
+					></span>
+					{
+						[
+							['popular', 'Popular'],
+							['newest', 'Newest'],
+							['name', 'A–Z']
+						].map(([value, text]) => (
+							<button
+								type="button"
+								data-sort={value}
+								aria-pressed="false"
+								class="relative cursor-pointer rounded-md px-3 py-1 text-muted transition-colors hover:text-ink aria-pressed:text-ink"
+							>
+								{text}
+							</button>
+						))
+					}
 				</div>
 
-				<Pagination />
+				<ViewControls color={category.color} />
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+	function setup() {
+		const group = document.querySelector<HTMLElement>('[data-sort-group]')
+		const indicator = group?.querySelector<HTMLElement>('[data-sort-indicator]')
+		if (!group || !indicator) return
+
+		const buttons = [...group.querySelectorAll<HTMLButtonElement>('[data-sort]')]
+
+		const place = () => {
+			const active = buttons.find((button) => button.getAttribute('aria-pressed') === 'true')
+			indicator.toggleAttribute('data-placed', Boolean(active))
+			if (!active) return
+
+			// Rects keep subpixel precision; offsetLeft/offsetWidth round and leave the pill 1px off.
+			const tab = active.getBoundingClientRect()
+			const x = tab.left - group.getBoundingClientRect().left - group.clientLeft
+
+			indicator.style.setProperty('--indicator-x', `${x}px`)
+			indicator.style.setProperty('--indicator-width', `${tab.width}px`)
+		}
+
+		// The page script owns aria-pressed, so follow its changes rather than the clicks.
+		const pressed = new MutationObserver(place)
+		for (const button of buttons) {
+			pressed.observe(button, { attributes: true, attributeFilter: ['aria-pressed'] })
+		}
+
+		// Tab widths change once the web font loads.
+		const resized = new ResizeObserver(place)
+		resized.observe(group)
+
+		place()
+
+		// Only animate after the first placement, so the highlight doesn't glide in on page load.
+		requestAnimationFrame(() =>
+			requestAnimationFrame(() => indicator.toggleAttribute('data-ready', true))
+		)
+
+		document.addEventListener(
+			'astro:before-swap',
+			() => {
+				pressed.disconnect()
+				resized.disconnect()
+			},
+			{ once: true }
+		)
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

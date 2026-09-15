@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 100,
 		"name": "shadcn/ui",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcn",
+		"img": "https://cdn.freesets.dev/components/shadcn.webp",
 		"link": "https://ui.shadcn.com",
 		"tags": ["React", "Tailwind", "Chart"],
 		"license": "MIT",
@@ -13,7 +13,7 @@
 		"id": 2,
 		"order": 95,
 		"name": "Radix UI",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/radix",
+		"img": "https://cdn.freesets.dev/components/radix.webp",
 		"link": "https://www.radix-ui.com",
 		"tags": ["React"],
 		"license": "MIT",
@@ -79,7 +79,7 @@
 		"order": 67,
 		"name": "React Aria",
 		"link": "https://react-aria.adobe.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-aria-components",
+		"img": "https://cdn.freesets.dev/components/react-aria-components.webp",
 		"tags": ["React", "Accessibility"]
 	},
 	{
@@ -143,7 +143,7 @@
 		"order": 34,
 		"name": "magecdn SVG Loaders",
 		"link": "https://magecdn.com/tools/svg-loaders",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loadersmage",
+		"img": "https://cdn.freesets.dev/components/svg-loadersmage.webp",
 		"license": "MIT",
 		"tags": ["Loaders"]
 	},
@@ -151,7 +151,7 @@
 		"id": 17,
 		"order": 75,
 		"name": "UIverse",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/uiverse",
+		"img": "https://cdn.freesets.dev/components/uiverse.webp",
 		"link": "https://uiverse.io",
 		"tags": ["HTML", "Copy&Paste"],
 		"license": "MIT"
@@ -218,7 +218,7 @@
 		"id": 24,
 		"order": 60,
 		"name": "Tremor",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/tremor",
+		"img": "https://cdn.freesets.dev/components/tremor.webp",
 		"link": "https://www.tremor.so",
 		"tags": ["Chart", "React"],
 		"license": "Apache License 2.0",
@@ -229,14 +229,14 @@
 		"order": 48,
 		"name": "mapcn",
 		"link": "https://mapcn.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapcn",
+		"img": "https://cdn.freesets.dev/libraries/mapcn.webp",
 		"tags": ["React", "Tailwind", "MapLibre"]
 	},
 	{
 		"id": 26,
 		"order": 50,
 		"name": "Chart.js",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/chart.js",
+		"img": "https://cdn.freesets.dev/components/chart.js.webp",
 		"link": "https://www.chartjs.org",
 		"tags": ["Chart", "React", "Vue", "Svelte", "Angular"],
 		"license": "MIT",
@@ -246,7 +246,7 @@
 		"id": 27,
 		"order": 50,
 		"name": "Sonner",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/sonner",
+		"img": "https://cdn.freesets.dev/components/sonner.webp",
 		"link": "https://sonner.emilkowal.ski",
 		"tags": ["Toast", "React"],
 		"license": "MIT",
@@ -292,7 +292,7 @@
 		"id": 32,
 		"order": 40,
 		"name": "Svelte UX",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svelte-ux",
+		"img": "https://cdn.freesets.dev/components/svelte-ux.webp",
 		"link": "https://svelte-ux.techniq.dev",
 		"tags": ["Svelte"],
 		"license": "MIT",
@@ -303,7 +303,7 @@
 		"order": 89,
 		"name": "KokonutUI",
 		"link": "https://kokonutui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kokonutui",
+		"img": "https://cdn.freesets.dev/components/kokonutui.webp",
 		"tags": ["Motion", "shadcn", "Tailwind"]
 	},
 	{
@@ -391,7 +391,7 @@
 		"id": 43,
 		"order": 20,
 		"name": "Lightweight charts",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/lightweight-charts",
+		"img": "https://cdn.freesets.dev/components/lightweight-charts.webp",
 		"link": "https://www.tradingview.com/lightweight-charts/",
 		"tags": ["Chart"],
 		"license": "Freemium with attribution",
@@ -401,7 +401,7 @@
 		"id": 44,
 		"order": 20,
 		"name": "Toggles",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/toggles",
+		"img": "https://cdn.freesets.dev/components/toggles.webp",
 		"link": "https://toggles.dev",
 		"tags": ["Toggles", "HTML", "Copy&Paste"],
 		"license": "MIT",
@@ -430,7 +430,7 @@
 		"id": 47,
 		"order": 12,
 		"name": "Hola svg",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/hola-svg",
+		"img": "https://cdn.freesets.dev/components/hola-svg.webp",
 		"link": "https://loaders.holasvg.com",
 		"tags": ["Loaders"],
 		"license": "MIT",
@@ -450,7 +450,7 @@
 		"id": 49,
 		"order": 11,
 		"name": "10015 Tools",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/css_tools",
+		"img": "https://cdn.freesets.dev/components/css_tools.webp",
 		"link": "https://10015.io/tools/css-loader-generator",
 		"tags": ["Loaders"],
 		"license": "Free",
@@ -468,7 +468,7 @@
 		"id": 51,
 		"order": 9,
 		"name": "SVG Loaders",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/svg-loaders",
+		"img": "https://cdn.freesets.dev/components/svg-loaders.webp",
 		"link": "https://samherbert.net/svg-loaders/",
 		"tags": ["Loaders"],
 		"license": "MIT",
@@ -478,7 +478,7 @@
 		"id": 52,
 		"order": 5,
 		"name": "CSS loaders",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/css-loaders",
+		"img": "https://cdn.freesets.dev/components/css-loaders.webp",
 		"link": "https://css-loaders.com",
 		"tags": ["Loaders"]
 	},
@@ -486,7 +486,7 @@
 		"id": 53,
 		"order": 3,
 		"name": "CSS loaders and spinners",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cssloaders",
+		"img": "https://cdn.freesets.dev/components/cssloaders.webp",
 		"link": "https://cssloaders.github.io",
 		"tags": ["Loaders"],
 		"license": "MIT",
@@ -497,7 +497,7 @@
 		"order": 56,
 		"name": "GNOME",
 		"link": "https://gnome-react-ui.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/gnome-react-ui",
+		"img": "https://cdn.freesets.dev/components/gnome-react-ui.webp",
 		"tags": ["React", "Lucide", "Tailwind"]
 	},
 	{
@@ -505,7 +505,7 @@
 		"order": 30,
 		"name": "Lobe UI",
 		"link": "https://ui.lobehub.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/lobehub",
+		"img": "https://cdn.freesets.dev/components/lobehub.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/lobehub/lobe-ui/blob/master/LICENSE"
 	},
@@ -514,7 +514,7 @@
 		"order": 10,
 		"name": "Drams",
 		"link": "https://drams.framer.website",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/drams",
+		"img": "https://cdn.freesets.dev/components/drams.webp",
 		"tags": ["Framer"]
 	},
 	{
@@ -522,7 +522,7 @@
 		"order": 39,
 		"name": "enhanced-button",
 		"link": "https://enhanced-button.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/enhanced-button",
+		"img": "https://cdn.freesets.dev/components/enhanced-button.webp",
 		"tags": ["Buttons"]
 	},
 	{
@@ -530,7 +530,7 @@
 		"order": 82,
 		"name": "Kibo UI",
 		"link": "https://www.kibo-ui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/kibo-ui",
+		"img": "https://cdn.freesets.dev/components/kibo-ui.webp",
 		"tags": ["Copy&Paste","TypeScript", "React", "Tailwind","Shadcn", "Lucide"]
 	},
 	{
@@ -538,7 +538,7 @@
 		"order": 44,
 		"name": "PrimeReact",
 		"link": "https://primereact.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/primereact",
+		"img": "https://cdn.freesets.dev/components/primereact.webp",
 		"tags": ["React"]
 	},
 	{
@@ -546,7 +546,7 @@
 		"order": 29,
 		"name": "cult/ui",
 		"link": "https://www.cult-ui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cultui",
+		"img": "https://cdn.freesets.dev/components/cultui.webp",
 		"tags": ["Tailwind", "React"]
 	},
 	{
@@ -554,7 +554,7 @@
 		"order": 89,
 		"name": "Magic UI",
 		"link": "https://magicui.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/magicui",
+		"img": "https://cdn.freesets.dev/components/magicui.webp",
 		"tags": ["Tailwind", "React", "Typescript", "Framer", "Templates"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/magicuidesign/magicui/blob/main/LICENSE.md"
@@ -564,14 +564,14 @@
 		"order": 23,
 		"name": "AnimatiSS",
 		"link": "https://xsgames.co/animatiss/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/animatiss",
+		"img": "https://cdn.freesets.dev/components/animatiss.webp",
 		"tags": ["Animations", "CSS"]
 	},
 	{
 		"id": 63,
 		"order": 95,
 		"name": "Codrops",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
+		"img": "https://cdn.freesets.dev/blogs/codrops.webp",
 		"link": "https://tympanus.net/codrops/demos/",
 		"tags": ["Three.js", "Webgl"]
 	},
@@ -580,7 +580,7 @@
 		"order": 67,
 		"name": "Intent UI",
 		"link": "https://intentui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/intentui",
+		"img": "https://cdn.freesets.dev/components/intentui.webp",
 		"tags": ["Accessible", "Aria", "React", "Tailwind"]
 	},
 	{
@@ -588,7 +588,7 @@
 		"order": 45,
 		"name": "Tailbits",
 		"link": "https://www.tailbits.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/tailbits",
+		"img": "https://cdn.freesets.dev/components/tailbits.webp",
 		"license": "CC-BY-4.0",
 		"licenseDescription": "This project is licensed under the Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you provide appropriate credit, a link to the license, and indicate if changes were made.",
 		"tags": ["Templates", "Tailwind", "HTML", "Copy&Paste"]
@@ -598,7 +598,7 @@
 		"order": 89,
 		"name": "React Bits",
 		"link": "https://www.reactbits.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-bits",
+		"img": "https://cdn.freesets.dev/components/react-bits.webp",
 		"tags": ["React", "Animations", "Copy&Paste"]
 	},
 	{
@@ -606,7 +606,7 @@
 		"order": 34,
 		"name": "Shadcnblocks",
 		"link": "https://www.shadcnblocks.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/shadcnblocks",
+		"img": "https://cdn.freesets.dev/components/shadcnblocks.webp",
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"],
 		"license": "Freemium",
 		"licenseLink": "https://www.shadcnblocks.com/pricing"
@@ -616,7 +616,7 @@
 		"order": 46,
 		"name": "RSuite",
 		"link": "https://rsuitejs.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/rsuite",
+		"img": "https://cdn.freesets.dev/components/rsuite.webp",
 		"tags": ["React"]
 	},
 	{
@@ -624,7 +624,7 @@
 		"order": 58,
 		"name": "SmoothUI",
 		"link": "https://www.smoothui.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/smoothui",
+		"img": "https://cdn.freesets.dev/components/smoothui.webp",
 		"tags": ["React", "Tailwind", "Animations", "Motion"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/educlopez/smoothui/blob/main/LICENSE"
@@ -634,7 +634,7 @@
 		"order": 47,
 		"name": "TW Components",
 		"link": "https://www.creative-tim.com/twcomponents",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/twcomponentsqwd",
+		"img": "https://cdn.freesets.dev/components/twcomponentsqwd.webp",
 		"tags": ["Tailwind", "HTML", "Copy&Paste"]
 	},
 	{
@@ -642,7 +642,7 @@
 		"order": 38,
 		"name": "React Hot Toast",
 		"link": "https://react-hot-toast.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/react-hot-toast",
+		"img": "https://cdn.freesets.dev/components/react-hot-toast.webp",
 		"tags": ["React", "Toast"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/timolins/react-hot-toast/blob/main/LICENSE"
@@ -652,7 +652,7 @@
 		"order": 47,
 		"name": "Motion-Primitives",
 		"link": "https://motion-primitives.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/motion-primitives",
+		"img": "https://cdn.freesets.dev/components/motion-primitives.webp",
 		"tags": ["Framer", "React"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/ibelick/motion-primitives/blob/main/LICENCE.md"
@@ -662,7 +662,7 @@
 		"order": 50,
 		"name": "Fulldev UI",
 		"link": "https://ui.full.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ui_full_dev",
+		"img": "https://cdn.freesets.dev/components/ui_full_dev.webp",
 		"tags": ["Astro"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/fulldotdev/ui/blob/main/LICENCE"
@@ -672,7 +672,7 @@
 		"order": 84,
 		"name": "Origin UI",
 		"link": "https://originui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/originui",
+		"img": "https://cdn.freesets.dev/components/originui.webp",
 		"tags": ["React", "Tailwind", "Next.js", "Copy&Paste"],
 		"license": "Free",
 		"licenseLink": "https://github.com/origin-space/originui?tab=readme-ov-file#terms-of-use"
@@ -682,7 +682,7 @@
 		"order": 84,
 		"name": "Fancy Components",
 		"link": "https://www.fancycomponents.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/viyq7pgwtlelyn7lftyn",
+		"img": "https://cdn.freesets.dev/components/viyq7pgwtlelyn7lftyn.webp",
 		"tags": ["React", "Tailwind", "TypeScript", "Motion"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/danielpetho/fancy/blob/main/LICENSE"
@@ -692,7 +692,7 @@
 		"order": 68,
 		"name": "HTMLrev",
 		"link": "https://htmlrev.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/htmlrev",
+		"img": "https://cdn.freesets.dev/components/htmlrev.webp",
 		"tags": ["Templates","Tailwind","React","Vue","Svelte","Astro"]
 	},
 	{
@@ -700,7 +700,7 @@
 		"order": 48,
 		"name": "Stepperize",
 		"link": "https://stepperize.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/stepperize",
+		"img": "https://cdn.freesets.dev/components/stepperize.webp",
 		"tags": ["Multi-Step Flows", "Forms", "React","Vue","Solid","Svelte"]
 	},
 	{
@@ -708,7 +708,7 @@
 		"order": 80,
 		"name": "Mvpblocks",
 		"link": "https://blocks.mvp-subha.me/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/Mvpblocks",
+		"img": "https://cdn.freesets.dev/components/Mvpblocks.webp",
 		"tags": ["Copy&Paste", "React", "Tailwind"]
 	},
 	{
@@ -716,7 +716,7 @@
 		"order": 45,
 		"name": "Evil Charts",
 		"link": "https://evilcharts.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/evilcharts",
+		"img": "https://cdn.freesets.dev/components/evilcharts.webp",
 		"tags": ["Copy&Paste","Chart"]
 	},
 	{
@@ -724,7 +724,7 @@
 		"order": 65,
 		"name": "Basecoat",
 		"link": "https://basecoatui.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/basecoatui",
+		"img": "https://cdn.freesets.dev/components/basecoatui.webp",
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
 	},
 	{
@@ -732,7 +732,7 @@
 		"order": 68,
 		"name": "Blookie",
 		"link": "https://blookie.io",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/blookie",
+		"img": "https://cdn.freesets.dev/components/blookie.webp",
 		"tags": ["Copy&Paste","Tailwind", "Shadcn"]
 	},
 	{
@@ -740,7 +740,7 @@
 		"order": 78,
 		"name": "CuiCui",
 		"link": "https://cuicui.day/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/cuicui",
+		"img": "https://cdn.freesets.dev/components/cuicui.webp",
 		"tags": ["React", "TypeScript", "Copy&Paste", "Library"]
 	},
 	{
@@ -748,7 +748,7 @@
 		"order": 30,
 		"name": "Ant Design",
 		"link": "https://ant.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/components/ant-design",
+		"img": "https://cdn.freesets.dev/components/ant-design.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
 		"tags": ["React", "Design System"]

@@ -92,7 +92,7 @@
 		"order": 88,
 		"name": "npmx",
 		"link": "https://npmx.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
+		"img": "https://cdn.freesets.dev/tools/npmx.webp",
 		"tags": ["npm browser"]
 	},
 	{
@@ -115,7 +115,7 @@
 		"id": 15,
 		"order": 36,
 		"name": "CSS Code Quality",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/projectwallaceqwe",
+		"img": "https://cdn.freesets.dev/tools/projectwallaceqwe.webp",
 		"link": "https://www.projectwallace.com/css-code-quality",
 		"tags": ["CSS analyzer"]
 	},
@@ -132,7 +132,7 @@
 		"order": 40,
 		"name": "Squish",
 		"link": "https://squish.addy.ie/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/squish",
+		"img": "https://cdn.freesets.dev/tools/squish.webp",
 		"tags": ["Image optimizer"]
 	},
 	{
@@ -140,7 +140,7 @@
 		"order": 60,
 		"name": "Starlight",
 		"link": "https://starlight.astro.build/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/starlight",
+		"img": "https://cdn.freesets.dev/tools/starlight.webp",
 		"tags": ["Build documentation sites"]
 	},
 	{
@@ -148,7 +148,7 @@
 		"order": 46,
 		"name": "JSON Crack",
 		"link": "https://jsoncrack.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/json-crack",
+		"img": "https://cdn.freesets.dev/tools/json-crack.webp",
 		"tags": ["JSON Visualizer"]
 	},
 	{
@@ -156,7 +156,7 @@
 		"order": 8,
 		"name": "eraser.io",
 		"link": "https://www.eraser.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/eraser-io",
+		"img": "https://cdn.freesets.dev/tools/eraser-io.webp",
 		"tags": ["Canvas"]
 	},
 	{
@@ -164,7 +164,7 @@
 		"order": 38,
 		"name": "draw.io",
 		"link": "https://www.draw.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/draw-io",
+		"img": "https://cdn.freesets.dev/tools/draw-io.webp",
 		"tags": ["Flowcharts"]
 	},
 	{
@@ -172,7 +172,7 @@
 		"order": 41,
 		"name": "SVGOMG",
 		"link": "https://svgomg.net/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/svgomg",
+		"img": "https://cdn.freesets.dev/tools/svgomg.webp",
 		"tags": ["SVG optimizer"]
 	},
 	{
@@ -180,7 +180,7 @@
 		"order": 35,
 		"name": "Freeter",
 		"link": "https://freeter.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/freeter",
+		"img": "https://cdn.freesets.dev/tools/freeter.webp",
 		"tags": ["Organizer"],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/FreeterApp/Freeter/blob/master/COPYING"
@@ -190,7 +190,7 @@
 		"order": 38,
 		"name": "ray.so",
 		"link": "https://ray.so",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/rayso",
+		"img": "https://cdn.freesets.dev/tools/rayso.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/raycast/ray-so/blob/main/LICENSE",
 		"tags": ["Code screenshots"]
@@ -200,7 +200,7 @@
 		"order": 35,
 		"name": "Responsively App",
 		"link": "https://responsively.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/responsively",
+		"img": "https://cdn.freesets.dev/tools/responsively.webp",
 		"license": "AGPL-3.0",
 		"licenseLink": "https://github.com/responsively-org/responsively-app/blob/main/LICENSE",
 		"tags": ["Responsive design", "App"]
@@ -210,14 +210,14 @@
 		"order": 15,
 		"name": "Format JSON Online",
 		"link": "https://formatjsononline.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/format-json-online",
+		"img": "https://cdn.freesets.dev/tools/format-json-online.webp",
 		"tags": ["JSON", "Mockups"]
 	},
 	{
 		"id": 27,
 		"order": 56,
 		"name": "imgto.xyz",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/imgtoasdasdqw",
+		"img": "https://cdn.freesets.dev/tools/imgtoasdasdqw.webp",
 		"link": "https://imgto.xyz/",
 		"tags": ["Image optimizer"]
 	},
@@ -226,7 +226,7 @@
 		"order": 83,
 		"name": "og.new",
 		"link": "https://og.new/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/usxfnxgq0vrxfvkk7qpf",
+		"img": "https://cdn.freesets.dev/tools/usxfnxgq0vrxfvkk7qpf.webp",
 		"tags": ["Open Graph"]
 	},
 	{
@@ -234,7 +234,7 @@
 		"order": 38,
 		"name": "tldraw",
 		"link": "https://www.tldraw.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
+		"img": "https://cdn.freesets.dev/libraries/tldraw.webp",
 		"tags": ["Whiteboard"]
 	},
 	{
@@ -242,7 +242,7 @@
 		"order": 60,
 		"name": "Shape Dividers",
 		"link": "https://www.shapedivider.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
+		"img": "https://cdn.freesets.dev/tools/shape-dividers.webp",
 		"tags": ["Section separator"]
 	},
 	{
@@ -250,7 +250,7 @@
 		"order": 82,
 		"name": "PostSpark",
 		"link": "https://postspark.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/postspark",
+		"img": "https://cdn.freesets.dev/tools/postspark.webp",
 		"tags": ["Open Graph", "Mockups"]
 	},
 	{
@@ -258,7 +258,7 @@
 		"order": 64,
 		"name": "Bundlephobia",
 		"link": "https://bundlephobia.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/bundlephobia",
+		"img": "https://cdn.freesets.dev/tools/bundlephobia.webp",
 		"tags": ["NPM", "Performance"]
 	},
 	{
@@ -266,7 +266,7 @@
 		"order": 62,
 		"name": "Can I use",
 		"link": "https://caniuse.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/caniuse",
+		"img": "https://cdn.freesets.dev/tools/caniuse.webp",
 		"tags": ["Browser Support", "CSS"]
 	},
 	{
@@ -274,7 +274,7 @@
 		"order": 79,
 		"name": "Hoppscotch",
 		"link": "https://hoppscotch.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/hoppscotch",
+		"img": "https://cdn.freesets.dev/tools/hoppscotch.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
 		"tags": ["API", "Postman"]
@@ -284,7 +284,7 @@
 		"order": 80,
 		"name": "alg0.dev",
 		"link": "https://alg0.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/alg0dev",
+		"img": "https://cdn.freesets.dev/tools/alg0dev.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/midudev/alg0.dev?tab=readme-ov-file#license",
 		"tags": ["Algorithm Visualizer"]
@@ -294,7 +294,7 @@
 		"order": 83,
 		"name": "OpenGraph.to",
 		"link": "https://www.opengraph.to/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/opengraphto",
+		"img": "https://cdn.freesets.dev/tools/opengraphto.webp",
 		"tags": ["Open Graph"]
 	}
 ]

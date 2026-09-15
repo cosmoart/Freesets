@@ -12,7 +12,7 @@
 		"id": 2,
 		"order": 98,
 		"name": "Open Doodles",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/opendoodles",
+		"img": "https://cdn.freesets.dev/illustrations/opendoodles.webp",
 		"link": "https://www.opendoodles.com",
 		"license": "CC0",
 		"licenseLink": "https://www.opendoodles.com"
@@ -29,7 +29,7 @@
 		"id": 4,
 		"order": 96,
 		"name": "Reshot",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/reshot",
+		"img": "https://cdn.freesets.dev/illustrations/reshot.webp",
 		"link": "https://www.reshot.com/free-vector-illustrations/",
 		"license": "Reshot Free License",
 		"licenseLink": "https://www.reshot.com/license/",
@@ -49,7 +49,7 @@
 		"id": 6,
 		"order": 95,
 		"name": "Humaaans",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/humaaans",
+		"img": "https://cdn.freesets.dev/illustrations/humaaans.webp",
 		"link": "https://www.humaaans.com/",
 		"license": "CC0",
 		"licenseLink": "https://www.humaaans.com/"
@@ -67,7 +67,7 @@
 		"id": 8,
 		"order": 80,
 		"name": "DrawKit",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/drawkit",
+		"img": "https://cdn.freesets.dev/illustrations/drawkit.webp",
 		"link": "https://www.drawkit.com/?pricing-type=Free",
 		"license": "DrawKit License",
 		"licenseLink": "https://www.drawkit.com/license",
@@ -78,7 +78,7 @@
 		"order": 72,
 		"name": "Absurd.Design",
 		"link": "https://absurd.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/absurd-design",
+		"img": "https://cdn.freesets.dev/illustrations/absurd-design.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://absurd.design/license",
 		"tags": ["Hand-drawn", "Doodles"]
@@ -87,7 +87,7 @@
 		"id": 10,
 		"order": 80,
 		"name": "SVG Repo",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/svgrepo",
+		"img": "https://cdn.freesets.dev/icons/svgrepo.webp",
 		"link": "https://www.svgrepo.com",
 		"license": "Multiple",
 		"licenseLink": "https://www.svgrepo.com/page/licensing"
@@ -113,7 +113,7 @@
 		"id": 13,
 		"order": 75,
 		"name": "GEE! ME",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/geeme",
+		"img": "https://cdn.freesets.dev/illustrations/geeme.webp",
 		"link": "https://geeme.vercel.app/"
 	},
 	{
@@ -129,7 +129,7 @@
 		"id": 15,
 		"order": 70,
 		"name": "Pixabay",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/pixabay",
+		"img": "https://cdn.freesets.dev/illustrations/pixabay.webp",
 		"link": "https://pixabay.com/illustrations/",
 		"license": "Pixabay License",
 		"licenseLink": "https://pixabay.com/service/license/",
@@ -157,7 +157,7 @@
 		"order": 58,
 		"name": "Icons8",
 		"link": "https://icons8.com/illustrations/style--ouch",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/ouch-icons8",
+		"img": "https://cdn.freesets.dev/illustrations/ouch-icons8.webp",
 		"license": "Freemium with attribution",
 		"licenseLink": "https://icons8.com/license",
 		"tags": ["Animated", "3D"]
@@ -177,7 +177,7 @@
 		"id": 20,
 		"order": 60,
 		"name": "Flexiple illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/flexiple",
+		"img": "https://cdn.freesets.dev/illustrations/flexiple.webp",
 		"link": "https://flexiple.com/illustrations/",
 		"license": "Free",
 		"licenseLink": "https://flexiple.com/illustrations/",
@@ -187,7 +187,7 @@
 		"id": 21,
 		"order": 50,
 		"name": "unDraw",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/undraw",
+		"img": "https://cdn.freesets.dev/illustrations/undraw.webp",
 		"link": "https://undraw.co/illustrations",
 		"license": "Free",
 		"licenseLink": "https://undraw.co/license",
@@ -197,7 +197,7 @@
 		"id": 22,
 		"order": 50,
 		"name": "Theme Isle",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/themeisle",
+		"img": "https://cdn.freesets.dev/illustrations/themeisle.webp",
 		"link": "https://themeisle.com/illustrations/",
 		"license": "Free",
 		"licenseLink": "https://themeisle.com/illustrations/",
@@ -291,7 +291,7 @@
 		"order": 44,
 		"name": "Spectrum",
 		"link": "https://spectrums.framer.website/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/spectrums",
+		"img": "https://cdn.freesets.dev/icons/spectrums.webp",
 		"tags": ["Logos"]
 	},
 	{
@@ -307,7 +307,7 @@
 		"order": 72,
 		"name": "Public Work by Cosmos",
 		"link": "https://public.work/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
+		"img": "https://cdn.freesets.dev/photos/publicwork.webp",
 		"tags": ["Vintage"]
 	},
 	{
@@ -328,7 +328,7 @@
 		"id": 37,
 		"order": 69,
 		"name": "The Thiings Collection",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/thiings",
+		"img": "https://cdn.freesets.dev/illustrations/thiings.webp",
 		"link": "https://www.thiings.co",
 		"tags": ["IA"]
 	},
@@ -336,7 +336,7 @@
 		"id": 38,
 		"order": 25,
 		"name": "Flower Patterns",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/orezbvbpqtjombu9okqb",
+		"img": "https://cdn.freesets.dev/illustrations/orezbvbpqtjombu9okqb.webp",
 		"link": "https://www.figma.com/community/file/998877405686984862",
 		"license": "CC BY 4.0"
 	},
@@ -353,7 +353,7 @@
 		"id": 40,
 		"order": 20,
 		"name": "Fresh Folk",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/freshfolk",
+		"img": "https://cdn.freesets.dev/illustrations/freshfolk.webp",
 		"link": "https://fresh-folk.com",
 		"license": "CC BY-NC-ND 4.0",
 		"licenseLink": "https://fresh-folk.com"
@@ -371,7 +371,7 @@
 		"order": 57,
 		"name": "Logoipsum",
 		"link": "https://logoipsum.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/logoipsum",
+		"img": "https://cdn.freesets.dev/illustrations/logoipsum.webp",
 		"tags": ["Placeholder logos"]
 	},
 	{
@@ -387,7 +387,7 @@
 		"order": 56,
 		"name": "IconPark",
 		"link": "https://iconpark.oceanengine.com/illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/icons/iconpark",
+		"img": "https://cdn.freesets.dev/icons/iconpark.webp",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	},
@@ -395,7 +395,7 @@
 		"id": 45,
 		"order": 69,
 		"name": "coolshapes",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/coolshap",
+		"img": "https://cdn.freesets.dev/illustrations/coolshap.webp",
 		"link": "https://coolshap.es/",
 		"tags": ["Package", "Logos"]
 	},
@@ -403,7 +403,7 @@
 		"id": 46,
 		"order": 8,
 		"name": "Streamline Illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/streamline",
+		"img": "https://cdn.freesets.dev/illustrations/streamline.webp",
 		"link": "https://www.streamlinehq.com/illustrations",
 		"license": "CC by 4.0",
 		"licenseLink": "https://www.streamlinehq.com/license-free",
@@ -437,14 +437,14 @@
 		"id": 50,
 		"order": 6,
 		"name": "Lifestyle Illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/y8nwlbsutlnejuwrhv2q",
+		"img": "https://cdn.freesets.dev/illustrations/y8nwlbsutlnejuwrhv2q.webp",
 		"link": "https://kapustinco.gumroad.com/l/IRkNK"
 	},
 	{
 		"id": 51,
 		"order": 5,
 		"name": "Storyset",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/storyset",
+		"img": "https://cdn.freesets.dev/illustrations/storyset.webp",
 		"link": "https://storyset.com",
 		"license": "Free with attribution.",
 		"licenseLink": "https://storyset.com/faqs"
@@ -453,7 +453,7 @@
 		"id": 52,
 		"order": 39,
 		"name": "uilogos",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/uilogos",
+		"img": "https://cdn.freesets.dev/illustrations/uilogos.webp",
 		"link": "https://www.uilogos.co/",
 		"license": "CC BY 4.0",
 		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
@@ -463,7 +463,7 @@
 		"id": 53,
 		"order": 16,
 		"name": "Free Userpics Pack",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/freepack",
+		"img": "https://cdn.freesets.dev/illustrations/freepack.webp",
 		"link": "https://userpics.craftwork.design/",
 		"tags": ["Avatars"]
 	},
@@ -471,7 +471,7 @@
 		"id": 54,
 		"order": 11,
 		"name": "Memojis",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/memojis",
+		"img": "https://cdn.freesets.dev/illustrations/memojis.webp",
 		"link": "https://www.figma.com/community/plugin/1090391796325905912/memojis",
 		"tags": ["Avatars", "3D"],
 		"license": "C. Free Resource L."
@@ -480,7 +480,7 @@
 		"id": 55,
 		"order": 70,
 		"name": "Shapefest",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/shapefest",
+		"img": "https://cdn.freesets.dev/illustrations/shapefest.webp",
 		"link": "https://www.shapefest.com",
 		"license": "Shapefest™ Commercial",
 		"licenseLink": "https://www.shapefest.com/license-agreement",
@@ -490,7 +490,7 @@
 		"id": 56,
 		"order": 51,
 		"name": "Kapwing",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/kapwing404",
+		"img": "https://cdn.freesets.dev/illustrations/kapwing404.webp",
 		"link": "https://www.kapwing.com/404-illustrations",
 		"tags": ["404"]
 	},
@@ -498,7 +498,7 @@
 		"id": 57,
 		"order": 38,
 		"name": "LukaszAdam Illustrations",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/lukaszadam",
+		"img": "https://cdn.freesets.dev/illustrations/lukaszadam.webp",
 		"link": "https://lukaszadam.com/illustrations",
 		"license": "CC0"
 	},
@@ -506,7 +506,7 @@
 		"id": 58,
 		"order": 12,
 		"name": "Personas by Draftbit",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/personas",
+		"img": "https://cdn.freesets.dev/illustrations/personas.webp",
 		"link": "https://personas.draftbit.com/",
 		"license": "CC BY 4.0"
 	},
@@ -514,7 +514,7 @@
 		"id": 59,
 		"order": 68,
 		"name": "Khagwal 3D",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/illustrations/khagwal",
+		"img": "https://cdn.freesets.dev/illustrations/khagwal.webp",
 		"link": "https://3d.khagwal.com/",
 		"license": " CC0"
 	}

@@ -4,7 +4,7 @@
 		"order": 75,
 		"name": "Shaders",
 		"link": "https://shaders.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shaders",
+		"img": "https://cdn.freesets.dev/backgrounds/shaders.webp",
 		"license": "Freemium",
 		"tags": ["Package","Library"]
 	},
@@ -12,7 +12,7 @@
 		"id": 2,
 		"name": "CSS Background Patterns",
 		"link": "https://www.magicpattern.design/tools/css-backgrounds",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/csspatterns",
+		"img": "https://cdn.freesets.dev/backgrounds/csspatterns.webp",
 		"license": "Freemium",
 		"licenseLink": "https://www.magicpattern.design/pricing",
 		"order": 45
@@ -21,7 +21,7 @@
 		"id": 3,
 		"name": "Pattern Generator",
 		"link": "https://doodad.dev/pattern-generator/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/pattern_generator",
+		"img": "https://cdn.freesets.dev/backgrounds/pattern_generator.webp",
 		"license": "Free",
 		"licenseLink": "https://doodad.dev/pattern-generator/",
 		"licenseDescription": "Feel free to use the patterns you create in any commercial project.",
@@ -31,7 +31,7 @@
 		"id": 4,
 		"name": "Pattern Monster",
 		"link": "https://pattern.monster",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/pattern_monster",
+		"img": "https://cdn.freesets.dev/backgrounds/pattern_monster.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/catchspider2002/svelte-svg-patterns/blob/master/LICENSE.md",
 		"order": 85
@@ -40,7 +40,7 @@
 		"id": 5,
 		"name": "pattern.css",
 		"link": "https://bansal.io/pattern-css",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/pattern_css",
+		"img": "https://cdn.freesets.dev/backgrounds/pattern_css.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/bansal/pattern.css",
 		"order": 80
@@ -49,7 +49,7 @@
 		"id": 6,
 		"name": "Haikei",
 		"link": "https://haikei.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/haikei",
+		"img": "https://cdn.freesets.dev/backgrounds/haikei.webp",
 		"license": "Freemium",
 		"licenseLink": "https://haikei.app/pricing/",
 		"licenseDescription": "Commercial use allowed; credit not required (link appreciated).",
@@ -59,7 +59,7 @@
 		"id": 7,
 		"name": "Hero Patterns",
 		"link": "https://www.heropatterns.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/heropatterns",
+		"img": "https://cdn.freesets.dev/backgrounds/heropatterns.webp",
 		"license": "CC BY 4.0",
 		"licenseLink": "https://heropatterns.com",
 		"licenseDescription": "Free with attribution",
@@ -76,7 +76,7 @@
 		"id": 9,
 		"name": "PatternPad",
 		"link": "https://patternpad.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternpad",
+		"img": "https://cdn.freesets.dev/backgrounds/patternpad.webp",
 		"license": "CC BY 4.0",
 		"licenseLink": "https://patternpad.com",
 		"licenseDescription": "Free with attribution",
@@ -86,7 +86,7 @@
 		"id": 10,
 		"name": "Visiwig",
 		"link": "https://www.visiwig.com/patterns/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/visiwig",
+		"img": "https://cdn.freesets.dev/backgrounds/visiwig.webp",
 		"license": "Free",
 		"licenseLink": "https://www.visiwig.com/pattern-license/",
 		"licenseDescription": "You can use the patterns in any project, commercial or personal without attribution or any costs, but you can’t replicate Vector Pattern Generator, redistribute the patterns in packs, or create integrations for these patterns.",
@@ -96,7 +96,7 @@
 		"id": 11,
 		"name": "Tartanify",
 		"link": "https://tartanify.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/tartanify",
+		"img": "https://cdn.freesets.dev/backgrounds/tartanify.webp",
 		"license": "Multiple",
 		"licenseLink": "https://tartanify.com/terms-of-use",
 		"order": 60
@@ -105,7 +105,7 @@
 		"id": 12,
 		"name": "SVG Backgrounds",
 		"link": "https://www.svgbackgrounds.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg_backgrounds",
+		"img": "https://cdn.freesets.dev/backgrounds/svg_backgrounds.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://www.svgbackgrounds.com/license/",
 		"licenseDescription": "Free graphics usable in personal/commercial/client work; attribution required unless you have an active subscription.",
@@ -115,7 +115,7 @@
 		"id": 13,
 		"name": "CSS Pattern",
 		"link": "https://css-pattern.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/css_pattern",
+		"img": "https://cdn.freesets.dev/backgrounds/css_pattern.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/Afif13/CSS-Pattern/blob/main/LICENCE",
 		"order": 55
@@ -132,7 +132,7 @@
 		"order": 50,
 		"name": "CSS3 Patterns Gallery",
 		"link": "https://projects.verou.me/css3patterns/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patterns_gallery",
+		"img": "https://cdn.freesets.dev/backgrounds/patterns_gallery.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/LeaVerou/css3patterns/blob/master/license.txt"
 	},
@@ -141,7 +141,7 @@
 		"order": 97,
 		"name": "UVCanvas",
 		"link": "https://uvcanvas.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/uvcanvas",
+		"img": "https://cdn.freesets.dev/backgrounds/uvcanvas.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/latentcat/uvcanvas?tab=readme-ov-file#license",
 		"tags": [
@@ -154,14 +154,14 @@
 		"order": 82,
 		"name": "SVG Patterns",
 		"link": "https://nucleoapp.com/svg-patterns",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/svg-patterns"
+		"img": "https://cdn.freesets.dev/backgrounds/svg-patterns.webp"
 	},
 	{
 		"id": 18,
 		"order": 67,
 		"name": "Basic Pattern Repository",
 		"link": "https://patterns.helloyes.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternshelloyes",
+		"img": "https://cdn.freesets.dev/backgrounds/patternshelloyes.webp",
 		"tags": [
 			"SVG"
 		]
@@ -171,7 +171,7 @@
 		"order": 78,
 		"name": "fffuel",
 		"link": "https://fffuel.co/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/fffuel",
+		"img": "https://cdn.freesets.dev/backgrounds/fffuel.webp",
 		"license": "Free",
 		"licenseLink": "https://www.fffuel.co/license/",
 		"licenseDescription": "\"You are free to use the Images for both personal and commercial projects. No attribution is required, but a mention is really appreciated.\""
@@ -181,20 +181,20 @@
 		"order": 55,
 		"name": "Shape Divider App",
 		"link": "https://www.shapedivider.app",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shapedivider"
+		"img": "https://cdn.freesets.dev/backgrounds/shapedivider.webp"
 	},
 	{
 		"id": 21,
 		"order": 50,
 		"name": "Tabbied",
 		"link": "https://tabbied.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/tabbied"
+		"img": "https://cdn.freesets.dev/backgrounds/tabbied.webp"
 	},
 	{
 		"id": 22,
 		"order": 95,
 		"name": "ColorBeta",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/colors/colorbeta",
+		"img": "https://cdn.freesets.dev/colors/colorbeta.webp",
 		"link": "https://colorbeta.com/",
 		"tags": [
 			"Gradients"
@@ -204,7 +204,7 @@
 		"id": 23,
 		"order": 85,
 		"name": "NEAT",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/neat",
+		"img": "https://cdn.freesets.dev/backgrounds/neat.webp",
 		"link": "https://neat.firecms.co/",
 		"tags": [
 			"Gradients",
@@ -217,7 +217,7 @@
 		"id": 24,
 		"order": 85,
 		"name": "Gradienty",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/gradienty",
+		"img": "https://cdn.freesets.dev/backgrounds/gradienty.webp",
 		"link": "https://gradienty.codes/",
 		"tags": [
 			"Tailwind"
@@ -227,7 +227,7 @@
 		"id": 25,
 		"order": 78,
 		"name": "Magic UI",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/magicui",
+		"img": "https://cdn.freesets.dev/backgrounds/magicui.webp",
 		"link": "https://magicui.design/docs/components/animated-grid-pattern",
 		"tags": [
 			"Tailwind"
@@ -238,7 +238,7 @@
 		"order": 90,
 		"name": "Shader Gradient",
 		"link": "https://www.shadergradient.co/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/shadergradient",
+		"img": "https://cdn.freesets.dev/backgrounds/shadergradient.webp",
 		"tags": [
 			"React",
 			"Framer",
@@ -250,28 +250,28 @@
 		"order": 30,
 		"name": "Photo Gradient",
 		"link": "https://photogradient.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/photogradient"
+		"img": "https://cdn.freesets.dev/backgrounds/photogradient.webp"
 	},
 	{
 		"id": 28,
 		"order": 75,
 		"name": "CSS mesh gradients",
 		"link": "https://csshero.org/mesher/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/cssheromesher"
+		"img": "https://cdn.freesets.dev/backgrounds/cssheromesher.webp"
 	},
 	{
 		"id": 29,
 		"order": 94,
 		"name": "Mazeletter",
 		"link": "http://mazeletter.xyz/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/mazeletter"
+		"img": "https://cdn.freesets.dev/backgrounds/mazeletter.webp"
 	},
 	{
 		"id": 30,
 		"order": 30,
 		"name": "Pattern Collection",
 		"link": "https://wpshout.com/pattern-collection/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
+		"img": "https://cdn.freesets.dev/inspirations/pattern-collection.webp",
 		"tags": ["Inspiration"]
 	},
 	{
@@ -279,7 +279,7 @@
 		"order": 60,
 		"name": "Shape Dividers",
 		"link": "https://www.shapedivider.app",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/shape-dividers",
+		"img": "https://cdn.freesets.dev/tools/shape-dividers.webp",
 		"tags": ["Section separator"]
 	},
 	{
@@ -287,13 +287,13 @@
 		"order": 47,
 		"name": "Get Waves",
 		"link": "https://getwaves.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/get-waves"
+		"img": "https://cdn.freesets.dev/backgrounds/get-waves.webp"
 	},
 	{
 		"id": 33,
 		"order": 58,
 		"name": "Patternico",
 		"link": "https://patternico.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/backgrounds/patternico"
+		"img": "https://cdn.freesets.dev/backgrounds/patternico.webp"
 	}
 ]

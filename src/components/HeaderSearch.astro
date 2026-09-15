@@ -1,18 +1,17 @@
 ---
+import categories from '@/assets/categories'
+
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
 const hint = 'flex items-center gap-1.5'
-const key =
-	'rounded border border-zinc-300 px-1 font-sans text-[10px] text-zinc-500 dark:border-zinc-700'
 ---
 
 <div
 	data-header-search
-	class="relative w-56 shrink-0 transition-[width] duration-200 focus-within:w-full sm:focus-within:w-96"
+	class="group relative w-64 shrink-0 transition-[width] duration-200 focus-within:w-full sm:focus-within:w-105"
 >
 	<form action="/search" method="get">
 		<label for="header-search" class="sr-only">Search all resources</label>
-		<div
-			class="flex h-9 w-full items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-100 px-3 text-sm transition-colors focus-within:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:focus-within:border-zinc-500"
-		>
+		<div class="flex h-9 w-full items-center gap-2.5 control px-3 text-sm">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="16"
@@ -24,7 +23,7 @@ const key =
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				aria-hidden="true"
-				class="shrink-0 text-zinc-500"
+				class="shrink-0 text-subtle"
 			>
 				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
 				<path d="M21 21l-6 -6"></path>
@@ -43,16 +42,20 @@ const key =
 				role="combobox"
 				aria-expanded="false"
 				aria-controls="header-search-results"
-				placeholder="Search all resources..."
-				class="w-full min-w-0 bg-transparent text-zinc-950 outline-none placeholder:text-zinc-500 dark:text-white"
+				placeholder={`Search ${total} resources…`}
+				class="w-full min-w-0 bg-transparent text-ink outline-none placeholder:text-subtle"
 			/>
+
+			<kbd data-search-shortcut class="hidden shrink-0 kbd group-focus-within:hidden sm:inline"
+				>Ctrl K</kbd
+			>
 		</div>
 	</form>
 
 	<div
 		data-search-panel
 		hidden
-		class="absolute top-full right-0 z-30 mt-2 w-[min(85vw,34rem)] min-w-full overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-950"
+		class="absolute top-full right-0 z-30 mt-2 w-[min(85vw,38rem)] min-w-full overflow-hidden rounded-2xl border border-line bg-card shadow-[0_32px_80px_rgb(0_0_0/0.35)]"
 	>
 		<div
 			id="header-search-results"
@@ -64,82 +67,63 @@ const key =
 		</div>
 
 		<div
-			class="flex flex-wrap items-center gap-4 border-t border-zinc-200 px-3 py-2 text-[10px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800"
+			class="flex flex-wrap items-center gap-4 border-t border-line bg-field px-3.5 py-2.5 eyebrow text-[10.5px] tracking-[0.06em]"
 		>
-			<span class={hint}><kbd class={key}>↑↓</kbd> Navigate</span>
-			<span class={hint}><kbd class={key}>⏎</kbd> Open</span>
-			<span class={hint}><kbd class={key}>Tab</kbd> Filter by category</span>
+			<span class={hint}><kbd class="kbd">↑↓</kbd> Navigate</span>
+			<span class={hint}><kbd class="kbd">⏎</kbd> Open</span>
+			<span class={hint}><kbd class="kbd">Tab</kbd> Filter by category</span>
 		</div>
 	</div>
 </div>
 
 <script>
 	import { matches } from '@/scripts/filter'
-
-	type Entry = {
-		name: string
-		link: string
-		category: string
-		nameID: string
-		color: string
-		meta: string
-	}
+	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
 
 	const MAX_RESULTS = 12
-	let index: Entry[] | undefined
-	let loading: Promise<Entry[]> | undefined
 
-	function loadIndex() {
-		loading ??= fetch('/search-index.json')
-			.then((response) => (response.ok ? response.json() : []))
-			.then((data: Entry[]) => (index = data))
-			.catch(() => [])
-
-		return loading
-	}
-
-	function groupHeader(entry: Entry) {
+	function groupHeader(entry: SearchEntry) {
 		const icon = document.createElement('img')
 		icon.src = `/categories-icons/${entry.nameID}.svg`
 		icon.alt = ''
-		icon.width = 12
-		icon.height = 12
-		icon.className = 'w-3 invert'
+		icon.width = 10
+		icon.height = 10
+		icon.className = 'w-2.5 invert'
 
 		const badge = document.createElement('span')
-		badge.className = 'flex size-5 shrink-0 items-center justify-center rounded'
+		badge.className = 'flex size-4 shrink-0 items-center justify-center rounded-[5px]'
 		badge.style.backgroundColor = entry.color
 		badge.append(icon)
 
 		const name = document.createElement('span')
 		name.textContent = entry.category
-		name.className = 'text-[10px] font-medium tracking-widest text-zinc-500 uppercase'
+		name.className = 'eyebrow text-[10.5px] text-muted'
 
 		const rule = document.createElement('span')
-		rule.className = 'h-px grow bg-zinc-200 dark:bg-zinc-800'
+		rule.className = 'h-px grow bg-line'
 
 		const header = document.createElement('div')
-		header.className = 'flex items-center gap-2 px-2 pt-3 pb-1'
+		header.className = 'flex items-center gap-2 px-2.5 pt-3 pb-1.5'
 		header.append(badge, name, rule)
 		return header
 	}
 
-	function resultRow(entry: Entry, position: number) {
+	function resultRow(entry: SearchEntry, position: number) {
 		const favicon = document.createElement('img')
 		favicon.src = `https://www.google.com/s2/favicons?domain=${entry.link}&sz=64`
 		favicon.alt = ''
 		favicon.width = 24
 		favicon.height = 24
 		favicon.loading = 'lazy'
-		favicon.className = 'size-6 shrink-0 rounded'
+		favicon.className = 'size-5 shrink-0 rounded-[5px]'
 
 		const name = document.createElement('span')
 		name.textContent = entry.name
-		name.className = 'truncate font-medium'
+		name.className = 'truncate text-[14.5px] font-medium'
 
 		const meta = document.createElement('span')
-		meta.textContent = entry.meta
-		meta.className = 'ml-auto shrink-0 pl-4 text-sm text-zinc-500'
+		meta.textContent = entry.license || entry.tags[0] || ''
+		meta.className = 'ml-auto shrink-0 pl-4 text-[12.5px] text-subtle'
 
 		const row = document.createElement('a')
 		row.id = `header-search-option-${position}`
@@ -150,7 +134,7 @@ const key =
 		row.setAttribute('role', 'option')
 		row.setAttribute('aria-selected', 'false')
 		row.className =
-			'flex items-center gap-3 rounded-md px-2 py-2 aria-selected:bg-zinc-100 dark:aria-selected:bg-zinc-900'
+			'flex items-center gap-3 rounded-[9px] px-2.5 py-2 hover:bg-hover aria-selected:bg-hover'
 		row.append(favicon, name, meta)
 		return row
 	}
@@ -163,8 +147,11 @@ const key =
 		const chip = root?.querySelector<HTMLElement>('[data-search-filter]')
 		if (!root || !input || !panel || !list || !chip) return
 
+		const shortcut = root.querySelector<HTMLElement>('[data-search-shortcut]')
+		if (shortcut && /Mac|iPhone|iPad/.test(navigator.userAgent)) shortcut.textContent = '⌘K'
+
 		let options: HTMLAnchorElement[] = []
-		let available: Entry[] = []
+		let available: SearchEntry[] = []
 		let filter = ''
 		let active = -1
 
@@ -193,7 +180,7 @@ const key =
 			list!.replaceChildren()
 			options = []
 
-			const groups = new Map<string, Entry[]>()
+			const groups = new Map<string, SearchEntry[]>()
 			for (const entry of shown) {
 				groups.set(entry.nameID, [...(groups.get(entry.nameID) ?? []), entry])
 			}
@@ -235,7 +222,7 @@ const key =
 				return
 			}
 
-			const entries = index ?? (await loadIndex())
+			const entries = await loadSearchIndex()
 			available = entries.filter((entry) => matches(entry.name.toLowerCase(), query))
 
 			if (filter && !available.some((entry) => entry.nameID === filter)) {
@@ -246,7 +233,7 @@ const key =
 			render()
 		}
 
-		input.addEventListener('focus', loadIndex, { once: true })
+		input.addEventListener('focus', loadSearchIndex, { once: true })
 		input.addEventListener('input', search)
 		input.addEventListener('focus', search)
 

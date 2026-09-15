@@ -2,19 +2,157 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Surface palette from the redesign. The file only specifies dark, so light mirrors its roles:
+   canvas is the page, raised the slabs laid over it, card and field the things inside those. */
 :root {
 	color-scheme: light;
-	--grid-line: rgb(0 0 0 / 0.05);
+	--canvas: #ffffff;
+	--raised: #f6f7f8;
+	--card: #ffffff;
+	--field: #f3f4f6;
+	--hover: #e9ebee;
+	--line: #e3e5e8;
+	--line-strong: #cdd1d6;
+	--ink: #0a0b0d;
+	--soft: #33383e;
+	--muted: #5d636a;
+	--subtle: #868c94;
+	--highlight: rgb(255 255 255 / 0.9);
+	--card-shadow: rgb(15 23 42 / 0.05);
+	--slab-shadow: rgb(15 23 42 / 0.06);
+	--grid-line: rgb(0 0 0 / 0.035);
 	--footer-height: 22rem;
+	--chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235d636a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
 }
 
 :root.dark {
 	color-scheme: dark;
-	--grid-line: rgb(255 255 255 / 0.05);
+	--canvas: #0a0b0d;
+	--raised: #0f1114;
+	--card: #15181c;
+	--field: #121417;
+	--hover: #1b1f24;
+	--line: #1e2126;
+	--line-strong: #2e333a;
+	--ink: #f2f3f5;
+	--soft: #c9ced4;
+	--muted: #8e949c;
+	--subtle: #6b7178;
+	--highlight: rgb(255 255 255 / 0.055);
+	--card-shadow: rgb(0 0 0 / 0.35);
+	--slab-shadow: rgb(0 0 0 / 0.55);
+	--grid-line: rgb(255 255 255 / 0.022);
+	--chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238e949c' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
 }
 
 @theme {
 	--font-sans: 'Gabarito', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@theme inline {
+	--color-canvas: var(--canvas);
+	--color-raised: var(--raised);
+	--color-card: var(--card);
+	--color-field: var(--field);
+	--color-hover: var(--hover);
+	--color-line: var(--line);
+	--color-line-strong: var(--line-strong);
+	--color-ink: var(--ink);
+	--color-soft: var(--soft);
+	--color-muted: var(--muted);
+	--color-subtle: var(--subtle);
+}
+
+/* Small mono caps used for section labels, counters and hints. */
+@utility eyebrow {
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--subtle);
+}
+
+@utility kbd {
+	font-family: var(--font-mono);
+	font-size: 11px;
+	line-height: 1;
+	padding: 3px 6px;
+	border: 1px solid var(--line-strong);
+	border-radius: 4px;
+	color: var(--muted);
+}
+
+@utility surface {
+	border: 1px solid var(--line);
+	background-color: var(--card);
+	box-shadow:
+		inset 0 1px 0 var(--highlight),
+		0 8px 20px var(--card-shadow);
+}
+
+@utility control {
+	border: 1px solid var(--line);
+	border-radius: 9px;
+	background-color: var(--field);
+	box-shadow: inset 0 1px 0 var(--highlight);
+	transition: border-color 150ms;
+
+	&:hover,
+	&:focus-within {
+		border-color: var(--line-strong);
+	}
+}
+
+@utility btn {
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	height: 2.25rem;
+	padding-inline: 0.875rem;
+	border-radius: 9px;
+	font-size: 13.5px;
+	font-weight: 500;
+	white-space: nowrap;
+	cursor: pointer;
+	transition:
+		opacity 150ms,
+		border-color 150ms,
+		color 150ms;
+}
+
+@utility btn-primary {
+	background-color: var(--ink);
+	color: var(--canvas);
+	font-weight: 600;
+
+	&:hover {
+		opacity: 0.88;
+	}
+}
+
+@utility btn-ghost {
+	border: 1px solid var(--line);
+	background-color: var(--field);
+	color: var(--soft);
+	box-shadow: inset 0 1px 0 var(--highlight);
+
+	&:hover {
+		border-color: var(--line-strong);
+		color: var(--ink);
+	}
+}
+
+/* Swaps the native select arrow, which sits at a different offset in every browser, for a
+   centred chevron. Pair it with right padding (pr-8) so text never runs under it. */
+@utility dropdown {
+	appearance: none;
+	background-image: var(--chevron);
+	background-repeat: no-repeat;
+	background-position: right 0.625rem center;
+	background-size: 14px;
 }
 
 html {
@@ -46,16 +184,48 @@ html {
 	}
 }
 
-::view-transition-old(root) {
+/* The page chrome (canvas, grid, footer) swaps in place. Only the content moves. */
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
+}
+
+/* Outgoing snapshots sit where the incoming page is, so --vt-scroll-shift puts them back where they
+   were on screen (set from Layout.astro). A lone old snapshot already keeps its own spot. */
+::view-transition-group(page),
+::view-transition-group(accent-blobs) {
+	animation: none;
+}
+
+::view-transition-old(page),
+::view-transition-old(accent-blobs) {
+	translate: 0 var(--vt-scroll-shift, 0px);
+}
+
+::view-transition-old(accent-blobs):only-child {
+	translate: none;
+}
+
+::view-transition-old(page) {
 	animation:
 		90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
 		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
 }
 
-::view-transition-new(root) {
+::view-transition-new(page) {
 	animation:
 		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
 		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+/* Category accent blobs only cross-fade, so a color change reads as a soft wash. */
+::view-transition-old(accent-blobs) {
+	animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out;
+}
+
+::view-transition-new(accent-blobs) {
+	animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in;
 }
 
 /* The category header keeps its place instead of sliding away with the rest of the page. */
@@ -79,7 +249,7 @@ html {
 	background-image:
 		linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
 		linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
-	background-size: 28px 28px;
+	background-size: 40px 40px;
 }
 
 .accent-blobs {
@@ -141,7 +311,7 @@ html {
 	background: linear-gradient(
 		to right,
 		var(--control-color) var(--progress),
-		var(--color-zinc-200) var(--progress)
+		var(--line-strong) var(--progress)
 	);
 	cursor: ew-resize;
 }
@@ -152,18 +322,9 @@ html {
 	background: linear-gradient(
 		to right,
 		var(--control-color) var(--progress),
-		var(--color-zinc-200) var(--progress)
+		var(--line-strong) var(--progress)
 	);
 	cursor: ew-resize;
-}
-
-:root.dark .column-slider::-webkit-slider-runnable-track,
-:root.dark .column-slider::-moz-range-track {
-	background: linear-gradient(
-		to right,
-		var(--control-color) var(--progress),
-		var(--color-zinc-800) var(--progress)
-	);
 }
 
 .column-slider::-webkit-slider-thumb {
@@ -172,7 +333,7 @@ html {
 	height: 14px;
 	margin-top: -4px;
 	border-radius: 999px;
-	border: 2px solid var(--color-white);
+	border: 2px solid var(--canvas);
 	background: var(--control-color);
 	box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
 	cursor: grab;
@@ -182,7 +343,7 @@ html {
 	width: 14px;
 	height: 14px;
 	border-radius: 999px;
-	border: 2px solid var(--color-white);
+	border: 2px solid var(--canvas);
 	background: var(--control-color);
 	box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
 	cursor: grab;
@@ -202,9 +363,11 @@ html {
 }
 
 [data-results] {
-	--gap: 0px;
 	--columns: 1;
-	gap: var(--gap);
+	display: grid;
+	/* minmax(0, …) stops a card's content from widening its column past the others */
+	grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+	gap: 1rem;
 }
 
 @media (width >= 40rem) {
@@ -219,16 +382,7 @@ html {
 	}
 }
 
-[data-results] > li {
-	flex: 0 0 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
-}
-
-html[data-theme-transition]::view-transition-old(root),
-html[data-theme-transition]::view-transition-new(root) {
-	animation: none;
-	mix-blend-mode: normal;
-}
-
+/* Root's old/new snapshots already skip animation and blending (see above), which the reveal relies on. */
 html[data-theme-transition]::view-transition-image-pair(root) {
 	isolation: auto;
 }

@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 99,
 		"name": "Pexels",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/pexels",
+		"img": "https://cdn.freesets.dev/photos/pexels.webp",
 		"link": "https://www.pexels.com",
 		"license": "Free",
 		"licenseLink": "https://www.pexels.com/license/",
@@ -13,7 +13,7 @@
 		"id": 2,
 		"order": 98,
 		"name": "PixaBay",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/pixabay",
+		"img": "https://cdn.freesets.dev/photos/pixabay.webp",
 		"link": "https://pixabay.com/photos/",
 		"license": "Pixabay License",
 		"licenseLink": "https://pixabay.com/es/service/license/",
@@ -23,7 +23,7 @@
 		"id": 3,
 		"order": 87,
 		"name": "Unsplash",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/unsplash",
+		"img": "https://cdn.freesets.dev/photos/unsplash.webp",
 		"link": "https://unsplash.com",
 		"license": "Free",
 		"licenseLink": "https://unsplash.com/license",
@@ -33,7 +33,7 @@
 		"id": 4,
 		"order": 85,
 		"name": "Picography",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/picography",
+		"img": "https://cdn.freesets.dev/photos/picography.webp",
 		"link": "https://picography.co",
 		"license": "CC0 1.0",
 		"licenseLink": "https://picography.co/terms/"
@@ -42,7 +42,7 @@
 		"id": 5,
 		"order": 79,
 		"name": "BURST",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nqabpisbca27jeilwiz0",
+		"img": "https://cdn.freesets.dev/photos/nqabpisbca27jeilwiz0.webp",
 		"link": "https://www.shopify.com/stock-photos",
 		"license": "Burst license",
 		"licenseLink": "https://www.shopify.com/stock-photos/licenses/shopify-some-rights-reserved",
@@ -71,7 +71,7 @@
 		"id": 8,
 		"order": 70,
 		"name": "Foca stock",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/vo91kfa8yf1bfjlh3hp9",
+		"img": "https://cdn.freesets.dev/photos/vo91kfa8yf1bfjlh3hp9.webp",
 		"link": "https://focastock.com",
 		"license": "CC0",
 		"licenseLink": "https://focastock.com/license/"
@@ -80,7 +80,7 @@
 		"id": 9,
 		"order": 57,
 		"name": "Librestock",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/k0wczfs8jhkdyt2emb42",
+		"img": "https://cdn.freesets.dev/photos/k0wczfs8jhkdyt2emb42.webp",
 		"link": "https://librestock.com/",
 		"license": "CC0"
 	},
@@ -88,7 +88,7 @@
 		"id": 10,
 		"order": 40,
 		"name": "StockSnap",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/stocksnap",
+		"img": "https://cdn.freesets.dev/photos/stocksnap.webp",
 		"link": "https://stocksnap.io",
 		"license": "CC0 1.0",
 		"licenseLink": "https://stocksnap.io/license"
@@ -97,7 +97,7 @@
 		"id": 11,
 		"order": 40,
 		"name": "Little Visuals",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/dnhigbkxnmiyyb4niexl",
+		"img": "https://cdn.freesets.dev/photos/dnhigbkxnmiyyb4niexl.webp",
 		"link": "https://littlevisuals.co",
 		"license": "CC0",
 		"licenseLink": "https://littlevisuals.co"
@@ -106,7 +106,7 @@
 		"id": 12,
 		"order": 40,
 		"name": "Barnimages",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/cxuir76i6d8mt9misxxg",
+		"img": "https://cdn.freesets.dev/photos/cxuir76i6d8mt9misxxg.webp",
 		"link": "https://barnimages.com",
 		"license": "Free",
 		"licenseLink": "https://barnimages.com/license/"
@@ -115,7 +115,7 @@
 		"id": 13,
 		"order": 25,
 		"name": "Shotstash",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/bnxx11wyktgmdczf7a7i",
+		"img": "https://cdn.freesets.dev/photos/bnxx11wyktgmdczf7a7i.webp",
 		"link": "https://shotstash.com",
 		"license": "CC0",
 		"licenseLink": "https://shotstash.com/license/"
@@ -124,7 +124,7 @@
 		"id": 14,
 		"order": 20,
 		"name": "Nappy",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nappy",
+		"img": "https://cdn.freesets.dev/photos/nappy.webp",
 		"link": "https://nappy.co",
 		"license": "CC0 1.0",
 		"licenseLink": "https://nappy.co/license"
@@ -143,7 +143,7 @@
 		"id": 16,
 		"order": 18,
 		"name": "Picjumbo",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/picjumbo",
+		"img": "https://cdn.freesets.dev/photos/picjumbo.webp",
 		"link": "https://picjumbo.com/",
 		"license": "Freemium",
 		"licenseLink": "https://picjumbo.com/faq-and-terms/"
@@ -152,7 +152,7 @@
 		"id": 17,
 		"order": 7,
 		"name": "Noun Project",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rjsgqt0ldn8betpkcmty",
+		"img": "https://cdn.freesets.dev/photos/rjsgqt0ldn8betpkcmty.webp",
 		"link": "https://thenounproject.com/photos/",
 		"license": "Freemium",
 		"licenseLink": "https://thenounproject.com/pricing/#photos",
@@ -162,7 +162,7 @@
 		"id": 18,
 		"order": 80,
 		"name": "Openverse",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/openverse",
+		"img": "https://cdn.freesets.dev/photos/openverse.webp",
 		"link": "https://openverse.org",
 		"license": "CC",
 		"licenseLink": "https://openverse.org"
@@ -171,7 +171,7 @@
 		"id": 19,
 		"order": 85,
 		"name": "Lummi Photos",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/lummi",
+		"img": "https://cdn.freesets.dev/photos/lummi.webp",
 		"link": "https://www.lummi.ai/",
 		"license": "Free",
 		"licenseLink": "https://www.lummi.ai/terms",
@@ -181,7 +181,7 @@
 		"id": 20,
 		"order": 83,
 		"name": "Neurascapes",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/neurascapes",
+		"img": "https://cdn.freesets.dev/photos/neurascapes.webp",
 		"link": "https://www.neurascapes.com",
 		"license": "Free",
 		"licenseLink": "https://www.neurascapes.com/license",
@@ -191,7 +191,7 @@
 		"id": 21,
 		"order": 26,
 		"name": "Skitterphoto",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/skitterphoto",
+		"img": "https://cdn.freesets.dev/photos/skitterphoto.webp",
 		"link": "https://skitterphoto.com",
 		"license": "CC0",
 		"licenseLink": "https://skitterphoto.com/license"
@@ -200,7 +200,7 @@
 		"id": 22,
 		"order": 7,
 		"name": "Freepik",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/freepik",
+		"img": "https://cdn.freesets.dev/photos/freepik.webp",
 		"link": "https://www.freepik.com/",
 		"license": "Freepik License",
 		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement",
@@ -211,7 +211,7 @@
 		"order": 78,
 		"name": "Public Work by Cosmos",
 		"link": "https://public.work/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/publicwork",
+		"img": "https://cdn.freesets.dev/photos/publicwork.webp",
 		"tags": ["Vintage"]
 	},
 	{
@@ -219,7 +219,7 @@
 		"order": 90,
 		"name": "Kaboompics",
 		"link": "https://kaboompics.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/kaboompics",
+		"img": "https://cdn.freesets.dev/photos/kaboompics.webp",
 		"license": "Free",
 		"licenseLink": "https://kaboompics.com/page/license-and-faq",
 		"licenseDescription": "\"Each asset indicates Standard or Editorial license; Standard supports personal & commercial use.\""
@@ -229,7 +229,7 @@
 		"order": 24,
 		"name": "SplitShire",
 		"link": "https://www.splitshire.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/splitshire",
+		"img": "https://cdn.freesets.dev/photos/splitshire.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://www.splitshire.com/terms-conditions",
 		"tags": ["AI"]
@@ -239,7 +239,7 @@
 		"order": 52,
 		"name": "Wikimedia Commons",
 		"link": "https://commons.wikimedia.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/wikimedia-commons",
+		"img": "https://cdn.freesets.dev/photos/wikimedia-commons.webp",
 		"license": "Multiple"
 	},
 	{
@@ -247,7 +247,7 @@
 		"order": 79,
 		"name": "The Met Open Access",
 		"link": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/the-met-open-access",
+		"img": "https://cdn.freesets.dev/photos/the-met-open-access.webp",
 		"license": "CC0",
 		"licenseLink": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
 		"tags": ["Museum" , "Art"]
@@ -257,7 +257,7 @@
 		"order": 16,
 		"name": "Rijksmuseum Rijksstudio",
 		"link": "https://www.rijksmuseum.nl/en/rijksstudio",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/rijksmuseum-rijksstudio",
+		"img": "https://cdn.freesets.dev/photos/rijksmuseum-rijksstudio.webp",
 		"tags": ["Art", "Museum"]
 	},
 	{
@@ -265,7 +265,7 @@
 		"order": 48,
 		"name": "National Gallery of Art",
 		"link": "https://www.nga.gov/open-access-images.html",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nga-open-access",
+		"img": "https://cdn.freesets.dev/photos/nga-open-access.webp",
 		"license": "CC0",
 		"licenseLink": "https://www.nga.gov/open-access-images.html",
 		"tags": ["Museum", "Art"]
@@ -275,7 +275,7 @@
 		"order": 20,
 		"name": "NYPL Digital Collections",
 		"link": "https://digitalcollections.nypl.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/photos/nypl-digital-collections",
+		"img": "https://cdn.freesets.dev/photos/nypl-digital-collections.webp",
 		"license": "Public Domain",
 		"licenseLink": "https://digitalcollections.nypl.org/about#public_domain",
 		"tags": ["Archive", "Art", "Vintage"]
@@ -285,7 +285,7 @@
 		"order": 38,
 		"name": "NASA",
 		"link": "https://images.nasa.gov/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/nasa-images",
+		"img": "https://cdn.freesets.dev/videos/nasa-images.webp",
 		"license": "Free",
 		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
 		"licenseDescription": "\"Most NASA imagery is public domain; follow NASA media usage guidelines and restrictions.\"",
@@ -296,7 +296,7 @@
 		"order": 84,
 		"name": "Free Nature Stock",
 		"link": "https://freenaturestock.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/videos/free-nature-stock",
+		"img": "https://cdn.freesets.dev/videos/free-nature-stock.webp",
 		"license": "CC0",
 		"licenseLink": "https://freenaturestock.com/license/"
 	}

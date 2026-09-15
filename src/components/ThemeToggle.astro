@@ -1,53 +1,108 @@
 ---
-const icon = 'size-4'
+const icons = {
+	light: [
+		'M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0',
+		'M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7'
+	],
+	dark: ['M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z'],
+	system: [
+		'M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z',
+		'M7 20h10',
+		'M9 16v4',
+		'M15 16v4'
+	]
+}
+
+const modes = [
+	{ value: 'light', label: 'Light', paths: icons.light },
+	{ value: 'dark', label: 'Dark', paths: icons.dark },
+	{ value: 'system', label: 'Device theme', paths: icons.system }
+]
+
+const svg = {
+	viewBox: '0 0 24 24',
+	fill: 'none',
+	stroke: 'currentColor',
+	'stroke-width': '2',
+	'stroke-linecap': 'round',
+	'stroke-linejoin': 'round',
+	'aria-hidden': 'true'
+} as const
+
+// Both glyphs share one grid cell and trade places by spinning and scaling through each other.
+const swap =
+	'size-4 [grid-area:1/1] transition-[rotate,scale,opacity] duration-500 ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none'
 ---
 
-<button
-	type="button"
-	data-theme-toggle
-	aria-label="Toggle color theme"
-	title="Toggle color theme"
-	class="flex size-9 shrink-0 items-center justify-center rounded-md border-2 border-zinc-300 bg-zinc-100 transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500"
->
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 24 24"
-		fill="none"
-		stroke="currentColor"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		aria-hidden="true"
-		class={`${icon} dark:hidden`}
+<div data-theme class="relative">
+	<button
+		type="button"
+		data-theme-toggle
+		aria-label="Toggle color theme"
+		title="Toggle color theme (right-click for more options)"
+		class="btn w-9 btn-ghost px-0"
 	>
-		<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
-	</svg>
+		<span class="grid place-items-center">
+			<svg {...svg} class={`${swap} dark:scale-0 dark:rotate-90 dark:opacity-0`}>
+				{icons.dark.map((d) => <path d={d} />)}
+			</svg>
+			<svg
+				{...svg}
+				class={`${swap} scale-0 -rotate-90 opacity-0 dark:scale-100 dark:rotate-0 dark:opacity-100`}
+			>
+				{icons.light.map((d) => <path d={d} />)}
+			</svg>
+		</span>
+	</button>
 
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 24 24"
-		fill="none"
-		stroke="currentColor"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		aria-hidden="true"
-		class={`${icon} hidden dark:block`}
+	<div
+		data-theme-menu
+		role="menu"
+		aria-label="Color theme"
+		class="invisible absolute top-full right-0 z-50 mt-2 w-44 origin-top-right scale-95 rounded-xl border border-line bg-card p-1 opacity-0 shadow-[0_16px_40px_rgb(0_0_0/0.3)] transition-[opacity,scale,visibility] duration-150 data-open:visible data-open:scale-100 data-open:opacity-100 data-open:transition-[opacity,scale] motion-reduce:transition-none"
 	>
-		<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-		<path
-			d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
-		></path>
-	</svg>
-</button>
+		{
+			modes.map((mode) => (
+				<button
+					type="button"
+					role="menuitemradio"
+					aria-checked="false"
+					data-theme-option={mode.value}
+					class="group flex w-full cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-1.5 text-sm text-soft outline-none hover:bg-hover hover:text-ink focus-visible:bg-hover focus-visible:text-ink aria-checked:text-ink"
+				>
+					<svg {...svg} class="size-4 shrink-0">
+						{mode.paths.map((d) => (
+							<path d={d} />
+						))}
+					</svg>
+					<span class="grow text-left">{mode.label}</span>
+					<svg {...svg} class="size-3.5 shrink-0 opacity-0 group-aria-checked:opacity-100">
+						<path d="M5 12l5 5l10 -10" />
+					</svg>
+				</button>
+			))
+		}
+	</div>
+</div>
 
 <script>
-	function applyTheme() {
-		const dark = document.documentElement.classList.toggle('dark')
-		localStorage.setItem('theme', dark ? 'dark' : 'light')
+	type Mode = 'light' | 'dark' | 'system'
+
+	const STORAGE_KEY = 'theme'
+	const systemDark = matchMedia('(prefers-color-scheme: dark)')
+
+	/** Device theme is stored as the absence of a choice, which is what Layout's inline script reads. */
+	function readMode(): Mode {
+		const stored = localStorage.getItem(STORAGE_KEY)
+		return stored === 'light' || stored === 'dark' ? stored : 'system'
 	}
 
-	async function reveal(button: HTMLButtonElement) {
+	function saveMode(mode: Mode) {
+		if (mode === 'system') localStorage.removeItem(STORAGE_KEY)
+		else localStorage.setItem(STORAGE_KEY, mode)
+	}
+
+	async function reveal(button: HTMLElement, apply: () => void) {
 		const root = document.documentElement
 		const { left, top, width, height } = button.getBoundingClientRect()
 		const x = left + width / 2
@@ -57,7 +112,7 @@ const icon = 'size-4'
 		root.dataset.themeTransition = ''
 
 		try {
-			const transition = document.startViewTransition(applyTheme)
+			const transition = document.startViewTransition(apply)
 			await transition.ready
 
 			root.animate(
@@ -77,19 +132,91 @@ const icon = 'size-4'
 		}
 	}
 
+	function setDark(button: HTMLElement, dark: boolean) {
+		const root = document.documentElement
+		if (root.classList.contains('dark') === dark) return
+
+		const apply = () => root.classList.toggle('dark', dark)
+		const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
+
+		if (reduced || !document.startViewTransition) {
+			apply()
+			return
+		}
+
+		reveal(button, apply)
+	}
+
 	function setup() {
-		const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]')
+		const root = document.querySelector<HTMLElement>('[data-theme]')
+		const button = root?.querySelector<HTMLButtonElement>('[data-theme-toggle]')
+		const menu = root?.querySelector<HTMLElement>('[data-theme-menu]')
+		if (!root || !button || !menu) return
 
-		button?.addEventListener('click', () => {
-			const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
+		const options = [...menu.querySelectorAll<HTMLButtonElement>('[data-theme-option]')]
 
-			if (reduced || !document.startViewTransition) {
-				applyTheme()
-				return
+		const open = () => {
+			const mode = readMode()
+			for (const option of options) {
+				option.setAttribute('aria-checked', String(option.dataset.themeOption === mode))
 			}
 
-			reveal(button)
+			menu.toggleAttribute('data-open', true)
+			const checked = options.find((option) => option.dataset.themeOption === mode)
+			;(checked ?? options[0])!.focus()
+		}
+
+		const close = (refocus = false) => {
+			if (!menu.hasAttribute('data-open')) return
+			menu.removeAttribute('data-open')
+			if (refocus) button.focus()
+		}
+
+		button.addEventListener('click', () => {
+			const dark = !document.documentElement.classList.contains('dark')
+			saveMode(dark ? 'dark' : 'light')
+			setDark(button, dark)
 		})
+
+		// Also fires for the keyboard's context menu key and Shift+F10.
+		button.addEventListener('contextmenu', (event) => {
+			event.preventDefault()
+			open()
+		})
+
+		for (const option of options) {
+			option.addEventListener('click', () => {
+				const mode = option.dataset.themeOption as Mode
+				saveMode(mode)
+				close(true)
+				setDark(button, mode === 'system' ? systemDark.matches : mode === 'dark')
+			})
+		}
+
+		menu.addEventListener('keydown', (event) => {
+			const index = options.indexOf(document.activeElement as HTMLButtonElement)
+
+			if (event.key === 'Escape') {
+				event.preventDefault()
+				close(true)
+			} else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+				event.preventDefault()
+				const step = event.key === 'ArrowDown' ? 1 : -1
+				options[(index + step + options.length) % options.length]!.focus()
+			} else if (event.key === 'Tab') {
+				close()
+			}
+		})
+
+		const controller = new AbortController()
+		document.addEventListener(
+			'pointerdown',
+			(event) => {
+				if (!root.contains(event.target as Node)) close()
+			},
+			{ signal: controller.signal }
+		)
+		document.addEventListener('astro:before-swap', () => controller.abort(), { once: true })
 	}
 
 	document.addEventListener('astro:page-load', setup)

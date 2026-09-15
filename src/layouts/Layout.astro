@@ -29,6 +29,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 		<link rel="canonical" href={canonical} />
 		{themeColor && <meta name="theme-color" content={themeColor} />}
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+		/>
+
 		<meta property="og:title" content={title} />
 		<meta property="og:site_name" content="Freesets" />
 		<meta property="og:type" content="website" />
@@ -59,17 +66,24 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 				if (!window.themeListenerReady) {
 					window.themeListenerReady = true
 					document.addEventListener('astro:after-swap', apply)
+					// With no stored choice the page follows the device, so track it changing live.
+					matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply)
 				}
 			})()
 		</script>
 	</head>
-	<body class="bg-white text-zinc-950 dark:bg-zinc-950 dark:text-white">
+	<body class="bg-canvas text-ink">
 		<div
-			class="relative z-10 mb-(--footer-height) bg-white shadow-[0_1rem_2rem_rgba(0,0,0,0.25)] dark:bg-zinc-950"
+			class="relative z-10 mb-(--footer-height) border-b border-line bg-canvas bg-grid shadow-[0_1rem_2rem_rgba(0,0,0,0.25)]"
 		>
 			{
 				themeColor && (
-					<div aria-hidden="true" class="accent-blobs" style={`--accent: ${themeColor}`}>
+					<div
+						aria-hidden="true"
+						transition:name="accent-blobs"
+						class="accent-blobs"
+						style={`--accent: ${themeColor}`}
+					>
 						<span />
 						<span />
 					</div>
@@ -78,12 +92,34 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 
 			<div class="relative mx-auto flex min-h-dvh max-w-380 flex-col p-4">
 				<NavBar />
-				<main class="flex grow flex-col">
+				<main transition:name="page" class="flex grow flex-col">
 					<slot />
 				</main>
 			</div>
 		</div>
 
 		<Footer />
+
+		<script>
+			import type { TransitionBeforeSwapEvent } from 'astro:transitions/client'
+
+			// Navigation scrolls the new page to the top, which would drag the outgoing snapshots up to
+			// where the incoming page sits. Shifting them by that distance keeps them in place while
+			// they fade (see --vt-scroll-shift in global.css).
+			document.addEventListener('astro:before-swap', (event) => {
+				const { viewTransition } = event as TransitionBeforeSwapEvent
+				const root = document.documentElement
+				const before = document.querySelector('main')?.getBoundingClientRect().top ?? 0
+
+				viewTransition.ready
+					.then(() => {
+						const after = document.querySelector('main')?.getBoundingClientRect().top ?? 0
+						root.style.setProperty('--vt-scroll-shift', `${before - after}px`)
+					})
+					.catch(() => {})
+
+				viewTransition.finished.finally(() => root.style.removeProperty('--vt-scroll-shift'))
+			})
+		</script>
 	</body>
 </html>

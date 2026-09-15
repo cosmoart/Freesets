@@ -4,75 +4,129 @@ import type { Asset } from '@/types'
 interface Props {
 	asset: Asset
 	color: string
+	/** Pinned over the preview next to a dot in the category color, e.g. "New" or a category. */
+	label?: string
+	/** Fetches the preview right away instead of lazily, for cards in the first row. */
+	priority?: boolean
 }
 
-const { asset, color } = Astro.props
+const { asset, color, label, priority = false } = Astro.props
 const license = asset.license ?? asset.licence
 const licenseLink = asset.licenseLink ?? asset.licenceLink
+const favicon = `https://www.google.com/s2/favicons?domain=${asset.link}&sz=128`
+const host = URL.canParse(asset.link)
+	? new URL(asset.link).hostname.replace(/^www\./, '')
+	: asset.link
+
+const overlay = 'rounded-full border border-white/12 bg-zinc-950/70 text-zinc-100 backdrop-blur-sm'
+const licenseBadge =
+	'shrink-0 rounded-[5px] border border-line-strong px-1.5 py-0.5 font-mono text-[10.5px] whitespace-nowrap text-muted'
+
+// The data-card-* hooks let scripts/card.ts fill a copy of this markup on the search page.
 ---
 
 <article
-	class="group relative flex h-full w-full flex-col overflow-hidden p-3 outline outline-white/5 transition-all hover:bg-white/5"
-	style={`--card-color: ${color}`}
->
+	class="group relative flex h-full w-full flex-col overflow-hidden rounded-xl surface transition-[border-color,translate] duration-200 hover:border-line-strong motion-safe:hover:-translate-y-0.5"
+	style={`--card-color: ${color}`}>
 	<a
+		data-card-link
 		href={asset.link}
 		target="_blank"
 		rel="noopener noreferrer nofollow"
 		aria-label={`Open ${asset.name}`}
 		class="absolute inset-0 z-10"></a>
 
-	<div class="relative">
+	<div
+		data-card-preview
+		class="group/preview relative overflow-hidden bg-field"
+		data-broken={asset.img ? undefined : ''}>
 		<img
+			data-card-img
 			src={asset.img}
 			alt={`${asset.name} web preview`}
 			width="384"
 			height="216"
-			loading="lazy"
-			class="inline-block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103"
+			loading={priority ? 'eager' : 'lazy'}
+			fetchpriority={priority ? 'high' : undefined}
+			onerror="this.parentElement.dataset.broken = ''"
+			class="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103 group-data-broken/preview:invisible"
 		/>
+
+		<!-- Stands in for a preview that failed to load, keeping the card's 16:9 box -->
+		<div
+			aria-hidden="true"
+			class="absolute inset-0 hidden flex-col items-center justify-center gap-2.5 bg-grid group-data-broken/preview:flex">
+			<span
+				class="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,color-mix(in_oklab,var(--card-color)_16%,transparent),transparent_65%)]"
+			></span>
+			<span
+				class="relative grid size-12 place-items-center rounded-xl surface transition-transform duration-300 group-hover:scale-105">
+				<img
+					data-card-favicon
+					src={favicon}
+					alt=""
+					width="40"
+					height="40"
+					loading="lazy"
+					class="size-6 rounded-md object-cover"
+				/>
+			</span>
+			<span data-card-host class="relative eyebrow tracking-normal normal-case">{host}</span>
+		</div>
+
+		{
+			label && (
+				<span
+					class={`absolute top-2 left-2 flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-medium tracking-wide ${overlay}`}>
+					<span class="size-1.5 rounded-full bg-(--card-color)" />
+					<span data-card-label>{label}</span>
+				</span>
+			)
+		}
 
 		{
 			asset.tags && (
-				<ul class="absolute top-2 right-2 flex flex-wrap justify-end gap-1">
+				<ul
+					data-card-tags
+					class="absolute right-2 bottom-2 flex flex-wrap justify-end gap-1">
 					{asset.tags.map((tag) => (
-						<li class="rounded-md bg-zinc-900/80 px-2 py-0.5 text-xs text-white">{tag}</li>
+						<li class={`px-2 py-0.5 text-[11.5px] ${overlay}`}>{tag}</li>
 					))}
 				</ul>
 			)
 		}
 	</div>
 
-	<div class="mt-auto flex flex-wrap items-center justify-between gap-2 p-3">
-		<div class="flex items-center gap-2">
-			<img
-				src={`https://www.google.com/s2/favicons?domain=${asset.link}&sz=128`}
-				alt=""
-				width="44"
-				height="44"
-				loading="lazy"
-				class="aspect-square w-7 shrink-0 rounded-md object-cover"
-			/>
-			<h3 class="font-medium group-hover:underline">{asset.name}</h3>
-		</div>
+	<div class="mt-auto flex items-center gap-2.5 px-3.5 py-3">
+		<img
+			data-card-favicon
+			src={favicon}
+			alt=""
+			width="40"
+			height="40"
+			loading="lazy"
+			class="size-6 shrink-0 rounded-[5px] object-cover"
+		/>
+		<h3
+			data-card-name
+			class="min-w-0 flex-1 truncate text-[15px] font-medium group-hover:underline">
+			{asset.name}
+		</h3>
 
 		{
 			license &&
 				(licenseLink ? (
 					<a
+						data-card-license
 						href={licenseLink}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 						title={asset.licenseDescription}
-						class="relative z-20 inline-block rounded-md bg-blue-700 px-2 py-1 text-[13px] tracking-wide text-white transition-transform hover:scale-105"
-					>
+						class={`relative z-20 transition-colors hover:border-(--card-color) hover:text-ink ${licenseBadge}`}>
 						{license}
 					</a>
 				) : (
-					<span
-						title={asset.licenseDescription}
-						class="inline-block rounded-md bg-blue-700 px-2 py-1 text-[13px] tracking-wide text-white"
-					>
+					<span data-card-license title={asset.licenseDescription} class={licenseBadge}>
 						{license}
 					</span>
 				))

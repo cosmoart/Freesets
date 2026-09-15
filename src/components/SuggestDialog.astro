@@ -2,28 +2,11 @@
 import categories from '@/assets/categories'
 import { REPO } from '@/lib/github'
 
-const licenses = [
-	...new Set(
-		categories
-			.flatMap((category) =>
-				category.assets.map((asset) => (asset.license ?? asset.licence)?.trim())
-			)
-			.filter((license): license is string => Boolean(license))
-	)
-].sort((a, b) => a.localeCompare(b))
-
-const label = 'mb-2 block text-xs font-medium tracking-widest text-zinc-500 uppercase'
-const field =
-	'w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm outline-none focus:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:focus:border-zinc-600'
-const ghost =
-	'rounded-md border border-zinc-200 px-4 py-2 text-sm transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-800'
+const label = 'eyebrow mb-2 block'
+const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-subtle'
 ---
 
-<button
-	type="button"
-	data-suggest-open
-	class="flex h-9 shrink-0 items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-100 px-3 text-sm transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500"
->
+<button type="button" data-suggest-open class="btn btn-primary px-3">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 24 24"
@@ -33,8 +16,7 @@ const ghost =
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		aria-hidden="true"
-		class="size-4"
-	>
+		class="size-4">
 		<path d="M12 5l0 14"></path>
 		<path d="M5 12l14 0"></path>
 	</svg>
@@ -44,15 +26,12 @@ const ghost =
 <dialog
 	data-suggest-dialog
 	aria-label="Submit a resource"
-	class="m-auto max-h-[90dvh] w-[min(94vw,46rem)] overflow-y-auto rounded-xl border border-zinc-200 bg-white p-0 text-zinc-950 backdrop:bg-zinc-950/70 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white"
->
+	class="m-auto max-h-[92dvh] w-[min(94vw,48rem)] overflow-y-auto rounded-2xl border border-line bg-card p-0 text-ink shadow-[0_32px_80px_rgb(0_0_0/0.45)]">
 	<form data-suggest-form data-repo={REPO}>
-		<header
-			class="flex items-start justify-between gap-4 border-b border-zinc-200 p-6 dark:border-zinc-800"
-		>
+		<header class="flex items-start justify-between gap-4 border-b border-line px-6 py-5">
 			<div>
 				<h2 class="text-xl font-semibold">Submit a resource</h2>
-				<p class="mt-1 text-sm text-zinc-500">
+				<p class="mt-1 text-sm text-muted">
 					We'll open a prefilled issue on GitHub — you just press submit there.
 				</p>
 			</div>
@@ -61,8 +40,7 @@ const ghost =
 				type="button"
 				data-suggest-close
 				aria-label="Close"
-				class="flex size-8 shrink-0 items-center justify-center rounded-md border border-zinc-200 text-zinc-500 transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-800"
-			>
+				class="btn size-8 rounded-lg btn-ghost px-0 text-muted">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
@@ -73,8 +51,7 @@ const ghost =
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					aria-hidden="true"
-				>
+					aria-hidden="true">
 					<path d="M18 6l-12 12"></path>
 					<path d="M6 6l12 12"></path>
 				</svg>
@@ -85,7 +62,13 @@ const ghost =
 			<div class="grid gap-4 sm:grid-cols-2">
 				<div>
 					<label for="suggest-name" class={label}>Name</label>
-					<input id="suggest-name" name="name" required class={field} placeholder="Lucide" />
+					<input
+						id="suggest-name"
+						name="name"
+						required
+						class={field}
+						placeholder="Lucide"
+					/>
 				</div>
 
 				<div>
@@ -103,7 +86,7 @@ const ghost =
 
 			<fieldset>
 				<legend class={label}>Category</legend>
-				<div class="flex flex-wrap gap-1">
+				<div class="flex flex-wrap gap-2">
 					{
 						categories.map((category, index) => (
 							<label class="cursor-pointer">
@@ -114,20 +97,21 @@ const ghost =
 									checked={index === 0}
 									class="peer sr-only"
 								/>
+								{/* Same pill as the category bar: the unselected ring sits under the icon,
+								    the selected outline is drawn over it. */}
 								<span
 									style={`--item-color: ${category.color}`}
-									class="flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-100 py-1 pr-3 pl-1 text-sm transition-colors peer-checked:border-blue-500 peer-checked:ring-1 peer-checked:ring-blue-500 peer-focus-visible:border-zinc-500 dark:border-zinc-800 dark:bg-zinc-950"
-								>
-									<span class="flex size-6 items-center justify-center rounded-full bg-(--item-color)">
+									class="flex items-center gap-2 rounded-full bg-field text-[13px] text-soft inset-ring-2 inset-ring-line transition-colors peer-checked:bg-[color-mix(in_srgb,var(--item-color)_15%,var(--field))] peer-checked:text-ink peer-checked:outline-2 peer-checked:-outline-offset-2 peer-checked:outline-(--item-color) peer-focus-visible:ring-2 peer-focus-visible:ring-(--item-color)/50 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-card hover:text-ink hover:inset-ring-line-strong">
+									<span class="flex size-6.5 items-center justify-center rounded-full bg-(--item-color)">
 										<img
 											src={`/categories-icons/${category.nameID}.svg`}
 											alt=""
-											width="14"
-											height="14"
-											class="w-3.5 invert"
+											width="16"
+											height="16"
+											class="w-4 invert"
 										/>
 									</span>
-									{category.name}
+									<span class="pe-3">{category.name}</span>
 								</span>
 							</label>
 						))
@@ -138,67 +122,53 @@ const ghost =
 			<div class="grid gap-4 sm:grid-cols-2">
 				<div>
 					<label for="suggest-license" class={label}>License</label>
-					<select id="suggest-license" name="license" class={field}>
-						<option value="">Unknown</option>
-						{licenses.map((license) => <option value={license}>{license}</option>)}
-					</select>
-				</div>
-
-				<div>
-					<label for="suggest-github" class={label}>Your GitHub</label>
 					<input
-						id="suggest-github"
-						name="github"
+						id="suggest-license"
+						name="license"
 						class={field}
-						placeholder="@yourhandle"
+						placeholder="MIT, CC0, Free..."
 						autocomplete="off"
 					/>
 				</div>
-			</div>
 
-			<div class="grid gap-4 sm:grid-cols-2">
 				<div>
 					<span class={label}>Tags</span>
-					<div
-						data-tags
-						class="flex flex-wrap items-center gap-2 rounded-md border border-zinc-200 bg-zinc-50 px-2 py-2 focus-within:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:focus-within:border-zinc-600"
-					>
+					<div data-tags class="flex flex-wrap items-center gap-1.5 control px-2 py-1.5">
 						<input
 							data-tag-input
 							type="text"
 							aria-label="Add a tag"
 							placeholder="Add a tag..."
 							autocomplete="off"
-							class="min-w-32 grow bg-transparent px-1 text-sm outline-none"
+							class="min-w-32 grow bg-transparent px-1 py-0.5 text-sm outline-none placeholder:text-subtle"
 						/>
 					</div>
 				</div>
+			</div>
 
-				<div>
-					<label for="suggest-notes" class={label}>Notes</label>
-					<textarea
-						id="suggest-notes"
-						name="notes"
-						rows="3"
-						class={field}
-						placeholder="Anything worth knowing about this resource"></textarea>
-				</div>
+			<div>
+				<label for="suggest-notes" class={label}>Notes</label>
+				<textarea
+					id="suggest-notes"
+					name="notes"
+					rows="2"
+					class={field}
+					placeholder="Anything worth knowing about this resource"></textarea>
 			</div>
 		</div>
 
 		<footer
-			class="flex flex-wrap items-center justify-between gap-4 border-t border-zinc-200 p-6 dark:border-zinc-800"
-		>
-			<p class="font-mono text-xs tracking-wider text-zinc-500 uppercase">
+			class="flex flex-wrap items-center justify-between gap-4 border-t border-line bg-field px-6 py-4">
+			<p class="eyebrow text-[10.5px] tracking-[0.06em]">
 				&rarr; github.com/{REPO}/issues/new
 			</p>
 
-			<div class="flex gap-3">
-				<button type="button" data-suggest-close class={ghost}>Cancel</button>
+			<div class="flex gap-2">
+				<button type="button" data-suggest-close class="btn btn-ghost">Cancel</button>
 				<button
 					type="submit"
-					class="flex items-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90 dark:bg-white dark:text-zinc-950"
-				>
+					disabled
+					class="btn btn-primary disabled:cursor-not-allowed disabled:opacity-40">
 					Open issue
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -210,9 +180,9 @@ const ghost =
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						aria-hidden="true"
-					>
-						<path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+						aria-hidden="true">
+						<path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
+						></path>
 						<path d="M11 13l9 -9"></path>
 						<path d="M15 4h5v5"></path>
 					</svg>
@@ -221,6 +191,60 @@ const ghost =
 		</footer>
 	</form>
 </dialog>
+
+<style>
+	/* Closed is the resting state; [open] animates towards it and @starting-style gives the
+	   entry its first frame. display and overlay are transitioned discretely so the dialog stays
+	   in the top layer until the fade-out finishes. */
+	dialog {
+		opacity: 0;
+		scale: 0.96;
+		translate: 0 0.75rem;
+	}
+
+	dialog[open] {
+		opacity: 1;
+		scale: 1;
+		translate: 0 0;
+	}
+
+	dialog::backdrop {
+		background-color: rgb(0 0 0 / 0);
+		backdrop-filter: blur(0);
+	}
+
+	dialog[open]::backdrop {
+		background-color: rgb(0 0 0 / 0.7);
+		backdrop-filter: blur(4px);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		dialog,
+		dialog::backdrop {
+			transition:
+				opacity 200ms cubic-bezier(0.2, 0, 0, 1),
+				scale 200ms cubic-bezier(0.2, 0, 0, 1),
+				translate 200ms cubic-bezier(0.2, 0, 0, 1),
+				background-color 200ms ease,
+				backdrop-filter 200ms ease,
+				overlay 200ms allow-discrete,
+				display 200ms allow-discrete;
+		}
+
+		@starting-style {
+			dialog[open] {
+				opacity: 0;
+				scale: 0.96;
+				translate: 0 0.75rem;
+			}
+
+			dialog[open]::backdrop {
+				background-color: rgb(0 0 0 / 0);
+				backdrop-filter: blur(0);
+			}
+		}
+	}
+</style>
 
 <script>
 	function readTags(container: HTMLElement) {
@@ -231,13 +255,14 @@ const ghost =
 
 	function addTag(container: HTMLElement, input: HTMLInputElement, value: string) {
 		const name = value.trim().replace(/,+$/, '')
-		if (!name || readTags(container).some((tag) => tag.toLowerCase() === name.toLowerCase())) return
+		if (!name || readTags(container).some((tag) => tag.toLowerCase() === name.toLowerCase()))
+			return
 
 		const remove = document.createElement('button')
 		remove.type = 'button'
 		remove.setAttribute('aria-label', `Remove ${name}`)
 		remove.textContent = '×'
-		remove.className = 'text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-white'
+		remove.className = 'cursor-pointer text-subtle transition-colors hover:text-ink'
 		remove.addEventListener('click', () => {
 			chip.remove()
 			input.focus()
@@ -246,7 +271,7 @@ const ghost =
 		const chip = document.createElement('span')
 		chip.dataset.tag = name
 		chip.className =
-			'flex items-center gap-1.5 rounded border border-zinc-200 bg-zinc-100 py-0.5 pr-1.5 pl-2 text-sm dark:border-zinc-700 dark:bg-zinc-800'
+			'flex items-center gap-1.5 rounded-md bg-hover py-0.5 pr-1.5 pl-2 text-[13px]'
 		chip.append(name, remove)
 
 		container.insertBefore(chip, input)
@@ -287,7 +312,6 @@ const ghost =
 		const name = value('name')
 		const category = value('category')
 		const license = value('license')
-		const github = value('github').replace(/^@/, '')
 		const notes = value('notes')
 		const container = form.querySelector<HTMLElement>('[data-tags]')
 		const tags = container ? readTags(container) : []
@@ -298,7 +322,6 @@ const ghost =
 			`**Category:** ${category}`,
 			license && `**License:** ${license}`,
 			tags.length && `**Tags:** ${tags.join(', ')}`,
-			github && `**Submitted by:** @${github}`,
 			notes &&
 				`
 ### Notes
@@ -321,9 +344,20 @@ ${notes}`
 		const dialog = document.querySelector<HTMLDialogElement>('[data-suggest-dialog]')
 		const button = document.querySelector<HTMLButtonElement>('[data-suggest-open]')
 		const form = document.querySelector<HTMLFormElement>('[data-suggest-form]')
-		if (!dialog || !button || !form) return
+		const submit = form?.querySelector<HTMLButtonElement>('button[type="submit"]')
+		if (!dialog || !button || !form || !submit) return
 
 		setupTags(form)
+
+		// Mirrors the native constraints (required name, valid URL) so the button only
+		// enables once the issue can actually be built.
+		const syncSubmit = () => {
+			submit.disabled = !form.checkValidity()
+		}
+
+		form.addEventListener('input', syncSubmit)
+		form.addEventListener('change', syncSubmit)
+		syncSubmit()
 
 		button.addEventListener('click', () => dialog.showModal())
 		dialog.addEventListener('click', (event) => {
@@ -336,11 +370,14 @@ ${notes}`
 
 		form.addEventListener('submit', (event) => {
 			event.preventDefault()
+			if (!form.checkValidity()) return
+
 			window.open(buildIssueUrl(form), '_blank', 'noopener')
 			dialog.close()
 
 			form.reset()
 			for (const chip of form.querySelectorAll('[data-tag]')) chip.remove()
+			syncSubmit()
 		})
 	}
 

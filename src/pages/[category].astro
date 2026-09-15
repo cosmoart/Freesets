@@ -3,9 +3,10 @@ import type { GetStaticPaths } from 'astro'
 import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
 import CategoryHeader from '@/components/CategoryHeader.astro'
+import ResultsBar from '@/components/ResultsBar.astro'
 import EmptyState from '@/components/EmptyState.astro'
 import categories from '@/assets/categories'
-import { DEFAULT_PER_PAGE } from '@/scripts/view'
+import { DEFAULT_COLUMNS, DEFAULT_PER_PAGE } from '@/scripts/view'
 
 export const getStaticPaths = (() =>
 	categories.map((category) => ({
@@ -25,7 +26,9 @@ const { category } = Astro.props
 	<section class="flex grow flex-col gap-6">
 		<CategoryHeader category={category} />
 
-		<ul data-results class="flex flex-wrap">
+		<ResultsBar />
+
+		<ul data-results>
 			{
 				category.assets.map((asset, index) => (
 					<li
@@ -44,7 +47,11 @@ const { category } = Astro.props
 							.join(' ')
 							.toLowerCase()}
 					>
-						<AssetCard asset={asset} color={category.color} />
+						<AssetCard
+							asset={asset}
+							color={category.color}
+							priority={index < DEFAULT_COLUMNS}
+						/>
 					</li>
 				))
 			}
@@ -64,7 +71,14 @@ const { category } = Astro.props
 		name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '')
 	}
 	import { matches } from '@/scripts/filter'
-	import { closestTo, renderEmpty } from '@/scripts/empty'
+	import { closestTo, renderEmpty, type Suggestion } from '@/scripts/empty'
+
+	const suggestion = ({ dataset }: HTMLElement): Suggestion => ({
+		label: dataset.label ?? '',
+		link: dataset.link ?? '',
+		meta: dataset.meta ?? '',
+		text: dataset.text ?? ''
+	})
 
 	let perPage = 0
 	let onPerPageChange: (() => void) | undefined
@@ -116,7 +130,7 @@ const { category } = Astro.props
 				renderEmpty(empty, {
 					query,
 					scope: empty.dataset.scope ?? 'this category',
-					closest: closestTo(items, query),
+					closest: closestTo(items.map(suggestion), query),
 					onTerm: (term) => {
 						search!.value = term
 						page = 1

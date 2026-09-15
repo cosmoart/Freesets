@@ -1,0 +1,35 @@
+---
+import Pagination from '@/components/Pagination.astro'
+import { PER_PAGE_OPTIONS } from '@/scripts/view'
+---
+
+<div class="flex flex-wrap items-center justify-between gap-4">
+	<select
+		data-per-page
+		aria-label="Items per page"
+		class="cursor-pointer dropdown control py-1.5 pr-8 pl-2.5 text-sm outline-none"
+	>
+		{PER_PAGE_OPTIONS.map((option) => <option value={option}>{option} / page</option>)}
+	</select>
+
+	<Pagination />
+</div>
+
+<script>
+	import { readPerPage, savePerPage } from '@/scripts/view'
+
+	function setup() {
+		const perPage = document.querySelector<HTMLSelectElement>('[data-per-page]')
+		if (!perPage) return
+
+		perPage.value = String(readPerPage())
+
+		perPage.addEventListener('change', () => {
+			const value = Number(perPage.value)
+			savePerPage(value)
+			document.dispatchEvent(new CustomEvent('view:perpage', { detail: value }))
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

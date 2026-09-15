@@ -13,24 +13,22 @@ import CategoriesSlider from '@/components/CategoriesSlider.astro'
 >
 	<a
 		href="/"
-		class="flex h-11 shrink-0 items-center gap-2.5 text-2xl font-semibold transition-opacity hover:opacity-70"
+		class="flex h-11 shrink-0 items-center gap-2.5 text-[22px] font-bold tracking-tight transition-opacity hover:opacity-70"
 	>
 		<!-- TODO: temporary logo, replace with the final asset -->
-		<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" class="size-7 shrink-0">
+		<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="size-6 shrink-0">
 			<rect width="11" height="11" x="0" y="0" rx="2.5" fill="currentColor"></rect>
-			<rect width="11" height="11" x="13" y="0" rx="2.5" class="fill-zinc-400 dark:fill-zinc-700"
-			></rect>
-			<rect width="11" height="11" x="0" y="13" rx="2.5" class="fill-zinc-400 dark:fill-zinc-700"
-			></rect>
+			<rect width="11" height="11" x="13" y="0" rx="2.5" fill="currentColor" opacity="0.32"></rect>
+			<rect width="11" height="11" x="0" y="13" rx="2.5" fill="currentColor" opacity="0.32"></rect>
 			<rect width="11" height="11" x="13" y="13" rx="2.5" fill="#2b6dff"></rect>
 		</svg>
 		Freesets
 	</a>
-	<div class="ml-auto flex flex-wrap items-center gap-3">
+	<div class="ml-auto flex flex-wrap items-center gap-2">
 		<HeaderSearch />
-		<ThemeToggle />
-		<SuggestDialog />
 		<GitHubStars />
+		<SuggestDialog />
+		<ThemeToggle />
 	</div>
 </nav>
 

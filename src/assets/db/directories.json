@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 100,
 		"name": "Curated Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/curated-design",
+		"img": "https://cdn.freesets.dev/inspirations/curated-design.webp",
 		"link": "https://www.curated.design",
 		"tags": ["Placeholder"]
 	},
@@ -11,7 +11,7 @@
 		"id": 2,
 		"order": 98,
 		"name": "Godly",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/godly",
+		"img": "https://cdn.freesets.dev/inspirations/godly.webp",
 		"link": "https://godly.website",
 		"tags": ["Placeholder"]
 	},
@@ -19,7 +19,7 @@
 		"id": 3,
 		"order": 96,
 		"name": "Land-book",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/land-book",
+		"img": "https://cdn.freesets.dev/inspirations/land-book.webp",
 		"link": "https://land-book.com",
 		"license": "Freemium",
 		"licenseLink": "https://land-book.com/pro",

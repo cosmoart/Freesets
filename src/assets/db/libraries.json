@@ -11,7 +11,7 @@
 		"id": 2,
 		"order": 88,
 		"name": "react-magic-motion",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-magic-motion",
+		"img": "https://cdn.freesets.dev/libraries/react-magic-motion.webp",
 		"link": "https://www.react-magic-motion.com",
 		"tags": ["Animation", "React"],
 		"license": "MIT"
@@ -46,7 +46,7 @@
 		"id": 6,
 		"order": 67,
 		"name": "next-video",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/next-video",
+		"img": "https://cdn.freesets.dev/libraries/next-video.webp",
 		"link": "https://next-video.dev",
 		"tags": ["Video", "Next.js"],
 		"license": "MIT"
@@ -181,7 +181,7 @@
 		"id": 21,
 		"order": 45,
 		"name": "Tempo",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tempo",
+		"img": "https://cdn.freesets.dev/libraries/tempo.webp",
 		"link": "https://tempo.formkit.com",
 		"tags": ["Time", "Dates"],
 		"license": "MIT",
@@ -192,7 +192,7 @@
 		"order": 39,
 		"name": "Editor.js",
 		"link": "https://editorjs.io",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/editorjs",
+		"img": "https://cdn.freesets.dev/libraries/editorjs.webp",
 		"tags": ["Block-style editor"],
 		"license": "Apache License 2.0",
 		"licenseLink": "https://github.com/codex-team/editor.js/blob/next/LICENSE"
@@ -202,7 +202,7 @@
 		"order": 46,
 		"name": "tldraw SDK",
 		"link": "https://editorjs.io",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tldraw",
+		"img": "https://cdn.freesets.dev/libraries/tldraw.webp",
 		"tags": ["Infinite canvas"],
 		"license": "tldraw license",
 		"licenseLink": "https://tldraw.dev/community/license",
@@ -213,7 +213,7 @@
 		"order": 52,
 		"name": "Driver.js",
 		"link": "https://driverjs.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/driverjs",
+		"img": "https://cdn.freesets.dev/libraries/driverjs.webp",
 		"tags": ["Drive user's focus"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/kamranahmedse/driver.js/blob/master/license"
@@ -223,7 +223,7 @@
 		"order": 85,
 		"name": "nuqs",
 		"link": "https://nuqs.47ng.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/nuqs",
+		"img": "https://cdn.freesets.dev/libraries/nuqs.webp",
 		"tags": ["Search params", "React"]
 	},
 	{
@@ -231,7 +231,7 @@
 		"order": 43,
 		"name": "swup",
 		"link": "https://swup.js.org/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/swup",
+		"img": "https://cdn.freesets.dev/libraries/swup.webp",
 		"tags": ["Transitions for server-rendered pages"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/swup/swup/blob/master/LICENSE"
@@ -241,7 +241,7 @@
 		"order": 33,
 		"name": "React Google Maps",
 		"link": "https://visgl.github.io/react-google-maps/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-google-maps",
+		"img": "https://cdn.freesets.dev/libraries/react-google-maps.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/visgl/react-google-maps/blob/main/LICENSE.md",
 		"tags": ["Maps"]
@@ -251,7 +251,7 @@
 		"order": 13,
 		"name": "Mapbox",
 		"link": "https://www.mapbox.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapbox",
+		"img": "https://cdn.freesets.dev/libraries/mapbox.webp",
 		"tags": ["Maps"],
 		"license": "Freemium",
 		"licenseLink": "https://www.mapbox.com/pricing"
@@ -261,7 +261,7 @@
 		"order": 28,
 		"name": "Draggable JS",
 		"link": "https://shopify.github.io/draggable/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/draggable",
+		"img": "https://cdn.freesets.dev/libraries/draggable.webp",
 		"tags": ["Drag and drop"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/Shopify/shopify.github.com/blob/main/LICENSE.md"
@@ -271,7 +271,7 @@
 		"order": 20,
 		"name": "ipad-cursor",
 		"link": "https://cursor.oooo.so/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/cursoroooo",
+		"img": "https://cdn.freesets.dev/libraries/cursoroooo.webp",
 		"tags": ["iPad's mouse effect"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/CatsJuice/ipad-cursor/blob/main/LICENSE"
@@ -281,7 +281,7 @@
 		"order": 54,
 		"name": "PDFSlick",
 		"link": "https://pdfslick.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/pdfslick",
+		"img": "https://cdn.freesets.dev/libraries/pdfslick.webp",
 		"tags": ["View and Interact with PDFs"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/pdfslick/pdfslick/blob/main/LICENSE"
@@ -291,7 +291,7 @@
 		"order": 47,
 		"name": "Swiper",
 		"link": "https://swiperjs.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/swiperjs",
+		"img": "https://cdn.freesets.dev/libraries/swiperjs.webp",
 		"tags": ["Sliders"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/nolimits4web/swiper/blob/master/LICENSE"
@@ -301,7 +301,7 @@
 		"order": 66,
 		"name": "Haiku",
 		"link": "https://www.reacthaiku.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-haiku",
+		"img": "https://cdn.freesets.dev/libraries/react-haiku.webp",
 		"tags": ["React", "Hooks", "Utilities"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/DavidHDev/react-haiku/blob/main/LICENSE.md"
@@ -311,7 +311,7 @@
 		"order": 60,
 		"name": "COBE",
 		"link": "https://cobe.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/cobe",
+		"img": "https://cdn.freesets.dev/libraries/cobe.webp",
 		"tags": ["WebGL globe"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/shuding/cobe/blob/main/LICENSE"
@@ -321,7 +321,7 @@
 		"order": 78,
 		"name": "MotionNumber for Framer Motion",
 		"link": "https://motion-number.barvian.me/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/motion-number",
+		"img": "https://cdn.freesets.dev/libraries/motion-number.webp",
 		"tags": ["Transition, format, and localize numbers"]
 	},
 	{
@@ -329,7 +329,7 @@
 		"order": 82,
 		"name": "Tweakpane",
 		"link": "https://tweakpane.github.io/docs/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tweakpane",
+		"img": "https://cdn.freesets.dev/libraries/tweakpane.webp",
 		"tags": ["GUI"]
 	},
 	{
@@ -337,7 +337,7 @@
 		"order": 42,
 		"name": "Yoopta-Editor",
 		"link": "https://yoopta.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/bvivtqfwrnj2xakfi8zt",
+		"img": "https://cdn.freesets.dev/libraries/bvivtqfwrnj2xakfi8zt.webp",
 		"tags": ["Rich-text editor"]
 	},
 	{
@@ -345,7 +345,7 @@
 		"order": 56,
 		"name": "Swapy",
 		"link": "https://swapy.tahazsh.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/swapytahazsh",
+		"img": "https://cdn.freesets.dev/libraries/swapytahazsh.webp",
 		"tags": ["drag-to-swap layout"]
 	},
 	{
@@ -353,7 +353,7 @@
 		"order": 55,
 		"name": "Blendy",
 		"link": "https://blendy.tahazsh.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/blendytahazsh",
+		"img": "https://cdn.freesets.dev/libraries/blendytahazsh.webp",
 		"tags": ["Transitions", "framework-agnostic"]
 	},
 	{
@@ -361,7 +361,7 @@
 		"order": 45,
 		"name": "Unpic",
 		"link": "https://unpic.pics/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/unpicpics",
+		"img": "https://cdn.freesets.dev/libraries/unpicpics.webp",
 		"tags": ["Image tools"]
 	},
 	{
@@ -369,7 +369,7 @@
 		"order": 54,
 		"name": "Anime.js",
 		"link": "https://animejs.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/animejs",
+		"img": "https://cdn.freesets.dev/libraries/animejs.webp",
 		"tags": ["Animation Engine"]
 	},
 	{
@@ -377,7 +377,7 @@
 		"order": 66,
 		"name": "Starlight",
 		"link": "https://starlight.astro.build/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/starlight",
+		"img": "https://cdn.freesets.dev/libraries/starlight.webp",
 		"tags": ["Documentation sites", "Astro"]
 	},
 	{
@@ -385,7 +385,7 @@
 		"order": 70,
 		"name": "Gridstack.js",
 		"link": "https://gridstackjs.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/gridstackjs",
+		"img": "https://cdn.freesets.dev/libraries/gridstackjs.webp",
 		"tags": ["Interactive dashboards"]
 	},
 	{
@@ -393,7 +393,7 @@
 		"order": 38,
 		"name": "Smooothy",
 		"link": "https://smooothy.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/smooothy",
+		"img": "https://cdn.freesets.dev/libraries/smooothy.webp",
 		"tags": ["Carousel", "Slider", "Webgl"]
 	},
 	{
@@ -401,7 +401,7 @@
 		"order": 88,
 		"name": "React Scan",
 		"link": "https://react-scan.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-scan",
+		"img": "https://cdn.freesets.dev/libraries/react-scan.webp",
 		"tags": ["React", "Render"]
 	},
 	{
@@ -409,7 +409,7 @@
 		"order": 32,
 		"name": "Floating UI",
 		"link": "https://floating-ui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/floating-ui",
+		"img": "https://cdn.freesets.dev/libraries/floating-ui.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/floating-ui/floating-ui/blob/master/LICENSE",
 		"tags": ["JavaScript", "Tooltips", "Popover"]
@@ -419,7 +419,7 @@
 		"order": 52,
 		"name": "Embla Carousel",
 		"link": "https://www.embla-carousel.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/embla-carousel",
+		"img": "https://cdn.freesets.dev/libraries/embla-carousel.webp",
 		"tags": ["Carousel"]
 	},
 	{
@@ -427,7 +427,7 @@
 		"order": 70,
 		"name": "Zustand",
 		"link": "https://zustand-demo.pmnd.rs/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zustand",
+		"img": "https://cdn.freesets.dev/libraries/zustand.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/pmndrs/zustand/blob/main/LICENSE",
 		"tags": ["React", "State Management"]
@@ -437,7 +437,7 @@
 		"order": 88,
 		"name": "TanStack",
 		"link": "https://tanstack.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tanstack",
+		"img": "https://cdn.freesets.dev/libraries/tanstack.webp",
 		"tags": ["Multi-framework"]
 	},
 	{
@@ -445,7 +445,7 @@
 		"order": 56,
 		"name": "Zod",
 		"link": "https://github.com/colinhacks/zod",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/zod",
+		"img": "https://cdn.freesets.dev/libraries/zod.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/colinhacks/zod",
 		"tags": ["TypeScript", "Validation"]
@@ -455,7 +455,7 @@
 		"order": 44,
 		"name": "React Hook Form",
 		"link": "https://react-hook-form.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/react-hook-form",
+		"img": "https://cdn.freesets.dev/libraries/react-hook-form.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/react-hook-form/react-hook-form",
 		"tags": ["React", "Validation"]
@@ -465,7 +465,7 @@
 		"order": 88,
 		"name": "npmx",
 		"link": "https://npmx.dev/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/tools/npmx",
+		"img": "https://cdn.freesets.dev/tools/npmx.webp",
 		"tags": ["npm browser", "Tool"]
 	},
 	{
@@ -473,7 +473,7 @@
 		"order": 83,
 		"name": "Sileo",
 		"link": "https://sileo.aaryan.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/sileo",
+		"img": "https://cdn.freesets.dev/libraries/sileo.webp",
 		"tags": ["Toast", "React"]
 	},
 	{
@@ -481,14 +481,14 @@
 		"order": 43,
 		"name": "LibPDF",
 		"link": "https://libpdf.documenso.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/libpdf"
+		"img": "https://cdn.freesets.dev/libraries/libpdf.webp"
 	},
 	{
 		"id": 55,
 		"order": 48,
 		"name": "mapcn",
 		"link": "https://mapcn.vercel.app/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/mapcn",
+		"img": "https://cdn.freesets.dev/libraries/mapcn.webp",
 		"tags": ["React", "Tailwind", "MapLibre"]
 	},
 	{
@@ -496,6 +496,6 @@
 		"order": 78,
 		"name": "Tailwind Animations",
 		"link": "https://tailwind-animations.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/libraries/tailwind-animations"
+		"img": "https://cdn.freesets.dev/libraries/tailwind-animations.webp"
 	}
 ]

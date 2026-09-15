@@ -23,49 +23,39 @@ const project = [
 	{ name: 'Sponsor', href: `https://github.com/sponsors/${owner}` }
 ]
 
-const heading = 'mb-4 text-xs font-medium tracking-widest text-zinc-500 uppercase'
+const heading = 'eyebrow mb-3.5 tracking-[0.16em]'
 const link =
-	'inline-flex items-center gap-1.5 text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-white'
-const button =
-	'flex items-center gap-2 rounded-md border-2 border-zinc-300 bg-zinc-50 px-3 py-2 text-sm font-medium transition-colors hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-950 dark:hover:border-zinc-500'
+	'inline-flex items-center gap-1.5 text-[14.5px] text-soft transition-colors hover:text-ink'
 ---
 
-<footer
-	data-footer
-	class="fixed inset-x-0 bottom-0 z-0 bg-zinc-100 text-zinc-950 dark:bg-zinc-900 dark:text-white"
->
-	<div class="mx-auto max-w-380 p-6 md:px-10">
-		<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[20rem_1fr_auto_auto] lg:gap-16">
+<footer data-footer class="fixed inset-x-0 bottom-0 z-0 bg-raised bg-grid text-ink">
+	<div class="mx-auto max-w-380 px-6 pt-10 pb-6 md:px-10">
+		<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[18.5rem_1fr_auto_auto] lg:gap-16">
 			<div class="flex flex-col items-start">
-				<p class="flex items-center gap-2.5 text-2xl font-semibold">
-					<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" class="size-6.5">
+				<p class="flex items-center gap-2.5 text-xl font-bold tracking-tight">
+					<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" class="size-5.5">
 						<rect width="11" height="11" x="0" y="0" rx="2.5" fill="currentColor"></rect>
-						<rect
-							width="11"
-							height="11"
-							x="13"
-							y="0"
-							rx="2.5"
-							class="fill-zinc-400 dark:fill-zinc-700"></rect>
-						<rect
-							width="11"
-							height="11"
-							x="0"
-							y="13"
-							rx="2.5"
-							class="fill-zinc-400 dark:fill-zinc-700"></rect>
+						<rect width="11" height="11" x="13" y="0" rx="2.5" fill="currentColor" opacity="0.32"
+						></rect>
+						<rect width="11" height="11" x="0" y="13" rx="2.5" fill="currentColor" opacity="0.32"
+						></rect>
 						<rect width="11" height="11" x="13" y="13" rx="2.5" fill="#2b6dff"></rect>
 					</svg>
 					Freesets
 				</p>
 
-				<p class="mt-4 text-sm text-zinc-500">
+				<p class="mt-4 text-[14.5px] leading-relaxed text-pretty text-muted">
 					{total} free resources for developers and artists, kept in one open-source list. No accounts,
 					no paywalls, no affiliate links.
 				</p>
 
-				<div class="mt-6 flex flex-wrap gap-3">
-					<a href={repo} target="_blank" rel="noopener noreferrer" class={button}>
+				<div class="mt-5 flex flex-wrap gap-2.5">
+					<a
+						href={repo}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn h-9.5 btn-primary text-sm"
+					>
 						<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4">
 							<path
 								d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
@@ -74,7 +64,7 @@ const button =
 						Star on GitHub
 						{
 							stars !== null && (
-								<span class="rounded bg-zinc-200 px-1.5 text-sm tabular-nums dark:bg-zinc-800">
+								<span class="font-mono text-xs font-normal tabular-nums opacity-60">
 									{formatStars(stars)}
 								</span>
 							)
@@ -85,7 +75,7 @@ const button =
 						href={`https://github.com/sponsors/${owner}`}
 						target="_blank"
 						rel="noopener noreferrer"
-						class={button}
+						class="btn h-9.5 btn-ghost text-sm"
 					>
 						<svg
 							viewBox="0 0 24 24"
@@ -110,15 +100,15 @@ const button =
 				<p class={heading}>Categories</p>
 
 				<ul
-					class="grid grid-cols-[minmax(0,10rem)] gap-x-8 gap-y-2 text-sm sm:grid-cols-[repeat(2,minmax(0,10rem))]"
+					class="grid grid-cols-[minmax(0,11rem)] gap-x-8 gap-y-2.5 sm:grid-cols-[repeat(2,minmax(0,11rem))]"
 				>
 					{
 						categories.map((category) => (
 							<li>
-								<a href={`/${category.nameID}`} class={`${link} w-full`}>
+								<a href={`/${category.nameID}`} class={`${link} w-full gap-2.5`}>
 									<span
 										style={`--item-color: ${category.color}`}
-										class="flex size-5 shrink-0 items-center justify-center rounded bg-(--item-color)"
+										class="flex size-5 shrink-0 items-center justify-center rounded-[5px] bg-(--item-color)/20"
 									>
 										<img
 											src={`/categories-icons/${category.nameID}.svg`}
@@ -126,11 +116,11 @@ const button =
 											width="12"
 											height="12"
 											loading="lazy"
-											class="w-3 invert"
+											class="w-3 opacity-80 dark:invert"
 										/>
 									</span>
 									{category.name}
-									<span class="ml-auto text-xs text-zinc-400 tabular-nums dark:text-zinc-600">
+									<span class="ml-auto font-mono text-[11.5px] text-subtle tabular-nums">
 										{category.assets.length}
 									</span>
 								</a>
@@ -139,9 +129,9 @@ const button =
 					}
 
 					<li>
-						<a href="/search" class={`${link} w-full`}>
+						<a href="/search" class={`${link} w-full gap-2.5`}>
 							<span
-								class="flex size-5 shrink-0 items-center justify-center rounded bg-zinc-400 dark:bg-zinc-700"
+								class="flex size-5 shrink-0 items-center justify-center rounded-[5px] bg-ink/10"
 							>
 								<svg
 									viewBox="0 0 24 24"
@@ -150,15 +140,13 @@ const button =
 									stroke-width="3"
 									stroke-linecap="round"
 									aria-hidden="true"
-									class="size-3 text-white"
+									class="size-3 opacity-80"
 								>
 									<path d="M4 6h16M4 12h16M4 18h16"></path>
 								</svg>
 							</span>
 							Everything
-							<span class="ml-auto text-xs text-zinc-400 tabular-nums dark:text-zinc-600"
-								>{total}</span
-							>
+							<span class="ml-auto font-mono text-[11.5px] text-subtle tabular-nums">{total}</span>
 						</a>
 					</li>
 				</ul>
@@ -167,7 +155,7 @@ const button =
 			<div>
 				<p class={heading}>Contribute</p>
 
-				<ul class="flex flex-col gap-2 text-sm">
+				<ul class="flex flex-col gap-2.5">
 					{
 						contribute.map((item) => (
 							<li>
@@ -181,7 +169,7 @@ const button =
 										stroke-linecap="round"
 										stroke-linejoin="round"
 										aria-hidden="true"
-										class="size-3 opacity-60"
+										class="size-3 text-subtle"
 									>
 										<path d="M7 17 17 7M9 7h8v8" />
 									</svg>
@@ -195,7 +183,7 @@ const button =
 			<div>
 				<p class={heading}>Project</p>
 
-				<ul class="flex flex-col gap-2 text-sm">
+				<ul class="flex flex-col gap-2.5">
 					{
 						project.map((item) => (
 							<li>
@@ -209,7 +197,7 @@ const button =
 										stroke-linecap="round"
 										stroke-linejoin="round"
 										aria-hidden="true"
-										class="size-3 opacity-60"
+										class="size-3 text-subtle"
 									>
 										<path d="M7 17 17 7M9 7h8v8" />
 									</svg>
@@ -222,7 +210,7 @@ const button =
 		</div>
 
 		<p
-			class="mt-10 flex items-start gap-3 rounded-lg border border-zinc-300 p-4 text-sm text-zinc-500 dark:border-zinc-700"
+			class="mt-10 flex items-start gap-3 rounded-xl border border-line bg-card/60 px-4.5 py-4 text-[13.5px] leading-relaxed text-muted"
 		>
 			<svg
 				viewBox="0 0 24 24"
@@ -232,7 +220,7 @@ const button =
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				aria-hidden="true"
-				class="mt-0.5 size-4 shrink-0"
+				class="mt-0.5 size-4 shrink-0 text-subtle"
 			>
 				<circle cx="12" cy="12" r="10"></circle>
 				<path d="M12 16v-4M12 8h.01"></path>
@@ -243,11 +231,13 @@ const button =
 		</p>
 
 		<div
-			class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-zinc-300 pt-5 text-sm text-zinc-500 dark:border-zinc-700"
+			class="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-5 text-[13.5px] text-subtle"
 		>
 			<p>&copy; {built.getFullYear()} Freesets. Built by Cosmo.</p>
 
-			<p class="flex items-center gap-2 text-xs tracking-widest uppercase">
+			<p
+				class="flex items-center gap-2 rounded-full border border-line bg-field px-2.5 py-1 font-mono text-[11.5px] tracking-[0.08em] text-muted uppercase"
+			>
 				<span class="size-1.5 rounded-full bg-green-500"></span>
 				Updated
 				<time data-built datetime={built.toISOString()}>

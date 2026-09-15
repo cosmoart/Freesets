@@ -1,23 +1,32 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import AssetCard from '@/components/AssetCard.astro'
-import Pagination from '@/components/Pagination.astro'
+import ResultsBar from '@/components/ResultsBar.astro'
 import categories from '@/assets/categories'
-import { DEFAULT_PER_PAGE } from '@/scripts/view'
 import ViewControls from '@/components/ViewControls.astro'
 import EmptyState from '@/components/EmptyState.astro'
+import type { Asset } from '@/types'
 
-const results = categories.flatMap((category) =>
-	category.assets.map((asset) => ({
-		asset,
-		category,
-		license: (asset.license ?? asset.licence)?.trim() ?? ''
-	}))
-)
+const licenses = [
+	...new Set(
+		categories
+			.flatMap((category) => category.assets)
+			.map((asset) => (asset.license ?? asset.licence)?.trim() ?? '')
+			.filter(Boolean)
+	)
+].sort((a, b) => a.localeCompare(b))
 
-const licenses = [...new Set(results.map(({ license }) => license).filter(Boolean))].sort((a, b) =>
-	a.localeCompare(b)
-)
+// Results are drawn in the browser from /search-index.json, one page at a time. The page only
+// ships AssetCard as a template, with and without a license link, for scripts/card.ts to fill.
+const sample: Asset = {
+	id: 0,
+	name: '',
+	link: 'https://freesets.dev',
+	img: '',
+	order: 0,
+	tags: [''],
+	license: ' '
+}
 ---
 
 <Layout
@@ -26,84 +35,96 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
 >
 	<section class="grow">
-		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
-			<h1 class="text-4xl font-semibold">Search</h1>
+		<div
+			class="-mx-4 mb-6 border-y border-line bg-[radial-gradient(90%_140%_at_50%_0%,rgb(43_109_255/0.1),transparent_70%)] px-4 py-8 sm:py-10"
+		>
+			<form data-filters class="mx-auto flex max-w-3xl flex-col gap-3.5">
+				<label
+					class="flex h-14 items-center gap-3 rounded-[14px] surface px-4.5 focus-within:border-line-strong"
+				>
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						class="size-5 shrink-0 text-muted"
+					>
+						<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+						<path d="M21 21l-6 -6"></path>
+					</svg>
+					<span class="sr-only">Search resources</span>
+					<input
+						type="search"
+						name="q"
+						autocomplete="off"
+						placeholder="Name, tag or license..."
+						class="w-full min-w-0 bg-transparent text-lg tracking-tight outline-none placeholder:text-subtle"
+					/>
+				</label>
 
-			<ViewControls />
+				<div class="flex flex-wrap items-center gap-2.5">
+					<select
+						name="category"
+						aria-label="Category"
+						class="cursor-pointer dropdown control py-2 pr-8 pl-3 text-sm outline-none"
+					>
+						<option value="">All categories</option>
+						{categories.map((category) => <option value={category.nameID}>{category.name}</option>)}
+					</select>
 
-			<Pagination />
+					<select
+						name="license"
+						aria-label="License"
+						class="cursor-pointer dropdown control py-2 pr-8 pl-3 text-sm outline-none"
+					>
+						<option value="">All licenses</option>
+						{licenses.map((license) => <option value={license}>{license}</option>)}
+					</select>
+
+					<button type="reset" class="btn btn-ghost">Clear</button>
+				</div>
+			</form>
 		</div>
 
-		<form
-			data-filters
-			class="mb-8 flex flex-wrap items-center gap-3 rounded-lg border-2 border-zinc-200 p-4 dark:border-zinc-800"
-		>
-			<input
-				type="search"
-				name="q"
-				autocomplete="off"
-				placeholder="Name, tag or license..."
-				class="min-w-56 grow rounded-md border-2 border-zinc-200 px-3 py-2 outline-none focus:border-zinc-400 dark:border-zinc-700 dark:focus:border-zinc-500"
-			/>
+		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+			<div class="flex flex-wrap items-baseline gap-3">
+				<h1 class="text-2xl font-semibold">Search</h1>
+				<p data-count class="text-sm text-muted"></p>
+			</div>
 
-			<select
-				name="category"
-				aria-label="Category"
-				class="rounded-md border-2 border-zinc-200 px-3 py-2 dark:border-zinc-700 dark:bg-zinc-900"
-			>
-				<option value="">All categories</option>
-				{categories.map((category) => <option value={category.nameID}>{category.name}</option>)}
-			</select>
+			<div class="flex flex-wrap items-center gap-4">
+				<ViewControls />
 
-			<select
-				name="license"
-				aria-label="License"
-				class="rounded-md border-2 border-zinc-200 px-3 py-2 dark:border-zinc-700 dark:bg-zinc-900"
-			>
-				<option value="">All licenses</option>
-				{licenses.map((license) => <option value={license}>{license}</option>)}
-			</select>
+				<ResultsBar />
+			</div>
+		</div>
 
-			<button
-				type="reset"
-				class="rounded-md bg-zinc-900 px-4 py-2 text-white dark:bg-white dark:text-zinc-950"
-			>
-				Clear
-			</button>
-		</form>
+		<ul data-results aria-busy="true"></ul>
 
-		<p data-count class="mb-6 text-zinc-500"></p>
+		<template data-card-template="link">
+			<li>
+				<AssetCard asset={{ ...sample, licenseLink: 'https://freesets.dev' }} color="" label=" " />
+			</li>
+		</template>
 
-		<ul data-results class="flex flex-wrap">
-			{
-				results.map(({ asset, category, license }, index) => (
-					<li
-						data-item
-						hidden={index >= DEFAULT_PER_PAGE}
-						data-category={category.nameID}
-						data-license={license}
-						data-label={asset.name}
-						data-link={asset.link}
-						data-meta={[license, ...(asset.tags ?? [])]
-							.filter(Boolean)
-							.join(String.fromCharCode(32, 183, 32))}
-						data-text={[asset.name, license, ...(asset.tags ?? [])].join(' ').toLowerCase()}
-					>
-						<AssetCard asset={asset} color={category.color} />
-					</li>
-				))
-			}
-		</ul>
+		<template data-card-template="plain">
+			<li><AssetCard asset={sample} color="" label=" " /></li>
+		</template>
 
 		<EmptyState />
 	</section>
 </Layout>
 
 <script>
-	import { paginate } from '@/scripts/paginate'
-	import { readPerPage } from '@/scripts/view'
+	import { renderPages } from '@/scripts/paginate'
+	import { DEFAULT_COLUMNS, readPerPage } from '@/scripts/view'
 	import { matches as textMatches } from '@/scripts/filter'
 	import { closestTo, renderEmpty, type EmptyFilter } from '@/scripts/empty'
+	import { loadSearchIndex } from '@/scripts/search-index'
+	import { renderCard } from '@/scripts/card'
 
 	let perPage = 0
 	let onPerPageChange: (() => void) | undefined
@@ -113,17 +134,21 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		onPerPageChange?.()
 	})
 
-	function setup() {
+	async function setup() {
 		const form = document.querySelector<HTMLFormElement>('[data-filters]')
 		const nav = document.querySelector<HTMLElement>('[data-pagination]')
-		if (!form || !nav) return
+		const list = document.querySelector<HTMLUListElement>('[data-results]')
+		if (!form || !nav || !list) return
 
 		const query = form.elements.namedItem('q') as HTMLInputElement
 		const category = form.elements.namedItem('category') as HTMLSelectElement
 		const license = form.elements.namedItem('license') as HTMLSelectElement
 		const count = document.querySelector<HTMLParagraphElement>('[data-count]')!
 		const empty = document.querySelector<HTMLElement>('[data-empty]')!
-		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
+		const templates = {
+			link: document.querySelector<HTMLTemplateElement>('[data-card-template="link"]')!,
+			plain: document.querySelector<HTMLTemplateElement>('[data-card-template="plain"]')!
+		}
 
 		const params = new URLSearchParams(location.search)
 		query.value = params.get('q') ?? ''
@@ -132,13 +157,33 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		let page = Number(params.get('page')) || 1
 		perPage = readPerPage()
 
-		/** Every item passing the active filters, optionally ignoring one of them. */
+		form.addEventListener('submit', (event) => event.preventDefault())
+
+		count.textContent = 'Loading resources…'
+		const index = await loadSearchIndex()
+
+		// The visitor may have left the page while the index was loading
+		if (!list.isConnected) return
+
+		if (index.length === 0) {
+			count.textContent = 'Resources could not be loaded. Reload the page to try again.'
+			return
+		}
+
+		const entries = index.map((entry) => ({
+			...entry,
+			label: entry.name,
+			meta: [entry.license, ...entry.tags].filter(Boolean).join(' · '),
+			text: [entry.name, entry.license, ...entry.tags].join(' ').toLowerCase()
+		}))
+
+		/** Every entry passing the active filters, optionally ignoring one of them. */
 		function select(search: string, skip?: 'category' | 'license') {
-			return items.filter(
-				(item) =>
-					textMatches(item.dataset.text ?? '', search) &&
-					(skip === 'category' || !category.value || item.dataset.category === category.value) &&
-					(skip === 'license' || !license.value || item.dataset.license === license.value)
+			return entries.filter(
+				(entry) =>
+					textMatches(entry.text, search) &&
+					(skip === 'category' || !category.value || entry.nameID === category.value) &&
+					(skip === 'license' || !license.value || entry.license === license.value)
 			)
 		}
 
@@ -148,16 +193,21 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 
 		function apply(scroll = false) {
 			const search = query.value.trim()
-			const matches = select(search)
-			const found = new Set(matches)
+			const found = select(search)
 
-			for (const item of items) item.hidden = !found.has(item)
+			page = renderPages(nav!, found.length, page, perPage)
+			const start = (page - 1) * perPage
 
-			page = paginate(nav!, matches, page, perPage)
-			count.textContent = `${matches.length} ${matches.length === 1 ? 'resource' : 'resources'} found`
-			empty.hidden = matches.length > 0
+			list!.replaceChildren(
+				...found
+					.slice(start, start + perPage)
+					.map((entry, position) => renderCard(templates, entry, position < DEFAULT_COLUMNS))
+			)
 
-			if (matches.length === 0) {
+			count.textContent = `${found.length} ${found.length === 1 ? 'resource' : 'resources'} found`
+			empty.hidden = found.length > 0
+
+			if (found.length === 0) {
 				const filters: EmptyFilter[] = []
 
 				if (license.value) {
@@ -186,7 +236,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 					query: search,
 					scope: category.value ? describe(category) : 'all resources',
 					filters,
-					closest: closestTo(items, search),
+					closest: closestTo(entries, search),
 					onTerm: (term) => {
 						query.value = term
 						reset()
@@ -209,7 +259,6 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 			apply()
 		}
 
-		form.addEventListener('submit', (event) => event.preventDefault())
 		form.addEventListener('input', reset)
 		form.addEventListener('change', reset)
 		form.addEventListener('reset', () => requestAnimationFrame(reset))
@@ -227,6 +276,7 @@ const licenses = [...new Set(results.map(({ license }) => license).filter(Boolea
 		}
 
 		apply()
+		list.removeAttribute('aria-busy')
 	}
 
 	document.addEventListener('astro:page-load', setup)

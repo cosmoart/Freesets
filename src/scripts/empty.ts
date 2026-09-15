@@ -8,14 +8,23 @@ export interface EmptyFilter {
 	clear: () => void
 }
 
+/** A resource offered as a partial match. */
+export interface Suggestion {
+	label: string
+	link: string
+	meta: string
+	/** Lowercased text the query is matched against. */
+	text: string
+}
+
 export interface EmptyContext {
 	query: string
 	/** Where the closest matches were looked up, e.g. "Icons". */
 	scope: string
 	/** Active filters that would widen the search, in any order. */
 	filters?: EmptyFilter[]
-	/** Best partial matches, already ranked. Read for their data-label/link/meta. */
-	closest?: HTMLElement[]
+	/** Best partial matches, already ranked. */
+	closest?: Suggestion[]
 	/** Re-runs the search with a single term. */
 	onTerm?: (term: string) => void
 }
@@ -45,18 +54,18 @@ const CARD = `
 	<a
 		target="_blank"
 		rel="noopener noreferrer nofollow"
-		class="flex items-center gap-3 rounded-lg border border-zinc-200 p-3 transition-colors hover:border-zinc-400 dark:border-zinc-800 dark:hover:border-zinc-600"
+		class="surface flex items-center gap-3 rounded-xl px-3.5 py-3 transition-colors hover:border-line-strong"
 	>
 		<img
 			alt=""
-			width="36"
-			height="36"
+			width="32"
+			height="32"
 			loading="lazy"
-			class="size-9 shrink-0 rounded-md object-cover"
+			class="size-8 shrink-0 rounded-[7px] object-cover"
 		/>
 		<span class="min-w-0">
-			<span class="block truncate font-medium"></span>
-			<span class="block truncate text-xs text-zinc-500"></span>
+			<span class="block truncate text-[15px] font-medium"></span>
+			<span class="block truncate text-[12.5px] text-subtle"></span>
 		</span>
 		<svg
 			viewBox="0 0 24 24"
@@ -66,15 +75,14 @@ const CARD = `
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			aria-hidden="true"
-			class="ml-auto size-4 shrink-0 text-zinc-400"
+			class="ml-auto size-4 shrink-0 text-subtle"
 		>
 			<path d="M7 17 17 7M9 7h8v8" />
 		</svg>
 	</a>
 `
 
-function card(item: HTMLElement) {
-	const link = item.dataset.link ?? ''
+function card({ label, link, meta }: Suggestion) {
 	const li = document.createElement('li')
 	li.innerHTML = CARD
 
@@ -82,9 +90,9 @@ function card(item: HTMLElement) {
 	li.querySelector('img')!.src =
 		`https://www.google.com/s2/favicons?domain=${encodeURIComponent(link)}&sz=128`
 
-	const [name, meta] = li.querySelectorAll('span > span')
-	name!.textContent = item.dataset.label ?? ''
-	meta!.textContent = item.dataset.meta ?? ''
+	const [name, detail] = li.querySelectorAll('span > span')
+	name!.textContent = label
+	detail!.textContent = meta
 
 	return li
 }
@@ -122,7 +130,7 @@ export function renderEmpty(root: HTMLElement, context: EmptyContext) {
 			button.type = 'button'
 			button.textContent = word
 			button.className =
-				'cursor-pointer underline underline-offset-4 transition-colors hover:text-zinc-950 dark:hover:text-white'
+				'cursor-pointer border-b border-line-strong text-soft transition-colors hover:border-ink hover:text-ink'
 			button.addEventListener('click', () => onTerm!(word))
 			suggestions.append(button)
 		}
@@ -143,14 +151,14 @@ export function renderEmpty(root: HTMLElement, context: EmptyContext) {
 }
 
 /** Items sharing at least one term with the query, best overlap first. */
-export function closestTo(items: HTMLElement[], query: string, limit = 3) {
+export function closestTo<T extends { text: string }>(items: T[], query: string, limit = 3) {
 	const words = terms(query)
 	if (words.length === 0) return []
 
 	return items
 		.map((item) => ({
 			item,
-			score: words.filter((word) => (item.dataset.text ?? '').includes(word)).length
+			score: words.filter((word) => item.text.includes(word)).length
 		}))
 		.filter((entry) => entry.score > 0)
 		.sort((a, b) => b.score - a.score)

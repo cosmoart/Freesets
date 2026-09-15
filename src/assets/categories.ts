@@ -41,6 +41,13 @@ const categories: Category[] = [
 		assets: byOrder(photosDB)
 	},
 	{
+		name: 'Directories',
+		description: 'Other collections and directories of free resources.',
+		color: '#14b8a6',
+		nameID: 'directories',
+		assets: byOrder(directoriesDB)
+	},
+	{
 		name: 'Videos',
 		description: 'Stock footage, loops and motion backgrounds you can use for free.',
 		color: '#ef2350',
@@ -109,13 +116,6 @@ const categories: Category[] = [
 		color: '#21c95f',
 		nameID: 'components',
 		assets: byOrder(componentsDB)
-	},
-	{
-		name: 'Directories',
-		description: 'Other collections and directories of free resources.',
-		color: '#14b8a6',
-		nameID: 'directories',
-		assets: byOrder(directoriesDB)
 	}
 ]
 

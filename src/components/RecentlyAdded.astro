@@ -3,23 +3,26 @@ import AssetCard from '@/components/AssetCard.astro'
 import { RECENT_DAYS, recentlyAdded } from '@/scripts/recent'
 
 const { dated, entries } = recentlyAdded()
+
+// Cards in the first row of the lg:grid-cols-4 grid
+const FIRST_ROW = 4
 ---
 
-<section class="flex flex-col gap-5">
+<section class="flex flex-col gap-4">
 	<header class="flex flex-wrap items-center gap-3">
-		<h2 class="text-2xl font-semibold">Recently added</h2>
-		<span
-			class="rounded-md border border-zinc-200 px-2 py-0.5 text-[11px] font-medium tracking-widest text-zinc-500 uppercase dark:border-zinc-800"
-		>
+		<h2 class="text-xl font-semibold">Recently added</h2>
+		<span class="eyebrow">
 			{dated ? `Last ${RECENT_DAYS} days` : 'Latest additions'}
 		</span>
 	</header>
 
-	<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+	<ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 		{
-			entries.map(({ asset, category }) => (
+			entries.map(({ asset, category }, index) => (
 				<li>
-					<AssetCard asset={asset} color={category.color} />
+					<AssetCard asset={asset} color={category.color} label={dated ? 'New' : category.name}
+							priority={index < FIRST_ROW}
+						/>
 				</li>
 			))
 		}

@@ -3,7 +3,7 @@
 		"id": 1,
 		"order": 100,
 		"name": "Josh Comeau",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/josh.webp",
+		"img": "https://cdn.freesets.dev/blogs/josh.webp",
 		"link": "https://www.joshwcomeau.com",
 		"tags": ["Web"]
 	},
@@ -18,7 +18,7 @@
 		"id": 3,
 		"order": 88,
 		"name": "Modern CSS",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/moderncss",
+		"img": "https://cdn.freesets.dev/blogs/moderncss.webp",
 		"link": "https://moderncss.dev",
 		"tags": ["CSS"]
 	},
@@ -34,7 +34,7 @@
 		"id": 5,
 		"order": 80,
 		"name": "Not a Number",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/nan",
+		"img": "https://cdn.freesets.dev/blogs/nan.webp",
 		"link": "https://www.nan.fyi",
 		"tags": ["Animation", "svg"]
 	},
@@ -42,7 +42,7 @@
 		"id": 6,
 		"order": 78,
 		"name": "Maximeheckel",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/maxime",
+		"img": "https://cdn.freesets.dev/blogs/maxime.webp",
 		"link": "https://blog.maximeheckel.com",
 		"tags": ["Three.js", "React", "3D"]
 	},
@@ -50,7 +50,7 @@
 		"id": 7,
 		"order": 76,
 		"name": "Varun Vachhar",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/varun",
+		"img": "https://cdn.freesets.dev/blogs/varun.webp",
 		"link": "https://varun.ca/writing/",
 		"tags": ["Three.js", "3D"]
 	},
@@ -58,7 +58,7 @@
 		"id": 8,
 		"order": 70,
 		"name": "Overreacted",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/overreacted",
+		"img": "https://cdn.freesets.dev/blogs/overreacted.webp",
 		"link": "https://overreacted.io",
 		"tags": ["React", "JavaScript"]
 	},
@@ -96,7 +96,7 @@
 		"id": 13,
 		"order": 40,
 		"name": "Hashnode",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/hashnode",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/hashnode.webp",
 		"link": "https://www.hashnode.com",
 		"tags": ["Community"]
 	},
@@ -120,7 +120,7 @@
 		"id": 16,
 		"order": 23,
 		"name": "Patterns.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/mvif3lc9bdwrcjtfgsxh.webp",
+		"img": "https://cdn.freesets.dev/blogs/mvif3lc9bdwrcjtfgsxh.webp",
 		"link": "https://www.patterns.dev",
 		"tags": ["Patterns"]
 	},
@@ -128,7 +128,7 @@
 		"id": 17,
 		"order": 20,
 		"name": "A List Apart",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/alistapart",
+		"img": "https://cdn.freesets.dev/blogs/alistapart.webp",
 		"link": "https://www.alistapart.com",
 		"tags": ["Community"]
 	},
@@ -136,7 +136,7 @@
 		"id": 18,
 		"order": 10,
 		"name": "Sitepoint",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/sitepoint",
+		"img": "https://cdn.freesets.dev/blogs/sitepoint.webp",
 		"link": "https://www.sitepoint.com",
 		"tags": ["Learning"]
 	},
@@ -144,7 +144,7 @@
 		"id": 19,
 		"order": 80,
 		"name": "The Shape of AI",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/shapeofai",
+		"img": "https://cdn.freesets.dev/blogs/shapeofai.webp",
 		"link": "https://www.shapeof.ai/",
 		"tags": ["AI", "Patterns"]
 	},
@@ -152,7 +152,7 @@
 		"id": 20,
 		"order": 76,
 		"name": "Zajno Digital Studio",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/motionzajno.webp",
+		"img": "https://cdn.freesets.dev/blogs/motionzajno.webp",
 		"link": "https://motion.zajno.com/",
 		"tags": ["Animation", "Design"]
 	},
@@ -160,7 +160,7 @@
 		"id": 21,
 		"order": 75,
 		"name": "Emil Kowalski",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/milkowalski",
+		"img": "https://cdn.freesets.dev/blogs/milkowalski.webp",
 		"link": "https://emilkowal.ski/",
 		"tags": ["Animation", "Design"]
 	},
@@ -168,7 +168,7 @@
 		"id": 22,
 		"order": 95,
 		"name": "Codrops",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/codrops",
+		"img": "https://cdn.freesets.dev/blogs/codrops.webp",
 		"link": "https://tympanus.net/codrops/demos/",
 		"tags": ["Three.js", "Webgl"]
 	},
@@ -177,7 +177,7 @@
 		"order": 48,
 		"name": "CSS Wizardry",
 		"link": "https://csswizardry.com/blog/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-wizardry",
+		"img": "https://cdn.freesets.dev/blogs/css-wizardry.webp",
 		"tags": ["CSS"]
 	},
 	{
@@ -185,7 +185,7 @@
 		"order": 67,
 		"name": "Ahmad Shadeed",
 		"link": "https://ishadeed.com/articles/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/ahmad-shadeed",
+		"img": "https://cdn.freesets.dev/blogs/ahmad-shadeed.webp",
 		"tags": ["CSS"]
 	},
 	{
@@ -193,7 +193,7 @@
 		"order": 66,
 		"name": "Sara Soueidan Blog",
 		"link": "https://www.sarasoueidan.com/blog/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/sara-soueidan",
+		"img": "https://cdn.freesets.dev/blogs/sara-soueidan.webp",
 		"tags": ["CSS", "Accessibility"]
 	},
 	{
@@ -201,7 +201,7 @@
 		"order": 78,
 		"name": "CSS Weekly",
 		"link": "https://css-weekly.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/css-weekly",
+		"img": "https://cdn.freesets.dev/blogs/css-weekly.webp",
 		"tags": ["Newsletter", "CSS", "Frontend"]
 	},
 	{
@@ -209,7 +209,7 @@
 		"order": 58,
 		"name": "Motion Magazine",
 		"link": "https://motion.dev/magazine",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/blogs/motion-magazine",
+		"img": "https://cdn.freesets.dev/blogs/motion-magazine.webp",
 		"tags": ["Animation"]
 	}
 ]

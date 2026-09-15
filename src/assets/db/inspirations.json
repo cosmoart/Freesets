@@ -3,21 +3,21 @@
 		"id": 1,
 		"order": 80,
 		"name": "Curated Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/curated-design",
+		"img": "https://cdn.freesets.dev/inspirations/curated-design.webp",
 		"link": "https://www.curated.design"
 	},
 	{
 		"id": 2,
 		"order": 98,
 		"name": "Godly",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/godly",
+		"img": "https://cdn.freesets.dev/inspirations/godly.webp",
 		"link": "https://godly.website"
 	},
 	{
 		"id": 3,
 		"order": 78,
 		"name": "Laand-book",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/land-book",
+		"img": "https://cdn.freesets.dev/inspirations/land-book.webp",
 		"link": "https://land-book.com",
 		"licence": "Freemium",
 		"licenceLink": "https://land-book.com/pro"
@@ -26,28 +26,28 @@
 		"id": 4,
 		"order": 90,
 		"name": "BentoGrids",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/bentogrids",
+		"img": "https://cdn.freesets.dev/inspirations/bentogrids.webp",
 		"link": "https://bentogrids.com"
 	},
 	{
 		"id": 5,
 		"order": 80,
 		"name": "Darkmode Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/darkmodedesign",
+		"img": "https://cdn.freesets.dev/inspirations/darkmodedesign.webp",
 		"link": "https://www.darkmodedesign.com"
 	},
 	{
 		"id": 6,
 		"order": 80,
 		"name": "Dark Design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/darkdesign",
+		"img": "https://cdn.freesets.dev/inspirations/darkdesign.webp",
 		"link": "https://www.dark.design"
 	},
 	{
 		"id": 7,
 		"order": 78,
 		"name": "Landing Love",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/landing-love",
+		"img": "https://cdn.freesets.dev/inspirations/landing-love.webp",
 		"link": "https://www.landing.love"
 	},
 	{
@@ -68,7 +68,7 @@
 		"id": 10,
 		"order": 70,
 		"name": "Pinterest",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pinterest",
+		"img": "https://cdn.freesets.dev/inspirations/pinterest.webp",
 		"link": "https://pinterest.com/"
 	},
 	{
@@ -83,7 +83,7 @@
 		"order": 30,
 		"name": "Pattern Collection",
 		"link": "https://wpshout.com/pattern-collection/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/pattern-collection",
+		"img": "https://cdn.freesets.dev/inspirations/pattern-collection.webp",
 		"tags": [
 			"Patterns"
 		]
@@ -92,14 +92,14 @@
 		"id": 13,
 		"order": 60,
 		"name": "Dribbble",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/dribbble",
+		"img": "https://cdn.freesets.dev/inspirations/dribbble.webp",
 		"link": "https://dribbble.com/"
 	},
 	{
 		"id": 14,
 		"order": 60,
 		"name": "Behance",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/behance",
+		"img": "https://cdn.freesets.dev/inspirations/behance.webp",
 		"link": "https://www.behance.net/"
 	},
 	{
@@ -120,7 +120,7 @@
 		"id": 17,
 		"order": 20,
 		"name": "Three.js",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/threejs",
+		"img": "https://cdn.freesets.dev/inspirations/threejs.webp",
 		"link": "https://threejs.org",
 		"tags": ["3D"]
 	},
@@ -128,21 +128,21 @@
 		"id": 18,
 		"order": 75,
 		"name": "Awwwards",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/awwwards",
+		"img": "https://cdn.freesets.dev/inspirations/awwwards.webp",
 		"link": "https://www.awwwards.com/websites/"
 	},
 	{
 		"id": 19,
 		"order": 19,
 		"name": "Sass Landing Page",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/saaslandingpage",
+		"img": "https://cdn.freesets.dev/inspirations/saaslandingpage.webp",
 		"link": "https://saaslandingpage.com"
 	},
 	{
 		"id": 20,
 		"order": 55,
 		"name": "Navbar Gallery",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/navbargallery",
+		"img": "https://cdn.freesets.dev/inspirations/navbargallery.webp",
 		"link": "https://www.navbar.gallery",
 		"tags": ["Navbars"]
 	},
@@ -150,14 +150,14 @@
 		"id": 21,
 		"order": 87,
 		"name": "Unsection",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/unsection",
+		"img": "https://cdn.freesets.dev/inspirations/unsection.webp",
 		"link": "https://www.unsection.com"
 	},
 	{
 		"id": 22,
 		"order": 57,
 		"name": "404s",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/404s",
+		"img": "https://cdn.freesets.dev/inspirations/404s.webp",
 		"link": "https://www.404s.design/",
 		"tags": ["404"]
 	},
@@ -165,63 +165,63 @@
 		"id": 23,
 		"order": 80,
 		"name": "HUDS+GUIS",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hudsandguis",
+		"img": "https://cdn.freesets.dev/inspirations/hudsandguis.webp",
 		"link": "https://www.hudsandguis.com"
 	},
 	{
 		"id": 24,
 		"order": 4,
 		"name": "Design Vault",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designvault",
+		"img": "https://cdn.freesets.dev/inspirations/designvault.webp",
 		"link": "https://designvault.io/"
 	},
 	{
 		"id": 25,
 		"order": 30,
 		"name": "lookup.design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lookupdesign",
+		"img": "https://cdn.freesets.dev/inspirations/lookupdesign.webp",
 		"link": "https://lookup.design/"
 	},
 	{
 		"id": 26,
 		"order": 38,
 		"name": "CallToInspiration",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/calltoinspiration",
+		"img": "https://cdn.freesets.dev/inspirations/calltoinspiration.webp",
 		"link": "https://calltoinspiration.com/"
 	},
 	{
 		"id": 27,
 		"order": 86,
 		"name": "Design Spells",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designspells",
+		"img": "https://cdn.freesets.dev/inspirations/designspells.webp",
 		"link": "https://www.designspells.com/"
 	},
 	{
 		"id": 28,
 		"order": 75,
 		"name": "Httpster",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/httpster",
+		"img": "https://cdn.freesets.dev/inspirations/httpster.webp",
 		"link": "https://httpster.net/"
 	},
 	{
 		"id": 29,
 		"order": 20,
 		"name": "OGimage.gallery",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/ogimage",
+		"img": "https://cdn.freesets.dev/inspirations/ogimage.webp",
 		"link": "https://www.ogimage.gallery/"
 	},
 	{
 		"id": 30,
 		"order": 28,
 		"name": "Siteinspire",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/siteinspire",
+		"img": "https://cdn.freesets.dev/inspirations/siteinspire.webp",
 		"link": "https://www.siteinspire.com/"
 	},
 	{
 		"id": 31,
 		"order": 49,
 		"name": "ArchDaily",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/archdaily",
+		"img": "https://cdn.freesets.dev/inspirations/archdaily.webp",
 		"link": "https://www.archdaily.com/",
 		"tags": ["Architecture"]
 	},
@@ -229,14 +229,14 @@
 		"id": 32,
 		"order": 32,
 		"name": "Site of Sites",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/siteofsites",
+		"img": "https://cdn.freesets.dev/inspirations/siteofsites.webp",
 		"link": "https://www.siteofsites.co/"
 	},
 	{
 		"id": 33,
 		"order": 45,
 		"name": "LogoFav",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logofav",
+		"img": "https://cdn.freesets.dev/inspirations/logofav.webp",
 		"link": "https://www.logofav.com/",
 		"tags": ["Logos"]
 	},
@@ -244,21 +244,21 @@
 		"id": 34,
 		"order": 30,
 		"name": "Dead Simple Sites",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/deadsimplesites",
+		"img": "https://cdn.freesets.dev/inspirations/deadsimplesites.webp",
 		"link": "https://deadsimplesites.com/"
 	},
 	{
 		"id": 35,
 		"order": 85,
 		"name": "Wall of Portfolios",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/wallofportfolios",
+		"img": "https://cdn.freesets.dev/inspirations/wallofportfolios.webp",
 		"link": "https://www.wallofportfolios.in/"
 	},
 	{
 		"id": 36,
 		"order": 52,
 		"name": "Footer",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/footer",
+		"img": "https://cdn.freesets.dev/inspirations/footer.webp",
 		"link": "https://www.footer.design/",
 		"tags": ["Footers"]
 	},
@@ -267,20 +267,20 @@
 		"order": 20,
 		"name": "Collect UI",
 		"link": "https://collectui.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/collect-ui"
+		"img": "https://cdn.freesets.dev/inspirations/collect-ui.webp"
 	},
 	{
 		"id": 38,
 		"order": 22,
 		"name": "HOVERSTAT.ES",
 		"link": "https://hoverstat.es/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/hoverstates"
+		"img": "https://cdn.freesets.dev/inspirations/hoverstates.webp"
 	},
 	{
 		"id": 39,
 		"order": 61,
 		"name": "Design Everywhere",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/designeverywhere",
+		"img": "https://cdn.freesets.dev/inspirations/designeverywhere.webp",
 		"link": "https://designeverywhere.co/",
 		"tags": ["Products"]
 	},
@@ -288,7 +288,7 @@
 		"id": 40,
 		"order": 78,
 		"name": "Browsing Mode",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/browsingmode",
+		"img": "https://cdn.freesets.dev/inspirations/browsingmode.webp",
 		"link": "https://browsingmode.com/"
 	},
 	{
@@ -296,7 +296,7 @@
 		"order": 45,
 		"name": "60fps",
 		"link": "https://60fps.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/60fps",
+		"img": "https://cdn.freesets.dev/inspirations/60fps.webp",
 		"tags": ["Apps", "Animations"]
 	},
 	{
@@ -304,7 +304,7 @@
 		"order": 55,
 		"name": "Minimum",
 		"link": "https://mnmm.xyz",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/mnmm",
+		"img": "https://cdn.freesets.dev/inspirations/mnmm.webp",
 		"tags": ["Minimalist"]
 	},
 	{
@@ -312,14 +312,14 @@
 		"order": 64,
 		"name": "One Page Love",
 		"link": "https://onepagelove.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/onepagelove"
+		"img": "https://cdn.freesets.dev/inspirations/onepagelove.webp"
 	},
 	{
 		"id": 44,
 		"order": 38,
 		"name": "3D Websites",
 		"link": "https://3dwebsites.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/3dwebsites",
+		"img": "https://cdn.freesets.dev/inspirations/3dwebsites.webp",
 		"tags": ["3D"]
 	},
 	{
@@ -327,14 +327,14 @@
 		"order": 10,
 		"name": "Viewport UI",
 		"link": "https://viewport-ui.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/viewport-ui"
+		"img": "https://cdn.freesets.dev/inspirations/viewport-ui.webp"
 	},
 	{
 		"id": 46,
 		"order": 67,
 		"name": "Logo System",
 		"link": "https://logosystem.co/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/logosystem",
+		"img": "https://cdn.freesets.dev/inspirations/logosystem.webp",
 		"tags": ["Logos"]
 	},
 	{
@@ -342,7 +342,7 @@
 		"order": 75,
 		"name": "Adfolio",
 		"link": "https://www.adfolio.design/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/adfolio",
+		"img": "https://cdn.freesets.dev/inspirations/adfolio.webp",
 		"tags": ["Ads"]
 	},
 	{
@@ -350,28 +350,28 @@
 		"order": 78,
 		"name": "A1",
 		"link": "https://www.a1.gallery/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/a1gallery"
+		"img": "https://cdn.freesets.dev/inspirations/a1gallery.webp"
 	},
 	{
 		"id": 49,
 		"order": 28,
 		"name": "Daily Delights",
 		"link": "https://delights.design",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/delights"
+		"img": "https://cdn.freesets.dev/inspirations/delights.webp"
 	},
 	{
 		"id": 50,
 		"order": 48,
 		"name": "CTA.gallery",
 		"link": "https://www.cta.gallery/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/ctagallery"
+		"img": "https://cdn.freesets.dev/inspirations/ctagallery.webp"
 	},
 	{
 		"id": 51,
 		"order": 78,
 		"name": "Supahero",
 		"link": "https://www.supahero.io/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/supahero",
+		"img": "https://cdn.freesets.dev/inspirations/supahero.webp",
 		"tags": ["Hero sections"]
 	},
 	{
@@ -379,14 +379,14 @@
 		"order": 29,
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/websitevice"
+		"img": "https://cdn.freesets.dev/inspirations/websitevice.webp"
 	},
 	{
 		"id": 54,
 		"order": 85,
 		"name": "Lapa Ninja",
 		"link": "https://www.lapa.ninja/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/inspirations/lapa-ninja",
+		"img": "https://cdn.freesets.dev/inspirations/lapa-ninja.webp",
 		"tags": ["OG", "Fonts"]
 	}
 ]
