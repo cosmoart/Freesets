@@ -10,37 +10,42 @@ const { category } = Astro.props
 ---
 
 <div transition:name="category-header" class="overflow-hidden rounded-2xl surface">
-	<div class="flex flex-wrap items-stretch">
-		<div
-			class="flex w-32 shrink-0 items-center justify-center border-r border-line bg-field bg-grid p-4"
-		>
-			<span
-				transition:name="category-icon"
-				style={`--item-color: ${category.color}`}
-				class="flex size-14 items-center justify-center rounded-2xl bg-(--item-color) shadow-[0_0_32px_color-mix(in_srgb,var(--item-color)_40%,transparent)]"
+	<div class="flex flex-col md:flex-row">
+		<!-- Icon and title always share a row; below md the controls drop underneath them -->
+		<div class="flex min-w-0 grow">
+			<div
+				class="flex w-20 shrink-0 items-center justify-center border-r border-line bg-field bg-grid p-3 sm:w-32 sm:p-4"
 			>
-				<img
-					src={`/categories-icons/${category.nameID}.svg`}
-					alt=""
-					width="30"
-					height="30"
-					class="w-7.5 invert"
-				/>
-			</span>
-		</div>
-
-		<div class="flex min-w-64 grow flex-col justify-center gap-2 p-5">
-			<div class="flex flex-wrap items-center gap-3">
-				<h1 class="text-3xl font-bold tracking-tight">{category.name}</h1>
-				<span class="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-subtle">
-					<span data-total>{category.assets.length}</span> resources
+				<span
+					transition:name="category-icon"
+					style={`--item-color: ${category.color}`}
+					class="flex size-12 items-center justify-center rounded-2xl bg-(--item-color) shadow-[0_0_32px_color-mix(in_srgb,var(--item-color)_40%,transparent)] sm:size-14"
+				>
+					<img
+						src={`/categories-icons/${category.nameID}.svg`}
+						alt=""
+						width="30"
+						height="30"
+						class="w-6.5 invert sm:w-7.5"
+					/>
 				</span>
 			</div>
 
-			<p class="max-w-xl text-sm text-muted">{category.description}</p>
+			<div class="flex min-w-0 grow flex-col justify-center gap-2 p-4 sm:p-5">
+				<div class="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+					<h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{category.name}</h1>
+					<span class="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-subtle">
+						<span data-total>{category.assets.length}</span> resources
+					</span>
+				</div>
+
+				<p class="max-w-xl text-sm text-pretty text-muted">{category.description}</p>
+			</div>
 		</div>
 
-		<div class="flex flex-col justify-center gap-3 border-l border-line p-4">
+		<div
+			class="flex flex-col justify-center gap-3 border-t border-line p-4 md:border-t-0 md:border-l"
+		>
 			<label for="category-search" class="sr-only">Search in {category.name}</label>
 			<input
 				id="category-search"

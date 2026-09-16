@@ -2,12 +2,13 @@
 import categories from '@/assets/categories'
 
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
-const hint = 'flex items-center gap-1.5'
+const hint = 'flex items-center gap-1'
+const kbd = 'kbd px-1 py-0.5 text-[9px]'
 ---
 
 <div
 	data-header-search
-	class="group relative w-64 shrink-0 transition-[width] duration-200 focus-within:w-full sm:focus-within:w-105"
+	class="group min-w-0 flex-1 transition-[width] duration-200 md:relative md:w-72 md:flex-none md:focus-within:w-105"
 >
 	<form action="/search" method="get">
 		<label for="header-search" class="sr-only">Search all resources</label>
@@ -52,26 +53,28 @@ const hint = 'flex items-center gap-1.5'
 		</div>
 	</form>
 
+	<!-- Below md the panel spans the whole search row, below lg it matches the input, and only
+	     from lg is there room to widen it leftwards without running off the screen -->
 	<div
 		data-search-panel
 		hidden
-		class="absolute top-full right-0 z-30 mt-2 w-[min(85vw,38rem)] min-w-full overflow-hidden rounded-2xl border border-line bg-card shadow-[0_32px_80px_rgb(0_0_0/0.35)]"
+		class="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl border border-line bg-card shadow-[0_32px_80px_rgb(0_0_0/0.35)] lg:left-auto lg:w-120"
 	>
 		<div
 			id="header-search-results"
 			data-search-results
 			role="listbox"
 			aria-label="Search results"
-			class="max-h-96 overflow-y-auto p-2"
+			class="max-h-[min(24rem,60dvh)] overflow-y-auto overscroll-contain p-2"
 		>
 		</div>
 
 		<div
-			class="flex flex-wrap items-center gap-4 border-t border-line bg-field px-3.5 py-2.5 eyebrow text-[10.5px] tracking-[0.06em]"
+			class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line bg-field px-3 py-1.5 eyebrow text-[9px] tracking-[0.06em] pointer-coarse:hidden"
 		>
-			<span class={hint}><kbd class="kbd">↑↓</kbd> Navigate</span>
-			<span class={hint}><kbd class="kbd">⏎</kbd> Open</span>
-			<span class={hint}><kbd class="kbd">Tab</kbd> Filter by category</span>
+			<span class={hint}><kbd class={kbd}>↑↓</kbd> Navigate</span>
+			<span class={hint}><kbd class={kbd}>⏎</kbd> Open</span>
+			<span class={hint}><kbd class={kbd}>Tab</kbd> Filter by category</span>
 		</div>
 	</div>
 </div>
@@ -134,9 +137,48 @@ const hint = 'flex items-center gap-1.5'
 		row.setAttribute('role', 'option')
 		row.setAttribute('aria-selected', 'false')
 		row.className =
-			'flex items-center gap-3 rounded-[9px] px-2.5 py-2 hover:bg-hover aria-selected:bg-hover'
+			'ms-6 flex items-center gap-3 rounded-[9px] px-2.5 py-2 hover:bg-hover aria-selected:bg-hover'
 		row.append(favicon, name, meta)
 		return row
+	}
+
+	function emptyState(query: string, category: string) {
+		const title = document.createElement('p')
+		title.textContent = category
+			? `No results for “${query}” in ${category}`
+			: `No results for “${query}”`
+		title.className = 'text-sm font-medium text-ink'
+
+		const kbd = document.createElement('kbd')
+		kbd.textContent = '⏎'
+		kbd.className = 'kbd px-1 py-0.5 text-[9px]'
+
+		const hint = document.createElement('p')
+		hint.className = 'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
+		hint.append('Press', kbd, 'or')
+
+		const link = document.createElement('a')
+		link.href = `/search?q=${encodeURIComponent(query)}`
+		link.textContent = 'open the search page'
+		link.className = 'text-ink underline underline-offset-2 hover:opacity-70'
+		hint.append(link, 'to search better')
+
+		const empty = document.createElement('div')
+		empty.className = 'flex flex-col items-center gap-1.5 px-4 py-6 text-center'
+		empty.append(title, hint)
+
+		if (category) {
+			const esc = document.createElement('kbd')
+			esc.textContent = 'Esc'
+			esc.className = 'kbd px-1 py-0.5 text-[9px]'
+
+			const clear = document.createElement('p')
+			clear.className = 'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
+			clear.append('Press', esc, `to search outside ${category}`)
+			empty.append(clear)
+		}
+
+		return empty
 	}
 
 	function setup() {
@@ -151,6 +193,7 @@ const hint = 'flex items-center gap-1.5'
 		if (shortcut && /Mac|iPhone|iPad/.test(navigator.userAgent)) shortcut.textContent = '⌘K'
 
 		let options: HTMLAnchorElement[] = []
+		let index: SearchEntry[] = []
 		let available: SearchEntry[] = []
 		let filter = ''
 		let active = -1
@@ -194,14 +237,20 @@ const hint = 'flex items-center gap-1.5'
 				}
 			}
 
-			panel!.hidden = shown.length === 0
+			const query = input!.value.trim()
+			const category = filter ? (index.find((entry) => entry.nameID === filter)?.category ?? '') : ''
+			if (!shown.length && query) list!.append(emptyState(query, category))
+
+			panel!.hidden = !query
 			input!.setAttribute('aria-expanded', String(shown.length > 0))
 			active = -1
 		}
 
+		// The chip is looked up in the whole index, not the current results, so the filter survives a
+		// query that matches nothing in that category
 		function setFilter(nameID: string) {
 			filter = nameID
-			const entry = available.find((item) => item.nameID === nameID)
+			const entry = index.find((item) => item.nameID === nameID)
 
 			chip!.hidden = !entry
 			if (entry) {
@@ -222,13 +271,8 @@ const hint = 'flex items-center gap-1.5'
 				return
 			}
 
-			const entries = await loadSearchIndex()
-			available = entries.filter((entry) => matches(entry.name.toLowerCase(), query))
-
-			if (filter && !available.some((entry) => entry.nameID === filter)) {
-				setFilter('')
-				return
-			}
+			index = await loadSearchIndex()
+			available = index.filter((entry) => matches(entry.name.toLowerCase(), query))
 
 			render()
 		}
@@ -248,7 +292,7 @@ const hint = 'flex items-center gap-1.5'
 				return
 			}
 
-			if (event.key === 'Tab' && !panel.hidden) {
+			if (event.key === 'Tab' && !panel.hidden && available.length) {
 				event.preventDefault()
 				const order = [...new Set(available.map((entry) => entry.nameID))]
 				const cycle = ['', ...order]

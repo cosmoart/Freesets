@@ -28,7 +28,7 @@
 	{
 		"id": 4,
 		"name": "Tabler icons",
-		"link": "https://tabler-icons.io",
+		"link": "https://tabler.io/icons",
 		"img": "https://cdn.freesets.dev/icons/tabler.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/tabler/tabler-icons/blob/master/LICENSE",
@@ -144,7 +144,7 @@
 		"id": 16,
 		"name": "Eva Icons",
 		"link": "https://akveo.github.io/eva-icons/",
-		"img": "https://cdn.freesets.dev/icons/evaicons.webp",
+		"img": "https://cdn.freesets.dev/icons/akveo.github.io-eva-icons(HD).avif",
 		"license": "MIT",
 		"licenseLink": "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt",
 		"order": 74
@@ -238,12 +238,13 @@
 	},
 	{
 		"id": 26,
-		"name": "Ikonate",
-		"link": "https://ikonate.com",
-		"img": "https://cdn.freesets.dev/icons/ikonate.webp",
+		"order": 46,
+		"name": "pqoqubbw/icons",
+		"link": "https://icons.pqoqubbw.dev/",
+		"img": "https://cdn.freesets.dev/icons/pqoqubbw.webp",
 		"license": "MIT",
-		"licenseLink": "https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE",
-		"order": 50
+		"licenseLink": "https://github.com/pqoqubbw/icons/blob/main/LICENSE",
+		"tags": ["Motion", "Lucide", "Package", "React"]
 	},
 	{
 		"id": 27,
@@ -377,7 +378,7 @@
 		"id": 40,
 		"name": "Bootstrap Icons",
 		"link": "https://icons.getbootstrap.com/",
-		"img": "https://cdn.freesets.dev/icons/bootstrap.webp",
+		"img": "https://cdn.freesets.dev/icons/bootstrap.avif",
 		"license": "MIT",
 		"licenseLink": "https://github.com/twbs/bootstrap/blob/main/LICENSE",
 		"tags": ["Package"],
@@ -615,15 +616,5 @@
 		"license": "Freemium",
 		"licenseDescription": "486 icons free",
 		"tags": ["Pixelart", "Package"]
-	},
-	{
-		"id": 67,
-		"order": 46,
-		"name": "pqoqubbw/icons",
-		"link": "https://icons.pqoqubbw.dev/",
-		"img": "https://cdn.freesets.dev/icons/pqoqubbw.webp",
-		"license": "MIT",
-		"licenseLink": "https://github.com/pqoqubbw/icons/blob/main/LICENSE",
-		"tags": ["Motion", "Lucide", "Package", "React"]
 	}
 ]

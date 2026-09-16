@@ -19,8 +19,8 @@
 		"name": "Laand-book",
 		"img": "https://cdn.freesets.dev/inspirations/land-book.webp",
 		"link": "https://land-book.com",
-		"licence": "Freemium",
-		"licenceLink": "https://land-book.com/pro"
+		"license": "Freemium",
+		"licenseLink": "https://land-book.com/pro"
 	},
 	{
 		"id": 4,
@@ -300,12 +300,12 @@
 		"tags": ["Apps", "Animations"]
 	},
 	{
-		"id": 42,
-		"order": 55,
-		"name": "Minimum",
-		"link": "https://mnmm.xyz",
-		"img": "https://cdn.freesets.dev/inspirations/mnmm.webp",
-		"tags": ["Minimalist"]
+		"id": 54,
+		"order": 85,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/",
+		"img": "https://cdn.freesets.dev/inspirations/lapa-ninja.webp",
+		"tags": ["OG", "Fonts"]
 	},
 	{
 		"id": 43,
@@ -380,13 +380,5 @@
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
 		"img": "https://cdn.freesets.dev/inspirations/websitevice.webp"
-	},
-	{
-		"id": 54,
-		"order": 85,
-		"name": "Lapa Ninja",
-		"link": "https://www.lapa.ninja/",
-		"img": "https://cdn.freesets.dev/inspirations/lapa-ninja.webp",
-		"tags": ["OG", "Fonts"]
 	}
 ]

@@ -2,12 +2,21 @@
 import categories from '@/assets/categories'
 
 const current = Astro.url.pathname.split('/')[1]
+// The home and error pages read as one block, so the bar scrolls away with them rather than pinning.
+const sticky = current !== '' && current !== '404'
+
+const icon = 'flex size-8.5 shrink-0 items-center justify-center rounded-full'
+const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 ---
 
 <nav
 	aria-label="Categories"
 	transition:name="categories"
-	class="sticky top-0 z-40 -mx-4 mb-2 px-4 py-3 transition-[background-color,backdrop-filter] duration-200 data-stuck:bg-canvas/70 data-stuck:backdrop-blur-md">
+	data-sticky={sticky ? '' : undefined}
+	class:list={[
+		'category-bar z-40 -mx-4 mb-2 px-4 py-3 transition-[background-color,backdrop-filter] duration-200 data-stuck:bg-canvas/70 data-stuck:backdrop-blur-md',
+		sticky && 'sticky top-0'
+	]}>
 	<div class="relative">
 		<button
 			type="button"
@@ -31,37 +40,58 @@ const current = Astro.url.pathname.split('/')[1]
 		<div class="categories-slider" data-categories-slider data-at-start data-at-end>
 			<ul class="flex w-max gap-2 py-0.5">
 				{
-					categories.map((category) => (
-						<li>
-							<a
-								href={`/${category.nameID}`}
-								style={`--item-color: ${category.color}`}
-								data-current={category.nameID === current ? '' : undefined}
-								draggable="false"
-								class:list={[
-									'flex items-center gap-2.5 rounded-full transition-colors',
-									// The outline paints above the icon so the selection hugs it; the inset
-									// ring paints with the background, so the icon covers it.
-									category.nameID === current
-										? 'bg-[color-mix(in_srgb,var(--item-color)_15%,var(--field))] text-ink outline-2 -outline-offset-2 outline-(--item-color)'
-										: 'bg-field text-soft inset-ring-2 inset-ring-line hover:text-ink hover:inset-ring-line-strong'
-								]}>
-								<span class="flex size-8.5 items-center justify-center rounded-full bg-(--item-color)">
-									<img
-										src={`/categories-icons/${category.nameID}.svg`}
-										alt=""
-										width="20"
-										height="20"
-										draggable="false"
-										class="w-5 invert"
-									/>
-								</span>
-								<span class="py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap">
-									{category.name}
-								</span>
-							</a>
-						</li>
-					))
+					categories.map((category) => {
+						const active = category.nameID === current
+						const src = `/categories-icons/${category.nameID}.svg`
+
+						return (
+							<li>
+								<a
+									href={`/${category.nameID}`}
+									style={`--item-color: ${category.color}`}
+									data-current={active ? '' : undefined}
+									aria-current={active ? 'page' : undefined}
+									title={active ? 'Back to top' : undefined}
+									draggable="false"
+									class:list={[
+										'relative flex items-center gap-1.5 rounded-full bg-field text-soft inset-ring-2 inset-ring-line transition-colors',
+										!active && 'hover:text-ink hover:inset-ring-line-strong'
+									]}>
+									<span class:list={[icon, 'bg-(--item-color)']}>
+										<img
+											src={src}
+											alt=""
+											width="20"
+											height="20"
+											draggable="false"
+											class="w-5 invert"
+										/>
+									</span>
+									<span class={label}>{category.name}</span>
+
+									{/* The pill in its filled state, laid over the plain one and revealed from the
+									    icon rightwards, so the label turns white exactly where the fill has passed. */}
+									{active && (
+										<span
+											aria-hidden="true"
+											class="category-fill absolute inset-0 flex items-center gap-1.5 rounded-full bg-(--item-color) text-white">
+											<span class={icon}>
+												<img
+													src={src}
+													alt=""
+													width="20"
+													height="20"
+													draggable="false"
+													class="w-5 invert"
+												/>
+											</span>
+											<span class={label}>{category.name}</span>
+										</span>
+									)}
+								</a>
+							</li>
+						)
+					})
 				}
 			</ul>
 		</div>
@@ -89,23 +119,27 @@ const current = Astro.url.pathname.split('/')[1]
 
 <style>
 	.categories-slider {
+		/* An arrow button covers each --clear zone, so the pills are hidden beneath it rather than
+		   half-showing around its edges, and only fade back in over the --fade that follows. */
+		--clear: 2.5rem;
+		--fade: 1.5rem;
 		overflow-x: auto;
 		overscroll-behavior-x: contain;
 		scrollbar-width: none;
 		cursor: grab;
 		-webkit-mask-image: linear-gradient(
 			to right,
-			transparent,
-			#000 var(--fade-start, 2rem),
-			#000 calc(100% - var(--fade-end, 2rem)),
-			transparent
+			transparent var(--clear-start, var(--clear)),
+			#000 calc(var(--clear-start, var(--clear)) + var(--fade-start, var(--fade))),
+			#000 calc(100% - var(--clear-end, var(--clear)) - var(--fade-end, var(--fade))),
+			transparent calc(100% - var(--clear-end, var(--clear)))
 		);
 		mask-image: linear-gradient(
 			to right,
-			transparent,
-			#000 var(--fade-start, 2rem),
-			#000 calc(100% - var(--fade-end, 2rem)),
-			transparent
+			transparent var(--clear-start, var(--clear)),
+			#000 calc(var(--clear-start, var(--clear)) + var(--fade-start, var(--fade))),
+			#000 calc(100% - var(--clear-end, var(--clear)) - var(--fade-end, var(--fade))),
+			transparent calc(100% - var(--clear-end, var(--clear)))
 		);
 		transition: mask-image 200ms ease;
 	}
@@ -114,11 +148,14 @@ const current = Astro.url.pathname.split('/')[1]
 		display: none;
 	}
 
+	/* At either end the arrow is hidden, so that side runs edge to edge again. */
 	.categories-slider[data-at-start] {
+		--clear-start: 0px;
 		--fade-start: 0px;
 	}
 
 	.categories-slider[data-at-end] {
+		--clear-end: 0px;
 		--fade-end: 0px;
 	}
 
@@ -129,6 +166,25 @@ const current = Astro.url.pathname.split('/')[1]
 
 	.categories-slider[data-dragging] a {
 		pointer-events: none;
+	}
+
+	.category-fill {
+		clip-path: inset(0 round 9999px);
+		animation: category-fill 200ms cubic-bezier(0.65, 0, 0.35, 1) 60ms both;
+	}
+
+	/* Starts as the icon's circle (the pill is as tall as the icon) and stretches right until it
+	   covers the whole pill. The oversized radius keeps both ends fully rounded at every width. */
+	@keyframes category-fill {
+		from {
+			clip-path: inset(0 calc(100% - 2.125rem) 0 0 round 9999px);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.category-fill {
+			animation: none;
+		}
 	}
 </style>
 
@@ -167,13 +223,19 @@ const current = Astro.url.pathname.split('/')[1]
 		window.addEventListener('resize', updateFades, { signal: controller.signal })
 		document.addEventListener('astro:before-swap', () => controller.abort(), { once: true })
 
-		// Only frost the bar once it is pinned over the content, so it stays clear at the top.
+		// Only frost the bar once it is pinned over the content. It needs no help leaving before the
+		// footer: sticky releases it when it reaches the end of the page surface that contains it.
+		// Pages that do not pin the bar skip this.
 		const bar = slider.closest('nav')!
-		const updateStuck = () =>
+
+		const updateStuck = () => {
+			if (!bar.hasAttribute('data-sticky')) return
+
 			bar.toggleAttribute(
 				'data-stuck',
 				window.scrollY > 0 && bar.getBoundingClientRect().top <= 0
 			)
+		}
 
 		window.addEventListener('scroll', updateStuck, { passive: true, signal: controller.signal })
 		updateStuck()
@@ -238,6 +300,13 @@ const current = Astro.url.pathname.split('/')[1]
 		slider.addEventListener('click', (event) => {
 			if (dragged) {
 				event.preventDefault()
+				return
+			}
+
+			// The pill for the page you are already on takes you back to the top instead of reloading.
+			if ((event.target as HTMLElement).closest('a[data-current]')) {
+				event.preventDefault()
+				window.scrollTo({ top: 0, behavior: 'smooth' })
 				return
 			}
 

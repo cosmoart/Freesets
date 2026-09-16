@@ -1,16 +1,25 @@
 ---
 import Pagination from '@/components/Pagination.astro'
-import { PER_PAGE_OPTIONS } from '@/scripts/view'
+import { PER_PAGE_OPTIONS, SHOW_ALL } from '@/scripts/view'
 ---
 
-<div class="flex flex-wrap items-center justify-between gap-4">
-	<select
-		data-per-page
-		aria-label="Items per page"
-		class="cursor-pointer dropdown control py-1.5 pr-8 pl-2.5 text-sm outline-none"
-	>
-		{PER_PAGE_OPTIONS.map((option) => <option value={option}>{option} / page</option>)}
-	</select>
+<div data-results-bar class="flex flex-wrap items-center justify-between gap-4">
+	<div class="flex flex-wrap items-center gap-3">
+		<!-- Filled by renderPages() in scripts/paginate.ts, e.g. "1–40 of 150" -->
+		<p data-range aria-live="polite" class="font-mono text-xs text-muted tabular-nums"></p>
+
+		<select
+			data-per-page
+			aria-label="Items per page"
+			class="cursor-pointer dropdown control py-1.5 pr-8 pl-2.5 text-sm outline-none"
+		>
+			{
+				PER_PAGE_OPTIONS.map((option) => (
+					<option value={option}>{option === SHOW_ALL ? 'Show all' : `${option} / page`}</option>
+				))
+			}
+		</select>
+	</div>
 
 	<Pagination />
 </div>

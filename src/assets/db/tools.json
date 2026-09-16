@@ -148,7 +148,7 @@
 		"order": 46,
 		"name": "JSON Crack",
 		"link": "https://jsoncrack.com/",
-		"img": "https://cdn.freesets.dev/tools/json-crack.webp",
+		"img": "https://cdn.freesets.dev/tools/json-crack.avif",
 		"tags": ["JSON Visualizer"]
 	},
 	{
@@ -258,7 +258,7 @@
 		"order": 64,
 		"name": "Bundlephobia",
 		"link": "https://bundlephobia.com/",
-		"img": "https://cdn.freesets.dev/tools/bundlephobia.webp",
+		"img": "https://cdn.freesets.dev/tools/bundlephobia.avif",
 		"tags": ["NPM", "Performance"]
 	},
 	{
@@ -266,7 +266,7 @@
 		"order": 62,
 		"name": "Can I use",
 		"link": "https://caniuse.com/",
-		"img": "https://cdn.freesets.dev/tools/caniuse.webp",
+		"img": "https://cdn.freesets.dev/tools/caniuse.avif",
 		"tags": ["Browser Support", "CSS"]
 	},
 	{
@@ -274,7 +274,7 @@
 		"order": 79,
 		"name": "Hoppscotch",
 		"link": "https://hoppscotch.io/",
-		"img": "https://cdn.freesets.dev/tools/hoppscotch.webp",
+		"img": "https://cdn.freesets.dev/tools/hoppscotch.avif",
 		"license": "MIT",
 		"licenseLink": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
 		"tags": ["API", "Postman"]

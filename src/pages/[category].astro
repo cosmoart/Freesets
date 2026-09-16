@@ -7,6 +7,7 @@ import ResultsBar from '@/components/ResultsBar.astro'
 import EmptyState from '@/components/EmptyState.astro'
 import categories from '@/assets/categories'
 import { DEFAULT_COLUMNS, DEFAULT_PER_PAGE } from '@/scripts/view'
+import { recentKeys } from '@/scripts/recent'
 
 export const getStaticPaths = (() =>
 	categories.map((category) => ({
@@ -15,6 +16,7 @@ export const getStaticPaths = (() =>
 	}))) satisfies GetStaticPaths
 
 const { category } = Astro.props
+const recent = recentKeys()
 ---
 
 <Layout
@@ -23,10 +25,8 @@ const { category } = Astro.props
 	image={`https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/${category.nameID}`}
 	themeColor={category.color}
 >
-	<section class="flex grow flex-col gap-6">
+	<section class="flex grow flex-col gap-6 pb-10">
 		<CategoryHeader category={category} />
-
-		<ResultsBar />
 
 		<ul data-results>
 			{
@@ -39,10 +39,10 @@ const { category } = Astro.props
 						data-name={asset.name.toLowerCase()}
 						data-label={asset.name}
 						data-link={asset.link}
-						data-meta={[asset.license ?? asset.licence, ...(asset.tags ?? [])]
+						data-meta={[asset.license, ...(asset.tags ?? [])]
 							.filter(Boolean)
 							.join(String.fromCharCode(32, 183, 32))}
-						data-text={[asset.name, asset.license ?? asset.licence, ...(asset.tags ?? [])]
+						data-text={[asset.name, asset.license, ...(asset.tags ?? [])]
 							.filter(Boolean)
 							.join(' ')
 							.toLowerCase()}
@@ -50,12 +50,15 @@ const { category } = Astro.props
 						<AssetCard
 							asset={asset}
 							color={category.color}
+							isNew={recent.has(`${category.nameID}:${asset.id}`)}
 							priority={index < DEFAULT_COLUMNS}
 						/>
 					</li>
 				))
 			}
 		</ul>
+
+		<ResultsBar />
 
 		<EmptyState scope={category.name} />
 	</section>
@@ -144,7 +147,9 @@ const { category } = Astro.props
 			if (page > 1) next.set('page', String(page))
 
 			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
-			if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
+			// Instant, not smooth: the results slide in on their own, and a smooth scroll on top of
+			// that reads as the whole page gliding.
+			if (scroll) window.scrollTo({ top: 0, behavior: 'instant' })
 		}
 
 		search.addEventListener('input', () => {

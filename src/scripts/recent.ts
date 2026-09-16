@@ -2,9 +2,9 @@ import type { Asset, Category } from '@/types'
 import categories from '@/assets/categories'
 
 export const RECENT_DAYS = 30
-export const RECENT_LIMIT = 8
+const RECENT_LIMIT = 8
 
-export interface RecentEntry {
+interface RecentEntry {
 	asset: Asset
 	category: Category
 }
@@ -48,4 +48,14 @@ export function recentlyAdded(limit = RECENT_LIMIT): { dated: boolean; entries: 
 	}
 
 	return { dated: false, entries }
+}
+
+/**
+ * Keys of the resources listed in "Recently added", so their cards carry the New badge wherever
+ * they show up. Ids repeat across categories, so each key carries its category.
+ */
+export function recentKeys() {
+	const { entries } = recentlyAdded()
+
+	return new Set(entries.map(({ asset, category }) => `${category.nameID}:${asset.id}`))
 }

@@ -11,7 +11,7 @@ const licenses = [
 	...new Set(
 		categories
 			.flatMap((category) => category.assets)
-			.map((asset) => (asset.license ?? asset.licence)?.trim() ?? '')
+			.map((asset) => asset.license?.trim() ?? '')
 			.filter(Boolean)
 	)
 ].sort((a, b) => a.localeCompare(b))
@@ -95,23 +95,28 @@ const sample: Asset = {
 				<p data-count class="text-sm text-muted"></p>
 			</div>
 
-			<div class="flex flex-wrap items-center gap-4">
-				<ViewControls />
-
-				<ResultsBar />
-			</div>
+			<ViewControls />
 		</div>
 
 		<ul data-results aria-busy="true"></ul>
 
+		<div class="mt-6">
+			<ResultsBar />
+		</div>
+
 		<template data-card-template="link">
 			<li>
-				<AssetCard asset={{ ...sample, licenseLink: 'https://freesets.dev' }} color="" label=" " />
+				<AssetCard
+					asset={{ ...sample, licenseLink: 'https://freesets.dev' }}
+					color=""
+					label=" "
+					isNew
+				/>
 			</li>
 		</template>
 
 		<template data-card-template="plain">
-			<li><AssetCard asset={sample} color="" label=" " /></li>
+			<li><AssetCard asset={sample} color="" label=" " isNew /></li>
 		</template>
 
 		<EmptyState />
@@ -251,7 +256,9 @@ const sample: Asset = {
 			if (page > 1) next.set('page', String(page))
 
 			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
-			if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
+			// Instant, not smooth: the results slide in on their own, and a smooth scroll on top of
+			// that reads as the whole page gliding.
+			if (scroll) window.scrollTo({ top: 0, behavior: 'instant' })
 		}
 
 		function reset() {

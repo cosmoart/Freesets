@@ -1,5 +1,7 @@
-export const PER_PAGE_OPTIONS = [12, 24, 42, 84]
-export const DEFAULT_PER_PAGE = 42
+/** "Show all" is a page size no list reaches, so paging maths needs no special case for it. */
+export const SHOW_ALL = Number.MAX_SAFE_INTEGER
+export const PER_PAGE_OPTIONS = [10, 20, 40, 80, SHOW_ALL]
+export const DEFAULT_PER_PAGE = 40
 export const MIN_COLUMNS = 2
 export const MAX_COLUMNS = 6
 export const DEFAULT_COLUMNS = 4
@@ -41,7 +43,7 @@ export function saveColumns(value: number) {
 	write(COLUMNS_KEY, value)
 }
 
-export const SORTS = ['popular', 'newest', 'name'] as const
+const SORTS = ['popular', 'newest', 'name'] as const
 export type Sort = (typeof SORTS)[number]
 
 export function readSort(): Sort {

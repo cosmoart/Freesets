@@ -31,7 +31,7 @@ const svg = {
 
 // Both glyphs share one grid cell and trade places by spinning and scaling through each other.
 const swap =
-	'size-4 [grid-area:1/1] transition-[rotate,scale,opacity] duration-500 ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none'
+	'size-4 [grid-area:1/1] transition-[rotate,scale,opacity] duration-250 ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none'
 ---
 
 <div data-theme class="relative">
@@ -155,14 +155,19 @@ const swap =
 
 		const options = [...menu.querySelectorAll<HTMLButtonElement>('[data-theme-option]')]
 
-		const open = () => {
+		// The menu can stay open while the theme changes (toggle click, another tab), so every
+		// change of the stored mode re-marks the checked option, not just opening the menu.
+		const syncChecked = () => {
 			const mode = readMode()
 			for (const option of options) {
 				option.setAttribute('aria-checked', String(option.dataset.themeOption === mode))
 			}
+		}
 
+		const open = () => {
+			syncChecked()
 			menu.toggleAttribute('data-open', true)
-			const checked = options.find((option) => option.dataset.themeOption === mode)
+			const checked = options.find((option) => option.getAttribute('aria-checked') === 'true')
 			;(checked ?? options[0])!.focus()
 		}
 
@@ -175,6 +180,7 @@ const swap =
 		button.addEventListener('click', () => {
 			const dark = !document.documentElement.classList.contains('dark')
 			saveMode(dark ? 'dark' : 'light')
+			syncChecked()
 			setDark(button, dark)
 		})
 
@@ -188,6 +194,7 @@ const swap =
 			option.addEventListener('click', () => {
 				const mode = option.dataset.themeOption as Mode
 				saveMode(mode)
+				syncChecked()
 				close(true)
 				setDark(button, mode === 'system' ? systemDark.matches : mode === 'dark')
 			})
@@ -213,6 +220,13 @@ const swap =
 			'pointerdown',
 			(event) => {
 				if (!root.contains(event.target as Node)) close()
+			},
+			{ signal: controller.signal }
+		)
+		window.addEventListener(
+			'storage',
+			(event) => {
+				if (event.key === STORAGE_KEY || event.key === null) syncChecked()
 			},
 			{ signal: controller.signal }
 		)

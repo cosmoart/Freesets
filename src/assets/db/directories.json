@@ -1,19 +1,17 @@
 [
 	{
 		"id": 1,
-		"order": 100,
-		"name": "Curated Design",
-		"img": "https://cdn.freesets.dev/inspirations/curated-design.webp",
-		"link": "https://www.curated.design",
-		"tags": ["Placeholder"]
+		"order": 60,
+		"name": "Uwarp",
+		"img": "https://cdn.freesets.dev/inspirations/uwarp.webp",
+		"link": "https://www.uwarp.design/"
 	},
 	{
 		"id": 2,
 		"order": 98,
 		"name": "Godly",
 		"img": "https://cdn.freesets.dev/inspirations/godly.webp",
-		"link": "https://godly.website",
-		"tags": ["Placeholder"]
+		"link": "https://godly.website"
 	},
 	{
 		"id": 3,
@@ -22,7 +20,6 @@
 		"img": "https://cdn.freesets.dev/inspirations/land-book.webp",
 		"link": "https://land-book.com",
 		"license": "Freemium",
-		"licenseLink": "https://land-book.com/pro",
-		"tags": ["Placeholder"]
+		"licenseLink": "https://land-book.com/pro"
 	}
 ]

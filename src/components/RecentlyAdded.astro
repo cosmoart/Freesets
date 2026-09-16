@@ -20,9 +20,13 @@ const FIRST_ROW = 4
 		{
 			entries.map(({ asset, category }, index) => (
 				<li>
-					<AssetCard asset={asset} color={category.color} label={dated ? 'New' : category.name}
-							priority={index < FIRST_ROW}
-						/>
+					<AssetCard
+						asset={asset}
+						color={category.color}
+						label={category.name}
+						isNew
+						priority={index < FIRST_ROW}
+					/>
 				</li>
 			))
 		}

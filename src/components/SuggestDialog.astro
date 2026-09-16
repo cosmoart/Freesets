@@ -6,7 +6,7 @@ const label = 'eyebrow mb-2 block'
 const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-subtle'
 ---
 
-<button type="button" data-suggest-open class="btn btn-primary px-3">
+<button type="button" data-suggest-open class="btn w-9 btn-primary px-0 sm:w-auto sm:px-3">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 24 24"
@@ -16,7 +16,8 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		aria-hidden="true"
-		class="size-4">
+		class="size-4"
+	>
 		<path d="M12 5l0 14"></path>
 		<path d="M5 12l14 0"></path>
 	</svg>
@@ -26,9 +27,11 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 <dialog
 	data-suggest-dialog
 	aria-label="Submit a resource"
-	class="m-auto max-h-[92dvh] w-[min(94vw,48rem)] overflow-y-auto rounded-2xl border border-line bg-card p-0 text-ink shadow-[0_32px_80px_rgb(0_0_0/0.45)]">
-	<form data-suggest-form data-repo={REPO}>
-		<header class="flex items-start justify-between gap-4 border-b border-line px-6 py-5">
+	class="m-auto max-h-[92dvh] w-[min(94vw,48rem)] overflow-hidden rounded-2xl border border-line bg-card p-0 text-ink shadow-[0_32px_80px_rgb(0_0_0/0.45)] open:flex open:flex-col"
+>
+	<!-- The dialog clips to its rounded corners; only the fields scroll, between a fixed header and footer -->
+	<form data-suggest-form data-repo={REPO} class="flex min-h-0 flex-1 flex-col">
+		<header class="flex shrink-0 items-start justify-between gap-4 border-b border-line px-6 py-5">
 			<div>
 				<h2 class="text-xl font-semibold">Submit a resource</h2>
 				<p class="mt-1 text-sm text-muted">
@@ -40,7 +43,8 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 				type="button"
 				data-suggest-close
 				aria-label="Close"
-				class="btn size-8 rounded-lg btn-ghost px-0 text-muted">
+				class="btn size-8 rounded-lg btn-ghost px-0 text-muted"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
@@ -51,24 +55,19 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					aria-hidden="true">
+					aria-hidden="true"
+				>
 					<path d="M18 6l-12 12"></path>
 					<path d="M6 6l12 12"></path>
 				</svg>
 			</button>
 		</header>
 
-		<div class="flex flex-col gap-5 p-6">
+		<div class="flex min-h-0 flex-col gap-5 overflow-y-auto overscroll-contain p-6">
 			<div class="grid gap-4 sm:grid-cols-2">
 				<div>
 					<label for="suggest-name" class={label}>Name</label>
-					<input
-						id="suggest-name"
-						name="name"
-						required
-						class={field}
-						placeholder="Lucide"
-					/>
+					<input id="suggest-name" name="name" required class={field} placeholder="Lucide" />
 				</div>
 
 				<div>
@@ -97,12 +96,13 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 									checked={index === 0}
 									class="peer sr-only"
 								/>
-								{/* Same pill as the category bar: the unselected ring sits under the icon,
-								    the selected outline is drawn over it. */}
+								{/* Same pill as the category bar. The filled copy rests clipped to the icon's
+								    circle and opens rightwards once its radio is checked (see .suggest-fill). */}
 								<span
 									style={`--item-color: ${category.color}`}
-									class="flex items-center gap-2 rounded-full bg-field text-[13px] text-soft inset-ring-2 inset-ring-line transition-colors peer-checked:bg-[color-mix(in_srgb,var(--item-color)_15%,var(--field))] peer-checked:text-ink peer-checked:outline-2 peer-checked:-outline-offset-2 peer-checked:outline-(--item-color) peer-focus-visible:ring-2 peer-focus-visible:ring-(--item-color)/50 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-card hover:text-ink hover:inset-ring-line-strong">
-									<span class="flex size-6.5 items-center justify-center rounded-full bg-(--item-color)">
+									class="suggest-pill relative flex items-center gap-1.5 rounded-full bg-field text-[13px] text-soft inset-ring-2 inset-ring-line transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-(--item-color)/50 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-card hover:text-ink hover:inset-ring-line-strong"
+								>
+									<span class="flex size-6.5 shrink-0 items-center justify-center rounded-full bg-(--item-color)">
 										<img
 											src={`/categories-icons/${category.nameID}.svg`}
 											alt=""
@@ -112,6 +112,22 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 										/>
 									</span>
 									<span class="pe-3">{category.name}</span>
+
+									<span
+										aria-hidden="true"
+										class="suggest-fill absolute inset-0 flex items-center gap-1.5 rounded-full bg-(--item-color) text-white"
+									>
+										<span class="flex size-6.5 shrink-0 items-center justify-center">
+											<img
+												src={`/categories-icons/${category.nameID}.svg`}
+												alt=""
+												width="16"
+												height="16"
+												class="w-4 invert"
+											/>
+										</span>
+										<span class="pe-3">{category.name}</span>
+									</span>
 								</span>
 							</label>
 						))
@@ -158,7 +174,8 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 		</div>
 
 		<footer
-			class="flex flex-wrap items-center justify-between gap-4 border-t border-line bg-field px-6 py-4">
+			class="flex shrink-0 flex-wrap items-center justify-between gap-4 border-t border-line bg-field px-6 py-4"
+		>
 			<p class="eyebrow text-[10.5px] tracking-[0.06em]">
 				&rarr; github.com/{REPO}/issues/new
 			</p>
@@ -168,7 +185,8 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 				<button
 					type="submit"
 					disabled
-					class="btn btn-primary disabled:cursor-not-allowed disabled:opacity-40">
+					class="btn btn-primary disabled:cursor-not-allowed disabled:opacity-40"
+				>
 					Open issue
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -180,9 +198,9 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						aria-hidden="true">
-						<path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
-						></path>
+						aria-hidden="true"
+					>
+						<path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
 						<path d="M11 13l9 -9"></path>
 						<path d="M15 4h5v5"></path>
 					</svg>
@@ -218,7 +236,22 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 		backdrop-filter: blur(4px);
 	}
 
+	/* Rests as the icon's circle (the pill is as tall as the icon), which looks identical to the
+	   plain icon underneath. Checking the radio stretches it over the pill and turns the label
+	   white where it passes; unchecking pulls it back. The oversized radius keeps the ends round. */
+	.suggest-fill {
+		clip-path: inset(0 calc(100% - 1.625rem) 0 0 round 9999px);
+	}
+
+	input:checked + .suggest-pill .suggest-fill {
+		clip-path: inset(0 round 9999px);
+	}
+
 	@media (prefers-reduced-motion: no-preference) {
+		.suggest-fill {
+			transition: clip-path 300ms cubic-bezier(0.65, 0, 0.35, 1);
+		}
+
 		dialog,
 		dialog::backdrop {
 			transition:
@@ -255,8 +288,7 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 
 	function addTag(container: HTMLElement, input: HTMLInputElement, value: string) {
 		const name = value.trim().replace(/,+$/, '')
-		if (!name || readTags(container).some((tag) => tag.toLowerCase() === name.toLowerCase()))
-			return
+		if (!name || readTags(container).some((tag) => tag.toLowerCase() === name.toLowerCase())) return
 
 		const remove = document.createElement('button')
 		remove.type = 'button'
@@ -270,8 +302,7 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 
 		const chip = document.createElement('span')
 		chip.dataset.tag = name
-		chip.className =
-			'flex items-center gap-1.5 rounded-md bg-hover py-0.5 pr-1.5 pl-2 text-[13px]'
+		chip.className = 'flex items-center gap-1.5 rounded-md bg-hover py-0.5 pr-1.5 pl-2 text-[13px]'
 		chip.append(name, remove)
 
 		container.insertBefore(chip, input)
@@ -349,10 +380,22 @@ ${notes}`
 
 		setupTags(form)
 
+		// A short pulse the moment the form becomes submittable, so the change is noticed.
+		const pulse = () => {
+			if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+			submit.animate([{ scale: 1 }, { scale: 1.06 }, { scale: 1 }], {
+				duration: 420,
+				easing: 'cubic-bezier(0.2, 0, 0, 1)'
+			})
+		}
+
 		// Mirrors the native constraints (required name, valid URL) so the button only
 		// enables once the issue can actually be built.
 		const syncSubmit = () => {
+			const wasDisabled = submit.disabled
 			submit.disabled = !form.checkValidity()
+			if (wasDisabled && !submit.disabled) pulse()
 		}
 
 		form.addEventListener('input', syncSubmit)

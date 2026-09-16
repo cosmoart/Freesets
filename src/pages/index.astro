@@ -10,9 +10,12 @@ const total = categories.reduce((acc, category) => acc + category.assets.length,
 
 // Uneven on purpose so the spectrum reads as a skyline, one bar per category in order.
 const heights = [72, 47, 87, 36, 63, 100, 44, 69, 53, 83, 59, 39, 75, 51]
+// step is the distance from the middle of the row, so the rise animation ripples outwards.
+const middle = (categories.length - 1) / 2
 const bars = categories.map((category, index) => ({
 	color: category.color,
-	height: heights[index % heights.length]
+	height: heights[index % heights.length],
+	step: Math.abs(index - middle)
 }))
 ---
 
@@ -27,16 +30,24 @@ const bars = categories.map((category, index) => ({
 		>
 			<div aria-hidden="true" class="spectrum">
 				<div class="spectrum-glow">
-					{bars.map((bar) => <span style={`--bar: ${bar.color}; --h: ${bar.height}%`} />)}
+					{
+						bars.map((bar) => (
+							<span style={`--bar: ${bar.color}; --h: ${bar.height}%; --step: ${bar.step}`} />
+						))
+					}
 				</div>
 				<div class="spectrum-bars">
-					{bars.map((bar) => <span style={`--bar: ${bar.color}; --h: ${bar.height}%`} />)}
+					{
+						bars.map((bar) => (
+							<span style={`--bar: ${bar.color}; --h: ${bar.height}%; --step: ${bar.step}`} />
+						))
+					}
 				</div>
 			</div>
 
 			<div class="relative -mt-8 flex flex-col items-center gap-4">
 				<h1
-					class="hero-title pb-1 text-7xl leading-[0.9] font-bold tracking-[-0.045em] sm:text-[7.5rem]"
+					class="hero-title -my-[0.14em] p-[0.14em] text-7xl leading-[1] font-bold tracking-[-0.045em] sm:text-[7.5rem]"
 				>
 					Freesets
 				</h1>
@@ -84,6 +95,17 @@ const bars = categories.map((category, index) => ({
 	.spectrum span {
 		flex: 1;
 		height: var(--h);
+		transform-origin: bottom;
+		/* The middle pair rises first and the rest follow outwards, like an equaliser opening up. */
+		animation: bar-rise 650ms cubic-bezier(0.2, 0, 0, 1) both;
+		animation-delay: calc(var(--step) * 55ms);
+	}
+
+	@keyframes bar-rise {
+		from {
+			scale: 1 0;
+			opacity: 0;
+		}
 	}
 
 	.spectrum-glow {
@@ -152,6 +174,12 @@ const bars = categories.map((category, index) => ({
 
 		.spectrum-glow {
 			gap: 0.75rem;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.spectrum span {
+			animation: none;
 		}
 	}
 

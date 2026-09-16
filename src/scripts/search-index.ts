@@ -9,6 +9,8 @@ export interface SearchEntry {
 	color: string
 	/** Trimmed, empty when the resource has none. */
 	license: string
+	/** One of the latest additions, shown with a New badge. */
+	isNew?: boolean
 	licenseLink?: string
 	licenseDescription?: string
 	tags: string[]

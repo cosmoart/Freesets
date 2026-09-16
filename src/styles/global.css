@@ -155,6 +155,111 @@
 	background-size: 14px;
 }
 
+/* Where the browser supports customizable selects, the open list is drawn by the page instead of
+   the OS: themed like the site's menus and animated in and out. Other browsers keep the native
+   list with the chevron above. */
+@supports (appearance: base-select) {
+	.dropdown,
+	.dropdown::picker(select) {
+		appearance: base-select;
+	}
+
+	.dropdown {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.625rem;
+		padding-inline-end: 0.625rem;
+		background-image: none;
+	}
+
+	.dropdown::picker-icon {
+		content: '';
+		width: 14px;
+		height: 14px;
+		background: var(--chevron) center / 14px no-repeat;
+	}
+
+	.dropdown:open::picker-icon {
+		rotate: 180deg;
+	}
+
+	.dropdown::picker(select) {
+		margin-block: 0.375rem;
+		padding: 0.25rem;
+		border: 1px solid var(--line);
+		border-radius: 0.75rem;
+		background-color: var(--card);
+		color: var(--ink);
+		box-shadow: 0 16px 40px rgb(0 0 0 / 0.25);
+		opacity: 0;
+		scale: 0.97;
+		translate: 0 -0.25rem;
+		transform-origin: top;
+	}
+
+	.dropdown:open::picker(select) {
+		opacity: 1;
+		scale: 1;
+		translate: 0 0;
+	}
+
+	.dropdown option {
+		gap: 0.75rem;
+		padding: 0.375rem 0.625rem;
+		border-radius: 0.5rem;
+		font-size: 0.875rem;
+		color: var(--soft);
+		cursor: pointer;
+	}
+
+	.dropdown option:hover,
+	.dropdown option:focus-visible {
+		outline: none;
+		background-color: var(--hover);
+		color: var(--ink);
+	}
+
+	.dropdown option:checked {
+		color: var(--ink);
+		font-weight: 500;
+	}
+
+	.dropdown option::checkmark {
+		order: 1;
+		margin-inline-start: auto;
+		color: var(--muted);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.dropdown::picker-icon {
+			transition: rotate 200ms cubic-bezier(0.2, 0, 0, 1);
+		}
+
+		.dropdown option {
+			transition:
+				background-color 120ms,
+				color 120ms;
+		}
+
+		.dropdown::picker(select) {
+			transition:
+				opacity 160ms cubic-bezier(0.2, 0, 0, 1),
+				scale 160ms cubic-bezier(0.2, 0, 0, 1),
+				translate 160ms cubic-bezier(0.2, 0, 0, 1),
+				overlay 160ms allow-discrete,
+				display 160ms allow-discrete;
+		}
+
+		@starting-style {
+			.dropdown:open::picker(select) {
+				opacity: 0;
+				scale: 0.97;
+				translate: 0 -0.25rem;
+			}
+		}
+	}
+}
+
 html {
 	scroll-behavior: smooth;
 	scrollbar-gutter: stable;
@@ -169,18 +274,6 @@ html {
 @keyframes fade-out {
 	to {
 		opacity: 0;
-	}
-}
-
-@keyframes slide-from-right {
-	from {
-		transform: translateX(30px);
-	}
-}
-
-@keyframes slide-to-left {
-	to {
-		transform: translateX(-30px);
 	}
 }
 
@@ -207,16 +300,13 @@ html {
 	translate: none;
 }
 
+/* Moving between pages is a plain cross-fade; sideways motion is kept for paging results. */
 ::view-transition-old(page) {
-	animation:
-		90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+	animation: 200ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
 }
 
 ::view-transition-new(page) {
-	animation:
-		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+	animation: 300ms cubic-bezier(0, 0, 0.2, 1) 50ms both fade-in;
 }
 
 /* Category accent blobs only cross-fade, so a color change reads as a soft wash. */

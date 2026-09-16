@@ -17,7 +17,7 @@ export interface Suggestion {
 	text: string
 }
 
-export interface EmptyContext {
+interface EmptyContext {
 	query: string
 	/** Where the closest matches were looked up, e.g. "Icons". */
 	scope: string

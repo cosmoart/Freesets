@@ -334,11 +334,10 @@
 	},
 	{
 		"id": 37,
-		"order": 42,
-		"name": "Yoopta-Editor",
-		"link": "https://yoopta.dev/",
-		"img": "https://cdn.freesets.dev/libraries/bvivtqfwrnj2xakfi8zt.webp",
-		"tags": ["Rich-text editor"]
+		"order": 78,
+		"name": "Tailwind Animations",
+		"link": "https://tailwind-animations.com/",
+		"img": "https://cdn.freesets.dev/libraries/tailwind-animations.webp"
 	},
 	{
 		"id": 38,
@@ -490,12 +489,5 @@
 		"link": "https://mapcn.vercel.app/",
 		"img": "https://cdn.freesets.dev/libraries/mapcn.webp",
 		"tags": ["React", "Tailwind", "MapLibre"]
-	},
-	{
-		"id": 56,
-		"order": 78,
-		"name": "Tailwind Animations",
-		"link": "https://tailwind-animations.com/",
-		"img": "https://cdn.freesets.dev/libraries/tailwind-animations.webp"
 	}
 ]

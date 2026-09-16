@@ -215,13 +215,10 @@
 	},
 	{
 		"id": 24,
-		"order": 85,
-		"name": "Gradienty",
-		"img": "https://cdn.freesets.dev/backgrounds/gradienty.webp",
-		"link": "https://gradienty.codes/",
-		"tags": [
-			"Tailwind"
-		]
+		"order": 58,
+		"name": "Patternico",
+		"link": "https://patternico.com/",
+		"img": "https://cdn.freesets.dev/backgrounds/patternico.webp"
 	},
 	{
 		"id": 25,
@@ -288,12 +285,5 @@
 		"name": "Get Waves",
 		"link": "https://getwaves.io/",
 		"img": "https://cdn.freesets.dev/backgrounds/get-waves.webp"
-	},
-	{
-		"id": 33,
-		"order": 58,
-		"name": "Patternico",
-		"link": "https://patternico.com/",
-		"img": "https://cdn.freesets.dev/backgrounds/patternico.webp"
 	}
 ]

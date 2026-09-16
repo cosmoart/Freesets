@@ -54,6 +54,13 @@ const categories: Category[] = [
 		nameID: 'videos',
 		assets: byOrder(videosDB)
 	},
+		{
+		name: 'Backgrounds',
+		description: 'Patterns, gradients, textures and generated backdrops.',
+		color: '#5345f7',
+		nameID: 'backgrounds',
+		assets: byOrder(backgroundsDB)
+	},
 	{
 		name: 'Colors',
 		description: 'Palette generators, color pickers and contrast checkers.',
@@ -62,46 +69,11 @@ const categories: Category[] = [
 		assets: byOrder(colorsDB)
 	},
 	{
-		name: 'Backgrounds',
-		description: 'Patterns, gradients, textures and generated backdrops.',
-		color: '#5345f7',
-		nameID: 'backgrounds',
-		assets: byOrder(backgroundsDB)
-	},
-	{
 		name: 'Fonts',
 		description: 'Free font families, type foundries and pairing tools.',
 		color: '#ffaa1b',
 		nameID: 'fonts',
 		assets: byOrder(fontsDB)
-	},
-	{
-		name: '3D',
-		description: 'Free 3D models, materials and render-ready scenes.',
-		color: '#8935ff',
-		nameID: '3d',
-		assets: byOrder(threeDB)
-	},
-	{
-		name: 'Libraries',
-		description: 'Open-source libraries and frameworks for building interfaces.',
-		color: '#ff006e',
-		nameID: 'libraries',
-		assets: byOrder(librariesDB)
-	},
-	{
-		name: 'Blogs',
-		description: 'Blogs, newsletters and publications worth following.',
-		color: '#00a1ff',
-		nameID: 'blogs',
-		assets: byOrder(blogsDB)
-	},
-	{
-		name: 'Tools',
-		description: 'Utilities that speed up everyday design and development work.',
-		color: '#f97316',
-		nameID: 'tools',
-		assets: byOrder(toolsDB)
 	},
 	{
 		name: 'Inspirations',
@@ -116,6 +88,34 @@ const categories: Category[] = [
 		color: '#21c95f',
 		nameID: 'components',
 		assets: byOrder(componentsDB)
+	},
+		{
+		name: 'Tools',
+		description: 'Utilities that speed up everyday design and development work.',
+		color: '#f97316',
+		nameID: 'tools',
+		assets: byOrder(toolsDB)
+	},
+		{
+		name: 'Blogs',
+		description: 'Blogs, newsletters and publications worth following.',
+		color: '#00a1ff',
+		nameID: 'blogs',
+		assets: byOrder(blogsDB)
+	},
+		{
+		name: '3D',
+		description: 'Free 3D models, materials and render-ready scenes.',
+		color: '#8935ff',
+		nameID: '3d',
+		assets: byOrder(threeDB)
+	},
+		{
+		name: 'Libraries',
+		description: 'Open-source libraries and frameworks for building interfaces.',
+		color: '#ff006e',
+		nameID: 'libraries',
+		assets: byOrder(librariesDB)
 	}
 ]
 

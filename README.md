@@ -1,43 +1,97 @@
-# Astro Starter Kit: Minimal
+<div id="top"></div>
 
-```sh
-npm create astro@latest -- --template minimal
+<!-- PROJECT LOGO -->
+
+<div align="center">
+
+![header](./readme/header.svg)
+
+# Freesets
+
+**[freesets.dev](https://freesets.dev)**
+
+</div>
+
+Freesets is a collection of free, high-quality resources that you can use in your web projects. Here you will find icons, images, videos, illustrations, fonts and more. All resources have at least one free version or free plan, but please read the license before using them. You can contribute to this project by suggesting new resources or making a pull request.
+
+<div align="center">
+
+<a href="https://github.com/cosmoart/Freesets/blob/main/CONTRIBUTING.md">Contribute</a>
+·
+<a href="https://github.com/cosmoart/Freesets/issues">Report Bug/Error</a>
+·
+<a href="https://github.com/cosmoart/Freesets/discussions">Request Feature</a>
+
+</div>
+
+## ✨ Features
+
+- **14 categories** of resources, each with its own page, search and sorting (popular, newest, A–Z).
+- **Site-wide search** with filters by category and license, from the header or the search page.
+- **A grid you can shape**: pick between 2 and 6 columns and how many resources fit on a page.
+- **Light and dark themes**, following the system by default.
+
+## 🛠️ Built with
+
+[Astro](https://astro.build) · [Tailwind CSS](https://tailwindcss.com) · TypeScript
+
+No UI framework: every page is static HTML with a little browser-side TypeScript for search, filters and pagination.
+
+## 🚀 Getting started
+
+You need [Node.js](https://nodejs.org) 22.12 or newer.
+
+```bash
+git clone https://github.com/cosmoart/Freesets
+cd Freesets
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The site runs at `http://localhost:4321`.
 
-## 🚀 Project Structure
+| Command                | What it does                          |
+| :--------------------- | :------------------------------------ |
+| `npm run dev`          | Starts the dev server                 |
+| `npm run build`        | Builds the site to `dist/`            |
+| `npm run preview`      | Serves the built site locally         |
+| `npm run check`        | Checks types and Astro components     |
+| `npm run lint`         | Runs ESLint                           |
+| `npm run format`       | Formats the code with Prettier        |
+| `npm run format:check` | Checks the formatting without writing |
 
-Inside of your Astro project, you'll see the following folders and files:
+> The first build downloads and optimizes every resource preview, so it takes a while. Later builds reuse the cache.
+
+## 📁 Project structure
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+├── assets/
+│   ├── db/            # The resources, one JSON file per category
+│   └── categories.ts  # Category names, descriptions and colors
+├── components/        # Cards, search, category bar, dialogs
+├── layouts/           # The page shell
+├── lib/               # Build-time helpers (GitHub stars, preview images)
+├── pages/             # Home, category pages, search and the search index
+├── scripts/           # Browser-side helpers: search, filters, pagination
+├── styles/            # Global styles and design tokens
+└── types.ts           # Resource and category types
+public/
+└── categories-icons/  # One icon per category
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🤝 Contributing
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Everyone is welcome to collaborate with this project. Adding a resource means adding one entry to a JSON file in `src/assets/db`. Before contributing, please read the [contribution guide](https://github.com/cosmoart/Freesets/blob/main/CONTRIBUTING.md).
 
-Any static assets, like images, can be placed in the `public/` directory.
+If you would rather not open a pull request, use the **Suggest** button on the site: it opens a prefilled issue for you.
 
-## 🧞 Commands
+## 📄 License
 
-All commands are run from the root of the project, from a terminal:
+Website code distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information. Each resource keeps its own license, shown on its card.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 👥 Contributors
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<a href="https://github.com/cosmoart/Freesets/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=cosmoart/Freesets" />
+</a>

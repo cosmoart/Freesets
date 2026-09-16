@@ -1,7 +1,8 @@
 import type { SearchEntry } from '@/scripts/search-index'
+import { splitTags } from '@/scripts/tags'
 
 /** AssetCard rendered inside <template> tags, once with a license link and once without. */
-export interface CardTemplates {
+interface CardTemplates {
 	link: HTMLTemplateElement
 	plain: HTMLTemplateElement
 }
@@ -33,6 +34,8 @@ export function renderCard(templates: CardTemplates, entry: SearchEntry, priorit
 	link.href = entry.link
 	link.setAttribute('aria-label', `Open ${entry.name}`)
 
+	if (!entry.isNew) hook('new').remove()
+
 	hook('preview').toggleAttribute('data-broken', !entry.img)
 
 	const preview = hook<HTMLImageElement>('img')
@@ -40,7 +43,7 @@ export function renderCard(templates: CardTemplates, entry: SearchEntry, priorit
 		preview.loading = 'eager'
 		preview.setAttribute('fetchpriority', 'high')
 	}
-	preview.src = entry.img
+	if (entry.img) preview.src = entry.img
 	preview.alt = `${entry.name} web preview`
 
 	for (const favicon of item.querySelectorAll<HTMLImageElement>('[data-card-favicon]')) {
@@ -52,15 +55,27 @@ export function renderCard(templates: CardTemplates, entry: SearchEntry, priorit
 	hook('name').textContent = entry.name
 
 	const tags = hook('tags')
-	const tag = tags.firstElementChild!
-	tags.replaceChildren(
-		...entry.tags.map((text) => {
-			const clone = tag.cloneNode() as HTMLElement
-			clone.textContent = text
-			return clone
-		})
-	)
-	if (entry.tags.length === 0) tags.remove()
+
+	if (entry.tags.length === 0) {
+		tags.remove()
+	} else {
+		const pill = tags.firstElementChild!
+		const extra = hook('tag-extra')
+		const { shown, rest } = splitTags(entry.tags)
+
+		tags.replaceChildren(
+			...shown.map((text) => {
+				const clone = pill.cloneNode() as HTMLElement
+				clone.textContent = text
+				return clone
+			}),
+			extra
+		)
+
+		extra.hidden = rest.length === 0
+		hook('tag-count').textContent = `+${rest.length}`
+		hook('tag-tip').textContent = rest.join(', ')
+	}
 
 	const license = hook('license')
 	if (entry.license) {

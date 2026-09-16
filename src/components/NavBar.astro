@@ -9,7 +9,7 @@ import CategoriesSlider from '@/components/CategoriesSlider.astro'
 <nav
 	aria-label="Main"
 	transition:name="header"
-	class="relative z-50 flex flex-wrap items-center gap-3"
+	class="relative z-50 flex flex-wrap items-center gap-x-2 gap-y-3"
 >
 	<a
 		href="/"
@@ -24,9 +24,12 @@ import CategoriesSlider from '@/components/CategoriesSlider.astro'
 		</svg>
 		Freesets
 	</a>
-	<div class="ml-auto flex flex-wrap items-center gap-2">
+	<!-- Below md the actions join the logo's row and search drops to a full-width row of its own -->
+	<div class="relative order-last flex w-full items-center gap-2 md:order-0 md:ml-auto md:w-auto">
 		<HeaderSearch />
 		<GitHubStars />
+	</div>
+	<div class="ml-auto flex items-center gap-2 md:ml-0">
 		<SuggestDialog />
 		<ThemeToggle />
 	</div>
