@@ -1,5 +1,11 @@
 /** One resource as served by /search-index.json. */
 export interface SearchEntry {
+	/** Unique only inside its category; a higher id is a later addition. */
+	id: number
+	/** Popularity rank inside its category, higher first. */
+	order: number
+	/** ISO date the resource was added, when known. */
+	added?: string
 	name: string
 	link: string
 	img: string

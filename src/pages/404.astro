@@ -4,7 +4,6 @@ import categories from '@/assets/categories'
 
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
 
-// Spread across the band, using the palette the categories already own.
 const blobs = [
 	{ color: '#2b6dff', x: 8 },
 	{ color: '#5345f7', x: 24 },
@@ -18,34 +17,30 @@ const blobs = [
 <Layout
 	title="Page not found - Freesets"
 	description="The page you are looking for does not exist."
-	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
->
-	<section class="relative flex grow flex-col items-center justify-center gap-5 py-20 text-center">
+	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home">
+	<section
+		class="relative flex grow flex-col items-center justify-center gap-5 py-20 pt-10 text-center">
 		<div aria-hidden="true" class="error-blobs">
 			{blobs.map((blob) => <span style={`--blob: ${blob.color}; --x: ${blob.x}%`} />)}
 		</div>
 
 		<p
-			class="relative rounded-full border border-line bg-field px-3 py-1 eyebrow tracking-[0.22em]"
-		>
+			class="relative rounded-full border border-line bg-field px-3 py-1 eyebrow tracking-[0.22em]">
 			Error 404
 		</p>
 
 		<h1
-			class="relative -my-[0.14em] bg-linear-to-b from-ink from-30% to-muted bg-clip-text p-[0.14em] text-7xl leading-[1] font-bold tracking-tighter text-transparent sm:text-[8.25rem]"
-		>
+			class="relative -my-[0.14em] bg-linear-to-b from-ink from-30% to-muted bg-clip-text p-[0.14em] text-7xl leading-[1] font-bold tracking-tighter text-transparent sm:text-[8.25rem]">
 			Nothing here
 		</h1>
 
 		<p class="relative max-w-lg text-lg text-balance text-soft">
-			This page moved, or it never existed. The other {total} resources are still where you left them.
+			This page moved, or it never existed. The other {total} resources are still where you left
+			them.
 		</p>
 
 		<div class="relative mt-3 flex flex-wrap items-center justify-center gap-2.5">
-			<a href="/" class="btn h-9.5 btn-primary px-4 text-sm"> Back to home </a>
-
-			<a href="/#categories" class="btn h-9.5 btn-ghost px-4 text-sm">
-				Browse all categories
+			<a href="/" class="group btn h-10.5 btn-primary px-8 text-sm">
 				<svg
 					viewBox="0 0 24 24"
 					fill="none"
@@ -54,24 +49,22 @@ const blobs = [
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					aria-hidden="true"
-					class="size-4"
-				>
-					<path d="M5 12h14M13 6l6 6-6 6"></path>
+					class="size-4 transition-transform duration-200 group-hover:-translate-x-1 group-focus-visible:-translate-x-1 motion-reduce:transition-none">
+					<path d="M19 12H5M11 6l-6 6 6 6"></path>
 				</svg>
+				Back to home
 			</a>
 		</div>
 	</section>
 </Layout>
 
 <style>
-	/* Sits behind the nav, so it is pulled above the section and clipped to its own box. The
-	   mask dissolves the bottom edge: overflow alone cuts the blur off in a hard line. */
 	.error-blobs {
-		--blob-opacity: 0.1;
+		--blob-opacity: 0.22;
 		position: absolute;
 		inset-inline: -1rem;
 		top: -13rem;
-		height: 22rem;
+		height: 32rem;
 		overflow: hidden;
 		pointer-events: none;
 		-webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
@@ -79,15 +72,15 @@ const blobs = [
 	}
 
 	:global(.dark) .error-blobs {
-		--blob-opacity: 0.18;
+		--blob-opacity: 0.32;
 	}
 
 	.error-blobs > span {
 		position: absolute;
 		top: 0;
 		left: var(--x);
-		width: 30rem;
-		height: 16rem;
+		width: 36rem;
+		height: 24rem;
 		translate: -50% 0;
 		border-radius: 9999px;
 		background: var(--blob);

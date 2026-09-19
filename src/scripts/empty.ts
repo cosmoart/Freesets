@@ -33,7 +33,7 @@ const COUNTS = ['No', 'One', 'Two', 'Three']
 
 const count = (value: number) => COUNTS[value] ?? String(value)
 
-function hint({ query, filters = [] }: EmptyContext) {
+function hint({ query, filters = [], closest = [] }: EmptyContext) {
 	const widest = filters.filter((filter) => filter.count > 0).sort((a, b) => b.count - a.count)[0]
 
 	if (widest) {
@@ -44,6 +44,9 @@ function hint({ query, filters = [] }: EmptyContext) {
 		return `${count(filters.length)} ${plural} narrowing this a lot. ${subject} ${widest.count} ${resources} with the ${widest.label} filter removed.`
 	}
 
+	// A resource only matches with every term, so partial matches exist only for multi-word queries.
+	if (query && terms(query).length < 2) return `Nothing here matches “${query}”.`
+	if (query && closest.length > 0) return `Nothing here matches every word in “${query}”.`
 	if (query) return `Nothing here matches “${query}”, not even partially.`
 
 	return 'Nothing matches the filters you picked.'

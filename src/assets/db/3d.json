@@ -36,7 +36,7 @@
 		"img": "https://cdn.freesets.dev/3d/ambientcg.webp",
 		"link": "https://ambientcg.com",
 		"tags": ["HDRIs", "Textures", "Models"],
-		"license": "CC0 1.0",
+		"license": "CC0",
 		"licenseLink": "https://docs.ambientcg.com/license/",
 		"licenseDescription": "All ambientCG assets are provided under the Creative Commons CC0 1.0 Universal License."
 	},
@@ -69,7 +69,7 @@
 		"img": "https://cdn.freesets.dev/3d/cgbookcase.webp",
 		"link": "https://www.cgbookcase.com",
 		"tags": ["Textures"],
-		"license": "CC0 1.0",
+		"license": "CC0",
 		"licenseLink": "https://www.cgbookcase.com/textures",
 		"licenseDescription": "The textures are published under the CC0 1.0 license, which means means you can use them for free without giving credit."
 	},

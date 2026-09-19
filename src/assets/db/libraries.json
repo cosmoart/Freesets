@@ -108,7 +108,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721779/freesets/libraries/pd8lyjpwf79zercchctr.webp",
 		"link": "https://sandpack.codesandbox.io",
 		"tags": ["Live coding"],
-		"license": "Apache License 2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/codesandbox/sandpack"
 	},
 	{
@@ -194,7 +194,7 @@
 		"link": "https://editorjs.io",
 		"img": "https://cdn.freesets.dev/libraries/editorjs.webp",
 		"tags": ["Block-style editor"],
-		"license": "Apache License 2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/codex-team/editor.js/blob/next/LICENSE"
 	},
 	{

@@ -8,9 +8,7 @@ const description =
 	'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.'
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
 
-// Uneven on purpose so the spectrum reads as a skyline, one bar per category in order.
 const heights = [72, 47, 87, 36, 63, 100, 44, 69, 53, 83, 59, 39, 75, 51]
-// step is the distance from the middle of the row, so the rise animation ripples outwards.
 const middle = (categories.length - 1) / 2
 const bars = categories.map((category, index) => ({
 	color: category.color,
@@ -96,7 +94,6 @@ const bars = categories.map((category, index) => ({
 		flex: 1;
 		height: var(--h);
 		transform-origin: bottom;
-		/* The middle pair rises first and the rest follow outwards, like an equaliser opening up. */
 		animation: bar-rise 650ms cubic-bezier(0.2, 0, 0, 1) both;
 		animation-delay: calc(var(--step) * 55ms);
 	}
@@ -140,7 +137,6 @@ const bars = categories.map((category, index) => ({
 		box-shadow: 0 0 46px color-mix(in srgb, var(--bar) 45%, transparent);
 	}
 
-	/* Washes the bars back into the page so the title sits on calm ground. */
 	.spectrum::after {
 		content: '';
 		position: absolute;

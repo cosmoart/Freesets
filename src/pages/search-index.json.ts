@@ -9,6 +9,9 @@ export const GET: APIRoute = () => {
 
 	const index: SearchEntry[] = categories.flatMap((category) =>
 		category.assets.map((asset) => ({
+			id: asset.id,
+			order: asset.order,
+			added: asset.added,
 			name: asset.name,
 			link: asset.link,
 			img: asset.img,

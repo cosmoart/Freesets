@@ -2,7 +2,6 @@
 import categories from '@/assets/categories'
 
 const current = Astro.url.pathname.split('/')[1]
-// The home and error pages read as one block, so the bar scrolls away with them rather than pinning.
 const sticky = current !== '' && current !== '404'
 
 const icon = 'flex size-8.5 shrink-0 items-center justify-center rounded-full'
@@ -69,8 +68,6 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 									</span>
 									<span class={label}>{category.name}</span>
 
-									{/* The pill in its filled state, laid over the plain one and revealed from the
-									    icon rightwards, so the label turns white exactly where the fill has passed. */}
 									{active && (
 										<span
 											aria-hidden="true"
@@ -119,8 +116,6 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 
 <style>
 	.categories-slider {
-		/* An arrow button covers each --clear zone, so the pills are hidden beneath it rather than
-		   half-showing around its edges, and only fade back in over the --fade that follows. */
 		--clear: 2.5rem;
 		--fade: 1.5rem;
 		overflow-x: auto;
@@ -148,7 +143,6 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 		display: none;
 	}
 
-	/* At either end the arrow is hidden, so that side runs edge to edge again. */
 	.categories-slider[data-at-start] {
 		--clear-start: 0px;
 		--fade-start: 0px;
@@ -173,8 +167,6 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 		animation: category-fill 200ms cubic-bezier(0.65, 0, 0.35, 1) 60ms both;
 	}
 
-	/* Starts as the icon's circle (the pill is as tall as the icon) and stretches right until it
-	   covers the whole pill. The oversized radius keeps both ends fully rounded at every width. */
 	@keyframes category-fill {
 		from {
 			clip-path: inset(0 calc(100% - 2.125rem) 0 0 round 9999px);
@@ -218,14 +210,10 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 
 		slider.addEventListener('scroll', updateFades, { passive: true })
 
-		// setup() runs again on every navigation, so drop the window listener with the old DOM.
 		const controller = new AbortController()
 		window.addEventListener('resize', updateFades, { signal: controller.signal })
 		document.addEventListener('astro:before-swap', () => controller.abort(), { once: true })
 
-		// Only frost the bar once it is pinned over the content. It needs no help leaving before the
-		// footer: sticky releases it when it reaches the end of the page surface that contains it.
-		// Pages that do not pin the bar skip this.
 		const bar = slider.closest('nav')!
 
 		const updateStuck = () => {
@@ -240,10 +228,6 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 		window.addEventListener('scroll', updateStuck, { passive: true, signal: controller.signal })
 		updateStuck()
 
-		// If the active pill is still out of view after the restored position (first load, back/forward),
-		// centre it by moving this scroller only. scrollIntoView() would also scroll
-		// every ancestor up to the document, and it runs while the view transition is still
-		// animating, so the live page would shift under the snapshot and snap back at the end.
 		const active = slider.querySelector<HTMLElement>('a[data-current]')
 
 		if (active) {
@@ -303,24 +287,18 @@ const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
 				return
 			}
 
-			// The pill for the page you are already on takes you back to the top instead of reloading.
 			if ((event.target as HTMLElement).closest('a[data-current]')) {
 				event.preventDefault()
 				window.scrollTo({ top: 0, behavior: 'smooth' })
 				return
 			}
 
-			// The bar is pinned while scrolled but sits lower on the fresh page, so reset the
-			// scroll before the router captures the view transition snapshots.
 			if (window.scrollY > 0) window.scrollTo({ top: 0, behavior: 'instant' })
 		})
 
 		slider.addEventListener('dragstart', (event) => event.preventDefault())
 	}
 
-	// The slider is re-rendered on every navigation, so carry its scroll position over. Restoring it
-	// on after-swap lands before the router captures the new view transition snapshot, so the
-	// cross-fade doesn't show the pills jumping.
 	let savedScroll: number | null = null
 
 	document.addEventListener('astro:before-swap', () => {

@@ -1,0 +1,202 @@
+---
+import Logo from '@/components/Logo.astro'
+import categories from '@/assets/categories'
+
+// Open Graph image source: /og?category=icons renders that category's 1200x630 card, ready to
+// screenshot at a 1200x630 viewport. Every card is built here and the query picks which one shows.
+const host = new URL(Astro.site!).host
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=1200" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Open Graph image - Freesets</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Geist+Mono:wght@400;600&display=swap"
+		/>
+	</head>
+	<body>
+		{
+			categories.map((category, index) => {
+				const icon = `/categories-icons/${category.nameID}.svg`
+
+				return (
+					<section
+						data-og={category.nameID}
+						hidden={index > 0}
+						style={`--c: ${category.color}`}
+						class="og">
+						<img src={icon} alt="" width="440" height="440" class="backdrop" />
+
+						<div class="content">
+							<p class="brand">
+								<Logo />
+								Freesets
+							</p>
+
+							<div class="bottom">
+								<span class="tile">
+									<img src={icon} alt="" width="40" height="40" />
+								</span>
+
+								<h1>{category.name}</h1>
+
+								<div class="pills">
+									<span class="count">{category.assets.length} free resources</span>
+									<span class="url">
+										{host}/{category.nameID}
+									</span>
+								</div>
+							</div>
+						</div>
+					</section>
+				)
+			})
+		}
+
+		<script is:inline>
+			const wanted = new URLSearchParams(location.search).get('category')
+			const cards = document.querySelectorAll('[data-og]')
+			const match = [...cards].find((card) => card.dataset.og === wanted) ?? cards[0]
+
+			for (const card of cards) card.hidden = card !== match
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	body {
+		width: 1200px;
+		height: 630px;
+		overflow: hidden;
+		background: #0a0a0c;
+		color: #fff;
+		font-family: 'Gabarito', system-ui, sans-serif;
+	}
+
+	.og {
+		position: relative;
+		isolation: isolate;
+		width: 1200px;
+		height: 630px;
+		overflow: hidden;
+		background:
+			linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px) 0 0 / 60px 60px,
+			linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px) 0 0 / 60px 60px,
+			radial-gradient(circle at 8% 5%, color-mix(in oklab, var(--c) 80%, transparent), transparent 55%),
+			linear-gradient(
+				135deg,
+				color-mix(in oklab, var(--c) 70%, black) 0%,
+				color-mix(in oklab, var(--c) 55%, black) 55%,
+				color-mix(in oklab, var(--c) 30%, black) 100%
+			);
+	}
+
+	.og[hidden] {
+		display: none;
+	}
+
+	/* The icons are black strokes, so invert turns them white. */
+	img {
+		display: block;
+		filter: invert(1);
+	}
+
+	.backdrop {
+		position: absolute;
+		right: -40px;
+		bottom: -96px;
+		z-index: -1;
+		width: 440px;
+		height: 440px;
+		opacity: 0.2;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 48px 56px 56px;
+	}
+
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 22px;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
+
+	.brand svg {
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+	}
+
+	.bottom {
+		margin-top: auto;
+	}
+
+	.tile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 96px;
+		height: 96px;
+		border: 1px solid rgb(255 255 255 / 0.3);
+		border-radius: 24px;
+		background: rgb(255 255 255 / 0.2);
+	}
+
+	.tile img {
+		width: 40px;
+		height: 40px;
+	}
+
+	h1 {
+		margin-top: 20px;
+		font-size: 112px;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -0.04em;
+	}
+
+	.pills {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-top: 24px;
+		font-family: 'Geist Mono', ui-monospace, monospace;
+		font-size: 19px;
+	}
+
+	.pills span {
+		padding: 12px 18px;
+		border-radius: 12px;
+	}
+
+	.count {
+		background: #fff;
+		color: #0a0a0c;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.url {
+		border: 1px solid rgb(255 255 255 / 0.2);
+		background: rgb(0 0 0 / 0.25);
+	}
+</style>

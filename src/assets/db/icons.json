@@ -13,7 +13,7 @@
 		"name": "Google icons",
 		"link": "https://fonts.google.com/icons",
 		"img": "https://cdn.freesets.dev/icons/google.webp",
-		"license": "Apache V2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://developers.google.com/fonts/docs/material_icons#licensing",
 		"order": 98
 	},
@@ -116,7 +116,7 @@
 		"name": "Remix Icon",
 		"link": "https://remixicon.com/",
 		"img": "https://cdn.freesets.dev/icons/remixicon.webp",
-		"license": "Apache License V2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://remixicon.com/license",
 		"tags": ["Package"],
 		"order": 77
@@ -184,7 +184,7 @@
 		"name": "MingCute Design",
 		"link": "https://www.mingcute.com",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776623/freesets/icons/lgi0vtfqupkfqf5ruvmz.webp",
-		"license": "Apache 2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/Richard9394/MingCute/blob/main/LICENSE",
 		"order": 70
 	},
@@ -193,7 +193,7 @@
 		"name": "Carbon",
 		"link": "https://carbondesignsystem.com/elements/icons/library/",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776835/freesets/icons/rvzgmjez12yrvwjigqnn.webp",
-		"license": "Apache 2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/carbon-design-system/carbon/tree/v10/packages/icons#-license",
 		"tags": ["Package"],
 		"order": 66
@@ -280,7 +280,7 @@
 		"name": "Streamline Icons",
 		"link": "https://www.streamlinehq.com",
 		"img": "https://cdn.freesets.dev/icons/streamline.webp",
-		"license": "CC by 4.0",
+		"license": "CC BY 4.0",
 		"licenseLink": "https://www.streamlinehq.com/license-free",
 		"order": 46
 	},
@@ -309,7 +309,7 @@
 		"name": "Mage Icons",
 		"link": "https://mageicons.com/",
 		"img": "https://cdn.freesets.dev/icons/mageicons.webp",
-		"license": "Apache 2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/Mage-Icons/mage-icons/blob/main/License.txt",
 		"tags": ["Package"]
 	},

@@ -8,8 +8,7 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 
 <div
 	data-header-search
-	class="group min-w-0 flex-1 transition-[width] duration-200 md:relative md:w-72 md:flex-none md:focus-within:w-105"
->
+	class="group min-w-0 flex-1 transition-[width] duration-200 md:relative md:w-72 md:flex-none md:focus-within:w-105">
 	<form action="/search" method="get">
 		<label for="header-search" class="sr-only">Search all resources</label>
 		<div class="flex h-9 w-full items-center gap-2.5 control px-3 text-sm">
@@ -24,8 +23,7 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 				stroke-linecap="round"
 				stroke-linejoin="round"
 				aria-hidden="true"
-				class="shrink-0 text-subtle"
-			>
+				class="shrink-0 text-subtle">
 				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
 				<path d="M21 21l-6 -6"></path>
 			</svg>
@@ -33,7 +31,8 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 			<span
 				data-search-filter
 				hidden
-				class="flex shrink-0 items-center gap-1 rounded px-1.5 py-0.5 text-xs text-white"></span>
+				class="flex shrink-0 items-center gap-1 rounded px-1.5 py-0.5 text-xs text-white"
+			></span>
 
 			<input
 				id="header-search"
@@ -47,31 +46,27 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 				class="w-full min-w-0 bg-transparent text-ink outline-none placeholder:text-subtle"
 			/>
 
-			<kbd data-search-shortcut class="hidden shrink-0 kbd group-focus-within:hidden sm:inline"
-				>Ctrl K</kbd
+			<kbd
+				data-search-shortcut
+				class="hidden shrink-0 kbd group-focus-within:hidden sm:inline">Ctrl K</kbd
 			>
 		</div>
 	</form>
 
-	<!-- Below md the panel spans the whole search row, below lg it matches the input, and only
-	     from lg is there room to widen it leftwards without running off the screen -->
 	<div
 		data-search-panel
 		hidden
-		class="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl border border-line bg-card shadow-[0_32px_80px_rgb(0_0_0/0.35)] lg:left-auto lg:w-120"
-	>
+		class="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl border border-line bg-card shadow-[0_32px_80px_rgb(0_0_0/0.35)] lg:left-auto lg:w-120">
 		<div
 			id="header-search-results"
 			data-search-results
 			role="listbox"
 			aria-label="Search results"
-			class="max-h-[min(24rem,60dvh)] overflow-y-auto overscroll-contain p-2"
-		>
+			class="max-h-[min(24rem,60dvh)] overflow-y-auto overscroll-contain p-2">
 		</div>
 
 		<div
-			class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line bg-field px-3 py-1.5 eyebrow text-[9px] tracking-[0.06em] pointer-coarse:hidden"
-		>
+			class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line bg-field px-3 py-1.5 eyebrow text-[9px] tracking-[0.06em] pointer-coarse:hidden">
 			<span class={hint}><kbd class={kbd}>↑↓</kbd> Navigate</span>
 			<span class={hint}><kbd class={kbd}>⏎</kbd> Open</span>
 			<span class={hint}><kbd class={kbd}>Tab</kbd> Filter by category</span>
@@ -154,14 +149,15 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 		kbd.className = 'kbd px-1 py-0.5 text-[9px]'
 
 		const hint = document.createElement('p')
-		hint.className = 'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
+		hint.className =
+			'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
 		hint.append('Press', kbd, 'or')
 
 		const link = document.createElement('a')
 		link.href = `/search?q=${encodeURIComponent(query)}`
 		link.textContent = 'open the search page'
 		link.className = 'text-ink underline underline-offset-2 hover:opacity-70'
-		hint.append(link, 'to search better')
+		hint.append(link, 'for a better search')
 
 		const empty = document.createElement('div')
 		empty.className = 'flex flex-col items-center gap-1.5 px-4 py-6 text-center'
@@ -173,7 +169,8 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 			esc.className = 'kbd px-1 py-0.5 text-[9px]'
 
 			const clear = document.createElement('p')
-			clear.className = 'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
+			clear.className =
+				'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
 			clear.append('Press', esc, `to search outside ${category}`)
 			empty.append(clear)
 		}
@@ -238,7 +235,9 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 			}
 
 			const query = input!.value.trim()
-			const category = filter ? (index.find((entry) => entry.nameID === filter)?.category ?? '') : ''
+			const category = filter
+				? (index.find((entry) => entry.nameID === filter)?.category ?? '')
+				: ''
 			if (!shown.length && query) list!.append(emptyState(query, category))
 
 			panel!.hidden = !query
@@ -246,8 +245,6 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 			active = -1
 		}
 
-		// The chip is looked up in the whole index, not the current results, so the filter survives a
-		// query that matches nothing in that category
 		function setFilter(nameID: string) {
 			filter = nameID
 			const entry = index.find((item) => item.nameID === nameID)

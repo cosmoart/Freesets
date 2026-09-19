@@ -1,0 +1,137 @@
+---
+interface Option {
+	value: string
+	label: string
+	color?: string
+}
+
+interface Props {
+	name: string
+	label: string
+	options: Option[]
+}
+
+const { name, label, options } = Astro.props
+---
+
+<details data-multiselect class="group/ms relative">
+	<summary
+		class="flex h-9 cursor-pointer list-none items-center gap-2 control pr-2.5 pl-3 text-[13.5px] text-soft select-none group-open/ms:border-line-strong hover:text-ink [&::-webkit-details-marker]:hidden">
+		{label}
+		<span
+			data-multiselect-badge
+			hidden
+			class="min-w-5 rounded-full bg-ink px-1.5 text-center font-mono text-[11px] leading-5 font-semibold text-canvas tabular-nums"
+		></span>
+		<span
+			aria-hidden="true"
+			class="size-3.5 bg-(image:--chevron) bg-contain bg-center bg-no-repeat transition-[rotate] duration-200 group-open/ms:rotate-180 motion-reduce:transition-none"
+		></span>
+	</summary>
+
+	<fieldset
+		class="multiselect-panel absolute top-full left-0 z-30 mt-1.5 w-64 overflow-hidden rounded-xl border border-line bg-card shadow-[0_16px_40px_rgb(0_0_0/0.25)]">
+		<legend class="sr-only">{label}</legend>
+
+		<div class="flex max-h-80 flex-col overflow-y-auto overscroll-contain p-1">
+			{
+				options.map((option) => (
+					<label
+						data-option={option.value}
+						class="flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-1.5 text-sm text-soft transition-colors duration-100 hover:bg-hover hover:text-ink has-checked:text-ink has-disabled:cursor-default has-disabled:opacity-45 has-disabled:hover:bg-transparent">
+						<input
+							type="checkbox"
+							name={name}
+							value={option.value}
+							class="peer size-4 shrink-0 cursor-pointer appearance-none rounded-[5px] border border-line-strong bg-field bg-size-[11px] bg-center bg-no-repeat transition-colors checked:border-ink checked:bg-ink checked:bg-(image:--check) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink disabled:cursor-default"
+						/>
+						{option.color && (
+							<span
+								aria-hidden="true"
+								class="size-2 shrink-0 rounded-full"
+								style={`background-color: ${option.color}`}
+							/>
+						)}
+						<span class="min-w-0 grow truncate">{option.label}</span>
+						<span
+							data-option-count
+							class="font-mono text-xs text-subtle tabular-nums peer-checked:text-muted"
+						/>
+					</label>
+				))
+			}
+		</div>
+
+		<div class="flex justify-end border-t border-line p-1">
+			<button
+				type="button"
+				data-multiselect-clear
+				class="cursor-pointer rounded-md px-2.5 py-1 text-xs text-muted transition-colors hover:bg-hover hover:text-ink disabled:pointer-events-none disabled:opacity-40">
+				Clear {label.toLowerCase()}
+			</button>
+		</div>
+	</fieldset>
+</details>
+
+<script>
+	function setup() {
+		const menus = [...document.querySelectorAll<HTMLDetailsElement>('[data-multiselect]')]
+		if (menus.length === 0) return
+
+		const sync = (menu: HTMLDetailsElement) => {
+			const checked = menu.querySelectorAll('input:checked').length
+			const badge = menu.querySelector<HTMLElement>('[data-multiselect-badge]')!
+			badge.hidden = checked === 0
+			badge.textContent = String(checked)
+			menu.querySelector<HTMLButtonElement>('[data-multiselect-clear]')!.disabled =
+				checked === 0
+		}
+
+		for (const menu of menus) {
+			sync(menu)
+			menu.addEventListener('change', () => sync(menu))
+			menu.addEventListener('multiselect:sync', () => sync(menu))
+
+			menu.querySelector('[data-multiselect-clear]')!.addEventListener('click', () => {
+				for (const box of menu.querySelectorAll<HTMLInputElement>('input:checked')) {
+					box.checked = false
+				}
+				menu.dispatchEvent(new Event('change', { bubbles: true }))
+			})
+
+			menu.addEventListener('toggle', () => {
+				if (!menu.open) return
+				for (const other of menus) if (other !== menu) other.open = false
+			})
+		}
+
+		const controller = new AbortController()
+		const { signal } = controller
+
+		document.addEventListener(
+			'click',
+			(event) => {
+				for (const menu of menus) {
+					if (menu.open && !menu.contains(event.target as Node)) menu.open = false
+				}
+			},
+			{ signal }
+		)
+
+		document.addEventListener(
+			'keydown',
+			(event) => {
+				if (event.key !== 'Escape') return
+				const open = menus.find((menu) => menu.open)
+				if (!open) return
+				open.open = false
+				open.querySelector('summary')!.focus()
+			},
+			{ signal }
+		)
+
+		document.addEventListener('astro:before-swap', () => controller.abort(), { once: true })
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

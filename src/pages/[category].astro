@@ -24,6 +24,7 @@ const recent = recentKeys()
 	description={`Explore a collection of the best free ${category.name} resources/assets for your next project.`}
 	image={`https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/${category.nameID}`}
 	themeColor={category.color}
+	favicon={`/${category.nameID}/favicon.svg`}
 >
 	<section class="flex grow flex-col gap-6 pb-10">
 		<CategoryHeader category={category} />
@@ -147,8 +148,6 @@ const recent = recentKeys()
 			if (page > 1) next.set('page', String(page))
 
 			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
-			// Instant, not smooth: the results slide in on their own, and a smooth scroll on top of
-			// that reads as the whole page gliding.
 			if (scroll) window.scrollTo({ top: 0, behavior: 'instant' })
 		}
 

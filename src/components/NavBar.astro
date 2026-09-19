@@ -4,27 +4,19 @@ import ThemeToggle from '@/components/ThemeToggle.astro'
 import GitHubStars from '@/components/GitHubStars.astro'
 import SuggestDialog from '@/components/SuggestDialog.astro'
 import CategoriesSlider from '@/components/CategoriesSlider.astro'
+import Logo from '@/components/Logo.astro'
 ---
 
 <nav
 	aria-label="Main"
 	transition:name="header"
-	class="relative z-50 flex flex-wrap items-center gap-x-2 gap-y-3"
->
+	class="relative z-50 flex flex-wrap items-center gap-x-2 gap-y-3">
 	<a
 		href="/"
-		class="flex h-11 shrink-0 items-center gap-2.5 text-[22px] font-bold tracking-tight transition-opacity hover:opacity-70"
-	>
-		<!-- TODO: temporary logo, replace with the final asset -->
-		<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="size-6 shrink-0">
-			<rect width="11" height="11" x="0" y="0" rx="2.5" fill="currentColor"></rect>
-			<rect width="11" height="11" x="13" y="0" rx="2.5" fill="currentColor" opacity="0.32"></rect>
-			<rect width="11" height="11" x="0" y="13" rx="2.5" fill="currentColor" opacity="0.32"></rect>
-			<rect width="11" height="11" x="13" y="13" rx="2.5" fill="#2b6dff"></rect>
-		</svg>
+		class="flex h-11 shrink-0 items-center gap-2.5 text-[22px] font-bold tracking-tight">
+		<Logo class="size-10 shrink-0" />
 		Freesets
 	</a>
-	<!-- Below md the actions join the logo's row and search drops to a full-width row of its own -->
 	<div class="relative order-last flex w-full items-center gap-2 md:order-0 md:ml-auto md:w-auto">
 		<HeaderSearch />
 		<GitHubStars />

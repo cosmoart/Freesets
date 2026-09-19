@@ -29,7 +29,6 @@ const svg = {
 	'aria-hidden': 'true'
 } as const
 
-// Both glyphs share one grid cell and trade places by spinning and scaling through each other.
 const swap =
 	'size-4 [grid-area:1/1] transition-[rotate,scale,opacity] duration-250 ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none'
 ---
@@ -40,16 +39,14 @@ const swap =
 		data-theme-toggle
 		aria-label="Toggle color theme"
 		title="Toggle color theme (right-click for more options)"
-		class="btn w-9 btn-ghost px-0"
-	>
+		class="btn w-9 btn-ghost px-0">
 		<span class="grid place-items-center">
 			<svg {...svg} class={`${swap} dark:scale-0 dark:rotate-90 dark:opacity-0`}>
 				{icons.dark.map((d) => <path d={d} />)}
 			</svg>
 			<svg
 				{...svg}
-				class={`${swap} scale-0 -rotate-90 opacity-0 dark:scale-100 dark:rotate-0 dark:opacity-100`}
-			>
+				class={`${swap} scale-0 -rotate-90 opacity-0 dark:scale-100 dark:rotate-0 dark:opacity-100`}>
 				{icons.light.map((d) => <path d={d} />)}
 			</svg>
 		</span>
@@ -59,8 +56,7 @@ const swap =
 		data-theme-menu
 		role="menu"
 		aria-label="Color theme"
-		class="invisible absolute top-full right-0 z-50 mt-2 w-44 origin-top-right scale-95 rounded-xl border border-line bg-card p-1 opacity-0 shadow-[0_16px_40px_rgb(0_0_0/0.3)] transition-[opacity,scale,visibility] duration-150 data-open:visible data-open:scale-100 data-open:opacity-100 data-open:transition-[opacity,scale] motion-reduce:transition-none"
-	>
+		class="invisible absolute top-full right-0 z-50 mt-2 w-44 origin-top-right scale-95 rounded-xl border border-line bg-card p-1 opacity-0 shadow-[0_16px_40px_rgb(0_0_0/0.3)] transition-[opacity,scale,visibility] duration-150 data-open:visible data-open:scale-100 data-open:opacity-100 data-open:transition-[opacity,scale] motion-reduce:transition-none">
 		{
 			modes.map((mode) => (
 				<button
@@ -68,15 +64,16 @@ const swap =
 					role="menuitemradio"
 					aria-checked="false"
 					data-theme-option={mode.value}
-					class="group flex w-full cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-1.5 text-sm text-soft outline-none hover:bg-hover hover:text-ink focus-visible:bg-hover focus-visible:text-ink aria-checked:text-ink"
-				>
+					class="group flex w-full cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-1.5 text-sm text-soft outline-none hover:bg-hover hover:text-ink focus-visible:bg-hover focus-visible:text-ink aria-checked:text-ink">
 					<svg {...svg} class="size-4 shrink-0">
 						{mode.paths.map((d) => (
 							<path d={d} />
 						))}
 					</svg>
 					<span class="grow text-left">{mode.label}</span>
-					<svg {...svg} class="size-3.5 shrink-0 opacity-0 group-aria-checked:opacity-100">
+					<svg
+						{...svg}
+						class="size-3.5 shrink-0 opacity-0 group-aria-checked:opacity-100">
 						<path d="M5 12l5 5l10 -10" />
 					</svg>
 				</button>
@@ -91,7 +88,6 @@ const swap =
 	const STORAGE_KEY = 'theme'
 	const systemDark = matchMedia('(prefers-color-scheme: dark)')
 
-	/** Device theme is stored as the absence of a choice, which is what Layout's inline script reads. */
 	function readMode(): Mode {
 		const stored = localStorage.getItem(STORAGE_KEY)
 		return stored === 'light' || stored === 'dark' ? stored : 'system'
@@ -117,7 +113,10 @@ const swap =
 
 			root.animate(
 				{
-					clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`]
+					clipPath: [
+						`circle(0px at ${x}px ${y}px)`,
+						`circle(${radius}px at ${x}px ${y}px)`
+					]
 				},
 				{
 					duration: 500,
@@ -155,8 +154,6 @@ const swap =
 
 		const options = [...menu.querySelectorAll<HTMLButtonElement>('[data-theme-option]')]
 
-		// The menu can stay open while the theme changes (toggle click, another tab), so every
-		// change of the stored mode re-marks the checked option, not just opening the menu.
 		const syncChecked = () => {
 			const mode = readMode()
 			for (const option of options) {
@@ -184,7 +181,6 @@ const swap =
 			setDark(button, dark)
 		})
 
-		// Also fires for the keyboard's context menu key and Shift+F10.
 		button.addEventListener('contextmenu', (event) => {
 			event.preventDefault()
 			open()

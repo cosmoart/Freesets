@@ -9,9 +9,10 @@ interface Props {
 	description: string
 	image: string
 	themeColor?: string
+	favicon?: string
 }
 
-const { title, description, image, themeColor } = Astro.props
+const { title, description, image, themeColor, favicon = '/favicon.svg' } = Astro.props
 const canonical = new URL(Astro.url.pathname, Astro.site)
 ---
 
@@ -25,7 +26,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 		<meta name="description" content={description} />
 		<meta name="author" content="Cosmo" />
 		<meta name="robots" content="index, follow" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={favicon} />
 		<link rel="canonical" href={canonical} />
 		{themeColor && <meta name="theme-color" content={themeColor} />}
 
@@ -66,7 +67,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 				if (!window.themeListenerReady) {
 					window.themeListenerReady = true
 					document.addEventListener('astro:after-swap', apply)
-					// With no stored choice the page follows the device, so track it changing live.
 					matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply)
 				}
 			})()
@@ -75,16 +75,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 	<body class="bg-canvas text-ink">
 		<div
 			data-page-surface
-			class="relative z-10 mb-(--footer-height) border-b border-line bg-canvas bg-grid shadow-[0_1rem_2rem_rgba(0,0,0,0.25)]"
-		>
+			class="relative z-10 mb-(--footer-height) border-b border-line bg-canvas bg-grid shadow-[0_1rem_2rem_rgba(0,0,0,0.25)]">
 			{
 				themeColor && (
 					<div
 						aria-hidden="true"
 						transition:name="accent-blobs"
 						class="accent-blobs"
-						style={`--accent: ${themeColor}`}
-					>
+						style={`--accent: ${themeColor}`}>
 						<span />
 						<span />
 					</div>
@@ -104,9 +102,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 		<script>
 			import type { TransitionBeforeSwapEvent } from 'astro:transitions/client'
 
-			// Navigation scrolls the new page to the top, which would drag the outgoing snapshots up to
-			// where the incoming page sits. Shifting them by that distance keeps them in place while
-			// they fade (see --vt-scroll-shift in global.css).
 			document.addEventListener('astro:before-swap', (event) => {
 				const { viewTransition } = event as TransitionBeforeSwapEvent
 				const root = document.documentElement
@@ -114,12 +109,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 
 				viewTransition.ready
 					.then(() => {
-						const after = document.querySelector('main')?.getBoundingClientRect().top ?? 0
+						const after =
+							document.querySelector('main')?.getBoundingClientRect().top ?? 0
 						root.style.setProperty('--vt-scroll-shift', `${before - after}px`)
 					})
 					.catch(() => {})
 
-				viewTransition.finished.finally(() => root.style.removeProperty('--vt-scroll-shift'))
+				viewTransition.finished.finally(() =>
+					root.style.removeProperty('--vt-scroll-shift')
+				)
 			})
 		</script>
 	</body>

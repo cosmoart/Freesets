@@ -5,6 +5,8 @@ import ResultsBar from '@/components/ResultsBar.astro'
 import categories from '@/assets/categories'
 import ViewControls from '@/components/ViewControls.astro'
 import EmptyState from '@/components/EmptyState.astro'
+import MultiSelect from '@/components/MultiSelect.astro'
+import SortTabs from '@/components/SortTabs.astro'
 import type { Asset } from '@/types'
 
 const licenses = [
@@ -16,8 +18,6 @@ const licenses = [
 	)
 ].sort((a, b) => a.localeCompare(b))
 
-// Results are drawn in the browser from /search-index.json, one page at a time. The page only
-// ships AssetCard as a template, with and without a license link, for scripts/card.ts to fill.
 const sample: Asset = {
 	id: 0,
 	name: '',
@@ -34,7 +34,7 @@ const sample: Asset = {
 	description="Search across every free resource and tool collected in Freesets."
 	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
 >
-	<section class="grow">
+	<section class="grow pb-10">
 		<div
 			class="-mx-4 mb-6 border-y border-line bg-[radial-gradient(90%_140%_at_50%_0%,rgb(43_109_255/0.1),transparent_70%)] px-4 py-8 sm:py-10"
 		>
@@ -65,37 +65,59 @@ const sample: Asset = {
 					/>
 				</label>
 
-				<div class="flex flex-wrap items-center gap-2.5">
-					<select
+				<div class="flex flex-wrap items-start gap-2.5">
+					<MultiSelect
 						name="category"
-						aria-label="Category"
-						class="cursor-pointer dropdown control py-2 pr-8 pl-3 text-sm outline-none"
-					>
-						<option value="">All categories</option>
-						{categories.map((category) => <option value={category.nameID}>{category.name}</option>)}
-					</select>
-
-					<select
+						label="Category"
+						options={categories.map((category) => ({
+							value: category.nameID,
+							label: category.name,
+							color: category.color
+						}))}
+					/>
+					<MultiSelect
 						name="license"
-						aria-label="License"
-						class="cursor-pointer dropdown control py-2 pr-8 pl-3 text-sm outline-none"
-					>
-						<option value="">All licenses</option>
-						{licenses.map((license) => <option value={license}>{license}</option>)}
-					</select>
+						label="License"
+						options={licenses.map((license) => ({ value: license, label: license }))}
+					/>
 
-					<button type="reset" class="btn btn-ghost">Clear</button>
+					<ul data-chips class="flex min-h-9 grow flex-wrap items-center gap-1.5"></ul>
+
+					<button
+						type="reset"
+						data-clear
+						hidden
+						class="ml-auto inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-[9px] px-2.5 text-[13.5px] text-muted transition-colors hover:bg-hover hover:text-ink"
+					>
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+							class="size-3.5"
+						>
+							<path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+							<path d="M3 3v5h5"></path>
+						</svg>
+						Clear all
+					</button>
 				</div>
 			</form>
 		</div>
 
-		<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+		<div class="mb-6 flex flex-wrap items-end justify-between gap-4">
 			<div class="flex flex-wrap items-baseline gap-3">
 				<h1 class="text-2xl font-semibold">Search</h1>
-				<p data-count class="text-sm text-muted"></p>
+				<p data-count aria-live="polite" class="text-sm text-muted"></p>
 			</div>
 
-			<ViewControls />
+			<div class="flex flex-wrap items-end gap-5">
+				<SortTabs />
+				<ViewControls />
+			</div>
 		</div>
 
 		<ul data-results aria-busy="true"></ul>
@@ -103,6 +125,29 @@ const sample: Asset = {
 		<div class="mt-6">
 			<ResultsBar />
 		</div>
+
+		<template data-chip-template>
+			<li>
+				<button
+					type="button"
+					class="group inline-flex h-7 cursor-pointer items-center gap-1.5 rounded-full border border-line bg-field pr-1.5 pl-2.5 text-xs text-soft transition-colors hover:border-line-strong hover:text-ink"
+				>
+					<span data-chip-dot class="size-1.5 rounded-full"></span>
+					<span data-chip-label></span>
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2.5"
+						stroke-linecap="round"
+						aria-hidden="true"
+						class="size-3.5 text-subtle group-hover:text-ink"
+					>
+						<path d="M18 6 6 18M6 6l12 12"></path>
+					</svg>
+				</button>
+			</li>
+		</template>
 
 		<template data-card-template="link">
 			<li>
@@ -125,11 +170,24 @@ const sample: Asset = {
 
 <script>
 	import { renderPages } from '@/scripts/paginate'
-	import { DEFAULT_COLUMNS, readPerPage } from '@/scripts/view'
+	import { DEFAULT_COLUMNS, readPerPage, readSort, saveSort, type Sort } from '@/scripts/view'
 	import { matches as textMatches } from '@/scripts/filter'
 	import { closestTo, renderEmpty, type EmptyFilter } from '@/scripts/empty'
-	import { loadSearchIndex } from '@/scripts/search-index'
+	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
 	import { renderCard } from '@/scripts/card'
+
+	type Facet = 'category' | 'license'
+
+	const FACETS: Facet[] = ['category', 'license']
+	const SORTS: Sort[] = ['popular', 'newest', 'name']
+
+	const time = (entry: SearchEntry) => (entry.added ? Date.parse(entry.added) || 0 : 0)
+
+	const compare: Record<Sort, (a: SearchEntry, b: SearchEntry) => number> = {
+		popular: (a, b) => b.order - a.order || a.name.localeCompare(b.name),
+		newest: (a, b) => time(b) - time(a) || b.id - a.id || a.name.localeCompare(b.name),
+		name: (a, b) => a.name.localeCompare(b.name)
+	}
 
 	let perPage = 0
 	let onPerPageChange: (() => void) | undefined
@@ -146,20 +204,46 @@ const sample: Asset = {
 		if (!form || !nav || !list) return
 
 		const query = form.elements.namedItem('q') as HTMLInputElement
-		const category = form.elements.namedItem('category') as HTMLSelectElement
-		const license = form.elements.namedItem('license') as HTMLSelectElement
 		const count = document.querySelector<HTMLParagraphElement>('[data-count]')!
 		const empty = document.querySelector<HTMLElement>('[data-empty]')!
+		const chips = document.querySelector<HTMLUListElement>('[data-chips]')!
+		const chipTemplate = document.querySelector<HTMLTemplateElement>('[data-chip-template]')!
+		const clear = document.querySelector<HTMLButtonElement>('[data-clear]')!
+		const sortButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')]
+		const menus = [...form.querySelectorAll<HTMLElement>('[data-multiselect]')]
 		const templates = {
 			link: document.querySelector<HTMLTemplateElement>('[data-card-template="link"]')!,
 			plain: document.querySelector<HTMLTemplateElement>('[data-card-template="plain"]')!
 		}
 
+		const boxes = (facet: Facet) => [
+			...form.querySelectorAll<HTMLInputElement>(`input[type="checkbox"][name="${facet}"]`)
+		]
+
+		const checked = (facet: Facet) =>
+			new Set(
+				boxes(facet)
+					.filter((box) => box.checked)
+					.map((box) => box.value)
+			)
+
+		const syncMenus = () => {
+			for (const menu of menus) menu.dispatchEvent(new Event('multiselect:sync'))
+		}
+
+		function check(facet: Facet, values: Iterable<string>) {
+			const wanted = new Set(values)
+			for (const box of boxes(facet)) box.checked = wanted.has(box.value)
+			syncMenus()
+		}
+
 		const params = new URLSearchParams(location.search)
 		query.value = params.get('q') ?? ''
-		category.value = params.get('category') ?? ''
-		license.value = params.get('license') ?? ''
+		check('category', params.getAll('category'))
+		check('license', params.getAll('license'))
 		let page = Number(params.get('page')) || 1
+		const sortParam = params.get('sort') as Sort
+		let sort = SORTS.includes(sortParam) ? sortParam : readSort()
 		perPage = readPerPage()
 
 		form.addEventListener('submit', (event) => event.preventDefault())
@@ -167,7 +251,6 @@ const sample: Asset = {
 		count.textContent = 'Loading resources…'
 		const index = await loadSearchIndex()
 
-		// The visitor may have left the page while the index was loading
 		if (!list.isConnected) return
 
 		if (index.length === 0) {
@@ -182,23 +265,79 @@ const sample: Asset = {
 			text: [entry.name, entry.license, ...entry.tags].join(' ').toLowerCase()
 		}))
 
-		/** Every entry passing the active filters, optionally ignoring one of them. */
-		function select(search: string, skip?: 'category' | 'license') {
+		const categoryNames = new Map(index.map((entry) => [entry.nameID, entry.category]))
+		const categoryColors = new Map(index.map((entry) => [entry.nameID, entry.color]))
+		const valueOf: Record<Facet, (entry: SearchEntry) => string> = {
+			category: (entry) => entry.nameID,
+			license: (entry) => entry.license
+		}
+		const labelOf = (facet: Facet, value: string) =>
+			facet === 'category' ? (categoryNames.get(value) ?? value) : value
+
+		function select(search: string, skip?: Facet) {
+			const active = FACETS.filter((facet) => facet !== skip)
+				.map((facet) => ({ facet, values: checked(facet) }))
+				.filter(({ values }) => values.size > 0)
+
 			return entries.filter(
 				(entry) =>
 					textMatches(entry.text, search) &&
-					(skip === 'category' || !category.value || entry.nameID === category.value) &&
-					(skip === 'license' || !license.value || entry.license === license.value)
+					active.every(({ facet, values }) => values.has(valueOf[facet](entry)))
 			)
 		}
 
-		function describe(select: HTMLSelectElement) {
-			return select.options[select.selectedIndex]?.text ?? select.value
+		function describe(facet: Facet) {
+			return [...checked(facet)].map((value) => labelOf(facet, value)).join(', ')
+		}
+
+		function updateCounts(search: string) {
+			for (const facet of FACETS) {
+				const tally = new Map<string, number>()
+				for (const entry of select(search, facet)) {
+					const value = valueOf[facet](entry)
+					tally.set(value, (tally.get(value) ?? 0) + 1)
+				}
+
+				for (const box of boxes(facet)) {
+					const total = tally.get(box.value) ?? 0
+					box.disabled = total === 0 && !box.checked
+					box.closest('label')!.querySelector('[data-option-count]')!.textContent = String(total)
+				}
+			}
+		}
+
+		function renderChips() {
+			const items = FACETS.flatMap((facet) =>
+				[...checked(facet)].map((value) => {
+					const item = chipTemplate.content.firstElementChild!.cloneNode(true) as HTMLElement
+					const button = item.querySelector('button')!
+					const dot = item.querySelector<HTMLElement>('[data-chip-dot]')!
+					const label = labelOf(facet, value)
+
+					item.querySelector('[data-chip-label]')!.textContent = label
+					button.setAttribute('aria-label', `Remove ${label} filter`)
+
+					if (facet === 'category') dot.style.backgroundColor = categoryColors.get(value) ?? ''
+					else dot.remove()
+
+					button.addEventListener('click', () => {
+						const rest = checked(facet)
+						rest.delete(value)
+						check(facet, rest)
+						reset()
+					})
+
+					return item
+				})
+			)
+
+			chips.replaceChildren(...items)
+			clear.hidden = items.length === 0 && !query.value
 		}
 
 		function apply(scroll = false) {
 			const search = query.value.trim()
-			const found = select(search)
+			const found = select(search).sort(compare[sort])
 
 			page = renderPages(nav!, found.length, page, perPage)
 			const start = (page - 1) * perPage
@@ -209,37 +348,30 @@ const sample: Asset = {
 					.map((entry, position) => renderCard(templates, entry, position < DEFAULT_COLUMNS))
 			)
 
+			for (const button of sortButtons) {
+				button.setAttribute('aria-pressed', String(button.dataset.sort === sort))
+			}
+
 			count.textContent = `${found.length} ${found.length === 1 ? 'resource' : 'resources'} found`
 			empty.hidden = found.length > 0
+			updateCounts(search)
+			renderChips()
 
 			if (found.length === 0) {
-				const filters: EmptyFilter[] = []
-
-				if (license.value) {
-					filters.push({
-						label: describe(license),
-						count: select(search, 'license').length,
+				const filters: EmptyFilter[] = FACETS.filter((facet) => checked(facet).size > 0).map(
+					(facet) => ({
+						label: describe(facet),
+						count: select(search, facet).length,
 						clear: () => {
-							license.value = ''
+							check(facet, [])
 							reset()
 						}
 					})
-				}
-
-				if (category.value) {
-					filters.push({
-						label: describe(category),
-						count: select(search, 'category').length,
-						clear: () => {
-							category.value = ''
-							reset()
-						}
-					})
-				}
+				)
 
 				renderEmpty(empty, {
 					query: search,
-					scope: category.value ? describe(category) : 'all resources',
+					scope: checked('category').size > 0 ? describe('category') : 'all resources',
 					filters,
 					closest: closestTo(entries, search),
 					onTerm: (term) => {
@@ -251,13 +383,13 @@ const sample: Asset = {
 
 			const next = new URLSearchParams()
 			if (query.value) next.set('q', query.value)
-			if (category.value) next.set('category', category.value)
-			if (license.value) next.set('license', license.value)
+			for (const facet of FACETS) {
+				for (const value of checked(facet)) next.append(facet, value)
+			}
+			if (sort !== 'popular') next.set('sort', sort)
 			if (page > 1) next.set('page', String(page))
 
 			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
-			// Instant, not smooth: the results slide in on their own, and a smooth scroll on top of
-			// that reads as the whole page gliding.
 			if (scroll) window.scrollTo({ top: 0, behavior: 'instant' })
 		}
 
@@ -268,7 +400,21 @@ const sample: Asset = {
 
 		form.addEventListener('input', reset)
 		form.addEventListener('change', reset)
-		form.addEventListener('reset', () => requestAnimationFrame(reset))
+		form.addEventListener('reset', () =>
+			requestAnimationFrame(() => {
+				syncMenus()
+				reset()
+				query.focus()
+			})
+		)
+
+		for (const button of sortButtons) {
+			button.addEventListener('click', () => {
+				sort = button.dataset.sort as Sort
+				saveSort(sort)
+				reset()
+			})
+		}
 
 		nav.addEventListener('click', (event) => {
 			const button = (event.target as HTMLElement).closest<HTMLElement>('[data-page]')

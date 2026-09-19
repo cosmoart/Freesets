@@ -347,7 +347,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704587638/freesets/illustrations/qz847dmbbs6j1fuhy8e9.webp",
 		"link": "https://svgdoodles.com",
 		"tags": ["Doodles"],
-		"license": "CC BY 3.0 DEED"
+		"license": "CC BY 3.0"
 	},
 	{
 		"id": 40,
@@ -405,7 +405,7 @@
 		"name": "Streamline Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/streamline.webp",
 		"link": "https://www.streamlinehq.com/illustrations",
-		"license": "CC by 4.0",
+		"license": "CC BY 4.0",
 		"licenseLink": "https://www.streamlinehq.com/license-free",
 		"licenseDescription": "Free for commercial and personal use WITH ATTRIBUTION"
 	},
@@ -446,7 +446,7 @@
 		"name": "Storyset",
 		"img": "https://cdn.freesets.dev/illustrations/storyset.webp",
 		"link": "https://storyset.com",
-		"license": "Free with attribution.",
+		"license": "Free with attribution",
 		"licenseLink": "https://storyset.com/faqs"
 	},
 	{

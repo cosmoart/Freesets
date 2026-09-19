@@ -1,5 +1,6 @@
 ---
 import type { Category } from '@/types'
+import SortTabs from '@/components/SortTabs.astro'
 import ViewControls from '@/components/ViewControls.astro'
 
 interface Props {
@@ -11,16 +12,13 @@ const { category } = Astro.props
 
 <div transition:name="category-header" class="overflow-hidden rounded-2xl surface">
 	<div class="flex flex-col md:flex-row">
-		<!-- Icon and title always share a row; below md the controls drop underneath them -->
 		<div class="flex min-w-0 grow">
 			<div
-				class="flex w-20 shrink-0 items-center justify-center border-r border-line bg-field bg-grid p-3 sm:w-32 sm:p-4"
-			>
+				class="flex w-20 shrink-0 items-center justify-center border-r border-line bg-field bg-grid p-3 sm:w-32 sm:p-4">
 				<span
 					transition:name="category-icon"
 					style={`--item-color: ${category.color}`}
-					class="flex size-12 items-center justify-center rounded-2xl bg-(--item-color) shadow-[0_0_32px_color-mix(in_srgb,var(--item-color)_40%,transparent)] sm:size-14"
-				>
+					class="flex size-12 items-center justify-center rounded-2xl bg-(--item-color) shadow-[0_0_32px_color-mix(in_srgb,var(--item-color)_40%,transparent)] sm:size-14">
 					<img
 						src={`/categories-icons/${category.nameID}.svg`}
 						alt=""
@@ -34,7 +32,8 @@ const { category } = Astro.props
 			<div class="flex min-w-0 grow flex-col justify-center gap-2 p-4 sm:p-5">
 				<div class="flex flex-wrap items-center gap-x-3 gap-y-1.5">
 					<h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{category.name}</h1>
-					<span class="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-subtle">
+					<span
+						class="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-subtle">
 						<span data-total>{category.assets.length}</span> resources
 					</span>
 				</div>
@@ -44,8 +43,7 @@ const { category } = Astro.props
 		</div>
 
 		<div
-			class="flex flex-col justify-center gap-3 border-t border-line p-4 md:border-t-0 md:border-l"
-		>
+			class="flex flex-col justify-center gap-3 border-t border-line p-4 md:border-t-0 md:border-l">
 			<label for="category-search" class="sr-only">Search in {category.name}</label>
 			<input
 				id="category-search"
@@ -57,89 +55,10 @@ const { category } = Astro.props
 			/>
 
 			<div class="flex flex-wrap items-end gap-5">
-				<div
-					data-sort-group
-					class="relative flex gap-0.5 rounded-[9px] border border-line bg-field p-0.75 text-[13px]"
-					role="group"
-					aria-label="Sort resources"
-				>
-					<!-- One shared highlight that slides to the pressed tab, placed by the script below -->
-					<span
-						data-sort-indicator
-						aria-hidden="true"
-						class="pointer-events-none absolute top-0.75 bottom-0.75 left-0 w-(--indicator-width) translate-x-(--indicator-x) rounded-md bg-hover opacity-0 shadow-[inset_0_1px_0_var(--highlight)] data-placed:opacity-100 data-ready:transition-[translate,width] data-ready:duration-300 data-ready:ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none"
-					></span>
-					{
-						[
-							['popular', 'Popular'],
-							['newest', 'Newest'],
-							['name', 'A–Z']
-						].map(([value, text]) => (
-							<button
-								type="button"
-								data-sort={value}
-								aria-pressed="false"
-								class="relative cursor-pointer rounded-md px-3 py-1 text-muted transition-colors hover:text-ink aria-pressed:text-ink"
-							>
-								{text}
-							</button>
-						))
-					}
-				</div>
+				<SortTabs />
 
 				<ViewControls color={category.color} />
 			</div>
 		</div>
 	</div>
 </div>
-
-<script>
-	function setup() {
-		const group = document.querySelector<HTMLElement>('[data-sort-group]')
-		const indicator = group?.querySelector<HTMLElement>('[data-sort-indicator]')
-		if (!group || !indicator) return
-
-		const buttons = [...group.querySelectorAll<HTMLButtonElement>('[data-sort]')]
-
-		const place = () => {
-			const active = buttons.find((button) => button.getAttribute('aria-pressed') === 'true')
-			indicator.toggleAttribute('data-placed', Boolean(active))
-			if (!active) return
-
-			// Rects keep subpixel precision; offsetLeft/offsetWidth round and leave the pill 1px off.
-			const tab = active.getBoundingClientRect()
-			const x = tab.left - group.getBoundingClientRect().left - group.clientLeft
-
-			indicator.style.setProperty('--indicator-x', `${x}px`)
-			indicator.style.setProperty('--indicator-width', `${tab.width}px`)
-		}
-
-		// The page script owns aria-pressed, so follow its changes rather than the clicks.
-		const pressed = new MutationObserver(place)
-		for (const button of buttons) {
-			pressed.observe(button, { attributes: true, attributeFilter: ['aria-pressed'] })
-		}
-
-		// Tab widths change once the web font loads.
-		const resized = new ResizeObserver(place)
-		resized.observe(group)
-
-		place()
-
-		// Only animate after the first placement, so the highlight doesn't glide in on page load.
-		requestAnimationFrame(() =>
-			requestAnimationFrame(() => indicator.toggleAttribute('data-ready', true))
-		)
-
-		document.addEventListener(
-			'astro:before-swap',
-			() => {
-				pressed.disconnect()
-				resized.disconnect()
-			},
-			{ once: true }
-		)
-	}
-
-	document.addEventListener('astro:page-load', setup)
-</script>

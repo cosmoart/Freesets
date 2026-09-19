@@ -35,7 +35,7 @@
 		"name": "Picography",
 		"img": "https://cdn.freesets.dev/photos/picography.webp",
 		"link": "https://picography.co",
-		"license": "CC0 1.0",
+		"license": "CC0",
 		"licenseLink": "https://picography.co/terms/"
 	},
 	{
@@ -90,7 +90,7 @@
 		"name": "StockSnap",
 		"img": "https://cdn.freesets.dev/photos/stocksnap.webp",
 		"link": "https://stocksnap.io",
-		"license": "CC0 1.0",
+		"license": "CC0",
 		"licenseLink": "https://stocksnap.io/license"
 	},
 	{
@@ -126,7 +126,7 @@
 		"name": "Nappy",
 		"img": "https://cdn.freesets.dev/photos/nappy.webp",
 		"link": "https://nappy.co",
-		"license": "CC0 1.0",
+		"license": "CC0",
 		"licenseLink": "https://nappy.co/license"
 	},
 	{

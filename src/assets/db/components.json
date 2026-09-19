@@ -221,7 +221,7 @@
 		"img": "https://cdn.freesets.dev/components/tremor.webp",
 		"link": "https://www.tremor.so",
 		"tags": ["Chart", "React"],
-		"license": "Apache License 2.0",
+		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/tremorlabs/tremor/blob/main/LICENSE"
 	},
 	{
@@ -349,7 +349,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707066379/freesets/components/ftuta4gbmjp08bvjvyjn.webp",
 		"link": "https://tw-elements.com",
 		"tags": ["Tailwind"],
-		"license": "AGPL",
+		"license": "AGPL-3.0",
 		"licenseLink": "https://tw-elements.com/license/",
 		"licenseDescription": "You can use it for free as long as you open source the entirety of your project. AGPL is \"sticky\" which means you have to apply the same license to any project you build with TWE & open the project to the public."
 	},
@@ -589,7 +589,7 @@
 		"name": "Tailbits",
 		"link": "https://www.tailbits.com",
 		"img": "https://cdn.freesets.dev/components/tailbits.webp",
-		"license": "CC-BY-4.0",
+		"license": "CC BY 4.0",
 		"licenseDescription": "This project is licensed under the Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you provide appropriate credit, a link to the license, and indicate if changes were made.",
 		"tags": ["Templates", "Tailwind", "HTML", "Copy&Paste"]
 	},

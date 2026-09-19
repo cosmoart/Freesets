@@ -5,11 +5,8 @@ import { splitTags } from '@/scripts/tags'
 interface Props {
 	asset: Asset
 	color: string
-	/** Pinned over the preview next to a dot in the category color, e.g. "New" or a category. */
 	label?: string
-	/** Fetches the preview right away instead of lazily, for cards in the first row. */
 	priority?: boolean
-	/** Marks the resource as one of the latest additions. */
 	isNew?: boolean
 }
 
@@ -25,25 +22,19 @@ const { shown, rest } = splitTags(asset.tags ?? [])
 
 const overlay = 'rounded-full border border-white/12 bg-zinc-950/70 text-zinc-100 backdrop-blur-sm'
 const tagPill = `px-2 py-0.5 text-[11.5px] ${overlay}`
-// Tags truncate when a card is narrow; the counter never does, or it would clip its own tooltip.
 const tagName = `min-w-0 truncate ${tagPill}`
 const licenseBadge =
 	'shrink-0 rounded-[5px] border border-line-strong px-1.5 py-0.5 font-mono text-[10.5px] whitespace-nowrap text-muted'
-
-// The data-card-* hooks let scripts/card.ts fill a copy of this markup on the search page.
 ---
 
 <article
 	class="group relative flex h-full w-full flex-col rounded-xl surface transition-[border-color,translate] duration-200 hover:border-line-strong motion-safe:hover:-translate-y-0.5"
-	style={`--card-color: ${color}`}
->
+	style={`--card-color: ${color}`}>
 	{
-		/* Sits proud of the corner, so the card keeps its clipping on the preview alone. */
 		isNew && (
 			<span
 				data-card-new
-				class="new-badge pointer-events-none absolute -top-2 -right-2 z-20 rounded-full bg-(--card-color) px-2.5 py-1 font-mono text-[10px] font-semibold tracking-[0.08em] uppercase shadow-[0_6px_16px_color-mix(in_srgb,var(--card-color)_45%,transparent)]"
-			>
+				class="new-badge pointer-events-none absolute -top-2 -right-2 z-20 rounded-full bg-(--card-color) px-2.5 py-1 font-mono text-[10px] font-semibold tracking-[0.08em] uppercase shadow-[0_6px_16px_color-mix(in_srgb,var(--card-color)_45%,transparent)]">
 				New
 			</span>
 		)
@@ -57,13 +48,11 @@ const licenseBadge =
 		aria-label={`Open ${asset.name}`}
 		class="absolute inset-0 z-10"></a>
 
-	<!-- The tag row lives outside the clipped preview, so its tooltip can spill over the card -->
 	<div class="relative">
 		<div
 			data-card-preview
 			class="group/preview relative overflow-hidden rounded-t-[11px] bg-field"
-			data-broken={asset.img ? undefined : ''}
-		>
+			data-broken={asset.img ? undefined : ''}>
 			<img
 				data-card-img
 				src={asset.img || undefined}
@@ -76,17 +65,14 @@ const licenseBadge =
 				class="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103 group-data-broken/preview:invisible"
 			/>
 
-			<!-- Stands in for a preview that failed to load, keeping the card's 16:9 box -->
 			<div
 				aria-hidden="true"
-				class="absolute inset-0 hidden flex-col items-center justify-center gap-2.5 bg-grid group-data-broken/preview:flex"
-			>
+				class="absolute inset-0 hidden flex-col items-center justify-center gap-2.5 bg-grid group-data-broken/preview:flex">
 				<span
 					class="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,color-mix(in_oklab,var(--card-color)_16%,transparent),transparent_65%)]"
 				></span>
 				<span
-					class="relative grid size-12 place-items-center rounded-xl surface transition-transform duration-300 group-hover:scale-105"
-				>
+					class="relative grid size-12 place-items-center rounded-xl surface transition-transform duration-300 group-hover:scale-105">
 					<img
 						data-card-favicon
 						src={favicon}
@@ -97,14 +83,15 @@ const licenseBadge =
 						class="size-6 rounded-md object-cover"
 					/>
 				</span>
-				<span data-card-host class="relative eyebrow tracking-normal normal-case">{host}</span>
+				<span data-card-host class="relative eyebrow tracking-normal normal-case"
+					>{host}</span
+				>
 			</div>
 
 			{
 				label && (
 					<span
-						class={`absolute top-2 left-2 flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-medium tracking-wide ${overlay}`}
-					>
+						class={`absolute top-2 left-2 flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-medium tracking-wide ${overlay}`}>
 						<span class="size-1.5 rounded-full bg-(--card-color)" />
 						<span data-card-label>{label}</span>
 					</span>
@@ -116,8 +103,7 @@ const licenseBadge =
 			asset.tags && (
 				<ul
 					data-card-tags
-					class="pointer-events-none absolute right-2 bottom-2 z-20 flex max-w-[calc(100%-1rem)] items-center justify-end gap-1"
-				>
+					class="pointer-events-none absolute right-2 bottom-2 z-20 flex max-w-[calc(100%-1rem)] items-center justify-end gap-1">
 					{shown.map((tag) => (
 						<li class={tagName}>{tag}</li>
 					))}
@@ -126,15 +112,13 @@ const licenseBadge =
 					<li
 						data-card-tag-extra
 						hidden={rest.length === 0}
-						class={`group/tags pointer-events-auto relative shrink-0 font-medium ${tagPill}`}
-					>
+						class={`group/tags pointer-events-auto relative shrink-0 font-medium ${tagPill}`}>
 						<span data-card-tag-count>+{rest.length}</span>
 
 						{/* The tags that did not fit, named in a tooltip that may spill past the card. */}
 						<span
 							data-card-tag-tip
-							class="pointer-events-none absolute right-0 bottom-full z-30 mb-2 translate-y-1 rounded-lg border border-white/12 bg-zinc-950/95 px-2.5 py-1.5 text-[11.5px] font-normal whitespace-nowrap text-zinc-100 opacity-0 shadow-[0_8px_24px_rgb(0_0_0/0.45)] transition-[opacity,translate] duration-150 group-hover/tags:translate-y-0 group-hover/tags:opacity-100 after:absolute after:top-full after:right-3.5 after:-mt-1 after:size-2 after:rotate-45 after:bg-zinc-950/95 motion-reduce:transition-none"
-						>
+							class="pointer-events-none absolute right-0 bottom-full z-30 mb-2 translate-y-1 rounded-lg border border-white/12 bg-zinc-950/95 px-2.5 py-1.5 text-[11.5px] font-normal whitespace-nowrap text-zinc-100 opacity-0 shadow-[0_8px_24px_rgb(0_0_0/0.45)] transition-[opacity,translate] duration-150 group-hover/tags:translate-y-0 group-hover/tags:opacity-100 after:absolute after:top-full after:right-3.5 after:-mt-1 after:size-2 after:rotate-45 after:bg-zinc-950/95 motion-reduce:transition-none">
 							{rest.join(', ')}
 						</span>
 					</li>
@@ -155,8 +139,7 @@ const licenseBadge =
 		/>
 		<h3
 			data-card-name
-			class="min-w-0 flex-1 truncate text-[15px] font-medium group-hover:underline"
-		>
+			class="min-w-0 flex-1 truncate text-[15px] font-medium group-hover:underline">
 			{asset.name}
 		</h3>
 
@@ -169,8 +152,7 @@ const licenseBadge =
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 						title={asset.licenseDescription}
-						class={`relative z-20 transition-colors hover:border-(--card-color) hover:text-ink ${licenseBadge}`}
-					>
+						class={`relative z-20 transition-colors hover:border-(--card-color) hover:text-ink ${licenseBadge}`}>
 						{license}
 					</a>
 				) : (
