@@ -239,14 +239,6 @@
 	},
 	{
 		"id": 30,
-		"order": 60,
-		"name": "Shape Dividers",
-		"link": "https://www.shapedivider.app/",
-		"img": "https://cdn.freesets.dev/tools/shape-dividers.webp",
-		"tags": ["Section separator"]
-	},
-	{
-		"id": 31,
 		"order": 82,
 		"name": "PostSpark",
 		"link": "https://postspark.app/",
@@ -254,7 +246,7 @@
 		"tags": ["Open Graph", "Mockups"]
 	},
 	{
-		"id": 32,
+		"id": 31,
 		"order": 64,
 		"name": "Bundlephobia",
 		"link": "https://bundlephobia.com/",
@@ -262,7 +254,7 @@
 		"tags": ["NPM", "Performance"]
 	},
 	{
-		"id": 33,
+		"id": 32,
 		"order": 62,
 		"name": "Can I use",
 		"link": "https://caniuse.com/",
@@ -270,7 +262,7 @@
 		"tags": ["Browser Support", "CSS"]
 	},
 	{
-		"id": 34,
+		"id": 33,
 		"order": 79,
 		"name": "Hoppscotch",
 		"link": "https://hoppscotch.io/",
@@ -280,7 +272,7 @@
 		"tags": ["API", "Postman"]
 	},
 	{
-		"id": 35,
+		"id": 34,
 		"order": 80,
 		"name": "alg0.dev",
 		"link": "https://alg0.dev/",
@@ -290,7 +282,7 @@
 		"tags": ["Algorithm Visualizer"]
 	},
 	{
-		"id": 36,
+		"id": 35,
 		"order": 83,
 		"name": "OpenGraph.to",
 		"link": "https://www.opengraph.to/",

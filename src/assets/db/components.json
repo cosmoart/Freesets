@@ -752,5 +752,35 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
 		"tags": ["React", "Design System"]
+	},
+	{
+		"id": 84,
+		"order": 78,
+		"name": "Animate UI",
+		"link": "https://animate-ui.com/",
+		"img": "https://cdn.freesets.dev/components/animate-ui.avif",
+		"license": "MIT",
+		"tags": ["Tailwind", "Radix UI", "Base UI", "Headless UI", "Backgrounds"],
+		"added": "2026-09-20"
+	},
+	{
+		"id": 85,
+		"order": 38,
+		"name": "Rosen Charts",
+		"link": "https://rosencharts.com/",
+		"img": "https://cdn.freesets.dev/components/rosencharts.avif",
+		"license": "Freemium",
+		"tags": ["Shadcn", "Tailwind", "Chart"],
+		"added": "2026-09-20"
+	},
+	{
+		"id": 86,
+		"order": 43,
+		"name": "Oxbow UI",
+		"link": "https://oxbowui.com/",
+		"img": "https://cdn.freesets.dev/components/oxbowui.avif",
+		"license": "Freemium",
+		"tags": ["Alpine", "Tailwind", "Copy&Paste"],
+		"added": "2026-09-20"
 	}
 ]

@@ -39,37 +39,46 @@ git checkout -b your-branch-name
 
 5. Make the changes in the website or add your resources to the JSON files in `src/assets/db`.
 
-6. If you changed the website, check your work before committing:
+6. Check your resources. **`npm test` is required before opening a pull request**, whether you added resources or changed the website:
 
 ```bash
 npm install
+npm run fix          # fixes what has one obvious answer
+npm test             # checks every resource file
+```
+
+> `npm run fix` renumbers the ids of a category, trims stray spaces and drops repeated tags, so you rarely have to do it by hand. Add `-- --dry` to see what it would change without writing anything.
+
+> `npm test` prints one line per category and, when a category fails, the problem and the resources behind it. Duplicated links, missing fields and broken URLs are left for you to fix — they need a decision `npm run fix` cannot make.
+
+7. If you changed the website, check that too:
+
+```bash
 npm run dev          # http://localhost:4321
 npm run check        # types and Astro components
 npm run lint
 npm run format
 ```
 
-> Adding resources needs none of this — a valid JSON entry is enough.
-
-7. Add your changes to the staging area.
+8. Add your changes to the staging area.
 
 ```bash
 git add .
 ```
 
-8. Commit your changes.
+9. Commit your changes.
 
 ```bash
 git commit -m "✨ add resources"
 ```
 
-9. Push to the branch.
+10. Push to the branch.
 
 ```bash
 git push origin your-branch-name
 ```
 
-10. Open a pull request.
+11. Open a pull request.
 
 ## 📝 Resource structure
 
@@ -106,7 +115,7 @@ Each category has its own file in `src/assets/db`, holding a list of resources:
 - `licenseLink` _(string, optional)_: URL to the resource’s license.
 - `licenseDescription` _(string, optional)_: Additional license details, shown when hovering the license badge.
 - `tags` _(array of strings, optional)_: Tags describing the resource (e.g., `AI`, `React`, `Library`, `3D`). Cards show the first ones and collapse the rest into a counter, so put the most telling tags first.
-- `added` _(string, required)_: ISO date, like `"2026-09-15"`. Resources added in the last 30 days appear under "Recently added" with a **New** badge.
+- `added` _(string, required)_: ISO date, like `"2026-09-15"`. The newest resources appear under "Recently added" with a **New** badge.
 
 ## 🎨 Code style
 

@@ -6,7 +6,7 @@
 		"link": "https://shaders.com/",
 		"img": "https://cdn.freesets.dev/backgrounds/shaders.webp",
 		"license": "Freemium",
-		"tags": ["Package","Library"]
+		"tags": ["Package", "Library"]
 	},
 	{
 		"id": 2,
@@ -144,10 +144,7 @@
 		"img": "https://cdn.freesets.dev/backgrounds/uvcanvas.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/latentcat/uvcanvas?tab=readme-ov-file#license",
-		"tags": [
-			"React",
-			"Package"
-		]
+		"tags": ["React", "Package"]
 	},
 	{
 		"id": 17,
@@ -162,9 +159,7 @@
 		"name": "Basic Pattern Repository",
 		"link": "https://patterns.helloyes.dev/",
 		"img": "https://cdn.freesets.dev/backgrounds/patternshelloyes.webp",
-		"tags": [
-			"SVG"
-		]
+		"tags": ["SVG"]
 	},
 	{
 		"id": 19,
@@ -181,7 +176,8 @@
 		"order": 55,
 		"name": "Shape Divider App",
 		"link": "https://www.shapedivider.app",
-		"img": "https://cdn.freesets.dev/backgrounds/shapedivider.webp"
+		"img": "https://cdn.freesets.dev/backgrounds/shapedivider.webp",
+		"tags": ["Separator"]
 	},
 	{
 		"id": 21,
@@ -196,9 +192,7 @@
 		"name": "ColorBeta",
 		"img": "https://cdn.freesets.dev/colors/colorbeta.webp",
 		"link": "https://colorbeta.com/",
-		"tags": [
-			"Gradients"
-		]
+		"tags": ["Gradients"]
 	},
 	{
 		"id": 23,
@@ -206,10 +200,7 @@
 		"name": "NEAT",
 		"img": "https://cdn.freesets.dev/backgrounds/neat.webp",
 		"link": "https://neat.firecms.co/",
-		"tags": [
-			"Gradients",
-			"Package"
-		],
+		"tags": ["Gradients", "Package"],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/firecmsco/neat/blob/main/LICENSE"
 	},
@@ -226,9 +217,7 @@
 		"name": "Magic UI",
 		"img": "https://cdn.freesets.dev/backgrounds/magicui.webp",
 		"link": "https://magicui.design/docs/components/animated-grid-pattern",
-		"tags": [
-			"Tailwind"
-		]
+		"tags": ["Tailwind"]
 	},
 	{
 		"id": 26,
@@ -236,11 +225,7 @@
 		"name": "Shader Gradient",
 		"link": "https://www.shadergradient.co/",
 		"img": "https://cdn.freesets.dev/backgrounds/shadergradient.webp",
-		"tags": [
-			"React",
-			"Framer",
-			"Figma"
-		]
+		"tags": ["React", "Framer", "Figma"]
 	},
 	{
 		"id": 27,
@@ -273,14 +258,6 @@
 	},
 	{
 		"id": 31,
-		"order": 60,
-		"name": "Shape Dividers",
-		"link": "https://www.shapedivider.app",
-		"img": "https://cdn.freesets.dev/tools/shape-dividers.webp",
-		"tags": ["Section separator"]
-	},
-	{
-		"id": 32,
 		"order": 47,
 		"name": "Get Waves",
 		"link": "https://getwaves.io/",

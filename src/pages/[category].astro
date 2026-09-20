@@ -8,6 +8,7 @@ import EmptyState from '@/components/EmptyState.astro'
 import categories from '@/assets/categories'
 import { DEFAULT_COLUMNS, DEFAULT_PER_PAGE } from '@/scripts/view'
 import { recentKeys } from '@/scripts/recent'
+import { domainOf } from '@/scripts/filter'
 
 export const getStaticPaths = (() =>
 	categories.map((category) => ({
@@ -19,7 +20,7 @@ const { category } = Astro.props
 const recent = recentKeys()
 
 const count = category.assets.length
-const title = `${category.headline} - ${count} resources | Freesets`
+const title = `${category.name} - Freesets`
 const description = `${category.description} Browse ${count} hand-picked free resources for developers and designers.`
 const url = new URL(`/${category.nameID}`, Astro.site).href
 
@@ -80,8 +81,10 @@ const jsonLd = {
 						data-meta={[asset.license, ...(asset.tags ?? [])]
 							.filter(Boolean)
 							.join(String.fromCharCode(32, 183, 32))}
-						data-text={[asset.name, asset.license, ...(asset.tags ?? [])]
-							.filter(Boolean)
+						data-text={[
+							...[asset.name, asset.license, ...(asset.tags ?? [])].filter(Boolean),
+							domainOf(asset.link)
+						]
 							.join(' ')
 							.toLowerCase()}
 					>

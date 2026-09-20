@@ -474,7 +474,7 @@
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382565/freesets/icons/dxhlcgkgwque1gddimtd.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://tilda.cc/free-icons/license/",
-		"licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\nLicensee mentions the owner of the Icons. ",
+		"licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\nLicensee mentions the owner of the Icons.",
 		"order": 15
 	},
 	{
@@ -604,7 +604,7 @@
 		"name": "Isocons",
 		"link": "https://www.isocons.app/",
 		"img": "https://cdn.freesets.dev/icons/isocons.webp",
-		"license": "CC BY 4.0 ",
+		"license": "CC BY 4.0",
 		"tags": ["3D"]
 	},
 	{
@@ -616,5 +616,23 @@
 		"license": "Freemium",
 		"licenseDescription": "486 icons free",
 		"tags": ["Pixelart", "Package"]
+	},
+	{
+		"id": 66,
+		"order": 67,
+		"name": "Glow Icons",
+		"link": "https://www.glowui.com/icons",
+		"img": "https://cdn.freesets.dev/icons/glowui.avif",
+		"license": "MIT",
+		"added": "2026-09-20"
+	},
+		{
+		"id": 67,
+		"order": 74,
+		"name": "Animate UI Icons",
+		"link": "https://animate-ui.com/docs/icons",
+		"img": "https://cdn.freesets.dev/icons/animate-ui-icons.avif",
+		"added": "2026-09-20",
+		"tags": ["Animated"]
 	}
 ]

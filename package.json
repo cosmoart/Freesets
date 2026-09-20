@@ -10,6 +10,8 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"fix": "node scripts/fix-resources.js",
+		"test": "node --test --test-reporter=./tests/reporter.js --test-reporter-destination=stdout \"tests/**/*.test.js\"",
 		"check": "astro check",
 		"lint": "eslint .",
 		"format": "prettier --write .",

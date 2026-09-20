@@ -169,7 +169,7 @@ const sample: Asset = {
 <script>
 	import { renderPages } from '@/scripts/paginate'
 	import { DEFAULT_COLUMNS, readPerPage, readSort, saveSort, type Sort } from '@/scripts/view'
-	import { matches as textMatches } from '@/scripts/filter'
+	import { domainOf, matches as textMatches } from '@/scripts/filter'
 	import { closestTo, renderEmpty, type EmptyFilter } from '@/scripts/empty'
 	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
 	import { renderCard } from '@/scripts/card'
@@ -260,7 +260,10 @@ const sample: Asset = {
 			...entry,
 			label: entry.name,
 			meta: [entry.license, ...entry.tags].filter(Boolean).join(' · '),
-			text: [entry.name, entry.license, ...entry.tags].join(' ').toLowerCase()
+			text:
+				[entry.name, entry.license, ...entry.tags].join(' ').toLowerCase() +
+				' ' +
+				domainOf(entry.link)
 		}))
 
 		const categoryNames = new Map(index.map((entry) => [entry.nameID, entry.category]))

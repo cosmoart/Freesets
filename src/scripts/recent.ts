@@ -1,7 +1,6 @@
 import type { Asset, Category } from '@/types'
 import categories from '@/assets/categories'
 
-export const RECENT_DAYS = 30
 const RECENT_LIMIT = 8
 
 interface RecentEntry {
@@ -10,22 +9,17 @@ interface RecentEntry {
 }
 
 /**
- * Assets added inside the last {@link RECENT_DAYS} days, newest first.
+ * The newest assets, whenever they were added.
  *
- * `added` is optional because no entry carries a date yet, so `dated` reports whether the real
- * time window produced this list. When it did not, we fall back to the same recency proxy the
- * "Newest" sort uses — a higher `id` means a later addition — picking round-robin across
- * categories so a single large category cannot take over the whole row.
+ * `added` is optional because no entry carries a date yet, so we only use the dates when at least
+ * one exists. Otherwise we fall back to the same recency proxy the "Newest" sort uses — a higher
+ * `id` means a later addition — picking round-robin across categories so a single large category
+ * cannot take over the whole row.
  */
 export function recentlyAdded(limit = RECENT_LIMIT): { dated: boolean; entries: RecentEntry[] } {
-	const cutoff = Date.now() - RECENT_DAYS * 24 * 60 * 60 * 1000
-
 	const dated = categories
 		.flatMap((category) => category.assets.map((asset) => ({ asset, category })))
-		.filter(({ asset }) => {
-			const time = asset.added ? Date.parse(asset.added) : Number.NaN
-			return !Number.isNaN(time) && time >= cutoff
-		})
+		.filter(({ asset }) => asset.added && !Number.isNaN(Date.parse(asset.added)))
 		.sort((a, b) => Date.parse(b.asset.added!) - Date.parse(a.asset.added!))
 
 	if (dated.length > 0) return { dated: true, entries: dated.slice(0, limit) }

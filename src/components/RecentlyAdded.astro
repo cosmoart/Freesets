@@ -1,8 +1,8 @@
 ---
 import AssetCard from '@/components/AssetCard.astro'
-import { RECENT_DAYS, recentlyAdded } from '@/scripts/recent'
+import { recentlyAdded } from '@/scripts/recent'
 
-const { dated, entries } = recentlyAdded()
+const { entries } = recentlyAdded()
 
 const FIRST_ROW = 4
 ---
@@ -10,9 +10,7 @@ const FIRST_ROW = 4
 <section class="flex flex-col gap-4">
 	<header class="flex flex-wrap items-center gap-3">
 		<h2 class="text-xl font-semibold">Recently added</h2>
-		<span class="eyebrow">
-			{dated ? `Last ${RECENT_DAYS} days` : 'Latest additions'}
-		</span>
+		<span class="eyebrow">Latest additions</span>
 	</header>
 
 	<ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">

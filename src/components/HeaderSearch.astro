@@ -75,7 +75,7 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 </div>
 
 <script>
-	import { matches } from '@/scripts/filter'
+	import { domainOf, matches } from '@/scripts/filter'
 	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
 
 	const MAX_RESULTS = 12
@@ -269,7 +269,9 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 			}
 
 			index = await loadSearchIndex()
-			available = index.filter((entry) => matches(entry.name.toLowerCase(), query))
+			available = index.filter((entry) =>
+				matches(`${entry.name.toLowerCase()} ${domainOf(entry.link)}`, query)
+			)
 
 			render()
 		}

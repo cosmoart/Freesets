@@ -300,7 +300,7 @@
 		"tags": ["Apps", "Animations"]
 	},
 	{
-		"id": 54,
+		"id": 42,
 		"order": 85,
 		"name": "Lapa Ninja",
 		"link": "https://www.lapa.ninja/",
@@ -380,5 +380,13 @@
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
 		"img": "https://cdn.freesets.dev/inspirations/websitevice.webp"
+	},
+		{
+		"id": 53,
+		"order": 58,
+		"name": "UI.live",
+		"link": "https://ui.live/",
+		"img": "https://cdn.freesets.dev/inspirations/ui-live.avif",
+		"added": "2026-09-20"
 	}
 ]
