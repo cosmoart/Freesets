@@ -1,0 +1,726 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Surface palette from the redesign. The file only specifies dark, so light mirrors its roles:
+   canvas is the page, raised the slabs laid over it, card and field the things inside those. */
+:root {
+	color-scheme: light;
+	--canvas: #ffffff;
+	--raised: #f6f7f8;
+	--card: #ffffff;
+	--field: #f3f4f6;
+	--hover: #e9ebee;
+	--line: #e3e5e8;
+	--line-strong: #cdd1d6;
+	--ink: #0a0b0d;
+	--soft: #33383e;
+	--muted: #5d636a;
+	--subtle: #868c94;
+	--highlight: rgb(255 255 255 / 0.9);
+	--card-shadow: rgb(15 23 42 / 0.05);
+	--slab-shadow: rgb(15 23 42 / 0.06);
+	--grid-line: rgb(0 0 0 / 0.035);
+	--footer-height: 22rem;
+	--chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235d636a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+	--check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+}
+
+:root.dark {
+	color-scheme: dark;
+	--canvas: #0a0b0d;
+	--raised: #0f1114;
+	--card: #15181c;
+	--field: #121417;
+	--hover: #1b1f24;
+	--line: #1e2126;
+	--line-strong: #2e333a;
+	--ink: #f2f3f5;
+	--soft: #c9ced4;
+	--muted: #8e949c;
+	--subtle: #6b7178;
+	--highlight: rgb(255 255 255 / 0.055);
+	--card-shadow: rgb(0 0 0 / 0.35);
+	--slab-shadow: rgb(0 0 0 / 0.55);
+	--grid-line: rgb(255 255 255 / 0.022);
+	--chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238e949c' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+	--check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a0b0d' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+}
+
+@theme {
+	--font-sans: 'Gabarito', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@theme inline {
+	--color-canvas: var(--canvas);
+	--color-raised: var(--raised);
+	--color-card: var(--card);
+	--color-field: var(--field);
+	--color-hover: var(--hover);
+	--color-line: var(--line);
+	--color-line-strong: var(--line-strong);
+	--color-ink: var(--ink);
+	--color-soft: var(--soft);
+	--color-muted: var(--muted);
+	--color-subtle: var(--subtle);
+}
+
+/* Small mono caps used for section labels, counters and hints. */
+@utility eyebrow {
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--subtle);
+}
+
+@utility kbd {
+	font-family: var(--font-mono);
+	font-size: 11px;
+	line-height: 1;
+	padding: 3px 6px;
+	border: 1px solid var(--line-strong);
+	border-radius: 4px;
+	color: var(--muted);
+}
+
+@utility surface {
+	border: 1px solid var(--line);
+	background-color: var(--card);
+	box-shadow:
+		inset 0 1px 0 var(--highlight),
+		0 8px 20px var(--card-shadow);
+}
+
+@utility control {
+	border: 1px solid var(--line);
+	border-radius: 9px;
+	background-color: var(--field);
+	box-shadow: inset 0 1px 0 var(--highlight);
+	transition: border-color 150ms;
+
+	&:hover,
+	&:focus-within {
+		border-color: var(--line-strong);
+	}
+}
+
+@utility btn {
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	height: 2.25rem;
+	padding-inline: 0.875rem;
+	border-radius: 9px;
+	font-size: 13.5px;
+	font-weight: 500;
+	white-space: nowrap;
+	cursor: pointer;
+	transition:
+		opacity 150ms,
+		border-color 150ms,
+		color 150ms;
+}
+
+@utility btn-primary {
+	background-color: var(--ink);
+	color: var(--canvas);
+	font-weight: 600;
+
+	&:hover {
+		opacity: 0.88;
+	}
+}
+
+@utility btn-ghost {
+	border: 1px solid var(--line);
+	background-color: var(--field);
+	color: var(--soft);
+	box-shadow: inset 0 1px 0 var(--highlight);
+
+	&:hover {
+		border-color: var(--line-strong);
+		color: var(--ink);
+	}
+}
+
+/* "Starlight" hover shared by the GitHub star buttons in the header and footer: a gold sheen
+   sweeps across, the star turns gold and spins (or, with .star-flip, the GitHub logo flips over
+   to reveal it), sparkles twinkle around it and the count ticks up. Markup: .star-btn >
+   .star-icon > .star-glyph + <StarSparkles />, with the count marked .star-count. */
+.star-btn {
+	--star-gold: #f5b301;
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.star-btn::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: linear-gradient(
+		105deg,
+		transparent 30%,
+		color-mix(in srgb, var(--star-gold) 35%, transparent) 50%,
+		transparent 70%
+	);
+	translate: -100% 0;
+	pointer-events: none;
+}
+
+.star-btn.btn-primary:hover {
+	opacity: 1;
+}
+
+.star-icon {
+	position: relative;
+	display: inline-grid;
+	flex-shrink: 0;
+	place-items: center;
+	perspective: 200px;
+
+	& > svg {
+		grid-area: 1 / 1;
+	}
+}
+
+.star-glyph {
+	transition:
+		rotate 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+		scale 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+		color 0.25s;
+}
+
+/* Header variant: the GitHub logo is the front face and the star waits on the back */
+.star-flip {
+	& .star-front,
+	& .star-back {
+		backface-visibility: hidden;
+		transition:
+			transform 0.5s cubic-bezier(0.34, 1.4, 0.64, 1),
+			rotate 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+			scale 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+			color 0.25s;
+	}
+
+	& .star-back {
+		transform: rotateY(-180deg);
+	}
+}
+
+.star-sparkles {
+	position: absolute;
+	inset: -7px -9px;
+	pointer-events: none;
+	color: var(--star-gold);
+
+	& svg {
+		position: absolute;
+		opacity: 0;
+		scale: 0;
+	}
+
+	/* Each sparkle has its own spot, size, speed and delay. The mismatched durations keep them
+	   drifting out of step, so the same ones rarely show up together twice in a row. */
+	& svg:nth-child(1) {
+		top: 0;
+		right: 0;
+		width: 9px;
+		--twinkle: 1.1s;
+		--delay: 0s;
+	}
+
+	& svg:nth-child(2) {
+		bottom: 1px;
+		left: 0;
+		width: 7px;
+		--twinkle: 1.3s;
+		--delay: 0.35s;
+	}
+
+	& svg:nth-child(3) {
+		top: 2px;
+		left: 2px;
+		width: 6px;
+		--twinkle: 0.9s;
+		--delay: 0.7s;
+	}
+
+	& svg:nth-child(4) {
+		right: 1px;
+		bottom: 0;
+		width: 6px;
+		--twinkle: 1.5s;
+		--delay: 0.2s;
+	}
+
+	& svg:nth-child(5) {
+		top: -2px;
+		left: 45%;
+		width: 7px;
+		--twinkle: 1.2s;
+		--delay: 0.95s;
+	}
+
+	& svg:nth-child(6) {
+		top: 45%;
+		left: -3px;
+		width: 8px;
+		--twinkle: 1.4s;
+		--delay: 0.55s;
+	}
+}
+
+.star-count {
+	transition:
+		color 0.25s,
+		opacity 0.25s;
+}
+
+.star-btn:is(:hover, :focus-visible) {
+	& .star-glyph {
+		color: var(--star-gold);
+	}
+
+	& .star-front {
+		transform: rotateY(180deg);
+	}
+
+	& .star-back {
+		transform: rotateY(0deg);
+	}
+
+	& .star-count {
+		color: var(--star-gold);
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.star-btn:is(:hover, :focus-visible) {
+		&::after {
+			animation: star-sheen 0.8s ease-out;
+		}
+
+		/* 144deg is two points of a five-point star, so it settles looking upright again */
+		& .star-glyph {
+			rotate: 144deg;
+			scale: 1.2;
+		}
+
+		& .star-sparkles svg {
+			animation: star-twinkle var(--twinkle) ease-in-out var(--delay) infinite;
+		}
+
+		& .star-count {
+			animation: star-tick 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+		}
+	}
+}
+
+/* Without motion the flip becomes an instant swap */
+@media (prefers-reduced-motion: reduce) {
+	.star-flip :is(.star-front, .star-back) {
+		transition: color 0.25s;
+	}
+}
+
+@keyframes star-sheen {
+	from {
+		translate: -100% 0;
+	}
+	to {
+		translate: 100% 0;
+	}
+}
+
+@keyframes star-twinkle {
+	0%,
+	100% {
+		opacity: 0;
+		scale: 0;
+		rotate: 0deg;
+	}
+	50% {
+		opacity: 1;
+		scale: 1;
+		rotate: 90deg;
+	}
+}
+
+@keyframes star-tick {
+	0% {
+		translate: 0 0;
+	}
+	40% {
+		translate: 0 -3px;
+	}
+	100% {
+		translate: 0 0;
+	}
+}
+
+/* Swaps the native select arrow, which sits at a different offset in every browser, for a
+   centred chevron. Pair it with right padding (pr-8) so text never runs under it. */
+@utility dropdown {
+	appearance: none;
+	background-image: var(--chevron);
+	background-repeat: no-repeat;
+	background-position: right 0.625rem center;
+	background-size: 14px;
+}
+
+/* Where the browser supports customizable selects, the open list is drawn by the page instead of
+   the OS: themed like the site's menus and animated in and out. Other browsers keep the native
+   list with the chevron above. */
+@supports (appearance: base-select) {
+	.dropdown,
+	.dropdown::picker(select) {
+		appearance: base-select;
+	}
+
+	.dropdown {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.625rem;
+		padding-inline-end: 0.625rem;
+		background-image: none;
+	}
+
+	.dropdown::picker-icon {
+		content: '';
+		width: 14px;
+		height: 14px;
+		background: var(--chevron) center / 14px no-repeat;
+	}
+
+	.dropdown:open::picker-icon {
+		rotate: 180deg;
+	}
+
+	.dropdown::picker(select) {
+		margin-block: 0.375rem;
+		padding: 0.25rem;
+		border: 1px solid var(--line);
+		border-radius: 0.75rem;
+		background-color: var(--card);
+		color: var(--ink);
+		box-shadow: 0 16px 40px rgb(0 0 0 / 0.25);
+		opacity: 0;
+		scale: 0.97;
+		translate: 0 -0.25rem;
+		transform-origin: top;
+	}
+
+	.dropdown:open::picker(select) {
+		opacity: 1;
+		scale: 1;
+		translate: 0 0;
+	}
+
+	.dropdown option {
+		gap: 0.75rem;
+		padding: 0.375rem 0.625rem;
+		border-radius: 0.5rem;
+		font-size: 0.875rem;
+		color: var(--soft);
+		cursor: pointer;
+	}
+
+	.dropdown option:hover,
+	.dropdown option:focus-visible {
+		outline: none;
+		background-color: var(--hover);
+		color: var(--ink);
+	}
+
+	.dropdown option:checked {
+		color: var(--ink);
+		font-weight: 500;
+	}
+
+	.dropdown option::checkmark {
+		order: 1;
+		margin-inline-start: auto;
+		color: var(--muted);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.dropdown::picker-icon {
+			transition: rotate 200ms cubic-bezier(0.2, 0, 0, 1);
+		}
+
+		.dropdown option {
+			transition:
+				background-color 120ms,
+				color 120ms;
+		}
+
+		.dropdown::picker(select) {
+			transition:
+				opacity 160ms cubic-bezier(0.2, 0, 0, 1),
+				scale 160ms cubic-bezier(0.2, 0, 0, 1),
+				translate 160ms cubic-bezier(0.2, 0, 0, 1),
+				overlay 160ms allow-discrete,
+				display 160ms allow-discrete;
+		}
+
+		@starting-style {
+			.dropdown:open::picker(select) {
+				opacity: 0;
+				scale: 0.97;
+				translate: 0 -0.25rem;
+			}
+		}
+	}
+}
+
+/* The MultiSelect panel fades in when its <details> opens. Closing is instant: the content of a
+   closed <details> is not rendered, so there is nothing left to animate out. */
+@media (prefers-reduced-motion: no-preference) {
+	details[open] > .multiselect-panel {
+		animation: multiselect-in 160ms cubic-bezier(0.2, 0, 0, 1);
+	}
+}
+
+@keyframes multiselect-in {
+	from {
+		opacity: 0;
+		scale: 0.97;
+		translate: 0 -0.25rem;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+
+/* The page chrome (canvas, grid, footer) swaps in place. Only the content moves. */
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
+}
+
+/* Outgoing snapshots sit where the incoming page is, so --vt-scroll-shift puts them back where they
+   were on screen (set from Layout.astro). A lone old snapshot already keeps its own spot. */
+::view-transition-group(page),
+::view-transition-group(accent-blobs) {
+	animation: none;
+}
+
+::view-transition-old(page),
+::view-transition-old(accent-blobs) {
+	translate: 0 var(--vt-scroll-shift, 0px);
+}
+
+::view-transition-old(accent-blobs):only-child {
+	translate: none;
+}
+
+/* Moving between pages is a plain cross-fade; sideways motion is kept for paging results. */
+::view-transition-old(page) {
+	animation: 200ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+}
+
+::view-transition-new(page) {
+	animation: 300ms cubic-bezier(0, 0, 0.2, 1) 50ms both fade-in;
+}
+
+/* Category accent blobs only cross-fade, so a color change reads as a soft wash. */
+::view-transition-old(accent-blobs) {
+	animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out;
+}
+
+::view-transition-new(accent-blobs) {
+	animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in;
+}
+
+/* The category header keeps its place instead of sliding away with the rest of the page. */
+::view-transition-group(category-header),
+::view-transition-group(category-icon) {
+	animation-duration: 300ms;
+	animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(category-header),
+::view-transition-old(category-icon) {
+	animation: 150ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+}
+
+::view-transition-new(category-header),
+::view-transition-new(category-icon) {
+	animation: 250ms cubic-bezier(0, 0, 0.2, 1) 50ms both fade-in;
+}
+
+@utility bg-grid {
+	background-image:
+		linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+	background-size: 40px 40px;
+}
+
+.accent-blobs {
+	--blob-opacity: 0.07;
+	position: absolute;
+	inset-inline: 0;
+	top: 0;
+	height: 36rem;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+:root.dark .accent-blobs {
+	--blob-opacity: 0.16;
+}
+
+.accent-blobs > span {
+	position: absolute;
+	border-radius: 9999px;
+	background: var(--accent);
+	opacity: var(--blob-opacity);
+	filter: blur(110px);
+}
+
+.accent-blobs > span:nth-child(1) {
+	top: -14rem;
+	left: 4%;
+	width: 34rem;
+	height: 34rem;
+}
+
+.accent-blobs > span:nth-child(2) {
+	top: -7rem;
+	right: 6%;
+	width: 24rem;
+	height: 24rem;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+	.accent-blobs {
+		display: none;
+	}
+}
+
+.view-controls {
+	--control-color: var(--color-blue-600);
+}
+
+.column-slider {
+	--progress: 50%;
+	appearance: none;
+	background: transparent;
+	cursor: ew-resize;
+}
+
+.column-slider::-webkit-slider-runnable-track {
+	height: 6px;
+	border-radius: 999px;
+	background: linear-gradient(
+		to right,
+		var(--control-color) var(--progress),
+		var(--line-strong) var(--progress)
+	);
+	cursor: ew-resize;
+}
+
+.column-slider::-moz-range-track {
+	height: 6px;
+	border-radius: 999px;
+	background: linear-gradient(
+		to right,
+		var(--control-color) var(--progress),
+		var(--line-strong) var(--progress)
+	);
+	cursor: ew-resize;
+}
+
+.column-slider::-webkit-slider-thumb {
+	appearance: none;
+	width: 14px;
+	height: 14px;
+	margin-top: -4px;
+	border-radius: 999px;
+	border: 2px solid var(--canvas);
+	background: var(--control-color);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+	cursor: grab;
+}
+
+.column-slider::-moz-range-thumb {
+	width: 14px;
+	height: 14px;
+	border-radius: 999px;
+	border: 2px solid var(--canvas);
+	background: var(--control-color);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+	cursor: grab;
+}
+
+.column-slider:active::-webkit-slider-thumb {
+	cursor: grabbing;
+}
+
+.column-slider:active::-moz-range-thumb {
+	cursor: grabbing;
+}
+
+.column-slider:focus-visible {
+	outline: 2px solid var(--control-color);
+	outline-offset: 4px;
+}
+
+[data-results] {
+	--columns: 1;
+	display: grid;
+	/* minmax(0, …) stops a card's content from widening its column past the others */
+	grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+	gap: 1rem;
+}
+
+@media (width >= 40rem) {
+	[data-results] {
+		--columns: 2;
+	}
+}
+
+@media (width >= 64rem) {
+	[data-results] {
+		--columns: var(--user-columns, 4);
+	}
+}
+
+/* Root's old/new snapshots already skip animation and blending (see above), which the reveal relies on. */
+html[data-theme-transition]::view-transition-image-pair(root) {
+	isolation: auto;
+}
+
+html[data-theme-transition] [data-astro-transition-scope] {
+	view-transition-name: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}

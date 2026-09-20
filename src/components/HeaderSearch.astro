@@ -1,0 +1,333 @@
+---
+import categories from '@/assets/categories'
+
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
+const hint = 'flex items-center gap-1'
+const kbd = 'kbd px-1 py-0.5 text-[9px]'
+---
+
+<div
+	data-header-search
+	class="group min-w-0 flex-1 transition-[width] duration-200 md:relative md:w-72 md:flex-none md:focus-within:w-105">
+	<form action="/search" method="get">
+		<label for="header-search" class="sr-only">Search all resources</label>
+		<div class="flex h-9 w-full items-center gap-2.5 control px-3 text-sm">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="16"
+				height="16"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"
+				class="shrink-0 text-subtle">
+				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+				<path d="M21 21l-6 -6"></path>
+			</svg>
+
+			<span
+				data-search-filter
+				hidden
+				class="flex shrink-0 items-center gap-1 rounded px-1.5 py-0.5 text-xs text-white"
+			></span>
+
+			<input
+				id="header-search"
+				type="search"
+				name="q"
+				autocomplete="off"
+				role="combobox"
+				aria-expanded="false"
+				aria-controls="header-search-results"
+				placeholder={`Search ${total} resources…`}
+				class="w-full min-w-0 bg-transparent text-ink outline-none placeholder:text-subtle"
+			/>
+
+			<kbd
+				data-search-shortcut
+				class="hidden shrink-0 kbd group-focus-within:hidden sm:inline">Ctrl K</kbd
+			>
+		</div>
+	</form>
+
+	<div
+		data-search-panel
+		hidden
+		class="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl border border-line bg-card shadow-[0_32px_80px_rgb(0_0_0/0.35)] lg:left-auto lg:w-120">
+		<div
+			id="header-search-results"
+			data-search-results
+			role="listbox"
+			aria-label="Search results"
+			class="max-h-[min(24rem,60dvh)] overflow-y-auto overscroll-contain p-2">
+		</div>
+
+		<div
+			class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line bg-field px-3 py-1.5 eyebrow text-[9px] tracking-[0.06em] pointer-coarse:hidden">
+			<span class={hint}><kbd class={kbd}>↑↓</kbd> Navigate</span>
+			<span class={hint}><kbd class={kbd}>⏎</kbd> Open</span>
+			<span class={hint}><kbd class={kbd}>Tab</kbd> Filter by category</span>
+		</div>
+	</div>
+</div>
+
+<script>
+	import { domainOf, matches } from '@/scripts/filter'
+	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
+
+	const MAX_RESULTS = 12
+
+	function groupHeader(entry: SearchEntry) {
+		const icon = document.createElement('img')
+		icon.src = `/categories-icons/${entry.nameID}.svg`
+		icon.alt = ''
+		icon.width = 10
+		icon.height = 10
+		icon.className = 'w-2.5 invert'
+
+		const badge = document.createElement('span')
+		badge.className = 'flex size-4 shrink-0 items-center justify-center rounded-[5px]'
+		badge.style.backgroundColor = entry.color
+		badge.append(icon)
+
+		const name = document.createElement('span')
+		name.textContent = entry.category
+		name.className = 'eyebrow text-[10.5px] text-muted'
+
+		const rule = document.createElement('span')
+		rule.className = 'h-px grow bg-line'
+
+		const header = document.createElement('div')
+		header.className = 'flex items-center gap-2 px-2.5 pt-3 pb-1.5'
+		header.append(badge, name, rule)
+		return header
+	}
+
+	function resultRow(entry: SearchEntry, position: number) {
+		const favicon = document.createElement('img')
+		favicon.src = `https://www.google.com/s2/favicons?domain=${entry.link}&sz=64`
+		favicon.alt = ''
+		favicon.width = 24
+		favicon.height = 24
+		favicon.loading = 'lazy'
+		favicon.className = 'size-5 shrink-0 rounded-[5px]'
+
+		const name = document.createElement('span')
+		name.textContent = entry.name
+		name.className = 'truncate text-[14.5px] font-medium'
+
+		const meta = document.createElement('span')
+		meta.textContent = entry.license || entry.tags[0] || ''
+		meta.className = 'ml-auto shrink-0 pl-4 text-[12.5px] text-subtle'
+
+		const row = document.createElement('a')
+		row.id = `header-search-option-${position}`
+		row.href = entry.link
+		row.target = '_blank'
+		row.rel = 'noopener noreferrer nofollow'
+		row.dataset.result = ''
+		row.setAttribute('role', 'option')
+		row.setAttribute('aria-selected', 'false')
+		row.className =
+			'ms-6 flex items-center gap-3 rounded-[9px] px-2.5 py-2 hover:bg-hover aria-selected:bg-hover'
+		row.append(favicon, name, meta)
+		return row
+	}
+
+	function emptyState(query: string, category: string) {
+		const title = document.createElement('p')
+		title.textContent = category
+			? `No results for “${query}” in ${category}`
+			: `No results for “${query}”`
+		title.className = 'text-sm font-medium text-ink'
+
+		const kbd = document.createElement('kbd')
+		kbd.textContent = '⏎'
+		kbd.className = 'kbd px-1 py-0.5 text-[9px]'
+
+		const hint = document.createElement('p')
+		hint.className =
+			'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
+		hint.append('Press', kbd, 'or')
+
+		const link = document.createElement('a')
+		link.href = `/search?q=${encodeURIComponent(query)}`
+		link.textContent = 'open the search page'
+		link.className = 'text-ink underline underline-offset-2 hover:opacity-70'
+		hint.append(link, 'for a better search')
+
+		const empty = document.createElement('div')
+		empty.className = 'flex flex-col items-center gap-1.5 px-4 py-6 text-center'
+		empty.append(title, hint)
+
+		if (category) {
+			const esc = document.createElement('kbd')
+			esc.textContent = 'Esc'
+			esc.className = 'kbd px-1 py-0.5 text-[9px]'
+
+			const clear = document.createElement('p')
+			clear.className =
+				'flex flex-wrap items-center justify-center gap-1 text-[12.5px] text-subtle'
+			clear.append('Press', esc, `to search outside ${category}`)
+			empty.append(clear)
+		}
+
+		return empty
+	}
+
+	function setup() {
+		const root = document.querySelector<HTMLElement>('[data-header-search]')
+		const input = root?.querySelector<HTMLInputElement>('input[name="q"]')
+		const panel = root?.querySelector<HTMLElement>('[data-search-panel]')
+		const list = root?.querySelector<HTMLElement>('[data-search-results]')
+		const chip = root?.querySelector<HTMLElement>('[data-search-filter]')
+		if (!root || !input || !panel || !list || !chip) return
+
+		const shortcut = root.querySelector<HTMLElement>('[data-search-shortcut]')
+		if (shortcut && /Mac|iPhone|iPad/.test(navigator.userAgent)) shortcut.textContent = '⌘K'
+
+		let options: HTMLAnchorElement[] = []
+		let index: SearchEntry[] = []
+		let available: SearchEntry[] = []
+		let filter = ''
+		let active = -1
+
+		function highlight(next: number) {
+			if (!options.length) return
+			active = (next + options.length) % options.length
+
+			options.forEach((option, position) =>
+				option.setAttribute('aria-selected', String(position === active))
+			)
+			input!.setAttribute('aria-activedescendant', options[active]!.id)
+			options[active]!.scrollIntoView({ block: 'nearest' })
+		}
+
+		function close() {
+			panel!.hidden = true
+			input!.setAttribute('aria-expanded', 'false')
+			input!.removeAttribute('aria-activedescendant')
+			active = -1
+		}
+
+		function render() {
+			const source = filter ? available.filter((entry) => entry.nameID === filter) : available
+			const shown = source.slice(0, MAX_RESULTS)
+
+			list!.replaceChildren()
+			options = []
+
+			const groups = new Map<string, SearchEntry[]>()
+			for (const entry of shown) {
+				groups.set(entry.nameID, [...(groups.get(entry.nameID) ?? []), entry])
+			}
+
+			for (const entries of groups.values()) {
+				list!.append(groupHeader(entries[0]!))
+				for (const entry of entries) {
+					const row = resultRow(entry, options.length)
+					options.push(row)
+					list!.append(row)
+				}
+			}
+
+			const query = input!.value.trim()
+			const category = filter
+				? (index.find((entry) => entry.nameID === filter)?.category ?? '')
+				: ''
+			if (!shown.length && query) list!.append(emptyState(query, category))
+
+			panel!.hidden = !query
+			input!.setAttribute('aria-expanded', String(shown.length > 0))
+			active = -1
+		}
+
+		function setFilter(nameID: string) {
+			filter = nameID
+			const entry = index.find((item) => item.nameID === nameID)
+
+			chip!.hidden = !entry
+			if (entry) {
+				chip!.textContent = entry.category
+				chip!.style.backgroundColor = entry.color
+			}
+
+			render()
+		}
+
+		async function search() {
+			const query = input!.value.trim()
+
+			if (!query) {
+				available = []
+				setFilter('')
+				close()
+				return
+			}
+
+			index = await loadSearchIndex()
+			available = index.filter((entry) =>
+				matches(`${entry.name.toLowerCase()} ${domainOf(entry.link)}`, query)
+			)
+
+			render()
+		}
+
+		input.addEventListener('focus', loadSearchIndex, { once: true })
+		input.addEventListener('input', search)
+		input.addEventListener('focus', search)
+
+		input.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape') {
+				if (filter) {
+					setFilter('')
+					return
+				}
+				close()
+				input.blur()
+				return
+			}
+
+			if (event.key === 'Tab' && !panel.hidden && available.length) {
+				event.preventDefault()
+				const order = [...new Set(available.map((entry) => entry.nameID))]
+				const cycle = ['', ...order]
+				const step = event.shiftKey ? -1 : 1
+				const next = (cycle.indexOf(filter) + step + cycle.length) % cycle.length
+				setFilter(cycle[next]!)
+				return
+			}
+
+			if (panel.hidden) return
+
+			if (event.key === 'ArrowDown') {
+				event.preventDefault()
+				highlight(active + 1)
+			} else if (event.key === 'ArrowUp') {
+				event.preventDefault()
+				highlight(active - 1)
+			} else if (event.key === 'Enter' && active >= 0) {
+				event.preventDefault()
+				options[active]!.click()
+				close()
+			}
+		})
+
+		input.form?.addEventListener('submit', close)
+
+		document.addEventListener('click', (event) => {
+			if (!root.contains(event.target as Node)) close()
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key !== 'k' || !(event.ctrlKey || event.metaKey)) return
+		event.preventDefault()
+		document.querySelector<HTMLInputElement>('[data-header-search] input[name="q"]')?.focus()
+	})
+</script>

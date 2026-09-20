@@ -1,0 +1,64 @@
+---
+import type { Category } from '@/types'
+import SortTabs from '@/components/SortTabs.astro'
+import ViewControls from '@/components/ViewControls.astro'
+
+interface Props {
+	category: Category
+}
+
+const { category } = Astro.props
+---
+
+<div transition:name="category-header" class="overflow-hidden rounded-2xl surface">
+	<div class="flex flex-col md:flex-row">
+		<div class="flex min-w-0 grow">
+			<div
+				class="flex w-20 shrink-0 items-center justify-center border-r border-line bg-field bg-grid p-3 sm:w-32 sm:p-4">
+				<span
+					transition:name="category-icon"
+					style={`--item-color: ${category.color}`}
+					class="flex size-12 items-center justify-center rounded-2xl bg-(--item-color) shadow-[0_0_32px_color-mix(in_srgb,var(--item-color)_40%,transparent)] sm:size-14">
+					<img
+						src={`/categories-icons/${category.nameID}.svg`}
+						alt=""
+						width="30"
+						height="30"
+						class="w-6.5 invert sm:w-7.5"
+					/>
+				</span>
+			</div>
+
+			<div class="flex min-w-0 grow flex-col justify-center gap-2 p-4 sm:p-5">
+				<div class="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+					<h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{category.name}</h1>
+					<span
+						class="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-muted">
+						<span data-total>{category.assets.length}</span> resources
+					</span>
+				</div>
+
+				<p class="max-w-xl text-sm text-pretty text-muted">{category.description}</p>
+			</div>
+		</div>
+
+		<div
+			class="flex flex-col justify-center gap-3 border-t border-line p-4 md:border-t-0 md:border-l">
+			<label for="category-search" class="sr-only">Search in {category.name}</label>
+			<input
+				id="category-search"
+				data-category-search
+				type="search"
+				autocomplete="off"
+				placeholder={`Search in ${category.name}...`}
+				class="w-full control px-3 py-2 text-sm outline-none placeholder:text-subtle"
+			/>
+
+			<div class="flex flex-wrap items-end gap-5">
+				<SortTabs />
+
+				<ViewControls color={category.color} />
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,227 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Layout from '@/layouts/Layout.astro'
+import AssetCard from '@/components/AssetCard.astro'
+import CategoryHeader from '@/components/CategoryHeader.astro'
+import ResultsBar from '@/components/ResultsBar.astro'
+import EmptyState from '@/components/EmptyState.astro'
+import categories from '@/assets/categories'
+import { DEFAULT_COLUMNS, DEFAULT_PER_PAGE } from '@/scripts/view'
+import { recentKeys } from '@/scripts/recent'
+import { domainOf } from '@/scripts/filter'
+
+export const getStaticPaths = (() =>
+	categories.map((category) => ({
+		params: { category: category.nameID },
+		props: { category }
+	}))) satisfies GetStaticPaths
+
+const { category } = Astro.props
+const recent = recentKeys()
+
+const count = category.assets.length
+const title = `${category.name} - Freesets`
+const description = `${category.description} Browse ${count} hand-picked free resources for developers and designers.`
+const url = new URL(`/${category.nameID}`, Astro.site).href
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'CollectionPage',
+			'@id': url,
+			url,
+			name: category.headline,
+			description,
+			isPartOf: { '@id': `${Astro.site!.href}#website` },
+			mainEntity: {
+				'@type': 'ItemList',
+				numberOfItems: count,
+				itemListElement: category.assets.map((asset, index) => ({
+					'@type': 'ListItem',
+					position: index + 1,
+					name: asset.name,
+					url: asset.link
+				}))
+			}
+		},
+		{
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Freesets', item: Astro.site!.href },
+				{ '@type': 'ListItem', position: 2, name: category.name, item: url }
+			]
+		}
+	]
+}
+---
+
+<Layout
+	title={title}
+	description={description}
+	jsonLd={jsonLd}
+	image={`https://cdn.freesets.dev/og/${category.nameID}.jpg`}
+	themeColor={category.color}
+	favicon={`/${category.nameID}/favicon.svg`}
+>
+	<section class="flex grow flex-col gap-6 pb-10">
+		<CategoryHeader category={category} />
+
+		<ul data-results>
+			{
+				category.assets.map((asset, index) => (
+					<li
+						data-item
+						hidden={index >= DEFAULT_PER_PAGE}
+						data-order={asset.order}
+						data-id={asset.id}
+						data-name={asset.name.toLowerCase()}
+						data-label={asset.name}
+						data-link={asset.link}
+						data-meta={[asset.license, ...(asset.tags ?? [])]
+							.filter(Boolean)
+							.join(String.fromCharCode(32, 183, 32))}
+						data-text={[
+							...[asset.name, asset.license, ...(asset.tags ?? [])].filter(Boolean),
+							domainOf(asset.link)
+						]
+							.join(' ')
+							.toLowerCase()}
+					>
+						<AssetCard
+							asset={asset}
+							color={category.color}
+							isNew={recent.has(`${category.nameID}:${asset.id}`)}
+							priority={index < DEFAULT_COLUMNS}
+						/>
+					</li>
+				))
+			}
+		</ul>
+
+		<ResultsBar />
+
+		<EmptyState scope={category.name} />
+	</section>
+</Layout>
+
+<script>
+	import { paginate } from '@/scripts/paginate'
+	import { readPerPage, readSort, saveSort, type Sort } from '@/scripts/view'
+
+	const compare: Record<Sort, (a: HTMLElement, b: HTMLElement) => number> = {
+		popular: (a, b) => Number(b.dataset.order) - Number(a.dataset.order),
+		newest: (a, b) => Number(b.dataset.id) - Number(a.dataset.id),
+		name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '')
+	}
+	import { matches } from '@/scripts/filter'
+	import { closestTo, renderEmpty, type Suggestion } from '@/scripts/empty'
+
+	const suggestion = ({ dataset }: HTMLElement): Suggestion => ({
+		label: dataset.label ?? '',
+		link: dataset.link ?? '',
+		meta: dataset.meta ?? '',
+		text: dataset.text ?? ''
+	})
+
+	let perPage = 0
+	let onPerPageChange: (() => void) | undefined
+
+	document.addEventListener('view:perpage', (event) => {
+		perPage = (event as CustomEvent<number>).detail
+		onPerPageChange?.()
+	})
+
+	function setup() {
+		const nav = document.querySelector<HTMLElement>('[data-pagination]')
+		const search = document.querySelector<HTMLInputElement>('[data-category-search]')
+		if (!nav || !search) return
+
+		const empty = document.querySelector<HTMLElement>('[data-empty]')!
+		const list = document.querySelector<HTMLUListElement>('[data-results]')!
+		const items = [...document.querySelectorAll<HTMLLIElement>('[data-item]')]
+		const sortButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')]
+
+		const params = new URLSearchParams(location.search)
+		search.value = params.get('q') ?? ''
+		let page = Number(params.get('page')) || 1
+		perPage = readPerPage()
+		let sort = readSort()
+
+		function applySort() {
+			items.sort(compare[sort])
+			list.append(...items)
+
+			for (const button of sortButtons) {
+				button.setAttribute('aria-pressed', String(button.dataset.sort === sort))
+			}
+		}
+
+		function apply(scroll = false) {
+			const query = search!.value.trim()
+			const found: HTMLLIElement[] = []
+
+			for (const item of items) {
+				const match = !query || matches(item.dataset.text ?? '', query)
+				item.hidden = !match
+				if (match) found.push(item)
+			}
+
+			page = paginate(nav!, found, page, perPage)
+			empty.hidden = found.length > 0
+
+			if (found.length === 0) {
+				renderEmpty(empty, {
+					query,
+					scope: empty.dataset.scope ?? 'this category',
+					closest: closestTo(items.map(suggestion), query),
+					onTerm: (term) => {
+						search!.value = term
+						page = 1
+						apply()
+					}
+				})
+			}
+
+			const next = new URLSearchParams()
+			if (query) next.set('q', query)
+			if (page > 1) next.set('page', String(page))
+
+			history.replaceState(history.state, '', next.size ? `?${next}` : location.pathname)
+			if (scroll) window.scrollTo({ top: 0, behavior: 'instant' })
+		}
+
+		search.addEventListener('input', () => {
+			page = 1
+			apply()
+		})
+
+		nav.addEventListener('click', (event) => {
+			const button = (event.target as HTMLElement).closest<HTMLElement>('[data-page]')
+			if (!button) return
+			page = Number(button.dataset.page)
+			apply(true)
+		})
+
+		for (const button of sortButtons) {
+			button.addEventListener('click', () => {
+				sort = button.dataset.sort as Sort
+				saveSort(sort)
+				applySort()
+				page = 1
+				apply()
+			})
+		}
+
+		onPerPageChange = () => {
+			page = 1
+			apply()
+		}
+
+		applySort()
+
+		apply()
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

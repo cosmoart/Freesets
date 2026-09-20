@@ -1,0 +1,31 @@
+---
+import AssetCard from '@/components/AssetCard.astro'
+import { recentlyAdded } from '@/scripts/recent'
+
+const { entries } = recentlyAdded()
+
+const FIRST_ROW = 4
+---
+
+<section class="flex flex-col gap-4">
+	<header class="flex flex-wrap items-center gap-3">
+		<h2 class="text-xl font-semibold">Recently added</h2>
+		<span class="eyebrow">Latest additions</span>
+	</header>
+
+	<ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+		{
+			entries.map(({ asset, category }, index) => (
+				<li>
+					<AssetCard
+						asset={asset}
+						color={category.color}
+						label={category.name}
+						isNew
+						priority={index < FIRST_ROW}
+					/>
+				</li>
+			))
+		}
+	</ul>
+</section>

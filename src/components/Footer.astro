@@ -1,0 +1,362 @@
+---
+import categories from '@/assets/categories'
+import StarSparkles from '@/components/StarSparkles.astro'
+import Logo from '@/components/Logo.astro'
+import { REPO, getStars, formatStars } from '@/lib/github'
+
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
+const owner = REPO.split('/')[0]
+const stars = await getStars()
+const built = new Date()
+
+const repo = `https://github.com/${REPO}`
+const issue = (labels: string) => `${repo}/issues/new?labels=${labels}`
+
+const contribute = [
+	{ name: 'Submit a resource', href: issue('resource') },
+	{ name: 'Report a broken link', href: issue('broken-link') },
+	{ name: 'Suggest a category', href: issue('category') },
+	{ name: 'Open an issue', href: `${repo}/issues` }
+]
+
+const random = (min: number, max: number) => min + Math.random() * (max - min)
+const hearts = Array.from({ length: 7 }, () =>
+	[
+		`--x: ${random(5, 90).toFixed(1)}%`,
+		`--size: ${random(6, 14).toFixed(1)}px`,
+		`--tilt: ${random(-30, 30).toFixed(0)}deg`,
+		`--rise: ${random(-28, -44).toFixed(0)}px`,
+		`--duration: ${random(1.1, 1.9).toFixed(2)}s`,
+		`--delay: ${random(0, 1.4).toFixed(2)}s`
+	].join('; ')
+)
+
+const heading = 'eyebrow mb-3.5 tracking-[0.16em]'
+const link =
+	'group inline-flex items-center gap-1.5 text-[14.5px] text-soft transition-[color,translate] duration-200 hover:translate-x-0.5 hover:text-ink motion-reduce:transition-colors'
+---
+
+<footer data-footer class="fixed inset-x-0 bottom-0 z-0 bg-raised bg-grid text-ink">
+	<div class="mx-auto max-w-380 px-6 pt-10 pb-6 md:px-10">
+		<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[18.5rem_1fr_auto] lg:gap-16">
+			<div class="flex flex-col items-start">
+				<a href="/" class="flex items-center gap-2.5 text-xl font-bold tracking-tight">
+					<Logo class="size-8 shrink-0" />
+					Freesets
+				</a>
+
+				<p class="mt-4 text-[14.5px] leading-relaxed text-pretty text-muted">
+					{total} free resources for developers and artists, kept in one open-source list.
+				</p>
+
+				<div class="mt-5 flex flex-wrap gap-2.5">
+					<a
+						href={repo}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="star-btn btn h-9.5 btn-primary text-sm">
+						<span class="star-icon size-4">
+							<svg
+								viewBox="0 0 16 16"
+								fill="currentColor"
+								aria-hidden="true"
+								class="star-glyph size-4">
+								<path
+									d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+								></path>
+							</svg>
+							<StarSparkles />
+						</span>
+						Star on GitHub
+						{
+							stars !== null && (
+								<span class="star-count font-mono text-xs font-normal tabular-nums opacity-60">
+									{formatStars(stars)}
+								</span>
+							)
+						}
+					</a>
+
+					<a
+						href={`https://github.com/sponsors/${owner}`}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="sponsor btn h-9.5 btn-ghost text-sm">
+						<span class="sponsor-hearts" aria-hidden="true">
+							{
+								hearts.map((heart) => (
+									<svg viewBox="0 0 24 24" fill="currentColor" style={heart}>
+										<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+									</svg>
+								))
+							}
+						</span>
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+							class="sponsor-heart size-4">
+							<path
+								d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+							></path>
+						</svg>
+						Sponsor
+					</a>
+				</div>
+			</div>
+
+			<div>
+				<p class={heading}>Categories</p>
+
+				<ul class="grid grid-cols-[repeat(2,minmax(0,11rem))] gap-x-8 gap-y-2.5">
+					{
+						categories.map((category) => (
+							<li>
+								<a href={`/${category.nameID}`} class={`${link} w-full gap-2.5`}>
+									<span
+										style={`--item-color: ${category.color}`}
+										class="flex size-5 shrink-0 items-center justify-center rounded-[5px] bg-(--item-color) transition-[scale,box-shadow] duration-200 group-hover:scale-110 group-hover:shadow-[0_0_12px_color-mix(in_srgb,var(--item-color)_60%,transparent)] motion-reduce:transition-none">
+										<img
+											src={`/categories-icons/${category.nameID}.svg`}
+											alt=""
+											width="12"
+											height="12"
+											loading="lazy"
+											class="w-3 invert"
+										/>
+									</span>
+									{category.name}
+									<span class="ml-auto font-mono text-[11.5px] text-subtle tabular-nums transition-colors duration-200 group-hover:text-muted">
+										{category.assets.length}
+									</span>
+								</a>
+							</li>
+						))
+					}
+
+					<li>
+						<a href="/search" class={`${link} w-full gap-2.5`}>
+							<span
+								class="flex size-5 shrink-0 items-center justify-center rounded-[5px] bg-ink/10">
+								<svg
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="3"
+									stroke-linecap="round"
+									aria-hidden="true"
+									class="size-3 opacity-80">
+									<path d="M4 6h16M4 12h16M4 18h16"></path>
+								</svg>
+							</span>
+							Everything
+							<span class="ml-auto font-mono text-[11.5px] text-subtle tabular-nums"
+								>{total}</span
+							>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<p class={heading}>Contribute</p>
+
+				<ul class="grid grid-cols-2 gap-x-8 gap-y-2.5 sm:flex sm:flex-col sm:gap-2.5">
+					{
+						contribute.map((item) => (
+							<li>
+								<a
+									href={item.href}
+									target="_blank"
+									rel="noopener noreferrer"
+									class={link}>
+									{item.name}
+									<svg
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										aria-hidden="true"
+										class="size-3 text-subtle transition-[translate,color] duration-200 group-hover:translate-x-px group-hover:-translate-y-px group-hover:text-muted motion-reduce:transition-none">
+										<path d="M7 17 17 7M9 7h8v8" />
+									</svg>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+
+		<div
+			class="mt-7 flex flex-col items-center gap-4 border-t border-line pt-5 text-center text-[13.5px] text-subtle sm:flex-row sm:flex-wrap sm:justify-between sm:text-left">
+			<p>
+				&copy; {built.getFullYear()} Freesets. Built with <span
+					class="text-[#e11d48]"
+					role="img"
+					aria-label="love">&#10084;&#65038;</span
+				> by <a
+					href={`https://github.com/${owner}`}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-soft underline-offset-2 transition-colors hover:text-ink hover:underline"
+					>Cosmo</a
+				>.
+			</p>
+
+			<p
+				class="flex items-center gap-2 rounded-full border border-line bg-field px-2.5 py-1 font-mono text-[11.5px] tracking-[0.08em] text-muted uppercase">
+				<span data-built-dot class="size-1.5 rounded-full bg-green-500"></span>
+				Updated
+				<time data-built datetime={built.toISOString()}>
+					{
+						built.toLocaleDateString('en', {
+							day: 'numeric',
+							month: 'short',
+							year: 'numeric'
+						})
+					}
+				</time>
+			</p>
+		</div>
+	</div>
+</footer>
+
+<style>
+	[data-footer][data-static] {
+		position: static;
+	}
+
+	.sponsor {
+		position: relative;
+		transition:
+			background-color 0.2s,
+			border-color 0.2s,
+			color 0.2s;
+	}
+
+	.sponsor:hover,
+	.sponsor:focus-visible {
+		border-color: #e11d48;
+		background-color: #e11d48;
+		color: #fff;
+	}
+
+	.sponsor-heart {
+		transition:
+			transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+			fill 0.2s;
+	}
+
+	.sponsor:hover .sponsor-heart,
+	.sponsor:focus-visible .sponsor-heart {
+		fill: currentColor;
+		transform: scale(1.3);
+	}
+
+	.sponsor-hearts {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+	}
+
+	.sponsor-hearts svg {
+		position: absolute;
+		bottom: 50%;
+		left: var(--x);
+		width: var(--size);
+		color: #e11d48;
+		opacity: 0;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.sponsor:hover .sponsor-hearts svg,
+		.sponsor:focus-visible .sponsor-hearts svg {
+			animation: sponsor-float var(--duration) ease-out var(--delay) infinite;
+		}
+	}
+
+	@keyframes sponsor-float {
+		0% {
+			opacity: 0;
+			transform: translateY(0) scale(0.6) rotate(0deg);
+		}
+		20% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(var(--rise)) scale(1.1) rotate(var(--tilt));
+		}
+	}
+</style>
+
+<script>
+	let observer: ResizeObserver | undefined
+	let controller: AbortController | undefined
+
+	function setup() {
+		const footer = document.querySelector<HTMLElement>('[data-footer]')
+		if (!footer) return
+
+		const built = footer.querySelector<HTMLTimeElement>('[data-built]')
+
+		if (built) {
+			const days = Math.floor((Date.now() - Date.parse(built.dateTime)) / 86_400_000)
+
+			if (days >= 0) {
+				built.textContent =
+					days === 0
+						? 'today'
+						: new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(
+								-days,
+								'day'
+							)
+
+				const dot = footer.querySelector<HTMLElement>('[data-built-dot]')
+
+				if (dot) {
+					const color =
+						days <= 7
+							? 'bg-green-500'
+							: days <= 30
+								? 'bg-yellow-400'
+								: days <= 90
+									? 'bg-orange-500'
+									: 'bg-red-500'
+
+					dot.classList.remove('bg-green-500')
+					dot.classList.add(color)
+				}
+			}
+		}
+
+		const sync = () => {
+			const fits = footer.offsetHeight < window.innerHeight
+
+			footer.toggleAttribute('data-static', !fits)
+			document.documentElement.style.setProperty(
+				'--footer-height',
+				fits ? `${footer.offsetHeight}px` : '0px'
+			)
+		}
+
+		observer?.disconnect()
+		observer = new ResizeObserver(sync)
+		observer.observe(footer)
+
+		controller?.abort()
+		controller = new AbortController()
+		window.addEventListener('resize', sync, { signal: controller.signal })
+
+		sync()
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

@@ -1,0 +1,436 @@
+---
+import categories from '@/assets/categories'
+import { REPO } from '@/lib/github'
+
+const label = 'eyebrow mb-2 block'
+const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-subtle'
+---
+
+<button type="button" data-suggest-open class="group btn w-9 btn-primary px-0 sm:w-auto sm:px-3">
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		aria-hidden="true"
+		class="size-4 transition-transform duration-300 ease-out group-hover:rotate-90 group-focus-visible:rotate-90 motion-reduce:transition-none">
+		<path d="M12 5l0 14"></path>
+		<path d="M5 12l14 0"></path>
+	</svg>
+	<span class="hidden sm:inline">Suggest</span>
+</button>
+
+<dialog
+	data-suggest-dialog
+	aria-label="Submit a resource"
+	class="m-auto max-h-[92dvh] w-[min(94vw,48rem)] overflow-hidden rounded-2xl border border-line bg-card p-0 text-ink shadow-[0_32px_80px_rgb(0_0_0/0.45)] open:flex open:flex-col">
+	<form data-suggest-form data-repo={REPO} class="flex min-h-0 flex-1 flex-col">
+		<header
+			class="flex shrink-0 items-start justify-between gap-4 border-b border-line px-6 py-5">
+			<div>
+				<h2 class="text-xl font-semibold">Submit a resource</h2>
+				<p class="mt-1 text-sm text-muted">
+					We'll open a prefilled issue on GitHub — you just press submit there.
+				</p>
+			</div>
+
+			<button
+				type="button"
+				data-suggest-close
+				aria-label="Close"
+				class="btn size-8 rounded-lg btn-ghost px-0 text-muted">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="16"
+					height="16"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					aria-hidden="true">
+					<path d="M18 6l-12 12"></path>
+					<path d="M6 6l12 12"></path>
+				</svg>
+			</button>
+		</header>
+
+		<div class="flex min-h-0 flex-col gap-5 overflow-y-auto overscroll-contain p-6">
+			<div class="grid gap-4 sm:grid-cols-2">
+				<div>
+					<label for="suggest-name" class={label}>
+						Name <span aria-hidden="true" class="text-ink">*</span>
+					</label>
+					<input
+						id="suggest-name"
+						name="name"
+						required
+						class={field}
+						placeholder="Lucide"
+					/>
+				</div>
+
+				<div>
+					<label for="suggest-link" class={label}>
+						URL <span aria-hidden="true" class="text-ink">*</span>
+					</label>
+					<input
+						id="suggest-link"
+						name="link"
+						type="url"
+						required
+						class={field}
+						placeholder="https://lucide.dev"
+					/>
+				</div>
+			</div>
+
+			<fieldset>
+				<legend class={label}>Category <span aria-hidden="true" class="text-ink">*</span></legend>
+				<div class="flex flex-wrap gap-2">
+					{
+						categories.map((category, index) => (
+							<label class="cursor-pointer">
+								<input
+									type="radio"
+									name="category"
+									value={category.name}
+									checked={index === 0}
+									class="peer sr-only"
+								/>
+								<span
+									style={`--item-color: ${category.color}`}
+									class="suggest-pill relative flex items-center gap-1.5 rounded-full bg-field text-[13px] text-muted inset-ring-2 inset-ring-line transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-(--item-color)/50 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-card hover:text-ink hover:inset-ring-line-strong">
+									<span class="flex size-6.5 shrink-0 items-center justify-center rounded-full bg-(--item-color)">
+										<img
+											src={`/categories-icons/${category.nameID}.svg`}
+											alt=""
+											width="16"
+											height="16"
+											class="w-4 invert"
+										/>
+									</span>
+									<span class="pe-3">{category.name}</span>
+
+									<span
+										aria-hidden="true"
+										class="suggest-fill absolute inset-0 flex items-center gap-1.5 rounded-full bg-(--item-color) text-white">
+										<span class="flex size-6.5 shrink-0 items-center justify-center">
+											<img
+												src={`/categories-icons/${category.nameID}.svg`}
+												alt=""
+												width="16"
+												height="16"
+												class="w-4 invert"
+											/>
+										</span>
+										<span class="pe-3">{category.name}</span>
+									</span>
+								</span>
+							</label>
+						))
+					}
+				</div>
+			</fieldset>
+
+			<div class="grid gap-4 sm:grid-cols-2">
+				<div>
+					<label for="suggest-license" class={label}>License</label>
+					<input
+						id="suggest-license"
+						name="license"
+						class={field}
+						placeholder="MIT, CC0, Free..."
+						autocomplete="off"
+					/>
+				</div>
+
+				<div>
+					<span class={label}>Tags</span>
+					<div data-tags class="flex flex-wrap items-center gap-1.5 control px-2 py-1.5">
+						<input
+							data-tag-input
+							type="text"
+							aria-label="Add a tag"
+							placeholder="Add a tag..."
+							autocomplete="off"
+							class="min-w-32 grow bg-transparent px-1 py-0.5 text-sm outline-none placeholder:text-subtle"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<label for="suggest-notes" class={label}>Notes</label>
+				<textarea
+					id="suggest-notes"
+					name="notes"
+					rows="2"
+					class={field}
+					placeholder="Anything worth knowing about this resource"></textarea>
+			</div>
+		</div>
+
+		<footer
+			class="flex shrink-0 flex-wrap items-center justify-between gap-4 border-t border-line bg-field px-6 py-4">
+			<p class="eyebrow text-[10.5px] tracking-[0.06em]">
+				&rarr; github.com/{REPO}/issues/new
+			</p>
+
+			<div class="flex gap-2">
+				<button type="button" data-suggest-close class="btn btn-ghost">Cancel</button>
+				<button
+					type="submit"
+					disabled
+					class="btn btn-primary disabled:cursor-not-allowed disabled:opacity-40">
+					Open issue
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="14"
+						height="14"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true">
+						<path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
+						></path>
+						<path d="M11 13l9 -9"></path>
+						<path d="M15 4h5v5"></path>
+					</svg>
+				</button>
+			</div>
+		</footer>
+	</form>
+</dialog>
+
+<style>
+	dialog {
+		opacity: 0;
+		scale: 0.96;
+		translate: 0 0.75rem;
+	}
+
+	dialog[open] {
+		opacity: 1;
+		scale: 1;
+		translate: 0 0;
+	}
+
+	dialog::backdrop {
+		background-color: rgb(0 0 0 / 0);
+		backdrop-filter: blur(0);
+	}
+
+	dialog[open]::backdrop {
+		background-color: rgb(0 0 0 / 0.7);
+		backdrop-filter: blur(4px);
+	}
+
+	/*
+	 * Clipped to its leading circle, this layer is the only colour an unpicked category shows — so
+	 * greying it out is what makes the choice stand out from the options around it.
+	 */
+	.suggest-fill {
+		clip-path: inset(0 calc(100% - 1.625rem) 0 0 round 9999px);
+		opacity: 0.45;
+	}
+
+	.suggest-pill:hover .suggest-fill,
+	input:checked + .suggest-pill .suggest-fill,
+	input:focus-visible + .suggest-pill .suggest-fill {
+		filter: none;
+		opacity: 1;
+	}
+
+	input:checked + .suggest-pill .suggest-fill {
+		clip-path: inset(0 round 9999px);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.suggest-fill {
+			transition:
+				clip-path 300ms cubic-bezier(0.65, 0, 0.35, 1),
+				filter 200ms ease,
+				opacity 200ms ease;
+		}
+
+		dialog,
+		dialog::backdrop {
+			transition:
+				opacity 200ms cubic-bezier(0.2, 0, 0, 1),
+				scale 200ms cubic-bezier(0.2, 0, 0, 1),
+				translate 200ms cubic-bezier(0.2, 0, 0, 1),
+				background-color 200ms ease,
+				backdrop-filter 200ms ease,
+				overlay 200ms allow-discrete,
+				display 200ms allow-discrete;
+		}
+
+		@starting-style {
+			dialog[open] {
+				opacity: 0;
+				scale: 0.96;
+				translate: 0 0.75rem;
+			}
+
+			dialog[open]::backdrop {
+				background-color: rgb(0 0 0 / 0);
+				backdrop-filter: blur(0);
+			}
+		}
+	}
+</style>
+
+<script>
+	function readTags(container: HTMLElement) {
+		return [...container.querySelectorAll<HTMLElement>('[data-tag]')].map(
+			(tag) => tag.dataset.tag ?? ''
+		)
+	}
+
+	function addTag(container: HTMLElement, input: HTMLInputElement, value: string) {
+		const name = value.trim().replace(/,+$/, '')
+		if (!name || readTags(container).some((tag) => tag.toLowerCase() === name.toLowerCase()))
+			return
+
+		const remove = document.createElement('button')
+		remove.type = 'button'
+		remove.setAttribute('aria-label', `Remove ${name}`)
+		remove.textContent = '×'
+		remove.className = 'cursor-pointer text-subtle transition-colors hover:text-ink'
+		remove.addEventListener('click', () => {
+			chip.remove()
+			input.focus()
+		})
+
+		const chip = document.createElement('span')
+		chip.dataset.tag = name
+		chip.className =
+			'flex items-center gap-1.5 rounded-md bg-hover py-0.5 pr-1.5 pl-2 text-[13px]'
+		chip.append(name, remove)
+
+		container.insertBefore(chip, input)
+	}
+
+	function setupTags(form: HTMLFormElement) {
+		const container = form.querySelector<HTMLElement>('[data-tags]')
+		const input = container?.querySelector<HTMLInputElement>('[data-tag-input]')
+		if (!container || !input) return
+
+		container.addEventListener('click', (event) => {
+			if (event.target === container) input.focus()
+		})
+
+		input.addEventListener('keydown', (event) => {
+			if (event.key === 'Enter' || event.key === ',') {
+				event.preventDefault()
+				addTag(container, input, input.value)
+				input.value = ''
+				return
+			}
+
+			if (event.key === 'Backspace' && !input.value) {
+				container.querySelector<HTMLElement>('[data-tag]:last-of-type')?.remove()
+			}
+		})
+
+		input.addEventListener('blur', () => {
+			addTag(container, input, input.value)
+			input.value = ''
+		})
+	}
+
+	function buildIssueUrl(form: HTMLFormElement) {
+		const data = new FormData(form)
+		const value = (key: string) => String(data.get(key) ?? '').trim()
+
+		const name = value('name')
+		const category = value('category')
+		const license = value('license')
+		const notes = value('notes')
+		const container = form.querySelector<HTMLElement>('[data-tags]')
+		const tags = container ? readTags(container) : []
+
+		const body = [
+			`**Name:** ${name}`,
+			`**URL:** ${value('link')}`,
+			`**Category:** ${category}`,
+			license && `**License:** ${license}`,
+			tags.length && `**Tags:** ${tags.join(', ')}`,
+			notes &&
+				`
+### Notes
+
+${notes}`
+		]
+			.filter(Boolean)
+			.join('\n')
+
+		const params = new URLSearchParams({
+			labels: 'resource',
+			title: `Add "${name}" to ${category}`,
+			body
+		})
+
+		return `https://github.com/${form.dataset.repo}/issues/new?${params}`
+	}
+
+	function setup() {
+		const dialog = document.querySelector<HTMLDialogElement>('[data-suggest-dialog]')
+		const button = document.querySelector<HTMLButtonElement>('[data-suggest-open]')
+		const form = document.querySelector<HTMLFormElement>('[data-suggest-form]')
+		const submit = form?.querySelector<HTMLButtonElement>('button[type="submit"]')
+		if (!dialog || !button || !form || !submit) return
+
+		setupTags(form)
+
+		const pulse = () => {
+			if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+			submit.animate([{ scale: 1 }, { scale: 1.06 }, { scale: 1 }], {
+				duration: 420,
+				easing: 'cubic-bezier(0.2, 0, 0, 1)'
+			})
+		}
+
+		const syncSubmit = () => {
+			const wasDisabled = submit.disabled
+			submit.disabled = !form.checkValidity()
+			if (wasDisabled && !submit.disabled) pulse()
+		}
+
+		form.addEventListener('input', syncSubmit)
+		form.addEventListener('change', syncSubmit)
+		syncSubmit()
+
+		button.addEventListener('click', () => dialog.showModal())
+		dialog.addEventListener('click', (event) => {
+			if (event.target === dialog) dialog.close()
+		})
+
+		for (const close of form.querySelectorAll<HTMLButtonElement>('[data-suggest-close]')) {
+			close.addEventListener('click', () => dialog.close())
+		}
+
+		form.addEventListener('submit', (event) => {
+			event.preventDefault()
+			if (!form.checkValidity()) return
+
+			window.open(buildIssueUrl(form), '_blank', 'noopener')
+			dialog.close()
+
+			form.reset()
+			for (const chip of form.querySelectorAll('[data-tag]')) chip.remove()
+			syncSubmit()
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

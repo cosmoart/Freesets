@@ -1,0 +1,168 @@
+---
+import { ClientRouter } from 'astro:transitions'
+import '@/styles/global.css'
+import NavBar from '@/components/NavBar.astro'
+import Footer from '@/components/Footer.astro'
+import ViewPrefs from '@/components/ViewPrefs.astro'
+
+const DEFAULT_FAVICON = '/favicon.svg'
+
+interface Props {
+	title: string
+	description: string
+	image: string
+	themeColor?: string
+	favicon?: string
+	/** Keeps the page out of search results, for pages like the 404. */
+	noindex?: boolean
+	/** Schema.org structured data describing the page. */
+	jsonLd?: Record<string, unknown>
+}
+
+const {
+	title,
+	description,
+	image,
+	themeColor,
+	favicon = DEFAULT_FAVICON,
+	noindex = false,
+	jsonLd
+} = Astro.props
+const canonical = new URL(Astro.url.pathname, Astro.site)
+// `<` is escaped so no string in the data can close the script tag early.
+const structuredData = jsonLd && JSON.stringify(jsonLd).replaceAll('<', '\\u003c')
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="author" content="Cosmo" />
+		<meta
+			name="robots"
+			content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}
+		/>
+		<link rel="icon" type="image/svg+xml" href={favicon} />
+		{
+			/* Google Search ignores SVG favicons, and the category pages tint their own SVG, so the
+			   raster fallbacks are only declared where they would not override that tint. */
+			favicon === DEFAULT_FAVICON && (
+				<>
+					<link rel="icon" href="/favicon.ico" sizes="any" />
+					<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+					<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+				</>
+			)
+		}
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		{!noindex && <link rel="canonical" href={canonical} />}
+		<link rel="sitemap" href="/sitemap.xml" />
+		{themeColor && <meta name="theme-color" content={themeColor} />}
+		{structuredData && <script is:inline type="application/ld+json" set:html={structuredData} />}
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+		/>
+
+		<meta property="og:title" content={title} />
+		<meta property="og:site_name" content="Freesets" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:image" content={image} />
+		<meta property="og:image:width" content="2400" />
+		<meta property="og:image:height" content="1260" />
+		<meta property="og:image:alt" content={title} />
+		<meta property="og:description" content={description} />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@CosmoArt0" />
+		<meta name="twitter:creator" content="@CosmoArt0" />
+		<meta name="twitter:image:alt" content={title} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={image} />
+
+		<ClientRouter />
+
+		<script is:inline>
+			;(() => {
+				const apply = () => {
+					const stored = localStorage.getItem('theme')
+					const dark = stored
+						? stored === 'dark'
+						: matchMedia('(prefers-color-scheme: dark)').matches
+					document.documentElement.classList.toggle('dark', dark)
+				}
+
+				apply()
+
+				if (!window.themeListenerReady) {
+					window.themeListenerReady = true
+					document.addEventListener('astro:after-swap', apply)
+					matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply)
+				}
+			})()
+		</script>
+	</head>
+	<body class="bg-canvas text-ink">
+		<div
+			data-page-surface
+			class="relative z-10 mb-(--footer-height) border-b border-line bg-canvas bg-grid shadow-[0_1rem_2rem_rgba(0,0,0,0.25)]"
+		>
+			{
+				themeColor && (
+					<div
+						aria-hidden="true"
+						transition:name="accent-blobs"
+						class="accent-blobs"
+						style={`--accent: ${themeColor}`}
+					>
+						<span />
+						<span />
+					</div>
+				)
+			}
+
+			<slot name="backdrop" />
+
+			<div class="relative mx-auto flex min-h-dvh max-w-380 flex-col p-4">
+				<NavBar />
+				<main transition:name="page" class="flex grow flex-col">
+					<slot />
+				</main>
+			</div>
+		</div>
+
+		<ViewPrefs />
+
+		<Footer />
+
+		<script>
+			import type { TransitionBeforeSwapEvent } from 'astro:transitions/client'
+
+			document.addEventListener('astro:before-swap', (event) => {
+				const { viewTransition } = event as TransitionBeforeSwapEvent
+				const root = document.documentElement
+				const before = document.querySelector('main')?.getBoundingClientRect().top ?? 0
+
+				viewTransition.ready
+					.then(() => {
+						const after = document.querySelector('main')?.getBoundingClientRect().top ?? 0
+						root.style.setProperty('--vt-scroll-shift', `${before - after}px`)
+					})
+					.catch(() => {})
+
+				viewTransition.finished.finally(() => root.style.removeProperty('--vt-scroll-shift'))
+			})
+		</script>
+	</body>
+</html>

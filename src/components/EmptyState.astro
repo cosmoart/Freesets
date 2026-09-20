@@ -1,0 +1,56 @@
+---
+interface Props {
+	scope?: string
+}
+
+const { scope } = Astro.props
+---
+
+<div
+	data-empty
+	data-scope={scope}
+	hidden
+	class="flex flex-col items-center gap-4 pt-14 pb-24 text-center">
+	<span class="flex size-19 items-center justify-center rounded-[20px] surface text-subtle">
+		<svg
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+			class="size-8">
+			<circle cx="11" cy="11" r="7"></circle>
+			<path d="m20 20-3.5-3.5M4 20 20 4"></path>
+		</svg>
+	</span>
+
+	<h2 class="mt-1 text-3xl font-semibold tracking-tight">No resources match your search</h2>
+
+	<p data-empty-hint class="max-w-xl text-balance text-muted"></p>
+
+	<div class="mt-1 flex flex-wrap items-center justify-center gap-2.5">
+		<button type="button" data-empty-remove hidden class="btn h-9.5 btn-primary px-4 text-sm">
+		</button>
+
+		<a data-empty-all href="/search" class="btn h-9.5 btn-ghost px-4 text-sm">
+			Search all categories
+		</a>
+	</div>
+
+	<p
+		data-empty-terms
+		hidden
+		class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-subtle">
+	</p>
+
+	<section data-empty-closest hidden class="mt-10 w-full border-t border-line pt-5 text-left">
+		<p class="mb-3 flex flex-wrap items-center gap-3">
+			<span data-empty-closest-title class="font-semibold"></span>
+			<span data-empty-closest-note class="eyebrow"></span>
+		</p>
+
+		<ul data-empty-closest-list class="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3"></ul>
+	</section>
+</div>

@@ -1,0 +1,173 @@
+---
+import type { Asset } from '@/types'
+import { splitTags } from '@/scripts/tags'
+
+interface Props {
+	asset: Asset
+	color: string
+	label?: string
+	priority?: boolean
+	isNew?: boolean
+}
+
+const { asset, color, label, priority = false, isNew = false } = Astro.props
+const license = asset.license
+const licenseLink = asset.licenseLink
+const favicon = `https://www.google.com/s2/favicons?domain=${asset.link}&sz=128`
+const host = URL.canParse(asset.link)
+	? new URL(asset.link).hostname.replace(/^www\./, '')
+	: asset.link
+
+const { shown, rest } = splitTags(asset.tags ?? [])
+
+const overlay = 'rounded-full border border-white/12 bg-zinc-950/70 text-zinc-100 backdrop-blur-sm'
+const tagPill = `px-2 py-0.5 text-[11.5px] ${overlay}`
+const tagName = `min-w-0 truncate ${tagPill}`
+const licenseBadge =
+	'shrink-0 rounded-[5px] border border-line-strong px-1.5 py-0.5 font-mono text-[10.5px] whitespace-nowrap text-muted'
+---
+
+<article
+	class="group relative flex h-full w-full flex-col rounded-xl surface transition-[border-color,translate] duration-200 hover:border-line-strong motion-safe:hover:-translate-y-0.5"
+	style={`--card-color: ${color}`}>
+	{
+		isNew && (
+			<span
+				data-card-new
+				class="new-badge pointer-events-none absolute -top-2 -right-2 z-20 rounded-full bg-(--card-color) px-2.5 py-1 font-mono text-[10px] font-semibold tracking-[0.08em] uppercase shadow-[0_6px_16px_color-mix(in_srgb,var(--card-color)_45%,transparent)]">
+				New
+			</span>
+		)
+	}
+
+	<a
+		data-card-link
+		href={asset.link}
+		target="_blank"
+		rel="noopener noreferrer nofollow"
+		aria-label={`Open ${asset.name}`}
+		class="absolute inset-0 z-10"></a>
+
+	<div class="relative">
+		<div
+			data-card-preview
+			class="group/preview relative overflow-hidden rounded-t-[11px] bg-field"
+			data-broken={asset.img ? undefined : ''}>
+			<img
+				data-card-img
+				src={asset.img || undefined}
+				alt={`${asset.name} web preview`}
+				width="400"
+				height="225"
+				loading={priority ? 'eager' : 'lazy'}
+				fetchpriority={priority ? 'high' : undefined}
+				onerror="this.parentElement.dataset.broken = ''"
+				class="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-103 group-data-broken/preview:invisible"
+			/>
+
+			<div
+				aria-hidden="true"
+				class="absolute inset-0 hidden flex-col items-center justify-center gap-2.5 bg-grid group-data-broken/preview:flex">
+				<span
+					class="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,color-mix(in_oklab,var(--card-color)_16%,transparent),transparent_65%)]"
+				></span>
+				<span
+					class="relative grid size-12 place-items-center rounded-xl surface transition-transform duration-300 group-hover:scale-105">
+					<img
+						data-card-favicon
+						src={favicon}
+						alt=""
+						width="40"
+						height="40"
+						loading="lazy"
+						class="size-6 rounded-md object-cover"
+					/>
+				</span>
+				<span data-card-host class="relative eyebrow tracking-normal normal-case"
+					>{host}</span
+				>
+			</div>
+
+			{
+				label && (
+					<span
+						class={`absolute top-2 left-2 flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-medium tracking-wide ${overlay}`}>
+						<span class="size-1.5 rounded-full bg-(--card-color)" />
+						<span data-card-label>{label}</span>
+					</span>
+				)
+			}
+		</div>
+
+		{
+			asset.tags && (
+				<ul
+					data-card-tags
+					class="pointer-events-none absolute right-2 bottom-2 z-20 flex max-w-[calc(100%-1rem)] items-center justify-end gap-1">
+					{shown.map((tag) => (
+						<li class={tagName}>{tag}</li>
+					))}
+
+					{/* Only the counter takes the pointer, so the rest of the row still opens the card. */}
+					<li
+						data-card-tag-extra
+						hidden={rest.length === 0}
+						class={`group/tags pointer-events-auto relative shrink-0 font-medium ${tagPill}`}>
+						<span data-card-tag-count>+{rest.length}</span>
+
+						{/* The tags that did not fit, named in a tooltip that may spill past the card. */}
+						<span
+							data-card-tag-tip
+							class="pointer-events-none absolute right-0 bottom-full z-30 mb-2 translate-y-1 rounded-lg border border-white/12 bg-zinc-950/95 px-2.5 py-1.5 text-[11.5px] font-normal whitespace-nowrap text-zinc-100 opacity-0 shadow-[0_8px_24px_rgb(0_0_0/0.45)] transition-[opacity,translate] duration-150 group-hover/tags:translate-y-0 group-hover/tags:opacity-100 after:absolute after:top-full after:right-3.5 after:-mt-1 after:size-2 after:rotate-45 after:bg-zinc-950/95 motion-reduce:transition-none">
+							{rest.join(', ')}
+						</span>
+					</li>
+				</ul>
+			)
+		}
+	</div>
+
+	<div class="mt-auto flex items-center gap-2.5 px-3.5 py-3">
+		<img
+			data-card-favicon
+			src={favicon}
+			alt=""
+			width="40"
+			height="40"
+			loading="lazy"
+			class="size-6 shrink-0 rounded-[5px] object-cover"
+		/>
+		<h3
+			data-card-name
+			class="min-w-0 flex-1 truncate text-[15px] font-medium group-hover:underline">
+			{asset.name}
+		</h3>
+
+		{
+			license &&
+				(licenseLink ? (
+					<a
+						data-card-license
+						href={licenseLink}
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						title={asset.licenseDescription}
+						class={`relative z-20 transition-colors hover:border-(--card-color) hover:text-ink ${licenseBadge}`}>
+						{license}
+					</a>
+				) : (
+					<span data-card-license title={asset.licenseDescription} class={licenseBadge}>
+						{license}
+					</span>
+				))
+		}
+	</div>
+</article>
+
+<style>
+	.new-badge {
+		color: #fff;
+		/* Category colors range from navy to yellow, so the label flips to dark on the light ones. */
+		color: oklch(from var(--card-color) clamp(0, (0.72 - l) * 100, 1) 0 0);
+	}
+</style>

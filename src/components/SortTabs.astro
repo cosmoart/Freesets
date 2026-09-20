@@ -1,0 +1,73 @@
+<div
+	data-sort-group
+	class="relative flex gap-0.5 rounded-[9px] border border-line bg-field p-0.75 text-[13px]"
+	role="group"
+	aria-label="Sort resources">
+	<span
+		data-sort-indicator
+		aria-hidden="true"
+		class="pointer-events-none absolute top-0.75 bottom-0.75 left-0 w-(--indicator-width) translate-x-(--indicator-x) rounded-md bg-hover opacity-0 shadow-[inset_0_1px_0_var(--highlight)] data-placed:opacity-100 data-ready:transition-[translate,width] data-ready:duration-300 data-ready:ease-[cubic-bezier(0.2,0,0,1)] motion-reduce:transition-none"
+	></span>
+	{
+		[
+			['popular', 'Popular'],
+			['newest', 'Newest'],
+			['name', 'A–Z']
+		].map(([value, text]) => (
+			<button
+				type="button"
+				data-sort={value}
+				aria-pressed="false"
+				class="relative cursor-pointer rounded-md px-3 py-1 text-muted transition-colors hover:text-ink aria-pressed:text-ink">
+				{text}
+			</button>
+		))
+	}
+</div>
+
+<script>
+	function setup() {
+		const group = document.querySelector<HTMLElement>('[data-sort-group]')
+		const indicator = group?.querySelector<HTMLElement>('[data-sort-indicator]')
+		if (!group || !indicator) return
+
+		const buttons = [...group.querySelectorAll<HTMLButtonElement>('[data-sort]')]
+
+		const place = () => {
+			const active = buttons.find((button) => button.getAttribute('aria-pressed') === 'true')
+			indicator.toggleAttribute('data-placed', Boolean(active))
+			if (!active) return
+
+			const tab = active.getBoundingClientRect()
+			const x = tab.left - group.getBoundingClientRect().left - group.clientLeft
+
+			indicator.style.setProperty('--indicator-x', `${x}px`)
+			indicator.style.setProperty('--indicator-width', `${tab.width}px`)
+		}
+
+		const pressed = new MutationObserver(place)
+		for (const button of buttons) {
+			pressed.observe(button, { attributes: true, attributeFilter: ['aria-pressed'] })
+		}
+
+		const resized = new ResizeObserver(place)
+		resized.observe(group)
+
+		place()
+
+		requestAnimationFrame(() =>
+			requestAnimationFrame(() => indicator.toggleAttribute('data-ready', true))
+		)
+
+		document.addEventListener(
+			'astro:before-swap',
+			() => {
+				pressed.disconnect()
+				resized.disconnect()
+			},
+			{ once: true }
+		)
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

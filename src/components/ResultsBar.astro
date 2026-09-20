@@ -1,0 +1,55 @@
+---
+import Pagination from '@/components/Pagination.astro'
+import { PER_PAGE_OPTIONS, SHOW_ALL } from '@/scripts/view'
+
+interface Props {
+	class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<div
+	data-results-bar
+	class:list={[
+		'flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-between',
+		className
+	]}>
+	<div class="flex flex-wrap items-center justify-center gap-3">
+		<p data-range aria-live="polite" class="font-mono text-xs text-muted tabular-nums"></p>
+
+		<select
+			data-per-page
+			aria-label="Items per page"
+			class="cursor-pointer dropdown control py-1.5 pr-8 pl-2.5 text-sm outline-none">
+			{
+				PER_PAGE_OPTIONS.map((option) => (
+					<option value={option}>
+						{option === SHOW_ALL ? 'Show all' : `${option} / page`}
+					</option>
+				))
+			}
+		</select>
+	</div>
+
+	<Pagination />
+</div>
+
+<script>
+	import { readPerPage, savePerPage } from '@/scripts/view'
+
+	function setup() {
+		const perPage = document.querySelector<HTMLSelectElement>('[data-per-page]')
+		if (!perPage) return
+
+		perPage.value = String(readPerPage())
+
+		perPage.addEventListener('change', () => {
+			const value = Number(perPage.value)
+			savePerPage(value)
+			document.dispatchEvent(new CustomEvent('view:perpage', { detail: value }))
+		})
+	}
+
+	document.addEventListener('astro:page-load', setup)
+</script>

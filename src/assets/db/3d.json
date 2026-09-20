@@ -1,0 +1,298 @@
+[
+	{
+		"id": 1,
+		"order": 100,
+		"name": "Poly Haven",
+		"img": "https://cdn.freesets.dev/3d/polyhaven.webp",
+		"link": "https://polyhaven.com",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "CC0",
+		"licenseLink": "https://polyhaven.com/license",
+		"licenseDescription": "Our assets are all licensed as CC0, which is effectively Public Domain."
+	},
+	{
+		"id": 2,
+		"order": 98,
+		"name": "Itchio",
+		"img": "https://cdn.freesets.dev/3d/itchio.webp",
+		"link": "https://itch.io/game-assets/free",
+		"license": "Multiple",
+		"licenseDescription": "Itchio is a marketplace for indie game developers. Each asset has its own license.",
+		"tags": ["Store"]
+	},
+	{
+		"id": 3,
+		"order": 95,
+		"name": "Kenney",
+		"img": "https://cdn.freesets.dev/3d/kenney.webp",
+		"link": "https://kenney.nl",
+		"license": "CC0",
+		"licenseLink": "https://www.kenney.nl/support"
+	},
+	{
+		"id": 4,
+		"order": 92,
+		"name": "ambientCG",
+		"img": "https://cdn.freesets.dev/3d/ambientcg.webp",
+		"link": "https://ambientcg.com",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "CC0",
+		"licenseLink": "https://docs.ambientcg.com/license/",
+		"licenseDescription": "All ambientCG assets are provided under the Creative Commons CC0 1.0 Universal License."
+	},
+	{
+		"id": 5,
+		"order": 90,
+		"name": "Share Textures",
+		"img": "https://cdn.freesets.dev/3d/sharetextures.webp",
+		"link": "https://www.sharetextures.com",
+		"tags": ["Atlases", "Textures", "Models"],
+		"license": "CC0",
+		"licenseLink": "https://www.sharetextures.com/p/license",
+		"licenseDescription": "All of our content is copyright-free [CC0]. It means you can use them anywhere you want which includes commercial projects too."
+	},
+	{
+		"id": 6,
+		"order": 83,
+		"name": "BlenderKit",
+		"img": "https://cdn.freesets.dev/3d/blenderkit.webp",
+		"link": "https://www.blenderkit.com",
+		"tags": ["Textures", "Models", "HDRIs", "Brushes"],
+		"license": "RF & CC0",
+		"licenseLink": "https://www.blenderkit.com/docs/licenses/",
+		"licenseDescription": "BlenderKit only has 2 available licenses. Everything you download is available for commercial use. Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified."
+	},
+	{
+		"id": 7,
+		"order": 78,
+		"name": "CG Bookcase",
+		"img": "https://cdn.freesets.dev/3d/cgbookcase.webp",
+		"link": "https://www.cgbookcase.com",
+		"tags": ["Textures"],
+		"license": "CC0",
+		"licenseLink": "https://www.cgbookcase.com/textures",
+		"licenseDescription": "The textures are published under the CC0 1.0 license, which means means you can use them for free without giving credit."
+	},
+	{
+		"id": 8,
+		"order": 70,
+		"name": "3Dassets.one",
+		"img": "https://cdn.freesets.dev/3d/3dassetsone.webp",
+		"link": "https://3dassets.one",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "Multiple"
+	},
+	{
+		"id": 9,
+		"order": 40,
+		"name": "Quaternius",
+		"img": "https://cdn.freesets.dev/3d/quaternius.webp",
+		"link": "https://quaternius.com/",
+		"tags": ["Models"],
+		"license": "CC0"
+	},
+	{
+		"id": 10,
+		"order": 35,
+		"name": "Turbosquid",
+		"img": "https://cdn.freesets.dev/3d/turbosquid.webp",
+		"link": "https://www.turbosquid.com/",
+		"tags": ["Models"],
+		"license": "Multiple",
+		"licenseLink": "https://blog.turbosquid.com/turbosquid-3d-model-license/"
+	},
+	{
+		"id": 11,
+		"order": 10,
+		"name": "Game Art 2D",
+		"img": "https://cdn.freesets.dev/3d/gameart2d.webp",
+		"link": "https://www.gameart2d.com/freebies.html",
+		"tags": ["Sprites", "Tileset", "GUI"],
+		"license": "CC0",
+		"licenseLink": "https://www.gameart2d.com/license.html",
+		"licenseDescription": "For the game assets in Freebies section, it's under Creative Common Zero (CC0) a.k.a Public Domain license."
+	},
+	{
+		"id": 12,
+		"order": 8,
+		"name": "textures.com",
+		"img": "https://cdn.freesets.dev/3d/textures.webp",
+		"link": "https://www.textures.com/free",
+		"tags": ["Textures"],
+		"license": "Freemium",
+		"licenseLink": "https://www.textures.com/faq-license"
+	},
+	{
+		"id": 13,
+		"order": 8,
+		"name": "Quixel",
+		"img": "https://cdn.freesets.dev/3d/quixel.webp",
+		"link": "https://quixel.com/megascans/free",
+		"tags": ["Decals", "Textures", "Models"],
+		"license": "Freemium",
+		"licenseLink": "https://quixel.com/pricing"
+	},
+	{
+		"id": 14,
+		"order": 8,
+		"name": "Poliigon",
+		"img": "https://cdn.freesets.dev/3d/poliigon.webp",
+		"link": "https://www.poliigon.com/search/free",
+		"tags": ["HDRIs", "Textures", "Models"],
+		"license": "Freemium",
+		"licenseLink": "https://www.poliigon.com/pricing"
+	},
+	{
+		"id": 15,
+		"order": 27,
+		"name": "CGTrader",
+		"link": "https://www.cgtrader.com/free-3d-models",
+		"img": "https://cdn.freesets.dev/3d/cgtrader.webp",
+		"tags": ["Models"],
+		"license": "Freemium",
+		"licenseLink": "https://www.cgtrader.com/pages/terms-and-conditions#royalty-free-license"
+	},
+	{
+		"id": 16,
+		"order": 8,
+		"name": "3DExport",
+		"link": "https://3dexport.com/",
+		"img": "https://cdn.freesets.dev/3d/3dexport.webp",
+		"tags": ["Models"],
+		"license": "Multiple"
+	},
+	{
+		"id": 17,
+		"order": 75,
+		"name": "ArtStation Marketplace",
+		"link": "https://www.artstation.com/marketplace/game-dev?section=trending&price_to=0",
+		"img": "https://cdn.freesets.dev/3d/artstation.webp",
+		"license": "Multiple",
+		"tags": ["Store"]
+	},
+	{
+		"id": 18,
+		"order": 80,
+		"name": "Sketchfab",
+		"link": "https://sketchfab.com/features/free-3d-models",
+		"img": "https://cdn.freesets.dev/3d/sketchfab.webp",
+		"license": "Multiple",
+		"tags": ["Store"]
+	},
+	{
+		"id": 19,
+		"order": 20,
+		"name": "NormalMap-Online",
+		"link": "https://cpetry.github.io/NormalMap-Online/",
+		"img": "https://cdn.freesets.dev/3d/normalmap.webp",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 20,
+		"order": 30,
+		"name": "Online 3D Viewer",
+		"link": "https://3dviewer.net/",
+		"img": "https://cdn.freesets.dev/3d/3dviewer.webp",
+		"tags": ["Tool"]
+	},
+	{
+		"id": 21,
+		"order": 68,
+		"name": "3dsky",
+		"link": "https://3dsky.org/3dmodels?types=free",
+		"img": "https://cdn.freesets.dev/3d/3dskyorg.webp",
+		"tags": ["Store"]
+	},
+	{
+		"id": 22,
+		"order": 12,
+		"name": "Dimensiva",
+		"link": "https://dimensiva.com/free-3d-models/",
+		"img": "https://cdn.freesets.dev/3d/dimensiva.webp",
+		"tags": ["Models"]
+	},
+	{
+		"id": 23,
+		"order": 91,
+		"name": "3D model collection",
+		"link": "https://sketchfab.com/nebulousflynn/collections/cc0-9e9b8c5442ab4b59ba16b6fa5e43b8da",
+		"img": "https://cdn.freesets.dev/3d/nebulousflynn.webp",
+		"tags": ["Models", "Heritage"],
+		"license": "CC0"
+	},
+	{
+		"id": 24,
+		"order": 36,
+		"name": "Blend Swap",
+		"link": "https://www.blendswap.com/",
+		"img": "https://cdn.freesets.dev/3d/blendswap.webp",
+		"tags": ["Models"],
+		"license": "Multiple"
+	},
+	{
+		"id": 25,
+		"order": 88,
+		"name": "Poly Pizza",
+		"link": "https://poly.pizza/",
+		"img": "https://cdn.freesets.dev/3d/poly-pizza.webp",
+		"license": "CC0",
+		"licenseDescription": "CC0 and CC-BY",
+		"tags": ["Low Poly"]
+	},
+	{
+		"id": 26,
+		"order": 9,
+		"name": "Free3D",
+		"link": "https://free3d.com/3d-models/",
+		"img": "https://cdn.freesets.dev/3d/free3d.avif",
+		"license": "Freemium",
+		"tags": ["Marketplace"]
+	},
+	{
+		"id": 27,
+		"order": 43,
+		"name": "NASA 3D Resources",
+		"link": "https://science.nasa.gov/3d-resources/",
+		"img": "https://cdn.freesets.dev/3d/nasa-3d-resources.webp",
+		"license": "NASA guidelines",
+		"licenseLink": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+		"tags": ["Space"]
+	},
+	{
+		"id": 28,
+		"order": 15,
+		"name": "NIH 3D",
+		"link": "https://3d.nih.gov/",
+		"img": "https://cdn.freesets.dev/3d/nih-3d.webp",
+		"license": "Multiple",
+		"licenseLink": "https://3d.nih.gov/terms",
+		"tags": ["Medical", "Bioscientific"]
+	},
+	{
+		"id": 29,
+		"order": 37,
+		"name": "noclip",
+		"link": "https://noclip.website/",
+		"img": "https://cdn.freesets.dev/3d/noclip.webp",
+		"tags": ["Game Levels"]
+	},
+	{
+		"id": 30,
+		"order": 43,
+		"name": "EZ-Tree",
+		"link": "https://www.eztree.dev",
+		"img": "https://cdn.freesets.dev/3d/eztree.webp",
+		"tags": ["Tree Generator"]
+	},
+	{
+		"id": 31,
+		"order": 67,
+		"name": "Browse Blockbench",
+		"link": "https://blockbenchworkshop.com/browse?status=free",
+		"img": "https://cdn.freesets.dev/3d/blockbench.avif",
+		"tags": ["Minecraft", "Models", "Low Poly"],
+		"license": "Multiple",
+		"added": "2026-09-20"
+
+	}
+]

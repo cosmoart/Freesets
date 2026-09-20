@@ -2,14 +2,14 @@
 
 Thank you for your interest in contributing to Freesets! You can help us by contributing new resources or improving the website.
 
-You can contribute [suggesting the resource(s) in discussions or issues.](https://github.com/cosmoart/Freesets/issues) or [making a pull request.](#making-a-pull-request)
+You can contribute [suggesting the resource(s) in discussions or issues](https://github.com/cosmoart/Freesets/issues) — the **Suggest** button on the site opens a prefilled issue for you — or [making a pull request](#-making-a-pull-request).
 
 **Before suggesting a resource make sure that:**
 
 - The resource is completely or partially free.
 - The resource is not already in the database.
 - There is a category for the resource (if not, you can suggest it in the discussions).
-- The resource follows the [correct structure](#resource-structure).
+- The resource follows the [correct structure](#-resource-structure).
 
 ## ⚙️ Making a pull request
 
@@ -20,16 +20,16 @@ To make a pull request follow the following steps:
 2. Clone your forked repository.
 
 ```bash
-git clone https://github.com/your-username/freesets
+git clone https://github.com/your-username/Freesets
 ```
 
 3. Navigate to the repository directory.
 
 ```bash
-cd freesets
+cd Freesets
 ```
 
-> Or you can use `code freesets` to open the repository in Visual Studio Code.
+> Or you can use `code Freesets` to open the repository in Visual Studio Code.
 
 4. Create a new branch. This step is optional, but recommended.
 
@@ -37,29 +37,52 @@ cd freesets
 git checkout -b your-branch-name
 ```
 
-5. Make the changes in the website or add your resources to the jsons files in `source-web/src/assets/db`.
+5. Make the changes in the website or add your resources to the JSON files in `src/assets/db`.
 
-6. Add your changes to the staging area.
+6. Check your resources. **`npm test` is required before opening a pull request**, whether you added resources or changed the website:
+
+```bash
+npm install
+npm run fix          # fixes what has one obvious answer
+npm test             # checks every resource file
+```
+
+> `npm run fix` renumbers the ids of a category, trims stray spaces and drops repeated tags, so you rarely have to do it by hand. Add `-- --dry` to see what it would change without writing anything.
+
+> `npm test` prints one line per category and, when a category fails, the problem and the resources behind it. Duplicated links, missing fields and broken URLs are left for you to fix — they need a decision `npm run fix` cannot make.
+
+7. If you changed the website, check that too:
+
+```bash
+npm run dev          # http://localhost:4321
+npm run check        # types and Astro components
+npm run lint
+npm run format
+```
+
+8. Add your changes to the staging area.
 
 ```bash
 git add .
 ```
 
-7. Commit your changes.
+9. Commit your changes.
 
 ```bash
 git commit -m "✨ add resources"
 ```
 
-8. Push to the branch.
+10. Push to the branch.
 
 ```bash
 git push origin your-branch-name
 ```
 
-9. Open a pull request.
+11. Open a pull request.
 
 ## 📝 Resource structure
+
+Each category has its own file in `src/assets/db`, holding a list of resources:
 
 ```json
 {
@@ -67,29 +90,38 @@ git push origin your-branch-name
 	"order": 73,
 	"name": "Resource name",
 	"link": "https://resource.com",
-	"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/category/name",
+	"img": "https://cdn.freesets.dev/icons/resource-name.avif",
 	"license": "Free",
-	"licenseLink": "https://resource.com/licence",
+	"licenseLink": "https://resource.com/license",
 	"licenseDescription": "\"License may use the Work in non-commercial and commercial projects.\"",
-	"tags": ["IA", "React", "Library", "3D"]
+	"tags": ["AI", "React", "Library", "3D"],
+	"added": "2026-09-15"
 }
 ```
 
-- `id` *(number, required)*: Unique sequential number for each resource.
-- `order` *(number, required)*: Rating of the resource (0 = poor, 100 = excellent). Consider UI/UX, license permissiveness, and completeness.
-- `name` *(string, required)*: Name of the resource.
-- `link` *(string, required)*: URL to the resource.
-- `img` *(string, required)*: Image URL following the format:
+- `id` _(number, required)_: Unique sequential number inside its category file.
+- `order` _(number, required)_: Rating of the resource (0 = poor, 100 = excellent). Consider UI/UX, license permissiveness, and completeness. It sets the order of the "Popular" sort.
+- `name` _(string, required)_: Name of the resource.
+- `link` _(string, required)_: URL to the resource.
+- `img` _(string, required)_: Preview image URL following the format:
 
   ```
-  https://res.cloudinary.com/cosmocloudinary/image/upload/freesets/{category}/{name}
+  https://cdn.freesets.dev/{category}/{name}.avif
   ```
-  > *You don’t need to upload images, just provide the correct URL.*
 
-- `license` *(string, optional)*: License type (e.g., "Free", "CC0", "Freemium", "Free with attribution").
-- `licenseLink` *(string, optional)*: URL to the resource’s license.
-- `licenseDescription` *(string, optional)*: Additional license details.
-- `tags` *(array of strings, optional)*: Tags describing the resource (e.g., `AI`, `React`, `Library`, `3D`).
+  > _You don’t need to upload images, just provide the correct URL._ Copy the shape of the entries next to yours: a few categories keep their images in an older folder, and some older resources still point to Cloudinary. A preview is a 1280×720 AVIF screenshot of the site. Older entries still point to `.webp` files, which keep working.
+
+- `license` _(string, optional)_: License type (e.g., "Free", "CC0", "Freemium", "Free with attribution").
+- `licenseLink` _(string, optional)_: URL to the resource’s license.
+- `licenseDescription` _(string, optional)_: Additional license details, shown when hovering the license badge.
+- `tags` _(array of strings, optional)_: Tags describing the resource (e.g., `AI`, `React`, `Library`, `3D`). Cards show the first ones and collapse the rest into a counter, so put the most telling tags first.
+- `added` _(string, required)_: ISO date, like `"2026-09-15"`. The newest resources appear under "Recently added" with a **New** badge.
+
+## 🎨 Code style
+
+Prettier and ESLint own the formatting, so just run `npm run format` before committing. The project uses tabs, single quotes and no semicolons, and Tailwind classes are sorted automatically.
+
+Comments explain _why_ something is done, not what the code does. The whole codebase is in English.
 
 <br/>
 

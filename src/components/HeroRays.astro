@@ -1,0 +1,164 @@
+---
+import categories from '@/assets/categories'
+
+// Beams hang from above the page in loose bundles, like light through a gap in a curtain.
+const clusters = [
+	{ x: -16, size: 3 },
+	{ x: 4, size: 2 },
+	{ x: 20, size: 4 },
+	{ x: 41, size: 2 },
+	{ x: 55, size: 3 },
+	{ x: 74, size: 4 },
+	{ x: 93, size: 2 }
+]
+
+// Deterministic noise so every build draws the same rays.
+const noise = (seed: number) => {
+	const value = Math.sin(seed * 127.1) * 43758.5453
+	return value - Math.floor(value)
+}
+
+const WAVE = 11
+let index = 0
+const rays = clusters.flatMap((cluster, group) =>
+	Array.from({ length: cluster.size }, (_, member) => {
+		const seed = ++index
+		const left = cluster.x + member * (1.6 + noise(seed) * 2.4)
+		return {
+			color: categories[(group * 3 + member) % categories.length].color,
+			left: +left.toFixed(1),
+			width: +(2.5 + noise(seed + 50) * 10).toFixed(1),
+			angle: +(-(24 + group * 0.8) + (member - cluster.size / 2) * 1.8).toFixed(1),
+			// The sway shares one period and is phased by position, so it travels as a wave.
+			wave: -((left + 20) / 120) * WAVE * 1.4,
+			reachMin: +(0.3 + noise(seed + 100) * 0.3).toFixed(2),
+			reachMax: +(0.75 + noise(seed + 150) * 0.35).toFixed(2),
+			reachDuration: +(7 + noise(seed + 200) * 8).toFixed(1),
+			reachDelay: -(noise(seed + 250) * 12).toFixed(1)
+		}
+	})
+)
+---
+
+<div aria-hidden="true" class="rays" style={`--wave: ${WAVE}s`}>
+	<div class="source"></div>
+	{
+		rays.map((ray) => (
+			<span
+				class="ray"
+				style={[
+					`--c: ${ray.color}`,
+					`--left: ${ray.left}%`,
+					`--w: ${ray.width}rem`,
+					`--angle: ${ray.angle}deg`,
+					`--wave-delay: ${ray.wave.toFixed(2)}s`,
+					`--reach-min: ${ray.reachMin}`,
+					`--reach-max: ${ray.reachMax}`,
+					`--reach-duration: ${ray.reachDuration}s`,
+					`--reach-delay: ${ray.reachDelay}s`
+				].join('; ')}
+			/>
+		))
+	}
+</div>
+
+<style>
+	.rays {
+		--ray-opacity: 0.3;
+		position: absolute;
+		inset-inline: 0;
+		top: 0;
+		height: 42rem;
+		overflow: hidden;
+		pointer-events: none;
+		mask-image: linear-gradient(to bottom, #000 35%, transparent);
+		animation: rays-in 1.6s ease-out both;
+	}
+
+	:global(.dark) .rays {
+		--ray-opacity: 0.5;
+	}
+
+	/* The light pooling along the top edge, where every beam comes from. */
+	.source {
+		position: absolute;
+		inset: -6rem 0 auto;
+		height: 14rem;
+		background:
+			radial-gradient(ellipse 40% 60% at 20% 0, rgb(255 255 255 / 0.1), transparent),
+			radial-gradient(ellipse 50% 70% at 70% 0, rgb(255 255 255 / 0.06), transparent);
+	}
+
+	.ray {
+		position: absolute;
+		top: -8rem;
+		left: var(--left);
+		width: var(--w);
+		height: 58rem;
+		transform-origin: 50% 0;
+		rotate: var(--angle);
+		scale: 1 var(--reach-max);
+		background: linear-gradient(
+			to bottom,
+			var(--c),
+			color-mix(in srgb, var(--c) 45%, transparent) 30%,
+			transparent 85%
+		);
+		/* Soft sides so the beam reads as light rather than a band. */
+		mask-image: linear-gradient(to right, transparent, #000 50%, transparent);
+		opacity: var(--ray-opacity);
+		animation:
+			ray-wave var(--wave) ease-in-out var(--wave-delay) infinite,
+			ray-reach var(--reach-duration) ease-in-out var(--reach-delay) infinite alternate;
+	}
+
+	:global(.dark) .ray {
+		mix-blend-mode: plus-lighter;
+	}
+
+	/* A curtain being brushed: every beam swings and drifts, one after the other. */
+	@keyframes ray-wave {
+		0%,
+		100% {
+			rotate: calc(var(--angle) - 3deg);
+			translate: -1.25rem 0;
+		}
+
+		50% {
+			rotate: calc(var(--angle) + 3deg);
+			translate: 1.25rem 0;
+		}
+	}
+
+	/* Beams grow and shrink on their own clock, so they rarely all reach the bottom. */
+	@keyframes ray-reach {
+		from {
+			scale: 1 var(--reach-min);
+			opacity: calc(var(--ray-opacity) * 0.45);
+		}
+
+		to {
+			scale: 1 var(--reach-max);
+			opacity: var(--ray-opacity);
+		}
+	}
+
+	@keyframes rays-in {
+		from {
+			opacity: 0;
+		}
+	}
+
+	@media (width < 40rem) {
+		.ray {
+			width: calc(var(--w) * 0.6);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.rays,
+		.ray {
+			animation: none;
+		}
+	}
+</style>

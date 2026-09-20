@@ -1,0 +1,44 @@
+---
+const arrow =
+	'flex size-8 cursor-pointer items-center justify-center rounded-lg border border-line bg-field text-muted transition-colors hover:border-line-strong hover:text-ink disabled:pointer-events-none disabled:opacity-40'
+---
+
+<nav data-pagination aria-label="Pagination" class="invisible flex items-center gap-1">
+	<button type="button" data-page-first aria-label="Go to the first page" class={`mr-1 ${arrow}`}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="16"
+			height="16"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+		>
+			<path d="M11 7l-5 5l5 5"></path>
+			<path d="M17 7l-5 5l5 5"></path>
+		</svg>
+	</button>
+
+	<ul data-pages class="flex gap-1"></ul>
+
+	<button type="button" data-page-last aria-label="Go to the last page" class={`ml-1 ${arrow}`}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="16"
+			height="16"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+		>
+			<path d="M7 7l5 5l-5 5"></path>
+			<path d="M13 7l5 5l-5 5"></path>
+		</svg>
+	</button>
+</nav>

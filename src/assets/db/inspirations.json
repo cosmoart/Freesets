@@ -1,0 +1,392 @@
+[
+	{
+		"id": 1,
+		"order": 80,
+		"name": "Curated Design",
+		"img": "https://cdn.freesets.dev/inspirations/curated-design.webp",
+		"link": "https://www.curated.design"
+	},
+	{
+		"id": 2,
+		"order": 98,
+		"name": "Godly",
+		"img": "https://cdn.freesets.dev/inspirations/godly.webp",
+		"link": "https://godly.website"
+	},
+	{
+		"id": 3,
+		"order": 78,
+		"name": "Laand-book",
+		"img": "https://cdn.freesets.dev/inspirations/land-book.webp",
+		"link": "https://land-book.com",
+		"license": "Freemium",
+		"licenseLink": "https://land-book.com/pro"
+	},
+	{
+		"id": 4,
+		"order": 90,
+		"name": "BentoGrids",
+		"img": "https://cdn.freesets.dev/inspirations/bentogrids.webp",
+		"link": "https://bentogrids.com"
+	},
+	{
+		"id": 5,
+		"order": 80,
+		"name": "Darkmode Design",
+		"img": "https://cdn.freesets.dev/inspirations/darkmodedesign.webp",
+		"link": "https://www.darkmodedesign.com"
+	},
+	{
+		"id": 6,
+		"order": 80,
+		"name": "Dark Design",
+		"img": "https://cdn.freesets.dev/inspirations/darkdesign.webp",
+		"link": "https://www.dark.design"
+	},
+	{
+		"id": 7,
+		"order": 78,
+		"name": "Landing Love",
+		"img": "https://cdn.freesets.dev/inspirations/landing-love.webp",
+		"link": "https://www.landing.love"
+	},
+	{
+		"id": 8,
+		"order": 76,
+		"name": "Minimal Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706407304/freesets/inspirations/cindmoknr2lysvna4iwj.webp",
+		"link": "https://minimal.gallery"
+	},
+	{
+		"id": 9,
+		"order": 73,
+		"name": "MaxiBestOf",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381293/freesets/inspirations/ndgtbollo4dhqqt3kowy.webp",
+		"link": "https://maxibestof.one"
+	},
+	{
+		"id": 10,
+		"order": 70,
+		"name": "Pinterest",
+		"img": "https://cdn.freesets.dev/inspirations/pinterest.webp",
+		"link": "https://pinterest.com/"
+	},
+	{
+		"id": 11,
+		"order": 70,
+		"name": "Landing Gallery",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381074/freesets/inspirations/o8kszgfesntegltgoxwf.webp",
+		"link": "https://www.landing.gallery"
+	},
+	{
+		"id": 12,
+		"order": 30,
+		"name": "Pattern Collection",
+		"link": "https://wpshout.com/pattern-collection/",
+		"img": "https://cdn.freesets.dev/inspirations/pattern-collection.webp",
+		"tags": [
+			"Patterns"
+		]
+	},
+	{
+		"id": 13,
+		"order": 60,
+		"name": "Dribbble",
+		"img": "https://cdn.freesets.dev/inspirations/dribbble.webp",
+		"link": "https://dribbble.com/"
+	},
+	{
+		"id": 14,
+		"order": 60,
+		"name": "Behance",
+		"img": "https://cdn.freesets.dev/inspirations/behance.webp",
+		"link": "https://www.behance.net/"
+	},
+	{
+		"id": 15,
+		"order": 40,
+		"name": "a-fresh",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706407151/freesets/inspirations/qkca9a1zqyzcs2c6vaeo.webp",
+		"link": "https://a-fresh.website"
+	},
+	{
+		"id": 16,
+		"order": 22,
+		"name": "Layers",
+		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707067044/freesets/inspirations/zfqj3ezli1xkq5bkpoep.webp",
+		"link": "https://layers.to/"
+	},
+	{
+		"id": 17,
+		"order": 20,
+		"name": "Three.js",
+		"img": "https://cdn.freesets.dev/inspirations/threejs.webp",
+		"link": "https://threejs.org",
+		"tags": ["3D"]
+	},
+	{
+		"id": 18,
+		"order": 75,
+		"name": "Awwwards",
+		"img": "https://cdn.freesets.dev/inspirations/awwwards.webp",
+		"link": "https://www.awwwards.com/websites/"
+	},
+	{
+		"id": 19,
+		"order": 19,
+		"name": "Sass Landing Page",
+		"img": "https://cdn.freesets.dev/inspirations/saaslandingpage.webp",
+		"link": "https://saaslandingpage.com"
+	},
+	{
+		"id": 20,
+		"order": 55,
+		"name": "Navbar Gallery",
+		"img": "https://cdn.freesets.dev/inspirations/navbargallery.webp",
+		"link": "https://www.navbar.gallery",
+		"tags": ["Navbars"]
+	},
+	{
+		"id": 21,
+		"order": 87,
+		"name": "Unsection",
+		"img": "https://cdn.freesets.dev/inspirations/unsection.webp",
+		"link": "https://www.unsection.com"
+	},
+	{
+		"id": 22,
+		"order": 57,
+		"name": "404s",
+		"img": "https://cdn.freesets.dev/inspirations/404s.webp",
+		"link": "https://www.404s.design/",
+		"tags": ["404"]
+	},
+	{
+		"id": 23,
+		"order": 80,
+		"name": "HUDS+GUIS",
+		"img": "https://cdn.freesets.dev/inspirations/hudsandguis.webp",
+		"link": "https://www.hudsandguis.com"
+	},
+	{
+		"id": 24,
+		"order": 4,
+		"name": "Design Vault",
+		"img": "https://cdn.freesets.dev/inspirations/designvault.webp",
+		"link": "https://designvault.io/"
+	},
+	{
+		"id": 25,
+		"order": 30,
+		"name": "lookup.design",
+		"img": "https://cdn.freesets.dev/inspirations/lookupdesign.webp",
+		"link": "https://lookup.design/"
+	},
+	{
+		"id": 26,
+		"order": 38,
+		"name": "CallToInspiration",
+		"img": "https://cdn.freesets.dev/inspirations/calltoinspiration.webp",
+		"link": "https://calltoinspiration.com/"
+	},
+	{
+		"id": 27,
+		"order": 86,
+		"name": "Design Spells",
+		"img": "https://cdn.freesets.dev/inspirations/designspells.webp",
+		"link": "https://www.designspells.com/"
+	},
+	{
+		"id": 28,
+		"order": 75,
+		"name": "Httpster",
+		"img": "https://cdn.freesets.dev/inspirations/httpster.webp",
+		"link": "https://httpster.net/"
+	},
+	{
+		"id": 29,
+		"order": 20,
+		"name": "OGimage.gallery",
+		"img": "https://cdn.freesets.dev/inspirations/ogimage.webp",
+		"link": "https://www.ogimage.gallery/"
+	},
+	{
+		"id": 30,
+		"order": 28,
+		"name": "Siteinspire",
+		"img": "https://cdn.freesets.dev/inspirations/siteinspire.webp",
+		"link": "https://www.siteinspire.com/"
+	},
+	{
+		"id": 31,
+		"order": 49,
+		"name": "ArchDaily",
+		"img": "https://cdn.freesets.dev/inspirations/archdaily.webp",
+		"link": "https://www.archdaily.com/",
+		"tags": ["Architecture"]
+	},
+	{
+		"id": 32,
+		"order": 32,
+		"name": "Site of Sites",
+		"img": "https://cdn.freesets.dev/inspirations/siteofsites.webp",
+		"link": "https://www.siteofsites.co/"
+	},
+	{
+		"id": 33,
+		"order": 45,
+		"name": "LogoFav",
+		"img": "https://cdn.freesets.dev/inspirations/logofav.webp",
+		"link": "https://www.logofav.com/",
+		"tags": ["Logos"]
+	},
+	{
+		"id": 34,
+		"order": 30,
+		"name": "Dead Simple Sites",
+		"img": "https://cdn.freesets.dev/inspirations/deadsimplesites.webp",
+		"link": "https://deadsimplesites.com/"
+	},
+	{
+		"id": 35,
+		"order": 85,
+		"name": "Wall of Portfolios",
+		"img": "https://cdn.freesets.dev/inspirations/wallofportfolios.webp",
+		"link": "https://www.wallofportfolios.in/"
+	},
+	{
+		"id": 36,
+		"order": 52,
+		"name": "Footer",
+		"img": "https://cdn.freesets.dev/inspirations/footer.webp",
+		"link": "https://www.footer.design/",
+		"tags": ["Footers"]
+	},
+	{
+		"id": 37,
+		"order": 20,
+		"name": "Collect UI",
+		"link": "https://collectui.com/",
+		"img": "https://cdn.freesets.dev/inspirations/collect-ui.webp"
+	},
+	{
+		"id": 38,
+		"order": 22,
+		"name": "HOVERSTAT.ES",
+		"link": "https://hoverstat.es/",
+		"img": "https://cdn.freesets.dev/inspirations/hoverstates.webp"
+	},
+	{
+		"id": 39,
+		"order": 61,
+		"name": "Design Everywhere",
+		"img": "https://cdn.freesets.dev/inspirations/designeverywhere.webp",
+		"link": "https://designeverywhere.co/",
+		"tags": ["Products"]
+	},
+	{
+		"id": 40,
+		"order": 78,
+		"name": "Browsing Mode",
+		"img": "https://cdn.freesets.dev/inspirations/browsingmode.webp",
+		"link": "https://browsingmode.com/"
+	},
+	{
+		"id": 41,
+		"order": 45,
+		"name": "60fps",
+		"link": "https://60fps.design/",
+		"img": "https://cdn.freesets.dev/inspirations/60fps.webp",
+		"tags": ["Apps", "Animations"]
+	},
+	{
+		"id": 42,
+		"order": 85,
+		"name": "Lapa Ninja",
+		"link": "https://www.lapa.ninja/",
+		"img": "https://cdn.freesets.dev/inspirations/lapa-ninja.webp",
+		"tags": ["OG", "Fonts"]
+	},
+	{
+		"id": 43,
+		"order": 64,
+		"name": "One Page Love",
+		"link": "https://onepagelove.com/",
+		"img": "https://cdn.freesets.dev/inspirations/onepagelove.webp"
+	},
+	{
+		"id": 44,
+		"order": 38,
+		"name": "3D Websites",
+		"link": "https://3dwebsites.design/",
+		"img": "https://cdn.freesets.dev/inspirations/3dwebsites.webp",
+		"tags": ["3D"]
+	},
+	{
+		"id": 45,
+		"order": 10,
+		"name": "Viewport UI",
+		"link": "https://viewport-ui.design/",
+		"img": "https://cdn.freesets.dev/inspirations/viewport-ui.webp"
+	},
+	{
+		"id": 46,
+		"order": 67,
+		"name": "Logo System",
+		"link": "https://logosystem.co/",
+		"img": "https://cdn.freesets.dev/inspirations/logosystem.webp",
+		"tags": ["Logos"]
+	},
+	{
+		"id": 47,
+		"order": 75,
+		"name": "Adfolio",
+		"link": "https://www.adfolio.design/",
+		"img": "https://cdn.freesets.dev/inspirations/adfolio.webp",
+		"tags": ["Ads"]
+	},
+	{
+		"id": 48,
+		"order": 78,
+		"name": "A1",
+		"link": "https://www.a1.gallery/",
+		"img": "https://cdn.freesets.dev/inspirations/a1gallery.webp"
+	},
+	{
+		"id": 49,
+		"order": 28,
+		"name": "Daily Delights",
+		"link": "https://delights.design",
+		"img": "https://cdn.freesets.dev/inspirations/delights.webp"
+	},
+	{
+		"id": 50,
+		"order": 48,
+		"name": "CTA.gallery",
+		"link": "https://www.cta.gallery/",
+		"img": "https://cdn.freesets.dev/inspirations/ctagallery.webp"
+	},
+	{
+		"id": 51,
+		"order": 78,
+		"name": "Supahero",
+		"link": "https://www.supahero.io/",
+		"img": "https://cdn.freesets.dev/inspirations/supahero.webp",
+		"tags": ["Hero sections"]
+	},
+	{
+		"id": 52,
+		"order": 29,
+		"name": "Websitevice",
+		"link": "https://websitevice.com/",
+		"img": "https://cdn.freesets.dev/inspirations/websitevice.webp"
+	},
+		{
+		"id": 53,
+		"order": 58,
+		"name": "UI.live",
+		"link": "https://ui.live/",
+		"img": "https://cdn.freesets.dev/inspirations/ui-live.avif",
+		"added": "2026-09-20"
+	}
+]

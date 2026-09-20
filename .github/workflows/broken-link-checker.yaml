@@ -3,7 +3,7 @@ name: Check broken links
 on:
   workflow_dispatch:
   schedule:
-    - cron: "00 18 */7 * *"
+    - cron: "00 18 1,15 * *"
 
 jobs:
   generate_md_file:
@@ -18,7 +18,7 @@ jobs:
           node-version: 'latest'
 
       - name: Generate md file and ignore list
-        run: node .github/generate.js
+        run: node .github/generate.cjs
 
       - name: Link Checker
         id: lychee
@@ -32,4 +32,4 @@ jobs:
         with:
           title: Link Checker Report
           content-filepath: ./lychee/out.md
-          labels: report, automated issue
+          labels: link-check

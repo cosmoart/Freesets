@@ -1,0 +1,315 @@
+---
+import categories from '@/assets/categories'
+
+const current = Astro.url.pathname.split('/')[1]
+const sticky = current !== '' && current !== '404'
+
+const icon = 'flex size-8.5 shrink-0 items-center justify-center rounded-full'
+const label = 'py-1 pe-3.5 text-[13.5px] font-medium whitespace-nowrap'
+---
+
+<nav
+	aria-label="Categories"
+	transition:name="categories"
+	data-sticky={sticky ? '' : undefined}
+	class:list={[
+		'category-bar z-40 -mx-4 mb-2 px-4 py-3 transition-[background-color,backdrop-filter] duration-200 data-stuck:bg-canvas/70 data-stuck:backdrop-blur-md',
+		sticky && 'sticky top-0'
+	]}>
+	<div class="relative">
+		<button
+			type="button"
+			data-scroll-prev
+			disabled
+			aria-label="Scroll categories left"
+			class="absolute top-1/2 left-0 z-10 flex size-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line bg-field text-muted transition-[opacity,color,border-color] hover:border-line-strong hover:text-ink disabled:pointer-events-none disabled:opacity-0">
+			<svg
+				viewBox="0 0 24 24"
+				width="16"
+				height="16"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg
+			>
+		</button>
+
+		<div class="categories-slider" data-categories-slider data-at-start data-at-end>
+			<ul class="flex w-max gap-2 py-0.5">
+				{
+					categories.map((category) => {
+						const active = category.nameID === current
+						const src = `/categories-icons/${category.nameID}.svg`
+
+						return (
+							<li>
+								<a
+									href={`/${category.nameID}`}
+									style={`--item-color: ${category.color}`}
+									data-current={active ? '' : undefined}
+									aria-current={active ? 'page' : undefined}
+									title={active ? 'Back to top' : undefined}
+									draggable="false"
+									class:list={[
+										'relative flex items-center gap-1.5 rounded-full bg-field text-soft inset-ring-2 inset-ring-line transition-colors',
+										!active && 'hover:text-ink hover:inset-ring-line-strong'
+									]}>
+									<span class:list={[icon, 'bg-(--item-color)']}>
+										<img
+											src={src}
+											alt=""
+											width="20"
+											height="20"
+											draggable="false"
+											class="w-5 invert"
+										/>
+									</span>
+									<span class={label}>{category.name}</span>
+
+									{active && (
+										<span
+											aria-hidden="true"
+											class="category-fill absolute inset-0 flex items-center gap-1.5 rounded-full bg-(--item-color) text-white">
+											<span class={icon}>
+												<img
+													src={src}
+													alt=""
+													width="20"
+													height="20"
+													draggable="false"
+													class="w-5 invert"
+												/>
+											</span>
+											<span class={label}>{category.name}</span>
+										</span>
+									)}
+								</a>
+							</li>
+						)
+					})
+				}
+			</ul>
+		</div>
+
+		<button
+			type="button"
+			data-scroll-next
+			disabled
+			aria-label="Scroll categories right"
+			class="absolute top-1/2 right-0 z-10 flex size-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line bg-field text-muted transition-[opacity,color,border-color] hover:border-line-strong hover:text-ink disabled:pointer-events-none disabled:opacity-0">
+			<svg
+				viewBox="0 0 24 24"
+				width="16"
+				height="16"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg
+			>
+		</button>
+	</div>
+</nav>
+
+<style>
+	.categories-slider {
+		--clear: 2.5rem;
+		--fade: 1.5rem;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		scrollbar-width: none;
+		cursor: grab;
+		-webkit-mask-image: linear-gradient(
+			to right,
+			transparent var(--clear-start, var(--clear)),
+			#000 calc(var(--clear-start, var(--clear)) + var(--fade-start, var(--fade))),
+			#000 calc(100% - var(--clear-end, var(--clear)) - var(--fade-end, var(--fade))),
+			transparent calc(100% - var(--clear-end, var(--clear)))
+		);
+		mask-image: linear-gradient(
+			to right,
+			transparent var(--clear-start, var(--clear)),
+			#000 calc(var(--clear-start, var(--clear)) + var(--fade-start, var(--fade))),
+			#000 calc(100% - var(--clear-end, var(--clear)) - var(--fade-end, var(--fade))),
+			transparent calc(100% - var(--clear-end, var(--clear)))
+		);
+		transition: mask-image 200ms ease;
+	}
+
+	.categories-slider::-webkit-scrollbar {
+		display: none;
+	}
+
+	.categories-slider[data-at-start] {
+		--clear-start: 0px;
+		--fade-start: 0px;
+	}
+
+	.categories-slider[data-at-end] {
+		--clear-end: 0px;
+		--fade-end: 0px;
+	}
+
+	.categories-slider[data-dragging] {
+		cursor: grabbing;
+		user-select: none;
+	}
+
+	.categories-slider[data-dragging] a {
+		pointer-events: none;
+	}
+
+	.category-fill {
+		clip-path: inset(0 round 9999px);
+		animation: category-fill 200ms cubic-bezier(0.65, 0, 0.35, 1) 60ms both;
+	}
+
+	@keyframes category-fill {
+		from {
+			clip-path: inset(0 calc(100% - 2.125rem) 0 0 round 9999px);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.category-fill {
+			animation: none;
+		}
+	}
+</style>
+
+<script>
+	const DRAG_THRESHOLD = 5
+
+	function setup() {
+		const slider = document.querySelector<HTMLElement>('[data-categories-slider]')
+		if (!slider) return
+
+		const prev = document.querySelector<HTMLButtonElement>('[data-scroll-prev]')!
+		const next = document.querySelector<HTMLButtonElement>('[data-scroll-next]')!
+
+		const updateFades = () => {
+			const max = slider.scrollWidth - slider.clientWidth
+			const atStart = slider.scrollLeft <= 1
+			const atEnd = slider.scrollLeft >= max - 1
+
+			slider.toggleAttribute('data-at-start', atStart)
+			slider.toggleAttribute('data-at-end', atEnd)
+			prev.disabled = atStart
+			next.disabled = atEnd
+		}
+
+		const step = (direction: number) => {
+			slider.scrollBy({ left: direction * slider.clientWidth * 0.8, behavior: 'smooth' })
+		}
+
+		prev.addEventListener('click', () => step(-1))
+		next.addEventListener('click', () => step(1))
+
+		slider.addEventListener('scroll', updateFades, { passive: true })
+
+		const controller = new AbortController()
+		window.addEventListener('resize', updateFades, { signal: controller.signal })
+		document.addEventListener('astro:before-swap', () => controller.abort(), { once: true })
+
+		const bar = slider.closest('nav')!
+
+		const updateStuck = () => {
+			if (!bar.hasAttribute('data-sticky')) return
+
+			bar.toggleAttribute(
+				'data-stuck',
+				window.scrollY > 0 && bar.getBoundingClientRect().top <= 0
+			)
+		}
+
+		window.addEventListener('scroll', updateStuck, { passive: true, signal: controller.signal })
+		updateStuck()
+
+		const active = slider.querySelector<HTMLElement>('a[data-current]')
+
+		if (active) {
+			const item = active.getBoundingClientRect()
+			const box = slider.getBoundingClientRect()
+			const hidden = item.left < box.left || item.right > box.right
+
+			if (hidden) slider.scrollLeft += item.left - box.left - (box.width - item.width) / 2
+		}
+
+		updateFades()
+
+		let pointerId: number | null = null
+		let startX = 0
+		let startScroll = 0
+		let dragged = false
+
+		slider.addEventListener('pointerdown', (event) => {
+			if (event.pointerType === 'touch' || event.button !== 0) return
+
+			pointerId = event.pointerId
+			startX = event.clientX
+			startScroll = slider.scrollLeft
+			dragged = false
+		})
+
+		slider.addEventListener('pointermove', (event) => {
+			if (event.pointerId !== pointerId) return
+
+			const distance = event.clientX - startX
+
+			if (!dragged) {
+				if (Math.abs(distance) < DRAG_THRESHOLD) return
+
+				dragged = true
+				slider.toggleAttribute('data-dragging', true)
+				slider.setPointerCapture(pointerId)
+			}
+
+			slider.scrollLeft = startScroll - distance
+		})
+
+		const stop = (event: PointerEvent) => {
+			if (event.pointerId !== pointerId) return
+
+			if (dragged) slider.releasePointerCapture(pointerId)
+			pointerId = null
+			slider.toggleAttribute('data-dragging', false)
+		}
+
+		slider.addEventListener('pointerup', stop)
+		slider.addEventListener('pointercancel', stop)
+
+		slider.addEventListener('click', (event) => {
+			if (dragged) {
+				event.preventDefault()
+				return
+			}
+
+			if ((event.target as HTMLElement).closest('a[data-current]')) {
+				event.preventDefault()
+				window.scrollTo({ top: 0, behavior: 'smooth' })
+				return
+			}
+
+			if (window.scrollY > 0) window.scrollTo({ top: 0, behavior: 'instant' })
+		})
+
+		slider.addEventListener('dragstart', (event) => event.preventDefault())
+	}
+
+	let savedScroll: number | null = null
+
+	document.addEventListener('astro:before-swap', () => {
+		const slider = document.querySelector<HTMLElement>('[data-categories-slider]')
+		if (slider) savedScroll = slider.scrollLeft
+	})
+
+	document.addEventListener('astro:after-swap', () => {
+		const slider = document.querySelector<HTMLElement>('[data-categories-slider]')
+		if (slider && savedScroll !== null) slider.scrollLeft = savedScroll
+	})
+
+	document.addEventListener('astro:page-load', setup)
+</script>
