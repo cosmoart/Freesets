@@ -1,0 +1,153 @@
+---
+// Each blob drifts on its own clock so the glow never visibly loops.
+const blobs = [
+	{ color: '#2b6dff', x: 8, duration: 19, delay: -4 },
+	{ color: '#5345f7', x: 24, duration: 23, delay: -11 },
+	{ color: '#d41cf1', x: 40, duration: 17, delay: -7 },
+	{ color: '#ffaa1b', x: 58, duration: 21, delay: -15 },
+	{ color: '#21c95f', x: 74, duration: 25, delay: -2 },
+	{ color: '#14b8a6', x: 90, duration: 18, delay: -9 }
+]
+---
+
+<div aria-hidden="true" class="glow-blobs">
+	{
+		blobs.map((blob) => (
+			<span
+				style={`--blob: ${blob.color}; --x: ${blob.x}%; --duration: ${blob.duration}s; --delay: ${blob.delay}s`}
+			/>
+		))
+	}
+</div>
+
+<style>
+	.glow-blobs {
+		--blob-opacity: 0.22;
+		/* Blob size, blur and drift distance shrink together on smaller screens. */
+		--blob-w: 36rem;
+		--blob-h: 24rem;
+		--blob-blur: 120px;
+		--drift: 1;
+		--blob-top: -5rem;
+		position: absolute;
+		inset-inline: 0;
+		top: 0;
+		/* Anchored to the top of the page, so a taller wrapped navbar never leaves a gap above it. */
+		height: 27rem;
+		overflow: hidden;
+		pointer-events: none;
+		-webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
+		mask-image: linear-gradient(to bottom, #000 35%, transparent);
+		animation: glow-in 0.5s ease-out both;
+	}
+
+	:global(.dark) .glow-blobs {
+		--blob-opacity: 0.32;
+	}
+
+	.glow-blobs > span {
+		position: absolute;
+		top: var(--blob-top);
+		left: var(--x);
+		width: var(--blob-w);
+		height: var(--blob-h);
+		translate: -50% 0;
+		border-radius: 9999px;
+		background: var(--blob);
+		opacity: var(--blob-opacity);
+		filter: blur(var(--blob-blur));
+		will-change: translate, scale;
+		animation: glow-drift var(--duration) ease-in-out var(--delay) infinite alternate;
+	}
+
+	/* Tablets: smaller blobs so each color keeps its own patch instead of blending into one wash. */
+	@media (width < 64rem) {
+		.glow-blobs {
+			--blob-w: 22rem;
+			--blob-h: 18rem;
+			--blob-blur: 80px;
+			--drift: 0.6;
+		}
+	}
+
+	/* Phones: six colors in ~24rem turn muddy, so keep four, spread evenly, and a bit brighter. */
+	@media (width < 40rem) {
+		.glow-blobs {
+			--blob-w: 20rem;
+			--blob-h: 24rem;
+			--blob-blur: 72px;
+			--drift: 0.35;
+			--blob-top: -3rem;
+			height: 38rem;
+			-webkit-mask-image: linear-gradient(to bottom, #000 50%, transparent);
+			mask-image: linear-gradient(to bottom, #000 50%, transparent);
+		}
+
+		.glow-blobs > span {
+			opacity: calc(var(--blob-opacity) * 1.2);
+		}
+
+		.glow-blobs > span:nth-child(2),
+		.glow-blobs > span:nth-child(5) {
+			display: none;
+		}
+
+		.glow-blobs > span:nth-child(1) {
+			left: 12%;
+		}
+
+		.glow-blobs > span:nth-child(3) {
+			left: 38%;
+		}
+
+		.glow-blobs > span:nth-child(4) {
+			left: 63%;
+		}
+
+		.glow-blobs > span:nth-child(6) {
+			left: 88%;
+		}
+	}
+
+	/* A slow wander: each blob sways sideways, bobs and breathes. */
+	@keyframes glow-drift {
+		0% {
+			translate: -50% 0;
+			scale: 1;
+		}
+
+		33% {
+			translate: calc(-50% + 6rem * var(--drift)) calc(2.5rem * var(--drift));
+			scale: 1.15 0.9;
+		}
+
+		66% {
+			translate: calc(-50% - 4rem * var(--drift)) calc(-1.5rem * var(--drift));
+			scale: 0.9 1.1;
+		}
+
+		100% {
+			translate: calc(-50% + 3rem * var(--drift)) calc(1rem * var(--drift));
+			scale: 1.05;
+		}
+	}
+
+	@keyframes glow-in {
+		from {
+			opacity: 0.6;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.glow-blobs,
+		.glow-blobs > span {
+			animation: none;
+		}
+	}
+
+	@media (prefers-reduced-transparency: reduce) {
+		.glow-blobs {
+			display: none;
+		}
+	}
+</style>

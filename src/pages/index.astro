@@ -3,53 +3,67 @@ import Layout from '@/layouts/Layout.astro'
 import categories from '@/assets/categories'
 import RecentlyAdded from '@/components/RecentlyAdded.astro'
 import CategoryGrid from '@/components/CategoryGrid.astro'
+import GlowBlobs from '@/components/GlowBlobs.astro'
+// import HeroRays from '@/components/HeroRays.astro'
 
 const description =
-	'Freesets is a vast collection of the best free resources and tools for developers and artists, such as icons, illustrations, photos, videos, blogs, fonts, colors, etc.'
+	'Hand-picked free resources for developers and designers: icons, illustrations, photos, fonts, colors, UI components and tools, all in one searchable library.'
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
+// Shorter line for the hero; the full description above stays in the meta tags.
+const tagline =
+	'Hand-picked free icons, illustrations, photos, fonts, UI components and tools for developers and designers.'
+const site = Astro.site!.href
 
-const heights = [72, 47, 87, 36, 63, 100, 44, 69, 53, 83, 59, 39, 75, 51]
-const middle = (categories.length - 1) / 2
-const bars = categories.map((category, index) => ({
-	color: category.color,
-	height: heights[index % heights.length],
-	step: Math.abs(index - middle)
-}))
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'WebSite',
+			'@id': `${site}#website`,
+			url: site,
+			name: 'Freesets',
+			description,
+			inLanguage: 'en',
+			potentialAction: {
+				'@type': 'SearchAction',
+				target: { '@type': 'EntryPoint', urlTemplate: `${site}search?q={search_term_string}` },
+				'query-input': 'required name=search_term_string'
+			}
+		},
+		{
+			'@type': 'ItemList',
+			name: 'Freesets categories',
+			itemListElement: categories.map((category, index) => ({
+				'@type': 'ListItem',
+				position: index + 1,
+				name: category.headline,
+				url: new URL(`/${category.nameID}`, site).href
+			}))
+		}
+	]
+}
 ---
 
 <Layout
-	title="Freesets"
+	title="Freesets - Free resources for developers and designers"
 	description={description}
-	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home"
+	jsonLd={jsonLd}
+	image="https://cdn.freesets.dev/og/home.jpg"
 >
+	<!-- <HeroRays slot="backdrop" /> -->
+	<GlowBlobs slot="backdrop" />
+
 	<div class="flex grow flex-col pb-16">
 		<section
 			class="relative -mx-4 flex h-96 flex-col items-center justify-center overflow-hidden px-4 text-center sm:h-104"
 		>
-			<div aria-hidden="true" class="spectrum">
-				<div class="spectrum-glow">
-					{
-						bars.map((bar) => (
-							<span style={`--bar: ${bar.color}; --h: ${bar.height}%; --step: ${bar.step}`} />
-						))
-					}
-				</div>
-				<div class="spectrum-bars">
-					{
-						bars.map((bar) => (
-							<span style={`--bar: ${bar.color}; --h: ${bar.height}%; --step: ${bar.step}`} />
-						))
-					}
-				</div>
-			</div>
-
 			<div class="relative -mt-8 flex flex-col items-center gap-4">
 				<h1
 					class="hero-title -my-[0.14em] p-[0.14em] text-7xl leading-[1] font-bold tracking-[-0.045em] sm:text-[7.5rem]"
 				>
 					Freesets
 				</h1>
-				<p class="max-w-xl text-lg text-balance text-soft">{description}</p>
+				<p class="max-w-2xl text-lg text-balance text-soft">{tagline}</p>
 				<p
 					class="mt-1 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 eyebrow text-xs tracking-[0.08em]"
 				>
@@ -71,84 +85,6 @@ const bars = categories.map((category, index) => ({
 </Layout>
 
 <style>
-	.spectrum {
-		--glow-opacity: 0.28;
-		--bar-opacity: 0.5;
-		position: absolute;
-		inset: 0;
-		pointer-events: none;
-	}
-
-	:global(.dark) .spectrum {
-		--glow-opacity: 0.5;
-		--bar-opacity: 1;
-	}
-
-	.spectrum > div {
-		position: absolute;
-		display: flex;
-		align-items: flex-end;
-	}
-
-	.spectrum span {
-		flex: 1;
-		height: var(--h);
-		transform-origin: bottom;
-		animation: bar-rise 650ms cubic-bezier(0.2, 0, 0, 1) both;
-		animation-delay: calc(var(--step) * 55ms);
-	}
-
-	@keyframes bar-rise {
-		from {
-			scale: 1 0;
-			opacity: 0;
-		}
-	}
-
-	.spectrum-glow {
-		inset-inline: -10%;
-		bottom: -3.75rem;
-		height: 26rem;
-		gap: 1.625rem;
-		opacity: var(--glow-opacity);
-		filter: blur(46px);
-	}
-
-	.spectrum-glow span {
-		border-radius: 5rem;
-		background: var(--bar);
-	}
-
-	.spectrum-bars {
-		inset-inline: 2.5rem;
-		bottom: 0;
-		height: 18.75rem;
-		gap: 0.875rem;
-		opacity: var(--bar-opacity);
-	}
-
-	.spectrum-bars span {
-		border-radius: 0.75rem 0.75rem 0 0;
-		background: linear-gradient(
-			to bottom,
-			var(--bar),
-			color-mix(in srgb, var(--bar) 6%, transparent)
-		);
-		box-shadow: 0 0 46px color-mix(in srgb, var(--bar) 45%, transparent);
-	}
-
-	.spectrum::after {
-		content: '';
-		position: absolute;
-		inset: 0;
-		background: radial-gradient(
-			120% 80% at 50% 12%,
-			color-mix(in srgb, var(--canvas) 94%, transparent) 30%,
-			color-mix(in srgb, var(--canvas) 50%, transparent) 62%,
-			color-mix(in srgb, var(--canvas) 86%, transparent) 100%
-		);
-	}
-
 	.hero-title {
 		background: linear-gradient(to bottom, var(--ink) 30%, var(--muted));
 		-webkit-background-clip: text;
@@ -160,28 +96,5 @@ const bars = categories.map((category, index) => ({
 		box-shadow:
 			0 -18px 50px var(--slab-shadow),
 			inset 0 1px 0 var(--highlight);
-	}
-
-	@media (width < 40rem) {
-		.spectrum-bars {
-			inset-inline: 0.5rem;
-			gap: 0.375rem;
-		}
-
-		.spectrum-glow {
-			gap: 0.75rem;
-		}
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.spectrum span {
-			animation: none;
-		}
-	}
-
-	@media (prefers-reduced-transparency: reduce) {
-		.spectrum-glow {
-			display: none;
-		}
 	}
 </style>

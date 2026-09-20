@@ -1,42 +1,36 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import categories from '@/assets/categories'
+import GlowBlobs from '@/components/GlowBlobs.astro'
 
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
-
-const blobs = [
-	{ color: '#2b6dff', x: 8 },
-	{ color: '#5345f7', x: 24 },
-	{ color: '#d41cf1', x: 40 },
-	{ color: '#ffaa1b', x: 58 },
-	{ color: '#21c95f', x: 74 },
-	{ color: '#14b8a6', x: 90 }
-]
 ---
 
 <Layout
 	title="Page not found - Freesets"
 	description="The page you are looking for does not exist."
-	image="https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/home">
-	<section
-		class="relative flex grow flex-col items-center justify-center gap-5 py-20 pt-10 text-center">
-		<div aria-hidden="true" class="error-blobs">
-			{blobs.map((blob) => <span style={`--blob: ${blob.color}; --x: ${blob.x}%`} />)}
-		</div>
+	noindex
+	image="https://cdn.freesets.dev/og/home.jpg"
+>
+	<GlowBlobs slot="backdrop" />
 
+	<section
+		class="relative flex grow flex-col items-center justify-center gap-5 py-20 pt-10 text-center"
+	>
 		<p
-			class="relative rounded-full border border-line bg-field px-3 py-1 eyebrow tracking-[0.22em]">
+			class="text-md relative rounded-full border border-line bg-field px-3 py-1 eyebrow font-medium tracking-[0.22em]"
+		>
 			Error 404
 		</p>
 
 		<h1
-			class="relative -my-[0.14em] bg-linear-to-b from-ink from-30% to-muted bg-clip-text p-[0.14em] text-7xl leading-[1] font-bold tracking-tighter text-transparent sm:text-[8.25rem]">
+			class="relative -my-[0.14em] bg-linear-to-b from-ink from-30% to-muted bg-clip-text p-[0.14em] text-7xl leading-[1] font-bold tracking-tighter text-transparent sm:text-[8.25rem]"
+		>
 			Nothing here
 		</h1>
 
 		<p class="relative max-w-lg text-lg text-balance text-soft">
-			This page moved, or it never existed. The other {total} resources are still where you left
-			them.
+			This page moved, or it never existed. The other {total} resources are still where you left them.
 		</p>
 
 		<div class="relative mt-3 flex flex-wrap items-center justify-center gap-2.5">
@@ -49,7 +43,8 @@ const blobs = [
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					aria-hidden="true"
-					class="size-4 transition-transform duration-200 group-hover:-translate-x-1 group-focus-visible:-translate-x-1 motion-reduce:transition-none">
+					class="size-4 transition-transform duration-200 group-hover:-translate-x-1 group-focus-visible:-translate-x-1 motion-reduce:transition-none"
+				>
 					<path d="M19 12H5M11 6l-6 6 6 6"></path>
 				</svg>
 				Back to home
@@ -57,40 +52,3 @@ const blobs = [
 		</div>
 	</section>
 </Layout>
-
-<style>
-	.error-blobs {
-		--blob-opacity: 0.22;
-		position: absolute;
-		inset-inline: -1rem;
-		top: -13rem;
-		height: 32rem;
-		overflow: hidden;
-		pointer-events: none;
-		-webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
-		mask-image: linear-gradient(to bottom, #000 35%, transparent);
-	}
-
-	:global(.dark) .error-blobs {
-		--blob-opacity: 0.32;
-	}
-
-	.error-blobs > span {
-		position: absolute;
-		top: 0;
-		left: var(--x);
-		width: 36rem;
-		height: 24rem;
-		translate: -50% 0;
-		border-radius: 9999px;
-		background: var(--blob);
-		opacity: var(--blob-opacity);
-		filter: blur(120px);
-	}
-
-	@media (prefers-reduced-transparency: reduce) {
-		.error-blobs {
-			display: none;
-		}
-	}
-</style>

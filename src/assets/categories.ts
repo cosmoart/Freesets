@@ -21,6 +21,7 @@ const byOrder = (db: unknown[]): Asset[] =>
 const categories: Category[] = [
 	{
 		name: 'Icons',
+		headline: 'Free icon sets and icon libraries',
 		description: 'Open-source icon sets, single-file libraries and animated packs.',
 		color: '#2b6dff',
 		nameID: 'icons',
@@ -28,6 +29,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Illustrations',
+		headline: 'Free illustrations and vector packs',
 		description: 'Illustration packs, scenes and characters ready to drop into any project.',
 		color: '#20c928',
 		nameID: 'illustrations',
@@ -35,6 +37,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Photos',
+		headline: 'Free stock photos and public-domain images',
 		description: 'Royalty-free photo libraries and public-domain archives.',
 		color: '#d41cf1',
 		nameID: 'photos',
@@ -42,6 +45,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Directories',
+		headline: 'Directories of free design and dev resources',
 		description: 'Other collections and directories of free resources.',
 		color: '#14b8a6',
 		nameID: 'directories',
@@ -49,6 +53,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Videos',
+		headline: 'Free stock videos and motion backgrounds',
 		description: 'Stock footage, loops and motion backgrounds you can use for free.',
 		color: '#ef2350',
 		nameID: 'videos',
@@ -56,6 +61,7 @@ const categories: Category[] = [
 	},
 		{
 		name: 'Backgrounds',
+		headline: 'Free backgrounds, patterns and gradients',
 		description: 'Patterns, gradients, textures and generated backdrops.',
 		color: '#5345f7',
 		nameID: 'backgrounds',
@@ -63,6 +69,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Colors',
+		headline: 'Free color palette generators and tools',
 		description: 'Palette generators, color pickers and contrast checkers.',
 		color: '#ff36a2',
 		nameID: 'colors',
@@ -70,6 +77,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Fonts',
+		headline: 'Free fonts and typography tools',
 		description: 'Free font families, type foundries and pairing tools.',
 		color: '#ffaa1b',
 		nameID: 'fonts',
@@ -77,6 +85,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Inspirations',
+		headline: 'Web and UI design inspiration galleries',
 		description: 'Galleries of well-crafted websites and interface design.',
 		color: '#6366f1',
 		nameID: 'inspirations',
@@ -84,6 +93,7 @@ const categories: Category[] = [
 	},
 	{
 		name: 'Components',
+		headline: 'Free UI components and copy-paste blocks',
 		description: 'Copy-paste UI components and ready-made blocks.',
 		color: '#21c95f',
 		nameID: 'components',
@@ -91,6 +101,7 @@ const categories: Category[] = [
 	},
 		{
 		name: 'Tools',
+		headline: 'Free tools for designers and developers',
 		description: 'Utilities that speed up everyday design and development work.',
 		color: '#f97316',
 		nameID: 'tools',
@@ -98,6 +109,7 @@ const categories: Category[] = [
 	},
 		{
 		name: 'Blogs',
+		headline: 'Design and web development blogs',
 		description: 'Blogs, newsletters and publications worth following.',
 		color: '#00a1ff',
 		nameID: 'blogs',
@@ -105,6 +117,7 @@ const categories: Category[] = [
 	},
 		{
 		name: '3D',
+		headline: 'Free 3D models, materials and scenes',
 		description: 'Free 3D models, materials and render-ready scenes.',
 		color: '#8935ff',
 		nameID: '3d',
@@ -112,6 +125,7 @@ const categories: Category[] = [
 	},
 		{
 		name: 'Libraries',
+		headline: 'Open-source UI libraries and frameworks',
 		description: 'Open-source libraries and frameworks for building interfaces.',
 		color: '#ff006e',
 		nameID: 'libraries',

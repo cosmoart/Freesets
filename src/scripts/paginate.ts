@@ -1,4 +1,4 @@
-import { DEFAULT_PER_PAGE } from '@/scripts/view'
+import { DEFAULT_PER_PAGE, PER_PAGE_OPTIONS } from '@/scripts/view'
 
 // Phones get a shorter strip so the pagination fits on the same row as the page-size select.
 const compact = matchMedia('(width < 40rem)')
@@ -90,8 +90,14 @@ export function renderPages(
 		range.textContent = total === 0 ? '0 of 0' : `${start + 1}–${end} of ${total}`
 	}
 
-	// Keep the nav's box so toggling it doesn't shift the surrounding layout
-	nav.classList.toggle('invisible', totalPages <= 1)
+	// Below the smallest page size no setting can split these results, so the nav goes away for
+	// good. Above it, it only turns invisible, keeping its box so a page-size change that brings
+	// it back doesn't shift the surrounding layout.
+	// Set on the element because the bar's own `flex` class would win over `[hidden]`.
+	const splittable = total > PER_PAGE_OPTIONS[0]
+	const bar = nav.closest<HTMLElement>('[data-results-bar]') ?? nav
+	bar.style.display = splittable ? '' : 'none'
+	nav.classList.toggle('invisible', splittable && totalPages <= 1)
 
 	return current
 }

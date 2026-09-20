@@ -17,12 +17,49 @@ export const getStaticPaths = (() =>
 
 const { category } = Astro.props
 const recent = recentKeys()
+
+const count = category.assets.length
+const title = `${category.headline} - ${count} resources | Freesets`
+const description = `${category.description} Browse ${count} hand-picked free resources for developers and designers.`
+const url = new URL(`/${category.nameID}`, Astro.site).href
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'CollectionPage',
+			'@id': url,
+			url,
+			name: category.headline,
+			description,
+			isPartOf: { '@id': `${Astro.site!.href}#website` },
+			mainEntity: {
+				'@type': 'ItemList',
+				numberOfItems: count,
+				itemListElement: category.assets.map((asset, index) => ({
+					'@type': 'ListItem',
+					position: index + 1,
+					name: asset.name,
+					url: asset.link
+				}))
+			}
+		},
+		{
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Freesets', item: Astro.site!.href },
+				{ '@type': 'ListItem', position: 2, name: category.name, item: url }
+			]
+		}
+	]
+}
 ---
 
 <Layout
-	title={`${category.name} - Freesets`}
-	description={`Explore a collection of the best free ${category.name} resources/assets for your next project.`}
-	image={`https://res.cloudinary.com/cosmocloudinary/image/upload/f_auto,q_auto/v1/freesets/og/${category.nameID}`}
+	title={title}
+	description={description}
+	jsonLd={jsonLd}
+	image={`https://cdn.freesets.dev/og/${category.nameID}.jpg`}
 	themeColor={category.color}
 	favicon={`/${category.nameID}/favicon.svg`}
 >

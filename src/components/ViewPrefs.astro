@@ -1,0 +1,97 @@
+---
+// The stored view preferences (columns, page size, sort) used to be applied by the module scripts
+// of each control, which run after the page is painted, so the grid, the page-size select and the
+// sort tabs visibly jumped. This runs inline, right after the markup it touches, so the first
+// paint already shows the visitor's own settings. The controls then attach their listeners and
+// read the same values, finding nothing left to change.
+//
+// Keep the keys and defaults below in sync with @/scripts/view.
+---
+
+<script is:inline>
+	;(() => {
+		const PER_PAGE_OPTIONS = [10, 20, 40, 80, Number.MAX_SAFE_INTEGER]
+		const MIN_COLUMNS = 2
+		const MAX_COLUMNS = 6
+		const SORTS = ['popular', 'newest', 'name']
+
+		const read = (key, fallback, valid) => {
+			try {
+				const stored = localStorage.getItem(key)
+				const value = Number(stored)
+				return stored !== null && valid(value) ? value : fallback
+			} catch {
+				return fallback
+			}
+		}
+
+		const readSort = () => {
+			try {
+				const stored = localStorage.getItem('freesets:sort')
+				return SORTS.includes(stored) ? stored : 'popular'
+			} catch {
+				return 'popular'
+			}
+		}
+
+		const compare = {
+			popular: (a, b) => Number(b.dataset.order) - Number(a.dataset.order),
+			newest: (a, b) => Number(b.dataset.id) - Number(a.dataset.id),
+			name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '')
+		}
+
+		const apply = () => {
+			const columns = read(
+				'freesets:columns',
+				4,
+				(value) => value >= MIN_COLUMNS && value <= MAX_COLUMNS
+			)
+			const perPage = read('freesets:per-page', 40, (value) => PER_PAGE_OPTIONS.includes(value))
+			const sort = readSort()
+
+			const results = document.querySelector('[data-results]')
+			if (results) results.style.setProperty('--user-columns', String(columns))
+
+			const slider = document.querySelector('[data-columns]')
+			if (slider) {
+				slider.value = String(columns)
+				const progress = ((columns - MIN_COLUMNS) / (MAX_COLUMNS - MIN_COLUMNS)) * 100
+				slider.style.setProperty('--progress', `${progress}%`)
+			}
+
+			for (const step of document.querySelectorAll('[data-column-step]')) {
+				step.setAttribute('aria-pressed', String(Number(step.dataset.columnStep) === columns))
+			}
+
+			const select = document.querySelector('[data-per-page]')
+			if (select) select.value = String(perPage)
+
+			for (const button of document.querySelectorAll('[data-sort]')) {
+				button.setAttribute('aria-pressed', String(button.dataset.sort === sort))
+			}
+
+			// Category pages ship their cards in the markup, sorted by popularity and cut to the
+			// default page size, so both are redone here for anyone whose settings differ.
+			const items = [...document.querySelectorAll('[data-item]')]
+			if (!items.length) return
+
+			if (sort !== 'popular') {
+				items.sort(compare[sort])
+				results?.append(...items)
+			}
+
+			// A search in the URL decides which cards belong to the page, so paging waits for it.
+			const params = new URLSearchParams(location.search)
+			if (params.get('q')) return
+
+			const page = Number(params.get('page')) || 1
+			const start = (page - 1) * perPage
+			items.forEach((item, index) => {
+				item.hidden = index < start || index >= start + perPage
+			})
+		}
+
+		apply()
+		document.addEventListener('astro:after-swap', apply)
+	})()
+</script>

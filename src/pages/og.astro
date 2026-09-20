@@ -2,9 +2,26 @@
 import Logo from '@/components/Logo.astro'
 import categories from '@/assets/categories'
 
-// Open Graph image source: /og?category=icons renders that category's 1200x630 card, ready to
-// screenshot at a 1200x630 viewport. Every card is built here and the query picks which one shows.
+// Open Graph image source, ready to screenshot at a 1200x630 viewport. Every card is built here
+// and the query picks which one shows:
+//   /og                  homepage
+//   /og?page=search      search page
+//   /og?category=icons   a category
 const host = new URL(Astro.site!).host
+const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
+
+// Counts round down to a multiple of ten and read as "+550", so a card does not go stale every
+// time a resource is added. Under ten there is nothing to round to, so the exact number stays.
+const rounded = (n: number) => (n < 10 ? `${n}` : `+${Math.floor(n / 10) * 10}`)
+
+// Soft color pools for the homepage card, echoing the glow on the site. They sit along the bottom
+// edge so the logo and the title keep a flat dark backdrop behind them.
+const glows = [
+	{ color: '#2b6dff', x: 6, y: 104 },
+	{ color: '#d41cf1', x: 38, y: 112 },
+	{ color: '#ffaa1b', x: 68, y: 100 },
+	{ color: '#14b8a6', x: 96, y: 108 }
+]
 ---
 
 <!doctype html>
@@ -19,37 +36,105 @@ const host = new URL(Astro.site!).host
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Geist+Mono:wght@400;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;700&family=Geist+Mono:wght@400;600&display=swap"
 		/>
 	</head>
 	<body>
+		<section data-og="home" class="og og-home">
+			<div class="glows">
+				{
+					glows.map((glow) => (
+						<span style={`--c: ${glow.color}; --x: ${glow.x}%; --y: ${glow.y}%`} />
+					))
+				}
+			</div>
+
+			<div class="content home-content">
+				<Logo class="home-logo" />
+				<h1 class="home-title">Freesets</h1>
+				<p class="tagline">
+					Hand-picked free icons, illustrations, photos, fonts, UI components and tools for
+					developers and designers.
+				</p>
+
+				<div class="pills">
+					<span class="count">{rounded(total)} free resources</span>
+					<span class="url">{categories.length} categories</span>
+					<span class="url">{host}</span>
+				</div>
+			</div>
+		</section>
+
+		<section data-og="search" hidden style="--c: #5345f7" class="og">
+			<svg
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"
+				class="backdrop"
+			>
+				<circle cx="11" cy="11" r="7"></circle>
+				<path d="m20 20-3.5-3.5"></path>
+			</svg>
+
+			<div class="content">
+				<p class="brand">
+					<Logo mono />
+					Freesets
+				</p>
+
+				<div class="bottom">
+					<span class="tile">
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<circle cx="11" cy="11" r="7"></circle>
+							<path d="m20 20-3.5-3.5"></path>
+						</svg>
+					</span>
+
+					<h1>Search</h1>
+
+					<div class="pills">
+						<span class="count">{rounded(total)} free resources</span>
+						<span class="url">{host}/search</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		{
-			categories.map((category, index) => {
+			categories.map((category) => {
 				const icon = `/categories-icons/${category.nameID}.svg`
 
 				return (
-					<section
-						data-og={category.nameID}
-						hidden={index > 0}
-						style={`--c: ${category.color}`}
-						class="og">
+					<section data-og={category.nameID} hidden style={`--c: ${category.color}`} class="og">
 						<img src={icon} alt="" width="440" height="440" class="backdrop" />
 
 						<div class="content">
 							<p class="brand">
-								<Logo />
+								<Logo mono />
 								Freesets
 							</p>
 
 							<div class="bottom">
 								<span class="tile">
-									<img src={icon} alt="" width="40" height="40" />
+									<img src={icon} alt="" width="70" height="70" />
 								</span>
 
 								<h1>{category.name}</h1>
 
 								<div class="pills">
-									<span class="count">{category.assets.length} free resources</span>
+									<span class="count">{rounded(category.assets.length)} free resources</span>
 									<span class="url">
 										{host}/{category.nameID}
 									</span>
@@ -62,8 +147,10 @@ const host = new URL(Astro.site!).host
 		}
 
 		<script is:inline>
-			const wanted = new URLSearchParams(location.search).get('category')
+			const params = new URLSearchParams(location.search)
+			const wanted = params.get('category') ?? params.get('page') ?? 'home'
 			const cards = document.querySelectorAll('[data-og]')
+			// Anything unknown falls back to the homepage card, which comes first.
 			const match = [...cards].find((card) => card.dataset.og === wanted) ?? cards[0]
 
 			for (const card of cards) card.hidden = card !== match
@@ -95,7 +182,11 @@ const host = new URL(Astro.site!).host
 		background:
 			linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px) 0 0 / 60px 60px,
 			linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px) 0 0 / 60px 60px,
-			radial-gradient(circle at 8% 5%, color-mix(in oklab, var(--c) 80%, transparent), transparent 55%),
+			radial-gradient(
+				circle at 8% 5%,
+				color-mix(in oklab, var(--c) 80%, transparent),
+				transparent 55%
+			),
 			linear-gradient(
 				135deg,
 				color-mix(in oklab, var(--c) 70%, black) 0%,
@@ -134,15 +225,15 @@ const host = new URL(Astro.site!).host
 	.brand {
 		display: flex;
 		align-items: center;
-		gap: 10px;
-		font-size: 22px;
+		gap: 16px;
+		font-size: 36px;
 		font-weight: 700;
 		letter-spacing: -0.02em;
 	}
 
 	.brand svg {
-		width: 36px;
-		height: 36px;
+		width: 58px;
+		height: 58px;
 		flex-shrink: 0;
 	}
 
@@ -162,8 +253,8 @@ const host = new URL(Astro.site!).host
 	}
 
 	.tile img {
-		width: 40px;
-		height: 40px;
+		width: 60px;
+		height: 60px;
 	}
 
 	h1 {
@@ -198,5 +289,83 @@ const host = new URL(Astro.site!).host
 	.url {
 		border: 1px solid rgb(255 255 255 / 0.2);
 		background: rgb(0 0 0 / 0.25);
+	}
+
+	/* Inline icons (search) are already white strokes, so they skip the invert. */
+	.backdrop:is(svg) {
+		opacity: 0.16;
+	}
+
+	.tile svg {
+		width: 44px;
+		height: 44px;
+	}
+
+	/* Homepage: the dark site canvas with the multicolor glow along the top. */
+	.og-home {
+		background:
+			linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px) 0 0 / 60px 60px,
+			linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px) 0 0 / 60px 60px,
+			#0a0a0c;
+	}
+
+	.glows {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		overflow: hidden;
+	}
+
+	.glows span {
+		position: absolute;
+		top: var(--y);
+		left: var(--x);
+		width: 520px;
+		height: 340px;
+		translate: -50% -50%;
+		border-radius: 9999px;
+		background: var(--c);
+		opacity: 0.55;
+		filter: blur(110px);
+	}
+
+	.home-content {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.home-logo {
+		width: 140px;
+		height: 140px;
+		scale: 1.1;
+	}
+
+	.home-title {
+		margin-top: 1px;
+		/* background-clip: text crops to the line box, so the line box needs room for the overshoot
+		   of the round letters above and below the baseline. */
+		padding: 0 0.04em;
+		font-size: 150px;
+		line-height: 1.16;
+		letter-spacing: -0.045em;
+		background: linear-gradient(to bottom, #fff 30%, #a1a1aa);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+
+	.tagline {
+		max-width: 760px;
+		margin-top: 14px;
+		color: rgb(255 255 255 / 0.75);
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 1.35;
+		text-wrap: balance;
+	}
+
+	.home-content .pills {
+		margin-top: 36px;
 	}
 </style>

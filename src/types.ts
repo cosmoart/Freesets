@@ -14,6 +14,8 @@ export interface Asset {
 
 export interface Category {
 	name: string
+	/** Search-friendly phrase used in the page title, e.g. "Free icon sets and icon libraries". */
+	headline: string
 	description: string
 	color: string
 	nameID: string
