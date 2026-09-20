@@ -782,5 +782,16 @@
 		"license": "Freemium",
 		"tags": ["Alpine", "Tailwind", "Copy&Paste"],
 		"added": "2026-09-20"
+	},
+	{
+		"id": 87,
+		"order": 87,
+		"name": "Canvas UI",
+		"link": "https://canvasui.dev/",
+		"img": "https://cdn.freesets.dev/components/canvasui.avif",
+		"license": "MIT + Commons Clause",
+	"licenseDescription": "Use every component in any personal or commercial app or website, free forever. The only restriction is reselling or redistributing the components themselves, whether alone, in a bundle, or as a port.",
+		"tags": ["webgl", "3D", "Three.js"],
+		"added": "2026-09-20"
 	}
 ]

@@ -1,25 +1,65 @@
 [
 	{
 		"id": 1,
-		"order": 60,
-		"name": "Uwarp",
-		"img": "https://cdn.freesets.dev/inspirations/uwarp.webp",
-		"link": "https://www.uwarp.design/"
+		"order": 70,
+		"name": "TOOOLS.design",
+		"img": "https://cdn.freesets.dev/directories/toools.avif",
+		"link": "https://www.toools.design/"
 	},
 	{
 		"id": 2,
-		"order": 98,
-		"name": "Godly",
-		"img": "https://cdn.freesets.dev/inspirations/godly.webp",
-		"link": "https://godly.website"
+		"order": 10,
+		"name": "UI Goodies",
+		"img": "https://cdn.freesets.dev/directories/uigoodies.avif",
+		"link": "https://uigoodies.com/"
 	},
 	{
 		"id": 3,
+		"order": 68,
+		"name": "Dev Resources",
+		"img": "https://cdn.freesets.dev/directories/devresources.avif",
+		"link": "https://devresourc.es/"
+	},
+	{
+		"id": 4,
+		"order": 69,
+		"name": "Design Resources",
+		"img": "https://cdn.freesets.dev/directories/designresources.avif",
+		"link": "https://designresourc.es/"
+	},
+	{
+		"id": 5,
+		"order": 66,
+		"name": "Theme-UI",
+		"img": "https://cdn.freesets.dev/directories/themeui.avif",
+		"link": "https://themeui.net"
+	},
+	{
+		"id": 6,
+		"order": 13,
+		"name": "Onur Bookmarks",
+		"img": "https://cdn.freesets.dev/directories/onurbookmarks.avif",
+		"link": "https://onur.dev/bookmarks/apps-and-tools"
+	},
+	{
+		"id": 7,
 		"order": 96,
-		"name": "Land-book",
-		"img": "https://cdn.freesets.dev/inspirations/land-book.webp",
-		"link": "https://land-book.com",
-		"license": "Freemium",
-		"licenseLink": "https://land-book.com/pro"
+		"name": "Toolfolio",
+		"img": "https://cdn.freesets.dev/directories/toolfolio.avif",
+		"link": "https://toolfolio.com"
+	},
+	{
+		"id": 8,
+		"order": 58,
+		"name": "supatools",
+		"img": "https://cdn.freesets.dev/directories/supatools.avif",
+		"link": "https://supatools.dev/"
+	},
+	{
+		"id": 9,
+		"order": 49,
+		"name": "Uwarp",
+		"img": "https://cdn.freesets.dev/directories/uwarp.avif",
+		"link": "https://www.uwarp.design/"
 	}
 ]

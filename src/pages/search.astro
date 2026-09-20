@@ -18,6 +18,35 @@ const licenses = [
 	)
 ].sort((a, b) => a.localeCompare(b))
 
+const title = 'Search free design and development resources - Freesets'
+const description =
+	'Search every free icon set, illustration pack, stock photo, font, UI component and tool on Freesets. Filter by category and license.'
+const site = Astro.site!.href
+// Matches the canonical the layout emits, trailing slash included.
+const url = new URL(Astro.url.pathname, Astro.site).href
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'SearchResultsPage',
+			'@id': url,
+			url,
+			name: title,
+			description,
+			inLanguage: 'en',
+			isPartOf: { '@id': `${site}#website` }
+		},
+		{
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Freesets', item: site },
+				{ '@type': 'ListItem', position: 2, name: 'Search', item: url }
+			]
+		}
+	]
+}
+
 const sample: Asset = {
 	id: 0,
 	name: '',
@@ -30,8 +59,9 @@ const sample: Asset = {
 ---
 
 <Layout
-	title="Search free design and development resources - Freesets"
-	description="Search every free icon set, illustration pack, stock photo, font, UI component and tool on Freesets. Filter by category and license."
+	title={title}
+	description={description}
+	jsonLd={jsonLd}
 	image="https://cdn.freesets.dev/og/search.jpg"
 >
 	<section class="grow pb-10">

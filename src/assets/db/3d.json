@@ -283,5 +283,16 @@
 		"link": "https://www.eztree.dev",
 		"img": "https://cdn.freesets.dev/3d/eztree.webp",
 		"tags": ["Tree Generator"]
+	},
+	{
+		"id": 31,
+		"order": 67,
+		"name": "Browse Blockbench",
+		"link": "https://blockbenchworkshop.com/browse?status=free",
+		"img": "https://cdn.freesets.dev/3d/blockbench.avif",
+		"tags": ["Minecraft", "Models", "Low Poly"],
+		"license": "Multiple",
+		"added": "2026-09-20"
+
 	}
 ]

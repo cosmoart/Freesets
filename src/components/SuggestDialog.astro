@@ -62,7 +62,9 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 		<div class="flex min-h-0 flex-col gap-5 overflow-y-auto overscroll-contain p-6">
 			<div class="grid gap-4 sm:grid-cols-2">
 				<div>
-					<label for="suggest-name" class={label}>Name</label>
+					<label for="suggest-name" class={label}>
+						Name <span aria-hidden="true" class="text-ink">*</span>
+					</label>
 					<input
 						id="suggest-name"
 						name="name"
@@ -73,7 +75,9 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 				</div>
 
 				<div>
-					<label for="suggest-link" class={label}>URL</label>
+					<label for="suggest-link" class={label}>
+						URL <span aria-hidden="true" class="text-ink">*</span>
+					</label>
 					<input
 						id="suggest-link"
 						name="link"
@@ -86,7 +90,7 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 			</div>
 
 			<fieldset>
-				<legend class={label}>Category</legend>
+				<legend class={label}>Category <span aria-hidden="true" class="text-ink">*</span></legend>
 				<div class="flex flex-wrap gap-2">
 					{
 						categories.map((category, index) => (
@@ -100,7 +104,7 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 								/>
 								<span
 									style={`--item-color: ${category.color}`}
-									class="suggest-pill relative flex items-center gap-1.5 rounded-full bg-field text-[13px] text-soft inset-ring-2 inset-ring-line transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-(--item-color)/50 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-card hover:text-ink hover:inset-ring-line-strong">
+									class="suggest-pill relative flex items-center gap-1.5 rounded-full bg-field text-[13px] text-muted inset-ring-2 inset-ring-line transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-(--item-color)/50 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-card hover:text-ink hover:inset-ring-line-strong">
 									<span class="flex size-6.5 shrink-0 items-center justify-center rounded-full bg-(--item-color)">
 										<img
 											src={`/categories-icons/${category.nameID}.svg`}
@@ -229,8 +233,20 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 		backdrop-filter: blur(4px);
 	}
 
+	/*
+	 * Clipped to its leading circle, this layer is the only colour an unpicked category shows — so
+	 * greying it out is what makes the choice stand out from the options around it.
+	 */
 	.suggest-fill {
 		clip-path: inset(0 calc(100% - 1.625rem) 0 0 round 9999px);
+		opacity: 0.45;
+	}
+
+	.suggest-pill:hover .suggest-fill,
+	input:checked + .suggest-pill .suggest-fill,
+	input:focus-visible + .suggest-pill .suggest-fill {
+		filter: none;
+		opacity: 1;
 	}
 
 	input:checked + .suggest-pill .suggest-fill {
@@ -239,7 +255,10 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 
 	@media (prefers-reduced-motion: no-preference) {
 		.suggest-fill {
-			transition: clip-path 300ms cubic-bezier(0.65, 0, 0.35, 1);
+			transition:
+				clip-path 300ms cubic-bezier(0.65, 0, 0.35, 1),
+				filter 200ms ease,
+				opacity 200ms ease;
 		}
 
 		dialog,
@@ -355,7 +374,7 @@ ${notes}`
 			.join('\n')
 
 		const params = new URLSearchParams({
-			labels: 'suggest',
+			labels: 'resource',
 			title: `Add "${name}" to ${category}`,
 			body
 		})

@@ -5,6 +5,8 @@ import NavBar from '@/components/NavBar.astro'
 import Footer from '@/components/Footer.astro'
 import ViewPrefs from '@/components/ViewPrefs.astro'
 
+const DEFAULT_FAVICON = '/favicon.svg'
+
 interface Props {
 	title: string
 	description: string
@@ -22,7 +24,7 @@ const {
 	description,
 	image,
 	themeColor,
-	favicon = '/favicon.svg',
+	favicon = DEFAULT_FAVICON,
 	noindex = false,
 	jsonLd
 } = Astro.props
@@ -45,6 +47,19 @@ const structuredData = jsonLd && JSON.stringify(jsonLd).replaceAll('<', '\\u003c
 			content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}
 		/>
 		<link rel="icon" type="image/svg+xml" href={favicon} />
+		{
+			/* Google Search ignores SVG favicons, and the category pages tint their own SVG, so the
+			   raster fallbacks are only declared where they would not override that tint. */
+			favicon === DEFAULT_FAVICON && (
+				<>
+					<link rel="icon" href="/favicon.ico" sizes="any" />
+					<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+					<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+				</>
+			)
+		}
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
 		{!noindex && <link rel="canonical" href={canonical} />}
 		<link rel="sitemap" href="/sitemap.xml" />
 		{themeColor && <meta name="theme-color" content={themeColor} />}

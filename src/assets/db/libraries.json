@@ -489,5 +489,16 @@
 		"link": "https://mapcn.vercel.app/",
 		"img": "https://cdn.freesets.dev/libraries/mapcn.webp",
 		"tags": ["React", "Tailwind", "MapLibre"]
+	},
+	{
+		"id": 56,
+		"order": 89,
+		"name": "Cuelume",
+		"link": "https://cuelume-site.pages.dev/",
+		"img": "https://cdn.freesets.dev/libraries/cuelume.avif",
+		"license": "MIT",
+		"licenseLink": "https://github.com/danielwh2/cuelume/blob/main/LICENSE",
+		"tags": ["Sounds"],
+		"added": "2026-09-20"
 	}
 ]

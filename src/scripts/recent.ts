@@ -2,6 +2,7 @@ import type { Asset, Category } from '@/types'
 import categories from '@/assets/categories'
 
 const RECENT_LIMIT = 8
+const NEW_WINDOW_DAYS = 14
 
 interface RecentEntry {
 	asset: Asset
@@ -45,11 +46,22 @@ export function recentlyAdded(limit = RECENT_LIMIT): { dated: boolean; entries: 
 }
 
 /**
- * Keys of the resources listed in "Recently added", so their cards carry the New badge wherever
- * they show up. Ids repeat across categories, so each key carries its category.
+ * Keys of the resources added within the last `NEW_WINDOW_DAYS` days, so their cards carry the New
+ * badge wherever they show up. Ids repeat across categories, so each key carries its category.
+ *
+ * The window is measured at build time, and an asset without a valid `added` date never qualifies.
  */
-export function recentKeys() {
-	const { entries } = recentlyAdded()
+export function recentKeys(days = NEW_WINDOW_DAYS) {
+	const cutoff = Date.now() - days * 24 * 60 * 60 * 1000
 
-	return new Set(entries.map(({ asset, category }) => `${category.nameID}:${asset.id}`))
+	return new Set(
+		categories.flatMap((category) =>
+			category.assets
+				.filter((asset) => {
+					const added = asset.added ? Date.parse(asset.added) : NaN
+					return !Number.isNaN(added) && added >= cutoff
+				})
+				.map((asset) => `${category.nameID}:${asset.id}`)
+		)
+	)
 }
