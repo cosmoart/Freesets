@@ -46,6 +46,7 @@ const structuredData = jsonLd && JSON.stringify(jsonLd).replaceAll('<', '\\u003c
 			name="robots"
 			content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}
 		/>
+		<meta name="google-site-verification" content="2wm0Wr41n0uNEIhnTL57lgiyQOHDn_lHlQnXMTY29zE" />
 		<link rel="icon" type="image/svg+xml" href={favicon} />
 		{
 			/* Google Search ignores SVG favicons, and the category pages tint their own SVG, so the
@@ -111,6 +112,29 @@ const structuredData = jsonLd && JSON.stringify(jsonLd).replaceAll('<', '\\u003c
 					matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply)
 				}
 			})()
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-L1KZZ7TF0V"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+			// The ClientRouter swaps pages without a reload, so the automatic page_view is turned off
+			// and one is sent on every astro:page-load instead, the initial load included.
+			gtag('config', 'G-L1KZZ7TF0V', { send_page_view: false })
+
+			if (!window.analyticsListenerReady) {
+				window.analyticsListenerReady = true
+				document.addEventListener('astro:page-load', () => {
+					gtag('event', 'page_view', {
+						page_title: document.title,
+						page_location: location.href
+					})
+				})
+			}
 		</script>
 	</head>
 	<body class="bg-canvas text-ink">
