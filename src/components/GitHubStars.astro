@@ -47,12 +47,15 @@ const stars = await getStars()
 
 	async function setup() {
 		const link = document.querySelector<HTMLAnchorElement>('[data-stars]')
-		const output = link?.querySelector<HTMLElement>('[data-stars-count]')
-		if (!link || !output) return
+		// The header and footer counters are both baked in at build time, so refresh every one of them
+		const outputs = document.querySelectorAll<HTMLElement>('[data-stars-count]')
+		if (!link || !outputs.length) return
 
 		const show = (stars: number) => {
-			output.textContent = formatStars(stars)
-			output.hidden = false
+			for (const output of outputs) {
+				output.textContent = formatStars(stars)
+				output.hidden = false
+			}
 		}
 
 		try {

@@ -68,13 +68,12 @@ const link =
 							<StarSparkles />
 						</span>
 						Star on GitHub
-						{
-							stars !== null && (
-								<span class="star-count font-mono text-xs font-normal tabular-nums opacity-60">
-									{formatStars(stars)}
-								</span>
-							)
-						}
+						<span
+							data-stars-count
+							hidden={stars === null}
+							class="star-count font-mono text-xs font-normal tabular-nums opacity-60">
+							{stars === null ? '' : formatStars(stars)}
+						</span>
 					</a>
 
 					<a
