@@ -18,3 +18,24 @@ export function formatStars(value: number) {
 		value
 	)
 }
+
+let commit: Promise<{ sha: string; date: string } | null> | undefined
+
+export function getLatestCommit() {
+	commit ??= fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`, {
+		headers: { Accept: 'application/vnd.github+json' }
+	})
+		.then((response) => (response.ok ? response.json() : null))
+		.then((data) => {
+			const latest = data?.[0]
+			if (!latest?.sha) return null
+
+			return {
+				sha: latest.sha as string,
+				date: (latest.commit?.committer?.date ?? latest.commit?.author?.date) as string
+			}
+		})
+		.catch(() => null)
+
+	return commit
+}

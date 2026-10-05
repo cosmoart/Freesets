@@ -2,14 +2,16 @@
 import categories from '@/assets/categories'
 import StarSparkles from '@/components/StarSparkles.astro'
 import Logo from '@/components/Logo.astro'
-import { REPO, getStars, formatStars } from '@/lib/github'
+import { REPO, getStars, getLatestCommit, formatStars } from '@/lib/github'
 
 const total = categories.reduce((acc, category) => acc + category.assets.length, 0)
 const owner = REPO.split('/')[0]
 const stars = await getStars()
-const built = new Date()
+const commit = await getLatestCommit()
+const built = commit?.date ? new Date(commit.date) : new Date()
 
 const repo = `https://github.com/${REPO}`
+const lastCommit = commit ? `${repo}/commit/${commit.sha}` : `${repo}/commits`
 const issue = (labels: string) => `${repo}/issues/new?labels=${labels}`
 
 const contribute = [
@@ -209,8 +211,12 @@ const link =
 				>.
 			</p>
 
-			<p
-				class="flex items-center gap-2 rounded-full border border-line bg-field px-2.5 py-1 font-mono text-[11.5px] tracking-[0.08em] text-muted uppercase">
+			<a
+				href={lastCommit}
+				target="_blank"
+				rel="noopener noreferrer"
+				title="View the latest commit on GitHub"
+				class="flex items-center gap-2 rounded-full border border-line bg-field px-2.5 py-1 font-mono text-[11.5px] tracking-[0.08em] text-muted uppercase transition-[color,border-color] duration-200 hover:border-soft/40 hover:text-ink">
 				<span data-built-dot class="size-1.5 rounded-full bg-green-500"></span>
 				Updated
 				<time data-built datetime={built.toISOString()}>
@@ -222,7 +228,7 @@ const link =
 						})
 					}
 				</time>
-			</p>
+			</a>
 		</div>
 	</div>
 </footer>

@@ -150,6 +150,19 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 				</div>
 
 				<div>
+					<label for="suggest-license-link" class={label}>License URL</label>
+					<input
+						id="suggest-license-link"
+						name="licenseLink"
+						type="url"
+						class={field}
+						placeholder="https://lucide.dev/license"
+					/>
+				</div>
+			</div>
+
+			<div class="grid gap-4 sm:grid-cols-2">
+				<div>
 					<span class={label}>Tags</span>
 					<div data-tags class="flex flex-wrap items-center gap-1.5 control px-2 py-1.5">
 						<input
@@ -162,16 +175,16 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 						/>
 					</div>
 				</div>
-			</div>
 
-			<div>
-				<label for="suggest-notes" class={label}>Notes</label>
-				<textarea
-					id="suggest-notes"
-					name="notes"
-					rows="2"
-					class={field}
-					placeholder="Anything worth knowing about this resource"></textarea>
+				<div>
+					<label for="suggest-notes" class={label}>Notes</label>
+					<textarea
+						id="suggest-notes"
+						name="notes"
+						rows="2"
+						class={field}
+						placeholder="Anything worth knowing about this resource"></textarea>
+				</div>
 			</div>
 		</div>
 
@@ -354,6 +367,7 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 		const name = value('name')
 		const category = value('category')
 		const license = value('license')
+		const licenseLink = value('licenseLink')
 		const notes = value('notes')
 		const container = form.querySelector<HTMLElement>('[data-tags]')
 		const tags = container ? readTags(container) : []
@@ -363,6 +377,7 @@ const field = 'control w-full px-3 py-2 text-sm outline-none placeholder:text-su
 			`**URL:** ${value('link')}`,
 			`**Category:** ${category}`,
 			license && `**License:** ${license}`,
+			licenseLink && `**License URL:** ${licenseLink}`,
 			tags.length && `**Tags:** ${tags.join(', ')}`,
 			notes &&
 				`
