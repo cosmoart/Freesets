@@ -626,7 +626,7 @@
 		"license": "MIT",
 		"added": "2026-09-20"
 	},
-		{
+	{
 		"id": 67,
 		"order": 74,
 		"name": "Animate UI Icons",
@@ -634,5 +634,13 @@
 		"img": "https://cdn.freesets.dev/icons/animate-ui-icons.avif",
 		"added": "2026-09-20",
 		"tags": ["Animated"]
+	},
+	{
+		"id": 68,
+		"order": 50,
+		"name": "SVGicons",
+		"link": "https://svgicons.com/",
+		"img": "https://cdn.freesets.dev/icons/svgicons.avif",
+		"added": "2026-10-02"
 	}
 ]
