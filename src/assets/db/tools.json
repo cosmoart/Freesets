@@ -288,5 +288,17 @@
 		"link": "https://www.opengraph.to/",
 		"img": "https://cdn.freesets.dev/tools/opengraphto.webp",
 		"tags": ["Open Graph"]
+	},
+	{
+		"id": 36,
+		"order": 60,
+		"name": "Orbi",
+		"link": "https://orbi.build/?ref=dir-freesets",
+		"img": "https://cdn.freesets.dev/tools/orbi.avif",
+		"license": "AGPL-3.0",
+		"licenseLink": "https://github.com/orbi-build/orbi",
+		"licenseDescription": "The self-hosted engine is licensed under AGPL-3.0. Orbi Cloud is a separate hosted service.",
+		"tags": ["AI", "GitHub", "Coding Agent"],
+		"added": "2026-10-21"
 	}
 ]
