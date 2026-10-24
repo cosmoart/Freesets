@@ -388,5 +388,15 @@
 		"link": "https://ui.live/",
 		"img": "https://cdn.freesets.dev/inspirations/ui-live.avif",
 		"added": "2026-09-20"
+	},
+	{
+		"id": 54,
+		"order": 50,
+		"name": "APPLORE",
+		"link": "https://applore.app/",
+		"img": "https://cdn.freesets.dev/inspirations/applore.avif",
+		"license": "Freemium",
+		"tags": ["App Icons", "Mobile", "iOS", "Android"],
+		"added": "2026-10-24"
 	}
 ]
