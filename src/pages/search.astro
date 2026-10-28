@@ -199,7 +199,7 @@ const sample: Asset = {
 <script>
 	import { renderPages } from '@/scripts/paginate'
 	import { DEFAULT_COLUMNS, readPerPage, readSort, saveSort, type Sort } from '@/scripts/view'
-	import { domainOf, matches as textMatches } from '@/scripts/filter'
+	import { domainOf, matches as textMatches, searchText, terms, tidy } from '@/scripts/filter'
 	import { closestTo, renderEmpty, type EmptyFilter } from '@/scripts/empty'
 	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
 	import { renderCard } from '@/scripts/card'
@@ -290,10 +290,7 @@ const sample: Asset = {
 			...entry,
 			label: entry.name,
 			meta: [entry.license, ...entry.tags].filter(Boolean).join(' · '),
-			text:
-				[entry.name, entry.license, ...entry.tags].join(' ').toLowerCase() +
-				' ' +
-				domainOf(entry.link)
+			text: searchText(entry.name, entry.license, ...entry.tags, domainOf(entry.link))
 		}))
 
 		const categoryNames = new Map(index.map((entry) => [entry.nameID, entry.category]))
@@ -305,14 +302,14 @@ const sample: Asset = {
 		const labelOf = (facet: Facet, value: string) =>
 			facet === 'category' ? (categoryNames.get(value) ?? value) : value
 
-		function select(search: string, skip?: Facet) {
+		function select(words: string[], skip?: Facet) {
 			const active = FACETS.filter((facet) => facet !== skip)
 				.map((facet) => ({ facet, values: checked(facet) }))
 				.filter(({ values }) => values.size > 0)
 
 			return entries.filter(
 				(entry) =>
-					textMatches(entry.text, search) &&
+					textMatches(entry.text, words) &&
 					active.every(({ facet, values }) => values.has(valueOf[facet](entry)))
 			)
 		}
@@ -321,10 +318,10 @@ const sample: Asset = {
 			return [...checked(facet)].map((value) => labelOf(facet, value)).join(', ')
 		}
 
-		function updateCounts(search: string) {
+		function updateCounts(words: string[]) {
 			for (const facet of FACETS) {
 				const tally = new Map<string, number>()
-				for (const entry of select(search, facet)) {
+				for (const entry of select(words, facet)) {
 					const value = valueOf[facet](entry)
 					tally.set(value, (tally.get(value) ?? 0) + 1)
 				}
@@ -367,8 +364,9 @@ const sample: Asset = {
 		}
 
 		function apply(scroll = false) {
-			const search = query.value.trim()
-			const found = select(search).sort(compare[sort])
+			const search = tidy(query.value)
+			const words = terms(search)
+			const found = select(words).sort(compare[sort])
 
 			page = renderPages(nav!, found.length, page, perPage)
 			const start = (page - 1) * perPage
@@ -385,14 +383,14 @@ const sample: Asset = {
 
 			count.textContent = `${found.length} ${found.length === 1 ? 'resource' : 'resources'} found`
 			empty.hidden = found.length > 0
-			updateCounts(search)
+			updateCounts(words)
 			renderChips()
 
 			if (found.length === 0) {
 				const filters: EmptyFilter[] = FACETS.filter((facet) => checked(facet).size > 0).map(
 					(facet) => ({
 						label: describe(facet),
-						count: select(search, facet).length,
+						count: select(words, facet).length,
 						clear: () => {
 							check(facet, [])
 							reset()

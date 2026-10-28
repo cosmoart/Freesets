@@ -75,7 +75,7 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 </div>
 
 <script>
-	import { domainOf, matches } from '@/scripts/filter'
+	import { domainOf, matches, searchText, terms, tidy } from '@/scripts/filter'
 	import { loadSearchIndex, type SearchEntry } from '@/scripts/search-index'
 
 	const MAX_RESULTS = 12
@@ -234,7 +234,7 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 				}
 			}
 
-			const query = input!.value.trim()
+			const query = tidy(input!.value)
 			const category = filter
 				? (index.find((entry) => entry.nameID === filter)?.category ?? '')
 				: ''
@@ -259,9 +259,9 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 		}
 
 		async function search() {
-			const query = input!.value.trim()
+			const words = terms(input!.value)
 
-			if (!query) {
+			if (words.length === 0) {
 				available = []
 				setFilter('')
 				close()
@@ -270,7 +270,7 @@ const kbd = 'kbd px-1 py-0.5 text-[9px]'
 
 			index = await loadSearchIndex()
 			available = index.filter((entry) =>
-				matches(`${entry.name.toLowerCase()} ${domainOf(entry.link)}`, query)
+				matches(searchText(entry.name, domainOf(entry.link)), words)
 			)
 
 			render()

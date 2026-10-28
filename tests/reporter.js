@@ -1,6 +1,6 @@
 /**
- * Test reporter for the resource files: one line per category, and the problems with the resources
- * behind them whenever a category fails. No diffs, no stack traces, no repeated failure list.
+ * Test reporter: one line per check (a resource category, or a unit of the site's scripts), and the
+ * problems behind it whenever it fails. No diffs, no stack traces, no repeated failure list.
  */
 const color = process.stdout.isTTY
 const paint = (code, text) => (color ? `\u001B[${code}m${text}\u001B[0m` : text)
@@ -29,8 +29,8 @@ export default async function* reporter(source) {
 	const total = passed + failed.length
 	const summary =
 		failed.length === 0
-			? green(`${total} categories, all correct`)
-			: red(`${failed.length} of ${total} categories with problems: ${failed.join(', ')}`)
+			? green(`${total} checks, all correct`)
+			: red(`${failed.length} of ${total} checks with problems: ${failed.join(', ')}`)
 
 	yield `${dim('─'.repeat(40))}\n${summary}\n`
 }

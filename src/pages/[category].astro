@@ -8,7 +8,7 @@ import EmptyState from '@/components/EmptyState.astro'
 import categories from '@/assets/categories'
 import { DEFAULT_COLUMNS, DEFAULT_PER_PAGE } from '@/scripts/view'
 import { recentKeys } from '@/scripts/recent'
-import { domainOf } from '@/scripts/filter'
+import { domainOf, searchText } from '@/scripts/filter'
 
 export const getStaticPaths = (() =>
 	categories.map((category) => ({
@@ -81,12 +81,12 @@ const jsonLd = {
 						data-meta={[asset.license, ...(asset.tags ?? [])]
 							.filter(Boolean)
 							.join(String.fromCharCode(32, 183, 32))}
-						data-text={[
-							...[asset.name, asset.license, ...(asset.tags ?? [])].filter(Boolean),
+						data-text={searchText(
+							asset.name,
+							asset.license,
+							...(asset.tags ?? []),
 							domainOf(asset.link)
-						]
-							.join(' ')
-							.toLowerCase()}
+						)}
 					>
 						<AssetCard
 							asset={asset}
@@ -114,7 +114,7 @@ const jsonLd = {
 		newest: (a, b) => Number(b.dataset.id) - Number(a.dataset.id),
 		name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? '')
 	}
-	import { matches } from '@/scripts/filter'
+	import { matches, terms, tidy } from '@/scripts/filter'
 	import { closestTo, renderEmpty, type Suggestion } from '@/scripts/empty'
 
 	const suggestion = ({ dataset }: HTMLElement): Suggestion => ({
@@ -158,11 +158,12 @@ const jsonLd = {
 		}
 
 		function apply(scroll = false) {
-			const query = search!.value.trim()
+			const query = tidy(search!.value)
+			const words = terms(query)
 			const found: HTMLLIElement[] = []
 
 			for (const item of items) {
-				const match = !query || matches(item.dataset.text ?? '', query)
+				const match = matches(item.dataset.text ?? '', words)
 				item.hidden = !match
 				if (match) found.push(item)
 			}
