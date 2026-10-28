@@ -1,5 +1,5 @@
 export function terms(query: string) {
-	return query.toLowerCase().split(' ').filter(Boolean)
+	return query.toLowerCase().split(/\s+/).filter(Boolean)
 }
 
 export function matches(text: string, query: string) {
