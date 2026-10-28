@@ -13,7 +13,7 @@
 		"name": "Huemint",
 		"link": "https://huemint.com/",
 		"img": "https://cdn.freesets.dev/colors/huemint.webp",
-		"tags": ["Preview", "Palette"]
+		"tags": ["Preview", "Palettes"]
 	},
 	{
 		"id": 3,
@@ -29,7 +29,7 @@
 		"name": "Coolors",
 		"img": "https://cdn.freesets.dev/colors/coolors.webp",
 		"link": "https://coolors.co",
-		"tags": ["Image"]
+		"tags": ["Images"]
 	},
 	{
 		"id": 5,
@@ -90,7 +90,7 @@
 		"name": "HueSnap",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706206139/freesets/colors/ilpiojkklmm5indg4niz.webp",
 		"link": "https://www.huesnap.com",
-		"tags": ["Image"]
+		"tags": ["Images"]
 	},
 	{
 		"id": 13,

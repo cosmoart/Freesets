@@ -63,7 +63,7 @@
 		"name": "Foodiesfeed",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703380304/freesets/photos/dtpc63qf0lta9arfmjxp.webp",
 		"link": "https://www.foodiesfeed.com",
-		"tags": ["Food", "IA"],
+		"tags": ["Food", "AI"],
 		"license": "CC0",
 		"licenseLink": "https://www.foodiesfeed.com/license/"
 	},
@@ -135,7 +135,7 @@
 		"name": "Gratisography",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703380639/freesets/photos/gvsm7y89qgfqju6mwvsi.webp",
 		"link": "https://gratisography.com",
-		"tags": ["IA"],
+		"tags": ["AI"],
 		"license": "Free",
 		"licenseLink": "https://gratisography.com/license/"
 	},
@@ -250,7 +250,7 @@
 		"img": "https://cdn.freesets.dev/photos/the-met-open-access.webp",
 		"license": "CC0",
 		"licenseLink": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
-		"tags": ["Museum" , "Art"]
+		"tags": ["Museum", "Art"]
 	},
 	{
 		"id": 28,

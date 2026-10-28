@@ -13,7 +13,7 @@
 		"name": "react-magic-motion",
 		"img": "https://cdn.freesets.dev/libraries/react-magic-motion.webp",
 		"link": "https://www.react-magic-motion.com",
-		"tags": ["Animation", "React"],
+		"tags": ["Animations", "React"],
 		"license": "MIT"
 	},
 	{
@@ -173,7 +173,7 @@
 		"name": "yup",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703721354/freesets/libraries/vf3bljcv8cw7nklk3s1o.webp",
 		"link": "https://github.com/jquense/yup",
-		"tags": ["Form validation"],
+		"tags": ["Validation"],
 		"license": "MIT",
 		"licenseLink": "https://github.com/jquense/yup/blob/master/LICENSE.md"
 	},
@@ -353,7 +353,7 @@
 		"name": "Blendy",
 		"link": "https://blendy.tahazsh.com/",
 		"img": "https://cdn.freesets.dev/libraries/blendytahazsh.webp",
-		"tags": ["Transitions", "framework-agnostic"]
+		"tags": ["Transitions", "Multi-framework"]
 	},
 	{
 		"id": 40,
@@ -393,7 +393,7 @@
 		"name": "Smooothy",
 		"link": "https://smooothy.vercel.app/",
 		"img": "https://cdn.freesets.dev/libraries/smooothy.webp",
-		"tags": ["Carousel", "Slider", "Webgl"]
+		"tags": ["Carousel", "Sliders", "WebGL"]
 	},
 	{
 		"id": 45,

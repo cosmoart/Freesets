@@ -36,7 +36,7 @@
 		"name": "Not a Number",
 		"img": "https://cdn.freesets.dev/blogs/nan.webp",
 		"link": "https://www.nan.fyi",
-		"tags": ["Animation", "svg"]
+		"tags": ["Animations", "SVG"]
 	},
 	{
 		"id": 6,
@@ -90,7 +90,7 @@
 		"name": "Design Systems",
 		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703459247/freesets/blogs/u4hastncvnhlfdc8iaal.webp",
 		"link": "https://www.designsystems.com",
-		"tags": ["Design system"]
+		"tags": ["Design System"]
 	},
 	{
 		"id": 13,
@@ -154,7 +154,7 @@
 		"name": "Zajno Digital Studio",
 		"img": "https://cdn.freesets.dev/blogs/motionzajno.webp",
 		"link": "https://motion.zajno.com/",
-		"tags": ["Animation", "Design"]
+		"tags": ["Animations", "Design"]
 	},
 	{
 		"id": 21,
@@ -162,7 +162,7 @@
 		"name": "Emil Kowalski",
 		"img": "https://cdn.freesets.dev/blogs/milkowalski.webp",
 		"link": "https://emilkowal.ski/",
-		"tags": ["Animation", "Design"]
+		"tags": ["Animations", "Design"]
 	},
 	{
 		"id": 22,
@@ -170,7 +170,7 @@
 		"name": "Codrops",
 		"img": "https://cdn.freesets.dev/blogs/codrops.webp",
 		"link": "https://tympanus.net/codrops/demos/",
-		"tags": ["Three.js", "Webgl"]
+		"tags": ["Three.js", "WebGL"]
 	},
 	{
 		"id": 23,
@@ -210,6 +210,6 @@
 		"name": "Motion Magazine",
 		"link": "https://motion.dev/magazine",
 		"img": "https://cdn.freesets.dev/blogs/motion-magazine.webp",
-		"tags": ["Animation"]
+		"tags": ["Animations"]
 	}
 ]
