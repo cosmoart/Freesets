@@ -288,5 +288,15 @@
 		"link": "https://www.opengraph.to/",
 		"img": "https://cdn.freesets.dev/tools/opengraphto.webp",
 		"tags": ["Open Graph"]
+	},
+	{
+		"id": 36,
+		"order": 70,
+		"name": "Pic2Vector",
+		"link": "https://pic2vector.com/",
+		"img": "https://cdn.freesets.dev/tools/pic2vector.avif",
+		"license": "Free",
+		"tags": ["SVG converter", "Vectorizer"],
+		"added": "2026-10-30"
 	}
 ]
