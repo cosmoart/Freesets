@@ -33,7 +33,7 @@
 		"id": 4,
 		"order": 80,
 		"name": "ISO Republic",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703379961/freesets/videos/seihdp8tiic1xff7lmty.webp",
+		"img": "https://cdn.freesets.dev/videos/seihdp8tiic1xff7lmty.webp",
 		"link": "https://isorepublic.com",
 		"license": "CC0",
 		"licenseLink": "https://isorepublic.com/license/"
@@ -88,11 +88,11 @@
 	{
 		"id": 10,
 		"order": 14,
-		"name": "Freepik",
-		"img": "https://cdn.freesets.dev/photos/freepik.webp",
-		"link": "https://www.freepik.com/videos",
-		"license": "Freepik License",
-		"licenseLink": "https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement",
+		"name": "Magnific",
+		"img": "https://cdn.freesets.dev/photos/magnific.avif",
+		"link": "https://www.magnific.com/videos",
+		"license": "Magnific License",
+		"licenseLink": "https://www.magnific.com/legal/terms-of-use",
 		"licenseDescription": "Free with attribution"
 	},
 	{

@@ -12,7 +12,7 @@
 		"id": 2,
 		"order": 98,
 		"name": "Fontsource",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703614544/freesets/typography/i5momje7eakesx8ltcex.webp",
+		"img": "https://cdn.freesets.dev/fonts/i5momje7eakesx8ltcex.webp",
 		"link": "https://fontsource.org",
 		"license": "Multiple",
 		"licenseLink": "https://github.com/fontsource/fontsource?tab=readme-ov-file#licensing"
@@ -21,7 +21,7 @@
 		"id": 3,
 		"order": 95,
 		"name": "Typewolf",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703374218/freesets/typography/uhcny9gmqaobpoxtfglb.webp",
+		"img": "https://cdn.freesets.dev/fonts/uhcny9gmqaobpoxtfglb.webp",
 		"link": "https://www.typewolf.com/",
 		"tags": ["Inspiration"]
 	},
@@ -60,7 +60,7 @@
 		"id": 8,
 		"order": 56,
 		"name": "Font Meme",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703378435/freesets/typography/lhrtmhl3nrcuqlvht8nt.webp",
+		"img": "https://cdn.freesets.dev/fonts/lhrtmhl3nrcuqlvht8nt.webp",
 		"link": "https://fontmeme.com"
 	},
 	{
@@ -83,7 +83,7 @@
 		"id": 11,
 		"order": 38,
 		"name": "Fonts In Use",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564814/freesets/typography/i91pmpuedxlquhnh6n7q.webp",
+		"img": "https://cdn.freesets.dev/fonts/i91pmpuedxlquhnh6n7q.webp",
 		"link": "https://fontsinuse.com"
 	},
 	{
@@ -151,14 +151,6 @@
 	},
 	{
 		"id": 20,
-		"order": 57,
-		"name": "Archetype",
-		"img": "https://cdn.freesets.dev/fonts/archetype.webp",
-		"link": "https://archetypeapp.com/",
-		"tags": ["Tool"]
-	},
-	{
-		"id": 21,
 		"order": 20,
 		"name": "Typescale",
 		"img": "https://cdn.freesets.dev/fonts/typescale.webp",
@@ -166,7 +158,7 @@
 		"tags": ["Plugin"]
 	},
 	{
-		"id": 22,
+		"id": 21,
 		"order": 18,
 		"name": "Font Squirrel",
 		"link": "https://www.fontsquirrel.com/",
@@ -174,7 +166,7 @@
 		"license": "Multiple"
 	},
 	{
-		"id": 23,
+		"id": 22,
 		"order": 44,
 		"name": "The League Type",
 		"link": "https://www.theleagueofmoveabletype.com/",
@@ -183,21 +175,21 @@
 		"licenseDescription": "\"All the fonts from The League of Moveable Type are free & open source, available to use commercially and subject to the Open Font License.\""
 	},
 	{
-		"id": 24,
+		"id": 23,
 		"order": 25,
 		"name": "Velvetyne Type Foundry",
 		"link": "https://velvetyne.fr/",
 		"img": "https://cdn.freesets.dev/fonts/velvetyne.webp"
 	},
 	{
-		"id": 25,
+		"id": 24,
 		"order": 22,
 		"name": "Font Library",
 		"link": "https://fontlibrary.org/",
 		"img": "https://cdn.freesets.dev/fonts/font-library.webp"
 	},
 	{
-		"id": 26,
+		"id": 25,
 		"order": 72,
 		"name": "Lapa Ninja",
 		"link": "https://www.lapa.ninja/typeface/",

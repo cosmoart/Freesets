@@ -21,7 +21,7 @@
 		"id": 3,
 		"name": "Simple Icons",
 		"link": "https://simpleicons.org",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705765217/freesets/icons/jvhe6jrpy38zrqi6dhvp.webp",
+		"img": "https://cdn.freesets.dev/icons/jvhe6jrpy38zrqi6dhvp.webp",
 		"tags": ["Brands"],
 		"order": 96
 	},
@@ -45,35 +45,25 @@
 	},
 	{
 		"id": 6,
-		"name": "Reshot",
-		"link": "https://www.reshot.com/free-svg-icons/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381958/freesets/icons/eum2c2gjrwgwfv7aq3qm.webp",
-		"license": "Reshot Free License",
-		"licenseLink": "https://www.reshot.com/license/",
-		"licenseDescription": "Items under the Reshot Free License can be used in your commercial and non-commercial projects, for free.",
-		"order": 87
-	},
-	{
-		"id": 7,
 		"name": "Radix Icons",
 		"link": "https://www.radix-ui.com/icons",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705772255/freesets/icons/mzzgjxfoem5kafvfyyhh.webp",
+		"img": "https://cdn.freesets.dev/icons/mzzgjxfoem5kafvfyyhh.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/radix-ui/icons/blob/master/LICENSE",
 		"tags": ["Package"],
 		"order": 87
 	},
 	{
-		"id": 8,
+		"id": 7,
 		"name": "Iconoir",
 		"link": "https://iconoir.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777316/freesets/icons/ruzpsrpudbcvjvqtcv4j.webp",
+		"img": "https://cdn.freesets.dev/icons/ruzpsrpudbcvjvqtcv4j.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
 		"order": 86
 	},
 	{
-		"id": 9,
+		"id": 8,
 		"name": "Hero Icons",
 		"link": "https://heroicons.com/",
 		"img": "https://cdn.freesets.dev/icons/heroicons.webp",
@@ -82,7 +72,7 @@
 		"order": 85
 	},
 	{
-		"id": 10,
+		"id": 9,
 		"name": "Lucide",
 		"link": "https://lucide.dev",
 		"img": "https://cdn.freesets.dev/icons/jn6a97pgfb9sq4pa2tzn.webp",
@@ -92,7 +82,7 @@
 		"order": 85
 	},
 	{
-		"id": 11,
+		"id": 10,
 		"name": "Phosphor",
 		"link": "https://phosphoricons.com",
 		"img": "https://cdn.freesets.dev/icons/phosphor.webp",
@@ -102,7 +92,7 @@
 		"order": 80
 	},
 	{
-		"id": 12,
+		"id": 11,
 		"name": "React Icons",
 		"link": "https://react-icons.github.io/react-icons/",
 		"img": "https://cdn.freesets.dev/icons/react-icons.webp",
@@ -112,17 +102,17 @@
 		"tags": ["Package"]
 	},
 	{
-		"id": 13,
+		"id": 12,
 		"name": "Remix Icon",
 		"link": "https://remixicon.com/",
 		"img": "https://cdn.freesets.dev/icons/remixicon.webp",
-		"license": "Apache-2.0",
+		"license": "Remix Icon License v1.0",
 		"licenseLink": "https://remixicon.com/license",
 		"tags": ["Package"],
 		"order": 77
 	},
 	{
-		"id": 14,
+		"id": 13,
 		"name": "Feather Icons",
 		"link": "https://feathericons.com/",
 		"img": "https://cdn.freesets.dev/icons/feather-icons.webp",
@@ -131,17 +121,17 @@
 		"order": 77
 	},
 	{
-		"id": 15,
+		"id": 14,
 		"name": "Ionicons",
 		"link": "https://ionic.io/ionicons",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777616/freesets/icons/cqpb3phdbpbkizotyl0f.webp",
+		"img": "https://cdn.freesets.dev/icons/cqpb3phdbpbkizotyl0f.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/ionic-team/ionicons/blob/main/LICENSE",
 		"tags": ["Package"],
 		"order": 76
 	},
 	{
-		"id": 16,
+		"id": 15,
 		"name": "Eva Icons",
 		"link": "https://akveo.github.io/eva-icons/",
 		"img": "https://cdn.freesets.dev/icons/akveo.github.io-eva-icons(HD).avif",
@@ -150,7 +140,7 @@
 		"order": 74
 	},
 	{
-		"id": 17,
+		"id": 16,
 		"name": "svgl",
 		"link": "https://svgl.app",
 		"img": "https://cdn.freesets.dev/icons/svgl.webp",
@@ -159,7 +149,7 @@
 		"order": 84
 	},
 	{
-		"id": 18,
+		"id": 17,
 		"name": "Font Awesome Icons",
 		"link": "https://fontawesome.com/icons",
 		"img": "https://cdn.freesets.dev/icons/fontawesome.webp",
@@ -169,10 +159,10 @@
 		"order": 70
 	},
 	{
-		"id": 19,
+		"id": 18,
 		"name": "useAnimations",
 		"link": "https://useanimations.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382354/freesets/icons/ndch8kgt9gb92gaixk9a.webp",
+		"img": "https://cdn.freesets.dev/icons/ndch8kgt9gb92gaixk9a.webp",
 		"license": "CC",
 		"licenseLink": "https://useanimations.com/licencing-and-terms.html",
 		"licenseDescription": "All the free files available in useAnimations are distributed under Creative Commons (CC) Attribution (BY) unless stated otherwise.",
@@ -180,26 +170,26 @@
 		"order": 70
 	},
 	{
-		"id": 20,
+		"id": 19,
 		"name": "MingCute Design",
 		"link": "https://www.mingcute.com",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776623/freesets/icons/lgi0vtfqupkfqf5ruvmz.webp",
+		"img": "https://cdn.freesets.dev/icons/lgi0vtfqupkfqf5ruvmz.webp",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/Richard9394/MingCute/blob/main/LICENSE",
 		"order": 70
 	},
 	{
-		"id": 21,
+		"id": 20,
 		"name": "Carbon",
 		"link": "https://carbondesignsystem.com/elements/icons/library/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776835/freesets/icons/rvzgmjez12yrvwjigqnn.webp",
+		"img": "https://cdn.freesets.dev/icons/rvzgmjez12yrvwjigqnn.webp",
 		"license": "Apache-2.0",
 		"licenseLink": "https://github.com/carbon-design-system/carbon/tree/v10/packages/icons#-license",
 		"tags": ["Package"],
 		"order": 66
 	},
 	{
-		"id": 22,
+		"id": 21,
 		"order": 39,
 		"name": "coolshapes",
 		"img": "https://cdn.freesets.dev/illustrations/coolshap.webp",
@@ -207,7 +197,7 @@
 		"tags": ["Package", "Logos"]
 	},
 	{
-		"id": 23,
+		"id": 22,
 		"name": "Animatedicons",
 		"link": "https://animatedicons.co/icons",
 		"img": "https://cdn.freesets.dev/icons/animatedicons.webp",
@@ -218,7 +208,7 @@
 		"order": 60
 	},
 	{
-		"id": 24,
+		"id": 23,
 		"name": "CSS Icons",
 		"link": "https://css.gg/",
 		"img": "https://cdn.freesets.dev/icons/CSSIcons.webp",
@@ -228,7 +218,7 @@
 		"order": 60
 	},
 	{
-		"id": 25,
+		"id": 24,
 		"name": "Boxicons",
 		"link": "https://boxicons.com/",
 		"img": "https://cdn.freesets.dev/icons/boxicons.webp",
@@ -237,27 +227,27 @@
 		"order": 33
 	},
 	{
-		"id": 26,
+		"id": 25,
 		"order": 46,
-		"name": "pqoqubbw/icons",
-		"link": "https://icons.pqoqubbw.dev/",
+		"name": "lucide-animated",
+		"link": "https://lucide-animated.com/",
 		"img": "https://cdn.freesets.dev/icons/pqoqubbw.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/pqoqubbw/icons/blob/main/LICENSE",
 		"tags": ["Motion", "Lucide", "Package", "React"]
 	},
 	{
-		"id": 27,
+		"id": 26,
 		"name": "ManyPixels",
 		"link": "https://www.manypixels.co/gallery",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704385023/freesets/icons/xxyu2syjxgm7twcyegba.webp",
+		"img": "https://cdn.freesets.dev/icons/xxyu2syjxgm7twcyegba.webp",
 		"license": "Free",
 		"licenseDescription": "You can use the illustrations in any project, commercial or personal without attribution or any costs.",
 		"licenseLink": "https://www.manypixels.co/terms-of-service",
 		"order": 50
 	},
 	{
-		"id": 28,
+		"id": 27,
 		"name": "Zondicons",
 		"link": "http://www.zondicons.com/",
 		"img": "https://cdn.freesets.dev/icons/zondicons.webp",
@@ -267,16 +257,16 @@
 		"order": 50
 	},
 	{
-		"id": 29,
+		"id": 28,
 		"name": "ICONSVG",
 		"link": "https://iconsvg.xyz",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704820992/freesets/icons/lq4ll4tgmsdzhe4ysibx.webp",
+		"img": "https://cdn.freesets.dev/icons/lq4ll4tgmsdzhe4ysibx.webp",
 		"license": "MIT",
 		"licenseLink": "https://iconsvg.xyz",
 		"order": 30
 	},
 	{
-		"id": 30,
+		"id": 29,
 		"name": "Streamline Icons",
 		"link": "https://www.streamlinehq.com",
 		"img": "https://cdn.freesets.dev/icons/streamline.webp",
@@ -285,16 +275,16 @@
 		"order": 46
 	},
 	{
-		"id": 31,
+		"id": 30,
 		"name": "TDesign Icons",
 		"link": "https://tdesign.tencent.com/design/icon",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705777927/freesets/icons/p16gzcdv7iacvdnud2ch.webp",
+		"img": "https://cdn.freesets.dev/icons/p16gzcdv7iacvdnud2ch.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/Tencent/tdesign-icons/blob/main/LICENSE",
 		"order": 46
 	},
 	{
-		"id": 32,
+		"id": 31,
 		"name": "3D Icons",
 		"link": "https://3dicons.co/",
 		"img": "https://cdn.freesets.dev/icons/hh9zkxpnfjckvekzz0ey.webp",
@@ -304,7 +294,7 @@
 		"order": 45
 	},
 	{
-		"id": 33,
+		"id": 32,
 		"order": 78,
 		"name": "Mage Icons",
 		"link": "https://mageicons.com/",
@@ -314,7 +304,7 @@
 		"tags": ["Package"]
 	},
 	{
-		"id": 34,
+		"id": 33,
 		"name": "Iconmonstr",
 		"link": "https://iconmonstr.com",
 		"img": "https://cdn.freesets.dev/icons/iconmonstr.webp",
@@ -324,7 +314,7 @@
 		"order": 40
 	},
 	{
-		"id": 35,
+		"id": 34,
 		"name": "Drawkit",
 		"link": "https://www.drawkit.com/illustration-types/icons",
 		"img": "https://cdn.freesets.dev/icons/quqeaqpdwrr9pfl7syvz.webp",
@@ -335,26 +325,26 @@
 		"order": 40
 	},
 	{
-		"id": 36,
+		"id": 35,
 		"name": "Basicons",
-		"link": "https://basicons.xyz",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704821116/freesets/icons/iugy1xeoa4h1rk0xopit.webp",
+		"link": "https://www.basicons.com/",
+		"img": "https://cdn.freesets.dev/icons/iugy1xeoa4h1rk0xopit.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/solomon-fibonacci/react-basicons/blob/main/LICENSE",
 		"tags": ["Package"],
 		"order": 40
 	},
 	{
-		"id": 37,
+		"id": 36,
 		"name": "Clarity",
 		"link": "https://clarity.design/documentation/icons/shapes",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705778097/freesets/icons/ldvm1lc29yfknxdzzm1a.webp",
+		"img": "https://cdn.freesets.dev/icons/ldvm1lc29yfknxdzzm1a.webp",
 		"license": "MIT",
 		"licenseLink": "https://github.com/vmware/clarity-assets/blob/master/LICENSE",
 		"order": 38
 	},
 	{
-		"id": 38,
+		"id": 37,
 		"name": "Core UI Icons",
 		"link": "https://coreui.io/icons/",
 		"img": "https://cdn.freesets.dev/icons/coreuiicons.webp",
@@ -364,7 +354,7 @@
 		"order": 35
 	},
 	{
-		"id": 39,
+		"id": 38,
 		"name": "Unicorn icons",
 		"link": "https://unicornicons.com",
 		"img": "https://cdn.freesets.dev/icons/ocpqwxgjvphvpk6b44ed.webp",
@@ -375,7 +365,7 @@
 		"order": 35
 	},
 	{
-		"id": 40,
+		"id": 39,
 		"name": "Bootstrap Icons",
 		"link": "https://icons.getbootstrap.com/",
 		"img": "https://cdn.freesets.dev/icons/bootstrap.avif",
@@ -385,7 +375,7 @@
 		"order": 30
 	},
 	{
-		"id": 41,
+		"id": 40,
 		"order": 44,
 		"name": "Spectrum",
 		"link": "https://spectrums.framer.website/",
@@ -393,7 +383,7 @@
 		"tags": ["Logos"]
 	},
 	{
-		"id": 42,
+		"id": 41,
 		"name": "Sargam Icons",
 		"link": "https://sargamicons.com",
 		"img": "https://cdn.freesets.dev/icons/sargamicons.webp",
@@ -402,7 +392,7 @@
 		"order": 41
 	},
 	{
-		"id": 43,
+		"id": 42,
 		"order": 30,
 		"name": "magecdn SVG Loaders",
 		"link": "https://magecdn.com/tools/svg-loaders",
@@ -411,7 +401,7 @@
 		"tags": ["Loaders"]
 	},
 	{
-		"id": 44,
+		"id": 43,
 		"name": "Zwicon",
 		"link": "http://zwicon.com",
 		"img": "https://cdn.freesets.dev/icons/zwicon.webp",
@@ -420,17 +410,17 @@
 		"order": 20
 	},
 	{
-		"id": 45,
+		"id": 44,
 		"name": "Notion-style Icons",
 		"link": "https://maryamato88.gumroad.com/l/pbmkt",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703028113/freesets/icons/Notion_Style_Icons_kpixkv.webp",
+		"img": "https://cdn.freesets.dev/icons/Notion_Style_Icons_kpixkv.webp",
 		"license": "Free",
 		"licenseDescription": "Use on unlimited personal and commercial projects",
 		"tags": ["Scribble"],
 		"order": 20
 	},
 	{
-		"id": 46,
+		"id": 45,
 		"name": "Flagpack",
 		"link": "https://flagpack.xyz",
 		"img": "https://cdn.freesets.dev/icons/w4emtntc7owwt8bu4etm.webp",
@@ -441,7 +431,7 @@
 		"order": 18
 	},
 	{
-		"id": 47,
+		"id": 46,
 		"order": 35,
 		"name": "OpenMoji",
 		"link": "https://openmoji.org/",
@@ -451,15 +441,15 @@
 		"licenseDescription": "\"You must give OpenMoji appropriate credit, and indicate if changes were made\""
 	},
 	{
-		"id": 48,
+		"id": 47,
 		"name": "Icon Freebies Glimsy",
 		"link": "https://orenjistudio.gumroad.com/l/glimsy",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703027910/freesets/icons/Glimsy_bwpu4k.webp",
+		"img": "https://cdn.freesets.dev/icons/Glimsy_bwpu4k.webp",
 		"license": "Free",
 		"order": 15
 	},
 	{
-		"id": 49,
+		"id": 48,
 		"order": 45,
 		"name": "Material Design Icons",
 		"link": "https://pictogrammers.com/library/mdi/",
@@ -468,17 +458,17 @@
 		"licenseLink": "https://pictogrammers.com/docs/general/license/"
 	},
 	{
-		"id": 50,
+		"id": 49,
 		"name": "Tilda Icons",
 		"link": "https://tilda.cc/free-icons/",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704382565/freesets/icons/dxhlcgkgwque1gddimtd.webp",
+		"img": "https://cdn.freesets.dev/icons/dxhlcgkgwque1gddimtd.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://tilda.cc/free-icons/license/",
 		"licenseDescription": "The Licensee can use the Icons for free for personal or commercial projects as long as the\nLicensee mentions the owner of the Icons.",
 		"order": 15
 	},
 	{
-		"id": 51,
+		"id": 50,
 		"name": "Noun Project",
 		"link": "https://thenounproject.com/icons/",
 		"img": "https://cdn.freesets.dev/icons/g4ovyr2rjrlb7l5kqggf.webp",
@@ -488,23 +478,23 @@
 		"order": 10
 	},
 	{
-		"id": 52,
+		"id": 51,
 		"name": "IconaMoon",
 		"link": "https://www.figma.com/community/file/1014143897459418663",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776986/freesets/icons/ubb1mslpo6luz1pivm0n.webp",
+		"img": "https://cdn.freesets.dev/icons/ubb1mslpo6luz1pivm0n.webp",
 		"license": "CC BY 4.0",
 		"order": 7
 	},
 	{
-		"id": 53,
+		"id": 52,
 		"name": "Solar",
 		"link": "https://www.figma.com/community/file/1166831539721848736",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705776270/freesets/icons/g5k7wqiikvrxcmevnhet.webp",
+		"img": "https://cdn.freesets.dev/icons/g5k7wqiikvrxcmevnhet.webp",
 		"license": "CC BY 4.0",
 		"order": 6
 	},
 	{
-		"id": 54,
+		"id": 53,
 		"name": "Icon Icons",
 		"link": "https://icon-icons.com",
 		"img": "https://cdn.freesets.dev/icons/icon-icons.webp",
@@ -514,7 +504,7 @@
 		"order": 6
 	},
 	{
-		"id": 55,
+		"id": 54,
 		"name": "FlatIcon",
 		"link": "https://www.flaticon.com/",
 		"img": "https://cdn.freesets.dev/icons/flaticon.webp",
@@ -524,7 +514,7 @@
 		"order": 6
 	},
 	{
-		"id": 56,
+		"id": 55,
 		"name": "Iconscout",
 		"link": "https://iconscout.com/icons",
 		"img": "https://cdn.freesets.dev/icons/iconscout.webp",
@@ -534,7 +524,7 @@
 		"order": 5
 	},
 	{
-		"id": 57,
+		"id": 56,
 		"name": "Untitled UI Icons",
 		"link": "https://www.untitledui.com/icons",
 		"img": "https://cdn.freesets.dev/icons/u0vnq5jvrwli4mzr4dl0.webp",
@@ -543,7 +533,7 @@
 		"order": 1
 	},
 	{
-		"id": 58,
+		"id": 57,
 		"order": 26,
 		"name": "IconPark",
 		"link": "https://iconpark.oceanengine.com/official",
@@ -552,7 +542,7 @@
 		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	},
 	{
-		"id": 59,
+		"id": 58,
 		"order": 11,
 		"name": "Gravity UI",
 		"link": "https://preview.gravity-ui.com/icons/",
@@ -562,7 +552,7 @@
 		"tags": ["Package", "React"]
 	},
 	{
-		"id": 60,
+		"id": 59,
 		"order": 8,
 		"name": "Octicons",
 		"link": "https://primer.style/foundations/icons",
@@ -572,7 +562,7 @@
 		"tags": ["Package"]
 	},
 	{
-		"id": 61,
+		"id": 60,
 		"order": 15,
 		"name": "SVG Flag Icons",
 		"link": "https://nucleoapp.com/svg-flag-icons",
@@ -580,7 +570,7 @@
 		"tags": ["Flags"]
 	},
 	{
-		"id": 62,
+		"id": 61,
 		"order": 13,
 		"name": "Unicons",
 		"link": "https://iconscout.com/unicons",
@@ -590,7 +580,7 @@
 		"tags": ["Package"]
 	},
 	{
-		"id": 63,
+		"id": 62,
 		"order": 13,
 		"name": "Iconic",
 		"link": "https://iconic.app/",
@@ -599,7 +589,7 @@
 		"licenseLink": "https://iconic.app/iconic-pro-license/"
 	},
 	{
-		"id": 64,
+		"id": 63,
 		"order": 67,
 		"name": "Isocons",
 		"link": "https://www.isocons.app/",
@@ -608,7 +598,7 @@
 		"tags": ["3D"]
 	},
 	{
-		"id": 65,
+		"id": 64,
 		"order": 48,
 		"name": "Pixelarticons",
 		"link": "https://pixelarticons.com/",
@@ -618,7 +608,7 @@
 		"tags": ["Pixelart", "Package"]
 	},
 	{
-		"id": 66,
+		"id": 65,
 		"order": 67,
 		"name": "Glow Icons",
 		"link": "https://www.glowui.com/icons",
@@ -627,7 +617,7 @@
 		"added": "2026-09-20"
 	},
 	{
-		"id": 67,
+		"id": 66,
 		"order": 74,
 		"name": "Animate UI Icons",
 		"link": "https://animate-ui.com/docs/icons",
@@ -636,7 +626,7 @@
 		"tags": ["Animated"]
 	},
 	{
-		"id": 68,
+		"id": 67,
 		"order": 50,
 		"name": "SVGicons",
 		"link": "https://svgicons.com/",

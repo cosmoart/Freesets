@@ -59,14 +59,14 @@
 		"id": 8,
 		"order": 87,
 		"name": "Color Leap",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706205331/freesets/colors/vlvjtgfchdlyfp0y5hhr.webp",
+		"img": "https://cdn.freesets.dev/colors/vlvjtgfchdlyfp0y5hhr.webp",
 		"link": "https://colorleap.app/"
 	},
 	{
 		"id": 9,
 		"order": 87,
 		"name": "Pigment",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706206051/freesets/colors/mxpvc3dhmnidvwu3hnkq.webp",
+		"img": "https://cdn.freesets.dev/colors/mxpvc3dhmnidvwu3hnkq.webp",
 		"link": "https://pigment.shapefactory.co"
 	},
 	{
@@ -80,7 +80,7 @@
 		"id": 11,
 		"order": 86,
 		"name": "Werner",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706204887/freesets/colors/nlwp5zdb5a92xvkiqakr.webp",
+		"img": "https://cdn.freesets.dev/colors/nlwp5zdb5a92xvkiqakr.webp",
 		"link": "https://www.c82.net/werner/",
 		"tags": ["Catalogue"]
 	},
@@ -88,7 +88,7 @@
 		"id": 12,
 		"order": 84,
 		"name": "HueSnap",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706206139/freesets/colors/ilpiojkklmm5indg4niz.webp",
+		"img": "https://cdn.freesets.dev/colors/ilpiojkklmm5indg4niz.webp",
 		"link": "https://www.huesnap.com",
 		"tags": ["Images"]
 	},
@@ -96,7 +96,7 @@
 		"id": 13,
 		"order": 83,
 		"name": "Adobe Color",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706202013/freesets/colors/ex9scrdemangoqjif70o.webp",
+		"img": "https://cdn.freesets.dev/colors/ex9scrdemangoqjif70o.webp",
 		"link": "https://color.adobe.com/es/create/color-wheel",
 		"tags": ["Images"]
 	},
@@ -119,7 +119,7 @@
 		"id": 16,
 		"order": 72,
 		"name": "WebGradients",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706201464/freesets/colors/f4k7kpstuybqrq5iivep.webp",
+		"img": "https://cdn.freesets.dev/colors/f4k7kpstuybqrq5iivep.webp",
 		"link": "https://webgradients.com",
 		"tags": ["Gradients"]
 	},
@@ -128,27 +128,27 @@
 		"order": 70,
 		"name": "Palette",
 		"img": "https://cdn.freesets.dev/colors/palette.webp",
-		"link": "https://palettte.app/"
+		"link": "https://www.bairesdev.com/tools/color-palette-app/editor/"
 	},
 	{
 		"id": 18,
 		"order": 68,
 		"name": "Flat UI Colors",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203336/freesets/colors/lwhtjq9voxepwbq5vegj.webp",
+		"img": "https://cdn.freesets.dev/colors/lwhtjq9voxepwbq5vegj.webp",
 		"link": "https://flatuicolors.com"
 	},
 	{
 		"id": 19,
 		"order": 54,
 		"name": "Material UI",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706201744/freesets/colors/dzigel4p6odtxm6a7vek.webp",
+		"img": "https://cdn.freesets.dev/colors/dzigel4p6odtxm6a7vek.webp",
 		"link": "https://materialui.co/colors"
 	},
 	{
 		"id": 20,
 		"order": 50,
 		"name": "Happy Hues",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703609981/freesets/colors/nqn5hl6bvuoq4wfhvj1j.webp",
+		"img": "https://cdn.freesets.dev/colors/nqn5hl6bvuoq4wfhvj1j.webp",
 		"link": "https://www.happyhues.co"
 	},
 	{
@@ -165,21 +165,21 @@
 		"id": 22,
 		"order": 47,
 		"name": "Color Hunt",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706203553/freesets/colors/tf04wgbxukm07xo2tinj.webp",
+		"img": "https://cdn.freesets.dev/colors/tf04wgbxukm07xo2tinj.webp",
 		"link": "https://colorhunt.co"
 	},
 	{
 		"id": 23,
 		"order": 47,
 		"name": "Shaper",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707612765/freesets/colors/zjo076mgjflmmbpefkjr.webp",
+		"img": "https://cdn.freesets.dev/colors/zjo076mgjflmmbpefkjr.webp",
 		"link": "https://hihayk.github.io/shaper/"
 	},
 	{
 		"id": 24,
 		"order": 46,
 		"name": "Toptal",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706204167/freesets/colors/jxfys7m34d2ysx1urjqf.webp",
+		"img": "https://cdn.freesets.dev/colors/jxfys7m34d2ysx1urjqf.webp",
 		"link": "https://www.toptal.com/designers/colourcode/freebuild-color-builder"
 	},
 	{
@@ -202,14 +202,14 @@
 		"id": 27,
 		"order": 40,
 		"name": "Khroma",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706205072/freesets/colors/nanohbilxxdv7az375iz.webp",
+		"img": "https://cdn.freesets.dev/colors/nanohbilxxdv7az375iz.webp",
 		"link": "https://www.khroma.co"
 	},
 	{
 		"id": 28,
 		"order": 37,
 		"name": "Paletton",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706201622/freesets/colors/bueddeahtc97swuendgx.webp",
+		"img": "https://cdn.freesets.dev/colors/bueddeahtc97swuendgx.webp",
 		"link": "https://www.paletton.com"
 	},
 	{

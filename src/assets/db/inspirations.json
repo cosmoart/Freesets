@@ -9,9 +9,9 @@
 	{
 		"id": 2,
 		"order": 98,
-		"name": "Godly",
-		"img": "https://cdn.freesets.dev/inspirations/godly.webp",
-		"link": "https://godly.website"
+		"name": "Recent",
+		"img": "https://cdn.freesets.dev/inspirations/recent.avif",
+		"link": "https://recent.design/"
 	},
 	{
 		"id": 3,
@@ -54,14 +54,14 @@
 		"id": 8,
 		"order": 76,
 		"name": "Minimal Gallery",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706407304/freesets/inspirations/cindmoknr2lysvna4iwj.webp",
+		"img": "https://cdn.freesets.dev/inspirations/cindmoknr2lysvna4iwj.webp",
 		"link": "https://minimal.gallery"
 	},
 	{
 		"id": 9,
 		"order": 73,
 		"name": "MaxiBestOf",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381293/freesets/inspirations/ndgtbollo4dhqqt3kowy.webp",
+		"img": "https://cdn.freesets.dev/inspirations/ndgtbollo4dhqqt3kowy.webp",
 		"link": "https://maxibestof.one"
 	},
 	{
@@ -75,7 +75,7 @@
 		"id": 11,
 		"order": 70,
 		"name": "Landing Gallery",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704381074/freesets/inspirations/o8kszgfesntegltgoxwf.webp",
+		"img": "https://cdn.freesets.dev/inspirations/o8kszgfesntegltgoxwf.webp",
 		"link": "https://www.landing.gallery"
 	},
 	{
@@ -106,14 +106,14 @@
 		"id": 15,
 		"order": 40,
 		"name": "a-fresh",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706407151/freesets/inspirations/qkca9a1zqyzcs2c6vaeo.webp",
+		"img": "https://cdn.freesets.dev/inspirations/qkca9a1zqyzcs2c6vaeo.webp",
 		"link": "https://a-fresh.website"
 	},
 	{
 		"id": 16,
 		"order": 22,
 		"name": "Layers",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1707067044/freesets/inspirations/zfqj3ezli1xkq5bkpoep.webp",
+		"img": "https://cdn.freesets.dev/inspirations/zfqj3ezli1xkq5bkpoep.webp",
 		"link": "https://layers.to/"
 	},
 	{
@@ -170,10 +170,11 @@
 	},
 	{
 		"id": 24,
-		"order": 4,
-		"name": "Design Vault",
-		"img": "https://cdn.freesets.dev/inspirations/designvault.webp",
-		"link": "https://designvault.io/"
+		"order": 58,
+		"name": "UI.live",
+		"link": "https://ui.live/",
+		"img": "https://cdn.freesets.dev/inspirations/ui-live.avif",
+		"added": "2026-09-20"
 	},
 	{
 		"id": 25,
@@ -326,7 +327,7 @@
 		"id": 45,
 		"order": 10,
 		"name": "Viewport UI",
-		"link": "https://viewport-ui.design/",
+		"link": "https://viewportui.com/",
 		"img": "https://cdn.freesets.dev/inspirations/viewport-ui.webp"
 	},
 	{
@@ -380,13 +381,5 @@
 		"name": "Websitevice",
 		"link": "https://websitevice.com/",
 		"img": "https://cdn.freesets.dev/inspirations/websitevice.webp"
-	},
-		{
-		"id": 53,
-		"order": 58,
-		"name": "UI.live",
-		"link": "https://ui.live/",
-		"img": "https://cdn.freesets.dev/inspirations/ui-live.avif",
-		"added": "2026-09-20"
 	}
 ]

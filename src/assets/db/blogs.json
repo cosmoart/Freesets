@@ -11,7 +11,7 @@
 		"id": 2,
 		"order": 95,
 		"name": "DEV",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1705068140/freesets/blogs/u1nkrg7tysvugcd8nwy0.webp",
+		"img": "https://cdn.freesets.dev/blogs/u1nkrg7tysvugcd8nwy0.webp",
 		"link": "https://dev.to"
 	},
 	{
@@ -26,7 +26,7 @@
 		"id": 4,
 		"order": 81,
 		"name": "Rauno Craft",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706403955/freesets/blogs/ypica0qiozuuuamcyk6c.webp",
+		"img": "https://cdn.freesets.dev/blogs/ypica0qiozuuuamcyk6c.webp",
 		"link": "https://rauno.me/craft",
 		"tags": ["UI"]
 	},
@@ -66,7 +66,7 @@
 		"id": 9,
 		"order": 70,
 		"name": "CSS-Tricks",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703443444/freesets/blogs/t8ufepbmlyfmcphliioh.webp",
+		"img": "https://cdn.freesets.dev/blogs/t8ufepbmlyfmcphliioh.webp",
 		"link": "https://css-tricks.com",
 		"tags": ["CSS"]
 	},
@@ -74,21 +74,21 @@
 		"id": 10,
 		"order": 65,
 		"name": "Smashing Magazine",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703443742/freesets/blogs/uzktydktlmwcig9xgrtu.webp",
+		"img": "https://cdn.freesets.dev/blogs/uzktydktlmwcig9xgrtu.webp",
 		"link": "https://www.smashingmagazine.com"
 	},
 	{
 		"id": 11,
 		"order": 40,
 		"name": "web.dev",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703444856/freesets/blogs/fd6dopnvhkecuooyvrhv.webp",
+		"img": "https://cdn.freesets.dev/blogs/fd6dopnvhkecuooyvrhv.webp",
 		"link": "https://web.dev/blog"
 	},
 	{
 		"id": 12,
 		"order": 40,
 		"name": "Design Systems",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703459247/freesets/blogs/u4hastncvnhlfdc8iaal.webp",
+		"img": "https://cdn.freesets.dev/blogs/u4hastncvnhlfdc8iaal.webp",
 		"link": "https://www.designsystems.com",
 		"tags": ["Design System"]
 	},
@@ -96,7 +96,7 @@
 		"id": 13,
 		"order": 40,
 		"name": "Hashnode",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/hashnode.webp",
+		"img": "https://cdn.freesets.dev/blogs/hashnode.webp",
 		"link": "https://www.hashnode.com",
 		"tags": ["Community"]
 	},
@@ -104,7 +104,7 @@
 		"id": 14,
 		"order": 32,
 		"name": "Design good practices",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706564504/freesets/blogs/cyyuklvwucjn7hrxljfr.webp",
+		"img": "https://cdn.freesets.dev/blogs/cyyuklvwucjn7hrxljfr.webp",
 		"link": "https://goodpractices.design",
 		"tags": ["UI/UX"]
 	},
@@ -112,7 +112,7 @@
 		"id": 15,
 		"order": 25,
 		"name": "Paul Scanlon Articles",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1703452484/freesets/blogs/qzwz1ulr6yjg9cb8bygn.webp",
+		"img": "https://cdn.freesets.dev/blogs/qzwz1ulr6yjg9cb8bygn.webp",
 		"link": "https://www.paulie.dev/articles/",
 		"tags": ["Three.js"]
 	},

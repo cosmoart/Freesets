@@ -1,0 +1,35 @@
+# Sites that block bots (401/403/429) but work in the browser
+
+# 403 Forbidden
+^https?://(www\.)?behance\.net
+^https?://(www\.)?blendkit\.com
+^https?://(www\.)?c82\.net
+^https?://(www\.)?colorhexa\.com
+^https?://(www\.)?coolors\.co
+^https?://(www\.)?figma\.com/community/
+^https?://(www\.)?flaticon\.com
+^https?://(www\.)?free3d\.com
+^https?://(www\.)?iconscout\.com
+^https?://(www\.)?lapa\.ninja
+^https?://(www\.)?magnific\.com
+^https?://(www\.)?maxibestof\.one
+^https?://(www\.)?nga\.gov
+^https?://(www\.)?openverse\.org
+^https?://(www\.)?pexels\.com
+^https?://(www\.)?pixabay\.com
+^https?://(www\.)?poly\.pizza
+^https?://(www\.)?turbosquid\.com
+^https?://(www\.)?artstation\.com/marketplace/
+
+# 401 Unauthorized
+^https?://(www\.)?unsplash\.com
+
+# 429 Too Many Requests
+^https?://(www\.)?adfolio\.design
+^https?://(www\.)?designspells\.com
+^https?://(www\.)?heritagetype\.com
+^https?://(www\.)?metmuseum\.org
+^https?://modern-fluid-typography\.vercel\.app
+^https?://(www\.)?siteinspire\.com
+^https?://(www\.)?streamlinehq\.com
+^https?://(www\.)?svgrepo\.com

@@ -69,7 +69,7 @@
 		"id": 8,
 		"name": "Cool Backgrounds",
 		"link": "https://coolbackgrounds.io",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1706404961/freesets/backgrounds/fe8ljxu66grtmvzvnlm4.webp",
+		"img": "https://cdn.freesets.dev/backgrounds/fe8ljxu66grtmvzvnlm4.webp",
 		"order": 75
 	},
 	{
@@ -124,7 +124,7 @@
 		"id": 14,
 		"name": "Super designer",
 		"link": "https://superdesigner.co",
-		"img": "https://res.cloudinary.com/cosmocloudinary/image/upload/v1704377698/freesets/backgrounds/kyzflrd7lyidfg5djpv8.webp",
+		"img": "https://cdn.freesets.dev/backgrounds/kyzflrd7lyidfg5djpv8.webp",
 		"order": 55
 	},
 	{
@@ -199,7 +199,7 @@
 		"order": 85,
 		"name": "NEAT",
 		"img": "https://cdn.freesets.dev/backgrounds/neat.webp",
-		"link": "https://neat.firecms.co/",
+		"link": "https://neat.rebase.pro/",
 		"tags": ["Gradients", "Package"],
 		"license": "GPL-3.0",
 		"licenseLink": "https://github.com/firecmsco/neat/blob/main/LICENSE"

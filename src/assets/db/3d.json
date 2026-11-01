@@ -56,10 +56,10 @@
 		"order": 83,
 		"name": "BlenderKit",
 		"img": "https://cdn.freesets.dev/3d/blenderkit.webp",
-		"link": "https://www.blenderkit.com",
+		"link": "https://www.blendkit.com/",
 		"tags": ["Textures", "Models", "HDRIs", "Brushes"],
 		"license": "RF & CC0",
-		"licenseLink": "https://www.blenderkit.com/docs/licenses/",
+		"licenseLink": "https://www.blendkit.com/docs/licenses/",
 		"licenseDescription": "BlenderKit only has 2 available licenses. Everything you download is available for commercial use. Both allow you to sell higher-level-derivative works, but royalty free license doesn't allow to re-sell 3D models even if modified."
 	},
 	{
