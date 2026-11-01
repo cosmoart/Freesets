@@ -391,12 +391,12 @@
 	},
 	{
 		"id": 54,
-		"order": 50,
+		"order": 56,
 		"name": "APPLORE",
 		"link": "https://applore.app/",
 		"img": "https://cdn.freesets.dev/inspirations/applore.avif",
 		"license": "Freemium",
-		"tags": ["App Icons", "Mobile", "iOS", "Android"],
-		"added": "2026-10-24"
+		"tags": ["App Icons", "Mobile", "iOS", "Android", "Store screenshots"],
+		"added": "2026-11-01"
 	}
 ]
