@@ -288,5 +288,27 @@
 		"link": "https://www.opengraph.to/",
 		"img": "https://cdn.freesets.dev/tools/opengraphto.webp",
 		"tags": ["Open Graph"]
+	},
+	{
+		"id": 36,
+		"order": 75,
+		"name": "HyperFrames Studio",
+		"link": "https://hyperframes.studio/",
+		"img": "https://cdn.freesets.dev/tools/hyperframesstudi.avif",
+		"tags": ["Video editor", "AI"],
+		"license":"Apache-2.0",
+		"licenseLink":"https://github.com/heygen-com/hyperframes?tab=Apache-2.0-1-ov-file",
+		"added": "2026-11-01"
+	},
+	{
+		"id": 37,
+		"order": 83,
+		"name": "ArtCraft",
+		"link": "https://getartcraft.com/",
+		"img": "https://cdn.freesets.dev/tools/artcraft.avif",
+		"tags": ["Editors", "Adobe", "AI"],
+		"license":"Apache-2.0",
+		"licenseLink":"https://github.com/storytold/artcraft/blob/main/LICENSE-APACHE",
+		"added": "2026-11-01"
 	}
 ]
