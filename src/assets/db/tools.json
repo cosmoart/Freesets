@@ -310,5 +310,14 @@
 		"license":"Apache-2.0",
 		"licenseLink":"https://github.com/storytold/artcraft/blob/main/LICENSE-APACHE",
 		"added": "2026-11-01"
+	},
+	{
+		"id": 38,
+		"order": 43,
+		"name": "better-claude",
+		"link": "https://betterclaude.dev/",
+		"img": "https://cdn.freesets.dev/tools/betterclaude.avif",
+		"tags": ["Plugins", "Mods"],
+		"added": "2026-11-04"
 	}
 ]

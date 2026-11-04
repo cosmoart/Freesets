@@ -500,5 +500,16 @@
 		"licenseLink": "https://github.com/danielwh2/cuelume/blob/main/LICENSE",
 		"tags": ["Sounds"],
 		"added": "2026-09-20"
+	},
+	{
+		"id": 57,
+		"order": 46,
+		"name": "Pele",
+		"link": "https://pele.run/",
+		"img": "https://cdn.freesets.dev/libraries/pele.avif",
+		"license": "MIT",
+		"licenseLink": "https://github.com/obsidianmd/pele?tab=License-1-ov-file",
+		"tags": ["Mermaid diagrams"],
+		"added": "2026-11-04"
 	}
 ]

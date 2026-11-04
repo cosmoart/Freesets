@@ -804,5 +804,16 @@
 		"licenseLink": "https://github.com/kanakkholwal/baby-ui/blob/main/LICENSE",
 		"tags": ["React", "Svelte", "Animations", "Accessibility", "Tailwind", "Shadcn"],
 		"added": "2026-10-28"
+	},
+	{
+		"id": 89,
+		"order": 36,
+		"name": "Skiper UI",
+		"link": "https://skiper-ui.com/components?source=free",
+		"img": "https://cdn.freesets.dev/components/skiperui.avif",
+		"license": "Freemium",
+		"licenseLink": "https://skiper-ui.com/pricing",
+		"tags": ["React", "Animations", "Copy&Paste", "Shadcn"],
+		"added": "2026-11-04"
 	}
 ]
