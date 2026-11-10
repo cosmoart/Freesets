@@ -391,5 +391,15 @@
 		"license": "Freemium",
 		"tags": ["App Icons", "Mobile", "iOS", "Android", "Store screenshots"],
 		"added": "2026-11-01"
+	},
+	{
+		"id": 54,
+		"order": 62,
+		"name": "Design Details",
+		"link": "https://designdetails.io/",
+		"img": "https://cdn.freesets.dev/inspirations/designdetails.avif",
+		"license": "Freemium",
+		"tags": ["Animations", "Fonts"],
+		"added": "2026-11-09"
 	}
 ]
