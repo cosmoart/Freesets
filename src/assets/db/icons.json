@@ -632,5 +632,19 @@
 		"link": "https://svgicons.com/",
 		"img": "https://cdn.freesets.dev/icons/svgicons.avif",
 		"added": "2026-10-02"
+	},
+	{
+		"id": 68,
+		"order": 60,
+		"name": "Iconito Food",
+		"link": "https://iconi.to/free-food-icons",
+		"img": "https://cdn.freesets.dev/icons/iconito-food.avif",
+		"license": "MIT",
+		"licenseLink": "https://github.com/iconi-to/free-food/blob/main/LICENSE",
+		"tags": [
+			"Food",
+			"Package"
+		],
+		"added": "2026-11-17"
 	}
 ]
