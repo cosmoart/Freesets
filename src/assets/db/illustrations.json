@@ -108,15 +108,6 @@
 	},
 	{
 		"id": 13,
-		"order": 74,
-		"name": "Notion Avatar Maker",
-		"img": "https://cdn.freesets.dev/illustrations/ad2ipzy12ydj5hfxepb1.webp",
-		"link": "https://notion-avatar.app/",
-		"tags": ["Avatars"],
-		"license": "CC0"
-	},
-	{
-		"id": 14,
 		"order": 70,
 		"name": "Pixabay",
 		"img": "https://cdn.freesets.dev/illustrations/pixabay.webp",
@@ -126,7 +117,7 @@
 		"licenseDescription": "Free for commercial and noncommercial use. Attribution is not required"
 	},
 	{
-		"id": 15,
+		"id": 14,
 		"order": 70,
 		"name": "ManyPixels",
 		"img": "https://cdn.freesets.dev/illustrations/xg576ceqevpo4ysfrq92.webp",
@@ -135,7 +126,7 @@
 		"licenseDescription": "You can use the illustrations in any project, commercial or personal without attribution or any costs."
 	},
 	{
-		"id": 16,
+		"id": 15,
 		"order": 57,
 		"name": "Shapes",
 		"img": "https://cdn.freesets.dev/illustrations/mezhdpcgrgwri14okctx.webp",
@@ -143,7 +134,7 @@
 		"tags": ["Logos"]
 	},
 	{
-		"id": 17,
+		"id": 16,
 		"order": 58,
 		"name": "Icons8",
 		"link": "https://icons8.com/illustrations/free--y",
@@ -153,7 +144,7 @@
 		"tags": ["Animated", "3D"]
 	},
 	{
-		"id": 18,
+		"id": 17,
 		"order": 64,
 		"name": "Doodle Ipsum",
 		"img": "https://cdn.freesets.dev/illustrations/mqacxlkhnjwt2c08nvin.webp",
@@ -164,7 +155,7 @@
 		"licenseDescription": "You can use Illustrations for commercial and non-commercial purposes."
 	},
 	{
-		"id": 19,
+		"id": 18,
 		"order": 60,
 		"name": "Flexiple illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/flexiple.webp",
@@ -174,7 +165,7 @@
 		"licenseDescription": "Put simply, use it in any project. No attribution needed.\\nCommercial, academic or your pet project, doesn't matter, use Scale's illustrations without attribution."
 	},
 	{
-		"id": 20,
+		"id": 19,
 		"order": 50,
 		"name": "unDraw",
 		"img": "https://cdn.freesets.dev/illustrations/undraw.webp",
@@ -184,7 +175,7 @@
 		"licenseDescription": "You can use the illustrations in any project, commercial or personal without attribution or any costs"
 	},
 	{
-		"id": 21,
+		"id": 20,
 		"order": 50,
 		"name": "Theme Isle",
 		"img": "https://cdn.freesets.dev/illustrations/themeisle.webp",
@@ -194,7 +185,7 @@
 		"licenseDescription": "All images and vectors published on Themeisle can be used for free. You can use them for noncommercial and commercial purposes."
 	},
 	{
-		"id": 22,
+		"id": 21,
 		"order": 50,
 		"name": "Surface Pack",
 		"img": "https://cdn.freesets.dev/illustrations/t9xk78m50oomndiuojig.webp",
@@ -202,7 +193,7 @@
 		"license": "CC BY 4.0"
 	},
 	{
-		"id": 23,
+		"id": 22,
 		"order": 50,
 		"name": "Ultima",
 		"img": "https://cdn.freesets.dev/illustrations/csupf4kdrz9vcxxvhrm3.webp",
@@ -211,7 +202,7 @@
 		"licenseDescription": "All illustrations are available for use in any commercial and personal projects."
 	},
 	{
-		"id": 24,
+		"id": 23,
 		"order": 48,
 		"name": "Heritage Library",
 		"img": "https://cdn.freesets.dev/illustrations/nwcd494bbjvpsczg2pym.webp",
@@ -222,7 +213,7 @@
 		"licenseDescription": "The graphic elements may be used to create physical end products for sale with a maximum of 10.000 units. You can use the graphic elements for multiple projects and multiple clients as far as the maximum of units for sale remains under 10.000."
 	},
 	{
-		"id": 25,
+		"id": 24,
 		"order": 48,
 		"name": "Svg Doodle",
 		"img": "https://cdn.freesets.dev/illustrations/bit2rozfujx0aa77g3o8.webp",
@@ -232,7 +223,7 @@
 		"licenseDescription": "You can use all icons in your commercial works without attribution.You can find svg brush icon, svg arrow icon, svg circles icon, svg abstract icon, lines svg icons on the site. It just doesn’t allow it to be resold"
 	},
 	{
-		"id": 26,
+		"id": 25,
 		"order": 47,
 		"name": "Open Stickers",
 		"img": "https://cdn.freesets.dev/illustrations/yzt02hxbddqe2kxwfh3n.webp",
@@ -242,7 +233,7 @@
 		"licenseDescription": "Free for commercial and personal use under Craftwork License"
 	},
 	{
-		"id": 27,
+		"id": 26,
 		"order": 45,
 		"name": "Highlights",
 		"img": "https://cdn.freesets.dev/illustrations/msfjc9haujrccyecnk1m.webp",
@@ -252,7 +243,7 @@
 		"licenseLink": "https://www.highlights.design"
 	},
 	{
-		"id": 28,
+		"id": 27,
 		"order": 40,
 		"name": "Comic Book Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/pxccleycrmcdrkhq3ctc.webp",
@@ -260,7 +251,7 @@
 		"tags": ["Comic"]
 	},
 	{
-		"id": 29,
+		"id": 28,
 		"order": 38,
 		"name": "Illustrations vol.1",
 		"img": "https://cdn.freesets.dev/illustrations/bpqupesrwq1802w95dje.webp",
@@ -270,14 +261,14 @@
 		"licenseDescription": "Use freebie resources for any personal and commercial projects... No attribution or link to this site is required but any credit will be highly appreciated."
 	},
 	{
-		"id": 30,
+		"id": 29,
 		"order": 38,
 		"name": "Halftone Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/ttfyzejpvzcpqeofuaga.webp",
 		"link": "https://oblikstudio.gumroad.com/l/QZlSv"
 	},
 	{
-		"id": 31,
+		"id": 30,
 		"order": 44,
 		"name": "Spectrum",
 		"link": "https://spectrums.framer.website/",
@@ -285,7 +276,7 @@
 		"tags": ["Logos"]
 	},
 	{
-		"id": 32,
+		"id": 31,
 		"order": 37,
 		"name": "LottieFiles",
 		"img": "https://cdn.freesets.dev/illustrations/vf9nfhugpnemyw294hpb.webp",
@@ -293,7 +284,7 @@
 		"tags": ["Animated"]
 	},
 	{
-		"id": 33,
+		"id": 32,
 		"order": 72,
 		"name": "Public Work by Cosmos",
 		"link": "https://www.cosmos.so/public-work",
@@ -301,21 +292,21 @@
 		"tags": ["Vintage"]
 	},
 	{
-		"id": 34,
+		"id": 33,
 		"order": 27,
 		"name": "Remote Work Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/q0pyimh0idu2g3it2dwa.webp",
 		"link": "https://oblikstudio.gumroad.com/l/remote-work-illustrations-by-oblik-studio"
 	},
 	{
-		"id": 35,
+		"id": 34,
 		"order": 26,
 		"name": "Sneakers Vector Set",
 		"img": "https://cdn.freesets.dev/illustrations/ilwjm47oyxzjfp7ryxzp.webp",
 		"link": "https://oblikstudio.gumroad.com/l/sneakers-vector-set"
 	},
 	{
-		"id": 36,
+		"id": 35,
 		"order": 69,
 		"name": "The Thiings Collection",
 		"img": "https://cdn.freesets.dev/illustrations/thiings.webp",
@@ -323,7 +314,7 @@
 		"tags": ["AI"]
 	},
 	{
-		"id": 37,
+		"id": 36,
 		"order": 25,
 		"name": "Flower Patterns",
 		"img": "https://cdn.freesets.dev/illustrations/orezbvbpqtjombu9okqb.webp",
@@ -331,7 +322,7 @@
 		"license": "CC BY 4.0"
 	},
 	{
-		"id": 38,
+		"id": 37,
 		"order": 24,
 		"name": "SVG DOODLES",
 		"img": "https://cdn.freesets.dev/illustrations/qz847dmbbs6j1fuhy8e9.webp",
@@ -340,7 +331,7 @@
 		"license": "CC BY 3.0"
 	},
 	{
-		"id": 39,
+		"id": 38,
 		"order": 20,
 		"name": "Fresh Folk",
 		"img": "https://cdn.freesets.dev/illustrations/freshfolk.webp",
@@ -349,7 +340,7 @@
 		"licenseLink": "https://fresh-folk.com"
 	},
 	{
-		"id": 40,
+		"id": 39,
 		"order": 20,
 		"name": "Humanities",
 		"img": "https://cdn.freesets.dev/illustrations/p8lxjt4esu2m2qp2e8my.webp",
@@ -357,7 +348,7 @@
 		"license": "Free with attribution"
 	},
 	{
-		"id": 41,
+		"id": 40,
 		"order": 57,
 		"name": "Logoipsum",
 		"link": "https://logoipsum.com/",
@@ -365,7 +356,7 @@
 		"tags": ["Placeholder logos"]
 	},
 	{
-		"id": 42,
+		"id": 41,
 		"order": 13,
 		"name": "Sketchvalley",
 		"img": "https://cdn.freesets.dev/illustrations/vinewnev3m9hz7xu4l3v.webp",
@@ -373,7 +364,7 @@
 		"license": "Multiple"
 	},
 	{
-		"id": 43,
+		"id": 42,
 		"order": 56,
 		"name": "IconPark",
 		"link": "https://iconpark.oceanengine.com/illustrations",
@@ -382,7 +373,7 @@
 		"licenseLink": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
 	},
 	{
-		"id": 44,
+		"id": 43,
 		"order": 69,
 		"name": "coolshapes",
 		"img": "https://cdn.freesets.dev/illustrations/coolshap.webp",
@@ -390,7 +381,7 @@
 		"tags": ["Package", "Logos"]
 	},
 	{
-		"id": 45,
+		"id": 44,
 		"order": 8,
 		"name": "Streamline Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/streamline.webp",
@@ -400,7 +391,7 @@
 		"licenseDescription": "Free for commercial and personal use WITH ATTRIBUTION"
 	},
 	{
-		"id": 46,
+		"id": 45,
 		"order": 8,
 		"name": "Cartoon Hands",
 		"img": "https://cdn.freesets.dev/illustrations/rmj8enmxzugaagvizpd4.webp",
@@ -408,30 +399,21 @@
 		"license": "CC BY 4.0"
 	},
 	{
-		"id": 47,
+		"id": 46,
 		"order": 8,
 		"name": "Porto Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/evogpioehpgkmmllh3ox.webp",
 		"link": "https://kapustinco.gumroad.com/l/xHIbD"
 	},
 	{
-		"id": 48,
-		"order": 7,
-		"name": "Notion Avatar",
-		"img": "https://cdn.freesets.dev/illustrations/lodfv721ek2wuedc94oz.webp",
-		"link": "https://www.figma.com/community/file/1159777445438667306",
-		"tags": ["Avatars"],
-		"license": "CC BY 4.0"
-	},
-	{
-		"id": 49,
+		"id": 47,
 		"order": 6,
 		"name": "Lifestyle Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/y8nwlbsutlnejuwrhv2q.webp",
 		"link": "https://kapustinco.gumroad.com/l/IRkNK"
 	},
 	{
-		"id": 50,
+		"id": 48,
 		"order": 5,
 		"name": "Storyset",
 		"img": "https://cdn.freesets.dev/illustrations/storyset.webp",
@@ -440,17 +422,15 @@
 		"licenseLink": "https://storyset.com/faqs"
 	},
 	{
-		"id": 51,
-		"order": 39,
-		"name": "uilogos",
-		"img": "https://cdn.freesets.dev/illustrations/uilogos.webp",
-		"link": "https://www.uilogos.co/",
-		"license": "CC BY 4.0",
-		"licenseLink": "https://github.com/realvjy/uilogos.co/blob/main/LICENSE.md",
-		"tags": ["Placeholder logos"]
+		"id": 49,
+		"order": 68,
+		"name": "Khagwal 3D",
+		"img": "https://cdn.freesets.dev/illustrations/khagwal.webp",
+		"link": "https://3d.khagwal.com/",
+		"license": "CC0"
 	},
 	{
-		"id": 52,
+		"id": 50,
 		"order": 16,
 		"name": "Free Userpics Pack",
 		"img": "https://cdn.freesets.dev/illustrations/freepack.webp",
@@ -458,7 +438,7 @@
 		"tags": ["Avatars"]
 	},
 	{
-		"id": 53,
+		"id": 51,
 		"order": 11,
 		"name": "Memojis",
 		"img": "https://cdn.freesets.dev/illustrations/memojis.webp",
@@ -467,7 +447,7 @@
 		"license": "C. Free Resource L."
 	},
 	{
-		"id": 54,
+		"id": 52,
 		"order": 70,
 		"name": "Shapefest",
 		"img": "https://cdn.freesets.dev/illustrations/shapefest.webp",
@@ -477,7 +457,7 @@
 		"tags": ["3D"]
 	},
 	{
-		"id": 55,
+		"id": 53,
 		"order": 51,
 		"name": "Kapwing",
 		"img": "https://cdn.freesets.dev/illustrations/kapwing404.webp",
@@ -485,7 +465,7 @@
 		"tags": ["404"]
 	},
 	{
-		"id": 56,
+		"id": 54,
 		"order": 38,
 		"name": "LukaszAdam Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/lukaszadam.webp",
@@ -493,19 +473,11 @@
 		"license": "CC0"
 	},
 	{
-		"id": 57,
+		"id": 55,
 		"order": 12,
 		"name": "Personas by Draftbit",
 		"img": "https://cdn.freesets.dev/illustrations/personas.webp",
 		"link": "https://personas.draftbit.com/",
 		"license": "CC BY 4.0"
-	},
-	{
-		"id": 58,
-		"order": 68,
-		"name": "Khagwal 3D",
-		"img": "https://cdn.freesets.dev/illustrations/khagwal.webp",
-		"link": "https://3d.khagwal.com/",
-		"license": "CC0"
 	}
 ]

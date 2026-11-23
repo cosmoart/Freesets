@@ -33,3 +33,17 @@
 ^https?://(www\.)?siteinspire\.com
 ^https?://(www\.)?streamlinehq\.com
 ^https?://(www\.)?svgrepo\.com
+
+# Cloudflare challenge ("Just a moment...")
+^https?://(www\.)?barnimages\.com
+^https?://(www\.)?videezy\.com
+
+# Intermittent 403/429
+^https?://(www\.)?a-fresh\.website
+^https?://(www\.)?landing\.love
+
+# Works in the browser, but fails for bots
+# support.flaticon.com: incomplete TLS certificate chain
+^https?://support\.flaticon\.com
+# remixicon.com/license: client-side route, the server answers 404
+^https?://remixicon\.com/license

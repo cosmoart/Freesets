@@ -1,0 +1,24 @@
+name: Test resources
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'src/assets/db/**'
+      - 'src/scripts/filter.ts'
+      - 'tests/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+
+      - name: Run tests
+        run: npm test

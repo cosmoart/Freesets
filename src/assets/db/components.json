@@ -74,7 +74,7 @@
 		"license": "MIT",
 		"licenseLink": "https://github.com/mantinedev/ui.mantine.dev/blob/master/LICENCE"
 	},
-		{
+	{
 		"id": 9,
 		"order": 67,
 		"name": "React Aria",
@@ -613,14 +613,6 @@
 	},
 	{
 		"id": 68,
-		"order": 46,
-		"name": "RSuite",
-		"link": "https://rsuitejs.com/",
-		"img": "https://cdn.freesets.dev/components/rsuite.webp",
-		"tags": ["React"]
-	},
-	{
-		"id": 69,
 		"order": 58,
 		"name": "SmoothUI",
 		"link": "https://www.smoothui.dev/",
@@ -630,7 +622,7 @@
 		"licenseLink": "https://github.com/educlopez/smoothui/blob/main/LICENSE"
 	},
 	{
-		"id": 70,
+		"id": 69,
 		"order": 47,
 		"name": "TW Components",
 		"link": "https://www.creative-tim.com/twcomponents",
@@ -638,7 +630,7 @@
 		"tags": ["Tailwind", "HTML", "Copy&Paste"]
 	},
 	{
-		"id": 71,
+		"id": 70,
 		"order": 38,
 		"name": "React Hot Toast",
 		"link": "https://react-hot-toast.com/",
@@ -648,7 +640,7 @@
 		"licenseLink": "https://github.com/timolins/react-hot-toast/blob/main/LICENSE"
 	},
 	{
-		"id": 72,
+		"id": 71,
 		"order": 47,
 		"name": "Motion-Primitives",
 		"link": "https://motion-primitives.com",
@@ -658,7 +650,7 @@
 		"licenseLink": "https://github.com/ibelick/motion-primitives/blob/main/LICENCE.md"
 	},
 	{
-		"id": 73,
+		"id": 72,
 		"order": 50,
 		"name": "Fulldev UI",
 		"link": "https://ui.full.dev",
@@ -668,7 +660,7 @@
 		"licenseLink": "https://github.com/fulldotdev/ui/blob/main/LICENCE"
 	},
 	{
-		"id": 74,
+		"id": 73,
 		"order": 84,
 		"name": "coss.com ui",
 		"link": "https://coss.com/ui",
@@ -678,7 +670,7 @@
 		"licenseLink": "https://github.com/origin-space/originui?tab=readme-ov-file#terms-of-use"
 	},
 	{
-		"id": 75,
+		"id": 74,
 		"order": 84,
 		"name": "Fancy Components",
 		"link": "https://www.fancycomponents.dev/",
@@ -688,7 +680,7 @@
 		"licenseLink": "https://github.com/danielpetho/fancy/blob/main/LICENSE"
 	},
 	{
-		"id": 76,
+		"id": 75,
 		"order": 68,
 		"name": "HTMLrev",
 		"link": "https://htmlrev.com/",
@@ -696,7 +688,7 @@
 		"tags": ["Templates", "Tailwind", "React", "Vue", "Svelte", "Astro"]
 	},
 	{
-		"id": 77,
+		"id": 76,
 		"order": 48,
 		"name": "Stepperize",
 		"link": "https://stepperize.vercel.app/",
@@ -704,7 +696,7 @@
 		"tags": ["Multi-Step Flows", "Forms", "React", "Vue", "Solid", "Svelte"]
 	},
 	{
-		"id": 78,
+		"id": 77,
 		"order": 80,
 		"name": "Mvpblocks",
 		"link": "https://blocks.mvp-subha.me/",
@@ -712,7 +704,7 @@
 		"tags": ["Copy&Paste", "React", "Tailwind"]
 	},
 	{
-		"id": 79,
+		"id": 78,
 		"order": 45,
 		"name": "Evil Charts",
 		"link": "https://evilcharts.com/",
@@ -720,7 +712,7 @@
 		"tags": ["Copy&Paste", "Chart"]
 	},
 	{
-		"id": 80,
+		"id": 79,
 		"order": 65,
 		"name": "Basecoat",
 		"link": "https://basecoatui.com",
@@ -728,7 +720,7 @@
 		"tags": ["Copy&Paste", "Tailwind", "Shadcn"]
 	},
 	{
-		"id": 81,
+		"id": 80,
 		"order": 68,
 		"name": "Blookie",
 		"link": "https://blookie.io",
@@ -736,7 +728,7 @@
 		"tags": ["Copy&Paste", "Tailwind", "Shadcn"]
 	},
 	{
-		"id": 82,
+		"id": 81,
 		"order": 78,
 		"name": "CuiCui",
 		"link": "https://cuicui.day/",
@@ -744,7 +736,7 @@
 		"tags": ["React", "TypeScript", "Copy&Paste", "Library"]
 	},
 	{
-		"id": 83,
+		"id": 82,
 		"order": 30,
 		"name": "Ant Design",
 		"link": "https://ant.design/",
@@ -754,7 +746,7 @@
 		"tags": ["React", "Design System"]
 	},
 	{
-		"id": 84,
+		"id": 83,
 		"order": 78,
 		"name": "Animate UI",
 		"link": "https://animate-ui.com/",
@@ -764,7 +756,7 @@
 		"added": "2026-09-20"
 	},
 	{
-		"id": 85,
+		"id": 84,
 		"order": 38,
 		"name": "Rosen Charts",
 		"link": "https://rosencharts.com/",
@@ -774,7 +766,7 @@
 		"added": "2026-09-20"
 	},
 	{
-		"id": 86,
+		"id": 85,
 		"order": 43,
 		"name": "Oxbow UI",
 		"link": "https://oxbowui.com/",
@@ -784,18 +776,18 @@
 		"added": "2026-09-20"
 	},
 	{
-		"id": 87,
+		"id": 86,
 		"order": 87,
 		"name": "Canvas UI",
 		"link": "https://canvasui.dev/",
 		"img": "https://cdn.freesets.dev/components/canvasui.avif",
 		"license": "MIT + Commons Clause",
-	"licenseDescription": "Use every component in any personal or commercial app or website, free forever. The only restriction is reselling or redistributing the components themselves, whether alone, in a bundle, or as a port.",
+		"licenseDescription": "Use every component in any personal or commercial app or website, free forever. The only restriction is reselling or redistributing the components themselves, whether alone, in a bundle, or as a port.",
 		"tags": ["WebGL", "3D", "Three.js"],
 		"added": "2026-09-20"
 	},
 	{
-		"id": 88,
+		"id": 87,
 		"order": 68,
 		"name": "Baby UI",
 		"link": "https://baby-ui.nexonauts.com/",
@@ -806,7 +798,7 @@
 		"added": "2026-10-28"
 	},
 	{
-		"id": 89,
+		"id": 88,
 		"order": 36,
 		"name": "Skiper UI",
 		"link": "https://skiper-ui.com/components?source=free",
