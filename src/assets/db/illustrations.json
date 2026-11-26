@@ -71,7 +71,10 @@
 		"img": "https://cdn.freesets.dev/illustrations/absurd-design.webp",
 		"license": "Free with attribution",
 		"licenseLink": "https://absurd.design/license",
-		"tags": ["Hand-drawn", "Doodles"]
+		"tags": [
+			"Hand-drawn",
+			"Doodles"
+		]
 	},
 	{
 		"id": 9,
@@ -88,7 +91,9 @@
 		"name": "Scribbles",
 		"img": "https://cdn.freesets.dev/illustrations/hslkb98bbnal2tubllug.webp",
 		"link": "https://illustrations.run",
-		"tags": ["Doodles"]
+		"tags": [
+			"Doodles"
+		]
 	},
 	{
 		"id": 11,
@@ -131,7 +136,9 @@
 		"name": "Shapes",
 		"img": "https://cdn.freesets.dev/illustrations/mezhdpcgrgwri14okctx.webp",
 		"link": "https://www.shapes.gallery/",
-		"tags": ["Logos"]
+		"tags": [
+			"Logos"
+		]
 	},
 	{
 		"id": 16,
@@ -141,7 +148,10 @@
 		"img": "https://cdn.freesets.dev/illustrations/ouch-icons8.webp",
 		"license": "Freemium with attribution",
 		"licenseLink": "https://icons8.com/license",
-		"tags": ["Animated", "3D"]
+		"tags": [
+			"Animated",
+			"3D"
+		]
 	},
 	{
 		"id": 17,
@@ -149,7 +159,9 @@
 		"name": "Doodle Ipsum",
 		"img": "https://cdn.freesets.dev/illustrations/mqacxlkhnjwt2c08nvin.webp",
 		"link": "https://doodleipsum.com",
-		"tags": ["Doodles"],
+		"tags": [
+			"Doodles"
+		],
 		"license": "Free",
 		"licenseLink": "https://blush.design/license",
 		"licenseDescription": "You can use Illustrations for commercial and non-commercial purposes."
@@ -207,7 +219,9 @@
 		"name": "Heritage Library",
 		"img": "https://cdn.freesets.dev/illustrations/nwcd494bbjvpsczg2pym.webp",
 		"link": "https://www.heritagetype.com/pages/free-vintage-illustrations",
-		"tags": ["Vintage"],
+		"tags": [
+			"Vintage"
+		],
 		"license": "Free",
 		"licenseLink": "https://www.heritagetype.com/pages/licensing#graphic_elements",
 		"licenseDescription": "The graphic elements may be used to create physical end products for sale with a maximum of 10.000 units. You can use the graphic elements for multiple projects and multiple clients as far as the maximum of units for sale remains under 10.000."
@@ -218,7 +232,9 @@
 		"name": "Svg Doodle",
 		"img": "https://cdn.freesets.dev/illustrations/bit2rozfujx0aa77g3o8.webp",
 		"link": "https://svgicon.net",
-		"tags": ["Doodles"],
+		"tags": [
+			"Doodles"
+		],
 		"license": "Free",
 		"licenseDescription": "You can use all icons in your commercial works without attribution.You can find svg brush icon, svg arrow icon, svg circles icon, svg abstract icon, lines svg icons on the site. It just doesn’t allow it to be resold"
 	},
@@ -238,7 +254,9 @@
 		"name": "Highlights",
 		"img": "https://cdn.freesets.dev/illustrations/msfjc9haujrccyecnk1m.webp",
 		"link": "https://www.highlights.design",
-		"tags": ["Doodles"],
+		"tags": [
+			"Doodles"
+		],
 		"license": "CC0",
 		"licenseLink": "https://www.highlights.design"
 	},
@@ -248,7 +266,9 @@
 		"name": "Comic Book Illustrations",
 		"img": "https://cdn.freesets.dev/illustrations/pxccleycrmcdrkhq3ctc.webp",
 		"link": "https://oblikstudio.gumroad.com/l/lmYSZ",
-		"tags": ["Comic"]
+		"tags": [
+			"Comic"
+		]
 	},
 	{
 		"id": 28,
@@ -273,7 +293,9 @@
 		"name": "Spectrum",
 		"link": "https://spectrums.framer.website/",
 		"img": "https://cdn.freesets.dev/icons/spectrums.webp",
-		"tags": ["Logos"]
+		"tags": [
+			"Logos"
+		]
 	},
 	{
 		"id": 31,
@@ -281,7 +303,9 @@
 		"name": "LottieFiles",
 		"img": "https://cdn.freesets.dev/illustrations/vf9nfhugpnemyw294hpb.webp",
 		"link": "https://lottiefiles.com/featured",
-		"tags": ["Animated"]
+		"tags": [
+			"Animated"
+		]
 	},
 	{
 		"id": 32,
@@ -289,7 +313,9 @@
 		"name": "Public Work by Cosmos",
 		"link": "https://www.cosmos.so/public-work",
 		"img": "https://cdn.freesets.dev/photos/publicwork.webp",
-		"tags": ["Vintage"]
+		"tags": [
+			"Vintage"
+		]
 	},
 	{
 		"id": 33,
@@ -311,7 +337,9 @@
 		"name": "The Thiings Collection",
 		"img": "https://cdn.freesets.dev/illustrations/thiings.webp",
 		"link": "https://www.thiings.co",
-		"tags": ["AI"]
+		"tags": [
+			"AI"
+		]
 	},
 	{
 		"id": 36,
@@ -327,7 +355,9 @@
 		"name": "SVG DOODLES",
 		"img": "https://cdn.freesets.dev/illustrations/qz847dmbbs6j1fuhy8e9.webp",
 		"link": "https://svgdoodles.com",
-		"tags": ["Doodles"],
+		"tags": [
+			"Doodles"
+		],
 		"license": "CC BY 3.0"
 	},
 	{
@@ -353,7 +383,9 @@
 		"name": "Logoipsum",
 		"link": "https://logoipsum.com/",
 		"img": "https://cdn.freesets.dev/illustrations/logoipsum.webp",
-		"tags": ["Placeholder logos"]
+		"tags": [
+			"Placeholder logos"
+		]
 	},
 	{
 		"id": 41,
@@ -378,7 +410,10 @@
 		"name": "coolshapes",
 		"img": "https://cdn.freesets.dev/illustrations/coolshap.webp",
 		"link": "https://coolshap.es/",
-		"tags": ["Package", "Logos"]
+		"tags": [
+			"Package",
+			"Logos"
+		]
 	},
 	{
 		"id": 44,
@@ -435,7 +470,9 @@
 		"name": "Free Userpics Pack",
 		"img": "https://cdn.freesets.dev/illustrations/freepack.webp",
 		"link": "https://userpics.craftwork.design/",
-		"tags": ["Avatars"]
+		"tags": [
+			"Avatars"
+		]
 	},
 	{
 		"id": 51,
@@ -443,7 +480,10 @@
 		"name": "Memojis",
 		"img": "https://cdn.freesets.dev/illustrations/memojis.webp",
 		"link": "https://www.figma.com/community/plugin/1090391796325905912/memojis",
-		"tags": ["Avatars", "3D"],
+		"tags": [
+			"Avatars",
+			"3D"
+		],
 		"license": "C. Free Resource L."
 	},
 	{
@@ -454,7 +494,9 @@
 		"link": "https://www.shapefest.com",
 		"license": "Shapefest™ Commercial",
 		"licenseLink": "https://www.shapefest.com/license-agreement",
-		"tags": ["3D"]
+		"tags": [
+			"3D"
+		]
 	},
 	{
 		"id": 53,
@@ -462,7 +504,9 @@
 		"name": "Kapwing",
 		"img": "https://cdn.freesets.dev/illustrations/kapwing404.webp",
 		"link": "https://www.kapwing.com/404-illustrations",
-		"tags": ["404"]
+		"tags": [
+			"404"
+		]
 	},
 	{
 		"id": 54,
@@ -479,5 +523,20 @@
 		"img": "https://cdn.freesets.dev/illustrations/personas.webp",
 		"link": "https://personas.draftbit.com/",
 		"license": "CC BY 4.0"
+	},
+	{
+		"id": 56,
+		"order": 72,
+		"name": "Bird Illustrations",
+		"img": "https://cdn.freesets.dev/illustrations/bird-illustrations.avif",
+		"link": "https://birdillustrations.com",
+		"license": "CC BY 4.0",
+		"licenseLink": "https://birdillustrations.com/license",
+		"licenseDescription": "Free transparent PNG & WebP bird clipart covering all 11,011 living bird species (AI-generated, attribution required).",
+		"tags": [
+			"PNG",
+			"Free"
+		],
+		"added": "2026-11-26"
 	}
 ]
